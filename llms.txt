@@ -28,4 +28,5 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - UAE import guide (trade license, ECAS, 5% duty + 5% VAT, free-zone re-export): https://sourcetogulf.com/blog/how-to-import-from-china-to-uae.html
 - Saudi Arabia import guide (SABER, SFDA, 15% VAT, Jeddah/Dammam ports): https://sourcetogulf.com/blog/how-to-import-from-china-to-saudi-arabia.html
 - Kuwait import guide (KCAS, no VAT, 5% duty, Shuwaikh port, easiest Gulf clearance): https://sourcetogulf.com/blog/how-to-import-from-china-to-kuwait.html
+- Qatar import guide (QS conformity, no VAT, 5% duty, Hamad Port, highest per-capita income): https://sourcetogulf.com/blog/how-to-import-from-china-to-qatar.html
 - Blog: https://sourcetogulf.com/blog/
