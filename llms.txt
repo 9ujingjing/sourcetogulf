@@ -26,4 +26,6 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Consolidation & shipping: https://sourcetogulf.com/services/consolidation-shipping-china-gulf.html
 - Shipping guides: /shipping/china-to-uae.html · china-to-saudi-arabia.html · china-to-kuwait.html · china-to-qatar.html · china-to-bahrain.html · china-to-oman.html
 - UAE import guide (trade license, ECAS, 5% duty + 5% VAT, free-zone re-export): https://sourcetogulf.com/blog/how-to-import-from-china-to-uae.html
+- Saudi Arabia import guide (SABER, SFDA, 15% VAT, Jeddah/Dammam ports): https://sourcetogulf.com/blog/how-to-import-from-china-to-saudi-arabia.html
+- Kuwait import guide (KCAS, no VAT, 5% duty, Shuwaikh port, easiest Gulf clearance): https://sourcetogulf.com/blog/how-to-import-from-china-to-kuwait.html
 - Blog: https://sourcetogulf.com/blog/
