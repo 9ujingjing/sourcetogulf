@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About SourceToGulf | Our Story: 14 Years in Dubai, Now Your Team in China</title>
-<meta name="description" content="Our story: 14 years doing business in Dubai — DAMAC-certified brokerage, FDI forums, UAE media — now a registered sourcing company in Guangzhou serving the Gulf." />
-<meta name="keywords" content="about SourceToGulf, our story, China sourcing agent Guangzhou, Dubai business background, من نحن" />
-<link rel="canonical" href="https://sourcetogulf.com/about.html" />
-  <link rel="alternate" hreflang="en" href="https://sourcetogulf.com/about.html" />
-  <link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/about.html" />
+<title>Home fragrance & diffusers from China to the Gulf | SourceToGulf Landed Prices</title>
+<meta name="description" content="Flameless diffusers, reed sets, incense and car fragrances — the home-fragrance lines Gulf retailers and gift shops re-order every month. Landed prices to the UAE shown on every item." />
+<link rel="canonical" href="https://sourcetogulf.com/category-home-fragrance.html" />
+<link rel="alternate" hreflang="en" href="https://sourcetogulf.com/category-home-fragrance.html" />
+<link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/category-home-fragrance.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--teal:#0D5C4D;--teal-dark:#09332B;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247}
@@ -184,11 +183,63 @@ tr:nth-child(even) td{background:var(--soft)}
 .mobile-panel .mp-group{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:16px 4px 4px}
 @media(max-width:1100px){.menu>a,.drop>button{padding:8px 10px;font-size:13.5px}}
 @media(max-width:1024px){.nav-right .quote-btn{display:none}}
+/* ===== products page ===== */
+#chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0 26px}
+#chips button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;color:var(--ink)}
+#chips button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.pcard img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+.pbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pbody h3{font-size:15px;font-weight:700;line-height:1.4}
+.price-row{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;border-top:1px dashed var(--line);padding-top:10px}
+.planded small,.pfob small{display:block;font-size:11px;color:var(--muted);letter-spacing:.02em}
+.planded b{font-size:20px;color:var(--teal);font-weight:800;line-height:1.2}
+.planded i{font-style:normal;font-size:11px;color:var(--muted)}
+.pfob{text-align:right}
+.pfob span{font-size:15px;font-weight:700;color:var(--ink)}
+.pmeta{font-size:12.5px;color:var(--muted)}
+.wa-mini{margin-top:auto;align-self:flex-start;text-decoration:none;background:var(--wa);color:#fff;padding:7px 13px;border-radius:9px;font-size:12.5px;font-weight:600}
+.wa-mini:hover{background:var(--wa-dark)}
+.hot-badge{position:absolute;top:10px;inset-inline-start:10px;background:var(--gold);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.06em;padding:3px 9px;border-radius:999px}
+.updated-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px}
+/* ===== products page — motion & polish ===== */
+.pcard{transition:transform .3s cubic-bezier(.22,.8,.3,1),box-shadow .3s,border-color .3s,opacity .45s ease}
+.pcard:not(.in){opacity:0;transform:translateY(18px)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(23,32,29,.13);border-color:#C9D8D2}
+.pcard .imgbox{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(100deg,#F3EFE7 30%,#FAF7F0 50%,#F3EFE7 70%);background-size:200% 100%;animation:shimmer 1.5s linear 2}
+.pcard .imgbox img{transition:transform .55s cubic-bezier(.22,.8,.3,1);will-change:transform}
+.pcard:hover .imgbox img{transform:scale(1.07)}
+.imgbox.bad img{display:none}
+.imgbox.bad::after{content:"No photo yet";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9A8F76;font-size:13px;text-align:center}
+@keyframes shimmer{to{background-position:-200% 0}}
+.pcard .pbody h3{transition:color .2s}
+.pcard:hover .pbody h3{color:var(--teal)}
+.hot-badge{animation:hotPulse 2.4s ease-in-out infinite}
+@keyframes hotPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+#chips button{transition:transform .18s,box-shadow .18s,background .18s,border-color .18s,color .18s}
+#chips button:hover{transform:translateY(-1px);border-color:var(--teal);color:var(--teal)}
+#chips button.on{transform:translateY(-1px);box-shadow:0 5px 14px rgba(13,92,77,.3)}
+.planded b{transition:color .2s}
+.pcard:hover .planded b{color:var(--teal-dark)}
+.wa-mini{transition:transform .2s,box-shadow .2s,background .2s}
+.wa-mini:hover{transform:translateY(-1px);box-shadow:0 7px 16px rgba(34,179,88,.35)}
+.page-hero{animation:heroIn .55s cubic-bezier(.22,.8,.3,1) both}
+@keyframes heroIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#toTop{position:fixed;bottom:24px;inset-inline-start:22px;z-index:55;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--teal);font-size:17px;cursor:pointer;box-shadow:0 8px 22px rgba(23,32,29,.12);opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.float-wa{animation:waPulse 2.8s ease-in-out infinite}
+@keyframes waPulse{0%,100%{box-shadow:0 8px 24px rgba(34,179,88,.45)}50%{box-shadow:0 10px 34px rgba(34,179,88,.75)}}
+.float-wa:hover{transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pcard:not(.in),.page-hero{opacity:1;transform:none}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About SourceToGulf","url":"https://sourcetogulf.com/about.html","description":"Our story: 14 years doing business in Dubai, now a registered sourcing company in Guangzhou serving the Gulf."}</script>
 </head>
 <body>
 <header>
+
   <div class="wrap nav">
     <a class="logo" href="/" dir="ltr">Source<b>ToGulf</b></a>
     <nav class="menu" aria-label="Primary">
@@ -306,67 +357,37 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@papaclaw.cn?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@papaclaw.cn?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
 </header>
-
 <section class="page-hero"><div class="wrap">
-<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <span data-en="About" data-ar="من نحن">About</span></div>
-<h1 data-en="Our Story: 14 Years in Dubai, Now Your Team in China" data-ar="قصتنا: ١٤ سنة في دبي، واليوم فريقك في الصين">Our Story: 14 Years in Dubai, Now Your Team in China</h1>
-<p class="sub" data-en="Why a Dubai brokerage founder moved to Guangzhou to build the sourcing partner the Gulf was missing." data-ar="لماذا انتقلت مؤسِّسة وساطة عقارية في دبي إلى قوانغتشو لتبني شريك التوريد الذي كان ينقص الخليج.">Why a Dubai brokerage founder moved to Guangzhou to build the sourcing partner the Gulf was missing.</p>
+<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <a href="/products.html" data-en="Hot Picks" data-ar="أبرز المنتجات">Hot Picks</a> ← <span>Home fragrance & diffusers</span></div>
+<h1>Home fragrance & diffusers</h1>
+<p class="sub">Flameless diffusers, reed sets, incense and car fragrances — the home-fragrance lines Gulf retailers and gift shops re-order every month. Landed prices to the UAE shown on every item.</p>
 </div></section>
-
 <section style="padding-top:0"><div class="wrap">
-  <div class="sec-head center">
-    <span class="kicker" data-en="Our story" data-ar="قصتنا">Our story</span>
-    <h2 data-en="14 Years in Dubai — Photos, Not Promises" data-ar="14 سنة في دبي — صور حقيقية، لا وعود">14 Years in Dubai — Photos, Not Promises</h2>
-    <p data-en="Before sourcing, our founder spent 14 years doing business in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, got interviewed by local media. We know the Gulf because we lived there. (Faces of our Emirati friends are blurred out of respect.)" data-ar="قبل التوريد، قضت مؤسِّستنا 14 سنة تتاجر في دبي — شاركت في تأسيس وساطة عقارية معتمدة من داماك، وحضرت منتديات دبي للاستثمار، وقابلتها وسائل إعلام محلية. نعرف الخليج لأننا عشنا فيه. (وجوه أصدقائنا الإماراتيين مموّهة احترامًا لهم.)">Before sourcing, our founder spent 14 years doing business in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, got interviewed by local media. We know the Gulf because we lived there. (Faces of our Emirati friends are blurred out of respect.)</p>
-  </div>
-  <div class="img-row" style="grid-template-columns:repeat(3,1fr);margin-top:1.2rem;"><figure style="margin:0;">
-  <img src="/images/dubai-damac-partner.jpg" alt="Founder awarded Certified Partner of DAMAC Properties, Dubai" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Awarded Certified Partner of DAMAC Properties — Dubai’s biggest private developer" data-ar="حصلنا على شهادة الشريك المعتمد من داماك العقارية — أكبر مطوّر خاص في دبي">Awarded Certified Partner of DAMAC Properties — Dubai’s biggest private developer</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-houseland-team.jpg" alt="Founder’s Dubai brokerage team on stage with Emirati business partners" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Our founder’s Dubai company and team, with Emirati business partners" data-ar="شركة مؤسِّستنا وفريقها في دبي، مع شركاء أعمال إماراتيين">Our founder’s Dubai company and team, with Emirati business partners</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-fdi-forum.jpg" alt="Dubai FDI Dubai Advantage investment forum 2019" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Dubai FDI “Dubai Advantage” investment forum, 2019" data-ar="منتدى دبي للاستثمار الأجنبي “مزايا دبي”، 2019">Dubai FDI “Dubai Advantage” investment forum, 2019</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-media-interview.jpg" alt="Founder interviewed by UAE media in Dubai" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Interviewed by UAE media in their Dubai studio" data-ar="مقابلة مع وسائل إعلام إماراتية في استوديوهاتهم بدبي">Interviewed by UAE media in their Dubai studio</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-authorities.jpg" alt="Founder with Dubai authorities, 14 years living in the UAE" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="14 years on the ground — we know how things work in Dubai" data-ar="14 سنة على الأرض — نعرف كيف تسير الأمور في دبي">14 years on the ground — we know how things work in Dubai</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/gd-ecommerce-seminar.jpg" alt="Guangdong provincial cross-border e-commerce seminar, April 2026" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Guangdong cross-border e-commerce seminar, April 2026 — still plugged into China’s trade scene" data-ar="ندوة قوانغدونغ للتجارة الإلكترونية عبر الحدود، أبريل 2026 — ما زلنا في قلب مشهد التجارة الصيني">Guangdong cross-border e-commerce seminar, April 2026 — still plugged into China’s trade scene</figcaption>
-</figure></div>
+<div class="pgrid">
+<div class="pcard"><span class="hot-badge">HOT</span><div class="imgbox"><img src="/images/products/reed-diffuser.jpg" alt="Reed diffuser set — flameless room fragrance" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Reed diffuser set — flameless room fragrance</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$5.37</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$2.24</span></div></div><div class="pmeta">MOQ 24 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Reed%20diffuser%20set%20%E2%80%94%20flameless%20room%20fragrance%20%28MOQ%2024%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/aroma-ornament.jpg" alt="Wood-tone flameless aroma ornament" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Wood-tone flameless aroma ornament</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$3.98</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$1.93</span></div></div><div class="pmeta">MOQ 48 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Wood-tone%20flameless%20aroma%20ornament%20%28MOQ%2048%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-01.jpg" alt="Gardenia flameless room fragrance" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Gardenia flameless room fragrance</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$2.83</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.78</span></div></div><div class="pmeta">MOQ 48 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Gardenia%20flameless%20room%20fragrance%20%28MOQ%2048%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-02.jpg" alt="Budget room fragrance set (LF558)" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Budget room fragrance set (LF558)</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$1.31</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.29</span></div></div><div class="pmeta">MOQ 100 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Budget%20room%20fragrance%20set%20%28LF558%29%20%28MOQ%20100%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-03.jpg" alt="Wardrobe scented sachets — anti-moth" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Wardrobe scented sachets — anti-moth</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$1.22</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.87</span></div></div><div class="pmeta">MOQ 200 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Wardrobe%20scented%20sachets%20%E2%80%94%20anti-moth%20%28MOQ%20200%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-04.jpg" alt="Car fragrance beads & hanging tablets" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Car fragrance beads & hanging tablets</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$2.51</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$1.68</span></div></div><div class="pmeta">MOQ 100 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Car%20fragrance%20beads%20%26%20hanging%20tablets%20%28MOQ%20100%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-05.jpg" alt="Room air-freshener diffuser oil" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Room air-freshener diffuser oil</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$4.11</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$1.75</span></div></div><div class="pmeta">MOQ 48 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Room%20air-freshener%20diffuser%20oil%20%28MOQ%2048%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-06.jpg" alt="AMBAR imported European reed diffuser" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>AMBAR imported European reed diffuser</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$16.97</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$10.71</span></div></div><div class="pmeta">MOQ 12 pcs &middot; ships in 7 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20AMBAR%20imported%20European%20reed%20diffuser%20%28MOQ%2012%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-07.jpg" alt="Indian sandalwood cone incense + burner" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Indian sandalwood cone incense + burner</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$3.82</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$2.10</span></div></div><div class="pmeta">MOQ 48 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Indian%20sandalwood%20cone%20incense%20%2B%20burner%20%28MOQ%2048%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-08.jpg" alt="Maike Coco soft home fragrance series" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Maike Coco soft home fragrance series</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$8.28</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$4.83</span></div></div><div class="pmeta">MOQ 24 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Maike%20Coco%20soft%20home%20fragrance%20series%20%28MOQ%2024%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><span class="hot-badge">HOT</span><div class="imgbox"><img src="/images/products/hf-09.jpg" alt="500ml China-chic reed diffuser (gift box)" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>500ml China-chic reed diffuser (gift box)</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$10.18</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$5.45</span></div></div><div class="pmeta">MOQ 24 pcs &middot; ships in 7 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20500ml%20China-chic%20reed%20diffuser%20%28gift%20box%29%20%28MOQ%2024%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-10.jpg" alt="Room air-freshener diffuser oil (supplier B)" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Room air-freshener diffuser oil (supplier B)</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$4.11</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$1.75</span></div></div><div class="pmeta">MOQ 48 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Room%20air-freshener%20diffuser%20oil%20%28supplier%20B%29%20%28MOQ%2048%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-11.jpg" alt="Living-room aroma bottle w/ rattan sticks" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Living-room aroma bottle w/ rattan sticks</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$4.71</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$2.03</span></div></div><div class="pmeta">MOQ 48 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Living-room%20aroma%20bottle%20w/%20rattan%20sticks%20%28MOQ%2048%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-12.jpg" alt="Flameless bedroom diffuser oil" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Flameless bedroom diffuser oil</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$3.25</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$1.23</span></div></div><div class="pmeta">MOQ 60 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Flameless%20bedroom%20diffuser%20oil%20%28MOQ%2060%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><span class="hot-badge">HOT</span><div class="imgbox"><img src="/images/products/hf-13.jpg" alt="Solid fragrance balm — car & home" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Solid fragrance balm — car & home</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$1.17</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.63</span></div></div><div class="pmeta">MOQ 200 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Solid%20fragrance%20balm%20%E2%80%94%20car%20%26%20home%20%28MOQ%20200%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-14.jpg" alt="Wardrobe scented wax tablets (gift box)" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Wardrobe scented wax tablets (gift box)</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$9.39</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$6.57</span></div></div><div class="pmeta">MOQ 24 pcs &middot; ships in 7 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Wardrobe%20scented%20wax%20tablets%20%28gift%20box%29%20%28MOQ%2024%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-15.jpg" alt="Car air freshener — flameless oil" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Car air freshener — flameless oil</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$2.00</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.98</span></div></div><div class="pmeta">MOQ 100 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Car%20air%20freshener%20%E2%80%94%20flameless%20oil%20%28MOQ%20100%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-16.jpg" alt="Tea-scent flameless fragrance liquid" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Tea-scent flameless fragrance liquid</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$2.50</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.84</span></div></div><div class="pmeta">MOQ 100 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Tea-scent%20flameless%20fragrance%20liquid%20%28MOQ%20100%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><div class="imgbox"><img src="/images/products/hf-17.jpg" alt="Dried-flower reed diffuser set" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Dried-flower reed diffuser set</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$5.02</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$1.89</span></div></div><div class="pmeta">MOQ 24 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Dried-flower%20reed%20diffuser%20set%20%28MOQ%2024%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div><div class="pcard"><span class="hot-badge">HOT</span><div class="imgbox"><img src="/images/products/hf-18.jpg" alt="Mini incense sticks box — long-lasting" loading="lazy" onerror="this.parentElement.classList.add('bad')"></div><div class="pbody"><h3>Mini incense sticks box — long-lasting</h3><div class="price-row"><div class="planded"><small>Landed to UAE</small><b>$0.58</b> <i>/pc at MOQ</i></div><div class="pfob"><small>Factory price</small><span>$0.24</span></div></div><div class="pmeta">MOQ 300 pcs &middot; ships in 5 days</div><a class="wa-mini" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20am%20interested%20in%3A%20Mini%20incense%20sticks%20box%20%E2%80%94%20long-lasting%20%28MOQ%20300%20pcs%29.%20Please%20confirm%20price%20and%20availability." target="_blank" rel="noopener">💬 Ask about this</a></div></div>
+</div>
+<p class="updated-note"><span>Updated 2026-08 &middot; new picks every month</span></p>
+<div class="strip" style="margin-top:34px">
+  <div><b>How we price</b><span>Factory price + Cainiao Middle East line freight at MOQ weight. Reference price, not a binding quote.</span></div>
+  <div><b>Duties &amp; VAT</b><span>Not included — depends on your country &amp; declared value. Use our calculator for full landed cost.</span></div>
+  <div><b>QC on every order</b><span>Photo/video check before anything ships. You approve, then we send.</span></div>
+</div>
 </div></section>
-
 <section style="padding-top:0"><div class="wrap">
-  <div class="sec-head center">
-    <span class="kicker" data-en="Today" data-ar="اليوم">Today</span>
-    <h2 data-en="Where We Are Now: Guangzhou, China" data-ar="أين نحن الآن: قوانغتشو، الصين">Where We Are Now: Guangzhou, China</h2>
-    <p data-en="The Dubai years taught us how Gulf buyers think. Today we put that to work from the other side of the trade — inside China's manufacturing hubs." data-ar="سنوات دبي علّمتنا كيف يفكر المشترون في الخليج. اليوم نضع ذلك في العمل من الجهة الأخرى للتجارة — داخل مراكز التصنيع في الصين.">The Dubai years taught us how Gulf buyers think. Today we put that to work from the other side of the trade — inside China's manufacturing hubs.</p>
-  </div>
-  <div class="grid3">
-    <div class="card"><span class="em">🏢</span><h3 data-en="A Registered Company, Not an Inbox" data-ar="شركة مسجلة، لا صندوق بريد">A Registered Company, Not an Inbox</h3><p data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), registered in Guangzhou. Every order gets a stamped proforma invoice — a real paper trail." data-ar="شركة بابا كلو للتسويق والتقنية المحدودة، مسجلة في قوانغتشو. كل طلب يحصل على فاتورة أولية مختومة — سجل رسمي حقيقي.">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), registered in Guangzhou. Every order gets a stamped proforma invoice — a real paper trail.</p></div>
-    <div class="card"><span class="em">👥</span><h3 data-en="A Real Team of Four" data-ar="فريق حقيقي من أربعة">A Real Team of Four</h3><p data-en="Sourcing, quality inspection, branding and shipping handled in-house by people you can video-call — not outsourced to strangers." data-ar="التوريد وفحص الجودة والتغليف والشحن يتولاها فريقنا داخلياً — أشخاص يمكنك مكالمتهم بالفيديو، لا مُقاولون مجهولون.">Sourcing, quality inspection, branding and shipping handled in-house by people you can video-call — not outsourced to strangers.</p></div>
-    <div class="card"><span class="em">🧭</span><h3 data-en="Three Sourcing Markets" data-ar="ثلاثة أسواق توريد">Three Sourcing Markets</h3><p data-en="Guangzhou · Yiwu · Foshan — wholesale prices, not tourist prices, across every category Gulf sellers actually buy." data-ar="قوانغتشو · ييوو · فوشان — أسعار جملة حقيقية، لا أسعار سياحية، في كل الفئات التي يشتريها بائعو الخليج فعلاً.">Guangzhou · Yiwu · Foshan — wholesale prices, not tourist prices, across every category Gulf sellers actually buy.</p></div>
-  </div>
-  <div style="margin-top:24px;max-width:38rem;margin-inline:auto"><figure style="margin:0;">
-  <img src="/images/team.jpg" alt="SourceToGulf office in Guangzhou, China sourcing team workspace" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Our Guangzhou office — a real team of four, not a one-man inbox" data-ar="مكتبنا في قوانغتشو — فريق حقيقي من أربعة، ليس صندوق بريد لشخص واحد">Our Guangzhou office — a real team of four, not a one-man inbox</figcaption>
-</figure></div>
+<h2 style="margin-bottom:18px">Browse other categories</h2>
+<div class="rel-grid"><a class="rel-card" href="/category-seasonal.html"><span>Ramadan & Eid seasonal</span><span>20 items · landed prices</span></a><a class="rel-card" href="/category-fashion.html"><span>Hijab accessories & jewelry</span><span>20 items · landed prices</span></a><a class="rel-card" href="/category-tech.html"><span>Phone & car accessories</span><span>20 items · landed prices</span></a><a class="rel-card" href="/category-home.html"><span>Home & kitchen</span><span>20 items · landed prices</span></a><a class="rel-card" href="/category-beauty-toys.html"><span>Beauty tools</span><span>20 items · landed prices</span></a></div>
 </div></section>
-
 <section style="padding-top:0"><div class="wrap">
-  <div class="final">
-    <h2 data-en="We know the Gulf because we lived there. We know China because we work here." data-ar="نعرف الخليج لأننا عشنا فيه. ونعرف الصين لأننا نعمل هنا.">We know the Gulf because we lived there. We know China because we work here.</h2>
-    <p data-en="WhatsApp us a photo of what you want to sell." data-ar="أرسل لنا على واتساب صورة المنتج اللي تبي تبيعه.">WhatsApp us a photo of what you want to sell.</p>
-    <a class="wa-btn" href="https://wa.me/971585146139" target="_blank" rel="noopener" data-en="💬 WhatsApp: +971 58 514 6139" data-ar="💬 واتساب: +971 58 514 6139">💬 WhatsApp: +971 58 514 6139</a>
+  <div class="cta-box">
+    <h2>Want a custom Home fragrance & diffusers list?</h2>
+    <p>WhatsApp us a photo or link — we source it, quote the landed price, and QC before shipping.</p>
+    <a class="wa-btn" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20want%20a%20quote%20for%20your%20Home%20fragrance%20%26%20diffusers%20collection%20%28landed%20price%20to%20the%20Gulf%29." target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>
   </div>
 </div></section>
-
 <footer>
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -400,22 +421,382 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@papaclaw.cn · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@papaclaw.cn · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@papaclaw.cn · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
 </footer>
 <a class="float-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-<script>let lang = localStorage.getItem('stg-lang') || (navigator.language||'').startsWith('ar') ? (localStorage.getItem('stg-lang')||'ar') : 'en';
-lang = localStorage.getItem('stg-lang') || lang;
+<button id="toTop" aria-label="Back to top">↑</button>
+<script>
+var lang = localStorage.getItem('stg-lang') || ((navigator.language||'').indexOf('ar')===0 ? 'ar':'en');
 function applyLang(){
   document.documentElement.lang = lang;
-  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-  document.querySelectorAll('.lang-btn').forEach(b => b.textContent = (lang === 'ar') ? 'English' : 'العربية');
-  document.querySelectorAll('[data-en]').forEach(el => {
-    const v = el.getAttribute('data-' + lang);
-    if(v !== null) el.innerHTML = v;
+  document.documentElement.dir = (lang==='ar') ? 'rtl' : 'ltr';
+  document.querySelectorAll('.lang-btn').forEach(function(b){ b.textContent = (lang==='ar') ? 'English' : 'العربية'; });
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang);
+    if(v!==null) el.innerHTML = v;
   });
 }
-function toggleLang(){ lang = (lang === 'en') ? 'ar' : 'en'; localStorage.setItem('stg-lang', lang); applyLang(); }
-function toggleMenu(){ document.getElementById('mpanel').classList.toggle('open'); }
-document.addEventListener('DOMContentLoaded', applyLang);
+function toggleLang(){ lang = (lang==='en')?'ar':'en'; localStorage.setItem('stg-lang',lang); applyLang(); }
+function toggleMenu(){ var m=document.getElementById('mpanel'); if(m) m.classList.toggle('open'); }
+document.addEventListener('DOMContentLoaded', function(){
+  applyLang();
+  var toTop = document.getElementById('toTop');
+  if(toTop){
+    window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 700); }, {passive:true});
+    toTop.onclick = function(){ window.scrollTo({top:0, behavior:'smooth'}); };
+  }
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Home fragrance & diffusers \u2014 SourceToGulf",
+  "url": "https://sourcetogulf.com/category-home-fragrance.html",
+  "numberOfItems": 20,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Reed diffuser set \u2014 flameless room fragrance",
+        "image": "https://sourcetogulf.com/images/products/reed-diffuser.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 5.37,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 24
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Wood-tone flameless aroma ornament",
+        "image": "https://sourcetogulf.com/images/products/aroma-ornament.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 3.98,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 48
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Gardenia flameless room fragrance",
+        "image": "https://sourcetogulf.com/images/products/hf-01.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 2.83,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 48
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Budget room fragrance set (LF558)",
+        "image": "https://sourcetogulf.com/images/products/hf-02.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 1.31,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 100
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Wardrobe scented sachets \u2014 anti-moth",
+        "image": "https://sourcetogulf.com/images/products/hf-03.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 1.22,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 200
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Product",
+        "name": "Car fragrance beads & hanging tablets",
+        "image": "https://sourcetogulf.com/images/products/hf-04.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 2.51,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 100
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Product",
+        "name": "Room air-freshener diffuser oil",
+        "image": "https://sourcetogulf.com/images/products/hf-05.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 4.11,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 48
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Product",
+        "name": "AMBAR imported European reed diffuser",
+        "image": "https://sourcetogulf.com/images/products/hf-06.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 16.97,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 12
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Product",
+        "name": "Indian sandalwood cone incense + burner",
+        "image": "https://sourcetogulf.com/images/products/hf-07.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 3.82,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 48
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Product",
+        "name": "Maike Coco soft home fragrance series",
+        "image": "https://sourcetogulf.com/images/products/hf-08.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 8.28,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 24
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Product",
+        "name": "500ml China-chic reed diffuser (gift box)",
+        "image": "https://sourcetogulf.com/images/products/hf-09.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 10.18,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 24
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Product",
+        "name": "Room air-freshener diffuser oil (supplier B)",
+        "image": "https://sourcetogulf.com/images/products/hf-10.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 4.11,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 48
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "Product",
+        "name": "Living-room aroma bottle w/ rattan sticks",
+        "image": "https://sourcetogulf.com/images/products/hf-11.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 4.71,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 48
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "Product",
+        "name": "Flameless bedroom diffuser oil",
+        "image": "https://sourcetogulf.com/images/products/hf-12.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 3.25,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 60
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "Product",
+        "name": "Solid fragrance balm \u2014 car & home",
+        "image": "https://sourcetogulf.com/images/products/hf-13.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 1.17,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 200
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "Product",
+        "name": "Wardrobe scented wax tablets (gift box)",
+        "image": "https://sourcetogulf.com/images/products/hf-14.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 9.39,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 24
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "Product",
+        "name": "Car air freshener \u2014 flameless oil",
+        "image": "https://sourcetogulf.com/images/products/hf-15.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 2.00,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 100
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "Product",
+        "name": "Tea-scent flameless fragrance liquid",
+        "image": "https://sourcetogulf.com/images/products/hf-16.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 2.50,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 100
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "Product",
+        "name": "Dried-flower reed diffuser set",
+        "image": "https://sourcetogulf.com/images/products/hf-17.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 5.02,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 24
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "Product",
+        "name": "Mini incense sticks box \u2014 long-lasting",
+        "image": "https://sourcetogulf.com/images/products/hf-18.jpg",
+        "category": "Home fragrance & diffusers",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": 0.58,
+          "availability": "https://schema.org/InStock",
+          "minOrderQuantity": 300
+        }
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>

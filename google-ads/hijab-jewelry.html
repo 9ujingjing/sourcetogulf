@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About SourceToGulf | Our Story: 14 Years in Dubai, Now Your Team in China</title>
-<meta name="description" content="Our story: 14 years doing business in Dubai — DAMAC-certified brokerage, FDI forums, UAE media — now a registered sourcing company in Guangzhou serving the Gulf." />
-<meta name="keywords" content="about SourceToGulf, our story, China sourcing agent Guangzhou, Dubai business background, من نحن" />
-<link rel="canonical" href="https://sourcetogulf.com/about.html" />
-  <link rel="alternate" hreflang="en" href="https://sourcetogulf.com/about.html" />
-  <link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/about.html" />
+<title>Hijab & Jewelry Wholesale to UAE | SourceToGulf Landed Prices</title>
+<meta name="description" content="Wholesale hijab accessories and fashion jewelry from China to the UAE with landed prices, small MOQ and QC before shipping. Get a free quote on WhatsApp." />
+<link rel="canonical" href="https://sourcetogulf.com/google-ads/hijab-jewelry.html" />
+<link rel="alternate" hreflang="en" href="https://sourcetogulf.com/google-ads/hijab-jewelry.html" />
+<link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/google-ads/hijab-jewelry.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--teal:#0D5C4D;--teal-dark:#09332B;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247}
@@ -184,11 +183,64 @@ tr:nth-child(even) td{background:var(--soft)}
 .mobile-panel .mp-group{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:16px 4px 4px}
 @media(max-width:1100px){.menu>a,.drop>button{padding:8px 10px;font-size:13.5px}}
 @media(max-width:1024px){.nav-right .quote-btn{display:none}}
+/* ===== products page ===== */
+#chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0 26px}
+#chips button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;color:var(--ink)}
+#chips button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.pcard img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+.pbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pbody h3{font-size:15px;font-weight:700;line-height:1.4}
+.price-row{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;border-top:1px dashed var(--line);padding-top:10px}
+.planded small,.pfob small{display:block;font-size:11px;color:var(--muted);letter-spacing:.02em}
+.planded b{font-size:20px;color:var(--teal);font-weight:800;line-height:1.2}
+.planded i{font-style:normal;font-size:11px;color:var(--muted)}
+.pfob{text-align:right}
+.pfob span{font-size:15px;font-weight:700;color:var(--ink)}
+.pmeta{font-size:12.5px;color:var(--muted)}
+.wa-mini{margin-top:auto;align-self:flex-start;text-decoration:none;background:var(--wa);color:#fff;padding:7px 13px;border-radius:9px;font-size:12.5px;font-weight:600}
+.wa-mini:hover{background:var(--wa-dark)}
+.hot-badge{position:absolute;top:10px;inset-inline-start:10px;background:var(--gold);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.06em;padding:3px 9px;border-radius:999px}
+.updated-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px}
+/* ===== products page — motion & polish ===== */
+.pcard{transition:transform .3s cubic-bezier(.22,.8,.3,1),box-shadow .3s,border-color .3s,opacity .45s ease}
+.pcard:not(.in){opacity:0;transform:translateY(18px)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(23,32,29,.13);border-color:#C9D8D2}
+.pcard .imgbox{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(100deg,#F3EFE7 30%,#FAF7F0 50%,#F3EFE7 70%);background-size:200% 100%;animation:shimmer 1.5s linear 2}
+.pcard .imgbox img{transition:transform .55s cubic-bezier(.22,.8,.3,1);will-change:transform}
+.pcard:hover .imgbox img{transform:scale(1.07)}
+.imgbox.bad img{display:none}
+.imgbox.bad::after{content:"No photo yet";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9A8F76;font-size:13px;text-align:center}
+@keyframes shimmer{to{background-position:-200% 0}}
+.pcard .pbody h3{transition:color .2s}
+.pcard:hover .pbody h3{color:var(--teal)}
+.hot-badge{animation:hotPulse 2.4s ease-in-out infinite}
+@keyframes hotPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+#chips button{transition:transform .18s,box-shadow .18s,background .18s,border-color .18s,color .18s}
+#chips button:hover{transform:translateY(-1px);border-color:var(--teal);color:var(--teal)}
+#chips button.on{transform:translateY(-1px);box-shadow:0 5px 14px rgba(13,92,77,.3)}
+.planded b{transition:color .2s}
+.pcard:hover .planded b{color:var(--teal-dark)}
+.wa-mini{transition:transform .2s,box-shadow .2s,background .2s}
+.wa-mini:hover{transform:translateY(-1px);box-shadow:0 7px 16px rgba(34,179,88,.35)}
+.page-hero{animation:heroIn .55s cubic-bezier(.22,.8,.3,1) both}
+@keyframes heroIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#toTop{position:fixed;bottom:24px;inset-inline-start:22px;z-index:55;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--teal);font-size:17px;cursor:pointer;box-shadow:0 8px 22px rgba(23,32,29,.12);opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.float-wa{animation:waPulse 2.8s ease-in-out infinite}
+@keyframes waPulse{0%,100%{box-shadow:0 8px 24px rgba(34,179,88,.45)}50%{box-shadow:0 10px 34px rgba(34,179,88,.75)}}
+.float-wa:hover{transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pcard:not(.in),.page-hero{opacity:1;transform:none}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About SourceToGulf","url":"https://sourcetogulf.com/about.html","description":"Our story: 14 years doing business in Dubai, now a registered sourcing company in Guangzhou serving the Gulf."}</script>
+<meta name="robots" content="index,follow">
 </head>
 <body>
 <header>
+
   <div class="wrap nav">
     <a class="logo" href="/" dir="ltr">Source<b>ToGulf</b></a>
     <nav class="menu" aria-label="Primary">
@@ -306,67 +358,29 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@papaclaw.cn?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@papaclaw.cn?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
 </header>
-
 <section class="page-hero"><div class="wrap">
-<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <span data-en="About" data-ar="من نحن">About</span></div>
-<h1 data-en="Our Story: 14 Years in Dubai, Now Your Team in China" data-ar="قصتنا: ١٤ سنة في دبي، واليوم فريقك في الصين">Our Story: 14 Years in Dubai, Now Your Team in China</h1>
-<p class="sub" data-en="Why a Dubai brokerage founder moved to Guangzhou to build the sourcing partner the Gulf was missing." data-ar="لماذا انتقلت مؤسِّسة وساطة عقارية في دبي إلى قوانغتشو لتبني شريك التوريد الذي كان ينقص الخليج.">Why a Dubai brokerage founder moved to Guangzhou to build the sourcing partner the Gulf was missing.</p>
+<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <span>Wholesale</span></div>
+<h1>Hijab & Jewelry Wholesale — Landed Price to the UAE</h1>
+<p class="sub">Modest-fashion pins, gold-plated rings, earrings and accessories sourced from Guangzhou & Yiwu. Factory price + freight calculated to Dubai, no quoting ping-pong.</p>
+<div class="hero-cta">
+  <a class="wa-btn" style="background:var(--teal);color:#fff" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20saw%20your%20hijab%20%26%20jewelry%20wholesale%20ad.%20Please%20send%20landed%20prices%20to%20UAE." target="_blank" rel="noopener">💬 Get a free quote on WhatsApp</a>
+  <a class="btn-ghost" href="/category-fashion.html">Browse the collection →</a>
+</div>
 </div></section>
-
 <section style="padding-top:0"><div class="wrap">
-  <div class="sec-head center">
-    <span class="kicker" data-en="Our story" data-ar="قصتنا">Our story</span>
-    <h2 data-en="14 Years in Dubai — Photos, Not Promises" data-ar="14 سنة في دبي — صور حقيقية، لا وعود">14 Years in Dubai — Photos, Not Promises</h2>
-    <p data-en="Before sourcing, our founder spent 14 years doing business in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, got interviewed by local media. We know the Gulf because we lived there. (Faces of our Emirati friends are blurred out of respect.)" data-ar="قبل التوريد، قضت مؤسِّستنا 14 سنة تتاجر في دبي — شاركت في تأسيس وساطة عقارية معتمدة من داماك، وحضرت منتديات دبي للاستثمار، وقابلتها وسائل إعلام محلية. نعرف الخليج لأننا عشنا فيه. (وجوه أصدقائنا الإماراتيين مموّهة احترامًا لهم.)">Before sourcing, our founder spent 14 years doing business in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, got interviewed by local media. We know the Gulf because we lived there. (Faces of our Emirati friends are blurred out of respect.)</p>
-  </div>
-  <div class="img-row" style="grid-template-columns:repeat(3,1fr);margin-top:1.2rem;"><figure style="margin:0;">
-  <img src="/images/dubai-damac-partner.jpg" alt="Founder awarded Certified Partner of DAMAC Properties, Dubai" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Awarded Certified Partner of DAMAC Properties — Dubai’s biggest private developer" data-ar="حصلنا على شهادة الشريك المعتمد من داماك العقارية — أكبر مطوّر خاص في دبي">Awarded Certified Partner of DAMAC Properties — Dubai’s biggest private developer</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-houseland-team.jpg" alt="Founder’s Dubai brokerage team on stage with Emirati business partners" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Our founder’s Dubai company and team, with Emirati business partners" data-ar="شركة مؤسِّستنا وفريقها في دبي، مع شركاء أعمال إماراتيين">Our founder’s Dubai company and team, with Emirati business partners</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-fdi-forum.jpg" alt="Dubai FDI Dubai Advantage investment forum 2019" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Dubai FDI “Dubai Advantage” investment forum, 2019" data-ar="منتدى دبي للاستثمار الأجنبي “مزايا دبي”، 2019">Dubai FDI “Dubai Advantage” investment forum, 2019</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-media-interview.jpg" alt="Founder interviewed by UAE media in Dubai" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Interviewed by UAE media in their Dubai studio" data-ar="مقابلة مع وسائل إعلام إماراتية في استوديوهاتهم بدبي">Interviewed by UAE media in their Dubai studio</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/dubai-authorities.jpg" alt="Founder with Dubai authorities, 14 years living in the UAE" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="14 years on the ground — we know how things work in Dubai" data-ar="14 سنة على الأرض — نعرف كيف تسير الأمور في دبي">14 years on the ground — we know how things work in Dubai</figcaption>
-</figure><figure style="margin:0;">
-  <img src="/images/gd-ecommerce-seminar.jpg" alt="Guangdong provincial cross-border e-commerce seminar, April 2026" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Guangdong cross-border e-commerce seminar, April 2026 — still plugged into China’s trade scene" data-ar="ندوة قوانغدونغ للتجارة الإلكترونية عبر الحدود، أبريل 2026 — ما زلنا في قلب مشهد التجارة الصيني">Guangdong cross-border e-commerce seminar, April 2026 — still plugged into China’s trade scene</figcaption>
-</figure></div>
+<div class="grid2"><div class="card" style="text-decoration:none"><div class="em">✓</div><h3>Small MOQ</h3><p>Test new styles with low minimums — perfect for Instagram & TikTok sellers.</p></div><div class="card" style="text-decoration:none"><div class="em">✓</div><h3>Landed price</h3><p>Every quote includes freight to the UAE. You see the real cost before deposit.</p></div><div class="card" style="text-decoration:none"><div class="em">✓</div><h3>QC before shipping</h3><p>Photo/video check of actual goods. You approve, then we send.</p></div><div class="card" style="text-decoration:none"><div class="em">✓</div><h3>Door to door</h3><p>Consolidated in Guangzhou, shipped to your door in Dubai / Abu Dhabi.</p></div></div>
 </div></section>
-
 <section style="padding-top:0"><div class="wrap">
-  <div class="sec-head center">
-    <span class="kicker" data-en="Today" data-ar="اليوم">Today</span>
-    <h2 data-en="Where We Are Now: Guangzhou, China" data-ar="أين نحن الآن: قوانغتشو، الصين">Where We Are Now: Guangzhou, China</h2>
-    <p data-en="The Dubai years taught us how Gulf buyers think. Today we put that to work from the other side of the trade — inside China's manufacturing hubs." data-ar="سنوات دبي علّمتنا كيف يفكر المشترون في الخليج. اليوم نضع ذلك في العمل من الجهة الأخرى للتجارة — داخل مراكز التصنيع في الصين.">The Dubai years taught us how Gulf buyers think. Today we put that to work from the other side of the trade — inside China's manufacturing hubs.</p>
-  </div>
-  <div class="grid3">
-    <div class="card"><span class="em">🏢</span><h3 data-en="A Registered Company, Not an Inbox" data-ar="شركة مسجلة، لا صندوق بريد">A Registered Company, Not an Inbox</h3><p data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), registered in Guangzhou. Every order gets a stamped proforma invoice — a real paper trail." data-ar="شركة بابا كلو للتسويق والتقنية المحدودة، مسجلة في قوانغتشو. كل طلب يحصل على فاتورة أولية مختومة — سجل رسمي حقيقي.">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), registered in Guangzhou. Every order gets a stamped proforma invoice — a real paper trail.</p></div>
-    <div class="card"><span class="em">👥</span><h3 data-en="A Real Team of Four" data-ar="فريق حقيقي من أربعة">A Real Team of Four</h3><p data-en="Sourcing, quality inspection, branding and shipping handled in-house by people you can video-call — not outsourced to strangers." data-ar="التوريد وفحص الجودة والتغليف والشحن يتولاها فريقنا داخلياً — أشخاص يمكنك مكالمتهم بالفيديو، لا مُقاولون مجهولون.">Sourcing, quality inspection, branding and shipping handled in-house by people you can video-call — not outsourced to strangers.</p></div>
-    <div class="card"><span class="em">🧭</span><h3 data-en="Three Sourcing Markets" data-ar="ثلاثة أسواق توريد">Three Sourcing Markets</h3><p data-en="Guangzhou · Yiwu · Foshan — wholesale prices, not tourist prices, across every category Gulf sellers actually buy." data-ar="قوانغتشو · ييوو · فوشان — أسعار جملة حقيقية، لا أسعار سياحية، في كل الفئات التي يشتريها بائعو الخليج فعلاً.">Guangzhou · Yiwu · Foshan — wholesale prices, not tourist prices, across every category Gulf sellers actually buy.</p></div>
-  </div>
-  <div style="margin-top:24px;max-width:38rem;margin-inline:auto"><figure style="margin:0;">
-  <img src="/images/team.jpg" alt="SourceToGulf office in Guangzhou, China sourcing team workspace" loading="lazy" style="width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:1px solid #E7E1D4;">
-  <figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem;" data-en="Our Guangzhou office — a real team of four, not a one-man inbox" data-ar="مكتبنا في قوانغتشو — فريق حقيقي من أربعة، ليس صندوق بريد لشخص واحد">Our Guangzhou office — a real team of four, not a one-man inbox</figcaption>
-</figure></div>
-</div></section>
-
-<section style="padding-top:0"><div class="wrap">
-  <div class="final">
-    <h2 data-en="We know the Gulf because we lived there. We know China because we work here." data-ar="نعرف الخليج لأننا عشنا فيه. ونعرف الصين لأننا نعمل هنا.">We know the Gulf because we lived there. We know China because we work here.</h2>
-    <p data-en="WhatsApp us a photo of what you want to sell." data-ar="أرسل لنا على واتساب صورة المنتج اللي تبي تبيعه.">WhatsApp us a photo of what you want to sell.</p>
-    <a class="wa-btn" href="https://wa.me/971585146139" target="_blank" rel="noopener" data-en="💬 WhatsApp: +971 58 514 6139" data-ar="💬 واتساب: +971 58 514 6139">💬 WhatsApp: +971 58 514 6139</a>
+  <div class="cta-box">
+    <h2>Ready to order?</h2>
+    <p>WhatsApp us your target products or a photo. We quote the landed price and QC before shipping.</p>
+    <a class="wa-btn" style="background:var(--gold);color:#17201C" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20saw%20your%20hijab%20%26%20jewelry%20wholesale%20ad.%20Please%20send%20landed%20prices%20to%20UAE." target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>
   </div>
 </div></section>
-
 <footer>
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -400,22 +414,32 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@papaclaw.cn · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@papaclaw.cn · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@papaclaw.cn · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
 </footer>
 <a class="float-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-<script>let lang = localStorage.getItem('stg-lang') || (navigator.language||'').startsWith('ar') ? (localStorage.getItem('stg-lang')||'ar') : 'en';
-lang = localStorage.getItem('stg-lang') || lang;
+<button id="toTop" aria-label="Back to top">↑</button>
+<script>
+var lang = localStorage.getItem('stg-lang') || ((navigator.language||'').indexOf('ar')===0 ? 'ar':'en');
 function applyLang(){
   document.documentElement.lang = lang;
-  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-  document.querySelectorAll('.lang-btn').forEach(b => b.textContent = (lang === 'ar') ? 'English' : 'العربية');
-  document.querySelectorAll('[data-en]').forEach(el => {
-    const v = el.getAttribute('data-' + lang);
-    if(v !== null) el.innerHTML = v;
+  document.documentElement.dir = (lang==='ar') ? 'rtl' : 'ltr';
+  document.querySelectorAll('.lang-btn').forEach(function(b){ b.textContent = (lang==='ar') ? 'English' : 'العربية'; });
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang);
+    if(v!==null) el.innerHTML = v;
   });
 }
-function toggleLang(){ lang = (lang === 'en') ? 'ar' : 'en'; localStorage.setItem('stg-lang', lang); applyLang(); }
-function toggleMenu(){ document.getElementById('mpanel').classList.toggle('open'); }
-document.addEventListener('DOMContentLoaded', applyLang);
+function toggleLang(){ lang = (lang==='en')?'ar':'en'; localStorage.setItem('stg-lang',lang); applyLang(); }
+function toggleMenu(){ var m=document.getElementById('mpanel'); if(m) m.classList.toggle('open'); }
+document.addEventListener('DOMContentLoaded', function(){
+  applyLang();
+  var toTop = document.getElementById('toTop');
+  if(toTop){
+    window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 700); }, {passive:true});
+    toTop.onclick = function(){ window.scrollTo({top:0, behavior:'smooth'}); };
+  }
+});
 </script>
+
 </body>
 </html>

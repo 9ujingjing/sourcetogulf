@@ -32,3 +32,17 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Bahrain import guide (BSMD conformity, 10% VAT, 5% duty, Khalifa Bin Salman Port, easiest test market): https://sourcetogulf.com/blog/how-to-import-from-china-to-bahrain.html
 - Oman import guide (DGSM conformity, 5% VAT, 5% duty, Sohar Port, Vision 2040 growth market): https://sourcetogulf.com/blog/how-to-import-from-china-to-oman.html
 - Blog: https://sourcetogulf.com/blog/
+- Shop by category hub: https://sourcetogulf.com/categories.html
+- Category — Home fragrance & diffusers: https://sourcetogulf.com/category-home-fragrance.html
+- Category — Ramadan & Eid seasonal: https://sourcetogulf.com/category-seasonal.html
+- Category — Hijab accessories & jewelry: https://sourcetogulf.com/category-fashion.html
+- Category — Phone & car accessories: https://sourcetogulf.com/category-tech.html
+- Category — Home & kitchen: https://sourcetogulf.com/category-home.html
+- Category — Beauty tools: https://sourcetogulf.com/category-beauty-toys.html
+- Solutions by buyer type (influencers, wholesalers, retailers, brands): https://sourcetogulf.com/solutions.html
+- GCC import answers (FAQ on duties, VAT, SABER, MOQ, shipping): https://sourcetogulf.com/gcc-import-answers.html
+- RSS feed: https://sourcetogulf.com/feed.xml
+- Google Ads landing — Hijab & jewelry: https://sourcetogulf.com/google-ads/hijab-jewelry.html
+- Google Ads landing — Ramadan & Eid: https://sourcetogulf.com/google-ads/ramadan.html
+- Google Ads landing — Phone & car accessories: https://sourcetogulf.com/google-ads/phone-accessories.html
+- Full AI context (llms-full.txt): https://sourcetogulf.com/llms-full.txt
