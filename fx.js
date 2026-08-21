@@ -117,6 +117,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    if (!priceEls().length) return; // only price pages need the FX call
     injectUI();
     loadRates(convert);
   });

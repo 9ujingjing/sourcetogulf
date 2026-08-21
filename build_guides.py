@@ -65,7 +65,7 @@ def uae_body():
     <p class="lead">Importing from China to the UAE means paying a <b>5%% customs duty on the CIF value</b> plus <b>5%% VAT</b> on most goods — but goods landed in a free zone for re-export avoid duty entirely. A China sourcing agent cuts your landed cost and handles quality checks, consolidation and customs clearance end to end.</p>
     <div class="cta-row">
       <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a UAE import quote on WhatsApp</a>
-      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+      <a class="btn-ghost" href="/#calculator">Estimate landed cost →</a>
     </div>
   </div>
 </section>
@@ -193,7 +193,7 @@ def ksa_body():
     <p class="lead">Importing from China to Saudi Arabia means a <b>5%% customs duty on the CIF value</b> plus a <b>15%% VAT</b> on most goods — and, unlike the UAE, Saudi requires <b>SABER conformity certificates (PCoC + SCoC)</b> before goods can clear. A China sourcing agent handles pricing, consolidation and the SABER paperwork end to end.</p>
     <div class="cta-row">
       <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a Saudi import quote on WhatsApp</a>
-      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+      <a class="btn-ghost" href="/#calculator">Estimate landed cost →</a>
     </div>
   </div>
 </section>
@@ -327,7 +327,7 @@ def qatar_body():
     <p class="lead">Importing from China to Qatar means a <b>5%% customs duty on the CIF value</b> for most goods — as of 2026 Qatar has not introduced a standard VAT, so the 5%% duty is usually the main border cost. A China sourcing agent handles pricing, consolidation and clearance into Hamad Port.</p>
     <div class="cta-row">
       <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a Qatar import quote on WhatsApp</a>
-      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+      <a class="btn-ghost" href="/#calculator">Estimate landed cost →</a>
     </div>
   </div>
 </section>
@@ -454,7 +454,7 @@ def kuwait_body():
     <p class="lead">Importing from China to Kuwait means a <b>5%% customs duty on the CIF value</b> — and, unlike the UAE or Saudi, Kuwait has <b>no VAT</b>, so the 5%% duty is the only border tax. The main compliance step is KUCAS conformity for regulated goods. A China sourcing agent handles pricing, consolidation and KUCAS paperwork end to end.</p>
     <div class="cta-row">
       <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a Kuwait import quote on WhatsApp</a>
-      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+      <a class="btn-ghost" href="/#calculator">Estimate landed cost →</a>
     </div>
   </div>
 </section>
@@ -589,7 +589,7 @@ def bahrain_body():
     <p class="lead">Importing from China to Bahrain means a <b>5%% customs duty on the CIF value</b> plus a <b>10%% VAT</b> — Bahrain's VAT is 10%% (raised from 5%%), the highest in the GCC after Saudi. But there is <b>no SABER-style conformity</b>, so clearance is lighter than Saudi. A China sourcing agent handles pricing, consolidation and OFOQ clearance end to end.</p>
     <div class="cta-row">
       <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a Bahrain import quote on WhatsApp</a>
-      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+      <a class="btn-ghost" href="/#calculator">Estimate landed cost →</a>
     </div>
   </div>
 </section>
@@ -720,7 +720,7 @@ def oman_body():
     <p class="lead">Importing from China to Oman means a <b>5%% customs duty on the CIF value</b> plus a <b>5%% VAT</b> (since April 2021) — about <b>10.25%% combined</b>. Oman uses the <b>Bayan</b> single window and a shorter conformity list than Saudi SABER. A China sourcing agent handles pricing, consolidation and Bayan clearance into Sohar.</p>
     <div class="cta-row">
       <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get an Oman import quote on WhatsApp</a>
-      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+      <a class="btn-ghost" href="/#calculator">Estimate landed cost →</a>
     </div>
   </div>
 </section>
