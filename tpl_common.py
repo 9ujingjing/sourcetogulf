@@ -59,6 +59,19 @@ FLOAT_BTN = '<a class="float-wa" href="https://wa.me/971585146139" target="_blan
 
 WA = '971585146139'
 
+# Google Analytics 4 衡量代码（全站统一注入；重跑生成器不会丢失）
+GA4_ID = 'G-76L0Y9SC5D'
+GA4_SNIPPET = (
+    '<!-- Google tag (gtag.js) GA4 -->\n'
+    '<script async src="https://www.googletagmanager.com/gtag/js?id=' + GA4_ID + '"></script>\n'
+    '<script>\n'
+    '  window.dataLayer = window.dataLayer || [];\n'
+    '  function gtag(){dataLayer.push(arguments);}\n'
+    '  gtag(\'js\', new Date());\n'
+    '  gtag(\'config\', \'' + GA4_ID + '\');\n'
+    '</script>\n'
+)
+
 def wa_link(text):
     """生成 WhatsApp 深链（已 encode）"""
     from urllib.parse import quote
@@ -101,6 +114,7 @@ def page_shell(title, description, canonical, body_inner, json_ld=None, extra_he
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n'
         '<style>' + STYLE + '</style>\n'
+        + GA4_SNIPPET
         + extra_head +
         '</head>\n'
         '<body>\n'
