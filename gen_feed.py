@@ -36,6 +36,8 @@ LASTMOD = {
     'category-home.html': '2026-08-21',
     'category-beauty-toys.html': '2026-08-21',
     'uae-import-guide-from-china.html': '2026-08-21',
+    'saudi-arabia-import-guide-from-china.html': '2026-08-21',
+    'qatar-import-guide-from-china.html': '2026-08-21',
     'sourcing-agent-vs-trading-company.html': '2026-08-21',
     'yiwu-vs-guangzhou-vs-shenzhen.html': '2026-08-21',
 }

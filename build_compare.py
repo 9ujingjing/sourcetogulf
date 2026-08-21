@@ -20,7 +20,7 @@ BASE = 'https://sourcetogulf.com'
 # ----------------------------------------------------------------------------
 AGENT_FAQ = [
     ('Is a China sourcing agent cheaper than a trading company?',
-     'Usually, yes — but the saving depends on order size and product mix. A trading company embeds its profit in the unit price, typically marking up factory cost by 15%% to 40%%. A sourcing agent charges a transparent commission (commonly 3%% to 8%% of order value) on top of the real factory price, so you see the actual cost. On a $5,000 mixed order the agent route is often $800 to $1,200 cheaper.'),
+     'Usually, yes — but the saving depends on order size and product mix. A trading company embeds its profit in the unit price, typically marking up factory cost by 15% to 40%. A sourcing agent charges a transparent commission (commonly 3% to 8% of order value) on top of the real factory price, so you see the actual cost. On a $5,000 mixed order the agent route is often $800 to $1,200 cheaper.'),
     ('Do trading companies do quality inspection?',
      'Some do, but it is not their core incentive — their margin comes from the spread, not from protecting your quality. A dedicated sourcing agent treats pre-shipment inspection as part of the service because their reputation depends on it. If you use a trading company, insist on a third-party QC report before paying the balance.'),
     ('Can a trading company consolidate from multiple factories?',
@@ -30,7 +30,7 @@ AGENT_FAQ = [
     ('How do I verify an agent is not just a trading company?',
      'Ask for the factory invoice or a breakdown showing the factory price plus their commission. A real agent is transparent about the source and lets you contact or audit the factory. If they refuse to disclose the manufacturer or won\'t itemise the cost, they are effectively a trading company charging agent fees.'),
     ('What commission should I expect from a China sourcing agent?',
-     'A typical transparent commission is 3%% to 8%% of the factory order value, sometimes with a minimum fee for very small orders. Avoid agents who quote "free service" but won\'t show factory prices — that usually means they earn from an undisclosed markup instead.'),
+     'A typical transparent commission is 3% to 8% of the factory order value, sometimes with a minimum fee for very small orders. Avoid agents who quote "free service" but won\'t show factory prices — that usually means they earn from an undisclosed markup instead.'),
 ]
 
 def agent_body():

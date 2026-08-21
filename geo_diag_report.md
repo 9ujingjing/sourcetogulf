@@ -1,6 +1,6 @@
 # SourceToGulf — GEO / Technical SEO Diagnostic
 
-Scanned: 38 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_货盘供货商定位/app`
+Scanned: 40 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_货盘供货商定位/app`
 
 
 ## Site-level
@@ -14,7 +14,7 @@ Scanned: 38 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_
 - ✅ Bingbot: allowed
 - ✅ Googlebot: allowed
 
-### sitemap.xml — 39 URLs
+### sitemap.xml — 41 URLs
 - Bing submission: **ACTION NEEDED** — ChatGPT live search is Bing-driven. Submit https://sourcetogulf.com/sitemap.xml to Bing Webmaster Tools (manual, needs account).
 
 - ✅ llms.txt present
@@ -48,6 +48,8 @@ Scanned: 38 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_
 | google-ads/ramadan.html | 517 | 7.9% | 45 | ✅ | ✅ | WebPage,WebSite,Organization | 1.7 | 0 | 5 | 0.44 |
 | index.html | 1553 | 12.4% | 40 | ✅ | ✅ | Organization,PostalAddress,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,SiteNavigationElement | 2.6 | 0 | 5 | 0.66 |
 | products.html | 3872 | 7.7% | 49 | ✅ | ✅ | ItemList,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer | 9.9 | 0 | 6 | 0.15 |
+| qatar-import-guide-from-china.html | 1546 | 17.0% | 55 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.3 | 0 | 5 | 1.00 |
+| saudi-arabia-import-guide-from-china.html | 1622 | 17.7% | 62 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.0 | 0 | 5 | 1.03 |
 | services/consolidation-shipping-china-gulf.html | 788 | 10.2% | 51 | ✅ | ✅ | FAQPage,Question,Answer,Question,Answer,Question,Answer | 1.5 | 0 | 5 | 0.59 |
 | services/custom-branding-packaging.html | 753 | 10.1% | 42 | ✅ | ✅ | FAQPage,Question,Answer,Question,Answer,Question,Answer | 1.7 | 0 | 5 | 0.59 |
 | services/product-sourcing-china.html | 897 | 10.6% | 40 | ✅ | ✅ | FAQPage,Question,Answer,Question,Answer,Question,Answer | 1.6 | 0 | 5 | 0.58 |
@@ -138,6 +140,12 @@ _Per the playbook, the opening must answer the question directly. Spot-check bel
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
 **products.html** (7.7% / 3872 words)
+> Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
+
+**qatar-import-guide-from-china.html** (17.0% / 1546 words)
+> Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
+
+**saudi-arabia-import-guide-from-china.html** (17.7% / 1622 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
 **services/consolidation-shipping-china-gulf.html** (10.2% / 788 words)
