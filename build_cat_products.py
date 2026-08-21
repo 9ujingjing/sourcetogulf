@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 build_cat_products.py — 批量生成品类落地页
-读取 products-data.js 的 CATEGORIES / PRODUCTS，
+读取 products.clean.json（cats / prods），
 为每个品类生成静态 HTML 品类页 category-<key>.html（含到岸价、双语导航、ItemList/Product JSON-LD），
 并生成 categories.html 品类索引页。
 用法: python3 build_cat_products.py
