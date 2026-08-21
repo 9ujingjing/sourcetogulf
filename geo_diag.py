@@ -150,9 +150,10 @@ def check():
         facts = len(FACT_RE.findall(vt))
         fact_density = (facts / words * 100) if words else 0
 
-        # subjective
+        # subjective — word-boundary match so "your team" does NOT falsely
+        # count as "our team" (the diagnostic must stay accurate long-term).
         low = vt.lower()
-        subj_hits = sum(low.count(s) for s in SUBJ)
+        subj_hits = sum(len(re.findall(r'(?<!\w)' + re.escape(s) + r'(?!\w)', low)) for s in SUBJ)
 
         # semantic vs div
         depth = max_div_depth(raw)
