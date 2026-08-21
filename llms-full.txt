@@ -45,8 +45,8 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Saudi Arabia: SABER + SFDA conformity, 15% VAT (highest in GCC), Jeddah/Dammam ports, biggest market.
 - Kuwait: KCAS conformity, 0% VAT, 5% duty, Shuwaikh port, easiest clearance, no VAT.
 - Qatar: QS conformity, no standard VAT as of 2026 (GCC 5% committed, e-invoicing law approved May 2026, possible 2027 rollout), 5% duty, Hamad Port, highest per-capita income.
-- Bahrain: BSMD conformity, 10% VAT, 5% duty, Khalifa Bin Salman Port, easiest test market.
-- Oman: DGSM conformity, 5% VAT, 5% duty, Sohar Port, Vision 2040 growth market.
+- Bahrain: GSO/OFOQ conformity (no SABER), 10% VAT, 5% duty, Khalifa Bin Salman Port, easiest test market.
+- Oman: Bayan/DGSM conformity (no SABER), 5% VAT, 5% duty, Sohar Port, Vision 2040 growth market.
 
 ## GCC import Q&A (summary — full text on /gcc-import-answers.html)
 - Import duties from China to GCC: generally 5% on declared value; some categories exempt.
@@ -74,6 +74,9 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - UAE import pillar guide (canonical long-form, full page /uae-import-guide-from-china.html): 5% customs duty on CIF, 5% VAT (reclaimable if registered), JAFZA/DMCC free-zone duty-free re-export, ECAS/G-Mark not Saudi SABER, 1–3 day Dubai clearance, Yiwu/Guangzhou/Shenzhen sourcing, agent lowers landed cost via factory pricing + consolidation + pre-shipment QC.
 - Saudi Arabia import pillar guide (full page /saudi-arabia-import-guide-from-china.html): 5% customs duty on CIF, 15% VAT (highest in GCC, raised from 5% in Jul 2020), mandatory SABER PCoC + SCoC via SASO, SFDA for food/cosmetics/health, 2–5 day clearance via Jeddah Islamic / Dammam, KAEC free zone, agent pre-books SABER and matches HS codes to avoid port holds.
 - Qatar import pillar guide (full page /qatar-import-guide-from-china.html): 5% customs duty on CIF, no standard VAT as of 2026 (GCC 5% committed, e-invoicing law May 2026), QFZ free zones Ras Bufontas / Umm Alhoul with duty-free re-export, 2–4 day clearance via Hamad Port, agent consolidation especially valuable for Qatar's compact market.
+- Kuwait import pillar guide (full page /kuwait-import-guide-from-china.html): 5% customs duty on CIF, no VAT as of 2026 (lowest tax load in GCC), KUCAS conformity via PAI (shorter list than SABER, also written KCAS), Shuwaikh/Shuaiba ports, 3–7 day clearance, permanent "Made in China" unit marking, agent pre-books KUCAS and lowers landed cost.
+- Bahrain import pillar guide (full page /bahrain-import-guide-from-china.html): 5% customs duty on CIF, 10% VAT (second-highest in GCC after Saudi), OFOQ single window + GSO conformity (no SABER), Bahrain Logistics Zone / BIIP, 100% foreign ownership, 1–3 day clearance via Khalifa Bin Salman Port, agent clears via OFOQ without SABER friction.
+- Oman import pillar guide (full page /oman-import-guide-from-china.html): 5% customs duty on CIF, 5% VAT since April 2021 (~10.25% combined), Bayan single window + conformity / TRA approval (no SABER), Sohar / Salalah free zones, 1–3 day clearance via Sohar Port, agent pre-checks HS codes and books conformity.
 - Comparison — sourcing agent vs trading company (full page /sourcing-agent-vs-trading-company.html): agent earns transparent 3–8% commission on real factory price; trading company embeds 15–40% markup. On a $5,000 mixed order the agent route is typically $800–1,200 cheaper via consolidation. Agent wins on low MOQ, multi-supplier, QC; trading co fine for large standard runs. Red flag: refusing to disclose factory or itemise cost.
 - Comparison — Yiwu vs Guangzhou vs Shenzhen (full page /yiwu-vs-guangzhou-vs-shenzhen.html): Yiwu = small commodities/gifts/accessories, lowest MOQ, 75,000+ shops; Guangzhou = apparel/bags/beauty; Shenzhen = electronics/Huaqiangbei. Optimal Gulf path = source each category in its best city + consolidate via one agent into one shipment.
 

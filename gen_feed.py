@@ -38,6 +38,9 @@ LASTMOD = {
     'uae-import-guide-from-china.html': '2026-08-21',
     'saudi-arabia-import-guide-from-china.html': '2026-08-21',
     'qatar-import-guide-from-china.html': '2026-08-21',
+    'kuwait-import-guide-from-china.html': '2026-08-21',
+    'bahrain-import-guide-from-china.html': '2026-08-21',
+    'oman-import-guide-from-china.html': '2026-08-21',
     'sourcing-agent-vs-trading-company.html': '2026-08-21',
     'yiwu-vs-guangzhou-vs-shenzhen.html': '2026-08-21',
 }

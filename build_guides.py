@@ -422,6 +422,401 @@ def qatar_body():
 </div></section>
 ''' % (wa_qa, wa_qa)
 
+# ----------------------------------------------------------------------------
+# 科威特 指南数据
+# ----------------------------------------------------------------------------
+KUWAIT_FAQ = [
+    ('What is the customs duty rate for importing from China to Kuwait?',
+     'Kuwait applies the GCC Common Customs Law, so the standard customs duty is 5% of the CIF value (cost + insurance + freight) for most goods. A few categories are higher: tobacco carries 100% duty and excise adds 100% on electronic smoking devices and energy drinks and 50% on carbonated sugary drinks. The 5% base covers electronics, apparel, home goods and toys — the typical Gulf buyer mix.'),
+    ('Does Kuwait charge VAT on imports?',
+     'No. As of 2026, Kuwait has not introduced VAT, so there is no tax layer on imports — only the 5% customs duty. The UAE charges 5% VAT and Saudi Arabia 15%, so importing into Kuwait saves that entire percentage off your landed cost. Kuwait signed the GCC VAT agreement but has not implemented it; confirm any future change with the Kuwait Ministry of Finance.'),
+    ('Is KUCAS required to import into Kuwait?',
+     'KUCAS (Kuwait Conformity Assessment Scheme, also written KCAS) is run by the Public Authority for Industry (PAI). It covers a shorter product list than Saudi SABER — mainly electronics, electrical equipment, toys, lighting and some home appliances. Regulated products need a Certificate of Conformity (CoC) from an approved body (TUV, Intertek, SGS) before shipment; most general merchandise ships without one. There is no SABER-style per-shipment certificate for Kuwait.'),
+    ('Are there free zones in Kuwait?',
+     'Kuwait\'s main free zone is the Kuwait Free Trade Zone (KFTZ) at Shuwaikh. Goods landed there for storage or re-export are not charged the 5% duty; duty applies when released into the Kuwaiti mainland. Foreign ownership is permitted for licensed activities inside the zone.'),
+    ('What documents are required to clear customs in Kuwait?',
+     'You need a commercial invoice, packing list, bill of lading or air waybill, and a certificate of origin (issued by CCPIT or the Chamber of Commerce, sometimes legalised at the Kuwaiti embassy). Regulated products require a KUCAS CoC. Clearance is filed by a licensed Kuwaiti customs broker. Every product unit must also carry a permanent "Made in China" marking — embossed, printed or engraved, not a sticker.'),
+    ('How long does Kuwait customs clearance take?',
+     'With complete documents, clearance through Shuwaikh or Shuaiba typically takes 3–7 working days. Since February 2026 all commercial ports run 24-hour radiation-monitoring gates, so electronics or mineral-based goods should carry material-safety paperwork to avoid false-alert holds. The usual delays come from missing KUCAS certificates or embassy-legalisation gaps.'),
+    ('Do products need Arabic labels for Kuwait?',
+     'Yes — products must carry Arabic or bilingual (Arabic + English) labels. Food, beverage and health or cosmetic items require Arabic labelling, and a permanent "Made in China" origin mark is mandatory on each unit. Clear Arabic labelling speeds clearance and shelf placement in the Kuwaiti market.'),
+    ('What is the cheapest way to import small orders from China to Kuwait?',
+     'For samples and small parcels, express courier is fastest. For larger but sub-container loads, sea freight LCL or air consolidation through a sourcing agent lowers per-unit cost. Because Kuwait has no VAT, landed cost is simpler to model than in the UAE or Saudi — consolidation is usually the single biggest saving.'),
+]
+
+def kuwait_body():
+    wa_kw = wa_link('Hi SourceToGulf! I want to import from China to Kuwait. Please help with sourcing, KUCAS and clearance.')
+    return '''
+<section class="sec hero-sec">
+  <div class="wrap">
+    <span class="kicker">GCC Import Guide</span>
+    <h1>Importing from China to Kuwait — The Complete 2026 Guide</h1>
+    <p class="lead">Importing from China to Kuwait means a <b>5%% customs duty on the CIF value</b> — and, unlike the UAE or Saudi, Kuwait has <b>no VAT</b>, so the 5%% duty is the only border tax. The main compliance step is KUCAS conformity for regulated goods. A China sourcing agent handles pricing, consolidation and KUCAS paperwork end to end.</p>
+    <div class="cta-row">
+      <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a Kuwait import quote on WhatsApp</a>
+      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Kuwait import duties from China</h2></div>
+  <p>Kuwait applies the GCC Common Customs Law, so the <b>standard customs duty is 5%% of CIF value</b> (cost + insurance + freight) for most products. A few categories carry higher rates:</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Product type</th>
+      <th style="padding:10px 12px;text-align:left">Customs duty</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Most goods (electronics, apparel, home, toys)</td><td style="padding:10px 12px"><b>5%% of CIF</b></td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Tobacco products</td><td style="padding:10px 12px">100%%</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Carbonated sugary drinks (excise)</td><td style="padding:10px 12px">50%%</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Electronic smoking devices / energy drinks (excise)</td><td style="padding:10px 12px">100%%</td></tr>
+    </tbody>
+  </table>
+  <p>Duty is assessed on CIF, so a sharper factory price and lower freight both reduce what you pay at the border — and with no VAT, that duty is the whole tax story.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>VAT in Kuwait</h2></div>
+  <p>As of 2026, <b>Kuwait has not introduced VAT</b> — the only import tax is the 5%% GCC customs duty. The UAE (5%%) and Saudi Arabia (15%%) both add a VAT layer, so Kuwait offers the lowest import-tax load in the Gulf. Budget purely on CIF × 5%%. Kuwait signed the GCC Unified VAT Agreement but has not implemented it; always confirm the current position with the Kuwait Ministry of Finance before a large order.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>KUCAS conformity (not SABER)</h2></div>
+  <p>Kuwait uses <b>KUCAS</b> (Kuwait Conformity Assessment Scheme, also written KCAS), run by the <b>Public Authority for Industry (PAI)</b>. It covers a <b>shorter list than Saudi SABER</b> — mainly electronics, electrical equipment, toys, lighting and some home appliances. Regulated products need a <b>Certificate of Conformity (CoC)</b> from an approved body (TUV, Intertek, SGS) before shipment; most general merchandise ships without one. There is no SABER-style per-shipment SCoC for Kuwait.</p>
+  <p>Two Kuwait-specific rules matter: every product unit must carry a <b>permanent "Made in China" marking</b> (embossed, printed or engraved — adhesive stickers are often rejected), and the certificate of origin is sometimes legalised at the Kuwaiti embassy. A sourcing agent that pre-books KUCAS and checks marking before production prevents port holds.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Free zones vs mainland</h2></div>
+  <p>Kuwait's main free zone is the <b>Kuwait Free Trade Zone (KFTZ)</b> at Shuwaikh. Goods landed there for storage or re-export are not charged the 5%% duty; duty applies when goods are released into the Kuwaiti mainland.</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Free zone (KFTZ, Shuwaikh)</th>
+      <th style="padding:10px 12px;text-align:left">Kuwait mainland</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">No duty on goods for storage / re-export</td><td style="padding:10px 12px">5%% duty on CIF when released to market</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Foreign ownership for licensed activities</td><td style="padding:10px 12px">Local rules for some activities</td></tr>
+    </tbody>
+  </table>
+  <p>For re-export to the wider Gulf or beyond, keeping stock in the KFTZ avoids Kuwaiti duty. For the local Kuwait City market, goods cross to mainland and the 5%% applies.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Documents required for Kuwait customs clearance</h2></div>
+  <ul class="bullets">
+    <li><b>Commercial invoice</b> — value, 12-digit HS code, party details</li>
+    <li><b>Packing list</b> — carton counts, weights, dimensions</li>
+    <li><b>Bill of lading / air waybill</b> — transport document</li>
+    <li><b>Certificate of origin</b> — CCPIT or Chamber of Commerce, sometimes embassy-legalised</li>
+    <li><b>KUCAS Certificate of Conformity</b> — for regulated products (electronics, toys, electrical)</li>
+    <li><b>Permanent "Made in China" mark</b> — on each product unit, not just the carton</li>
+  </ul>
+  <p>Clearance is filed by a licensed Kuwaiti customs broker. Pre-checking paperwork and KUCAS before departure prevents the most common holds at Shuwaikh.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Customs clearance time &amp; ports</h2></div>
+  <p>With complete documents, Kuwait clearance typically takes <b>3–7 working days</b>. The main gateways are <b>Shuwaikh Port</b> (near Kuwait City, general commercial and consumer cargo) and <b>Shuaiba Port</b> (about 40 km south, industrial goods, heavy machinery, bulk). Kuwait International Airport handles air freight. Since 17 February 2026, all commercial ports run <b>24-hour radiation-monitoring gates</b> — carry material-safety docs for electronics or mineral goods to avoid false-alert holds. Sea freight from China runs about 20–30 days.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Best Chinese cities to source from</h2></div>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">City</th>
+      <th style="padding:10px 12px;text-align:left">Best for</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories, low MOQ, mixed consolidation</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel, bags, beauty, watches, wholesale markets</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics, gadgets, tech accessories, fast prototyping</td></tr>
+    </tbody>
+  </table>
+  <p>Most Gulf buyers mix all three. A sourcing agent consolidates from multiple cities into one Kuwait-bound shipment — often the single biggest saving, made simpler by Kuwait's zero-VAT model.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>How a sourcing agent lowers your Kuwait landed cost</h2></div>
+  <p>A China-based agent compresses three cost lines: sharper <b>factory pricing</b> (direct from manufacturers), <b>consolidation</b> that turns several parcels into one sea shipment, and <b>pre-shipment QC</b> that stops defects before they cross the border. For Kuwait, the agent also pre-books KUCAS CoC and verifies the "Made in China" marking — turning the one real compliance step into a planned task rather than a port-side surprise.</p>
+  <div class="rel-grid">
+    <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Wholesaler · Retailer · Small brand</b></a>
+    <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, KUCAS, MOQ, shipping</b></a>
+    <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou sourced, Kuwait-landed prices</b></a>
+    <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen sourced, KUCAS-ready</b></a>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap" style="text-align:center">
+  <div class="sec-head center"><h2>Ready to import from China to Kuwait?</h2></div>
+  <p class="sub">Send your product list — get a landed-cost estimate (no VAT to model) and a KUCAS-ready plan on WhatsApp.</p>
+  <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Start my Kuwait import on WhatsApp</a>
+</div></section>
+''' % (wa_kw, wa_kw)
+
+# ----------------------------------------------------------------------------
+# 巴林 指南数据
+# ----------------------------------------------------------------------------
+BAHRAIN_FAQ = [
+    ('What is the customs duty rate for importing from China to Bahrain?',
+     'Bahrain applies the GCC Common Customs Law, so the standard customs duty is 5% of the CIF value (cost + insurance + freight) for most goods. A few categories are higher: tobacco and alcohol face heavy excise taxes up to 100%. The 5% base covers electronics, apparel, home goods and toys.'),
+    ('Does Bahrain charge VAT on imports?',
+     'Yes — Bahrain applies a 10% VAT on imports. It was introduced at 5% and later raised to 10%, so Bahrain now has the second-highest VAT in the GCC after Saudi Arabia\'s 15%. It is charged on the CIF value plus the customs duty and collected by the National Bureau of Revenue at clearance. Combined with the 5% duty, the tax load is about 15% — higher than the UAE\'s ~10.25% but lower than Saudi\'s ~20.25%.'),
+    ('Is SABER required to import into Bahrain?',
+     'No. Bahrain has no SABER-style platform. It enforces GSO (GCC Standardization Organization) conformity through the OFOQ electronic single window run by Bahrain Customs Affairs. Regulated products need a Certificate of Conformity, but the list is shorter than Saudi SABER and there is no per-shipment SCoC requirement. Clearance is generally lighter than Saudi.'),
+    ('Are there free zones in Bahrain?',
+     'Yes — Bahrain offers the Bahrain Logistics Zone and the Bahrain International Investment Park (BIIP). Goods held for re-export are not charged duty; duty applies on release to the local market. Bahrain allows 100% foreign ownership for most activities, making it attractive for Gulf re-export and regional headquarters.'),
+    ('What documents are required to clear customs in Bahrain?',
+     'You need a commercial invoice, packing list, bill of lading or air waybill, and a certificate of origin. The invoice and certificate of origin often need Chamber of Commerce stamping or legalisation. Regulated products require a Certificate of Conformity. Clearance is filed through OFOQ by a licensed Bahraini customs broker.'),
+    ('How long does Bahrain customs clearance take?',
+     'With complete documents, clearance through Khalifa Bin Salman Port or Bahrain International Airport typically takes 1–3 working days via the OFOQ system. Bahrain is an island linked to Saudi Arabia by the King Fahd Causeway, so many shipments also arrive by feeder vessel or truck from Dammam or Jebel Ali. Sea freight from China runs about 18–30 days.'),
+    ('Do products need Arabic labels for Bahrain?',
+     'Bilingual (Arabic + English) labels are recommended and mandatory for food, beverage and health or cosmetic products. Arabic labelling speeds clearance and builds consumer trust in the Bahraini market.'),
+    ('What is the cheapest way to import small orders from China to Bahrain?',
+     'For samples and small parcels, express courier is fastest. For larger but sub-container loads, sea freight LCL or air consolidation through a sourcing agent lowers per-unit cost. Because Bahrain is small and central, consolidation via a UAE or Saudi hub before the short feeder crossing is common.'),
+]
+
+def bahrain_body():
+    wa_bh = wa_link('Hi SourceToGulf! I want to import from China to Bahrain. Please help with sourcing, duty and clearance.')
+    return '''
+<section class="sec hero-sec">
+  <div class="wrap">
+    <span class="kicker">GCC Import Guide</span>
+    <h1>Importing from China to Bahrain — The Complete 2026 Guide</h1>
+    <p class="lead">Importing from China to Bahrain means a <b>5%% customs duty on the CIF value</b> plus a <b>10%% VAT</b> — Bahrain's VAT is 10%% (raised from 5%%), the highest in the GCC after Saudi. But there is <b>no SABER-style conformity</b>, so clearance is lighter than Saudi. A China sourcing agent handles pricing, consolidation and OFOQ clearance end to end.</p>
+    <div class="cta-row">
+      <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a Bahrain import quote on WhatsApp</a>
+      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Bahrain import duties from China</h2></div>
+  <p>Bahrain applies the GCC Common Customs Law, so the <b>standard customs duty is 5%% of CIF value</b> (cost + insurance + freight) for most products. A few categories carry higher rates:</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Product type</th>
+      <th style="padding:10px 12px;text-align:left">Customs duty</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Most goods (electronics, apparel, home, toys)</td><td style="padding:10px 12px"><b>5%% of CIF</b></td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Tobacco &amp; alcohol (excise)</td><td style="padding:10px 12px">Up to 100%%</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Motor vehicles</td><td style="padding:10px 12px">Specific rates by type/cc</td></tr>
+    </tbody>
+  </table>
+  <p>Duty is assessed on CIF, so a sharper factory price and lower freight both reduce what you pay at the border.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>VAT in Bahrain</h2></div>
+  <p>Bahrain applies a <b>10%% VAT</b> on imported goods — introduced at 5%% and later raised to 10%%, the second-highest in the GCC after Saudi Arabia's 15%%. It is charged on the CIF value <i>plus</i> the customs duty and collected by the National Bureau of Revenue at clearance. Combined with the 5%% duty, the effective tax load is about <b>15%%</b> — higher than the UAE's ~10.25%% but lower than Saudi's ~20.25%%. Budget for the combined rate in your landed-cost model.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Conformity via OFOQ — no SABER</h2></div>
+  <p>Unlike Saudi Arabia, Bahrain has <b>no SABER platform</b>. It enforces <b>GSO (GCC Standardization Organization)</b> conformity through the <b>OFOQ</b> electronic single window run by Bahrain Customs Affairs. Regulated products need a <b>Certificate of Conformity</b>, but the list is shorter than Saudi SABER and there is no per-shipment SCoC requirement. For most general merchandise, the only steps are the 5%% duty and 10%% VAT — making Bahrain clearance lighter than Saudi.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Free zones &amp; foreign ownership</h2></div>
+  <p>Bahrain offers the <b>Bahrain Logistics Zone</b> and the <b>Bahrain International Investment Park (BIIP)</b>. Goods held for storage or re-export are not charged duty; duty applies when released to the local market. Bahrain allows <b>100%% foreign ownership</b> for most activities, making it attractive for Gulf re-export and regional headquarters.</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Free zone (Logistics Zone / BIIP)</th>
+      <th style="padding:10px 12px;text-align:left">Bahrain mainland</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">No duty on goods for storage / re-export</td><td style="padding:10px 12px">5%% duty + 10%% VAT on CIF when released</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">100%% foreign ownership</td><td style="padding:10px 12px">Local rules for some activities</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Documents required for Bahrain customs clearance</h2></div>
+  <ul class="bullets">
+    <li><b>Commercial invoice</b> — value, HS code, party details (often Chamber-stamped)</li>
+    <li><b>Packing list</b> — carton counts, weights, dimensions</li>
+    <li><b>Bill of lading / air waybill</b> — transport document</li>
+    <li><b>Certificate of origin</b> — often legalised by the Chamber of Commerce</li>
+    <li><b>Certificate of Conformity</b> — for regulated products</li>
+  </ul>
+  <p>Clearance is filed through OFOQ by a licensed Bahraini customs broker. Accurate HS codes and legalised documents prevent the most common holds at KBSP.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Customs clearance time &amp; ports</h2></div>
+  <p>With complete documents, Bahrain clearance typically takes <b>1–3 working days</b> via the OFOQ system. The main gateway is <b>Khalifa Bin Salman Port (KBSP)</b> in Hidd (about 1.4 million TEU capacity, operated by APM Terminals), supplemented by <b>Bahrain International Airport</b>. Bahrain is an island linked to Saudi Arabia by the <b>King Fahd Causeway</b>, so many shipments also arrive by feeder vessel or truck from Dammam or Jebel Ali. Sea freight from China runs about 18–30 days.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Best Chinese cities to source from</h2></div>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">City</th>
+      <th style="padding:10px 12px;text-align:left">Best for</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories, low MOQ, mixed consolidation</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel, bags, beauty, watches, wholesale markets</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics, gadgets, tech accessories, fast prototyping</td></tr>
+    </tbody>
+  </table>
+  <p>Most Gulf buyers mix all three. A sourcing agent consolidates from multiple cities into one Bahrain-bound shipment — and clears it through OFOQ without SABER friction.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>How a sourcing agent lowers your Bahrain landed cost</h2></div>
+  <p>A China-based agent compresses three cost lines: sharper <b>factory pricing</b> (direct from manufacturers), <b>consolidation</b> that turns several parcels into one sea shipment, and <b>pre-shipment QC</b> that stops defects before they ship. For Bahrain, the agent also pre-checks HS codes and legalises documents so OFOQ clearance runs in 1–3 days — keeping the 5%% duty + 10%% VAT model predictable.</p>
+  <div class="rel-grid">
+    <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Wholesaler · Retailer · Small brand</b></a>
+    <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, OFOQ, MOQ, shipping</b></a>
+    <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou sourced, Bahrain-landed prices</b></a>
+    <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen sourced, GSO-ready</b></a>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap" style="text-align:center">
+  <div class="sec-head center"><h2>Ready to import from China to Bahrain?</h2></div>
+  <p class="sub">Send your product list — get a landed-cost estimate (5%% duty + 10%% VAT) and an OFOQ-ready plan on WhatsApp.</p>
+  <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Start my Bahrain import on WhatsApp</a>
+</div></section>
+''' % (wa_bh, wa_bh)
+
+# ----------------------------------------------------------------------------
+# 阿曼 指南数据
+# ----------------------------------------------------------------------------
+OMAN_FAQ = [
+    ('What is the customs duty rate for importing from China to Oman?',
+     'Oman applies the GCC Common Customs Law, so the standard customs duty is 5% of the CIF value (cost + insurance + freight) for most goods — the general range is 0–5%, with most merchandise at 5%. Higher rates apply to alcohol, tobacco and pork products. The 5% base covers electronics, apparel, home goods and toys.'),
+    ('Does Oman charge VAT on imports?',
+     'Yes — Oman applies a 5% VAT on imports, in force since April 2021. It is charged on the CIF value plus the customs duty, so the combined effective rate is about 10.25% for standard goods. VAT is collected by the Oman Tax Authority at clearance through the Bayan system. It is the same rate as the UAE, below Bahrain\'s 10% and Saudi\'s 15%.'),
+    ('Is SABER required to import into Oman?',
+     'No. Oman has no SABER-style platform. It uses the Bayan single-window system, and regulated products (electronics, telecom, food, cosmetics, chemicals) need a Certificate or Declaration of Conformity; wireless and telecom items also need TRA Type Approval. The conformity list is shorter than Saudi SABER — a sourcing agent pre-checks HS codes and books conformity before shipment.'),
+    ('Are there free zones in Oman?',
+     'Yes — Oman runs several free zones: Sohar Free Zone, Salalah Free Zone and Al Mazunah (near the Yemen border). Goods held for storage or re-export are not charged duty or VAT while inside the zone; duty and VAT apply when released to the Omani mainland. 100% foreign ownership is allowed in the zones.'),
+    ('What documents are required to clear customs in Oman?',
+     'You need a commercial invoice (with 12-digit GCC HS code and CIF value), packing list, bill of lading or air waybill, and a certificate of origin. Regulated products require a conformity certificate; telecom needs TRA approval. Unattested documents can trigger a 2% duty-deposit surcharge. Clearance is filed through Bayan by a licensed Omani customs broker.'),
+    ('How long does Oman customs clearance take?',
+     'With complete documents, Oman clearance through Bayan typically takes 1–3 working days (2–5 for regulated or telecom shipments). The main gateway is Sohar Port, primary for containerized imports from China serving Muscat and northern Oman; Salalah Port serves the south and Port Sultan Qaboos handles Muscat general cargo. Sea freight from China runs about 18–30 days.'),
+    ('Do products need Arabic labels for Oman?',
+     'Bilingual (Arabic + English) labels are recommended and mandatory for food, beverage and health or cosmetic products. Clear Arabic labelling supports clearance and the local Omani market.'),
+    ('What is the cheapest way to import small orders from China to Oman?',
+     'For samples and small parcels, express courier is fastest. For larger but sub-container loads, sea freight LCL or air consolidation through a sourcing agent lowers per-unit cost. Consolidating multiple Chinese suppliers into one Sohar-bound container is the usual biggest saving for Oman.'),
+]
+
+def oman_body():
+    wa_om = wa_link('Hi SourceToGulf! I want to import from China to Oman. Please help with sourcing, conformity and clearance.')
+    return '''
+<section class="sec hero-sec">
+  <div class="wrap">
+    <span class="kicker">GCC Import Guide</span>
+    <h1>Importing from China to Oman — The Complete 2026 Guide</h1>
+    <p class="lead">Importing from China to Oman means a <b>5%% customs duty on the CIF value</b> plus a <b>5%% VAT</b> (since April 2021) — about <b>10.25%% combined</b>. Oman uses the <b>Bayan</b> single window and a shorter conformity list than Saudi SABER. A China sourcing agent handles pricing, consolidation and Bayan clearance into Sohar.</p>
+    <div class="cta-row">
+      <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get an Oman import quote on WhatsApp</a>
+      <a class="btn-ghost" href="/index.html#calc">Estimate landed cost →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Oman import duties from China</h2></div>
+  <p>Oman applies the GCC Common Customs Law, so the <b>standard customs duty is 5%% of CIF value</b> (cost + insurance + freight) for most products — the general range is 0–5%%, with most merchandise at 5%%. A few categories carry higher rates:</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Product type</th>
+      <th style="padding:10px 12px;text-align:left">Customs duty</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Most goods (electronics, apparel, home, toys)</td><td style="padding:10px 12px"><b>5%% of CIF</b></td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Alcohol / tobacco / pork</td><td style="padding:10px 12px">Higher excise rates</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Motor vehicles</td><td style="padding:10px 12px">Specific rates by type/cc</td></tr>
+    </tbody>
+  </table>
+  <p>Duty is assessed on CIF, so a sharper factory price and lower freight both reduce what you pay at the border.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>VAT in Oman</h2></div>
+  <p>Oman applies a <b>5%% VAT</b> on imported goods, in force since <b>April 2021</b>. It is charged on the CIF value <i>plus</i> the customs duty, so the combined effective rate is about <b>10.25%%</b> for standard goods. VAT is collected by the Oman Tax Authority at clearance through the Bayan system — the same 5%% rate as the UAE, below Bahrain's 10%% and Saudi's 15%%. Budget for the combined rate in your landed-cost model.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Conformity via Bayan — no SABER</h2></div>
+  <p>Oman uses the <b>Bayan</b> single-window platform. It has <b>no SABER-style platform</b>; regulated products (electronics, telecom, food, cosmetics, chemicals) need a <b>Certificate or Declaration of Conformity</b>, and wireless or telecom items additionally need <b>TRA Type Approval</b>. The conformity list is shorter than Saudi SABER. A sourcing agent pre-checks HS codes and books conformity before shipment so Bayan clearance runs in 1–3 days.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Free zones vs mainland</h2></div>
+  <p>Oman runs several free zones: <b>Sohar Free Zone</b>, <b>Salalah Free Zone</b> and <b>Al Mazunah</b> (near the Yemen border). Goods held for storage or re-export are not charged duty or VAT while inside the zone; duty and VAT apply when released to the Omani mainland.</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Free zone (Sohar / Salalah / Al Mazunah)</th>
+      <th style="padding:10px 12px;text-align:left">Oman mainland</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">No duty / VAT on goods for storage / re-export</td><td style="padding:10px 12px">5%% duty + 5%% VAT on CIF when released</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">100%% foreign ownership in zones</td><td style="padding:10px 12px">Local rules for some activities</td></tr>
+    </tbody>
+  </table>
+  <p>For re-export to the wider Gulf or East Africa, keeping stock in a free zone avoids Omani duty and VAT. For the local Muscat/Sohar market, goods cross to mainland and the 10.25%% combined applies.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Documents required for Oman customs clearance</h2></div>
+  <ul class="bullets">
+    <li><b>Commercial invoice</b> — with 12-digit GCC HS code and CIF value</li>
+    <li><b>Packing list</b> — carton counts, weights, dimensions</li>
+    <li><b>Bill of lading / air waybill</b> — transport document</li>
+    <li><b>Certificate of origin</b> — attested by the Chamber of Commerce</li>
+    <li><b>Conformity certificate / TRA approval</b> — for regulated or wireless products</li>
+  </ul>
+  <p>Clearance is filed through Bayan by a licensed Omani customs broker. Unattested documents can trigger a 2%% duty-deposit surcharge, so attest the certificate of origin before departure.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Customs clearance time &amp; ports</h2></div>
+  <p>With complete documents, Oman clearance typically takes <b>1–3 working days</b> (2–5 for regulated or telecom shipments). The main gateway is <b>Sohar Port</b> — primary for containerized imports from China, serving Muscat and northern Oman. <b>Salalah Port</b> serves the south (and is a major transshipment hub), and <b>Port Sultan Qaboos</b> handles Muscat general cargo. Sea freight from China runs about 18–30 days. Oman's Vision 2040 targets logistics and re-export as growth pillars, so port capacity is expanding.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Best Chinese cities to source from</h2></div>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">City</th>
+      <th style="padding:10px 12px;text-align:left">Best for</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories, low MOQ, mixed consolidation</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel, bags, beauty, watches, wholesale markets</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics, gadgets, tech accessories, fast prototyping</td></tr>
+    </tbody>
+  </table>
+  <p>Most Gulf buyers mix all three. A sourcing agent consolidates from multiple cities into one Sohar-bound container — often the single biggest saving for Oman.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>How a sourcing agent lowers your Oman landed cost</h2></div>
+  <p>A China-based agent compresses three cost lines: sharper <b>factory pricing</b> (direct from manufacturers), <b>consolidation</b> that turns several parcels into one sea shipment, and <b>pre-shipment QC</b> that stops defects before they ship. For Oman, the agent also pre-checks HS codes, books conformity/TRA approval and attests the certificate of origin so Bayan clearance runs in 1–3 days — keeping the 5%% duty + 5%% VAT model predictable.</p>
+  <div class="rel-grid">
+    <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Wholesaler · Retailer · Small brand</b></a>
+    <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, Bayan, MOQ, shipping</b></a>
+    <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou sourced, Oman-landed prices</b></a>
+    <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen sourced, TRA-ready</b></a>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap" style="text-align:center">
+  <div class="sec-head center"><h2>Ready to import from China to Oman?</h2></div>
+  <p class="sub">Send your product list — get a landed-cost estimate (5%% duty + 5%% VAT) and a Bayan-ready plan on WhatsApp.</p>
+  <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Start my Oman import on WhatsApp</a>
+</div></section>
+''' % (wa_om, wa_om)
+
 GUIDES = {
     'uae': {
         'file': 'uae-import-guide-from-china.html',
@@ -446,6 +841,30 @@ GUIDES = {
         'canonical': BASE + '/qatar-import-guide-from-china.html',
         'body': qatar_body(),
         'faq': QATAR_FAQ,
+    },
+    'kuwait': {
+        'file': 'kuwait-import-guide-from-china.html',
+        'title': 'Importing from China to Kuwait — The Complete 2026 Guide',
+        'desc': 'Kuwait import duties (5% CIF), no VAT as of 2026, KUCAS conformity (PAI), Shuwaikh/Shuaiba ports, 3–7 day clearance, "Made in China" marking, and how a China sourcing agent lowers landed cost.',
+        'canonical': BASE + '/kuwait-import-guide-from-china.html',
+        'body': kuwait_body(),
+        'faq': KUWAIT_FAQ,
+    },
+    'bahrain': {
+        'file': 'bahrain-import-guide-from-china.html',
+        'title': 'Importing from China to Bahrain — The Complete 2026 Guide',
+        'desc': 'Bahrain import duties (5% CIF), 10% VAT, OFOQ single window + GSO conformity (no SABER), Bahrain Logistics Zone / BIIP, 100% foreign ownership, 1–3 day clearance via Khalifa Bin Salman Port, and how a China sourcing agent lowers landed cost.',
+        'canonical': BASE + '/bahrain-import-guide-from-china.html',
+        'body': bahrain_body(),
+        'faq': BAHRAIN_FAQ,
+    },
+    'oman': {
+        'file': 'oman-import-guide-from-china.html',
+        'title': 'Importing from China to Oman — The Complete 2026 Guide',
+        'desc': 'Oman import duties (5% CIF), 5% VAT (since April 2021, ~10.25% combined), Bayan single window + conformity/TRA approval (no SABER), Sohar/Salalah free zones, 1–3 day clearance via Sohar Port, and how a China sourcing agent lowers landed cost.',
+        'canonical': BASE + '/oman-import-guide-from-china.html',
+        'body': oman_body(),
+        'faq': OMAN_FAQ,
     },
 }
 
