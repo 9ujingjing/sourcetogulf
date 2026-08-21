@@ -546,6 +546,7 @@ def kuwait_body():
     <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, KUCAS, MOQ, shipping</b></a>
     <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou sourced, Kuwait-landed prices</b></a>
     <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen sourced, KUCAS-ready</b></a>
+    <a class="rel-card" href="/blog/how-to-import-from-china-to-kuwait.html"><span>Kuwait import — blog version</span><b>Step-by-step short guide (2026)</b></a>
   </div>
 </div></section>
 
@@ -676,6 +677,7 @@ def bahrain_body():
     <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, OFOQ, MOQ, shipping</b></a>
     <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou sourced, Bahrain-landed prices</b></a>
     <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen sourced, GSO-ready</b></a>
+    <a class="rel-card" href="/blog/how-to-import-from-china-to-bahrain.html"><span>Bahrain import — blog version</span><b>Step-by-step short guide (2026)</b></a>
   </div>
 </div></section>
 
@@ -807,6 +809,7 @@ def oman_body():
     <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, Bayan, MOQ, shipping</b></a>
     <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou sourced, Oman-landed prices</b></a>
     <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen sourced, TRA-ready</b></a>
+    <a class="rel-card" href="/blog/how-to-import-from-china-to-oman.html"><span>Oman import — blog version</span><b>Step-by-step short guide (2026)</b></a>
   </div>
 </div></section>
 

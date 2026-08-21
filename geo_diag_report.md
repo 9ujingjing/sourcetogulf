@@ -25,7 +25,7 @@ Scanned: 43 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_
 | Page | Words | Text% | Title | Viewport | Canonical(https) | Schema | Fact/100w | Subj | DivDepth | Sem/Div |
 |------|-------|-------|-------|----------|------------------|--------|-----------|------|----------|----------|
 | about.html | 688 | 9.7% | 57 | ✅ | ✅ | AboutPage | 2.2 | 0 | 5 | 0.51 |
-| bahrain-import-guide-from-china.html | 1645 | 17.9% | 57 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.9 | 0 | 5 | 1.00 |
+| bahrain-import-guide-from-china.html | 1655 | 18.0% | 57 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 3.0 | 0 | 5 | 1.00 |
 | blog/how-to-find-a-reliable-sourcing-agent-in-china.html | 1228 | 13.6% | 46 | ✅ | ✅ | Article,Organization,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer | 1.6 | 0 | 5 | 0.65 |
 | blog/how-to-import-from-china-to-bahrain.html | 2558 | 21.9% | 53 | ✅ | ✅ | Article,Organization,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 5.9 | 0 | 5 | 0.98 |
 | blog/how-to-import-from-china-to-kuwait.html | 2584 | 22.5% | 52 | ✅ | ✅ | Article,Organization,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 4.8 | 0 | 5 | 0.98 |
@@ -48,8 +48,8 @@ Scanned: 43 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_
 | google-ads/phone-accessories.html | 517 | 7.8% | 56 | ✅ | ✅ | WebPage,WebSite,Organization | 1.7 | 0 | 5 | 0.44 |
 | google-ads/ramadan.html | 517 | 7.9% | 45 | ✅ | ✅ | WebPage,WebSite,Organization | 1.7 | 0 | 5 | 0.44 |
 | index.html | 1553 | 12.4% | 40 | ✅ | ✅ | Organization,PostalAddress,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,SiteNavigationElement | 2.6 | 0 | 5 | 0.66 |
-| kuwait-import-guide-from-china.html | 1790 | 19.2% | 56 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.3 | 0 | 5 | 1.05 |
-| oman-import-guide-from-china.html | 1688 | 18.1% | 54 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.8 | 0 | 5 | 1.02 |
+| kuwait-import-guide-from-china.html | 1800 | 19.2% | 56 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.3 | 0 | 5 | 1.05 |
+| oman-import-guide-from-china.html | 1698 | 18.1% | 54 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.9 | 0 | 5 | 1.02 |
 | products.html | 3872 | 7.7% | 49 | ✅ | ✅ | ItemList,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer,ListItem,Product,Offer | 9.9 | 0 | 6 | 0.15 |
 | qatar-import-guide-from-china.html | 1546 | 17.0% | 55 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.3 | 0 | 5 | 1.00 |
 | saudi-arabia-import-guide-from-china.html | 1622 | 17.7% | 62 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.0 | 0 | 5 | 1.03 |
@@ -76,7 +76,7 @@ _Per the playbook, the opening must answer the question directly. Spot-check bel
 **about.html** (9.7% / 688 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
-**bahrain-import-guide-from-china.html** (17.9% / 1645 words)
+**bahrain-import-guide-from-china.html** (18.0% / 1655 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
 **blog/how-to-find-a-reliable-sourcing-agent-in-china.html** (13.6% / 1228 words)
@@ -145,10 +145,10 @@ _Per the playbook, the opening must answer the question directly. Spot-check bel
 **index.html** (12.4% / 1553 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
-**kuwait-import-guide-from-china.html** (19.2% / 1790 words)
+**kuwait-import-guide-from-china.html** (19.2% / 1800 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
-**oman-import-guide-from-china.html** (18.1% / 1688 words)
+**oman-import-guide-from-china.html** (18.1% / 1698 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
 **products.html** (7.7% / 3872 words)
