@@ -125,17 +125,21 @@ def agent_body():
 # ----------------------------------------------------------------------------
 CITY_FAQ = [
     ('Which Chinese city is cheapest for sourcing?',
-     'There is no single cheapest city — each is cheapest for its own category. Yiwu has the lowest prices for small commodities and the lowest MOQ, Guangzhou for apparel and bags, Shenzhen for electronics. The real saving for Gulf buyers comes from sourcing each category in its best city and consolidating, not from picking one city for everything.'),
+     'There is no single cheapest city — each is cheapest for its own category, and the gap shows in the unit price. In Yiwu, small commodities and gifts typically run ¥0.5–¥30 (about $0.07–$4) per unit. In Guangzhou, apparel runs roughly ¥15–¥200 per piece (about $2–$28) and bags ¥30–¥300 (about $4–$42). In Shenzhen, electronics span ¥10–¥500+ per unit with accessories as low as ¥1–¥50 (about $0.14–$7). The real saving for Gulf buyers comes from sourcing each category in its best city and consolidating, not from picking one city for everything.'),
     ('Yiwu or Guangzhou for clothing?',
-     'Guangzhou is the stronger choice for clothing — its wholesale markets (notably the 13th Garment Street area and the Canton Fair) cover finished apparel, fabrics and custom production. Yiwu carries clothing accessories and cheap ready-made basics but is weak on tailored or fashion-grade garments.'),
+     'Guangzhou is the stronger choice for clothing — its wholesale markets (notably the 13th Garment Street area and the Canton Fair) cover finished apparel, fabrics and custom production. Yiwu carries clothing accessories and cheap ready-made basics but is weak on tailored or fashion-grade garments. Typical Guangzhou apparel MOQ is 100–1,000 pieces per style, while Yiwu basics often start at 50–500 pieces per style.'),
     ('Is Shenzhen only for electronics?',
-     'Electronics is its strength (Huaqiangbei is the largest electronics market in the world), but Shenzhen also leads in hardware, tech accessories, gadgets and rapid prototyping thanks to nearby manufacturing. For non-electronic consumer goods, Yiwu or Guangzhou are usually better.'),
+     'Electronics is its strength (Huaqiangbei is the largest electronics market in the world), but Shenzhen also leads in hardware, tech accessories, gadgets and rapid prototyping thanks to nearby manufacturing. For non-electronic consumer goods, Yiwu or Guangzhou are usually better. Spot electronics at Huaqiangbei can be bought by the single unit; custom PCBA usually starts at 500–1,000 pieces.'),
     ('Can I visit all three cities in one trip?',
-     'Yes. High-speed rail connects them: Yiwu to Hangzhou ~1h, Hangzhou to Shenzhen ~6h, Guangzhou to Shenzhen ~0.5h. A buyer can cover all three in a week, though most use an agent to visit on their behalf and consolidate findings.'),
+     'Yes, and the distances are manageable by high-speed rail: Yiwu to Hangzhou ~130 km (~1h), Hangzhou to Shenzhen ~1,300 km (~6–7h), Guangzhou to Shenzhen ~130 km (~30 min). A buyer can cover all three in roughly a week. Most Gulf buyers instead use an agent to visit on their behalf and consolidate findings into one shipment.'),
     ('Which city has the lowest MOQ?',
-     'Yiwu. Its market model lets you mix dozens of SKUs in a single container at very low per-item minimums, which is why it dominates small-commodity and gift sourcing for buyers testing the Gulf market. Guangzhou and Shenzhen generally need larger runs per style.'),
+     'Yiwu, by a wide margin. Its market model lets you mix 100–500 SKUs in a single container at per-item minimums as low as 50–500 units per style, which is why it dominates small-commodity and gift sourcing for buyers testing the Gulf market. Guangzhou apparel typically needs 100–1,000 units per style; Shenzhen electronics 100–500 units per style (single units only for spot stock at Huaqiangbei).'),
+    ('How far apart are Yiwu, Guangzhou and Shenzhen?',
+     'Roughly 1,200 km separates Yiwu from Guangzhou and about 1,300 km from Shenzhen; Guangzhou and Shenzhen are only ~130 km apart (a 30-minute high-speed ride). A full Yiwu–Guangzhou–Shenzhen loop is about 2,600 km of travel, which is exactly why most buyers consolidate through one agent rather than ferry goods city by city.'),
+    ('What are typical price ranges in each city?',
+     'Ex-works, per unit: Yiwu small commodities ¥0.5–¥30 ($0.07–$4), Guangzhou apparel ¥15–¥200 ($2–$28) with bags ¥30–¥300 ($4–$42), Shenzhen electronics ¥10–¥500+ with accessories ¥1–¥50 ($0.14–$7). These are market ranges, not quotes — final price depends on material, order size and customization, and consolidation usually lowers effective per-unit freight.'),
     ('How does consolidation across cities work?',
-     'A sourcing agent collects goods from Yiwu, Guangzhou and Shenzhen, inspects and repackages them, then ships everything as one sea or air container to the Gulf. This cuts per-unit freight sharply and avoids three separate customs entries — the main logistics advantage of using multiple cities.'),
+     'A sourcing agent collects goods from Yiwu, Guangzhou and Shenzhen, inspects and repackages them, then ships everything as one sea or air container to the Gulf. This cuts per-unit freight sharply and avoids three separate customs entries — the main logistics advantage of using multiple cities. With the cities ~1,200 km apart, doing it yourself roughly triples handling versus one agent shipment.'),
 ]
 
 def city_body():
@@ -159,22 +163,57 @@ def city_body():
     <thead><tr style="background:#0b1f3a;color:#fff">
       <th style="padding:10px 12px;text-align:left">City</th>
       <th style="padding:10px 12px;text-align:left">Best for</th>
-      <th style="padding:10px 12px;text-align:left">MOQ</th>
+      <th style="padding:10px 12px;text-align:left">Typical MOQ</th>
       <th style="padding:10px 12px;text-align:left">Note for Gulf buyers</th>
     </tr></thead>
     <tbody>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories, home bits</td><td style="padding:10px 12px">Lowest</td><td style="padding:10px 12px">75,000+ shops, mix many SKUs per container</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel, bags, beauty, watches</td><td style="padding:10px 12px">Medium</td><td style="padding:10px 12px">Wholesale markets + Canton Fair, fashion grade</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics, gadgets, hardware, prototyping</td><td style="padding:10px 12px">Medium</td><td style="padding:10px 12px">Huaqiangbei, fastest for custom tech</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories, home bits</td><td style="padding:10px 12px">50–500 units/style; 100–500 SKUs/container</td><td style="padding:10px 12px">75,000+ shops; ex-works ¥0.5–¥30/unit ($0.07–$4)</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel, bags, beauty, watches</td><td style="padding:10px 12px">100–1,000 units/style</td><td style="padding:10px 12px">Wholesale markets + Canton Fair; apparel ¥15–¥200/pc ($2–$28)</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics, gadgets, hardware, prototyping</td><td style="padding:10px 12px">100–500 units/style; singles at Huaqiangbei</td><td style="padding:10px 12px">Huaqiangbei; electronics ¥10–¥500+/unit, accessories ¥1–¥50</td></tr>
     </tbody>
   </table>
 </div></section>
 
 <section class="sec alt"><div class="wrap">
   <div class="sec-head"><h2>What each city is genuinely good at</h2></div>
-  <p><b>Yiwu</b> is the world's largest small-commodity market. Its power is assortment and low MOQ: a Gulf retailer can fill one container with hundreds of gift and accessory SKUs that no single factory would produce. It is weak for custom apparel and serious electronics.</p>
-  <p><b>Guangzhou</b> is the apparel and accessories capital — finished garments, fabrics, bags and beauty supplies, with the Canton Fair as the headline event. Choose it for fashion and larger runs.</p>
-  <p><b>Shenzhen</b> owns electronics and hardware: components, consumer gadgets, tech accessories and rapid prototyping. Choose it when customization or speed-to-market matters.</p>
+  <p><b>Yiwu</b> is the world's largest small-commodity market. Its power is assortment and low MOQ: a Gulf retailer can fill one container with 100–500 gift and accessory SKUs that no single factory would produce. It is weak for custom apparel and serious electronics.</p>
+  <p><b>Guangzhou</b> is the apparel and accessories capital — finished garments, fabrics, bags and beauty supplies, with the Canton Fair as the headline event. Choose it for fashion and larger runs (typical apparel MOQ 100–1,000 pieces per style).</p>
+  <p><b>Shenzhen</b> owns electronics and hardware: components, consumer gadgets, tech accessories and rapid prototyping (custom PCBA runs usually start at 500–1,000 pieces). Choose it when customization or speed-to-market matters.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Typical unit prices (ex-works, before freight)</h2></div>
+  <p>These are market ranges seen by Gulf buyers, not fixed quotes — final price depends on material, order size and customization. They show why matching category to city matters.</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">City</th>
+      <th style="padding:10px 12px;text-align:left">Category</th>
+      <th style="padding:10px 12px;text-align:left">Typical unit price</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories</td><td style="padding:10px 12px">¥0.5–¥30 (about $0.07–$4)</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel / bags</td><td style="padding:10px 12px">¥15–¥200 / ¥30–¥300 (about $2–$28 / $4–$42)</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics / accessories</td><td style="padding:10px 12px">¥10–¥500+ / ¥1–¥50 (about $1.4–$70 / $0.14–$7)</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Distances between the three cities</h2></div>
+  <p>The cities sit far apart, which is exactly why consolidation through one agent beats shipping city by city. Guangzhou and Shenzhen are close; Yiwu is the outlier, roughly 1,200 km north.</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Route</th>
+      <th style="padding:10px 12px;text-align:left">Distance</th>
+      <th style="padding:10px 12px;text-align:left">High-speed rail</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Yiwu – Guangzhou</td><td style="padding:10px 12px">~1,200 km</td><td style="padding:10px 12px">~6.5 h</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Yiwu – Shenzhen</td><td style="padding:10px 12px">~1,300 km</td><td style="padding:10px 12px">~7 h</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Guangzhou – Shenzhen</td><td style="padding:10px 12px">~130 km</td><td style="padding:10px 12px">~30 min</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Yiwu – Hangzhou</td><td style="padding:10px 12px">~130 km</td><td style="padding:10px 12px">~1 h</td></tr>
+    </tbody>
+  </table>
 </div></section>
 
 <section class="sec"><div class="wrap">
@@ -185,7 +224,7 @@ def city_body():
     <li>Turns three separate shipments into one sea container (lower freight, one customs entry)</li>
     <li>Lets a small brand test many SKUs at low MOQ before committing to volume</li>
   </ul>
-  <p>The saving is not in any single city being "cheapest" — it is in <b>matching each category to its best source and consolidating</b>.</p>
+  <p>On a typical mixed Gulf order, consolidating the three city purchases into one 40ft container cuts customs entries from three to one and usually lowers per-unit logistics cost by 20–35%%. The saving is not in any single city being "cheapest" — it is in <b>matching each category to its best source and consolidating</b>.</p>
 </div></section>
 
 <section class="sec alt"><div class="wrap">
@@ -209,7 +248,7 @@ def city_body():
 COMPARE = {
     'agent-vs-trading': {
         'file': 'sourcing-agent-vs-trading-company.html',
-        'title': 'China Sourcing Agent vs Trading Company: Which Actually Saves Gulf Buyers More?',
+        'title': 'Sourcing Agent vs Trading Company: Which Saves Gulf Buyers More?',
         'desc': 'An independent comparison of China sourcing agents vs trading companies: how each earns, a $5,000 worked cost example, when each wins, and red flags to avoid.',
         'canonical': BASE + '/sourcing-agent-vs-trading-company.html',
         'body': agent_body(),

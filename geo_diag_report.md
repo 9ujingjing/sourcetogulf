@@ -59,9 +59,9 @@ Scanned: 38 HTML pages under `/Users/jingjinggu/Desktop/sourcetogulf/Kimi_Agent_
 | shipping/china-to-saudi-arabia.html | 761 | 10.0% | 49 | ✅ | ✅ | WebPage,WebSite,Organization | 4.2 | 0 | 5 | 0.54 |
 | shipping/china-to-uae.html | 760 | 9.8% | 40 | ✅ | ✅ | WebPage,WebSite,Organization | 3.9 | 0 | 5 | 0.54 |
 | solutions.html | 688 | 10.0% | 46 | ✅ | ✅ | WebPage,BreadcrumbList,ListItem,ListItem | 1.3 | 0 | 5 | 0.88 |
-| sourcing-agent-vs-trading-company.html | 1277 | 14.7% | 63 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.5 | 0 | 5 | 0.86 |
+| sourcing-agent-vs-trading-company.html | 1277 | 14.7% | 64 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 2.5 | 0 | 5 | 0.86 |
 | uae-import-guide-from-china.html | 1540 | 16.8% | 57 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 1.8 | 0 | 5 | 1.00 |
-| yiwu-vs-guangzhou-vs-shenzhen.html | 1143 | 14.1% | 68 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 0.6 | 0 | 5 | 0.84 |
+| yiwu-vs-guangzhou-vs-shenzhen.html | 1650 | 17.3% | 68 | ✅ | ✅ | WebPage,Organization,FAQPage,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer,Question,Answer | 6.8 | 0 | 5 | 0.95 |
 
 
 ## Answer-first review (first ~200 chars of body text)
@@ -179,7 +179,7 @@ _Per the playbook, the opening must answer the question directly. Spot-check bel
 **uae-import-guide-from-china.html** (16.8% / 1540 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
-**yiwu-vs-guangzhou-vs-shenzhen.html** (14.1% / 1143 words)
+**yiwu-vs-guangzhou-vs-shenzhen.html** (17.3% / 1650 words)
 > Source ToGulf Services ▾ Sourcing & Quality Product Sourcing Send a photo, we find it Quality Inspection Video proof before shipping Supplier Verification Check factories before you commit Branding & 
 
 
