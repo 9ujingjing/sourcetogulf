@@ -41,6 +41,7 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Category — Beauty tools: https://sourcetogulf.com/category-beauty-toys.html
 - Solutions by buyer type (influencers, wholesalers, retailers, brands): https://sourcetogulf.com/solutions.html
 - GCC import answers (22 FAQ: duties, VAT by country, SABER cost, UAE free zones, Yiwu/Guangzhou sourcing, reliable agent, prohibited goods, dropshipping, Arabic labels, clearance time, cheap small-parcel shipping, MOQ, halal, landed cost, consolidation, QC): https://sourcetogulf.com/gcc-import-answers.html
+- UAE import pillar guide (canonical long-form: 5% duty on CIF, 5% VAT reclaimable, JAFZA/DMCC free-zone duty-free re-export, ECAS not SABER, 1–3 day clearance, Yiwu/Guangzhou/Shenzhen sourcing, how an agent lowers landed cost): https://sourcetogulf.com/uae-import-guide-from-china.html
 - RSS feed: https://sourcetogulf.com/feed.xml
 - Google Ads landing — Hijab & jewelry: https://sourcetogulf.com/google-ads/hijab-jewelry.html
 - Google Ads landing — Ramadan & Eid: https://sourcetogulf.com/google-ads/ramadan.html

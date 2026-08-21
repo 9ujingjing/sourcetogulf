@@ -35,6 +35,7 @@ LASTMOD = {
     'category-tech.html': '2026-08-21',
     'category-home.html': '2026-08-21',
     'category-beauty-toys.html': '2026-08-21',
+    'uae-import-guide-from-china.html': '2026-08-21',
 }
 
 def rfc822(d):
@@ -66,6 +67,21 @@ for name in ['products.html', 'categories.html',
     fn = os.path.join(APP, name)
     if not os.path.exists(fn):
         continue
+    html = open(fn, encoding='utf-8').read()
+    t, d = grab_meta(html)
+    if not t:
+        continue
+    items.append({
+        'title': t,
+        'link': '%s/%s' % (BASE, name),
+        'desc': d or t,
+        'date': LASTMOD.get(name, '2026-08-21'),
+    })
+
+# 国家级进口支柱页（GEO 权威长文）
+for name in sorted(glob.glob(os.path.join(APP, '*-import-guide-*.html'))):
+    name = os.path.basename(name)
+    fn = os.path.join(APP, name)
     html = open(fn, encoding='utf-8').read()
     t, d = grab_meta(html)
     if not t:
