@@ -3,8 +3,29 @@
 tpl_common.py — 共享站点模板与工具
 从 products.html 抽取 <style>/<header>/<footer>，供品类页/分群页/问答页/广告页复用，
 保证全站视觉与双语导航一致。同时提供到岸价计算与最小多语切换脚本。
+
+========================================================================
+GEO 内容生成铁律（2026 实战手册，所有 build_*.py 必须遵守）
+------------------------------------------------------------------------
+1. 答案前置：正文前 200 字必须把主问题一句话答完，不铺垫、不抖包袱。
+2. 事实密度：多堆权威数字 / 统计 / 具体金额 / 百分比 / 年份；关键词堆砌对 AI
+   无效甚至扣分。目标 fact density ≥ 3 个信号 / 100 词。
+3. 客观口吻：删掉 "we believe / I think / our team / we are confident" 这类
+   主观词（抬高模型 perplexity，更不易被引用），写成百科式陈述句。
+4. 模块化：H2/H3 直接照抄用户在 ChatGPT 里的原话问法，每块 200–400 字自成
+   完整答案，并配 FAQPage JSON-LD 直接喂成引用候选。
+5. SSR 优先：所有关键文本必须进原始 HTML（page_shell 已保证），绝不靠
+   客户端 JS 注入正文 / FAQ / 价格表。
+6. 老三样是入场券：title / viewport / canonical 必须存在且为 https。
+========================================================================
 """
 import re, os
+
+# 内容质量自检清单（供 build 脚本与 geo_diag.py 引用）
+SUBJECTIVE_BANNED = ["we believe", "i think", "we think", "our team", "we feel",
+                     "in our opinion", "we are proud", "we are confident",
+                     "our mission", "we strive"]
+
 
 APP = os.path.dirname(os.path.abspath(__file__))
 
