@@ -144,6 +144,7 @@ def page_shell(title, description, canonical, body_inner, json_ld=None, extra_he
         + '<footer>\n' + FOOTER + '\n</footer>\n'
         + FLOAT_BTN + '\n'
         '<script>' + MINI_JS + '</script>\n'
+        '<script src="/fx.js" defer></script>\n'
         + ld + '\n'
         '</body>\n'
         '</html>')
