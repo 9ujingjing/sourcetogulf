@@ -47,6 +47,58 @@ CAT_COPY = {
   },
 }
 
+# 每个品类的买家 FAQ（GEO：增加可被 AI 引用的问答面；独立陈述、无主观词）
+CAT_FAQ = {
+  'home-fragrance': [
+    ('What is the typical MOQ for home fragrance items?',
+     'On SourceToGulf\'s curated picks, home-fragrance MOQs run about 30 to 200 pieces per item. Fully custom scents or private-label production start higher, often 500+ pieces, because the fragrance base and packaging are made to order.'),
+    ('Can you handle Arabic labels and Gulf compliance for home fragrance?',
+     'Yes. Many Gulf buyers need bilingual or Arabic labeling, so we arrange Arabic printing before shipment. Fragrance and incense items are also screened against destination rules - for Saudi Arabia that means SFDA coordination where applicable.'),
+    ('How long does home-fragrance shipping to the Gulf take?',
+     'Air freight is typically 7 to 10 days door to door; sea freight (consolidated) is 25 to 35 days. We consolidate with your other categories so one shipment covers everything.'),
+  ],
+  'seasonal': [
+    ('When should I order Ramadan and Eid stock?',
+     'Order 2 to 3 months ahead - roughly November to December - so goods clear customs and reach your shelves before Ramadan. We consolidate seasonal stock and ship early to avoid the pre-holiday rush.'),
+    ('What are typical MOQs for seasonal items?',
+     'Most lanterns, festive tableware and gift packaging start at 50 to 300 pieces per design. Lower-MOQ items let small sellers test a few styles before committing to volume.'),
+    ('Do you handle Arabic or gift packaging for seasonal products?',
+     'Yes. Custom Arabic and gift-ready packaging is available at low MOQ, which is what makes these items re-orderable through the holiday quarter.'),
+  ],
+  'fashion': [
+    ('What is the MOQ for hijab accessories and fashion jewelry?',
+     'Curated picks range from 12 to 200 pieces per style. Custom plating, stone settings or private-label branding start higher, typically 300+ pieces per design.'),
+    ('Can fashion items be shipped to Saudi Arabia with SABER?',
+     'Yes. We handle SABER registration for the apparel and accessories categories that require it, and arrange Arabic labels so the shipment clears Jeddah or Dammam without delay.'),
+    ('How fast can I reorder fashion bestsellers?',
+     'Reorders from the same Guangzhou market usually take 10 to 20 days including pre-shipment QC, since the supplier and spec are already confirmed.'),
+  ],
+  'tech': [
+    ('What are typical MOQs for phone accessories?',
+     'Most phone cases, chargers and holders run 50 to 500 pieces per model; many curated picks sit around 100 pieces, which suits marketplace and TikTok sellers testing styles.'),
+    ('Do tech accessories need GCC conformity like ECAS or QC?',
+     'Some do - chargers, power banks and batteries often need conformity certificates (ECAS for the UAE, QC for Qatar, and others). We screen each product and prepare the documents before shipment.'),
+    ('How long does tech shipping to the Gulf take?',
+     'Air freight is 7 to 10 days door to door; sea consolidation is 25 to 35 days. Light tech accessories are cheap to ship, which is why they turn over fast.'),
+  ],
+  'home': [
+    ('What is the MOQ for home and kitchenware?',
+     'Most items run 50 to 300 pieces per product. Because we consolidate, a small brand can mix many home SKUs into one container at per-item minimums.'),
+    ('Can you consolidate home goods with other categories?',
+     'Yes. Goods from all categories arrive at our single Guangzhou warehouse, get inspected and repacked, then ship as one Gulf shipment - one customs entry, lower freight.'),
+    ('Do you handle fragile-item packing?',
+     'Yes. Fragile kitchen and decor items get protective packing and a pre-shipment photo/video check, so breakage is caught in China, not at your door.'),
+  ],
+  'beauty-toys': [
+    ('What is the MOQ for beauty tools and accessories?',
+     'Most beauty tools and organizers run 50 to 300 pieces per item. Small, light and giftable items are easy to bundle and ideal for impulse and salon buyers.'),
+    ('Do beauty items need SFDA or halal documents for Saudi?',
+     'Some cosmetics and supplements do. We filter suppliers with the right certifications and prepare the supporting documents so Saudi-bound goods clear without holds.'),
+    ('Can beauty tools be private-labeled?',
+     'Yes. Low-MOQ custom branding and Arabic labels are available, which is what lets small Gulf brands launch their own beauty line without large minimums.'),
+  ],
+}
+
 def json_ld_for(cat, items):
     els = []
     for i, p in enumerate(items, 1):
@@ -57,13 +109,26 @@ def json_ld_for(cat, items):
             BASE, p['img'],
             json.dumps(cat['en']),
             pr['landed'], p['moq']))
-    return ('{\n'
+    itemlist_str = ('{\n'
         '  "@context": "https://schema.org",\n'
         '  "@type": "ItemList",\n'
         '  "name": ' + json.dumps(cat['en'] + ' — SourceToGulf') + ',\n'
         '  "url": "' + BASE + '/category-' + cat['key'] + '.html",\n'
         '  "numberOfItems": ' + str(len(items)) + ',\n'
         '  "itemListElement": [\n' + ',\n'.join(els) + '\n  ]\n}')
+    faq = CAT_FAQ.get(cat['key'])
+    if faq:
+        faq_ld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": q,
+                 "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in faq
+            ]
+        }, ensure_ascii=False, indent=2)
+        return '[\n' + itemlist_str + ',\n' + faq_ld + '\n]'
+    return itemlist_str
 
 def build_category_page(cat, items, other_cats):
     key = cat['key']
@@ -77,6 +142,13 @@ def build_category_page(cat, items, other_cats):
             continue
         rel += ('<a class="rel-card" href="/category-%s.html"><span>%s</span><span>%d items · landed prices</span></a>'
                 % (o['key'], o['en'], len([p for p in prods if p['cat'] == o['key']])))
+    faq = CAT_FAQ.get(key)
+    faq_html = ''
+    if faq:
+        faq_items = ''.join('<div class="qa"><h3>%s</h3><p>%s</p></div>' % (q, a) for q, a in faq)
+        faq_html = ('<section style="padding-top:0"><div class="wrap">'
+            '<div class="sec-head"><span class="kicker">FAQ</span><h2>%s - common questions</h2></div>'
+            '<div class="qa-list">' % cat['en']) + faq_items + '</div></div></section>'
     body = ('<section class="page-hero"><div class="wrap">\n'
         '<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <a href="/products.html" data-en="Hot Picks" data-ar="أبرز المنتجات">Hot Picks</a> ← <span>' + cat['en'] + '</span></div>\n'
         '<h1>' + cat['en'] + '</h1>\n'
@@ -95,6 +167,7 @@ def build_category_page(cat, items, other_cats):
         '<h2 style="margin-bottom:18px">Browse other categories</h2>\n'
         '<div class="rel-grid">' + rel + '</div>\n'
         '</div></section>\n'
+        + faq_html + '\n'
         '<section style="padding-top:0"><div class="wrap">\n'
         '  <div class="cta-box">\n'
         '    <h2>Want a custom ' + cat['en'] + ' list?</h2>\n'

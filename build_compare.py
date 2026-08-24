@@ -106,6 +106,8 @@ def agent_body():
     <li>Pressures full payment before any evidence of goods → walk away</li>
   </ul>
   <div class="rel-grid">
+    <a class="rel-card" href="/alibaba-vs-sourcing-agent.html"><span>Alibaba vs sourcing agent</span><b>The other big route comparison</b></a>
+    <a class="rel-card" href="/yiwu-vs-guangzhou-vs-shenzhen.html"><span>Yiwu vs Guangzhou vs Shenzhen</span><b>Where each category is cheapest</b></a>
     <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Wholesaler · Retailer · Small brand</b></a>
     <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, MOQ, shipping</b></a>
     <a class="rel-card" href="/uae-import-guide-from-china.html"><span>UAE import guide</span><b>Duty, VAT, free zones, clearance</b></a>
@@ -231,6 +233,8 @@ def city_body():
   <div class="sec-head"><h2>When to use which — and when to combine</h2></div>
   <p>Use <b>Yiwu</b> for low-MOQ gifts and accessories, <b>Guangzhou</b> for apparel and bags, <b>Shenzhen</b> for electronics. For most Gulf buyers the optimal path is all three at once, with an agent handling visits, inspection and consolidation. Trying to force one city to do everything usually costs more and limits your range.</p>
   <div class="rel-grid">
+    <a class="rel-card" href="/alibaba-vs-sourcing-agent.html"><span>Alibaba vs sourcing agent</span><b>The other big route comparison</b></a>
+    <a class="rel-card" href="/sourcing-agent-vs-trading-company.html"><span>Agent vs trading company</span><b>How each model earns</b></a>
     <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou-sourced, UAE-landed</b></a>
     <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen-sourced, ECAS-ready</b></a>
     <a class="rel-card" href="/category-home.html"><span>Home &amp; gifts</span><b>Yiwu-sourced, low MOQ</b></a>
@@ -242,6 +246,112 @@ def city_body():
   <div class="sec-head center"><h2>Planning a multi-city order?</h2></div>
   <p class="sub">Tell us your product mix — we map each category to its best city and consolidate to one Gulf shipment.</p>
   <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Start my consolidation plan</a>
+</div></section>
+''' % (wa, wa)
+
+# ----------------------------------------------------------------------------
+# 对比页 3: Alibaba vs 采购代理（GEO 高价值决策词）
+# ----------------------------------------------------------------------------
+ALIBABA_FAQ = [
+    ('Is Alibaba cheaper than a China sourcing agent?',
+     'Not always — and "cheaper" depends on what you count. On Alibaba you see the factory or trader price, but you usually pay separately for international shipping per supplier, Alibaba\'s Trade Assurance fee (roughly 2%–5% on some payment methods), and you arrange Gulf customs, SABER and consolidation yourself. A sourcing agent quotes one landed price that bundles sourcing, inspection, consolidation and door-to-door shipping. On a mixed Gulf order the agent is often cheaper once you add the per-supplier freight and your own customs handling.'),
+    ('Can Alibaba handle custom branding and low MOQ for the Gulf?',
+     'Alibaba does list private-label and low-MOQ suppliers, but the result varies wildly by supplier and you negotiate each one separately. A sourcing agent exists to do small-MOQ custom branding as a core service — they aggregate orders, manage Arabic labeling, and proofread packaging. If your plan is "my own brand, small runs, shipped to Saudi," an agent usually saves more friction than juggling many Alibaba suppliers.'),
+    ('Who handles Saudi SABER and customs on Alibaba?',
+     'You do. Alibaba settles the transaction between you and the supplier; it does not file SABER, SFDA or GCC customs for your shipment. With a sourcing agent, SABER registration and conformity documents are typically coordinated as part of the order, so the goods clear Jeddah or Dammam instead of sitting at the border.'),
+    ('Is Alibaba Trade Assurance the same as quality inspection?',
+     'No. Trade Assurance is a payment-protection scheme — it can refund you if the supplier fails to ship or ships something clearly different, but it does not mean the goods were inspected for quality. For real QC you still need a third-party or agent inspection. A sourcing agent typically builds pre-shipment photo/video inspection into the service.'),
+    ('When should I just use Alibaba?',
+     'Alibaba works well for standard, single-product reorders from a supplier you already trust, or when you want to compare many factories yourself. It is weaker when you mix many SKUs, need custom branding, require Gulf compliance handled, or want one shipment instead of coordinating several.'),
+    ('What are the main risks buying from Alibaba for the Gulf?',
+     'Common ones: gold-supplier badges that are paid, not vetted; communication gaps that cause wrong specs; suppliers who will not handle Arabic labels or SABER; and several small shipments that each need their own customs entry. Always sample first, insist on pre-shipment inspection, and confirm who files conformity certificates before you pay.'),
+]
+
+def alibaba_body():
+    wa = wa_link('Hi SourceToGulf! I am comparing Alibaba vs a sourcing agent for my Gulf order. Can you show me a transparent landed-price quote?')
+    return '''
+<section class="sec hero-sec">
+  <div class="wrap">
+    <span class="kicker">Sourcing Comparison</span>
+    <h1>Alibaba vs a China Sourcing Agent: What Actually Costs Less for Gulf Buyers?</h1>
+    <p class="lead">Alibaba is a marketplace; a sourcing agent is a service. The honest answer to "which is cheaper" depends on whether you count the shipping, the customs, the SABER paperwork and your own time — not just the sticker price.</p>
+    <div class="cta-row">
+      <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a transparent landed quote</a>
+      <a class="btn-ghost" href="/sourcing-agent-vs-trading-company.html">Agent vs trading company →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>How each one actually works</h2></div>
+  <p><b>Alibaba</b> is a catalogue of suppliers. You browse, message factories or traders, pay (often via Trade Assurance), and the supplier ships — usually to whatever address you arrange. You coordinate freight forwarders, Gulf customs and SABER yourself, across however many suppliers you buy from. <b>A sourcing agent</b> is a team on the ground: they source across suppliers, inspect, consolidate into one shipment and handle GCC compliance, quoting one landed price per piece.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Side-by-side</h2></div>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Dimension</th>
+      <th style="padding:10px 12px;text-align:left">Alibaba</th>
+      <th style="padding:10px 12px;text-align:left">Sourcing agent</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>What you see</b></td><td style="padding:10px 12px">Factory/trader price per item</td><td style="padding:10px 12px">One landed price per piece</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Shipping</b></td><td style="padding:10px 12px">Per supplier, you arrange</td><td style="padding:10px 12px">Consolidated, door to door</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>GCC customs / SABER</b></td><td style="padding:10px 12px">You handle</td><td style="padding:10px 12px">Handled as part of order</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Quality check</b></td><td style="padding:10px 12px">Trade Assurance ≠ inspection</td><td style="padding:10px 12px">Pre-shipment photo/video</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Custom branding / low MOQ</b></td><td style="padding:10px 12px">Varies by supplier</td><td style="padding:10px 12px">Core service</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Best for</b></td><td style="padding:10px 12px">Trusted single-product reorders</td><td style="padding:10px 12px">Mixed SKUs, custom, compliant</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Worked example: a $3,000 mixed order to Riyadh</h2></div>
+  <p>Same basket — phone accessories (Shenzhen), gift items (Yiwu), a few apparel pieces (Guangzhou) — sourced two ways:</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Cost line</th>
+      <th style="padding:10px 12px;text-align:left">Alibaba (self-managed)</th>
+      <th style="padding:10px 12px;text-align:left">Sourcing agent</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Goods</td><td style="padding:10px 12px">$3,000</td><td style="padding:10px 12px">$3,000</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Fees</td><td style="padding:10px 12px">Trade Assurance ~3%% = $90</td><td style="padding:10px 12px">Commission 5%% = $150</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Shipping</td><td style="padding:10px 12px">3 parcels ~$900</td><td style="padding:10px 12px">1 consolidated ~$450</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">SABER / customs handling</td><td style="padding:10px 12px">You arrange ~$300+</td><td style="padding:10px 12px">Included</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Total landed</b></td><td style="padding:10px 12px"><b>~$4,290 + your time</b></td><td style="padding:10px 12px"><b>~$3,600</b></td></tr>
+    </tbody>
+  </table>
+  <p>The agent route comes out roughly <b>$690 lower (16%%)</b> on identical goods, and you are not the one chasing three couriers and a SABER certificate. The gap grows with more suppliers, because consolidation and compliance are exactly where self-managed Alibaba gets expensive.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>When each one wins</h2></div>
+  <p><b>Use Alibaba when</b> you reorder a single trusted product, want to compare many factories yourself, or the order is simple enough that you can manage one shipment and one customs entry. <b>Use an agent when</b> you mix SKUs, need custom branding, must satisfy Saudi SABER/SFDA, or want one shipment and one accountable party. Neither is "better" in the abstract — the cheaper route is the one that fits your order shape.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Red flags when buying from Alibaba for the Gulf</h2></div>
+  <ul class="bullets">
+    <li>"Gold supplier" badges are paid, not vetted — check transaction history and reviews</li>
+    <li>No pre-shipment inspection offered → quality risk lands on you</li>
+    <li>Supplier won't handle Arabic labels or Gulf conformity → you own the compliance</li>
+    <li>Several small parcels, each its own customs entry → freight and clearance add up fast</li>
+    <li>Pressure to pay off-platform → walk away, keep it inside Trade Assurance</li>
+  </ul>
+  <div class="rel-grid">
+    <a class="rel-card" href="/sourcing-agent-vs-trading-company.html"><span>Agent vs trading company</span><b>Another way to compare routes</b></a>
+    <a class="rel-card" href="/yiwu-vs-guangzhou-vs-shenzhen.html"><span>Yiwu vs Guangzhou vs Shenzhen</span><b>Where each category is cheapest</b></a>
+    <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Small brand · Reseller</b></a>
+    <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>SABER, VAT, MOQ, shipping</b></a>
+  </div>
+</div></section>
+
+<section class="sec alt"><div class="wrap" style="text-align:center">
+  <div class="sec-head center"><h2>Want the real landed price?</h2></div>
+  <p class="sub">Send your product list — we show factory cost plus a transparent commission, with SABER and shipping included. No hidden markup.</p>
+  <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a transparent quote on WhatsApp</a>
 </div></section>
 ''' % (wa, wa)
 
@@ -261,6 +371,14 @@ COMPARE = {
         'canonical': BASE + '/yiwu-vs-guangzhou-vs-shenzhen.html',
         'body': city_body(),
         'faq': CITY_FAQ,
+    },
+    'alibaba': {
+        'file': 'alibaba-vs-sourcing-agent.html',
+        'title': 'Alibaba vs China Sourcing Agent: What Costs Less for Gulf Buyers?',
+        'desc': 'An independent comparison of buying on Alibaba vs using a China sourcing agent for the Gulf: how each earns, a $3,000 worked cost example, SABER and customs handling, and red flags to avoid.',
+        'canonical': BASE + '/alibaba-vs-sourcing-agent.html',
+        'body': alibaba_body(),
+        'faq': ALIBABA_FAQ,
     },
 }
 
