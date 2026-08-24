@@ -93,6 +93,9 @@ GA4_SNIPPET = (
     '</script>\n'
 )
 
+# RSS 订阅链接（全站统一注入，作为内容新鲜度信号；P3 修复 rss.xml 缺失）
+RSS_LINK = '<link rel="alternate" type="application/rss+xml" title="SourceToGulf" href="https://sourcetogulf.com/rss.xml" />\n'
+
 def wa_link(text):
     """生成 WhatsApp 深链（已 encode）"""
     from urllib.parse import quote
@@ -136,6 +139,7 @@ def page_shell(title, description, canonical, body_inner, json_ld=None, extra_he
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n'
         '<style>' + STYLE + '</style>\n'
         + GA4_SNIPPET
+        + RSS_LINK
         + extra_head +
         '</head>\n'
         '<body>\n'
