@@ -93,3 +93,67 @@ Social shares don't directly rank you, but they:
 - drive referral traffic (a ranking signal),
 - earn natural mentions/links from creators (see backlinks-plan.md),
 - feed AI engines fresh, real-world proof of your composite capability.
+
+---
+
+## Level-up (2026-08-24): social can outrank search, and Snapchat is the gap
+
+Two things changed the playbook — one from the owner's own data, one from
+market research:
+
+1. **Organic Social can be a top-2 traffic source, not just a booster.**
+   On a peer China→Gulf site, once a "How to" page reached the first page of
+   Google, *Facebook* overtook Google as the #2 traffic source within days —
+   because real readers self-share useful content on X / Facebook / Instagram.
+   Implication: **every "How to" article must be pushed to social on launch
+   day.** Social is not "nice to have" — it is a parallel acquisition channel
+   that can rival search for a small site.
+
+2. **Snapchat is the most overlooked Gulf channel.** In Saudi Arabia,
+   Snapchat penetration among 18–34 year olds is ~90% — one of the highest in
+   the world, and far above where most brands put their budget (IG/TikTok).
+   For KSA-facing content (influencers, moms, resellers), Snapchat Spotlight
+   shoppable content is a first-mover opening in 2026. Add it to the mix.
+
+### Platforms & roles — UPDATED
+
+| Platform | Role | posting cadence |
+|---|---|---|
+| **TikTok** | Top-of-funnel; factory tours, product picks, sample proof | 3–4 / week |
+| **Instagram** | Brand trust; Reels + Stories; bio link | 3 / week |
+| **Snapchat** (KSA) | Overlooked 18–34 channel; Spotlight shoppable clips, Arabic | 2–3 / week |
+| **LinkedIn** | B2B credibility; landed-cost, SABER, founder POV | 2 / week |
+| **Facebook** (Groups + Page) | Community answer-box + can become a top traffic source | 2–3 / week |
+| **X / Twitter** | News-cycle amplification of fresh "How to" posts | on publish |
+
+### Mandatory per-article launch checklist
+
+When a new "How to" blog post goes live, do ALL of these within 48h:
+
+- [ ] **X/Twitter**: post the headline + the one surprising stat (e.g.
+      "SABER PC now lasts 6 months for high-risk goods") + link.
+- [ ] **Facebook**: share to 2–3 Gulf import / small-business groups + Page.
+- [ ] **Instagram**: 1 Reel pulling the worked example from the article.
+- [ ] **Snapchat** (if KSA-relevant): Spotlight clip in Arabic.
+- [ ] **LinkedIn**: excerpt the "why it matters for SMEs" angle.
+- [ ] **WhatsApp Broadcast**: notify warm leads with the direct link.
+- [ ] Add UTM to every link: `?utm_source=<platform>&utm_medium=social`.
+- [ ] In GA4, watch which platform sends the most clicks; double down there.
+
+### Google Trends method (for picking hot keywords)
+
+SEMRush / Ahrefs lag on *fresh* hot keywords — they only pick up a term after
+it has been searched for weeks. For a breaking topic (e.g. a new SABER rule),
+use **Google Trends** instead:
+
+1. Open Google Trends, enter your candidate keyword (e.g. "Saudi SABER 2026").
+2. Compare it against a keyword you already track (e.g. "import from China to
+   Saudi") — the **ratio** tells you the relative volume even when absolute
+   numbers are hidden.
+3. Check "Related queries" for rising sub-topics to spark the next article.
+4. Cross-check with the weekly **trend-radar** automation output
+   (`growth/trend-radar.md`) before committing to a topic.
+
+Rule of thumb from the owner: a small site wins by writing the *How to* +
+first-hand angle on a fresh hot topic, not by competing on the generic
+"What is" term the big sites already own.

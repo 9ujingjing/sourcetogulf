@@ -27,6 +27,8 @@ INCLUDE = [
     "blog/how-to-import-from-china-to-oman.html",
     "blog/landed-cost-china-to-gulf-explained.html",
     "blog/sourcing-for-livestream-sellers-gulf.html",
+    "blog/saber-2026-saudi-buyers-playbook.html",
+    "blog/china-gcc-fta-lower-import-duty.html",
     # GCC 指南（根目录）
     "uae-import-guide-from-china.html",
     "saudi-arabia-import-guide-from-china.html",
