@@ -29,6 +29,7 @@ INCLUDE = [
     "blog/sourcing-for-livestream-sellers-gulf.html",
     "blog/saber-2026-saudi-buyers-playbook.html",
     "blog/china-gcc-fta-lower-import-duty.html",
+    "blog/source-products-tiktok-shop-saudi-no-container.html",
     # GCC 指南（根目录）
     "uae-import-guide-from-china.html",
     "saudi-arabia-import-guide-from-china.html",
@@ -39,6 +40,7 @@ INCLUDE = [
     # 对比深度页
     "sourcing-agent-vs-trading-company.html",
     "yiwu-vs-guangzhou-vs-shenzhen.html",
+    "alibaba-vs-sourcing-agent.html",
     # 品类页
     "category-home-fragrance.html",
     "category-seasonal.html",
