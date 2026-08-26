@@ -317,6 +317,130 @@ def tiktok_body():
 '</div></section>'
     )
 
+# ===========================================================================
+# 文章 4: 如何从中国为 White Friday 2026 备货（海湾小商家指南）
+# 热词来源: White Friday 2026 = 2026-11-27，沙特/阿联酋全年第二大线上销售窗口
+# 角度: 大站写 "When is White Friday 2026"；我们写 "How to 作为海湾小商家从中国备货 + 代理一手经验"
+# 钉住买家人设: small business owners / resellers / influencers / moms
+# 配图: /images/blog/white-friday-hero.png / white-friday-sourcing.png / white-friday-delivery.png
+# ===========================================================================
+WHITE_FRIDAY_FAQ = [
+    ('When is White Friday 2026 and why does it matter for Gulf sellers?',
+     'White Friday 2026 falls on <b>27 November</b>. In Saudi Arabia and the UAE it is the biggest online sales event after Ramadan, and a large share of annual electronics, beauty and home-goods sales is concentrated in the last week of November. For a small seller the window is short and unforgiving: stock that arrives too late misses the sale; stock that arrives too early ties up capital. The buyers who win are the ones who plan the timeline backwards from 27 November.'),
+    ('Do I need a container to stock for White Friday?',
+     'No. A container is for proven, high-volume SKUs and needs roughly 60–90 days of buffer. Most small sellers and creators launch White Friday with a low-MOQ air-shipped batch of 200–1,000 units. It costs more per unit than sea freight, but it keeps working capital low, lets you test several products, and gets stock to your door in time for the sale. The goal for a first White Friday is to prove demand, not to fill a warehouse.'),
+    ('How early should I start sourcing from China for White Friday?',
+     'Work backwards from 27 November. Allow: <b>2–3 weeks</b> for samples and factory selection, <b>2–3 weeks</b> for private-label artwork and packaging production, <b>2–4 weeks</b> for bulk production, <b>1–2 weeks</b> for air shipping and customs clearance, and <b>1 week</b> of buffer for warehouse prep. That means product selection and samples should start by <b>early September</b>; bulk must ship from China by <b>mid-October</b> at the latest. Wait until October and you are gambling on every step being perfect.'),
+    ('Which products sell best on White Friday in Saudi and UAE?',
+     'The categories that consistently move are beauty tools and accessories, phone accessories, home organisation, small kitchen gadgets, modest-fashion accessories, LED lighting and smartwatches. The best picks share three traits: low MOQ available in China, a strong demo moment on video, and straightforward compliance for Saudi (SABER) or the UAE (ECAS). Avoid anything that needs refrigeration, hazmat certification, or a long testing cycle — those will not fit the White Friday timeline.'),
+    ('Can a small seller private-label products in time for White Friday?',
+     'Yes, if the artwork is locked by late September. Most China factories can add a logo and customise retail packaging at MOQs of 100–500 units in about 2–3 weeks. Arabic labels for Saudi must be included in the artwork. The common delay is not production — it is the buyer changing their mind on the logo or packaging design twice. Lock the artwork once, and the batch stays on schedule.'),
+]
+
+def white_friday_body():
+    wa = wa_link('Hi SourceToGulf! I want to stock for White Friday 2026 from China. Can you help me pick products, send samples, and handle packaging + shipping to the Gulf?')
+    return (
+'<section class="sec hero-sec"><div class="wrap">'
+'<span class="kicker">White Friday 2026 · Gulf E-commerce</span>'
+'<h1>How to Stock for White Friday 2026 from China (Gulf Small Business Guide)</h1>'
+'<p class="lead">White Friday 2026 falls on <b>27 November</b>. In Saudi Arabia and the UAE it is the biggest online sales window after Ramadan, and a large share of annual electronics, beauty and home-goods sales is concentrated in that final week. You do not need a container or a big warehouse to take part. The small sellers who win are the ones who start early, pick demo-friendly products, brand the packaging, and air-ship a low-MOQ batch so it clears customs and reaches the warehouse by mid-November. The practical path is: confirm your shortlist by early September, approve samples and artwork by late September, ship bulk by mid-October, and land goods by mid-November. Miss the September window and every remaining step becomes a gamble.</p>'
+'<p class="sub">By the SourceToGulf sourcing team · Updated 26 Aug 2026 · 10 min read</p>'
+'<div class="cta-row">'
+'<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Plan my White Friday stock</a>'
+'<a class="btn-ghost" href="/for-small-businesses.html">For small businesses →</a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<img src="/images/blog/white-friday-hero.png" alt="A small Gulf e-commerce seller preparing product boxes for White Friday sales season" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
+'<div class="sec-head"><h2>Why White Friday is a small-seller opening, not just a big-brand game</h2></div>'
+'<p>Large retailers plan White Friday six months ahead with containers. Small sellers do not have to copy that. The creator and reseller model that works in the Gulf is the opposite: launch several small tests, double down on the one that sells, and use private-label packaging to stand out from generic listings. The math is different too. A first White Friday batch can start under <b>$5,000</b> landed — product, samples, branded packaging, air freight, duty and VAT included — and still leave room for margin.</p>'
+'<p>White Friday is also a strong GEO signal for Google and AI engines because it is a recurring, date-anchored event. Search demand for "White Friday 2026 Saudi deals" and related product queries starts climbing in late September and peaks in the week before 27 November. Sellers who publish their offer and content early are the ones the algorithms learn to surface.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>The White Friday 2026 sourcing timeline (work backwards from 27 Nov)</h2></div>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Date / window</th><th style="padding:10px 12px;text-align:left">What to lock in</th><th style="padding:10px 12px;text-align:left">Why it matters</th></tr></thead>'
+'<tbody>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Early September</b></td><td style="padding:10px 12px">Product shortlist, factories, samples requested</td><td style="padding:10px 12px">Gives you time to compare suppliers and reject bad fits</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Late September</b></td><td style="padding:10px 12px">Sample approved, artwork finalised, packaging locked</td><td style="padding:10px 12px">Design changes after this point push production</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Mid-October</b></td><td style="padding:10px 12px">Bulk production complete, goods ship from China</td><td style="padding:10px 12px">Last safe air-freight departure for mid-November landing</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Early November</b></td><td style="padding:10px 12px">Customs clearance, warehouse received</td><td style="padding:10px 12px">Leaves a buffer for listing, photography, ads prep</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>20–27 November</b></td><td style="padding:10px 12px">Sale live, ads on, restock fast sellers by air</td><td style="padding:10px 12px">Peak demand window; best sellers often sell out</td></tr>'
+'</tbody></table>'
+'<p>The most common mistake is treating <b>mid-October</b> as the start date. By then it is usually too late to sample, brand and air-ship in time.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>What to stock: products that move in Saudi and UAE</h2></div>'
+'<p>The products that work share three traits: <b>low MOQ</b> from China, a <b>strong demo moment</b> on video or in a photo, and <b>straightforward compliance</b> for the destination. Based on what we see moving into Gulf warehouses ahead of sale seasons:</p>'
+'<ul class="bullets">'
+'<li><b>Beauty tools and accessories</b> — LED mirrors, gua-sha sets, makeup organisers, brush sets. HS 33, SABER/SFDA territory in Saudi, so plan certificates early.</li>'
+'<li><b>Phone and tech accessories</b> — cables, cases, wireless chargers, holders. High demand, but ECAS/GCC conformity required in the UAE and Saudi.</li>'
+'<li><b>Home organisation</b> — kitchen organisers, drawer dividers, storage boxes. Light, cheap to ship, easy to demo.</li>'
+'<li><b>Modest-fashion accessories</b> — scarves, pins, headbands, belts. Strong Gulf audience, low return rate.</li>'
+'<li><b>Small gadgets and LED lighting</b> — novelty lights, portable lamps, smartwatch accessories. Visual and giftable.</li>'
+'</ul>'
+'<p>Avoid refrigerated goods, hazmat, large appliances, or anything that needs a long certification cycle. Those are not first-White-Friday products.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<img src="/images/blog/white-friday-sourcing.png" alt="China sourcing agent sample table with product samples and blank private-label packaging" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
+'<div class="sec-head"><h2>Samples to your door before you commit</h2></div>'
+'<p>Never order a White Friday batch from a photo. We shortlist two or three factories, ship physical samples to your UAE or Saudi address, and let you approve the one you want on camera. The sample becomes the quality benchmark for the whole batch. For a $5,000 launch, sampling usually costs $100–200 and saves far more by avoiding a bad bulk order.</p>'
+'<p>This is where a composite sourcing partner differs from a freight forwarder or a packaging-only shop. We handle the factory search, the sample shipment, the packaging design and the final delivery — so the product that arrives at your door matches the one you approved.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Private-label packaging: the fastest way to stand out</h2></div>'
+'<p>Generic products compete on price. Branded products compete on trust. For White Friday, even a simple logo on the box and a thank-you card inside lifts perceived value and protects margin. At 100–500 unit MOQs most China factories can add custom retail packaging in 2–3 weeks.</p>'
+'<p>The artwork must include Arabic labelling for Saudi-bound goods and a clear product description for customs. Lock the design by late September; every revision after that pushes the production date and risks missing the mid-October shipping window.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Worked example: a $5,000 White Friday launch batch</h2></div>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Line item</th><th style="padding:10px 12px;text-align:left">What you get</th><th style="padding:10px 12px;text-align:left">Approx. cost</th></tr></thead>'
+'<tbody>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Samples (3 products)</b></td><td style="padding:10px 12px">Shipped to your door for approval</td><td style="padding:10px 12px">$150</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Bulk product</b></td><td style="padding:10px 12px">300 units of the winning SKU</td><td style="padding:10px 12px">$2,100</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Custom packaging</b></td><td style="padding:10px 12px">Logo box + Arabic label, MOQ 300</td><td style="padding:10px 12px">$400</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>SABER/ECAS</b></td><td style="padding:10px 12px">PC + SC or conformity clearance</td><td style="padding:10px 12px">$500</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Air freight + duty/VAT</b></td><td style="padding:10px 12px">Door to UAE or Saudi</td><td style="padding:10px 12px">$1,350</td></tr>'
+'</tbody></table>'
+'<p>Total landed cost: roughly <b>$5,500</b> for 300 branded, compliant units delivered to your door. Sell at a 2.5x landed price and the batch grosses about $13,750. Adjust the SKU and volume up or down, but the ratio stays similar for most first-time White Friday sellers.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Mistakes that make sellers miss White Friday</h2></div>'
+'<ul class="bullets">'
+'<li><b>Starting in October.</b> By then you have no margin for sample rejects, artwork revisions or shipping delays.</li>'
+'<li><b>Ordering blind.</b> A great Alibaba photo does not guarantee the product that arrives at your door.</li>'
+'<li><b>Ignoring compliance.</b> SABER/ECAS for electronics, toys and cosmetics cannot be fixed after arrival.</li>'
+'<li><b>Generic packaging.</b> You end up competing on price with every other reseller.</li>'
+'<li><b>Shipping sea freight to save money.</b> It is cheaper per unit but usually misses the sale window for a first-timer.</li>'
+'</ul>'
+'<div class="rel-grid">'
+'<a class="rel-card" href="/blog/saber-2026-saudi-buyers-playbook.html"><span>SABER 2026 playbook</span><b>Compliance timeline for Saudi goods</b></a>'
+'<a class="rel-card" href="/blog/source-products-tiktok-shop-saudi-no-container.html"><span>TikTok Shop Saudi</span><b>How creators launch without a container</b></a>'
+'<a class="rel-card" href="/services/custom-branding-packaging.html"><span>Custom packaging</span><b>Logo boxes + Arabic labels</b></a>'
+'<a class="rel-card" href="/for-small-businesses.html"><span>For small businesses</span><b>Low-MOQ sourcing playbook</b></a>'
+'<a class="rel-card" href="/for-resellers.html"><span>For resellers</span><b>Fast restock and branding</b></a>'
+'<a class="rel-card" href="/blog/china-gcc-fta-lower-import-duty.html"><span>China-GCC FTA</span><b>Cut duty on HS 33/85</b></a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap" style="text-align:center">'
+'<img src="/images/blog/white-friday-delivery.png" alt="Small parcels air-shipped from China arriving at a Gulf small business owner desk" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
+'<div class="cta-box">'
+'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<p>We help Gulf sellers build a White Friday batch from China without a container: product shortlisting, samples to your door, branded packaging, compliance and air shipping — all in one workflow. Tell us your budget and target country and we will map the timeline.</p>'
+'<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Plan my White Friday 2026 stock</a>'
+'</div>'
+'</div></section>'
+    )
+
 BLOG = {
     'saber-2026': {
         'file': 'blog/saber-2026-saudi-buyers-playbook.html',
@@ -344,6 +468,15 @@ BLOG = {
         'canonical': BASE + '/blog/source-products-tiktok-shop-saudi-no-container.html',
         'body': tiktok_body(),
         'faq': TIKTOK_FAQ,
+    },
+    'white-friday-2026': {
+        'file': 'blog/white-friday-2026-china-gulf-small-business.html',
+        'title': 'How to Stock for White Friday 2026 from China (Gulf Small Business Guide)',
+        'desc': 'A practical guide for Gulf small sellers sourcing White Friday 2026 stock from China: timeline, best products, samples, private-label packaging, landed cost example, and compliance — from a China sourcing team.',
+        'date': '2026-08-26',
+        'canonical': BASE + '/blog/white-friday-2026-china-gulf-small-business.html',
+        'body': white_friday_body(),
+        'faq': WHITE_FRIDAY_FAQ,
     },
 }
 
