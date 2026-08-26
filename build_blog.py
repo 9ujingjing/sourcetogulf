@@ -322,7 +322,7 @@ def tiktok_body():
 # 热词来源: White Friday 2026 = 2026-11-27，沙特/阿联酋全年第二大线上销售窗口
 # 角度: 大站写 "When is White Friday 2026"；我们写 "How to 作为海湾小商家从中国备货 + 代理一手经验"
 # 钉住买家人设: small business owners / resellers / influencers / moms
-# 配图: /images/blog/white-friday-hero.png / white-friday-sourcing.png / white-friday-delivery.png
+# 配图: /images/blog/white-friday-hero.jpg / white-friday-sourcing.jpg / white-friday-delivery.jpg
 # ===========================================================================
 WHITE_FRIDAY_FAQ = [
     ('When is White Friday 2026 and why does it matter for Gulf sellers?',
@@ -352,7 +352,7 @@ def white_friday_body():
 '</div></section>'
 
 '<section class="sec"><div class="wrap">'
-'<img src="/images/blog/white-friday-hero.png" alt="A small Gulf e-commerce seller preparing product boxes for White Friday sales season" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
+'<img src="/images/blog/white-friday-hero.jpg" alt="A small Gulf e-commerce seller preparing product boxes for White Friday sales season" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
 '<div class="sec-head"><h2>Why White Friday is a small-seller opening, not just a big-brand game</h2></div>'
 '<p>Large retailers plan White Friday six months ahead with containers. Small sellers do not have to copy that. The creator and reseller model that works in the Gulf is the opposite: launch several small tests, double down on the one that sells, and use private-label packaging to stand out from generic listings. The math is different too. A first White Friday batch can start under <b>$5,000</b> landed — product, samples, branded packaging, air freight, duty and VAT included — and still leave room for margin.</p>'
 '<p>White Friday is also a strong GEO signal for Google and AI engines because it is a recurring, date-anchored event. Search demand for "White Friday 2026 Saudi deals" and related product queries starts climbing in late September and peaks in the week before 27 November. Sellers who publish their offer and content early are the ones the algorithms learn to surface.</p>'
@@ -386,7 +386,7 @@ def white_friday_body():
 '</div></section>'
 
 '<section class="sec alt"><div class="wrap">'
-'<img src="/images/blog/white-friday-sourcing.png" alt="China sourcing agent sample table with product samples and blank private-label packaging" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
+'<img src="/images/blog/white-friday-sourcing.jpg" alt="China sourcing agent sample table with product samples and blank private-label packaging" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
 '<div class="sec-head"><h2>Samples to your door before you commit</h2></div>'
 '<p>Never order a White Friday batch from a photo. We shortlist two or three factories, ship physical samples to your UAE or Saudi address, and let you approve the one you want on camera. The sample becomes the quality benchmark for the whole batch. For a $5,000 launch, sampling usually costs $100–200 and saves far more by avoiding a bad bulk order.</p>'
 '<p>This is where a composite sourcing partner differs from a freight forwarder or a packaging-only shop. We handle the factory search, the sample shipment, the packaging design and the final delivery — so the product that arrives at your door matches the one you approved.</p>'
@@ -432,7 +432,7 @@ def white_friday_body():
 '</div></section>'
 
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
-'<img src="/images/blog/white-friday-delivery.png" alt="Small parcels air-shipped from China arriving at a Gulf small business owner desk" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
+'<img src="/images/blog/white-friday-delivery.jpg" alt="Small parcels air-shipped from China arriving at a Gulf small business owner desk" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
 '<div class="cta-box">'
 '<h2>Written by the SourceToGulf sourcing team</h2>'
 '<p>We help Gulf sellers build a White Friday batch from China without a container: product shortlisting, samples to your door, branded packaging, compliance and air shipping — all in one workflow. Tell us your budget and target country and we will map the timeline.</p>'
