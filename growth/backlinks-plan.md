@@ -26,8 +26,15 @@ Free, permanent citations that build baseline authority.
 | Bayt.com company profile | bayt.com | Employer/company presence |
 | Crunchbase / LinkedIn Company | — | Western-facing credibility |
 
-Action: create one consistent NAP (Name: SourceToGulf / Papa Claw;
-address: Guangzhou; phone/WhatsApp +971 58 514 6139; site URL).
+Action: create one consistent NAP (Name: **SourceToGulf** — legal entity
+Papa Claw Marketing Technology Co., Ltd.; address: Guangzhou;
+phone/WhatsApp +971 58 514 6139; site URL https://sourcetogulf.com).
+
+> ⚠️ Brand rule (see `social-media-seo-geo-playbook.md` §3): **SourceToGulf is
+> the only public brand name.** "Papa Claw" is the *legal* entity name only
+> (invoices, contracts, chamber registrations) — never use it as a display
+> name, social handle, or backlink anchor text. The site's `Organization`
+> schema already encodes this as `name: SourceToGulf` + `legalName: Papa Claw…`.
 
 ## 2. Gulf trade media — guest posts & expert quotes (Tier 2 — highest ROI)
 
