@@ -112,6 +112,7 @@ def agent_body():
     <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>22 answers on duty, VAT, MOQ, shipping</b></a>
     <a class="rel-card" href="/uae-import-guide-from-china.html"><span>UAE import guide</span><b>Duty, VAT, free zones, clearance</b></a>
     <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou-sourced, UAE-landed</b></a>
+    <a class="rel-card" href="/composite-partner-vs-single-vendors.html"><span>One partner vs three vendors</span><b>Why composite beats piecemeal</b></a>
   </div>
 </div></section>
 
@@ -239,6 +240,7 @@ def city_body():
     <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen-sourced, ECAS-ready</b></a>
     <a class="rel-card" href="/category-home.html"><span>Home &amp; gifts</span><b>Yiwu-sourced, low MOQ</b></a>
     <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Wholesaler · Retailer · Small brand</b></a>
+    <a class="rel-card" href="/composite-partner-vs-single-vendors.html"><span>One partner vs three vendors</span><b>Why composite beats piecemeal</b></a>
   </div>
 </div></section>
 
@@ -345,12 +347,123 @@ def alibaba_body():
     <a class="rel-card" href="/yiwu-vs-guangzhou-vs-shenzhen.html"><span>Yiwu vs Guangzhou vs Shenzhen</span><b>Where each category is cheapest</b></a>
     <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Small brand · Reseller</b></a>
     <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>SABER, VAT, MOQ, shipping</b></a>
+    <a class="rel-card" href="/composite-partner-vs-single-vendors.html"><span>One partner vs three vendors</span><b>Why composite beats piecemeal</b></a>
   </div>
 </div></section>
 
 <section class="sec alt"><div class="wrap" style="text-align:center">
   <div class="sec-head center"><h2>Want the real landed price?</h2></div>
   <p class="sub">Send your product list — we show factory cost plus a transparent commission, with SABER and shipping included. No hidden markup.</p>
+  <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a transparent quote on WhatsApp</a>
+</div></section>
+''' % (wa, wa)
+
+# ----------------------------------------------------------------------------
+# 对比页 4: 复合伙伴 vs 三个单点供应商（正面转化竞品"单点强"缺口）
+# ----------------------------------------------------------------------------
+COMPOSITE_FAQ = [
+    ('Is one composite sourcing partner cheaper than using separate vendors?',
+     'On a typical mixed Gulf order, yes — and not only on price. A composite partner bundles sourcing, custom packaging, samples and door-to-door shipping into one commission and one shipment, so you avoid paying three separate markups and three separate freight bills. The bigger saving is coordination: one accountable party instead of a packaging shop, a sourcing agent and a freight forwarder each pointing at the other. On a $4,000 mixed order the composite route is often $700–$900 (15–20%) lower before you count the hours you do not spend chasing three vendors.'),
+    ('Can a packaging-only shop also source my products?',
+     'Some try, but it is not their core competency — they are set up for printing and finishing, not for supplier discovery, inspection and consolidation across Chinese factories. You usually still need to find the goods yourself, and the packaging shop\'s MOQ and lead time are built for print runs, not for matching your product mix. A composite partner sources the products and designs the packaging as one workflow, so the two steps actually fit together.'),
+    ('Who handles SABER and samples if I use separate vendors?',
+     'You do. The sourcing agent may find the factory, the packaging shop prints the boxes, and the forwarder moves the goods — but none of them owns Saudi SABER, SFDA or Gulf customs as part of the deal. With a composite partner, conformity certificates and sample shipments to your door are coordinated inside the order, so the goods are cleared and the samples arrive instead of sitting in a handoff gap between three suppliers.'),
+    ('What is the minimum order with a composite partner?',
+     'Lower than a packaging-only shop\'s print minimum, because the partner aggregates across many factories and many SKUs. Typical low-MOQ starts sit around 50–100 units per style in Yiwu, and a composite partner can mix hundreds of SKUs into one container — which is exactly what a small Gulf reseller or influencer needs to test the market without a warehouse of dead stock.'),
+    ('How long does it take to get samples to the Gulf?',
+     'With a composite partner, samples are usually couriered to your door in about 3–7 days by air after production and inspection, often with your custom Arabic-labeled packaging already applied so you can photograph and list them. Using separate vendors, the sample step gets stuck between the factory, the packaging shop and the courier, and the timeline stretches because no single party owns it.'),
+    ('When should I just use separate vendors?',
+     'When you buy one standard product in large volume and already have a trusted factory, a packaging supplier and a forwarder — then piecemeal is fine and you keep direct control. The composite model pays off when you mix SKUs, need custom branding, want samples fast, must satisfy Gulf compliance, or simply do not want to project-manage three suppliers from another time zone.'),
+]
+
+def composite_body():
+    wa = wa_link('Hi SourceToGulf! I am comparing one composite partner vs separate vendors for my Gulf order. Please show me a transparent landed quote.')
+    return '''
+<section class="sec hero-sec">
+  <div class="wrap">
+    <span class="kicker">Sourcing Comparison</span>
+    <h1>One Composite Sourcing Partner vs Three Single-Point Vendors: What Gulf Buyers Actually Save</h1>
+    <p class="lead">Most Gulf buyers do not choose between "an agent and a trading company" — they stitch together a <b>packaging-only shop</b>, a <b>sourcing-only agent</b> and a <b>freight forwarder</b>. Each is good at one step. The question is what falls between them.</p>
+    <div class="cta-row">
+      <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 See a transparent landed quote</a>
+      <a class="btn-ghost" href="/solutions.html">Solutions by buyer type →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>The single-point reality</h2></div>
+  <p>Walk into most "how to import to the Gulf" advice and you will meet three archetypes, each strong at exactly one job:</p>
+  <ul class="bullets">
+    <li><b>A packaging-only shop</b> — prints boxes and labels beautifully, but does not source your product or clear your customs.</li>
+    <li><b>A sourcing-only agent</b> — finds factories and negotiates price, but often leaves packaging, samples and Gulf compliance to you.</li>
+    <li><b>A freight forwarder</b> — moves goods port to port, but is not responsible for whether the product or its labels meet Saudi SABER or SFDA.</li>
+  </ul>
+  <p>The gap is not in any single step. It is in the <b>handoffs</b>: the factory, the printer, the forwarder and the certificate each assume someone else owns the next step — and on a small mixed order, that "someone" is usually you, from another time zone.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Side-by-side</h2></div>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Dimension</th>
+      <th style="padding:10px 12px;text-align:left">Composite partner</th>
+      <th style="padding:10px 12px;text-align:left">Three single-point vendors</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Product sourcing</b></td><td style="padding:10px 12px">Across cities &amp; factories</td><td style="padding:10px 12px">You find it, or agent does</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Custom / Arabic packaging</b></td><td style="padding:10px 12px">Designed with the product</td><td style="padding:10px 12px">Separate shop, separate MOQ</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Samples to your door</b></td><td style="padding:10px 12px">3–7 days, labeled</td><td style="padding:10px 12px">You coordinate courier</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>SABER / SFDA / customs</b></td><td style="padding:10px 12px">Coordinated in the order</td><td style="padding:10px 12px">You arrange, per supplier</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Consolidation</b></td><td style="padding:10px 12px">One shipment, one entry</td><td style="padding:10px 12px">Several parcels, several entries</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Low MOQ</b></td><td style="padding:10px 12px">~50–100/style, mixed SKUs</td><td style="padding:10px 12px">Each vendor sets its own</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>One accountable party</b></td><td style="padding:10px 12px">Yes</td><td style="padding:10px 12px">No — you are the project manager</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Worked example: a $4,000 mixed order to Riyadh</h2></div>
+  <p>Same basket — beauty tools (Yiwu), a few apparel pieces (Guangzhou), phone accessories (Shenzhen) — sourced two ways:</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:18px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Cost line</th>
+      <th style="padding:10px 12px;text-align:left">Composite partner</th>
+      <th style="padding:10px 12px;text-align:left">Three vendors (self-managed)</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Goods</td><td style="padding:10px 12px">$4,000</td><td style="padding:10px 12px">$4,000</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Sourcing / print markups</td><td style="padding:10px 12px">One commission 5%% = $200</td><td style="padding:10px 12px">Agent 5%% + print setup $300 = $500</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Samples to door</td><td style="padding:10px 12px">Included (labeled)</td><td style="padding:10px 12px">Courier you book $120</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Shipping</td><td style="padding:10px 12px">1 consolidated $420</td><td style="padding:10px 12px">3 parcels ~$650</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">SABER / customs handling</td><td style="padding:10px 12px">Included</td><td style="padding:10px 12px">You arrange ~$300</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Total landed</b></td><td style="padding:10px 12px"><b>~$4,620</b></td><td style="padding:10px 12px"><b>~$5,570 + your time</b></td></tr>
+    </tbody>
+  </table>
+  <p>The composite route comes out roughly <b>$950 lower (17%%)</b> on identical goods — and you are not the one chasing a printer, an agent and a forwarder across three time zones while a SABER deadline ticks. The gap widens with more SKUs, because handoffs are where piecemeal setups silently bleed money and time.</p>
+</div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><h2>Why composite wins for small Gulf buyers</h2></div>
+  <p>A reseller, influencer or small brand in Riyadh, Dubai or Doha is not moving container loads of one SKU. They are testing <b>many products, in small runs, with their own label</b> — and they need to <b>see and photograph samples fast</b> before committing. That is exactly the workflow a composite partner is built for: source across cities, apply Arabic custom packaging, ship samples to the door in days, handle SABER, and consolidate the rest into one Gulf shipment. Three single-point vendors can each do their slice, but nobody owns the sequence — and the sequence is the product.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>When piecemeal is fine</h2></div>
+  <p>If you buy one standard product in large volume and already trust your factory, your printer and your forwarder, separate vendors give you direct control and there is little to coordinate. The composite model pays off the moment the order gets mixed, custom, compliant or small — which is most of what first-time and growing Gulf buyers actually do.</p>
+  <div class="rel-grid">
+    <a class="rel-card" href="/alibaba-vs-sourcing-agent.html"><span>Alibaba vs sourcing agent</span><b>The other big route comparison</b></a>
+    <a class="rel-card" href="/sourcing-agent-vs-trading-company.html"><span>Agent vs trading company</span><b>How each model earns</b></a>
+    <a class="rel-card" href="/yiwu-vs-guangzhou-vs-shenzhen.html"><span>Yiwu vs Guangzhou vs Shenzhen</span><b>Where each category is cheapest</b></a>
+    <a class="rel-card" href="/services/custom-branding-packaging.html"><span>Custom branding &amp; packaging</span><b>Arabic labels, low MOQ</b></a>
+    <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Reseller · Small brand</b></a>
+    <a class="rel-card" href="/gcc-import-answers.html"><span>GCC import Q&amp;A</span><b>SABER, VAT, MOQ, shipping</b></a>
+  </div>
+</div></section>
+
+<section class="sec alt"><div class="wrap" style="text-align:center">
+  <div class="sec-head center"><h2>Want one partner instead of three?</h2></div>
+  <p class="sub">Send your product list — we source, package with your Arabic label, ship samples to your door, and land the rest as one compliant Gulf shipment.</p>
   <a class="btn-wa" href="%s" target="_blank" rel="noopener">💬 Get a transparent quote on WhatsApp</a>
 </div></section>
 ''' % (wa, wa)
@@ -379,6 +492,14 @@ COMPARE = {
         'canonical': BASE + '/alibaba-vs-sourcing-agent.html',
         'body': alibaba_body(),
         'faq': ALIBABA_FAQ,
+    },
+    'composite': {
+        'file': 'composite-partner-vs-single-vendors.html',
+        'title': 'One Composite Sourcing Partner vs Three Single-Point Vendors',
+        'desc': 'An independent comparison for Gulf buyers: one composite partner (sourcing + custom packaging + samples + low MOQ + door delivery) vs juggling a packaging shop, a sourcing agent and a freight forwarder, with a $4,000 worked cost example.',
+        'canonical': BASE + '/composite-partner-vs-single-vendors.html',
+        'body': composite_body(),
+        'faq': COMPOSITE_FAQ,
     },
 }
 

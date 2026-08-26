@@ -41,6 +41,7 @@ INCLUDE = [
     "sourcing-agent-vs-trading-company.html",
     "yiwu-vs-guangzhou-vs-shenzhen.html",
     "alibaba-vs-sourcing-agent.html",
+    "composite-partner-vs-single-vendors.html",
     # 品类页
     "category-home-fragrance.html",
     "category-seasonal.html",
