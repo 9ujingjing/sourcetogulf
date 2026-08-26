@@ -1,186 +1,243 @@
-# Backlink & Outreach Plan — SourceToGulf (P4)
+# SourceToGulf 外链/被提及 · 傻瓜式操作手册
 
-> Goal: earn references from Gulf business media, directories and sourcing
-> communities so Google and AI engines (Perplexity / ChatGPT / Google AI)
-> start associating "China→Gulf sourcing" with sourcetogulf.com.
+> 目标：让别人（媒体、目录、社区、网红）提到 sourcetogulf.com，
+> 这样 Google 和 AI（ChatGPT / Google AI / Perplexity）才会把
+> "中国→海湾采购" 和我们的网站关联起来。
 >
-> Why it matters: backlinks are the #1 off-page ranking factor, and the GEO
-> report is explicit — AI engines prefer *independent media roundups and
-> real journalist mentions* over PR distributes. We are NOT chasing spammy
-> link farms.
+> 一句话：站内该做的都做了，现在靠**站外被提及**撬动 SEO 权威 + GEO 引用。
+> 不买垃圾外链，只做真实、永久的引用。
 
 ---
 
-## 1. Gulf business directories (Tier 1 — submit, do it this week)
+## 0. 每天只做 20 分钟（节奏）
 
-Free, permanent citations that build baseline authority.
+打开这份手册，看「今天该做哪一步」→ 做完打勾 → 填一行跟踪表 → 关掉。
+不用一天干完，按下面 Mission 顺序，一个一个来。
 
-| Directory | URL | Notes |
-|---|---|---|
-| Dubai Chamber of Commerce | dubaichamber.com | Member directory; helps UAE trust signal |
-| Abu Dhabi Chamber | adcc.gov.ae | Similar for AD market |
-| Saudi Maroof (Ministry of Commerce) | maroof.sa | Official KSA merchant registry — strong trust |
-| Bahrain Business | bahrainedb.com | Investment/promotion directory |
-| Qatar Development Bank / Bedaya | qdb.qa | SME directory |
-| Kuwait Directories / Kuwait Chamber | kw.chamber.org.kw | Chamber listing |
-| Bayt.com company profile | bayt.com | Employer/company presence |
-| Crunchbase / LinkedIn Company | — | Western-facing credibility |
-
-Action: create one consistent NAP (Name: **SourceToGulf** — legal entity
-Papa Claw Marketing Technology Co., Ltd.; address: Guangzhou;
-phone/WhatsApp +971 58 514 6139; site URL https://sourcetogulf.com).
-
-> ⚠️ Brand rule (see `social-media-seo-geo-playbook.md` §3): **SourceToGulf is
-> the only public brand name.** "Papa Claw" is the *legal* entity name only
-> (invoices, contracts, chamber registrations) — never use it as a display
-> name, social handle, or backlink anchor text. The site's `Organization`
-> schema already encodes this as `name: SourceToGulf` + `legalName: Papa Claw…`.
-
-## 2. Gulf trade media — guest posts & expert quotes (Tier 2 — highest ROI)
-
-These outlets already publish "how to import / SME / entrepreneur" content.
-Pitch *useful, non-promotional* articles; the backlink is the by-product.
-
-| Outlet | Angle that fits us |
-|---|---|
-| Entrepreneur Middle East | "How Gulf creators can launch a private-label line from China" |
-| SME10x | "Low-MOQ sourcing for first-time importers in the UAE" |
-| Trade Arabia | "Landed cost explained: what Dubai SMEs miss when importing" |
-| Logistics Middle East | "SABER & customs: a checklist for Saudi-bound goods" |
-| Gulf News (Business) | Expert quote on sourcing trends / seasonal demand |
-| Arabian Business | Founder story / China-Gulf trade angle |
-| Zawya (Refinitiv) | Data-driven import explainer |
-| Saudi Gazette / Qatar Tribune | Market-specific import guide reprint |
-
-## 3. Sourcing & import communities (Tier 3 — answer, don't spam)
-
-Build topical authority where buyers actually ask.
-
-- Reddit: r/entrepreneur, r/smallbusiness, r/FulfillmentByAmazon, r/dubai,
-  r/saudiarabia — answer "how do I import from China" with a link to the
-  relevant guide (not the homepage).
-- Facebook groups: "Import from China to UAE/Dubai", "Saudi SMEs",
-  "Kuwait business owners" — share guides, not pitches.
-- ImportYeti / Panjiva — profile the company as a verified supplier finder.
-- Quora — answer "best way to source from China to Gulf" linking to guides.
-
-## 4. KOL / influencer collaborations (Tier 4 — ties to buyer persona)
-
-Your target buyers ARE influencers. Co-marketing earns mentions + links.
-
-- **ITP Live** (influencer rankings, UAE/KSA) — pitch a "creator brand starter"
-  feature; offer sample kits for unboxing.
-- **BaoLiba** (Kuwait/KSA influencer marketing) — list as a sourcing partner.
-- **TikTok Shop MENA** creator communities — offer private-label starter kits.
-- Micro-influencers (10k–100k, Gulf, lifestyle/beauty/tech) — send a sample
-  batch, ask for an honest "how I sourced my product" post linking to us.
+| 阶段 | 内容 | 谁做 | 大概耗时 |
+|---|---|---|---|
+| Mission 1 | 免费目录/主页引用（最快见效） | 你 | 约 3 天，每天 20 分 |
+| Mission 2 | 社区回答带深链 | 你 | 约 3 天，每天 20 分 |
+| Mission 3 | 媒体客座文/专家引言 | 你发邮件，我给素材 | 持续 2–4 周 |
+| Mission 4 | 网红样品合作 | 你 | 持续 |
 
 ---
 
-## Outreach email templates
+## 1. 先复制这张「标准资料卡」（每个平台都粘贴它）
 
-### A. Guest-post pitch (trade media)
+新建一个手机备忘录，存下面这段，所有平台直接复制：
 
 ```
-Subject: Guest article — [angle] for your [UAE/Saudi] SME readers
+公司名：SourceToGulf
+官网：https://sourcetogulf.com
+一句话：China→Gulf sourcing partner — 帮你从广州工厂找货、打样、定制包装、寄样品，小单也接（不是货代）。
+基地：Guangzhou, China
+服务：UAE · Saudi · Qatar · Kuwait · Bahrain · Oman
+WhatsApp：+971 58 514 6139
+邮箱：info@papaclaw.cn
+```
+
+> ⚠️ 品牌规则：对外只叫 **SourceToGulf**。"Papa Claw" 只是营业执照上的法律名，
+> 只在合同/发票/商会注册里用，绝不当显示名、绝不当链接文字。
+
+---
+
+## 2. Mission 1 — 免费目录/公司主页（本周必做，最容易）
+
+按下面顺序做，**做完一个打一个勾**。
+
+### ✅ 1.1 LinkedIn 公司主页（即时生效，最重要）
+1. 打开 → https://www.linkedin.com/company/setup/new
+2. 公司名填：**SourceToGulf**
+3. 网站填：**https://sourcetogulf.com**
+4. 行业选：**Import & Export**（或 International Trade）
+5. 公司规模选：**1-10 employees**
+6. 点 **Create**
+7. 进主页 → 点 **Edit / 编辑** → 把下面这段粘进「About（简介）」：
+
+```
+SourceToGulf is a China→Gulf sourcing partner based in Guangzhou.
+We help Gulf SMEs, creators and small resellers source from factories,
+get samples, custom/private-label packaging, and air-ship small batches
+to the UAE, Saudi, Qatar, Kuwait, Bahrain and Oman. Low MOQ, not a freight forwarder.
+WhatsApp: +971 58 514 6139 · https://sourcetogulf.com
+```
+
+8. 传一张 logo（从网站首页存一张图即可）。
+9. ✅ 完成标志：别人搜 SourceToGulf 能看到的公司页，简介里有官网链接。
+
+### ✅ 1.2 Crunchbase 公司档案（免费认领）
+1. 打开 → https://www.crunchbase.com/
+2. 注册/登录 → 搜 **SourceToGulf**，若无 → 点 **Add Profile / Contribute**
+3. 公司类型选 **Company**
+4. 把「标准资料卡」逐项粘贴（名称/网站/简介/ location=Guangzhou）
+5. ✅ 完成标志：资料页存在且网站链接可点。
+
+### ✅ 1.3 Bayt.com 公司主页（中东招聘/企业目录，免费）
+1. 打开 → https://www.bayt.com/en/employer/
+2. 注册 employer 账号 → 创建 **Company Profile**
+3. 公司名 SourceToGulf，网站 https://sourcetogulf.com，简介贴资料卡
+4. ✅ 完成标志：公司主页上线，带官网链接。
+
+### ✅ 1.4 Clutch / GoodFirms（B2B 目录，免费，采购类很对口）
+- Clutch：https://clutch.co/ → 点 **Get Listed** → 选 **Sourcing / Procurement** 类 → 填资料卡
+- GoodFirms：https://www.goodfirms.co/ → **List Your Company** → 同上
+- ✅ 完成标志：档案出现在目录里，带官网链接。
+
+### ⏸️ 1.5 以下两个「有条件再做」，没有就先跳过
+- **Google 商家档案**：需要 Gulf 或中国的**实体地址 + 收验证明信片**。如果你有，去 https://business.google.com/ 建；没有就跳过。
+- **Maroof.sa（沙特商务部）**：需要沙特 **CR 商业注册号**。你有沙特公司才做；没有跳过，不影响其他。
+
+### 🎯 Mission 1 验收
+≥4 个永久引用（LinkedIn + Crunchbase + Bayt + Clutch/GoodFirms 任一），每个都带 https://sourcetogulf.com 链接。
+
+---
+
+## 3. Mission 2 — 社区回答带「深链」（本周做，建立专业度）
+
+原则：**回答真实问题 + 链到对应指南页（不是首页）**。每周 ≤5 条，别刷屏。
+
+### 去哪答
+- Reddit：r/dubai、r/saudiarabia、r/smallbusiness、r/entrepreneur、r/FulfillmentByAmazon
+- Quora：搜 "how to import from China to UAE / Saudi"、"China sourcing agent vs Alibaba"
+- 你已在的 Gulf 买卖 FB 群
+
+### 直接复制的回答模板（按问题选一个）
+
+**模板 A —— 有人问「怎么从中国进口到沙特/UAE」**
+```
+Short version: the usual path is factory → SABER/HS code check →
+small air shipment for first test order, then sea for restock.
+I wrote a step-by-step for Saudi buyers here (covers SABER 2026 + MOQ):
+https://sourcetogulf.com/blog/how-to-import-from-china-to-saudi-arabia.html
+And a UAE-specific one:
+https://sourcetogulf.com/uae-import-guide-from-china.html
+Happy to answer specifics (HS code, samples, packaging).
+```
+**模板 B —— 有人问「采购代理 vs 阿里巴巴 / 贸易公司」**
+```
+Key difference: Alibaba is a marketplace (you do the vetting); a sourcing
+agent handles factory check, samples and private-label packaging for you.
+I broke it down with a cost example here:
+https://sourcetogulf.com/composite-partner-vs-single-vendors.html
+https://sourcetogulf.com/sourcing-agent-vs-trading-company.html
+```
+**模板 C —— 网红/小卖家问「怎么从零做自有产品」**
+```
+Start with a sample batch, not a container. Pick a niche, get 3–5 factory
+samples, test on your audience, then private-label. Guide for creators:
+https://sourcetogulf.com/for-influencers.html
+For small resellers: https://sourcetogulf.com/for-resellers.html
+```
+
+> 用法：先**真诚答一段**，最后才放 1–2 个链接。纯发链接会被删/被封。
+
+### 🎯 Mission 2 验收
+本周 ≥5 个带深链的回答/分享，且链接指向具体指南页（非首页）。
+
+---
+
+## 4. Mission 3 — 媒体客座文 / 专家引言（高 ROI，慢热）
+
+这是**唯一能驱动 GEO 引用**的动作。发出去就记录，不期待当天回复。
+
+### 投给谁（打开官网找 Contact / Submit / 编辑邮箱）
+| 媒体 | 适合角度 | 投稿入口 |
+|---|---|---|
+| Trade Arabia | 落地成本/进口实操 | tradearabia.com → Contact |
+| Logistics Middle East | SABER 与清关清单 | logisticsmiddleeast.com → Contact |
+| SME10x | 低 MOQ 首单进口 | sme10x.com → Contact |
+| Gulf News (Business) | 专家引言/趋势 | gulfnews.com → 找记者 LinkedIn |
+| Arabian Business | 创始人故事/中 Gulf 贸易 | arabianbusiness.com → Contact |
+
+> 找不到邮箱？去 LinkedIn 搜「editor [媒体名]」或「[媒体名] contributor」，直接私信。
+
+### 复制发送的邮件（客座文）
+```
+Subject: Guest article — low-MOQ China sourcing for Gulf SMEs
 
 Hi [Editor],
 
 I run SourceToGulf, a China sourcing partner for Gulf SMEs (14 yrs in
-Guangzhou, 14 yrs Dubai background). I'd love to contribute a practical,
-non-promotional piece: "[Working title]".
+Guangzhou). I'd like to contribute a practical, non-promotional piece:
+"How Gulf first-time importers can avoid the 3 costly mistakes when
+sourcing from China" (700–900 words).
 
-It would cover [3 concrete points] — the kind of answer your readers
-actually search for. I can include original numbers (landed-cost examples,
-MOQ ranges) so it's useful on its own.
+It covers: SABER/HS basics, why a sample batch beats a container, and
+landed-cost math — with real numbers. Useful on its own, no hard sell.
 
-Would you be open to a 700–900 word submission? Happy to adapt to your
-style guide.
-
-Best,
-[Name] · SourceToGulf · WhatsApp +971 58 514 6139
+Open to your style guide. Best,
+[你的名字] · SourceToGulf · WhatsApp +971 58 514 6139
 ```
 
-### B. Directory / listing submission
-
+### 复制发送的邮件（专家引言 / HARO 风格）
 ```
-Subject: Add SourceToGulf to your [Chamber/Directory] listing
-
-Hello,
-
-Requesting to list our company:
-- Name: SourceToGulf (Papa Claw Marketing Technology Co., Ltd.)
-- What we do: China→Gulf sourcing, custom packaging, samples, low-MOQ
-- Base: Guangzhou, China · Serving UAE, Saudi, Qatar, Kuwait, Bahrain, Oman
-- Site: https://sourcetogulf.com
-- Contact: WhatsApp +971 58 514 6139 · info@papaclaw.cn
-
-Happy to provide trade license / references. Thank you!
-```
-
-### C. Journalist / HARO-style expert quote
-
-```
-Subject: Source on China→Gulf sourcing for [publication] story
+Subject: Source on China→Gulf sourcing for your story
 
 Hi [Journalist],
 
-Saw your piece on [topic]. I can give a quotable, on-record expert view on
-[China sourcing / landed cost / SABER / private label for Gulf SMEs] —
-with real numbers, not fluff. SourceToGulf has 14 years operating between
-Guangzhou and Dubai.
+Saw your piece on [话题]. I can give a quotable, on-record expert view on
+China sourcing / landed cost / SABER / private label for Gulf SMEs —
+with real numbers. SourceToGulf has 14 years operating between Guangzhou
+and Dubai. Available for a quick call or written Q&A.
 
-Available for a quick call or written Q&A. Happy to be a recurring source.
-
-[Name] · SourceToGulf
+[你的名字] · SourceToGulf
 ```
 
----
-
-## Tracking
-
-- Log every placement in a sheet: outlet, date, URL, type, live link.
-- Re-run the citation monitor (`cite_monitor_queries.json`) weekly — when
-  sourcetogulf.com starts appearing in AI answers, double down on the
-  angles that worked.
-- Target: 10 directory citations + 2 guest posts + 5 community answers in
-  the first 30 days.
+### 🎯 Mission 3 验收
+首月发出 ≥5 个 pitch 并记录；目标 ≥2 篇上稿/被引用。没回复就 2 周后再跟一次。
 
 ---
 
-## Action version — first 30 days (执行版)
+## 5. Mission 4 — 网红样品合作（持续）
 
-> 上面是策略，下面是「这 30 天具体做什么、做到什么算完成」。每天约 20–30 分钟。
+你的买家本身就是网红。寄样品换真实帖。
 
-### Week 1 — 目录/引用（Tier 1，你做，最快见效）
-目标：拿到 ≥5 个永久引用，建立基础权威。
-- [ ] **Maroof.sa**（沙特商务部官方商家注册）— 最强信任信号，第一个做
-- [ ] Dubai Chamber / Abu Dhabi Chamber 会员目录
-- [ ] Bayt.com 公司主页
-- [ ] Crunchbase + LinkedIn Company 主页
-- [ ] 所有地方统一 NAP：Name=**SourceToGulf**，地址=Guangzhou, China，电话/WA=**+971 58 514 6139**，URL=https://sourcetogulf.com
-- ✅ 验收：收到 ≥5 个收录确认 / 页面上线
+复制发的合作话术（私信/WhatsApp）：
+```
+Hi [名字], I'm [你的名字] from SourceToGulf (Guangzhou).
+We help Gulf creators launch their own product line from China —
+samples, private-label packaging, small batches, air-shipped to you.
+Would you like a free sample kit to unbox / review? No strings, just
+an honest "how I sourced this" post if you like it.
+https://sourcetogulf.com/for-influencers.html
+```
 
-### Week 2 — 社区回答（Tier 3，你做，我给素材）
-目标：在买家真正提问的地方建立专业度 + 带深链。
-- [ ] Reddit：r/dubai、r/saudiarabia、r/smallbusiness、r/entrepreneur — 答「how to import from China」类问题，**深链到对应指南页**（不是首页）
-- [ ] Quora：答「best way to source from China to Gulf」→ 链指南
-- [ ] 你已进的 Gulf 买卖 FB 群：分享干货指南，不硬广
-- ✅ 验收：本周 ≥5 个带深链的回答/分享
+### 🎯 Mission 4 验收
+寄出 ≥2 个样品包，换到 ≥1 条带链接的真实帖。
 
-### Week 3–4 — 媒体外联（Tier 2，高 ROI 但慢热）
-目标：拿到真实媒体提及（这是 GEO 引用的核心驱动）。
-- [ ] 用模板 A 向 Trade Arabia / Logistics Middle East / SME10x 投 3–5 篇客座文
-- [ ] 用模板 C 向 Gulf News / Arabian Business 记者提供专家引言（HARO 风格）
-- ✅ 验收：发出 ≥5 个 pitch 并记录回复；首月目标 ≥2 篇上稿/引用
+---
 
-### 持续 — KOL 合作（Tier 4）
-- [ ] 给 2–3 个 Gulf 微网红（10k–100k，生活/美妆/数码）寄样品包，换真实「how I sourced my product」帖 + 链接
+## 6. 跟踪表（复制填，每次做完写一行）
 
-### 每周必做
-- [ ] 重跑 GEO 引用监控（cite_monitor_log.jsonl）— 当 sourcetogulf.com 开始出现，加倍投入起效的角度
+| 日期 | Mission | 渠道 | 做了什么 | 结果/URL | 完成? |
+|---|---|---|---|---|---|
+| | 1.1 | LinkedIn | 建公司主页 | linkedin.com/company/sourcetogulf | ☐ |
+| | 1.2 | Crunchbase | 建档案 | crunchbase.com/... | ☐ |
+| | 2 | Reddit | 答 r/dubai 进口问题 | 链接沙特指南 | ☐ |
+| | 3 | Trade Arabia | 发客座文 pitch | 已发，待回 | ☐ |
+| | 4 | 网红 | 寄样品包 | WA 已发 | ☐ |
 
-### 跟踪表（复制填）
-| 日期 | 渠道 | 类型 | URL / 结果 | 备注 |
-|---|---|---|---|---|
-| | | | | |
+---
+
+## 7. 常见问题
+
+**Q：要营业执照/ trade license 怎么办？**
+A：用资料卡里的法律名 **Papa Claw Marketing Technology Co., Ltd.** + 邮箱 info@papaclaw.cn。没有实体执照的平台就先跳过，不影响其他。
+
+**Q：发完没回复？**
+A：正常。2 周后再跟一次；媒体外联本就是「发 10 个中 2 个」的概率游戏。
+
+**Q：多久见效？**
+A：目录引用几天就收录；社区回答带来直接访问；媒体提及通常 4–8 周才开始影响 SEO/GEO。坚持 30 天再看 GSC 和引用监控。
+
+**Q：怎么看有没有用？**
+A：每周看一眼 Google Search Console 的「外链」报告 + 跑一次 GEO 引用监控。当 sourcetogulf.com 开始出现在 AI 答案里，就加倍投入起效的角度。
+
+---
+
+## 8. 本周最小行动（如果你只想做一件事）
+
+→ 现在就打开 **https://www.linkedin.com/company/setup/new**，
+把「标准资料卡」粘进去，建好 SourceToGulf 公司主页。
+这一步 10 分钟，是所有外链里性价比最高、最快被 Google 收录的一个。
