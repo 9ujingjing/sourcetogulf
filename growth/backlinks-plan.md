@@ -145,3 +145,42 @@ Available for a quick call or written Q&A. Happy to be a recurring source.
   angles that worked.
 - Target: 10 directory citations + 2 guest posts + 5 community answers in
   the first 30 days.
+
+---
+
+## Action version — first 30 days (执行版)
+
+> 上面是策略，下面是「这 30 天具体做什么、做到什么算完成」。每天约 20–30 分钟。
+
+### Week 1 — 目录/引用（Tier 1，你做，最快见效）
+目标：拿到 ≥5 个永久引用，建立基础权威。
+- [ ] **Maroof.sa**（沙特商务部官方商家注册）— 最强信任信号，第一个做
+- [ ] Dubai Chamber / Abu Dhabi Chamber 会员目录
+- [ ] Bayt.com 公司主页
+- [ ] Crunchbase + LinkedIn Company 主页
+- [ ] 所有地方统一 NAP：Name=**SourceToGulf**，地址=Guangzhou, China，电话/WA=**+971 58 514 6139**，URL=https://sourcetogulf.com
+- ✅ 验收：收到 ≥5 个收录确认 / 页面上线
+
+### Week 2 — 社区回答（Tier 3，你做，我给素材）
+目标：在买家真正提问的地方建立专业度 + 带深链。
+- [ ] Reddit：r/dubai、r/saudiarabia、r/smallbusiness、r/entrepreneur — 答「how to import from China」类问题，**深链到对应指南页**（不是首页）
+- [ ] Quora：答「best way to source from China to Gulf」→ 链指南
+- [ ] 你已进的 Gulf 买卖 FB 群：分享干货指南，不硬广
+- ✅ 验收：本周 ≥5 个带深链的回答/分享
+
+### Week 3–4 — 媒体外联（Tier 2，高 ROI 但慢热）
+目标：拿到真实媒体提及（这是 GEO 引用的核心驱动）。
+- [ ] 用模板 A 向 Trade Arabia / Logistics Middle East / SME10x 投 3–5 篇客座文
+- [ ] 用模板 C 向 Gulf News / Arabian Business 记者提供专家引言（HARO 风格）
+- ✅ 验收：发出 ≥5 个 pitch 并记录回复；首月目标 ≥2 篇上稿/引用
+
+### 持续 — KOL 合作（Tier 4）
+- [ ] 给 2–3 个 Gulf 微网红（10k–100k，生活/美妆/数码）寄样品包，换真实「how I sourced my product」帖 + 链接
+
+### 每周必做
+- [ ] 重跑 GEO 引用监控（cite_monitor_log.jsonl）— 当 sourcetogulf.com 开始出现，加倍投入起效的角度
+
+### 跟踪表（复制填）
+| 日期 | 渠道 | 类型 | URL / 结果 | 备注 |
+|---|---|---|---|---|
+| | | | | |
