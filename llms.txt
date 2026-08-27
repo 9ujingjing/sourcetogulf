@@ -24,7 +24,7 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Quality inspection: https://sourcetogulf.com/services/quality-inspection-china.html
 - Custom branding: https://sourcetogulf.com/services/custom-branding-packaging.html
 - Consolidation & shipping: https://sourcetogulf.com/services/consolidation-shipping-china-gulf.html
-- Shipping guides: /shipping/china-to-uae.html · china-to-saudi-arabia.html · china-to-kuwait.html · china-to-qatar.html · china-to-bahrain.html · china-to-oman.html
+- Shipping guides: https://sourcetogulf.com/shipping/china-to-uae.html · https://sourcetogulf.com/shipping/china-to-saudi-arabia.html · https://sourcetogulf.com/shipping/china-to-kuwait.html · https://sourcetogulf.com/shipping/china-to-qatar.html · https://sourcetogulf.com/shipping/china-to-bahrain.html · https://sourcetogulf.com/shipping/china-to-oman.html
 - UAE import guide (trade license, ECAS, 5% duty + 5% VAT, free-zone re-export): https://sourcetogulf.com/blog/how-to-import-from-china-to-uae.html
 - Saudi Arabia import guide (SABER, SFDA, 15% VAT, Jeddah/Dammam ports): https://sourcetogulf.com/blog/how-to-import-from-china-to-saudi-arabia.html
 - Kuwait import guide (KCAS, no VAT, 5% duty, Shuwaikh port, easiest Gulf clearance): https://sourcetogulf.com/blog/how-to-import-from-china-to-kuwait.html
@@ -49,6 +49,16 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Oman import pillar guide (canonical long-form: 5% duty on CIF, 5% VAT since April 2021 ~10.25% combined, Bayan single window + conformity/TRA approval no SABER, Sohar/Salalah free zones, 1–3 day clearance via Sohar Port, how an agent lowers landed cost): https://sourcetogulf.com/oman-import-guide-from-china.html
 - Comparison — China sourcing agent vs trading company (independent analysis: how each earns, $5,000 worked cost example, when each wins, red flags): https://sourcetogulf.com/sourcing-agent-vs-trading-company.html
 - Comparison — Yiwu vs Guangzhou vs Shenzhen (independent analysis: what each city does best, MOQ differences, multi-city worked example, consolidation): https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html
+- Comparison — Alibaba vs China sourcing agent (independent analysis: when a marketplace wins, when a human agent wins, hidden costs, MOQ reality): https://sourcetogulf.com/alibaba-vs-sourcing-agent.html
+- Comparison — Composite partner vs single-vendor (independent analysis: sourcing + samples + packaging + shipping in one workflow, $4,000 worked saving, where a single vendor falls short): https://sourcetogulf.com/composite-partner-vs-single-vendors.html
+- Buyer guide — Influencers (private-label launch, samples to your door, no container): https://sourcetogulf.com/for-influencers.html
+- Buyer guide — Small businesses (low-MOQ sourcing playbook): https://sourcetogulf.com/for-small-businesses.html
+- Buyer guide — Resellers (low-MOQ restock and branding): https://sourcetogulf.com/for-resellers.html
+- Buyer guide — Side-hustle moms (start small from home): https://sourcetogulf.com/for-moms.html
+- Blog — SABER 2026 Saudi buyers playbook (12-digit HS code, 6-month PC, 60-day SC, 150+ controlled categories, fees): https://sourcetogulf.com/blog/saber-2026-saudi-buyers-playbook.html
+- Blog — China-GCC FTA lowers import duty (1,420 HS lines, ~7.4pp cut, Certificate of Origin): https://sourcetogulf.com/blog/china-gcc-fta-lower-import-duty.html
+- Blog — Source products for TikTok Shop Saudi without a container (private-label, samples, low MOQ, SABER): https://sourcetogulf.com/blog/source-products-tiktok-shop-saudi-no-container.html
+- Blog — White Friday 2026 China-to-Gulf small-business stocking guide (timeline, low MOQ, private label, samples): https://sourcetogulf.com/blog/white-friday-2026-china-gulf-small-business.html
 - RSS feed: https://sourcetogulf.com/feed.xml
 - Google Ads landing — Hijab & jewelry: https://sourcetogulf.com/google-ads/hijab-jewelry.html
 - Google Ads landing — Ramadan & Eid: https://sourcetogulf.com/google-ads/ramadan.html

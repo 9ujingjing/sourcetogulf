@@ -33,9 +33,10 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Quality inspection: /services/quality-inspection-china.html
 - Custom branding: /services/custom-branding-packaging.html
 - Consolidation & shipping: /services/consolidation-shipping-china-gulf.html
-- Shipping guides: /shipping/china-to-uae.html · china-to-saudi-arabia.html · china-to-kuwait.html · china-to-qatar.html · china-to-bahrain.html · china-to-oman.html
+- Shipping guides: https://sourcetogulf.com/shipping/china-to-uae.html · https://sourcetogulf.com/shipping/china-to-saudi-arabia.html · https://sourcetogulf.com/shipping/china-to-kuwait.html · https://sourcetogulf.com/shipping/china-to-qatar.html · https://sourcetogulf.com/shipping/china-to-bahrain.html · https://sourcetogulf.com/shipping/china-to-oman.html
 - GCC import guides: /blog/how-to-import-from-china-to-uae.html · how-to-import-from-china-to-saudi-arabia.html · how-to-import-from-china-to-kuwait.html · how-to-import-from-china-to-qatar.html · how-to-import-from-china-to-bahrain.html · how-to-import-from-china-to-oman.html
 - Other guides: /blog/landed-cost-china-to-gulf-explained.html · how-to-find-a-reliable-sourcing-agent-in-china.html · sourcing-for-livestream-sellers-gulf.html
+- Blog posts & comparisons: /blog/saber-2026-saudi-buyers-playbook.html · china-gcc-fta-lower-import-duty.html · source-products-tiktok-shop-saudi-no-container.html · white-friday-2026-china-gulf-small-business.html · /alibaba-vs-sourcing-agent.html · /composite-partner-vs-single-vendors.html · /for-influencers.html · /for-small-businesses.html · /for-resellers.html · /for-moms.html
 - Blog index: /blog/
 - RSS feed: /feed.xml
 - Google Ads landing pages: /google-ads/hijab-jewelry.html · google-ads/ramadan.html · google-ads/phone-accessories.html
