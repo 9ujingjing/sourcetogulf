@@ -578,6 +578,112 @@ def skincare_body():
 '</div></section>'
     )
 
+# ===========================================================================
+# 文章 6: 2026 海湾买家从中国采什么（趋势博客，从真实产品出发，数据来自市场报告）
+# 热词来源: 用户阿联酋调研（时尚/个护/家电受喜爱，高端饰品需求大）+ WebSearch 真实市场数据
+# 角度: 把市场趋势直接映射到我们真实在售 SKU（沙金/莫桑/美容仪/modest fashion），不写空话
+# ===========================================================================
+TREND_FAQ = [
+    ('Is "sand gold" real gold, and will it tarnish?',
+     'No. "Sand gold" (沙金) in our catalog means 18K PVD gold-plated 316L stainless steel — a base of surgical-grade steel with a thick 18K-tone PVD coating. It is waterproof and tarnish-free in normal wear, but it is not solid gold. The appeal in the Gulf is the gold look at a fraction of the gold price: a 5-piece stacking ring set starts at a 20-unit MOQ for roughly ¥16 FOB, versus the cost of even a small solid-gold piece. It is the affordable-luxury entry point the UAE jewelry market (USD 5.3B in 2026, gold 59% of value) is expanding around.'),
+    ('Is moissanite accepted in the Gulf, and does it pass as diamond?',
+     'Moissanite is a lab-created stone, not a fake diamond — it is a recognised diamond alternative with more fire than diamond, graded D colour / VVS and shipped with a GRA certificate. In the Gulf it sits in the affordable-luxury and bridal space, where lab-grown stones are rising fast (diamond is 21% of the UAE jewelry market by value). A 2ct moissanite solitaire in S925 starts at a 10-unit MOQ for about ¥42 FOB. It is sold as moissanite, not mislabelled as diamond — that distinction matters for customs and customer trust.'),
+    ('Do beauty devices need SABER or SFDA to import to the Gulf?',
+     'Often yes. LED masks and EMS devices are electronics: they need ECAS conformity in the UAE and SABER (PC + SC) in Saudi Arabia, and any skincare product paired with them needs SFDA (Saudi) or MOHAP (UAE). The UAE at-home beauty-device market is growing about 8% a year (USD 113M in 2025 to USD 166M by 2030), so demand is real — but clearance cannot be fixed after arrival. Plan the certificate before the goods sail.'),
+    ('Can I private-label these fashion and beauty products at low MOQ?',
+     'Yes. Our catalog carries MOQs as low as 10 units (moissanite), 12 (bangles), 20 (rings, abayas), 30 (LED masks, slides) and 50 (massagers, lingerie). At those volumes a China factory can add your logo to the packaging and, for Saudi-bound goods, your Arabic label. Low MOQ is exactly what lets a Gulf creator or small shop test a trend without a container.'),
+    ('What MOQ do the trending 2026 products need from China?',
+     'Roughly: sand-gold jewelry 12–30 units, moissanite 10–20 units, LED / EMS beauty devices 30–100 units, plus-size abaya 20 units, plus-size shoes 30 units. All are air-shippable in small batches. That is the opposite of container-scale buying and matches how Gulf social-commerce sellers actually launch.'),
+]
+
+def trend_body():
+    wa = wa_link('Hi SourceToGulf! I want to source the 2026 Gulf trends — sand-gold jewelry, moissanite, beauty devices, modest fashion — from China at low MOQ with samples and compliant shipping. Can you help?')
+    return (
+'<section class="sec hero-sec"><div class="wrap">'
+'<span class="kicker">Gulf Sourcing Trends · 2026</span>'
+'<h1>What Gulf Buyers Are Sourcing From China in 2026 — and the Products Behind the Demand</h1>'
+'<p class="lead">Gulf consumers spend more on fashion, jewelry and personal care than almost any other region. The numbers are specific: the UAE jewelry market is <b>USD 5.3 billion in 2026</b> (gold alone is <b>59%</b> of it, diamond <b>21%</b>), the Middle East &amp; Africa beauty-and-personal-care market is <b>USD 26.3 billion in 2025</b>, and UAE at-home beauty devices are growing about <b>8% a year</b>. We see the same shift in what Gulf buyers actually order from us — gold-tone "sand gold" jewelry, moissanite, LED beauty masks, modest abayas. This guide maps each rising trend to the products you can source from China at low MOQ, with samples and compliant shipping.</p>'
+'<p class="sub">By the SourceToGulf sourcing team · Updated 27 Aug 2026 · 10 min read</p>'
+'<div class="cta-row">'
+'<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Source the 2026 trends</a>'
+'<a class="btn-ghost" href="/category-fashion.html">See jewelry →</a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>1. Sand-gold jewelry — the affordable-luxury entry point</h2></div>'
+'<p>The UAE jewelry market is set at <b>USD 5.3 billion for 2026</b>, heading to USD 8.87 billion by 2035 (CAGR 5.9%). Gold is <b>59%</b> of value and diamond <b>21%</b>, and lab-grown and affordable-luxury styles are the fastest-growing slice. At the same time, rising counterfeit products are pushing Gulf buyers toward <b>branded and custom</b> pieces they can trust. That is exactly where "sand gold" (沙金) fits: <b>18K PVD gold-plated 316L stainless steel</b> — waterproof, tarnish-free, the gold look without the gold price.</p>'
+'<p>What we actually stock and source in this category:</p>'
+'<ul class="bullets">'
+'<li><b>18K PVD 316L stacking ring set (5 pcs, waterproof)</b> — MOQ <b>20</b>, ~¥16 FOB. Link: <a href="/category-fashion.html">Hijab accessories &amp; jewelry</a></li>'
+'<li><b>18K gold-plated 316L chunky bangle (tarnish-free)</b> — MOQ <b>12</b>, ~¥18 FOB</li>'
+'<li><b>Gold-plated layered necklace with cubic-zirconia accent (hijab-friendly)</b> — MOQ <b>30</b>, ~¥12 FOB</li>'
+'</ul>'
+'<p>These are the products Gulf buyers message us about: gold aesthetic, low MOQ, customisable, ship-ready.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>2. Moissanite — the lab-grown gemstone wave</h2></div>'
+'<p>Lab-grown stones are rising fast across the UAE, where diamond is already 21% of the jewelry market by value. <b>Moissanite</b> — D-colour, VVS, shipped with a GRA certificate — delivers more fire than diamond at a fraction of the price, and sits squarely in the affordable-luxury and bridal space. It is sold as moissanite, not mislabelled as diamond, which matters for both customs and customer trust.</p>'
+'<ul class="bullets">'
+'<li><b>2ct moissanite solitaire ring (D/VVS, GRA, S925)</b> — MOQ <b>10</b>, ~¥42 FOB</li>'
+'<li><b>Moissanite tennis bracelet (full ice-out, 316L, GRA stones)</b> — MOQ <b>10</b>, ~¥55 FOB</li>'
+'<li><b>1ct moissanite stud earrings (D/VVS pair, S925)</b> — MOQ <b>20</b>, ~¥22 FOB</li>'
+'</ul>'
+'<p>All three are in our live catalog — a Gulf creator can launch a moissanite line at a 10-unit MOQ and air-ship a test batch.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>3. Beauty devices — the at-home boom</h2></div>'
+'<p>The UAE at-home beauty-device market is <b>USD 113 million in 2025</b>, projected to <b>USD 166 million by 2030</b> (CAGR ~8%). LED masks surged after COVID, Dubai alone has <b>400+ beauty clinics</b>, and mid-range devices — many from China — are taking share from EU/US brands on price. The products Gulf buyers want are low-MOQ and private-label friendly:</p>'
+'<ul class="bullets">'
+'<li><b>7-color LED light-therapy face mask (silicone, USB rechargeable)</b> — MOQ <b>30</b>, ~¥58 FOB. Link: <a href="/category-beauty-toys.html">Beauty tools</a></li>'
+'<li><b>3-in-1 EMS neck &amp; face firming massager (heat + vibration)</b> — MOQ <b>50</b>, ~¥24 FOB</li>'
+'<li><b>Stainless steel ice roller &amp; gua sha set (de-puff, cooling)</b> — MOQ <b>100</b>, ~¥9 FOB</li>'
+'<li><b>Electric scalp massager (waterproof)</b> — MOQ <b>50</b>, ~¥18 FOB</li>'
+'</ul>'
+'<p>Note: LED and EMS devices are electronics, so they need ECAS (UAE) or SABER (Saudi) conformity — plan the certificate before the goods sail.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>4. Modest fashion &amp; plus-size — the audience nobody serves well</h2></div>'
+'<p>Gulf modest-fashion buyers are loyal and have a low return rate, but most suppliers ignore plus-size and Muslim-compliant cuts. Our catalog fills that gap with real, shippable SKUs:</p>'
+'<ul class="bullets">'
+'<li><b>Plus-size embroidered batwing abaya (Nida crepe, gold thread)</b> — MOQ <b>20</b>, ~¥78 FOB. Link: <a href="/category-modest-fashion.html">Plus-size &amp; modest fashion</a></li>'
+'<li><b>Plus-size flat slide sandal (wide fit, soft gold)</b> — MOQ <b>30</b>, ~¥28 FOB. Link: <a href="/category-women-shoes.html">Plus-size women\'s shoes</a></li>'
+'<li><b>Plus-size full-coverage comfort bra &amp; brief set</b> — MOQ <b>50</b>, ~¥16 FOB. Link: <a href="/category-lingerie.html">Plus-size comfort essentials</a></li>'
+'</ul>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>5. How Gulf buyers actually source these from China</h2></div>'
+'<p>None of the above needs a container. The composite path we run is the same one a creator or small shop uses to ride a trend:</p>'
+'<ol class="bullets">'
+'<li><b>Shortlist</b> the SKUs above (or send us a photo of what you saw sell).</li>'
+'<li><b>Samples to your door</b> in the UAE or Saudi — approve the exact piece before you commit.</li>'
+'<li><b>Private-label packaging</b> with your logo; Arabic labels included for Saudi-bound goods.</li>'
+'<li><b>Pre-book compliance</b> — ECAS/SABER for devices, SFDA/MOHAP for skincare — before shipping.</li>'
+'<li><b>Air-ship a low-MOQ batch</b> (days, not weeks) and list while the trend is live.</li>'
+'</ol>'
+'<div class="rel-grid">'
+'<a class="rel-card" href="/category-fashion.html"><span>Hijab accessories &amp; jewelry</span><b>Sand gold + moissanite SKUs</b></a>'
+'<a class="rel-card" href="/category-beauty-toys.html"><span>Beauty tools</span><b>LED masks, EMS, rollers</b></a>'
+'<a class="rel-card" href="/category-modest-fashion.html"><span>Modest fashion</span><b>Plus-size abayas</b></a>'
+'<a class="rel-card" href="/category-women-shoes.html"><span>Women\'s shoes</span><b>Plus-size slides</b></a>'
+'<a class="rel-card" href="/category-lingerie.html"><span>Comfort essentials</span><b>Plus-size lingerie</b></a>'
+'<a class="rel-card" href="/blog/skincare-private-label-china-to-saudi-uae.html"><span>Skincare private label</span><b>The 4th trend: personal care</b></a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap" style="text-align:center">'
+'<div class="cta-box">'
+'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<p>We source the products Gulf buyers are actually ordering in 2026 — sand-gold jewelry, moissanite, beauty devices, modest fashion — at low MOQ, with samples to your door and compliant shipping to the UAE and Saudi. Send the trend you want to ride; we find the source.</p>'
+'<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Source the 2026 trends</a>'
+'</div>'
+'</div></section>'
+    )
+
 BLOG = {
     'saber-2026': {
         'file': 'blog/saber-2026-saudi-buyers-playbook.html',
@@ -623,6 +729,15 @@ BLOG = {
         'canonical': BASE + '/blog/skincare-private-label-china-to-saudi-uae.html',
         'body': skincare_body(),
         'faq': SKINCARE_FAQ,
+    },
+    'gulf-trends-2026': {
+        'file': 'blog/gulf-trends-2026-china-sourcing.html',
+        'title': 'What Gulf Buyers Are Sourcing From China in 2026: Sand-Gold Jewelry, Moissanite, Beauty Devices & Modest Fashion',
+        'desc': 'Data-backed 2026 Gulf sourcing trends mapped to real products: 18K PVD sand-gold jewelry, moissanite, LED beauty devices and modest fashion — MOQs, FOB prices and compliant shipping from a China sourcing team.',
+        'date': '2026-08-27',
+        'canonical': BASE + '/blog/gulf-trends-2026-china-sourcing.html',
+        'body': trend_body(),
+        'faq': TREND_FAQ,
     },
 }
 
