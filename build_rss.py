@@ -31,6 +31,7 @@ INCLUDE = [
     "blog/china-gcc-fta-lower-import-duty.html",
     "blog/source-products-tiktok-shop-saudi-no-container.html",
     "blog/white-friday-2026-china-gulf-small-business.html",
+    "blog/skincare-private-label-china-to-saudi-uae.html",
     # GCC 指南（根目录）
     "uae-import-guide-from-china.html",
     "saudi-arabia-import-guide-from-china.html",
