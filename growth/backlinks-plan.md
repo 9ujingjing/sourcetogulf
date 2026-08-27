@@ -62,7 +62,7 @@
 基地：Guangzhou, China
 服务：UAE · Saudi · Qatar · Kuwait · Bahrain · Oman
 WhatsApp：+971 58 514 6139
-邮箱：info@papaclaw.cn
+邮箱：info@sourcetogulf.com
 ```
 
 > ⚠️ 品牌规则：对外只叫 **SourceToGulf**。"Papa Claw" 只是营业执照上的法律名，
@@ -251,7 +251,7 @@ https://sourcetogulf.com/for-influencers.html
 ## 7. 常见问题
 
 **Q：要营业执照/ trade license 怎么办？**
-A：用资料卡里的法律名 **Papa Claw Marketing Technology Co., Ltd.** + 邮箱 info@papaclaw.cn。没有实体执照的平台就先跳过，不影响其他。
+A：用资料卡里的法律名 **Papa Claw Marketing Technology Co., Ltd.** + 邮箱 info@sourcetogulf.com。没有实体执照的平台就先跳过，不影响其他。
 
 **Q：发完没回复？**
 A：正常。2 周后再跟一次；媒体外联本就是「发 10 个中 2 个」的概率游戏。
