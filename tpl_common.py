@@ -65,8 +65,23 @@ function applyLang(){
 }
 function toggleLang(){ lang = (lang==='en')?'ar':'en'; localStorage.setItem('stg-lang',lang); applyLang(); }
 function toggleMenu(){ var m=document.getElementById('mpanel'); if(m) m.classList.toggle('open'); }
+function revealCards(){
+  var els = document.querySelectorAll('.pcard:not(.in)');
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries, obs){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, {threshold: 0.05, rootMargin: '0px 0px -20px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+}
 document.addEventListener('DOMContentLoaded', function(){
   applyLang();
+  revealCards();
   var toTop = document.getElementById('toTop');
   if(toTop){
     window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 700); }, {passive:true});
