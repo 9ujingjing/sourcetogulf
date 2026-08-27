@@ -26,6 +26,9 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Category: Phone & car accessories: /category-tech.html
 - Category: Home & kitchen: /category-home.html
 - Category: Beauty tools: /category-beauty-toys.html
+- Category: Plus-size & modest fashion: /category-modest-fashion.html
+- Category: Plus-size women's shoes: /category-women-shoes.html
+- Category: Plus-size comfort essentials: /category-lingerie.html
 - Solutions by buyer type: /solutions.html (influencers/livestream, wholesalers, retailers, small brands)
 - GCC import answers (FAQ): /gcc-import-answers.html
 - About / Our story: /about.html

@@ -45,6 +45,18 @@ CAT_COPY = {
     'sub': 'Beauty tools and accessories — mirrors, brushes, organizers and more for Gulf beauty sellers and salons. Landed prices to the UAE included.',
     'intro': 'Beauty tools and accessories are a fast-growing category for Gulf e-commerce and salon buyers. Small, light and giftable — perfect for bundling and impulse purchases.'
   },
+  'modest-fashion': {
+    'sub': 'Plus-size and modest fashion — embroidered abayas, open-front robes, two-piece sets and chiffon hijabs for Gulf women. Landed prices to the UAE on every piece.',
+    'intro': 'Inclusive modest fashion is one of the fastest-growing segments in Gulf e-commerce: abayas, layering robes, two-piece sets and hijabs in extended sizes. We source from Guangzhou modest-wear factories with Arabic-label and SABER support for Saudi-bound shipments.'
+  },
+  'women-shoes': {
+    'sub': 'Plus-size women\'s shoes — wide-fit flat slides, rhinestone slides and block-heel sandals for sizes 42–45. Landed prices to the UAE.',
+    'intro': 'Extended-size women\'s footwear is an underserved niche in the Gulf. We source wide-fit flat slides, soft-gold H-strap sandals, rhinestone slides and modest block heels from Guangzhou and Yiwu with landed pricing to the UAE.'
+  },
+  'lingerie': {
+    'sub': 'Plus-size comfort essentials — full-coverage seamless bra & brief sets and breathable smoothing shapewear. Landed prices to the UAE.',
+    'intro': 'Everyday full-coverage essentials for plus-size women: seamless bra & brief sets and smoothing shapewear made from breathable, skin-friendly fabrics. Marketed as modest comfort wear and shipped with consolidated Gulf logistics.'
+  },
 }
 
 # 每个品类的买家 FAQ（GEO：增加可被 AI 引用的问答面；独立陈述、无主观词）
@@ -96,6 +108,30 @@ CAT_FAQ = {
      'Some cosmetics and supplements do. We filter suppliers with the right certifications and prepare the supporting documents so Saudi-bound goods clear without holds.'),
     ('Can beauty tools be private-labeled?',
      'Yes. Low-MOQ custom branding and Arabic labels are available, which is what lets small Gulf brands launch their own beauty line without large minimums.'),
+  ],
+  'modest-fashion': [
+    ('What is the MOQ for plus-size abayas and modest sets?',
+     'Curated plus-size abayas start around 20 pieces per style; hijab sets start around 50 pieces. Custom embroidery, fabric or private-label tags start higher, typically 100+ pieces per design.'),
+    ('Can abayas ship to Saudi Arabia with SABER and Arabic labels?',
+     'Yes. We arrange Arabic care labels and handle SABER registration for apparel categories that require it, so shipments clear Jeddah or Dammam without delay.'),
+    ('How long do reorders of modest fashion take?',
+     'Reorders from Guangzhou modest-wear factories usually take 14 to 20 days including pre-shipment QC, because the supplier and spec are already confirmed.'),
+  ],
+  'women-shoes': [
+    ('What sizes are available for plus-size women\'s shoes?',
+     'We focus on extended sizes 42 to 45 (EU) with wide-fit construction — the range most underserved in Gulf markets. Mixed-size packs are available at MOQ.'),
+    ('Can shoes be consolidated with other categories in one shipment?',
+     'Yes. Shoes arrive at our Guangzhou warehouse, are inspected, then consolidated with your other categories into a single Gulf-bound shipment.'),
+    ('What is the MOQ for plus-size shoe styles?',
+     'Plus-size flat slides, rhinestone slides and block-heel sandals run about 30 pairs per style at the curated level. Custom colors or branded footbeds start higher.'),
+  ],
+  'lingerie': [
+    ('What is the MOQ for plus-size comfort essentials?',
+     'Full-coverage bra & brief sets start around 50 pieces per size run; shapewear starts around 50 pieces. Mixed-size packs can be arranged.'),
+    ('Are these items compliant for Gulf markets?',
+     'We source breathable, skin-friendly fabrics and can prepare supporting documents for Gulf-bound shipments. Marketing and imagery stay modest and full-coverage.'),
+    ('Can comfort essentials be private-labeled?',
+     'Yes. Low-MOQ custom tags, Arabic labels and neutral packaging are available, which lets Gulf brands launch their own everyday essentials line without large minimums.'),
   ],
 }
 
