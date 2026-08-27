@@ -33,6 +33,7 @@ INCLUDE = [
     "blog/white-friday-2026-china-gulf-small-business.html",
     "blog/skincare-private-label-china-to-saudi-uae.html",
     "blog/gulf-trends-2026-china-sourcing.html",
+    "blog/sample-to-container-delivery-journey.html",
     # GCC 指南（根目录）
     "uae-import-guide-from-china.html",
     "saudi-arabia-import-guide-from-china.html",

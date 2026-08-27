@@ -684,6 +684,91 @@ def trend_body():
 '</div></section>'
     )
 
+DELIVERY_FAQ = [
+    ('Can you send a physical sample before I commit to a full order?',
+     'Yes. For every product line we ship a real sample to your door before bulk production - for example a sand-gold ring (MOQ 20, from CNY 16/pc), a 2-carat moissanite ring (MOQ 10, from CNY 42/pc), or an LED beauty mask (MOQ 30, from CNY 58/pc). You check weight, finish, stone quality and packaging, then we lock the spec. Sampling typically takes 3-7 days and air shipping to Dubai or Riyadh runs 3-5 days.'),
+    ('What does private-label packaging include for Gulf brands?',
+     'Private-label means the product carries your brand, not the factory\'s. We produce custom boxes, hang tags and inserts, and apply Arabic labels where Saudi SFDA or UAE MOHAP/ECAS require them. For beauty and cosmetics the Arabic ingredient and usage text is a compliance step, not a nice-to-have - it is checked before the container loads.'),
+    ('How long from sample approval to a loaded container?',
+     'A typical path: sample approval (3-7 days) then private-label packaging proof (3-5 days) then bulk production and QC (15-25 days by category) then container loading with SABER/ECAS filed. Sea freight to Jebel Ali is about 18-25 days; air is faster but costs more per kg. The timeline is set by the category and order size.'),
+    ('Do you handle SABER and ECAS before the container ships?',
+     'Yes. For Saudi the SABER PC and SC certificates and the 12-digit HS code are confirmed before loading; for the UAE the ECAS / GCC conformity and Arabic labels are in place before shipment. The certificate is filed by the importer of record - we coordinate it on your behalf so the goods clear instead of sitting at the border.'),
+    ('What is the minimum order if I start with one product line?',
+     'Low. Most lines start at a small MOQ - sand-gold rings from 20 pcs, moissanite from 10 pcs, LED masks from 30 pcs, modest abaya from 20 pcs. You can launch one SKU, validate it with a sample and a small batch, then expand. That is the point of sourcing without a container.'),
+]
+
+def delivery_body():
+    wa = wa_link('Hi SourceToGulf! I want to see a real sample of [product] with my packaging proof sent to my door in the Gulf. Can you quote the sample and a small batch?')
+    return (
+'<section class="sec hero-sec"><div class="wrap">'
+'<span class="kicker">Our Delivery Process · Updated Aug 2026</span>'
+'<h1>From Sample to Container: How We Deliver China Sourcing to the Gulf</h1>'
+'<p class="lead">Gulf buyers do not choose a supplier from a product photo. They choose on proof you can deliver: a real sample in hand, clean private-label packaging, a shipment that clears customs, and a container that actually loads. This is the exact path we run for every order - sand-gold jewelry, moissanite, beauty devices and modest fashion - from the first sample to the loaded container. No stock photos, just the steps a buyer sees.</p>'
+'<p class="sub">By the SourceToGulf sourcing team · Updated 27 Aug 2026 · 8 min read</p>'
+'<div class="cta-row">'
+'<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start with a sample</a>'
+'<a class="btn-ghost" href="/products.html">See real products →</a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Step 1 — Sample proofing: you see the real item first</h2></div>'
+'<p>Before any bulk order, we ship a physical sample of the exact SKU you will sell. You check the weight, the finish, the stone, the clasp - not a catalogue render. Example starting points from our live catalogue:</p>'
+'<ul class="bullets">'
+'<li><b>Sand-gold ring</b> — 18K PVD on 316L stainless, MOQ 20, from CNY 16/pc</li>'
+'<li><b>2-carat moissanite ring</b> — D/VVS, GRA-certified, MOQ 10, from CNY 42/pc</li>'
+'<li><b>LED beauty mask</b> — MOQ 30, from CNY 58/pc</li>'
+'</ul>'
+'<div class="img-slot"><div class="hint"><b>Real photo: sample in hand</b>Replace with a photo of the actual sample you received - weight, finish, stone close-up.</div></div>'
+'<p>Sampling typically takes 3-7 days; air shipping to Dubai or Riyadh is 3-5 days. You approve the spec before we move on.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Step 2 — Private-label packaging: it carries your brand</h2></div>'
+'<p>The product leaves the factory with your brand, not theirs. We produce custom boxes, hang tags and inserts, and apply Arabic labels where Saudi SFDA or UAE MOHAP/ECAS require them. For cosmetics the Arabic ingredient and usage text is a compliance step checked before the container loads - not after.</p>'
+'<div class="img-slot"><div class="hint"><b>Real photo: custom box &amp; label</b>Replace with a shot of the custom box, hang tag and Arabic label for the client brand.</div></div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Step 3 — Sample shipping to your door</h2></div>'
+'<p>Once packaging is proofed, we send a full sample kit - product plus branded packaging - to your address in the Gulf by air (3-5 days to DXB/RUH). This is the moment a buyer confirms the unboxing experience their own customers will get.</p>'
+'<div class="img-slot"><div class="hint"><b>Real photo: sample parcel &amp; waybill</b>Replace with the shipped sample box and the courier waybill to Dubai / Riyadh.</div></div>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Step 4 — Factory stock-up and QC</h2></div>'
+'<p>On sample approval we move to bulk production. Goods are made, then checked against the approved sample for weight, finish and packaging. Lead time is 15-25 days by category. This is where most delays are prevented - by locking the spec at Step 1, not arguing about it at the port.</p>'
+'<div class="img-slot"><div class="hint"><b>Real photo: production line / QC bench</b>Replace with a photo of the bulk batch being made or quality-checked against the sample.</div></div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Step 5 — Container loading and compliant shipment</h2></div>'
+'<p>For Saudi, the SABER PC and SC certificates and the 12-digit HS code are confirmed before loading; for the UAE, ECAS / GCC conformity and Arabic labels are in place. The container then ships - sea freight to Jebel Ali about 18-25 days, or air for faster turns. The certificate is filed by the importer of record; we coordinate it so goods clear instead of sitting at the border.</p>'
+'<div class="img-slot"><div class="hint"><b>Real photo: container loading</b>Replace with a photo of the actual container being loaded at the factory or port.</div></div>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Why this sequence wins Gulf buyers</h2></div>'
+'<p>A Middle East buyer evaluating a supplier is really asking three things: can you show me the real item, can you put my brand on it, and can you get it here without a customs problem. Running the sample to packaging to sample-ship to stock-up to container path in the open answers all three before a single message is sent. It is the opposite of a product grid - and it is what competitors rarely show.</p>'
+'<div class="rel-grid">'
+'<a class="rel-card" href="/products.html"><span>Real products</span><b>Sand-gold, moissanite, beauty, modest fashion</b></a>'
+'<a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; jewelry</span><b>MOQ from 10-20 pcs</b></a>'
+'<a class="rel-card" href="/blog/skincare-private-label-china-to-saudi-uae.html"><span>Private-label skincare</span><b>OEM, Arabic labels, SFDA</b></a>'
+'<a class="rel-card" href="/shipping/china-to-saudi-arabia.html"><span>Saudi shipping &amp; SABER</span><b>Compliance before loading</b></a>'
+'<a class="rel-card" href="/blog/gulf-trends-2026-china-sourcing.html"><span>2026 Gulf trends</span><b>What buyers source now</b></a>'
+'<a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Brand · Reseller</b></a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap" style="text-align:center">'
+'<div class="cta-box">'
+'<h2>Want to see your own sample path?</h2>'
+'<p>Send the product you want to test. We ship a real sample with your packaging proof to your door, then quote one landed price to Dubai or Riyadh.</p>'
+'<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Start with a sample</a>'
+'</div>'
+'</div></section>'
+    )
+
 BLOG = {
     'saber-2026': {
         'file': 'blog/saber-2026-saudi-buyers-playbook.html',
@@ -738,6 +823,15 @@ BLOG = {
         'canonical': BASE + '/blog/gulf-trends-2026-china-sourcing.html',
         'body': trend_body(),
         'faq': TREND_FAQ,
+    },
+    'delivery-journey': {
+        'file': 'blog/sample-to-container-delivery-journey.html',
+        'title': 'From Sample to Container: How We Deliver China Sourcing to the Gulf (2026 Process)',
+        'desc': 'The exact delivery path we run for every Gulf order - real sample, private-label packaging, sample shipping, factory stock-up and compliant container loading - mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs.',
+        'date': '2026-08-27',
+        'canonical': BASE + '/blog/sample-to-container-delivery-journey.html',
+        'body': delivery_body(),
+        'faq': DELIVERY_FAQ,
     },
 }
 

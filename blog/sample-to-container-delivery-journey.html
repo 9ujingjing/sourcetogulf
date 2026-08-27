@@ -1,24 +1,13 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<!-- Google tag (gtag.js) GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-76L0Y9SC5D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-76L0Y9SC5D');
-</script>
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blog — China Sourcing & Importing to the Gulf | SourceToGulf</title>
-<meta name="description" content="Practical guides on sourcing from China, shipping to the Gulf, customs, SABER, landed costs and livestream selling. English & Arabic." />
-<meta name="keywords" content="china sourcing blog, import from china guide, استيراد من الصين, شحن من الصين, دليل الاستيراد" />
-<link rel="canonical" href="https://sourcetogulf.com/blog/" />
-<link rel="alternate" type="application/rss+xml" title="SourceToGulf" href="https://sourcetogulf.com/rss.xml" />
-<link rel="alternate" hreflang="en" href="https://sourcetogulf.com/blog/" />
-<link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/blog/" />
+<title>From Sample to Container: How We Deliver China Sourcing to the Gulf (2026 Process)</title>
+<meta name="description" content="The exact delivery path we run for every Gulf order - real sample, private-label packaging, sample shipping, factory stock-up and compliant container loading - mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs." />
+<link rel="canonical" href="https://sourcetogulf.com/blog/sample-to-container-delivery-journey.html" />
+<link rel="alternate" hreflang="en" href="https://sourcetogulf.com/blog/sample-to-container-delivery-journey.html" />
+<link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/blog/sample-to-container-delivery-journey.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--teal:#0D5C4D;--teal-dark:#09332B;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247}
@@ -194,14 +183,78 @@ tr:nth-child(even) td{background:var(--soft)}
 .mobile-panel .mp-group{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:16px 4px 4px}
 @media(max-width:1100px){.menu>a,.drop>button{padding:8px 10px;font-size:13.5px}}
 @media(max-width:1024px){.nav-right .quote-btn{display:none}}
+/* ===== products page ===== */
+#chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0 26px}
+#chips button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;color:var(--ink)}
+#chips button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.pcard img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+.pbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pbody h3{font-size:15px;font-weight:700;line-height:1.4}
+.price-row{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;border-top:1px dashed var(--line);padding-top:10px}
+.planded small,.pfob small{display:block;font-size:11px;color:var(--muted);letter-spacing:.02em}
+.planded b{font-size:20px;color:var(--teal);font-weight:800;line-height:1.2}
+.planded i{font-style:normal;font-size:11px;color:var(--muted)}
+.pfob{text-align:right}
+.pfob span{font-size:15px;font-weight:700;color:var(--ink)}
+.pmeta{font-size:12.5px;color:var(--muted)}
+.wa-mini{margin-top:auto;align-self:flex-start;text-decoration:none;background:var(--wa);color:#fff;padding:7px 13px;border-radius:9px;font-size:12.5px;font-weight:600}
+.wa-mini:hover{background:var(--wa-dark)}
+.hot-badge{position:absolute;top:10px;inset-inline-start:10px;background:var(--gold);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.06em;padding:3px 9px;border-radius:999px}
+.updated-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px}
+/* ===== products page — motion & polish ===== */
+.pcard{transition:transform .3s cubic-bezier(.22,.8,.3,1),box-shadow .3s,border-color .3s,opacity .45s ease}
+.pcard:not(.in){opacity:0;transform:translateY(18px)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(23,32,29,.13);border-color:#C9D8D2}
+.pcard .imgbox{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(100deg,#F3EFE7 30%,#FAF7F0 50%,#F3EFE7 70%);background-size:200% 100%;animation:shimmer 1.5s linear 2}
+.pcard .imgbox img{transition:transform .55s cubic-bezier(.22,.8,.3,1);will-change:transform}
+.pcard:hover .imgbox img{transform:scale(1.07)}
+.imgbox.bad img{display:none}
+.imgbox.bad::after{content:"No photo yet";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9A8F76;font-size:13px;text-align:center}
+@keyframes shimmer{to{background-position:-200% 0}}
+.pcard .pbody h3{transition:color .2s}
+.pcard:hover .pbody h3{color:var(--teal)}
+.hot-badge{animation:hotPulse 2.4s ease-in-out infinite}
+@keyframes hotPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+#chips button{transition:transform .18s,box-shadow .18s,background .18s,border-color .18s,color .18s}
+#chips button:hover{transform:translateY(-1px);border-color:var(--teal);color:var(--teal)}
+#chips button.on{transform:translateY(-1px);box-shadow:0 5px 14px rgba(13,92,77,.3)}
+.planded b{transition:color .2s}
+.pcard:hover .planded b{color:var(--teal-dark)}
+.wa-mini{transition:transform .2s,box-shadow .2s,background .2s}
+.wa-mini:hover{transform:translateY(-1px);box-shadow:0 7px 16px rgba(34,179,88,.35)}
+.page-hero{animation:heroIn .55s cubic-bezier(.22,.8,.3,1) both}
+@keyframes heroIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#toTop{position:fixed;bottom:24px;inset-inline-start:22px;z-index:55;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--teal);font-size:17px;cursor:pointer;box-shadow:0 8px 22px rgba(23,32,29,.12);opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.float-wa{animation:waPulse 2.8s ease-in-out infinite}
+@keyframes waPulse{0%,100%{box-shadow:0 8px 24px rgba(34,179,88,.45)}50%{box-shadow:0 10px 34px rgba(34,179,88,.75)}}
+.float-wa:hover{transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pcard:not(.in),.page-hero{opacity:1;transform:none}}
 </style>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","@id":"https://sourcetogulf.com/blog/","url":"https://sourcetogulf.com/blog/","name":"Blog \u2014 China Sourcing & Importing to the Gulf | SourceToGulf","isPartOf":{"@type":"WebSite","@id":"https://sourcetogulf.com/#website","name":"SourceToGulf","url":"https://sourcetogulf.com"},"publisher":{"@type":"Organization","name":"SourceToGulf","url":"https://sourcetogulf.com"}}
+<!-- Google tag (gtag.js) GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-76L0Y9SC5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-76L0Y9SC5D');
 </script>
+<link rel="alternate" type="application/rss+xml" title="SourceToGulf" href="https://sourcetogulf.com/rss.xml" />
 </head>
 <body>
 <header>
+
+
+
+
+
+
+
   <div class="wrap nav">
     <a class="logo" href="/" dir="ltr">Source<b>ToGulf</b></a>
     <nav class="menu" aria-label="Primary">
@@ -319,110 +372,33 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
+
+
+
+
+
 </header>
-
-
-<section class="page-hero"><div class="wrap">
-<h1 data-en="The SourceToGulf Blog: Importing from China, Explained Honestly" data-ar="مدونة سورس تو قلف: الاستيراد من الصين، بشرح صادق">The SourceToGulf Blog: Importing from China, Explained Honestly</h1>
-<p class="sub" data-en="Practical guides on sourcing, shipping, customs and landed costs for Gulf sellers — in English and Arabic, updated for 2026." data-ar="أدلة عملية عن التوريد والشحن والجمارك وتكاليف الوصول للبائعين الخليجيين — بالإنجليزية والعربية، محدّثة لعام 2026.">Practical guides on sourcing, shipping, customs and landed costs for Gulf sellers — in English and Arabic, updated for 2026.</p>
-</div></section>
-<section><div class="wrap narrow">
-
-<div class="blog-card">
-  <div class="meta"><span data-en="Our delivery process" data-ar="عملية التسليم لدينا">Our delivery process</span> · <span data-en="Sourcing &amp; shipping" data-ar="التوريد والشحن">Sourcing &amp; shipping</span> · <span dir="ltr">2026-08-27</span> · <span data-en="8 min read" data-ar="٨ دقائق قراءة">8 min read</span></div>
-  <h2><a href="/blog/sample-to-container-delivery-journey.html" data-en="From Sample to Container: How We Deliver China Sourcing to the Gulf (2026 Process)" data-ar="من العينة إلى الحاوية: كيف نوصل توريدك من الصين إلى الخليج (عملية 2026)">From Sample to Container: How We Deliver China Sourcing to the Gulf (2026 Process)</a></h2>
-  <p data-en="The exact delivery path we run for every Gulf order — real sample, private-label packaging, sample shipping, factory stock-up and compliant container loading — mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs." data-ar="المسار الدقيق للتسليم الذي نتبعه لكل طلب خليجي — عينة حقيقية، تغليف خاص بعلامتك، شحن العينة، تجهيز المصنع وتحميل الحاوية المتوافق — مرتبط بالساند غولد والموسانيت وأجهزة التجميل والأزياء المحتشمة، مع أقل كميات حقيقية.">The exact delivery path we run for every Gulf order — real sample, private-label packaging, sample shipping, factory stock-up and compliant container loading — mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs.</p>
-</div>
-
-<div class="blog-card">
-  <div class="meta"><span data-en="Gulf sourcing trends" data-ar="اتجاهات التوريد الخليجية">Gulf sourcing trends</span> · <span data-en="Fashion &amp; beauty" data-ar="أزياء وتجميل">Fashion &amp; beauty</span> · <span dir="ltr">2026-08-27</span> · <span data-en="10 min read" data-ar="١٠ دقائق قراءة">10 min read</span></div>
-  <h2><a href="/blog/gulf-trends-2026-china-sourcing.html" data-en="What Gulf Buyers Are Sourcing From China in 2026 (Sand-Gold Jewelry, Moissanite, Beauty Devices &amp; Modest Fashion)" data-ar="ما الذي يورده مشترو الخليج من الصين في 2026 (مجوهرات الساند غولد، الموسانيت، أجهزة التجميل والأزياء المحتشمة)">What Gulf Buyers Are Sourcing From China in 2026 (Sand-Gold Jewelry, Moissanite, Beauty Devices &amp; Modest Fashion)</a></h2>
-  <p data-en="Gulf demand for fashion, jewelry and personal care is rising: UAE jewelry USD 5.3B in 2026 (gold 59%), ME&amp;A beauty USD 26.3B, UAE beauty devices +8%/yr. We map each trend to real products — sand gold, moissanite, LED masks, modest abayas — with MOQ and FOB prices." data-ar="طلب الخليج على الأزياء والمجوهرات والعناية بالبشرة في ارتفاع: مجوهرات الإمارات 5.3 مليار دولار في 2026 (الذهب 59%)، تجميل الشرق الأوسط وأفريقيا 26.3 مليار، أجهزة التجميل الإماراتية +8% سنوياً. نربط كل اتجاه بمنتجات حقيقية — الساند غولد، الموسانيت، أقنعة LED، العبايات المحتشمة — مع أقل كمية وأسعار FOB.">Gulf demand for fashion, jewelry and personal care is rising: UAE jewelry USD 5.3B in 2026 (gold 59%), ME&amp;A beauty USD 26.3B, UAE beauty devices +8%/yr. We map each trend to real products — sand gold, moissanite, LED masks, modest abayas — with MOQ and FOB prices.</p>
-</div>
-
-<div class="blog-card">
-  <div class="meta"><span data-en="White Friday 2026" data-ar="الجمعة البيضاء 2026">White Friday 2026</span> · <span data-en="Gulf e-commerce" data-ar="تجارة إلكترونية خليجية">Gulf e-commerce</span> · <span dir="ltr">2026-08-26</span> · <span data-en="10 min read" data-ar="١٠ دقائق قراءة">10 min read</span></div>
-  <h2><a href="/blog/white-friday-2026-china-gulf-small-business.html" data-en="How to Stock for White Friday 2026 from China (Gulf Small Business Guide)" data-ar="كيف تجهز مخزون الجمعة البيضاء 2026 من الصين (دليل الشركات الصغيرة في الخليج)">How to Stock for White Friday 2026 from China (Gulf Small Business Guide)</a></h2>
-  <p data-en="White Friday 2026 is 27 November. Plan backwards: shortlist by early September, samples and artwork by late September, bulk ships mid-October, land by mid-November. A $5,000 landed batch example from a China sourcing team." data-ar="الجمعة البيضاء 2026 في 27 نوفمبر. خطط بالعكس: اختيار المنتجات مطلع سبتمبر، العينات والتصميم أواخر سبتمبر، الشحن الجماعي منتصف أكتوبر، والاستلام منتصف نوفمبر. مثال لدفعة بقيمة 5,000 دولار شاملة التكاليف من فريق توريد صيني.">White Friday 2026 is 27 November. Plan backwards: shortlist by early September, samples and artwork by late September, bulk ships mid-October, land by mid-November. A $5,000 landed batch example from a China sourcing team.</p>
-</div>
-
-<div class="blog-card">
-  <div class="meta"><span data-en="Beauty private label" data-ar="علامة تجارية خاصة للتجميل">Beauty private label</span> · <span data-en="Saudi &amp; UAE" data-ar="السعودية والإمارات">Saudi &amp; UAE</span> · <span dir="ltr">2026-08-27</span> · <span data-en="11 min read" data-ar="١١ دقيقة قراءة">11 min read</span></div>
-  <h2><a href="/blog/skincare-private-label-china-to-saudi-uae.html" data-en="How to Private-Label Skincare from China to Saudi and UAE (2026 Step-by-Step for Small Brands)" data-ar="كيف تطلق علامتك الخاصة للعناية بالبشرة من الصين إلى السعودية والإمارات (دليل 2026 خطوة بخطوة للعلامات الصغيرة)">How to Private-Label Skincare from China to Saudi and UAE (2026 Step-by-Step for Small Brands)</a></h2>
-  <p data-en="The Gulf beauty market is ~$13B+ GCC-wide. Launch a compliant private-label line from a China OEM (GMPC / ISO 22716): samples to your door, Arabic labels, SFDA/SABER or MOHAP/ECAS, air-ship low MOQ. A $3,500 landed example." data-ar="سوق التجميل الخليجي حوالي 13 مليار دولار على نطاق مجلس التعاون. أطلق خط عناية بالبشرة متوافقاً من مصنع صيني (GMPC / ISO 22716): عينات حتى بابك، ملصقات عربية، SFDA/SABER أو MOHAP/ECAS، وشحن جوي بكميات منخفضة. مثال بقيمة 3,500 دولار شاملة التكاليف.">The Gulf beauty market is ~$13B+ GCC-wide. Launch a compliant private-label line from a China OEM (GMPC / ISO 22716): samples to your door, Arabic labels, SFDA/SABER or MOHAP/ECAS, air-ship low MOQ. A $3,500 landed example.</p>
-</div>
-
-<div class="blog-card">
-  <div class="meta"><span data-en="Saudi import" data-ar="استيراد السعودية">Saudi import</span> · <span dir="ltr">2026-08-24</span> · <span data-en="11 min read" data-ar="١١ دقيقة قراءة">11 min read</span></div>
-  <h2><a href="/blog/saber-2026-saudi-buyers-playbook.html" data-en="How to Import to Saudi Arabia Under the 2026 SABER Rules: A Buyer's Playbook" data-ar="كيف تستورد إلى السعودية وفق قواعد سابر 2026: دليل المشتري">How to Import to Saudi Arabia Under the 2026 SABER Rules: A Buyer's Playbook</a></h2>
-  <p data-en="12-digit HS codes, split PC validity, 150+ controlled categories, no post-arrival fix — the step-by-step 2026 playbook for small Gulf buyers, from a team that clears Saudi goods weekly." data-ar="رموز HS المكونة من 12 رقماً، صلاحية PC مقسمة، أكثر من 150 فئة خاضعة، ودون تصحيح بعد الشحن — دليل عملي لعام 2026 للمشترين الخليجيين من فريق يخلص البضائع السعودية أسبوعياً.">12-digit HS codes, split PC validity, 150+ controlled categories, no post-arrival fix — the step-by-step 2026 playbook for small Gulf buyers, from a team that clears Saudi goods weekly.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Trade policy" data-ar="سياسة التجارة">Trade policy</span> · <span dir="ltr">2026-08-24</span> · <span data-en="10 min read" data-ar="١٠ دقائق قراءة">10 min read</span></div>
-  <h2><a href="/blog/china-gcc-fta-lower-import-duty.html" data-en="How to Use the New China–GCC FTA to Cut Your Gulf Import Duty (2026 Guide for Small Importers)" data-ar="كيف تستخدم اتفاقية التجارة الحرة بين الصين ومجلس التعاون لخفض رسوم استيرادك للخليج">How to Use the New China–GCC FTA to Cut Your Gulf Import Duty (2026 Guide for Small Importers)</a></h2>
-  <p data-en="The GCC–China FTA cuts tariffs on 1,420 HS codes by ~7.4 points — but only if you file a Certificate of Origin. A small-importer checklist from a China sourcing team." data-ar="اتفاقية الصين ومجلس التعاون تخفض الرسوم على 1,420 رمز HS بنحو 7.4 نقطة — لكن فقط بإصدار شهادة منشأ. قائمة خطوات للمستورد الصغير من فريق توريد صيني.">The GCC–China FTA cuts tariffs on 1,420 HS codes by ~7.4 points — but only if you file a Certificate of Origin. A small-importer checklist from a China sourcing team.</p>
-</div>
-
-<div class="blog-card">
-  <div class="meta"><span data-en="TikTok Shop" data-ar="تيك توك شوب">TikTok Shop</span> · <span dir="ltr">2026-08-24</span> · <span data-en="9 min read" data-ar="٩ دقائق قراءة">9 min read</span></div>
-  <h2><a href="/blog/source-products-tiktok-shop-saudi-no-container.html" data-en="How to Source Products for TikTok Shop Saudi Without a Container (2026 Guide for Influencers and Small Sellers)" data-ar="كيف تبحث عن منتجات لتيك توك شوب السعودية دون حاوية (دليل 2026 للمؤثرين والبائعين الصغار)">How to Source Products for TikTok Shop Saudi Without a Container (2026 Guide for Influencers and Small Sellers)</a></h2>
-  <p data-en="No container, no Chinese, no customs licence: pick a demo-friendly product, get samples to your door, add private-label packaging, clear SABER where needed, air-ship a low-MOQ batch. A creator's launch path from a China sourcing team." data-ar="دون حاوية ولا لغة صينية ولا رخصة جمركية: اختر منتجاً مناسباً للعرض، احصل على عينات حتى بابك، أضف تغليفاً بعلامتك الخاصة، استوفِ سابر عند الحاجة، وشحن جوي بكميات منخفضة. مسار إطلاق للمبدعين من فريق توريد صيني.">No container, no Chinese, no customs licence: pick a demo-friendly product, get samples to your door, add private-label packaging, clear SABER where needed, air-ship a low-MOQ batch. A creator's launch path from a China sourcing team.</p>
-</div>
-
-<div class="blog-card">
-  <div class="meta"><span data-en="Import guide" data-ar="دليل الاستيراد">Import guide</span> · <span dir="ltr">2026-08-20</span> · <span data-en="12 min read" data-ar="١٢ دقيقة قراءة">12 min read</span></div>
-  <h2><a href="/blog/how-to-import-from-china-to-uae.html" data-en="How to Import from China to UAE in 2026: The Complete Step-by-Step Guide" data-ar="كيف تستورد من الصين إلى الإمارات عام 2026: الدليل الكامل خطوة بخطوة">How to Import from China to UAE in 2026: The Complete Step-by-Step Guide</a></h2>
-  <p data-en="Trade license, suppliers, ECAS rules, 5% duty + 5% VAT, air vs sea into Jebel Ali, free-zone re-export — with a real worked example from our own shipments." data-ar="الرخصة التجارية، الموردون، قواعد ECAS، رسوم 5% وضريبة 5%، الجوي مقابل البحري إلى جبل علي، وإعادة التصدير من المناطق الحرة — مع مثال محسوب من شحناتنا الحقيقية.">Trade license, suppliers, ECAS rules, 5% duty + 5% VAT, air vs sea into Jebel Ali, free-zone re-export — with a real worked example from our own shipments.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Import guide" data-ar="دليل الاستيراد">Import guide</span> · <span dir="ltr">2026-08-15</span> · <span data-en="8 min read" data-ar="٨ دقائق قراءة">8 min read</span></div>
-  <h2><a href="/blog/how-to-import-from-china-to-saudi-arabia.html" data-en="How to Import from China to Saudi Arabia in 2026: The Complete Step-by-Step Guide" data-ar="كيف تستورد من الصين إلى السعودية في 2026: الدليل الكامل خطوة بخطوة">How to Import from China to Saudi Arabia in 2026: The Complete Step-by-Step Guide</a></h2>
-  <p data-en="Step-by-step: finding suppliers, SABER certification, shipping options, customs, 15% VAT and real costs. Written by a team that clears goods in Saudi every week." data-ar="للاستيراد من الصين إلى السعودية: ١) جد مورداً موثوقاً، ٢) تحقق إن كان منتجك يحتاج شهادة سابر، ٣) احصل على عرض سعر شامل يتضمن ضريبة 15% والرسوم، ٤) افحص البضاعة قبل الشحن، ٥) اشحن جواً (6–10 أيام) أو بحراً (20–30 يوماً)، ٦) خلّص جمركياً بمستندات كاملة. المدة الإجمالية: 2–5 أسابيع.">Step-by-step: finding suppliers, SABER certification, shipping options, customs, 15% VAT and real costs. Written by a team that clears goods in Saudi every week.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Import guide" data-ar="دليل الاستيراد">Import guide</span> · <span dir="ltr">2026-08-21</span> · <span data-en="12 min read" data-ar="١٢ دقيقة قراءة">12 min read</span></div>
-  <h2><a href="/blog/how-to-import-from-china-to-kuwait.html" data-en="How to Import from China to Kuwait in 2026: The Complete Step-by-Step Guide" data-ar="كيف تستورد من الصين إلى الكويت في 2026: الدليل الكامل خطوة بخطوة">How to Import from China to Kuwait in 2026: The Complete Step-by-Step Guide</a></h2>
-  <p data-en="Kuwait has no VAT and a short conformity list — the Gulf's easiest clearance. KCAS, Shuwaikh port, 5% duty, air vs sea, and what actually sells in Kuwait's high-income market." data-ar="الكويت ليس فيها ضريبة قيمة مضافة وقائمة مطابقتها قصيرة — أسهل تخليص في الخليج. KCAS، ميناء الشويخ، رسوم 5%، الجوي مقابل البحري، وما يبيع فعلاً في سوق الكويت مرتفع الدخل.">Kuwait has no VAT and a short conformity list — the Gulf's easiest clearance. KCAS, Shuwaikh port, 5% duty, air vs sea, and what actually sells in Kuwait's high-income market.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Import guide" data-ar="دليل الاستيراد">Import guide</span> · <span dir="ltr">2026-08-21</span> · <span data-en="12 min read" data-ar="١٢ دقيقة قراءة">12 min read</span></div>
-  <h2><a href="/blog/how-to-import-from-china-to-qatar.html" data-en="How to Import from China to Qatar in 2026: The Complete Step-by-Step Guide" data-ar="كيف تستورد من الصين إلى قطر في 2026: الدليل الكامل خطوة بخطوة">How to Import from China to Qatar in 2026: The Complete Step-by-Step Guide</a></h2>
-  <p data-en="Qatar has no VAT and Hamad Port is one of the Gulf's most efficient. QS conformity, 5% duty, air vs sea into Doha, and what sells in the world's third-richest market." data-ar="قطر ليس فيها ضريبة قيمة مضافة وميناء حمد من أكثر موانئ الخليج كفاءة. مطابقة QS، رسوم 5%، الجوي مقابل البحري إلى الدوحة، وما يبيع في ثالث أغنى سوق في العالم.">Qatar has no VAT and Hamad Port is one of the Gulf's most efficient. QS conformity, 5% duty, air vs sea into Doha, and what sells in the world's third-richest market.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Import guide" data-ar="دليل الاستيراد">Import guide</span> · <span dir="ltr">2026-08-21</span> · <span data-en="11 min read" data-ar="١١ دقيقة قراءة">11 min read</span></div>
-  <h2><a href="/blog/how-to-import-from-china-to-bahrain.html" data-en="How to Import from China to Bahrain in 2026: The Complete Step-by-Step Guide" data-ar="كيف تستورد من الصين إلى البحرين في 2026: الدليل الكامل خطوة بخطوة">How to Import from China to Bahrain in 2026: The Complete Step-by-Step Guide</a></h2>
-  <p data-en="Bahrain is the Gulf's easiest test market: 100% foreign ownership, fast Sijilat registration, KBSP clearance, 5% duty + 10% VAT, and the fastest air transit in the GCC." data-ar="البحرين أسهل سوق اختبار في الخليج: ملكية أجنبية 100%، تسجيل سريع عبر سجلات، تخليص ميناء خليفة بن سلمان، رسوم 5% وضريبة 10%، وأسرع شحن جوي في الخليج.">Bahrain is the Gulf's easiest test market: 100% foreign ownership, fast Sijilat registration, KBSP clearance, 5% duty + 10% VAT, and the fastest air transit in the GCC.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Import guide" data-ar="دليل الاستيراد">Import guide</span> · <span dir="ltr">2026-08-21</span> · <span data-en="11 min read" data-ar="١١ دقيقة قراءة">11 min read</span></div>
-  <h2><a href="/blog/how-to-import-from-china-to-oman.html" data-en="How to Import from China to Oman in 2026: The Complete Step-by-Step Guide" data-ar="كيف تستورد من الصين إلى عُمان في 2026: الدليل الكامل خطوة بخطوة">How to Import from China to Oman in 2026: The Complete Step-by-Step Guide</a></h2>
-  <p data-en="Oman is the Gulf's quiet growth market: Vision 2040, Sohar Port, 5% duty + 5% VAT, DGSM conformity, frankincense and oud burners, and the fastest-growing tourism sector in the GCC." data-ar="عُمان سوق النمو الهادئ في الخليج: رؤية 2040، ميناء صحار، رسوم 5% وضريبة 5%، مطابقة DGSM، اللبان ومباخر العود، وأسرع قطاع سياحة نمواً في الخليج.">Oman is the Gulf's quiet growth market: Vision 2040, Sohar Port, 5% duty + 5% VAT, DGSM conformity, frankincense and oud burners, and the fastest-growing tourism sector in the GCC.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Working with agents" data-ar="التعامل مع الوكلاء">Working with agents</span> · <span dir="ltr">2026-08-10</span> · <span data-en="7 min read" data-ar="٧ دقائق قراءة">7 min read</span></div>
-  <h2><a href="/blog/how-to-find-a-reliable-sourcing-agent-in-china.html" data-en="How to Find a Reliable Sourcing Agent in China (And the Red Flags That Save You Thousands)" data-ar="كيف تجد وكيل توريد موثوقاً في الصين (والعلامات التحذيرية التي توفّر لك الآلاف)">How to Find a Reliable Sourcing Agent in China (And the Red Flags That Save You Thousands)</a></h2>
-  <p data-en="The 7 checks that separate real sourcing agents from scammers: verification, inspection proof, transparent pricing, local presence — plus the red flags Gulf buyers should never ignore." data-ar="وكيل التوريد الموثوق في الصين: ١) لديه سجل تجاري صيني قابل للتحقق، ٢) يزور الأسواق/المصانع شخصياً، ٣) يوفر فحصاً بالصور والفيديو قبل الشحن، ٤) يعرض أسعاراً شاملة وشفافة، ٥) يتواصل بلغتك خلال ساعات، ٦) يقدم مراجع من منطقتك، ٧) لا يطلب أبداً الدفع الكامل قبل الفحص.">The 7 checks that separate real sourcing agents from scammers: verification, inspection proof, transparent pricing, local presence — plus the red flags Gulf buyers should never ignore.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Pricing & costs" data-ar="الأسعار والتكاليف">Pricing & costs</span> · <span dir="ltr">2026-08-05</span> · <span data-en="9 min read" data-ar="٩ دقائق قراءة">9 min read</span></div>
-  <h2><a href="/blog/landed-cost-china-to-gulf-explained.html" data-en="Landed Cost from China to the Gulf, Explained: Every Fee Between the Factory and Your Door" data-ar="تكلفة الوصول من الصين إلى الخليج بشرح كامل: كل رسوم بين المصنع وبابك">Landed Cost from China to the Gulf, Explained: Every Fee Between the Factory and Your Door</a></h2>
-  <p data-en="What landed cost really includes: product, freight, duty, VAT, clearance — with a worked example from Guangzhou to Riyadh and the mistakes that kill margins." data-ar="تكلفة الوصول = سعر المنتج + النقل المحلي في الصين + رسوم التصدير + الشحن الدولي + التأمين + الرسوم الجمركية (5–15% على CIF) + الضريبة (5–15% على CIF+الرسوم) + التخليص الجمركي + التوصيل الأخير. مثال: جراب هاتف بـ20 يواناً يصل الرياض بحوالي 38–48 يواناً جواً، 30–36 بحراً بالكميات.">What landed cost really includes: product, freight, duty, VAT, clearance — with a worked example from Guangzhou to Riyadh and the mistakes that kill margins.</p>
-</div>
-<div class="blog-card">
-  <div class="meta"><span data-en="Livestream selling" data-ar="البيع بالبث المباشر">Livestream selling</span> · <span dir="ltr">2026-07-28</span> · <span data-en="8 min read" data-ar="٨ دقائق قراءة">8 min read</span></div>
-  <h2><a href="/blog/sourcing-for-livestream-sellers-gulf.html" data-en="Sourcing for Livestream Sellers in the Gulf: How to Build a Product Line That Actually Sells" data-ar="التوريد لبائعي البث المباشر في الخليج: كيف تبني خط منتجات يبيع فعلاً">Sourcing for Livestream Sellers in the Gulf: How to Build a Product Line That Actually Sells</a></h2>
-  <p data-en="Livestream selling in the Gulf lives or dies on product selection. How to pick winners, test cheap, restock fast — from a team that has run livestream commerce itself." data-ar="بائعو البث المباشر الخليجيون يجب أن يورّدوا: ١) منتجات بصرية تُعرض جيداً على الكاميرا (أدوات تجميل، أدوات منزلية، إكسسوارات موضة)، ٢) قطعاً مسعّرة للشراء الاندفاعي (30–150 ريال/درهم تجزئة)، ٣) تكلفة وصول ≤ 35% من التجزئة، ٤) دفعات اختبار صغيرة (100–300 قطعة) تُعاد تعبئتها بسرعة جواً. تجنب المنتجات الهشة أو ذات المقاسات أو المنظّمة في البداية.">Livestream selling in the Gulf lives or dies on product selection. How to pick winners, test cheap, restock fast — from a team that has run livestream commerce itself.</p>
-</div>
-</div></section>
-<section style="padding-top:0"><div class="wrap">
-  <div class="final">
-    <h2 data-en="We'll find it, price it, and tell you the real landed cost. Free, no commitment." data-ar="نلقاه لك، ونسعّره، ونقول لك التكلفة الشاملة الحقيقية. مجاناً وبلا التزام.">We'll find it, price it, and tell you the real landed cost. Free, no commitment.</h2>
-    <p data-en="WhatsApp us a photo of what you want to sell." data-ar="أرسل لنا على واتساب صورة المنتج اللي تبي تبيعه.">WhatsApp us a photo of what you want to sell.</p>
-    <a class="wa-btn" href="https://wa.me/971585146139" target="_blank" rel="noopener" data-en="💬 WhatsApp: +971 58 514 6139" data-ar="💬 واتساب: +971 58 514 6139">💬 WhatsApp: +971 58 514 6139</a>
-  </div>
-</div></section>
+<section class="sec hero-sec"><div class="wrap"><span class="kicker">Our Delivery Process · Updated Aug 2026</span><h1>From Sample to Container: How We Deliver China Sourcing to the Gulf</h1><p class="lead">Gulf buyers do not choose a supplier from a product photo. They choose on proof you can deliver: a real sample in hand, clean private-label packaging, a shipment that clears customs, and a container that actually loads. This is the exact path we run for every order - sand-gold jewelry, moissanite, beauty devices and modest fashion - from the first sample to the loaded container. No stock photos, just the steps a buyer sees.</p><p class="sub">By the SourceToGulf sourcing team · Updated 27 Aug 2026 · 8 min read</p><div class="cta-row"><a class="btn-wa" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20want%20to%20see%20a%20real%20sample%20of%20%5Bproduct%5D%20with%20my%20packaging%20proof%20sent%20to%20my%20door%20in%20the%20Gulf.%20Can%20you%20quote%20the%20sample%20and%20a%20small%20batch%3F" target="_blank" rel="noopener">💬 Start with a sample</a><a class="btn-ghost" href="/products.html">See real products →</a></div></div></section><section class="sec"><div class="wrap"><div class="sec-head"><h2>Step 1 — Sample proofing: you see the real item first</h2></div><p>Before any bulk order, we ship a physical sample of the exact SKU you will sell. You check the weight, the finish, the stone, the clasp - not a catalogue render. Example starting points from our live catalogue:</p><ul class="bullets"><li><b>Sand-gold ring</b> — 18K PVD on 316L stainless, MOQ 20, from CNY 16/pc</li><li><b>2-carat moissanite ring</b> — D/VVS, GRA-certified, MOQ 10, from CNY 42/pc</li><li><b>LED beauty mask</b> — MOQ 30, from CNY 58/pc</li></ul><div class="img-slot"><div class="hint"><b>Real photo: sample in hand</b>Replace with a photo of the actual sample you received - weight, finish, stone close-up.</div></div><p>Sampling typically takes 3-7 days; air shipping to Dubai or Riyadh is 3-5 days. You approve the spec before we move on.</p></div></section><section class="sec alt"><div class="wrap"><div class="sec-head"><h2>Step 2 — Private-label packaging: it carries your brand</h2></div><p>The product leaves the factory with your brand, not theirs. We produce custom boxes, hang tags and inserts, and apply Arabic labels where Saudi SFDA or UAE MOHAP/ECAS require them. For cosmetics the Arabic ingredient and usage text is a compliance step checked before the container loads - not after.</p><div class="img-slot"><div class="hint"><b>Real photo: custom box &amp; label</b>Replace with a shot of the custom box, hang tag and Arabic label for the client brand.</div></div></div></section><section class="sec"><div class="wrap"><div class="sec-head"><h2>Step 3 — Sample shipping to your door</h2></div><p>Once packaging is proofed, we send a full sample kit - product plus branded packaging - to your address in the Gulf by air (3-5 days to DXB/RUH). This is the moment a buyer confirms the unboxing experience their own customers will get.</p><div class="img-slot"><div class="hint"><b>Real photo: sample parcel &amp; waybill</b>Replace with the shipped sample box and the courier waybill to Dubai / Riyadh.</div></div></div></section><section class="sec alt"><div class="wrap"><div class="sec-head"><h2>Step 4 — Factory stock-up and QC</h2></div><p>On sample approval we move to bulk production. Goods are made, then checked against the approved sample for weight, finish and packaging. Lead time is 15-25 days by category. This is where most delays are prevented - by locking the spec at Step 1, not arguing about it at the port.</p><div class="img-slot"><div class="hint"><b>Real photo: production line / QC bench</b>Replace with a photo of the bulk batch being made or quality-checked against the sample.</div></div></div></section><section class="sec"><div class="wrap"><div class="sec-head"><h2>Step 5 — Container loading and compliant shipment</h2></div><p>For Saudi, the SABER PC and SC certificates and the 12-digit HS code are confirmed before loading; for the UAE, ECAS / GCC conformity and Arabic labels are in place. The container then ships - sea freight to Jebel Ali about 18-25 days, or air for faster turns. The certificate is filed by the importer of record; we coordinate it so goods clear instead of sitting at the border.</p><div class="img-slot"><div class="hint"><b>Real photo: container loading</b>Replace with a photo of the actual container being loaded at the factory or port.</div></div></div></section><section class="sec alt"><div class="wrap"><div class="sec-head"><h2>Why this sequence wins Gulf buyers</h2></div><p>A Middle East buyer evaluating a supplier is really asking three things: can you show me the real item, can you put my brand on it, and can you get it here without a customs problem. Running the sample to packaging to sample-ship to stock-up to container path in the open answers all three before a single message is sent. It is the opposite of a product grid - and it is what competitors rarely show.</p><div class="rel-grid"><a class="rel-card" href="/products.html"><span>Real products</span><b>Sand-gold, moissanite, beauty, modest fashion</b></a><a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; jewelry</span><b>MOQ from 10-20 pcs</b></a><a class="rel-card" href="/blog/skincare-private-label-china-to-saudi-uae.html"><span>Private-label skincare</span><b>OEM, Arabic labels, SFDA</b></a><a class="rel-card" href="/shipping/china-to-saudi-arabia.html"><span>Saudi shipping &amp; SABER</span><b>Compliance before loading</b></a><a class="rel-card" href="/blog/gulf-trends-2026-china-sourcing.html"><span>2026 Gulf trends</span><b>What buyers source now</b></a><a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Brand · Reseller</b></a></div></div></section><section class="sec"><div class="wrap" style="text-align:center"><div class="cta-box"><h2>Want to see your own sample path?</h2><p>Send the product you want to test. We ship a real sample with your packaging proof to your door, then quote one landed price to Dubai or Riyadh.</p><a class="wa-btn" href="https://wa.me/971585146139?text=Hi%20SourceToGulf%21%20I%20want%20to%20see%20a%20real%20sample%20of%20%5Bproduct%5D%20with%20my%20packaging%20proof%20sent%20to%20my%20door%20in%20the%20Gulf.%20Can%20you%20quote%20the%20sample%20and%20a%20small%20batch%3F" target="_blank" rel="noopener">💬 Start with a sample</a></div></div></section>
+<section class="sec"><div class="wrap">
+<div class="sec-head center"><span class="kicker">FAQ</span><h2>Common Questions</h2>
+<p class="sub">Straight answers buyers ask before importing under the new rules.</p></div>
+<div class="qa-list">
+<div class="qa"><h3>Can you send a physical sample before I commit to a full order?</h3><p>Yes. For every product line we ship a real sample to your door before bulk production - for example a sand-gold ring (MOQ 20, from CNY 16/pc), a 2-carat moissanite ring (MOQ 10, from CNY 42/pc), or an LED beauty mask (MOQ 30, from CNY 58/pc). You check weight, finish, stone quality and packaging, then we lock the spec. Sampling typically takes 3-7 days and air shipping to Dubai or Riyadh runs 3-5 days.</p></div>
+<div class="qa"><h3>What does private-label packaging include for Gulf brands?</h3><p>Private-label means the product carries your brand, not the factory's. We produce custom boxes, hang tags and inserts, and apply Arabic labels where Saudi SFDA or UAE MOHAP/ECAS require them. For beauty and cosmetics the Arabic ingredient and usage text is a compliance step, not a nice-to-have - it is checked before the container loads.</p></div>
+<div class="qa"><h3>How long from sample approval to a loaded container?</h3><p>A typical path: sample approval (3-7 days) then private-label packaging proof (3-5 days) then bulk production and QC (15-25 days by category) then container loading with SABER/ECAS filed. Sea freight to Jebel Ali is about 18-25 days; air is faster but costs more per kg. The timeline is set by the category and order size.</p></div>
+<div class="qa"><h3>Do you handle SABER and ECAS before the container ships?</h3><p>Yes. For Saudi the SABER PC and SC certificates and the 12-digit HS code are confirmed before loading; for the UAE the ECAS / GCC conformity and Arabic labels are in place before shipment. The certificate is filed by the importer of record - we coordinate it on your behalf so the goods clear instead of sitting at the border.</p></div>
+<div class="qa"><h3>What is the minimum order if I start with one product line?</h3><p>Low. Most lines start at a small MOQ - sand-gold rings from 20 pcs, moissanite from 10 pcs, LED masks from 30 pcs, modest abaya from 20 pcs. You can launch one SKU, validate it with a sample and a small batch, then expand. That is the point of sourcing without a container.</p></div>
+</div></div></section>
 <footer>
+
+
+
+
+
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -456,41 +432,126 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
+
+
+
+
+
+
 </footer>
 <a class="float-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-<script>let lang = localStorage.getItem('stg-lang') || (navigator.language||'').startsWith('ar') ? (localStorage.getItem('stg-lang')||'ar') : 'en';
-lang = localStorage.getItem('stg-lang') || lang;
+<button id="toTop" aria-label="Back to top">↑</button>
+<script>
+var lang = localStorage.getItem('stg-lang') || ((navigator.language||'').indexOf('ar')===0 ? 'ar':'en');
 function applyLang(){
   document.documentElement.lang = lang;
-  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-  document.querySelectorAll('.lang-btn').forEach(b => b.textContent = (lang === 'ar') ? 'English' : 'العربية');
-  document.querySelectorAll('[data-en]').forEach(el => {
-    const v = el.getAttribute('data-' + lang);
-    if(v !== null) el.innerHTML = v;
+  document.documentElement.dir = (lang==='ar') ? 'rtl' : 'ltr';
+  document.querySelectorAll('.lang-btn').forEach(function(b){ b.textContent = (lang==='ar') ? 'English' : 'العربية'; });
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang);
+    if(v!==null) el.innerHTML = v;
   });
-  if(typeof calc === 'function') calc();
 }
-function toggleLang(){ lang = (lang === 'en') ? 'ar' : 'en'; localStorage.setItem('stg-lang', lang); applyLang(); }
-function toggleMenu(){ document.getElementById('mpanel').classList.toggle('open'); }
-document.addEventListener('DOMContentLoaded', applyLang);
-
-
-const CC = {AE:{duty:0.05,vat:0.05,cur:'AED',rate:3.6725},SA:{duty:0.05,vat:0.15,cur:'SAR',rate:3.75},KW:{duty:0.05,vat:0.00,cur:'KWD',rate:0.307},QA:{duty:0.05,vat:0.00,cur:'QAR',rate:3.64},BH:{duty:0.05,vat:0.10,cur:'BHD',rate:0.376},OM:{duty:0.05,vat:0.05,cur:'OMR',rate:0.385}};
-function fmt(x,cur,rate){return cur+' '+(x*rate).toLocaleString(undefined,{maximumFractionDigits:0})+' · $'+x.toLocaleString(undefined,{maximumFractionDigits:0});}
-function calc(){
-  const price=parseFloat(document.getElementById('cPrice').value)||0, qty=parseFloat(document.getElementById('cQty').value)||0,
-        ship=parseFloat(document.getElementById('cShip').value)||0, c=CC[document.getElementById('cCountry').value];
-  const goods=price*qty, duty=goods*c.duty, vat=(goods+ship+duty)*c.vat, total=goods+ship+duty+vat, per=qty>0?total/qty:0;
-  document.getElementById('rGoods').textContent=fmt(goods,c.cur,c.rate);
-  document.getElementById('rShip').textContent=fmt(ship,c.cur,c.rate);
-  document.getElementById('rDuty').textContent=fmt(duty,c.cur,c.rate);
-  document.getElementById('rVat').textContent=fmt(vat,c.cur,c.rate);
-  document.getElementById('rTotal').textContent=fmt(total,c.cur,c.rate);
-  document.getElementById('rDutyLbl').textContent=(lang==='ar'?'الرسوم الجمركية ':'Customs duty ')+'('+(c.duty*100)+'%)';
-  document.getElementById('rVatLbl').textContent=(lang==='ar'?'ضريبة القيمة المضافة ':'VAT ')+'('+(c.vat*100)+'%)';
-  document.getElementById('rPer').textContent=(lang==='ar'?'≈ التكلفة للقطعة: ':'≈ Landed cost per piece: ')+(qty>0?(c.cur+' '+(per*c.rate).toLocaleString(undefined,{maximumFractionDigits:2})+' / $'+per.toFixed(2)):'—');
+function toggleLang(){ lang = (lang==='en')?'ar':'en'; localStorage.setItem('stg-lang',lang); applyLang(); }
+function toggleMenu(){ var m=document.getElementById('mpanel'); if(m) m.classList.toggle('open'); }
+function revealCards(){
+  var els = document.querySelectorAll('.pcard:not(.in)');
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries, obs){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, {threshold: 0.05, rootMargin: '0px 0px -20px 0px'});
+  els.forEach(function(el){ io.observe(el); });
 }
-
+document.addEventListener('DOMContentLoaded', function(){
+  applyLang();
+  revealCards();
+  var toTop = document.getElementById('toTop');
+  if(toTop){
+    window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 700); }, {passive:true});
+    toTop.onclick = function(){ window.scrollTo({top:0, behavior:'smooth'}); };
+  }
+});
+</script>
+<script src="/fx.js" defer></script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "From Sample to Container: How We Deliver China Sourcing to the Gulf (2026 Process)",
+    "description": "The exact delivery path we run for every Gulf order - real sample, private-label packaging, sample shipping, factory stock-up and compliant container loading - mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs.",
+    "author": {
+      "@type": "Organization",
+      "name": "SourceToGulf",
+      "url": "https://sourcetogulf.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SourceToGulf",
+      "url": "https://sourcetogulf.com"
+    },
+    "datePublished": "2026-08-27",
+    "dateModified": "2026-08-27",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://sourcetogulf.com/blog/sample-to-container-delivery-journey.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can you send a physical sample before I commit to a full order?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. For every product line we ship a real sample to your door before bulk production - for example a sand-gold ring (MOQ 20, from CNY 16/pc), a 2-carat moissanite ring (MOQ 10, from CNY 42/pc), or an LED beauty mask (MOQ 30, from CNY 58/pc). You check weight, finish, stone quality and packaging, then we lock the spec. Sampling typically takes 3-7 days and air shipping to Dubai or Riyadh runs 3-5 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does private-label packaging include for Gulf brands?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Private-label means the product carries your brand, not the factory's. We produce custom boxes, hang tags and inserts, and apply Arabic labels where Saudi SFDA or UAE MOHAP/ECAS require them. For beauty and cosmetics the Arabic ingredient and usage text is a compliance step, not a nice-to-have - it is checked before the container loads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long from sample approval to a loaded container?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A typical path: sample approval (3-7 days) then private-label packaging proof (3-5 days) then bulk production and QC (15-25 days by category) then container loading with SABER/ECAS filed. Sea freight to Jebel Ali is about 18-25 days; air is faster but costs more per kg. The timeline is set by the category and order size."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle SABER and ECAS before the container ships?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. For Saudi the SABER PC and SC certificates and the 12-digit HS code are confirmed before loading; for the UAE the ECAS / GCC conformity and Arabic labels are in place before shipment. The certificate is filed by the importer of record - we coordinate it on your behalf so the goods clear instead of sitting at the border."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum order if I start with one product line?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Low. Most lines start at a small MOQ - sand-gold rings from 20 pcs, moissanite from 10 pcs, LED masks from 30 pcs, modest abaya from 20 pcs. You can launch one SKU, validate it with a sample and a small batch, then expand. That is the point of sourcing without a container."
+        }
+      }
+    ]
+  }
+]
 </script>
 </body>
 </html>
