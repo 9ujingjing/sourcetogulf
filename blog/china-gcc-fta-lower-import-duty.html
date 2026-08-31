@@ -10,7 +10,7 @@
 <link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/blog/china-gcc-fta-lower-import-duty.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--teal:#0D5C4D;--teal-dark:#09332B;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247}
+<style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--navy:#0B2B4D;--navy-dark:#071E36;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247;--teal:#0B2B4D;--teal-dark:#071E36}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Inter','Noto Kufi Arabic',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -21,8 +21,8 @@ a{color:var(--teal)}
 /* ===== header ===== */
 header{position:sticky;top:0;z-index:100;background:rgba(251,249,245,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.logo{font-weight:800;font-size:18px;text-decoration:none;color:var(--ink)}
-.logo b{color:var(--teal)}
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo img{height:30px;width:auto;display:block}
 .menu{display:flex;gap:3px;align-items:center}
 .menu>a,.drop>button{display:inline-flex;align-items:center;gap:5px;padding:8px 11px;border-radius:10px;font-size:13.5px;font-weight:600;color:var(--ink);text-decoration:none;border:none;background:none;cursor:pointer;font-family:inherit}
 .menu>a:hover,.drop>button:hover{background:var(--soft);color:var(--teal)}
@@ -256,7 +256,7 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
   <div class="wrap nav">
-    <a class="logo" href="/" dir="ltr">Source<b>ToGulf</b></a>
+    <a class="logo" href="/" dir="ltr"><img src="/images/logo/logo-header.png" alt="SourceToGulf" height="30"></a>
     <nav class="menu" aria-label="Primary">
       <div class="drop">
         <button aria-expanded="false"><span data-en="Services" data-ar="خدماتنا">Services</span> <span class="caret" aria-hidden="true">▾</span></button>
@@ -402,7 +402,7 @@ tr:nth-child(even) td{background:var(--soft)}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <h4 dir="ltr">SourceToGulf 🇨🇳→🇦🇪</h4>
+        <div style="display:inline-block;background:#fff;border-radius:10px;padding:8px 12px;margin-bottom:12px"><img src="/images/logo/logo-footer.png" alt="SourceToGulf" height="40" style="display:block"></div>
         <p style="font-size:13px;line-height:1.7" data-en="Your product team in China for the Gulf. Sourcing, inspection, branding and door-to-door shipping — one landed price." data-ar="فريق منتجاتك في الصين للخليج. توريد وفحص وتغليف بهويتك وشحن لبابك — بسعر شامل واحد.">Your product team in China for the Gulf. Sourcing, inspection, branding and door-to-door shipping — one landed price.</p>
         <p style="margin-top:10px"><a href="https://www.tiktok.com/@papaclawsourcetogulf" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.facebook.com/profile.php?id=61591873976787" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.linkedin.com/in/sourcetogulf-jingjing/?locale=zh" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://wa.me/971585146139" target="_blank" rel="noopener">WhatsApp</a></p>
       </div>

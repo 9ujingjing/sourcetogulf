@@ -18,9 +18,11 @@
 <link rel="canonical" href="https://sourcetogulf.com/blog/how-to-find-a-reliable-sourcing-agent-in-china.html" />
 <link rel="alternate" hreflang="en" href="https://sourcetogulf.com/blog/how-to-find-a-reliable-sourcing-agent-in-china.html" />
 <link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/blog/how-to-find-a-reliable-sourcing-agent-in-china.html" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/images/logo/logo-icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--teal:#0D5C4D;--teal-dark:#09332B;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247}
+<style>:root{--bg:#FBF9F5;--soft:#F3EFE7;--ink:#17201D;--navy:#0B2B4D;--navy-dark:#071E36;--gold:#C9A24B;--line:#E7E1D4;--muted:#5F6661;--wa:#22B358;--wa-dark:#1A9247;--teal:#0B2B4D;--teal-dark:#071E36}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Inter','Noto Kufi Arabic',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -31,8 +33,8 @@ a{color:var(--teal)}
 /* ===== header ===== */
 header{position:sticky;top:0;z-index:100;background:rgba(251,249,245,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.logo{font-weight:800;font-size:18px;text-decoration:none;color:var(--ink)}
-.logo b{color:var(--teal)}
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo img{height:30px;width:auto;display:block}
 .menu{display:flex;gap:3px;align-items:center}
 .menu>a,.drop>button{display:inline-flex;align-items:center;gap:5px;padding:8px 11px;border-radius:10px;font-size:13.5px;font-weight:600;color:var(--ink);text-decoration:none;border:none;background:none;cursor:pointer;font-family:inherit}
 .menu>a:hover,.drop>button:hover{background:var(--soft);color:var(--teal)}
@@ -193,6 +195,58 @@ tr:nth-child(even) td{background:var(--soft)}
 .mobile-panel .mp-group{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:16px 4px 4px}
 @media(max-width:1100px){.menu>a,.drop>button{padding:8px 10px;font-size:13.5px}}
 @media(max-width:1024px){.nav-right .quote-btn{display:none}}
+/* ===== products page ===== */
+#chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0 26px}
+#chips button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;color:var(--ink)}
+#chips button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.pcard img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+.pbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pbody h3{font-size:15px;font-weight:700;line-height:1.4}
+.price-row{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;border-top:1px dashed var(--line);padding-top:10px}
+.planded small,.pfob small{display:block;font-size:11px;color:var(--muted);letter-spacing:.02em}
+.planded b{font-size:20px;color:var(--teal);font-weight:800;line-height:1.2}
+.planded i{font-style:normal;font-size:11px;color:var(--muted)}
+.pfob{text-align:right}
+.pfob span{font-size:15px;font-weight:700;color:var(--ink)}
+.pmeta{font-size:12.5px;color:var(--muted)}
+.wa-mini{margin-top:auto;align-self:flex-start;text-decoration:none;background:var(--wa);color:#fff;padding:7px 13px;border-radius:9px;font-size:12.5px;font-weight:600}
+.wa-mini:hover{background:var(--wa-dark)}
+.hot-badge{position:absolute;top:10px;inset-inline-start:10px;background:var(--gold);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.06em;padding:3px 9px;border-radius:999px}
+.updated-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px}
+/* ===== products page — motion & polish ===== */
+.pcard{transition:transform .3s cubic-bezier(.22,.8,.3,1),box-shadow .3s,border-color .3s,opacity .45s ease}
+.pcard:not(.in){opacity:0;transform:translateY(18px)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(23,32,29,.13);border-color:#C9D8D2}
+.pcard .imgbox{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(100deg,#F3EFE7 30%,#FAF7F0 50%,#F3EFE7 70%);background-size:200% 100%;animation:shimmer 1.5s linear 2}
+.pcard .imgbox img{transition:transform .55s cubic-bezier(.22,.8,.3,1);will-change:transform}
+.pcard:hover .imgbox img{transform:scale(1.07)}
+.imgbox.bad img{display:none}
+.imgbox.bad::after{content:"No photo yet";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9A8F76;font-size:13px;text-align:center}
+@keyframes shimmer{to{background-position:-200% 0}}
+.pcard .pbody h3{transition:color .2s}
+.pcard:hover .pbody h3{color:var(--teal)}
+.hot-badge{animation:hotPulse 2.4s ease-in-out infinite}
+@keyframes hotPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+#chips button{transition:transform .18s,box-shadow .18s,background .18s,border-color .18s,color .18s}
+#chips button:hover{transform:translateY(-1px);border-color:var(--teal);color:var(--teal)}
+#chips button.on{transform:translateY(-1px);box-shadow:0 5px 14px rgba(13,92,77,.3)}
+.planded b{transition:color .2s}
+.pcard:hover .planded b{color:var(--teal-dark)}
+.wa-mini{transition:transform .2s,box-shadow .2s,background .2s}
+.wa-mini:hover{transform:translateY(-1px);box-shadow:0 7px 16px rgba(34,179,88,.35)}
+.page-hero{animation:heroIn .55s cubic-bezier(.22,.8,.3,1) both}
+@keyframes heroIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#toTop{position:fixed;bottom:24px;inset-inline-start:22px;z-index:55;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--teal);font-size:17px;cursor:pointer;box-shadow:0 8px 22px rgba(23,32,29,.12);opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.float-wa{animation:waPulse 2.8s ease-in-out infinite}
+@keyframes waPulse{0%,100%{box-shadow:0 8px 24px rgba(34,179,88,.45)}50%{box-shadow:0 10px 34px rgba(34,179,88,.75)}}
+.float-wa:hover{transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pcard:not(.in),.page-hero{opacity:1;transform:none}}
 </style>
 <script type="application/ld+json">
 {
@@ -219,8 +273,14 @@ tr:nth-child(even) td{background:var(--soft)}
 </head>
 <body>
 <header>
+
+
+
+
+
+
   <div class="wrap nav">
-    <a class="logo" href="/" dir="ltr">Source<b>ToGulf</b></a>
+    <a class="logo" href="/" dir="ltr"><img src="/images/logo/logo-header.png" alt="SourceToGulf" height="30"></a>
     <nav class="menu" aria-label="Primary">
       <div class="drop">
         <button aria-expanded="false"><span data-en="Services" data-ar="خدماتنا">Services</span> <span class="caret" aria-hidden="true">▾</span></button>
@@ -336,6 +396,12 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
+
+
+
+
 </header>
 
 
@@ -394,10 +460,16 @@ tr:nth-child(even) td{background:var(--soft)}
   </div>
 </div></section>
 <footer>
+
+
+
+
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <h4 dir="ltr">SourceToGulf 🇨🇳→🇦🇪</h4>
+        <div style="display:inline-block;background:#fff;border-radius:10px;padding:8px 12px;margin-bottom:12px"><img src="/images/logo/logo-footer.png" alt="SourceToGulf" height="40" style="display:block"></div>
         <p style="font-size:13px;line-height:1.7" data-en="Your product team in China for the Gulf. Sourcing, inspection, branding and door-to-door shipping — one landed price." data-ar="فريق منتجاتك في الصين للخليج. توريد وفحص وتغليف بهويتك وشحن لبابك — بسعر شامل واحد.">Your product team in China for the Gulf. Sourcing, inspection, branding and door-to-door shipping — one landed price.</p>
         <p style="margin-top:10px"><a href="https://www.tiktok.com/@papaclawsourcetogulf" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.facebook.com/profile.php?id=61591873976787" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.linkedin.com/in/sourcetogulf-jingjing/?locale=zh" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://wa.me/971585146139" target="_blank" rel="noopener">WhatsApp</a></p>
       </div>
@@ -427,6 +499,12 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
+
+
+
+
+
 </footer>
 <a class="float-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 <script>let lang = localStorage.getItem('stg-lang') || (navigator.language||'').startsWith('ar') ? (localStorage.getItem('stg-lang')||'ar') : 'en';
