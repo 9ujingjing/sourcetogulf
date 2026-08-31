@@ -55,9 +55,11 @@ COMPOSITE = """
 <section><div class="wrap">
   <div class="sec-head center">
     <span class="kicker">One partner, four capabilities</span>
-    <h2>More than a freight forwarder — a sourcing partner</h2>
-    <p>Logistics companies move boxes. We build your product: find the source, brand it,
-    ship you samples, and handle small batches to your door in the Gulf.</p>
+    <h2>Not a freight forwarder — a composite sourcing partner</h2>
+    <p><b>We are not a freight forwarder.</b> A forwarder ships cartons you have already
+    bought. We do the work that comes first: find the factory, put your brand on the product
+    and its packaging, and get physical samples into your hands — so you can test a small
+    batch before committing to a container.</p>
   </div>
   <div class="grid2">
     <div class="card"><div class="em">🔎</div><h3>Find the source</h3>

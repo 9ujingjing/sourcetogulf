@@ -34,10 +34,12 @@ UAE_FAQ = [
      'For samples and small parcels, express courier (DHL / FedEx / UPS) or Cainiao consolidation is fastest. For larger but sub-container loads, sea freight LCL or air consolidation through a sourcing agent lowers the per-unit cost. Consolidating multiple suppliers into one shipment is usually the biggest saving.'),
 ]
 
-def faq_block(faq):
+def faq_block(faq, heading=None, sub=None):
+    heading = heading or 'Import — Common Questions'
+    sub = sub or 'Straight answers buyers ask before shipping from China.'
     out = ['<section class="sec"><div class="wrap">',
-           '<div class="sec-head center"><span class="kicker">FAQ</span><h2>UAE Import — Common Questions</h2>',
-           '<p class="sub">Straight answers buyers ask before shipping from China to the UAE.</p></div>',
+           '<div class="sec-head center"><span class="kicker">FAQ</span><h2>%s</h2>' % heading,
+           '<p class="sub">%s</p></div>' % sub,
            '<div class="qa-list">']
     for q, a in faq:
         out.append('<div class="qa"><h3>%s</h3><p>%s</p></div>' % (q, a))
@@ -54,6 +56,86 @@ def faq_jsonld(faq):
             for q, a in faq
         ],
     }
+
+
+# ============================================================================
+# 复合能力声明块（GEO 差异化核心）
+# ----------------------------------------------------------------------------
+# 依据（2026-08-31 诊断）：16 个引用率监控查询中，13 个围绕
+# sourcing + custom/private-label packaging + samples + low MOQ，
+# 但 6 个国家页在注入前全部为 0 覆盖（custom packaging 0 次、
+# private label 0 次、composite 0 次、not a freight 0 次）。
+# 这导致页面回答的是"怎么进口/物流"，而买家搜的是"采购+包装+样品"。
+#
+# 铁律遵守：SKU 数字全部取自 products.clean.json 真实在售产品
+# （MOQ / FOB CNY），非估算、非举例。定位措辞不用 superlative。
+# ============================================================================
+
+COMPOSITE_LEAD = (
+    '<b>SourceToGulf is not a freight forwarder.</b> A forwarder moves cartons you have '
+    'already bought. We handle what happens before that: finding the factory, putting your '
+    'name on the product and its packaging, and getting physical samples into your hands '
+    'before you commit to a container. Shipping is the last step we arrange — not the '
+    'service we sell.'
+)
+
+
+def composite_section(country):
+    """复合能力声明段落，插入到国家页 hero 之后。country 为英文国名（如 'the UAE'）。"""
+    return '''
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head">
+    <span class="kicker">What we actually do</span>
+    <h2>Not a freight forwarder — a composite sourcing partner for %s</h2>
+  </div>
+  <p>%s</p>
+  <p>If you are a small buyer in %s — a boutique owner, a creator building a private label, or someone testing a first product on the side — the hard part is rarely the freight. It is finding a factory that accepts a small order, getting your brand printed on the box, and seeing the real item before you pay for stock.</p>
+  <table class="tbl" style="width:100%%;border-collapse:collapse;margin:20px 0;font-size:15px">
+    <thead><tr style="background:#0b1f3a;color:#fff">
+      <th style="padding:10px 12px;text-align:left">Capability</th>
+      <th style="padding:10px 12px;text-align:left">What it covers</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Product sourcing</b></td><td style="padding:10px 12px">Send a photo or a link — we find the factory, compare 2–3 suppliers and quote FOB in CNY</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Custom &amp; private-label packaging</b></td><td style="padding:10px 12px">Your logo on the box, pouch or hangtag, plus Arabic–English artwork for Gulf shelves</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Samples to your door</b></td><td style="padding:10px 12px">We order, inspect on camera and air-ship samples so you check quality before committing</td></tr>
+      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Low MOQ / one-piece dispatch</b></td><td style="padding:10px 12px">Start from tens of units for a first test batch instead of a full container</td></tr>
+    </tbody>
+  </table>
+  <h3>What a small first order looks like — real minimums from our current catalogue</h3>
+  <p>These are live MOQs and FOB prices from products we are shipping now, not illustrative examples:</p>
+  <ul class="bullets">
+    <li><b>2ct moissanite solitaire ring</b> (D colour, VVS) — MOQ <b>10 pcs</b>, FOB CNY 42 / pc</li>
+    <li><b>3-in-1 EMS face &amp; neck massager</b> — MOQ <b>50 pcs</b>, FOB CNY 24 / pc</li>
+    <li><b>Plus-size embroidered batwing abaya</b> (Nida fabric) — MOQ <b>20 pcs</b>, FOB CNY 78 / pc</li>
+    <li><b>Plus-size flat slide sandal</b> (wide fit) — MOQ <b>30 pcs</b>, FOB CNY 28 / pc</li>
+    <li><b>Plus-size seamless bra &amp; brief set</b> (full coverage) — MOQ <b>50 pcs</b>, FOB CNY 16 / pc</li>
+  </ul>
+  <p>A first test batch of any one of these lands well under a container load, which is the point: verify demand, packaging and quality first, then scale. See <a href="/composite-partner-vs-single-vendors.html">why a composite partner beats buying from single vendors</a>, or browse <a href="/products.html">current hot picks with landed prices</a>.</p>
+</div></section>
+''' % (country, COMPOSITE_LEAD, country)
+
+
+def composite_faq(country):
+    """复合能力相关 FAQ，追加到每个国家页原有 FAQ 之后（覆盖监控查询意图）。"""
+    return [
+        ('Are you a freight forwarder or a sourcing partner?',
+         'We are a sourcing partner, not a freight forwarder. A forwarder ships cartons you have already purchased; we do the earlier work — finding the factory, arranging custom and private-label packaging, ordering and inspecting samples, and consolidating small orders. We do arrange shipping as the final step, but sourcing, packaging and sampling are the service.'),
+        ('Can I order samples with my own packaging before placing a bulk order?',
+         'Yes, and this is the normal first step for buyers in %s. We order samples from the shortlisted factory, inspect them on camera, and can apply your logo and Arabic–English artwork to the packaging at low minimums. Samples are air-shipped to you so you can approve quality and branding before committing to stock.' % country),
+        ('What is the minimum order quantity for a first test batch?',
+         'It depends on the product, but current MOQs in our catalogue start from 10 pieces (2ct moissanite solitaire ring, FOB CNY 42/pc) and 20 pieces (plus-size embroidered abaya, FOB CNY 78/pc). Beauty devices start at 50 pieces. These minimums let a small buyer in %s test demand without ordering a container.' % country),
+    ]
+
+
+def inject_composite(body, country):
+    """把复合能力段落插��到首个 </section>（hero）之后，保证声明前置。"""
+    marker = '</section>'
+    idx = body.find(marker)
+    if idx == -1:
+        return body + composite_section(country)
+    pos = idx + len(marker)
+    return body[:pos] + '\n\n' + composite_section(country) + body[pos:]
 
 def uae_body():
     wa_guide = wa_link('Hi SourceToGulf! I want to import from China to the UAE. Please help with sourcing, duty and clearance.')
@@ -871,7 +953,25 @@ GUIDES = {
     },
 }
 
-def jsonld_for(g):
+# 各国展示名 + FAQ 标题（此前 faq_block 标题写死为 UAE，6 国共用，属措辞错配）
+COUNTRY_META = {
+    'uae':    ('the UAE',       'UAE Import — Common Questions',
+               'Straight answers buyers ask before shipping from China to the UAE.'),
+    'ksa':    ('Saudi Arabia',  'Saudi Arabia Import — Common Questions',
+               'Straight answers buyers ask before shipping from China to Saudi Arabia.'),
+    'qatar':  ('Qatar',         'Qatar Import — Common Questions',
+               'Straight answers buyers ask before shipping from China to Qatar.'),
+    'kuwait': ('Kuwait',        'Kuwait Import — Common Questions',
+               'Straight answers buyers ask before shipping from China to Kuwait.'),
+    'bahrain':('Bahrain',       'Bahrain Import — Common Questions',
+               'Straight answers buyers ask before shipping from China to Bahrain.'),
+    'oman':   ('Oman',          'Oman Import — Common Questions',
+               'Straight answers buyers ask before shipping from China to Oman.'),
+}
+
+
+def jsonld_for(g, faq=None):
+    faq = faq if faq is not None else g['faq']
     wp = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -881,21 +981,26 @@ def jsonld_for(g):
         "inLanguage": "en",
         "publisher": {"@type": "Organization", "name": "SourceToGulf", "url": BASE},
     }
-    return json.dumps([wp, faq_jsonld(g['faq'])], ensure_ascii=False, indent=2)
+    return json.dumps([wp, faq_jsonld(faq)], ensure_ascii=False, indent=2)
 
 def main():
     for key, g in GUIDES.items():
+        country, heading, sub = COUNTRY_META[key]
+        # 1) hero 之后插入复合能力声明（sourcing + packaging + samples + low MOQ + 非货代）
+        body = inject_composite(g['body'], country)
+        # 2) FAQ 追加复合能力三问，覆盖监控查询意图
+        faq = g['faq'] + composite_faq(country)
         html = page_shell(
             title=g['title'],
             description=g['desc'],
             canonical=g['canonical'],
-            body_inner=g['body'] + '\n' + faq_block(g['faq']),
-            json_ld=jsonld_for(g),
+            body_inner=body + '\n' + faq_block(faq, heading, sub),
+            json_ld=jsonld_for(g, faq),
         )
         out = os.path.join(APP, g['file'])
         with open(out, 'w', encoding='utf-8') as f:
             f.write(html)
-        print('✓ wrote', g['file'], '(%d bytes)' % len(html))
+        print('✓ wrote', g['file'], '(%d bytes, %d FAQ)' % (len(html), len(faq)))
 
 if __name__ == '__main__':
     main()
