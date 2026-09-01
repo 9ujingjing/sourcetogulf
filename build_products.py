@@ -162,7 +162,9 @@ def main():
         "A curated list of best-selling products for Gulf sellers, sourced from Yiwu & Guangzhou with landed prices to the UAE already included. Browse by category, request a quote on WhatsApp.",
         BASE + '/products.html',
         body,
-        json_ld=json_ld()
+        json_ld=json_ld(),
+        # 阿语版互链（/ar/products.html 由 build_arabic.py 生成）
+        alt_ar=BASE + '/ar/products.html'
     )
     html = dedupe_ga4(html)
     with open(os.path.join(APP, 'products.html'), 'w', encoding='utf-8') as f:

@@ -326,6 +326,8 @@ def render(p):
         canonical="https://sourcetogulf.com/" + p['slug'],
         body_inner=body,
         json_ld=json_ld,
+        # 阿语版互链（/ar/<slug> 由 build_arabic.py 生成）
+        alt_ar="https://sourcetogulf.com/ar/" + p['slug'],
     )
 
 if __name__ == '__main__':
