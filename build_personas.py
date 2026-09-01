@@ -146,6 +146,9 @@ PERSONAS = [
     "product — and protects your margin."),
  ],
  "cats": ["fashion", "tech", "beauty-toys"],
+ "photo": ("/images/packing.jpg",
+           "Jewelry livestream auction run by the SourceToGulf founder — 1,000+ orders shipped, zero returns",
+           "Our own livestream selling days: a jewelry auction we ran ourselves — 1,000+ orders shipped, zero returns."),
  "faq": [
    ("Can I order a small quantity as an influencer?",
     "Yes. We aggregate demand so you can start from low MOQs — often a few hundred pieces "
@@ -274,6 +277,25 @@ PERSONAS = [
 },
 ]
 
+def photo_block(p):
+    """可选配图区块（小尺寸 max-width:38rem，用于不显眼但内容相关的位置）。
+
+    仅当画像条目带 'photo' 键时渲染。直播场景照从首页迁至此——首页原为
+    全宽 .img-slot（1076px），过于醒目且画质一般，移至内页小图更合适。
+    """
+    ph = p.get('photo')
+    if not ph:
+        return ''
+    src, alt, cap = ph
+    return ('<section style="padding-top:0"><div class="wrap">'
+            '<div style="max-width:38rem;margin-inline:auto"><figure style="margin:0">'
+            '<img src="%s" alt="%s" loading="lazy" '
+            'style="width:100%%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;'
+            'border:1px solid #E7E1D4">'
+            '<figcaption style="font-size:.85rem;color:#5F6661;margin-top:.45rem">%s</figcaption>'
+            '</figure></div></div></section>' % (src, alt, cap))
+
+
 def render(p):
     cat = p['cats']
     sample = picks(cat, 3)
@@ -293,6 +315,7 @@ def render(p):
         + '<section><div class="wrap"><div class="sec-head center">'
           '<span class="kicker">Built for %s</span><h2>Your pain points, solved</h2></div>'
           '<div class="grid2">%s</div></div></section>' % (p['cap'], pain_cards)
+        + photo_block(p)
         + HOW
         + '<section><div class="wrap"><div class="sec-head center">'
           '<h2>Sample products you could start with</h2>'
