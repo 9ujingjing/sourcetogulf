@@ -285,6 +285,41 @@ def home_body():
   </div>
   <p style="text-align:center;margin-top:22px"><a class="quote-btn" href="/ar/bahrain-import-guide-from-china.html">اقرأ دليل الاستيراد إلى البحرين</a></p>
 </div></section>
+
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head center">
+    <span class="kicker">الامتثال والأوراق</span>
+    <h2>نتولّى الأوراق، سوقاً بسوق</h2>
+    <p>لكل دولة خليجية نظام مطابقة خاص بها. نحن نجهّز ونقدّم النظام الصحيح لوجهة شحنتك، فلا تُحتجز بضاعتك على الحدود.</p>
+  </div>
+  <div class="compliance-list">
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#006C35">SABER</div>
+      <div class="compliance-label">السعودية</div>
+      <div class="compliance-note">شهادات المنتج والشحنة</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#CE1126">ECAS</div>
+      <div class="compliance-label">الإمارات</div>
+      <div class="compliance-note">تقييم المطابقة والعلامة الخليجية</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#007A3D">KUCAS</div>
+      <div class="compliance-label">الكويت</div>
+      <div class="compliance-note">المطابقة عبر الهيئة العامة للصناعة</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#CE1126">OFOQ</div>
+      <div class="compliance-label">البحرين</div>
+      <div class="compliance-note">النافذة التجارية الموحدة</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#C8102E">Bayan</div>
+      <div class="compliance-label">عُمان</div>
+      <div class="compliance-note">النافذة الموحدة والمطابقة</div>
+    </div>
+  </div>
+</div></section>
 '''
 
 

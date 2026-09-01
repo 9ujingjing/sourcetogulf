@@ -249,6 +249,12 @@ tr:nth-child(even) td{background:var(--soft)}
 @keyframes waPulse{0%,100%{box-shadow:0 8px 24px rgba(34,179,88,.45)}50%{box-shadow:0 10px 34px rgba(34,179,88,.75)}}
 .float-wa:hover{transform:scale(1.06)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pcard:not(.in),.page-hero{opacity:1;transform:none}}
+/* ===== compliance & listings (real conformity schemes per GCC market) ===== */
+.compliance-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:13px;max-width:940px;margin-inline:auto}
+.compliance-item{text-align:center;padding:17px 12px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.compliance-badge{display:inline-flex;align-items:center;justify-content:center;min-width:70px;height:31px;border-radius:8px;color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.05em;padding:0 12px}
+.compliance-label{font-size:13.5px;font-weight:600;margin-top:10px}
+.compliance-note{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.45}
 /* ===== footer social links (SVG icons, responsive) ===== */
 .social-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px}
 .social-links a{display:inline-flex;align-items:center;gap:7px;color:#B9C6C0;text-decoration:none;font-size:13px;font-weight:500;transition:color .18s}
@@ -273,6 +279,7 @@ tr:nth-child(even) td{background:var(--soft)}
 </head>
 <body>
 <header>
+
 
 
 
@@ -418,6 +425,7 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
 
 
 
@@ -641,6 +649,41 @@ tr:nth-child(even) td{background:var(--soft)}
   </div>
 </div></section>
 
+<section id="compliance" style="padding-top:0"><div class="wrap">
+  <div class="sec-head center">
+    <span class="kicker" data-en="Compliance &amp; paperwork" data-ar="الامتثال والأوراق">Compliance &amp; paperwork</span>
+    <h2 data-en="We handle the paperwork, market by market" data-ar="نتولّى الأوراق، سوقاً بسوق">We handle the paperwork, market by market</h2>
+    <p data-en="Every Gulf country runs its own product conformity system. We prepare and submit the right one for your destination, so your shipment is not held at the border." data-ar="لكل دولة خليجية نظام مطابقة خاص بها. نحن نجهّز ونقدّم النظام الصحيح لوجهة شحنتك، فلا تُحتجز بضاعتك على الحدود.">Every Gulf country runs its own product conformity system. We prepare and submit the right one for your destination.</p>
+  </div>
+  <div class="compliance-list">
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#006C35">SABER</div>
+      <div class="compliance-label" data-en="Saudi Arabia" data-ar="السعودية">Saudi Arabia</div>
+      <div class="compliance-note" data-en="Product &amp; shipment certificates" data-ar="شهادات المنتج والشحنة">Product &amp; shipment certificates</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#CE1126">ECAS</div>
+      <div class="compliance-label" data-en="United Arab Emirates" data-ar="الإمارات">United Arab Emirates</div>
+      <div class="compliance-note" data-en="Emirates conformity, G-Mark" data-ar="تقييم المطابقة والعلامة الخليجية">Emirates conformity, G-Mark</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#007A3D">KUCAS</div>
+      <div class="compliance-label" data-en="Kuwait" data-ar="الكويت">Kuwait</div>
+      <div class="compliance-note" data-en="Conformity via PAI" data-ar="المطابقة عبر الهيئة العامة للصناعة">Conformity via PAI</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#CE1126">OFOQ</div>
+      <div class="compliance-label" data-en="Bahrain" data-ar="البحرين">Bahrain</div>
+      <div class="compliance-note" data-en="Single trade window" data-ar="النافذة التجارية الموحدة">Single trade window</div>
+    </div>
+    <div class="compliance-item">
+      <div class="compliance-badge" style="background:#C8102E">Bayan</div>
+      <div class="compliance-label" data-en="Oman" data-ar="عُمان">Oman</div>
+      <div class="compliance-note" data-en="Single window &amp; conformity" data-ar="النافذة الموحدة والمطابقة">Single window &amp; conformity</div>
+    </div>
+  </div>
+</div></section>
+
 <section style="padding-top:0"><div class="wrap">
   <div class="final">
     <h2 data-en="We'll find it, price it, and tell you the real landed cost. Free, no commitment." data-ar="نلقاه لك، ونسعّره، ونقول لك التكلفة الشاملة الحقيقية. مجاناً وبلا التزام.">We'll find it, price it, and tell you the real landed cost. Free, no commitment.</h2>
@@ -650,6 +693,7 @@ tr:nth-child(even) td{background:var(--soft)}
 </div></section>
 
 <footer>
+
 
 
 
@@ -708,6 +752,7 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
 
 
 
