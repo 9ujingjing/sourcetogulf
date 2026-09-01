@@ -249,6 +249,15 @@ tr:nth-child(even) td{background:var(--soft)}
 @keyframes waPulse{0%,100%{box-shadow:0 8px 24px rgba(34,179,88,.45)}50%{box-shadow:0 10px 34px rgba(34,179,88,.75)}}
 .float-wa:hover{transform:scale(1.06)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pcard:not(.in),.page-hero{opacity:1;transform:none}}
+/* ===== team section (real team photo — trust / "not a middleman portal") ===== */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+.team-photo img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:0 14px 38px rgba(23,32,29,.10)}
+.team-copy h2{font-size:clamp(21px,2.8vw,28px);font-weight:800;line-height:1.32;margin:12px 0 14px}
+.team-copy p{font-size:15.5px;color:var(--muted);margin-bottom:14px}
+.team-facts{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:11px}
+.team-facts li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink);line-height:1.55}
+.team-facts li::before{content:"✓";color:var(--gold);font-weight:800;flex-shrink:0;line-height:1.5}
+@media(max-width:860px){.team-grid{grid-template-columns:1fr;gap:24px}.team-photo img{border-radius:14px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SourceToGulf", "legalName": "Papa Claw Marketing Technology Co., Ltd.", "alternateName": "广州爬爬虾营销科技有限公司", "url": "https://sourcetogulf.com", "email": "info@sourcetogulf.com", "telephone": "+971585146139", "description": "China sourcing agent for the Middle East: product sourcing, quality inspection, custom branding, consolidation and door-to-door shipping from Guangzhou & Yiwu to the GCC.", "address": {"@type": "PostalAddress", "addressLocality": "Guangzhou", "addressCountry": "CN"}, "areaServed": ["AE", "SA", "KW", "QA", "BH", "OM"], "knowsLanguage": ["en", "ar", "zh"], "sameAs": ["https://www.facebook.com/profile.php?id=61591873976787", "https://www.tiktok.com/@papaclawsourcetogulf"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does your pricing work?", "acceptedAnswer": {"@type": "Answer", "text": "One landed price per piece — product, inspection, packing, shipping, customs and VAT included. No separate commission, no hidden fees. You know your exact margin before you pay."}}, {"@type": "Question", "name": "What is the minimum order?", "acceptedAnswer": {"@type": "Answer", "text": "Trial orders start from around $500 — or even just samples first. Test the product and test us before you scale."}}, {"@type": "Question", "name": "How long does shipping to the Gulf take?", "acceptedAnswer": {"@type": "Answer", "text": "Door to door: air freight 7–10 days, sea freight 25–35 days. Customs, duty and VAT are handled and included in your quote."}}, {"@type": "Question", "name": "Do you ship to Saudi Arabia? What about SABER?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — all six GCC countries door to door. For Saudi Arabia we handle SABER registration for regulated product categories as part of the quote."}}, {"@type": "Question", "name": "What if goods arrive damaged or wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Send photos within 7 days: confirmed defects are replaced free with shipping on us, or refunded — your choice. Wrong items or short counts are reshipped at our cost."}}, {"@type": "Question", "name": "How do I know you're not a scam?", "acceptedAnswer": {"@type": "Answer", "text": "Video call our office before paying anything. Every order gets a stamped invoice from our registered Guangzhou company, and photos/videos of your actual goods before shipping. Scammers hide — we don't."}},{"@type": "Question", "name": "Do you accept COD?", "acceptedAnswer": {"@type": "Answer", "text": "No. Orders start with a deposit, we source and confirm your stock, then you pay the balance before we ship. Payment by bank transfer, Payoneer, USDT or Alipay."}},{"@type": "Question", "name": "Can I return goods for non-quality reasons?", "acceptedAnswer": {"@type": "Answer", "text": "No. We don't accept change-of-mind returns. Quality issues are fixed at our cost. If a return is agreed for any reason, all return shipping costs are paid by the buyer."}}]}</script>
@@ -256,6 +265,7 @@ tr:nth-child(even) td{background:var(--soft)}
 </head>
 <body>
 <header>
+
 
 
 
@@ -385,6 +395,7 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
 
 
 
@@ -586,6 +597,29 @@ tr:nth-child(even) td{background:var(--soft)}
   <p style="text-align:center;margin-top:22px;font-size:14.5px;color:var(--muted)"><span data-en="Deeper guides on our" data-ar="أدلة أعمق في">Deeper guides on our</span> <a href="/blog/" style="font-weight:700" data-en="blog →" data-ar="مدونتنا ←">blog →</a></p>
 </div></section>
 
+<section id="team" style="padding-top:0"><div class="wrap">
+  <div class="team-grid">
+    <div class="team-photo">
+      <img src="/images/team/team-guangzhou.jpg"
+           srcset="/images/team/team-guangzhou-720.jpg 720w, /images/team/team-guangzhou.jpg 1200w"
+           sizes="(max-width:860px) 92vw, 520px"
+           width="1200" height="899" loading="lazy"
+           alt="The SourceToGulf team in Guangzhou — the people who source, inspect and pack orders for Gulf buyers">
+    </div>
+    <div class="team-copy">
+      <span class="kicker" data-en="Meet the team" data-ar="تعرّف على الفريق">Meet the team</span>
+      <h2 data-en="Real people in Guangzhou — not a middleman portal" data-ar="فريق حقيقي في قوانغتشو — وليس مجرد منصة وسيطة">Real people in Guangzhou — not a middleman portal</h2>
+      <p data-en="When you message us on WhatsApp, you are talking to the people who will walk the market, inspect your samples and pack your cartons. We are based in Guangzhou, with 14 years of living and working in Dubai behind us." data-ar="عندما تراسلنا على واتساب، فأنت تتحدث مع من سيذهب إلى السوق، ويفحص عيّناتك، ويحزم كراتينك. نحن في قوانغتشو، وخلفنا ١٤ سنة من العيش والعمل في دبي.">When you message us on WhatsApp, you are talking to the people who will walk the market, inspect your samples and pack your cartons. We are based in Guangzhou, with 14 years of living and working in Dubai behind us.</p>
+      <ul class="team-facts">
+        <li data-en="We walk the markets ourselves — sourcing and inspection are not subcontracted to a third party." data-ar="نذهب إلى الأسواق بأنفسنا — التوريد والفحص لا يُسندان إلى طرف ثالث.">We walk the markets ourselves — sourcing and inspection are not subcontracted to a third party.</li>
+        <li data-en="14 years living and working in Dubai, so we understand how Gulf buyers actually buy." data-ar="١٤ سنة من العيش والعمل في دبي، فنحن نفهم كيف يشتري المشتري الخليجي فعلياً.">14 years living and working in Dubai, so we understand how Gulf buyers actually buy.</li>
+        <li data-en="We communicate in Arabic and English, including voice notes." data-ar="نتواصل بالعربية والإنجليزية، بما في ذلك الرسائل الصوتية.">We communicate in Arabic and English, including voice notes.</li>
+        <li data-en="You approve your actual goods on camera before anything ships." data-ar="تعتمد بضاعتك الفعلية بالكاميرا قبل أي شحن.">You approve your actual goods on camera before anything ships.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
 <section style="padding-top:0"><div class="wrap">
   <div class="final">
     <h2 data-en="We'll find it, price it, and tell you the real landed cost. Free, no commitment." data-ar="نلقاه لك، ونسعّره، ونقول لك التكلفة الشاملة الحقيقية. مجاناً وبلا التزام.">We'll find it, price it, and tell you the real landed cost. Free, no commitment.</h2>
@@ -595,6 +629,7 @@ tr:nth-child(even) td{background:var(--soft)}
 </div></section>
 
 <footer>
+
 
 
 
@@ -641,6 +676,7 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
 
 
 
