@@ -135,11 +135,17 @@ def product_card(p):
         + '<a class="wa-mini" href="' + wa_link(wa_text) + '" target="_blank" rel="noopener">💬 Ask about this</a>'
         + '</div></div>')
 
-def page_shell(title, description, canonical, body_inner, json_ld=None, extra_head=''):
-    """组装一个完整 HTML 页面。"""
+def page_shell(title, description, canonical, body_inner, json_ld=None, extra_head='', alt_ar=None):
+    """组装一个完整 HTML 页面。
+
+    alt_ar: 若该页存在服务端渲染的阿语版本（位于 /ar/ 下），传入其绝对 URL，
+            即自动输出 hreflang="ar"。hreflang 互链必须双向 —— 阿语页侧的
+            en / x-default 由 build_arabic.py 负责输出。
+    """
     ld = ''
     if json_ld:
         ld = '<script type="application/ld+json">\n' + json_ld + '\n</script>'
+    ar_link = ('<link rel="alternate" hreflang="ar" href="' + alt_ar + '" />\n') if alt_ar else ''
     return ('<!doctype html>\n'
         '<html lang="en" dir="ltr">\n'
         '<head>\n'
@@ -150,6 +156,7 @@ def page_shell(title, description, canonical, body_inner, json_ld=None, extra_he
         '<link rel="canonical" href="' + canonical + '" />\n'
         '<link rel="alternate" hreflang="en" href="' + canonical + '" />\n'
         '<link rel="alternate" hreflang="x-default" href="' + canonical + '" />\n'
+        + ar_link +
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n'
         '<style>' + STYLE + '</style>\n'

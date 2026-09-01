@@ -22,6 +22,11 @@ SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: fin
 ## Languages
 - English: https://sourcetogulf.com/
 - Arabic (server-rendered, rtl): https://sourcetogulf.com/ar/
+- Arabic (العربية) uae import guide: https://sourcetogulf.com/ar/uae-import-guide-from-china.html
+- Arabic (العربية) saudi arabia import guide: https://sourcetogulf.com/ar/saudi-arabia-import-guide-from-china.html
+- Arabic (العربية) qatar import guide: https://sourcetogulf.com/ar/qatar-import-guide-from-china.html
+- Arabic (العربية) kuwait import guide: https://sourcetogulf.com/ar/kuwait-import-guide-from-china.html
+- Arabic (العربية) oman import guide: https://sourcetogulf.com/ar/oman-import-guide-from-china.html
 
 ## Key pages
 - Hot picks product list (landed prices): https://sourcetogulf.com/products.html

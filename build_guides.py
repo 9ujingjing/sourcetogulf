@@ -996,6 +996,9 @@ def main():
             canonical=g['canonical'],
             body_inner=body + '\n' + faq_block(faq, heading, sub),
             json_ld=jsonld_for(g, faq),
+            # 阿语版互链（/ar/ 由 build_arabic.py 生成）。必须放这里，
+            # 否则下次跑本脚本会把手工加的 hreflang 覆盖掉。
+            alt_ar=BASE + '/ar/' + g['file'],
         )
         out = os.path.join(APP, g['file'])
         with open(out, 'w', encoding='utf-8') as f:
