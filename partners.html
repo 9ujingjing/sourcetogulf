@@ -247,6 +247,8 @@ tr:nth-child(even) td{background:var(--soft)}
 .team-facts li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink);line-height:1.55}
 .team-facts li::before{content:"✓";color:var(--gold);font-weight:800;flex-shrink:0;line-height:1.5}
 @media(max-width:860px){.team-grid{grid-template-columns:1fr;gap:24px}.team-photo img{border-radius:14px}}
+/* ===== inline SVG flags (replace flag emoji — Windows cannot render them) ===== */
+.flag{width:1.2em;height:.8em;display:inline-block;vertical-align:-.12em;border-radius:2px;flex-shrink:0;box-shadow:0 0 0 .5px rgba(0,0,0,.14)}
 </style>
 <!-- Google tag (gtag.js) GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-76L0Y9SC5D"></script>
@@ -260,6 +262,17 @@ tr:nth-child(even) td{background:var(--soft)}
 </head>
 <body>
 <header>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+<symbol id="f-cn" viewBox="0 0 24 16"><title>China</title><rect width="24" height="16" fill="#DE2910"/><path d="M5 3l.9 2.1 2.3.2-1.8 1.5.6 2.2L5 7.7 3 9l.6-2.2L1.8 5.3l2.3-.2z" fill="#FFDE00"/></symbol>
+<symbol id="f-ae" viewBox="0 0 24 16"><title>United Arab Emirates</title><rect width="24" height="16" fill="#fff"/><rect width="6" height="16" fill="#CE1126"/><rect x="6" width="18" height="5.34" fill="#009739"/><rect x="6" y="10.66" width="18" height="5.34" fill="#000"/></symbol>
+<symbol id="f-sa" viewBox="0 0 24 16"><title>Saudi Arabia</title><rect width="24" height="16" fill="#006C35"/><rect x="6" y="7.2" width="13" height="1.6" fill="#fff"/><circle cx="5.2" cy="8" r="1.1" fill="#fff"/></symbol>
+<symbol id="f-kw" viewBox="0 0 24 16"><title>Kuwait</title><rect width="24" height="5.34" fill="#007A3D"/><rect y="5.33" width="24" height="5.34" fill="#fff"/><rect y="10.66" width="24" height="5.34" fill="#C8102E"/><polygon points="0,0 7,4 7,12 0,16" fill="#000"/></symbol>
+<symbol id="f-qa" viewBox="0 0 24 16"><title>Qatar</title><rect width="24" height="16" fill="#fff"/><path d="M0,0 L9,0 L7.2,0.89 L9,1.78 L7.2,2.67 L9,3.56 L7.2,4.44 L9,5.33 L7.2,6.22 L9,7.11 L7.2,8 L9,8.89 L7.2,9.78 L9,10.67 L7.2,11.56 L9,12.44 L7.2,13.33 L9,14.22 L7.2,15.11 L9,16 L0,16 Z" fill="#8A1538"/></symbol>
+<symbol id="f-bh" viewBox="0 0 24 16"><title>Bahrain</title><rect width="24" height="16" fill="#fff"/><path d="M0,0 L7,0 L5.2,1.6 L7,3.2 L5.2,4.8 L7,6.4 L5.2,8 L7,9.6 L5.2,11.2 L7,12.8 L5.2,14.4 L7,16 L0,16 Z" fill="#CE1126"/></symbol>
+<symbol id="f-om" viewBox="0 0 24 16"><title>Oman</title><rect width="24" height="16" fill="#fff"/><rect y="5.33" width="24" height="5.34" fill="#C8102E"/><rect y="10.66" width="24" height="5.34" fill="#009739"/><rect width="6" height="16" fill="#C8102E"/></symbol>
+</svg>
 
 
 
@@ -313,12 +326,12 @@ tr:nth-child(even) td{background:var(--soft)}
           <div class="group">
             <span class="g-title" data-en="GCC Countries" data-ar="دول الخليج">GCC Countries</span>
             <div class="country-grid">
-              <a href="/shipping/china-to-uae.html"><span>🇦🇪 <b data-en="UAE" data-ar="الإمارات">UAE</b></span><small data-en="Dubai · Abu Dhabi" data-ar="دبي · أبوظبي">Dubai · Abu Dhabi</small></a>
-              <a href="/shipping/china-to-saudi-arabia.html"><span>🇸🇦 <b data-en="Saudi Arabia" data-ar="السعودية">Saudi Arabia</b></span><small data-en="SABER handled" data-ar="نتكفل بـ SABER">SABER handled</small></a>
-              <a href="/shipping/china-to-kuwait.html"><span>🇰🇼 <b data-en="Kuwait" data-ar="الكويت">Kuwait</b></span><small data-en="Door to door" data-ar="إلى باب البيت">Door to door</small></a>
-              <a href="/shipping/china-to-qatar.html"><span>🇶🇦 <b data-en="Qatar" data-ar="قطر">Qatar</b></span><small data-en="Doha delivery" data-ar="توصيل الدوحة">Doha delivery</small></a>
-              <a href="/shipping/china-to-bahrain.html"><span>🇧🇭 <b data-en="Bahrain" data-ar="البحرين">Bahrain</b></span><small data-en="Fast lane" data-ar="مسار سريع">Fast lane</small></a>
-              <a href="/shipping/china-to-oman.html"><span>🇴🇲 <b data-en="Oman" data-ar="عُمان">Oman</b></span><small data-en="Muscat" data-ar="مسقط">Muscat</small></a>
+              <a href="/shipping/china-to-uae.html"><span><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-ae"/></svg> <b data-en="UAE" data-ar="الإمارات">UAE</b></span><small data-en="Dubai · Abu Dhabi" data-ar="دبي · أبوظبي">Dubai · Abu Dhabi</small></a>
+              <a href="/shipping/china-to-saudi-arabia.html"><span><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-sa"/></svg> <b data-en="Saudi Arabia" data-ar="السعودية">Saudi Arabia</b></span><small data-en="SABER handled" data-ar="نتكفل بـ SABER">SABER handled</small></a>
+              <a href="/shipping/china-to-kuwait.html"><span><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-kw"/></svg> <b data-en="Kuwait" data-ar="الكويت">Kuwait</b></span><small data-en="Door to door" data-ar="إلى باب البيت">Door to door</small></a>
+              <a href="/shipping/china-to-qatar.html"><span><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-qa"/></svg> <b data-en="Qatar" data-ar="قطر">Qatar</b></span><small data-en="Doha delivery" data-ar="توصيل الدوحة">Doha delivery</small></a>
+              <a href="/shipping/china-to-bahrain.html"><span><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-bh"/></svg> <b data-en="Bahrain" data-ar="البحرين">Bahrain</b></span><small data-en="Fast lane" data-ar="مسار سريع">Fast lane</small></a>
+              <a href="/shipping/china-to-oman.html"><span><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-om"/></svg> <b data-en="Oman" data-ar="عُمان">Oman</b></span><small data-en="Muscat" data-ar="مسقط">Muscat</small></a>
             </div>
           </div>
           <div class="group">
@@ -392,6 +405,8 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
 
 
 
@@ -535,6 +550,8 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -552,12 +569,12 @@ tr:nth-child(even) td{background:var(--soft)}
       </div>
       <div>
         <h4 data-en="Shipping to" data-ar="الشحن إلى">Shipping to</h4>
-        <a href="/shipping/china-to-uae.html">🇦🇪 UAE</a>
-        <a href="/shipping/china-to-saudi-arabia.html">🇸🇦 Saudi Arabia</a>
-        <a href="/shipping/china-to-kuwait.html">🇰🇼 Kuwait</a>
-        <a href="/shipping/china-to-qatar.html">🇶🇦 Qatar</a>
-        <a href="/shipping/china-to-bahrain.html">🇧🇭 Bahrain</a>
-        <a href="/shipping/china-to-oman.html">🇴🇲 Oman</a>
+        <a href="/shipping/china-to-uae.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-ae"/></svg> UAE</a>
+        <a href="/shipping/china-to-saudi-arabia.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-sa"/></svg> Saudi Arabia</a>
+        <a href="/shipping/china-to-kuwait.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-kw"/></svg> Kuwait</a>
+        <a href="/shipping/china-to-qatar.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-qa"/></svg> Qatar</a>
+        <a href="/shipping/china-to-bahrain.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-bh"/></svg> Bahrain</a>
+        <a href="/shipping/china-to-oman.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-om"/></svg> Oman</a>
       </div>
       <div>
         <h4>Blog</h4>
@@ -569,6 +586,8 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 514 6139 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 514 6139 · Sun–Thu, Gulf time</div>
   </div>
+
+
 
 
 
