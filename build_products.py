@@ -62,17 +62,44 @@ def build_rel():
     return h
 
 
+def _desc(p):
+    return ('%s — China sourcing for Gulf markets. MOQ %d pcs. FOB CNY %s/pc. '
+            'Custom branding (logo on packaging) and physical samples before you commit. '
+            'From SourceToGulf, your Guangzhou sourcing partner.') % (p['name_en'], p['moq'], p['fob_cny'])
+
+
 def json_ld():
     els = []
     for i, p in enumerate(prods, 1):
         pr = price_of(p)
         els.append('    {\n      "@type": "ListItem",\n      "position": %d,\n      "item": {\n'
-                   '        "@type": "Product",\n        "name": %s,\n        "image": "%s%s",\n'
-                   '        "category": %s,\n        "offers": {\n          "@type": "Offer",\n'
+                   '        "@type": "Product",\n'
+                   '        "name": %s,\n        "image": "%s%s",\n'
+                   '        "description": %s,\n'
+                   '        "brand": {"@type": "Brand", "name": "SourceToGulf"},\n'
+                   '        "category": %s,\n        "offers": {\n'
+                   '          "@type": "Offer",\n'
                    '          "priceCurrency": "USD",\n          "price": %.2f,\n'
                    '          "availability": "https://schema.org/InStock",\n'
-                   '          "minOrderQuantity": %d\n        }\n      }\n    }' % (
-            i, json.dumps(p['name_en']), BASE, p['img'],
+                   '          "minOrderQuantity": %d,\n'
+                   '          "hasMerchantReturnPolicy": {\n'
+                   '            "@type": "MerchantReturnPolicy",\n'
+                   '            "merchantReturnDays": 7,\n'
+                   '            "returnMethod": "https://schema.org/ReturnByMail",\n'
+                   '            "returnFees": "https://schema.org/FreeReturn"\n'
+                   '          },\n'
+                   '          "shippingDetails": {\n'
+                   '            "@type": "OfferShippingDetails",\n'
+                   '            "shippingDestination": {"@type": "DefinedRegion", "addressCountry": ["AE","SA","KW","QA","BH","OM"]},\n'
+                   '            "shippingRate": {"@type": "MonetaryAmount", "value": 0, "currency": "USD"},\n'
+                   '            "deliveryTime": {\n'
+                   '              "@type": "ShippingDeliveryTime",\n'
+                   '              "transitTime": {"@type": "QuantitativeValue", "minValue": 25, "maxValue": 35, "unitCode": "DAY"}\n'
+                   '            }\n'
+                   '          }\n'
+                   '        }\n'
+                   '      }\n    }' % (
+            i, json.dumps(p['name_en']), BASE, p['img'], json.dumps(_desc(p)),
             json.dumps(CAT_EN[p['cat']]), pr['landed'], p['moq']))
     return ('{\n'
             '  "@context": "https://schema.org",\n'
