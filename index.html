@@ -695,10 +695,16 @@ tr:nth-child(even) td{background:var(--soft)}
 </div></section>
 
 <section id="listings" style="padding-top:24px;padding-bottom:24px;background:#F3EFE7;border-top:1px solid #E7E1D4;border-bottom:1px solid #E7E1D4"><div class="wrap">
-  <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;font-size:13.5px;color:#5F6661">
-    <strong data-en="Listed on:" data-ar="مُدرج على:">Listed on:</strong>
-    <a href="https://www.crunchbase.com/organization/sourcetogulf" target="_blank" rel="noopener" style="font-weight:600;color:#0B2B4D;text-decoration:none;padding:5px 10px;border:1px solid #C8C0AE;border-radius:6px;background:#fff"><strong>Crunchbase</strong> &middot; CB Rank 4,604,931</a>
-    <span style="color:#888" data-en="· Clutch (pending review)" data-ar="· Clutch (قيد المراجعة)">· Clutch (pending review)</span>
+  <div class="listings-row">
+    <span class="listings-cap" data-en="Listed on:" data-ar="مُدرج على:">Listed on:</span>
+    <a class="listing-item" href="https://www.crunchbase.com/organization/sourcetogulf" target="_blank" rel="noopener">
+      <span class="listing-logo logo-cb" aria-hidden="true">cb</span>
+      <span class="listing-name">Crunchbase</span>
+    </a>
+    <span class="listing-item pending">
+      <span class="listing-logo logo-clutch" aria-hidden="true">c</span>
+      <span class="listing-name">Clutch<em data-en="pending review" data-ar="قيد المراجعة">pending review</em></span>
+    </span>
   </div>
 </div></section>
 
