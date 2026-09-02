@@ -10,11 +10,11 @@
 
 | 平台 | Handle | Display name | 节点地区 | 注册邮箱 | 验证手机 | 状态 |
 |---|---|---|---|---|---|---|
-| TikTok | @sourcetogulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | +971 58 514 6139 | ☐ |
-| Instagram | @sourcetogulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | +971 58 514 6139 | ☐ |
-| Facebook (Page) | SourceToGulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | +971 58 514 6139 | ☐ |
+| TikTok | @sourcetogulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | +971 58 585 4194 | ☐ |
+| Instagram | @sourcetogulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | +971 58 585 4194 | ☐ |
+| Facebook (Page) | SourceToGulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | +971 58 585 4194 | ☐ |
 | LinkedIn (Company) | SourceToGulf | SourceToGulf | UAE/Dubai | social@sourcetogulf.com | — | ☐ |
-| WhatsApp Business | — | SourceToGulf | 实体 +971 号 | — | +971 58 514 6139 | ☐ |
+| WhatsApp Business | — | SourceToGulf | 实体 +971 号 | — | +971 58 585 4194 | ☐ |
 
 ## B. 第二阶段（Phase 2，第 3–4 周）
 
@@ -29,7 +29,7 @@
 SourceToGulf — China→Gulf sourcing partner 🇨🇳→🇦🇪
 Sourcing · samples · custom packaging · low-MOQ · door-to-door
 🌐 sourcetogulf.com/?utm_source=<平台>&utm_medium=social
-📱 WhatsApp +971 58 514 6139
+📱 WhatsApp +971 58 585 4194
 ```
 - TikTok / IG：用短版（删第二行或合并）。
 - Snapchat(KSA)：阿语版 `مصدرك من الصين للخليج…` + 同链接。

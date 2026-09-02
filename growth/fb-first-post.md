@@ -1,7 +1,7 @@
 # FB 第一帖（Robin / dabie 双号，可直接复制）
 
 > 时序：新号先「养号」3–5 天（见 §0），再发下面 Post #0 自我介绍；之后按 `fb-content-plan-week1.md` 发产品帖。
-> 品牌名统一 **SourceToGulf**；WhatsApp **+971 58 514 6139**。
+> 品牌名统一 **SourceToGulf**；WhatsApp **+971 58 585 4194**。
 
 ## §0 发帖前置：养号 3–5 天（必须，否则易封/限流）
 - 每天加 10–15 个 Gulf 真人好友（搜 UAE small business / Dubai resellers / Gulf boutique owner）
@@ -16,14 +16,14 @@ Hey — I'm Robin. I've been between Guangzhou and Dubai for years, and these da
 What that means: you tell me the product, I find the factory, send samples to your door before bulk, handle branding/packaging, and air-ship a low-MOQ batch to the UAE or Saudi.
 Not a shipping company — a sourcing partner.
 If you've ever wanted to launch your own product line from China but didn't know where to start, ask me anything.
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 مرحباً، أنا روبن. أعمل بين غوانغتشو ودبي، وأساعد الأعمال الصغيرة في الخليج على استيراد منتجات من مصانع الصين مباشرة.
 الفكرة ببساطة: تخبرني بالمنتج، أجد المصنع، أرسل لك عيّنة قبل الطلب الكبير، وأتكفّل بالتغليف والشحن الجوي بكميات صغيرة إلى الإمارات أو السعودية.
 لست شركة شحن — أنا شريك استيراد.
 إذا كنت تفكّر تطلق خط منتجاتك من الصين، اسألني أي شيء.
-راسلني على واتساب +971 58 514 6139
+راسلني على واتساب +971 58 585 4194
 ```
 图：广州档口/仓库真实场景（你人在中国，这是最大信任点）
 CTA：评论 / 私信 / WhatsApp，不带裸链接
@@ -35,7 +35,7 @@ Hi, I'm dabie. I help Gulf women and small-shop owners build their own product l
 The part most people get stuck on (samples, packaging, shipping) is what I handle, so you can start small and grow.
 Not a reseller pushing one catalog — a sourcing partner who finds what fits your brand.
 Questions about importing from China? Ask me anything 🌸
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 مرحباً، أنا دابي. أساعد النساء في الخليج على بناء خط منتجاتهن الخاص — ملابس محتشمة، أدوات تجميل، مجوهرات، عطور المنزل — مستوردة من الصين بكميات صغيرة وعلامتك الخاصة.

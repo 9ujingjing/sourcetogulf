@@ -80,11 +80,26 @@ def build(ad):
         '  <div class="cta-box">\n'
         '    <h2>Ready to order?</h2>\n'
         '    <p>WhatsApp us your target products or a photo. We quote the landed price and QC before shipping.</p>\n'
-        '    <a class="wa-btn" style="background:var(--gold);color:#17201C" href="' + wa_link(ad['wa']) + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>\n'
+        '    <a class="wa-btn" style="background:var(--gold);color:#17201C" href="' + wa_link(ad['wa']) + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 585 4194</a>\n'
         '  </div>\n'
         '</div></section>')
     url = BASE + '/google-ads/' + ad['file']
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": ad['title'],
+        "url": url,
+        "description": ad['desc'],
+        "inLanguage": "en",
+        "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home",
+             "item": BASE + "/"},
+            {"@type": "ListItem", "position": 2, "name": ad['title'],
+             "item": url},
+        ]},
+    }
     return page_shell(ad['title'], ad['desc'], url, body,
+                      json_ld=json.dumps(ld, ensure_ascii=False, indent=2),
                       extra_head='<meta name="robots" content="index,follow">\n')
 
 def main():

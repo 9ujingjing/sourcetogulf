@@ -112,7 +112,7 @@ def faq_jsonld(qa):
             for q, a in qa
         ]
     }
-    return json.dumps(obj, ensure_ascii=False)
+    return obj
 
 def final_cta():
     return ('<section><div class="wrap"><div class="final">'
@@ -120,7 +120,7 @@ def final_cta():
             '<p>WhatsApp us what you want to sell. We\'ll map the right plan and quote a '
             'landed price to your country — free, no obligation.</p>'
             '<a class="wa-btn" href="%s" target="_blank" rel="noopener">'
-            '💬 WhatsApp: +971 58 514 6139</a></div></div></section>' % WA_HOME)
+            '💬 WhatsApp: +971 58 585 4194</a></div></div></section>' % WA_HOME)
 
 # ============================ PERSONAS ============================
 PERSONAS = [
@@ -346,7 +346,7 @@ def render(p):
              "item": "https://sourcetogulf.com/" + p['slug']},
         ]},
     }
-    json_ld = json.dumps(ld, ensure_ascii=False) + "\n" + faq_jsonld(p['faq'])
+    json_ld = json.dumps([ld, faq_jsonld(p['faq'])], ensure_ascii=False, indent=2)
     return page_shell(
         title=p['title'],
         description=p.get('desc', p['sub']),

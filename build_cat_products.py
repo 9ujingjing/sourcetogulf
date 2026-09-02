@@ -215,7 +215,7 @@ def build_category_page(cat, items, other_cats):
         '  <div class="cta-box">\n'
         '    <h2>Want a custom ' + cat['en'] + ' list?</h2>\n'
         '    <p>WhatsApp us a photo or link — we source it, quote the landed price, and QC before shipping.</p>\n'
-        '    <a class="wa-btn" href="' + wa_link(WA_TEXT.format(cat=cat['en'])) + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>\n'
+        '    <a class="wa-btn" href="' + wa_link(WA_TEXT.format(cat=cat['en'])) + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 585 4194</a>\n'
         '  </div>\n'
         '</div></section>')
     title = cat['en'] + ' from China: MOQ & FOB for Gulf Sellers | SourceToGulf'
@@ -246,12 +246,29 @@ def build_index_page():
         '  <div class="cta-box">\n'
         '    <h2>Can\'t find your product?</h2>\n'
         '    <p>WhatsApp us a photo — we\'ll source it, quote the landed price, and QC before shipping.</p>\n'
-        '    <a class="wa-btn" href="' + wa_link('Hi SourceToGulf! I am looking for a product not listed. Can you source it?') + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>\n'
+        '    <a class="wa-btn" href="' + wa_link('Hi SourceToGulf! I am looking for a product not listed. Can you source it?') + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 585 4194</a>\n'
         '  </div>\n'
         '</div></section>')
+    page_desc = ('Browse SourceToGulf product categories for Gulf sellers: home fragrance, '
+                 'Ramadan & Eid, hijab & jewelry, phone & car accessories, home & kitchen, beauty tools. '
+                 'Real MOQ and factory (FOB) prices, custom branding and samples before you commit.')
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Shop by Category — China Sourcing for Gulf Sellers",
+        "url": url,
+        "description": page_desc,
+        "inLanguage": "en",
+        "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home",
+             "item": BASE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Categories",
+             "item": url},
+        ]},
+    }
     return page_shell('Shop by Category: China Sourcing for Gulf Sellers | SourceToGulf',
-                      'Browse SourceToGulf product categories with landed prices to the Gulf: home fragrance, Ramadan & Eid, hijab & jewelry, phone & car accessories, home & kitchen, beauty tools.',
-                      url, body)
+                      page_desc, url, body,
+                      json_ld=json.dumps(ld, ensure_ascii=False, indent=2))
 
 def main():
     for c in cats:

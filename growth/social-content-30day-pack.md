@@ -40,7 +40,7 @@ Not all mounts hold. Three things we look at:
 
 We film the test, send it to the buyer, then pack. No test, no ship.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：我们发货前怎么验车载手机架。三件事：出风口夹子抓得牢不牢（开空调会不会滑）、球头关节能不能固定角度、磁吸/卡扣过减速带掉不掉。验完拍视频发给买家再打包。不验不发。
 **配图**：手拿车载支架在出风口测试 + 近距离看关节的特写。
@@ -57,7 +57,7 @@ Six weeks later she reordered 80, and added hijabs.
 
 This is exactly who we help — Gulf women building a small shop, one careful order at a time. 🌸
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：利雅得一家小 abaya 店从 20 件起步。她预算不够 1000 件起订，多数工厂拒绝。我们在广州找到做低 MOQ  modest wear 的作坊，发 3 块布料样视频给她选，订了 20 件。6 周后复购 80 件还加了头巾。我们帮的就是这样一步步开店的海湾女性。
 **配图**：平铺的 abaya + 几块布料小样并排（自然光拍摄）。
@@ -91,7 +91,7 @@ Bought gadgets from China before and got burned? 3 quick checks 🔍
 
 We do all three before we ever recommend a supplier.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：之前从中国买小玩意踩过坑？3 个快速检查：要视频别要照片、产品价和运费分开算、先 20–50 件试。我们推荐供应商前都做这三步。
 **配图**：手机播放供应商发来的验货视频截图感（屏幕打码）。
@@ -108,7 +108,7 @@ WhatsApp: +971 58 514 6139
 
 We check these on every sample before we pack. Small things, big difference.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：好 abaya 和便宜货的 3 个走线区别：内领收边干净与否、袖缝直不直、下摆垂感。每个样品我们都先查再打包。
 **配图**：两件 abaya 领口/袖口并排对比特写（自然光）。
@@ -143,7 +143,7 @@ When it hits 45°C, what sells in Dubai:
 
 We're stocking these from Guangzhou right now. Low MOQ, samples this week.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：海湾夏天=车载电子季。45 度时迪拜好卖：不脱胶的手机架、车载小风扇/凉垫、快充（热天手机老没电）。我们正从广州备这些货，低 MOQ，本周可出样。
 **配图**：车内角落实拍：支架+风扇+充电器摆一起。
@@ -158,7 +158,7 @@ A photo looks fine. The fabric arrives and it's thin, or the color is off by a s
 
 We always send 2–3 fabric swatches on video first. You touch, you decide, then we produce. Costs a few days — saves a whole bad batch.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：从中国订 abaya 别跳过样布。照片看着行，到货面料薄或色差。我们总先发 2–3 块样布视频，你摸过再定。多几天，省一批废料。
 **配图**：手捏几块布料样对着光看（特写）。
@@ -193,7 +193,7 @@ No returns, no surprises. Just a small order done right.
 
 That's the model — try small, scale when it works.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：阿布扎比一个玩露营的，30 把折叠椅零糟心。他想先试再订，我们发 3 把样，他选框架最好的，订 30，发货前视频验批。无退无惊。模式就是：小试，成了再扩。
 **配图**：折叠椅平铺 + 包装箱贴单特写。
@@ -210,7 +210,7 @@ We help small shops plan 2 months ahead: pick fabrics in Rabi' al-awwal, sample 
 
 Planning beats rushing. Always.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：沙特 modest wear 需求在斋月前 6 周攀升。卖 abaya/头巾的，那是峰值。晚备货=空运慌+成本高。我们帮小店提前 2 月规划：月初选布、月中出样、斋前发货。计划永远胜慌乱。
 **配图**：挂满 abaya 的衣架墙（暖光）。
@@ -246,7 +246,7 @@ Before we recommend a pair:
 
 We record a 20-sec clip of each. Buyer hears it before buying.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：TWS 耳机怎么分好坏：配对速度、嘈杂环境通话麦（真考验）、充电仓铰链手感。每副录 20 秒，买家买前能听。
 **配图**：耳机在手上 + 录音界面截图感（打码）。
@@ -263,7 +263,7 @@ Now she reorders monthly and ships to her followers.
 
 Small start, own label, real business. That's the path. 🌸
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：她迪拜做美妆工具号，从 30 件起。刷子镜子化妆包，无大起订，先小心下一单。我们发样她选，私标了她的名字在化妆包上。现在月月复购发给粉丝。小起步、自有标、真生意。
 **配图**：化妆刷+镜+化妆包平铺（柔光）。
@@ -298,7 +298,7 @@ We don't joke with power. Before we source a charger:
 
 A 2-dollar saving isn't worth a fried phone. We test, then recommend.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：便宜充电器差点烧了客户手机。电源不开玩笑。我们 sourcing 前：查芯片品牌、带载测试、确认 UAE 插头（Type G 230V）。省 2 块不值得烧手机。先测再推。
 **配图**：充电器插在测试负载上 + 电压标签特写。
@@ -317,7 +317,7 @@ We ask the factory for the plating spec in writing, and sample-test before bulk.
 
 Pretty is easy. Lasting is the job.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：时尚首饰 3 个检查避免戴绿皮肤：镀层厚度、卡扣强度、镍含量测试（海湾买家敏感）。我们让工厂书面给镀层规格，大货前样检。好看容易，耐戴才是活。
 **配图**：首饰平铺微距 + 镀层标签特写。
@@ -347,7 +347,7 @@ Not a gimmick — a real daily-use feature here. We're seeing steady reorders fr
 
 If you run a gadget page, this is a quiet winner. Low MOQ, samples ready.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：带礼拜提醒的智能手表在海湾卖得快。不是噱头，是真日常功能。我们看到 GCC 卖家在带朝向+礼拜时间的型号上稳定复购。做数码号这是闷声赢家。低 MOQ，有样。
 **配图**：手表表盘显示礼拜时间界面特写。
@@ -364,7 +364,7 @@ We ask early: "what does this need to clear?" Then we source from factories that
 
 Boring? Yes. But it's why boxes actually arrive.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：别没证书计划就发货。海湾部分品要标/证，缺了柜子卡海关。我们早问「清关要啥」，从已有证的厂 sourcing，单证随货走。无聊但箱子真能到。
 **配图**：证书文件 + 首饰盒并排。
@@ -399,7 +399,7 @@ He came back for 50.
 
 Sometimes the best clients start with "just 20, to test."
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：迪拜一位爸爸想给老婆转卖号订 20 个车载收纳。小单，但他只关心：能不能塞丰田？我们量了发适配视频，订 20，她一周卖光。回来订 50。好客户常从「先 20 件试试」开始。
 **配图**：车载收纳箱在车内实景 + 包装箱。
@@ -414,7 +414,7 @@ Creams need registration. Tools don't, and they ship easy. Brushes, mirrors, org
 
 We're sourcing a full beauty-tools starter pack at low MOQ for new pages. Samples this week.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：美妆工具胜过膏体——小卖家的聪明选择。膏体要注册，工具不用还好发。刷子镜子化妆包美甲套，高毛利低麻烦。我们正以低 MOQ 组美妆工具起步包给新号。本周有样。
 **配图**：美妆工具全套平铺（柔光）。
@@ -452,7 +452,7 @@ We don't just pick the cheapest. For Gulf buyers we check:
 
 We pack a sample in the car, leave it in the sun, open it 10 times. Boring test, real result.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：沙漠高温下的露营装备什么真耐用。不只选最便宜。海湾买家我们查：面料抗 UV、框架金属（便宜合金弯）、拉链品牌（最先坏）。我们把样放车里晒、开关 10 次。无聊测试，真结果。
 **配图**：露营椅在阳光下 + 拉链特写。
@@ -469,7 +469,7 @@ No office, no warehouse — just a phone and a supplier who shows up.
 
 If you've been thinking about it, 15 pieces is a real start.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：沙迦一位副业妈妈，现在发自有标。从 15 条头巾起。我们帮选布、私标吊牌、每步发样图。她发帖卖、复购。没办公室没仓，就一部手机+一个靠谱供应商。想做的话，15 件就是真起步。
 **配图**：头巾平铺暖光 + 带标吊牌特写。
@@ -503,7 +503,7 @@ We ask directly: "what's the real minimum for a first order?" Nine times out of 
 
 Don't let a number scare you off before you ask.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：MOQ 陷阱：那个「1000 件起」未必真。很多厂标高 MOQ 过滤随便问的，但试单常答应 50–100。我们直接问「首单真实最低多少」，九成比标的低。别被数字吓退才问。
 **配图**：报价单 MOQ 栏特写（打码）。
@@ -523,7 +523,7 @@ We film it lit, next to a window, so the buyer sees the real tone.
 
 Good light = better photos = more sales for her.
 
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 **中文意思**：LED 化妆镜什么值得留。不只亮。我们查：色彩准不准（跟日光对不对）、触摸调光手感（便宜的闪）、底座重不重（轻的歪）。我们拍亮着靠窗的，买家看真色调。好光=更好照片=她更多销量。
 **配图**：化妆镜亮着靠窗 + 调光特写。

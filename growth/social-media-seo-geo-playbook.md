@@ -5,7 +5,7 @@
 >
 > 站点基础信息（执行时复用）：
 > - 主站：`https://sourcetogulf.com`
-> - WhatsApp：`+971 58 514 6139`
+> - WhatsApp：`+971 58 585 4194`
 > - 定位：**复合能力**（找货源 + 定制包装 + 寄样品 + 低 MOQ），**不是货代**
 > - 四大人设：网红/KOL、小企业主、宝妈、小卖家/转卖者
 > - 服务 6 国：UAE、沙特、卡塔尔、科威特、巴林、阿曼
@@ -157,7 +157,7 @@ POV：你发张图，我们在广州找到工厂 🇨🇳
 我们每批都上镜质检，你确认的 = 你收到的。
 从小做起，我们包 sourcing + 包装 + 门到门。
 🔗 sourcetogulf.com/?utm_source=instagram&utm_medium=social
-WhatsApp +971 58 514 6139
+WhatsApp +971 58 585 4194
 ```
 
 **LinkedIn — 教育者**

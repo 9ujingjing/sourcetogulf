@@ -2,7 +2,7 @@
 
 > 适用前提：你目前**没有社媒账号、没有网络节点、没有发布工具**。本计划从物理基建开始，到起号、包装、发布、度量闭环。
 > 配套文档（已就绪）：`social-media-seo-geo-playbook.md`（策略与帖子模板）、`social-posts-2026-08-24.md`（本周帖文）、`trend-radar.md`（热点选题）、`backlinks-plan.md`（反链）。
-> 已有资产：站点 `sourcetogulf.com`、GA4（G-76L0Y9SC5D）、WhatsApp **+971 58 514 6139**、品牌规则（对外只叫 **SourceToGulf**，Papa Claw 仅法律实体）。
+> 已有资产：站点 `sourcetogulf.com`、GA4（G-76L0Y9SC5D）、WhatsApp **+971 58 585 4194**、品牌规则（对外只叫 **SourceToGulf**，Papa Claw 仅法律实体）。
 
 ---
 
@@ -36,7 +36,7 @@
 
 ### 1.4 设备与时区
 - 桌面端：专机 + 多账号浏览器 + 代理。
-- 手机端：**WhatsApp Business 用你已有的 +971 58 514 6139 实体号**（建议 eSIM/实体卡专机，别用双开）。
+- 手机端：**WhatsApp Business 用你已有的 +971 58 585 4194 实体号**（建议 eSIM/实体卡专机，别用双开）。
 - 全环境时区设 **Gulf (GMT+4)**，语言 **English**。
 
 ---
@@ -75,7 +75,7 @@
 SourceToGulf — China→Gulf sourcing partner 🇨🇳→🇦🇪
 Sourcing · samples · custom packaging · low-MOQ · door-to-door
 🌐 sourcetogulf.com/?utm_source=<平台>&utm_medium=social
-📱 WhatsApp +971 58 514 6139
+📱 WhatsApp +971 58 585 4194
 ```
 - TikTok/IG 用短版（字符限制）；LinkedIn 可加 SABER/落地成本钩子；Snapchat 用阿语版。
 

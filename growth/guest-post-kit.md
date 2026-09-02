@@ -31,7 +31,7 @@ Useful on its own, no hard sell. Happy to match your style guide.
 
 Best,
 [你的名字]
-SourceToGulf · WhatsApp +971 58 514 6139
+SourceToGulf · WhatsApp +971 58 585 4194
 ```
 
 > 找不到编辑邮箱？去 LinkedIn 搜「editor [媒体名]」或「[媒体名] contributor」直接私信，正文用上面这段。

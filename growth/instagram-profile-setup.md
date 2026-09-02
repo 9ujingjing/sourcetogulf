@@ -59,7 +59,7 @@ https://sourcetogulf.com/?utm_source=instagram&utm_medium=profile&utm_campaign=i
 ### 联系按钮（Business 专属，全加上）
 | 按钮 | 填什么 |
 |---|---|
-| **WhatsApp** ⭐ | `+971 58 514 6139`（海湾客户首选入口，有就必加） |
+| **WhatsApp** ⭐ | `+971 58 585 4194`（海湾客户首选入口，有就必加） |
 | Email | `info@sourcetogulf.com` |
 | 地址 | 广州南沙（强化"我们就在工厂旁边"，是优势不是短板） |
 

@@ -97,7 +97,7 @@ def main():
         '  <div class="cta-box">\n'
         '    <h2>Still have a question?</h2>\n'
         '    <p>WhatsApp us your situation — we\'ll answer plainly and quote the landed price.</p>\n'
-        '    <a class="wa-btn" style="background:var(--gold);color:#17201C" href="' + wa_link('Hi SourceToGulf! I have a GCC import question.') + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>\n'
+        '    <a class="wa-btn" style="background:var(--gold);color:#17201C" href="' + wa_link('Hi SourceToGulf! I have a GCC import question.') + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 585 4194</a>\n'
         '  </div>\n'
         '</div></section>')
 

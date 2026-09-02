@@ -256,7 +256,7 @@ Samples first, always.
 Neck fans are moving fast for the Gulf summer ☀️
 Hands-free, USB rechargeable, quiet — good for outdoor workers, drivers, market sellers.
 I source these from Guangzhou. Low minimum order, samples available, your own packaging if needed.
-WhatsApp me for prices: +971 58 514 6139
+WhatsApp me for prices: +971 58 585 4194
 #Dubai #UAE #Summer #Wholesale #Sourcing
 ```
 

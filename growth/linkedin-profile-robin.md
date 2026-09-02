@@ -59,7 +59,7 @@ Today, my small team in Guangzhou helps Gulf resellers, KOLs, and small shop own
 
 I know what Gulf buyers actually need, because I was one. I know what Chinese suppliers usually miss, because I've seen it from both sides.
 
-If you're selling in the Gulf and tired of guessing what's worth shipping — DM me or WhatsApp +971 58 514 6139.
+If you're selling in the Gulf and tired of guessing what's worth shipping — DM me or WhatsApp +971 58 585 4194.
 ```
 
 ### 中文版（备选，看受众用）
@@ -79,7 +79,7 @@ If you're selling in the Gulf and tired of guessing what's worth shipping — DM
 
 为什么我能做这件事？因为我既是 Gulf 买家，也是中国供应链两头的知情者。
 
-如果你在海湾做生意，从中国找货累了，DM 我或加 WhatsApp：+971 58 514 6139。
+如果你在海湾做生意，从中国找货累了，DM 我或加 WhatsApp：+971 58 585 4194。
 ```
 
 ---
@@ -233,7 +233,7 @@ Real Estate (Dubai)
 1. **不要把自己写成"职业经理人"**——你是**有故事的 founder**。12 年迪拜、4 份工作、自己开过餐厅、做过 7 年地产——这些是 trust signals，**不是"经验杂"**。
 2. **差异化 = 12 年迪拜**，必须反复写。每篇帖子、每条评论都强化这一点。
 3. **英文为主**——LinkedIn 受众是国际 B2B 买家。中文 About 当备选版本。
-4. **CTA 一定带 WhatsApp +971 58 514 6139**——LinkedIn 站内信不靠谱，WhatsApp 是 Gulf 做生意的事实标准。
+4. **CTA 一定带 WhatsApp +971 58 585 4194**——LinkedIn 站内信不靠谱，WhatsApp 是 Gulf 做生意的事实标准。
 5. **名字和头像不动，其他都白搭**——先改这两条，再谈内容。
 
 ---

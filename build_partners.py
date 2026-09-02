@@ -155,7 +155,7 @@ def final_cta():
   <div class="cta-box">
     <h2>Let's see whether this is useful</h2>
     <p>No joining fee, no volume commitment and nothing to sign before you have tested us on one enquiry. Message us with a sentence about your business and we will take it from there.</p>
-    <a class="wa-btn" href="%s" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>
+    <a class="wa-btn" href="%s" target="_blank" rel="noopener">💬 WhatsApp: +971 58 585 4194</a>
     <p style="margin-top:14px"><a href="mailto:info@sourcetogulf.com?subject=Partnership%%20Enquiry" style="color:#fff;text-decoration:underline">info@sourcetogulf.com</a></p>
   </div>
 </div></section>

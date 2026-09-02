@@ -75,7 +75,7 @@ EN:
 50°C outside? This neck fan keeps you cool for 8 hours on one charge.
 Sourced directly from China factories. Low MOQ, samples available.
 DM or WhatsApp me for the price 👇
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 الحرارة 50؟ مروحة رقبة تبرّدك 8 ساعات بشحنة واحدة.
@@ -90,7 +90,7 @@ AR:
 EN:
 Tired of the cable mess in your car? This phone mount charges wirelessly
 while you drive — fits most SUVs and sedans. From China factories, low MOQ.
-WhatsApp: +971 58 514 6139 for price & MOQ.
+WhatsApp: +971 58 585 4194 for price & MOQ.
 
 AR:
 تعبت من أسلاك السيارة؟ حامل جوال يشحن لاسلكياً أثناء القيادة.
@@ -105,7 +105,7 @@ AR:
 EN:
 Beard oil + balm + comb kit. GCC's #1 grooming trend this year.
 We source the set from China — your label, your packaging if you want.
-Small batches for small shops. WhatsApp: +971 58 514 6139
+Small batches for small shops. WhatsApp: +971 58 585 4194
 
 AR:
 طقم عناية باللحية (زيت + بلسم + مشط). الأكثر طلباً هذا العام في الخليج.
@@ -120,7 +120,7 @@ AR:
 EN:
 Wireless earbuds with Arabic voice prompts and 30h battery.
 Built for daily use in the Gulf. Low MOQ, samples first.
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 سماعات لاسلكية بنطق عربي وبطارية 30 ساعة.
@@ -134,7 +134,7 @@ AR:
 EN:
 Movie night anywhere. This mini projector fits in a backpack and
 casts up to 100". Sourced from China, low MOQ.
-WhatsApp: +971 58 514 6139 for price.
+WhatsApp: +971 58 585 4194 for price.
 
 AR:
 سينما متنقلة. جهاز إسقاط صغير يصل إلى 100 بوصة.
@@ -149,7 +149,7 @@ AR:
 EN:
 Smart watch with Arabic interface and prayer-time reminders.
 A top seller across KSA & UAE. We source from China, your brand OK.
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 ساعة ذكية بشاشة عربية وتذكير بالصلاة.
@@ -164,7 +164,7 @@ AR:
 EN:
 Summer in the Gulf kills normal chargers. These are built for 50°C:
 65W fast charge + 20000mAh power bank. From China factories, low MOQ.
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 حرارة الخليج تفسد الشواحن العادية. هذه تتحمل 50 مئوية:
@@ -186,7 +186,7 @@ EN:
 New modest wear just in — soft, breathable abayas for daily wear.
 Sourced from China factories, low MOQ so you can start small.
 DM or WhatsApp for catalog & price 🌸
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 
 AR:
 عبايات جديدة ناعمة وخفيفة للارتداء اليومي.
@@ -201,7 +201,7 @@ AR:
 EN:
 Abaya wrinkles? This handheld steamer fixes it in 60 seconds — no ironing board.
 A small but smart item from China. Low MOQ for resellers.
-WhatsApp: +971 58 514 6139 🌸
+WhatsApp: +971 58 585 4194 🌸
 
 AR:
 عبايتك تتجعد؟ مكواة بخار محمولة تصلحها في 60 ثانية.
@@ -216,7 +216,7 @@ AR:
 EN:
 Everyday jewelry sets — gold-tone, lightweight, made for Gulf taste.
 We source from China, your packaging if you like. Start from 20 pcs.
-WhatsApp: +971 58 514 6139 🌸
+WhatsApp: +971 58 585 4194 🌸
 
 AR:
 طقم مجوهرات يومي بلون ذهبي خفيف يناسب الذوق الخليجي.
@@ -229,7 +229,7 @@ AR:
 ```
 EN:
 LED makeup mirror with 3 light modes & 10x zoom. Clear face, clear look.
-Sourced from China, low MOQ. WhatsApp: +971 58 514 6139 🌸
+Sourced from China, low MOQ. WhatsApp: +971 58 585 4194 🌸
 
 AR:
 مرآة مكياج بإضاءة LED وعدسة تكبير. إطلالة أوضح.
@@ -244,7 +244,7 @@ AR:
 EN:
 Alcohol-free oud attar & bakhoor — the scent Gulf homes love.
 We source halal-certified options from China. Small batches welcome.
-WhatsApp: +971 58 514 6139 🌸
+WhatsApp: +971 58 585 4194 🌸
 
 AR:
 عود وبخور بدون كحول — رائحة ت loved by الخليج.
@@ -258,7 +258,7 @@ AR:
 ```
 EN:
 Nail art starter kit — everything to begin at home or for your shop.
-From China factories, low MOQ. WhatsApp: +971 58 514 6139 🌸
+From China factories, low MOQ. WhatsApp: +971 58 585 4194 🌸
 
 AR:
 طقم أظافر للمبتدئات — كل ما تحتاجينه للبدء.
@@ -271,7 +271,7 @@ AR:
 ```
 EN:
 One-step hair curler brush — salon look in 5 minutes at home.
-Sourced from China, low MOQ for resellers. WhatsApp: +971 58 514 6139 🌸
+Sourced from China, low MOQ for resellers. WhatsApp: +971 58 585 4194 🌸
 
 AR:
 فرشاة تجعيد شعر بخطوة واحدة — إطلالة صالون في 5 دقائق.
@@ -297,7 +297,7 @@ AR:
 **第 1 步：开一个 Facebook Page**
 - 建 Page 名 `SourceToGulf`（两个个人号都设成管理员）。
 - Page 简介照 `fb-about-intro.md` 填。
-- 把 WhatsApp `+971 58 514 6139` 绑到 Page（做 WA 广告 CTA 用）。
+- 把 WhatsApp `+971 58 585 4194` 绑到 Page（做 WA 广告 CTA 用）。
 
 **第 2 步：简易起步（Boost Post）**
 对上面任意一条表现好的帖，点右下角 **Boost Post**：

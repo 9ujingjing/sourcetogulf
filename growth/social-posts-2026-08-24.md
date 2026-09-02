@@ -2,7 +2,7 @@
 
 > 按 `social-media-seo-geo-playbook.md` §4 / §5 / §6 生成，全部深链 + UTM。
 > UTM 约定：`?utm_source=<平台>&utm_medium=social`
-> 品牌名统一用 **SourceToGulf**；WhatsApp：**+971 58 514 6139**。
+> 品牌名统一用 **SourceToGulf**；WhatsApp：**+971 58 585 4194**。
 > 频率参考 §2：TikTok 3–4/周、IG 3/周、LinkedIn 2/周、FB 2–3/周、Snapchat(KSA) 2–3/周、X 发新文当天必发。
 
 ---
@@ -85,7 +85,7 @@ https://sourcetogulf.com/blog/how-to-import-from-china-to-saudi-arabia.html?utm_
 
 从小做起：找货源 · 寄样品 · 定制包装 · 门到门。
 🔗 sourcetogulf.com/?utm_source=instagram&utm_medium=social
-WhatsApp +971 58 514 6139
+WhatsApp +971 58 585 4194
 #sourcing #dubai #saudibusiness #privatelabel #smallbusiness
 ```
 
@@ -124,7 +124,7 @@ POV：你发张图，我们在广州找到工厂 🇨🇳
 
 👉 https://sourcetogulf.com/blog/saber-2026-saudi-buyers-playbook.html?utm_source=whatsapp&utm_medium=social
 
-想拿样 / 问货，直接回消息或 WhatsApp +971 58 514 6139。
+想拿样 / 问货，直接回消息或 WhatsApp +971 58 585 4194。
 ```
 
 ---

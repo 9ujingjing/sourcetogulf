@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function(){
 """
 
 # 浮动 WhatsApp + 回到顶部按钮（位于 footer 之后）
-FLOAT_BTN = '<a class="float-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>\n<button id="toTop" aria-label="Back to top">↑</button>'
+FLOAT_BTN = '<a class="float-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>\n<button id="toTop" aria-label="Back to top">↑</button>'
 
-WA = '971585146139'
+WA = '971585854194'
 
 # Google Analytics 4 衡量代码（全站统一注入；重跑生成器不会丢失）
 GA4_ID = 'G-76L0Y9SC5D'

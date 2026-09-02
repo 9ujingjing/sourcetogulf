@@ -53,7 +53,7 @@ GA4 = ('<!-- Google tag (gtag.js) GA4 -->\n'
        '  function gtag(){dataLayer.push(arguments);}\n'
        "  gtag('js', new Date());\n  gtag('config', 'G-76L0Y9SC5D');\n</script>\n")
 
-FLOAT_BTN = ('<a class="float-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener" aria-label="واتساب">💬</a>\n'
+FLOAT_BTN = ('<a class="float-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener" aria-label="واتساب">💬</a>\n'
              '<button id="toTop" aria-label="العودة للأعلى">↑</button>')
 
 MINI_JS = """
@@ -162,7 +162,7 @@ def bahrain_body():
   <h1>الاستيراد من الصين إلى البحرين — دليل 2026 الشامل</h1>
   <p class="sub">الاستيراد من الصين إلى البحرين يخضع لـ <b>رسم جمركي 5% من قيمة CIF</b> بالإضافة إلى <b>10% ضريبة قيمة مضافة</b>. لا يوجد نظام SABER في البحرين؛ بدلاً منه تستخدم البحرين نافذة <b>OFOQ</b> الموحدة وشهادات المطابقة الخليجية (GSO). التخليص الجمركي يستغرق عادةً <b>1–3 أيام عمل</b> عبر ميناء خليفة بن سلمان.</p>
   <div class="cta-row">
-    <a class="btn-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener">💬 احصل على عرض سعر للبحرين عبر واتساب</a>
+    <a class="btn-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener">💬 احصل على عرض سعر للبحرين عبر واتساب</a>
   </div>
 </div></section>
 
@@ -251,7 +251,7 @@ def home_body():
       نحن شريك توريد متكامل: نلاقي المصنع، ونطبع علامتك على التغليف، ونرسل لك عيّنات فعلية — حتى تختبر ١٠–٥٠ قطعة قبل ما تلتزم بحاوية كاملة.
     </div>
     <div class="hero-cta">
-      <a class="wa-btn" href="https://wa.me/971585146139" target="_blank" rel="noopener">💬 واتساب: ‎+971 58 514 6139</a>
+      <a class="wa-btn" href="https://wa.me/971585854194" target="_blank" rel="noopener">💬 واتساب: ‎+971 58 585 4194</a>
       <a class="btn-ghost" href="/#calculator">جرّب حاسبة التكلفة الشاملة</a>
     </div>
   </div>
@@ -378,7 +378,7 @@ def country_body(d):
   <h1>%s</h1>
   <p class="sub">%s</p>
   <div class="cta-row">
-    <a class="btn-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener">💬 احصل على عرض سعر عبر واتساب</a>
+    <a class="btn-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener">💬 احصل على عرض سعر عبر واتساب</a>
   </div>
 </div></section>
 
@@ -614,7 +614,7 @@ def product_card_ar(p):
             + '<div class="pfob"><small>سعر المصنع</small><span>$%.2f</span></div>' % pr['fob']
             + '</div>'
             + '<div class="pmeta">الحد الأدنى %d قطعة · يُشحن خلال %d يوماً</div>' % (p['moq'], p['lead_days'])
-            + '<a class="wa-mini" href="https://wa.me/971585146139?text=%s" target="_blank" '
+            + '<a class="wa-mini" href="https://wa.me/971585854194?text=%s" target="_blank" '
               'rel="noopener">💬 استفسر عن هذا المنتج</a>' % _quote(wa_text)
             + '</div></div>')
 
@@ -798,7 +798,7 @@ def persona_body(d):
   <h1>%s</h1>
   <p class="sub">%s</p>
   <div class="cta-row">
-    <a class="btn-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener">💬 ابدأ عبر واتساب</a>
+    <a class="btn-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener">💬 ابدأ عبر واتساب</a>
   </div>
 </div></section>
 
@@ -856,7 +856,7 @@ def partners_body_ar():
   <h1>أنت تعرف سوق الخليج. ونحن نعرف سلسلة التوريد الصينية.</h1>
   <p class="sub">تعمل SourceToGulf مع التجار والمستشارين والوكالات ومقدّمي الخدمات المحليين في الخليج بوصفها فريق التنفيذ الخاص بهم في الصين. أنت تحتفظ بعلاقة العميل، ونتولى نحن التوريد، والتغليف المخصص والعلامة الخاصة، والعيّنات، والامتثال، والشحن. <b>نحن لسنا شركة شحن</b> — نحن شريك توريد متكامل، أي أنك تكسب قدرة توريد كاملة لا مجرد عرض سعر شحن.</p>
   <div class="cta-row">
-    <a class="btn-wa" href="https://wa.me/971585146139" target="_blank" rel="noopener">💬 ابدأ المحادثة عبر واتساب</a>
+    <a class="btn-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener">💬 ابدأ المحادثة عبر واتساب</a>
     <a class="btn-ghost" href="/ar/products.html">اطّلع على كتالوج المنتجات</a>
   </div>
 </div></section>

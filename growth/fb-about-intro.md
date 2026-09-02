@@ -27,7 +27,7 @@ Why buyers work with us:
 • Low minimums and samples welcome — good for testing a product before you commit.
 • We handle GCC shipping, including SABER for Saudi Arabia.
 
-WhatsApp us a photo anytime: +971 58 514 6139 (we reply within 2 hours, Sun–Thu, Gulf time).
+WhatsApp us a photo anytime: +971 58 585 4194 (we reply within 2 hours, Sun–Thu, Gulf time).
 ```
 
 ---
@@ -51,7 +51,7 @@ SourceToGulf هو فريق منتجاتك في الصين للخليج. 🇨🇳
 • نبدأ بكميات صغيرة ونماذج — مناسب لتجربة المنتج قبل ما تلتزم.
 • نتعامل مع شحن دول الخليج بما فيها SABER للسعودية.
 
-راسلنا على واتساب بصورة أي وقت: +971 58 514 6139 (نرد خلال ساعتين، أحد–خميس بتوقيت الخليج).
+راسلنا على واتساب بصورة أي وقت: +971 58 585 4194 (نرد خلال ساعتين، أحد–خميس بتوقيت الخليج).
 ```
 
 ---
@@ -77,7 +77,7 @@ AR: التركيز: العبايات، الملابس المحتشمة، وال�
 1. **Name 栏 = 真名**（Robin Gu / Dabie X），绝不放公司名 / 关键词 —— FB 真名政策会强制改名甚至锁号。
 2. **不用超级lative**：最便宜 / 第一 / 最可靠 / trusted #1 一律不写。信任用「14 年迪拜 + 广州注册公司 + 4 人团队 + 视频验货」这些事实撑，不靠形容词。
 3. **两号不复制同一篇长文**：用 C 节的分人设版本，FB 会判"协同行为/重复"双降权。
-4. **WhatsApp 号码固定** `+971 58 514 6139`，和网站一致（别写别的号，割裂信任）。
+4. **WhatsApp 号码固定** `+971 58 585 4194`，和网站一致（别写别的号，割裂信任）。
 5. **链接**：About 里放 `https://sourcetogulf.com/?utm_source=facebook&utm_medium=profile&utm_campaign=robin`（dabie 号把 campaign 换成 dabie），方便 GA4 归因；FB 有时折叠长链，正常现象。
 6. **法律主体**：关于页可写一句 "A brand of Papa Claw Marketing Technology Co., Ltd., Guangzhou"，但**不要**把它当公开品牌名到处用。
 

@@ -43,7 +43,7 @@ def card_html(p):
         + '<div class="pfob"><small data-en="Factory price" data-ar="سعر المصنع">Factory price</small><span>$' + ('%.2f' % fob) + '</span></div>'
         + '</div>'
         + '<div class="pmeta"><span data-en="MOQ" data-ar="أقل كمية">MOQ</span> ' + str(p['moq']) + ' pcs &middot; <span data-en="ships in" data-ar="يشحن خلال">ships in</span> ' + str(p['lead_days']) + ' <span data-en="days" data-ar="أيام">days</span></div>'
-        + '<a class="wa-mini" href="https://wa.me/971585146139?text=' + wa + '" target="_blank" rel="noopener" data-en="💬 Ask about this" data-ar="💬 اسأل عن هذا المنتج">💬 Ask about this</a>'
+        + '<a class="wa-mini" href="https://wa.me/971585854194?text=' + wa + '" target="_blank" rel="noopener" data-en="💬 Ask about this" data-ar="💬 اسأل عن هذا المنتج">💬 Ask about this</a>'
         + '</div></div>')
 
 def main():

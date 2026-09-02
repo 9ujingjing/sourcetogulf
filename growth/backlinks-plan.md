@@ -61,7 +61,7 @@
 一句话：China→Gulf sourcing partner — 帮你从广州工厂找货、打样、定制包装、寄样品，小单也接（不是货代）。
 基地：Guangzhou, China
 服务：UAE · Saudi · Qatar · Kuwait · Bahrain · Oman
-WhatsApp：+971 58 514 6139
+WhatsApp：+971 58 585 4194
 邮箱：info@sourcetogulf.com
 ```
 
@@ -88,7 +88,7 @@ SourceToGulf is a China→Gulf sourcing partner based in Guangzhou.
 We help Gulf SMEs, creators and small resellers source from factories,
 get samples, custom/private-label packaging, and air-ship small batches
 to the UAE, Saudi, Qatar, Kuwait, Bahrain and Oman. Low MOQ, not a freight forwarder.
-WhatsApp: +971 58 514 6139 · https://sourcetogulf.com
+WhatsApp: +971 58 585 4194 · https://sourcetogulf.com
 ```
 
 8. 传一张 logo（从网站首页存一张图即可）。
@@ -195,7 +195,7 @@ It covers: SABER/HS basics, why a sample batch beats a container, and
 landed-cost math — with real numbers. Useful on its own, no hard sell.
 
 Open to your style guide. Best,
-[你的名字] · SourceToGulf · WhatsApp +971 58 514 6139
+[你的名字] · SourceToGulf · WhatsApp +971 58 585 4194
 ```
 
 ### 复制发送的邮件（专家引言 / HARO 风格）

@@ -12,9 +12,9 @@
 **Job description**：`Helping small sellers in UAE & GCC source from Chinese factories — car accessories, outdoor gear, consumer electronics. Custom packaging and sample shipping. Low MOQ friendly.`
 **Current city / Hometown**：`Guangzhou, China`
 **Website**：`https://sourcetogulf.com/?utm_source=facebook&utm_medium=profile&utm_campaign=robin`
-**Contact**：WhatsApp `+971 58 514 6139`
+**Contact**：WhatsApp `+971 58 585 4194`
 **头像**：真人半身照，背景是工厂/仓库/货架（不要棚拍、不要 logo）
-**封面压字**：`Sourcing from China → Dubai / Car accessories · Outdoor · Gadgets / Low MOQ · Samples · Custom packaging / WhatsApp +971 58 514 6139`
+**封面压字**：`Sourcing from China → Dubai / Car accessories · Outdoor · Gadgets / Low MOQ · Samples · Custom packaging / WhatsApp +971 58 585 4194`
 
 **置顶帖**：
 ```
@@ -25,7 +25,7 @@ I help Gulf sellers find products from Chinese factories — car accessories, ca
 • Samples first, see it before you commit
 • Custom packaging / your label available
 Real products & prices posted here. Comment or DM for details.
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 
 ---
@@ -38,9 +38,9 @@ WhatsApp: +971 58 514 6139
 **Job description**：`I help women in UAE, KSA & the Gulf start and grow small shops — sourcing abayas, modest wear, homewear, fashion jewelry, hijabs, bags and beauty tools from trusted Chinese suppliers. Low MOQ, samples, private-label packaging.`
 **Current city**：`Guangzhou, China`
 **Website**：`https://sourcetogulf.com/?utm_source=facebook&utm_medium=profile&utm_campaign=dabie`
-**Contact**：WhatsApp `+971 58 514 6139`
+**Contact**：WhatsApp `+971 58 585 4194`
 **头像**：真人照，暖调柔光，背景是布料/成衣挂架/首饰摊（和 Robin 号的仓库背景明显不同）
-**封面压字**：`For the Gulf woman building her shop / Abayas · Jewelry · Beauty tools / From 20 pcs · Samples first / WhatsApp +971 58 514 6139`
+**封面压字**：`For the Gulf woman building her shop / Abayas · Jewelry · Beauty tools / From 20 pcs · Samples first / WhatsApp +971 58 585 4194`
 
 **置顶帖**（用故事口吻，不用子弹列表，跟 Robin 号错开）：
 ```
@@ -56,7 +56,7 @@ How we do it together:
 
 New arrivals drop here weekly. See something you love? Just comment 💬 or WhatsApp me — no pressure, we'll chat.
 🌸 أرسل لي رسالة للأسعار
-WhatsApp: +971 58 514 6139
+WhatsApp: +971 58 585 4194
 ```
 
 ---
