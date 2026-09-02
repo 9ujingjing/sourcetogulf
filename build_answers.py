@@ -102,7 +102,7 @@ def main():
         '</div></section>')
 
     url = BASE + '/gcc-import-answers.html'
-    title = 'GCC Import Answers: Duties, VAT, SABER, MOQ & Shipping from China | SourceToGulf'
+    title = 'GCC Sourcing Answers: Duties, VAT, SABER & MOQ from China | SourceToGulf'
     desc = 'Clear answers to the questions Gulf buyers ask before importing from China: import duties, VAT by country, SABER, MOQ, shipping time, documents and quality control.'
     ld = json.dumps({
         '@context': 'https://schema.org',

@@ -471,7 +471,7 @@ def composite_body():
 COMPARE = {
     'agent-vs-trading': {
         'file': 'sourcing-agent-vs-trading-company.html',
-        'title': 'Sourcing Agent vs Trading Company: Which Saves Gulf Buyers More?',
+        'title': 'Sourcing Agent vs Trading Company: Gulf Buyers | SourceToGulf',
         'desc': 'An independent comparison of China sourcing agents vs trading companies: how each earns, a $5,000 worked cost example, when each wins, and red flags to avoid.',
         'canonical': BASE + '/sourcing-agent-vs-trading-company.html',
         'body': agent_body(),
@@ -479,7 +479,7 @@ COMPARE = {
     },
     'cities': {
         'file': 'yiwu-vs-guangzhou-vs-shenzhen.html',
-        'title': 'Yiwu vs Guangzhou vs Shenzhen: Where Should Gulf Buyers Source From?',
+        'title': 'Yiwu vs Guangzhou vs Shenzhen: Gulf Sourcing | SourceToGulf',
         'desc': 'An independent comparison of China sourcing cities: what Yiwu, Guangzhou and Shenzhen each do best, MOQ differences, a multi-city worked example, and consolidation explained.',
         'canonical': BASE + '/yiwu-vs-guangzhou-vs-shenzhen.html',
         'body': city_body(),
@@ -487,7 +487,7 @@ COMPARE = {
     },
     'alibaba': {
         'file': 'alibaba-vs-sourcing-agent.html',
-        'title': 'Alibaba vs China Sourcing Agent: What Costs Less for Gulf Buyers?',
+        'title': 'Alibaba vs Sourcing Agent: Gulf Small Orders | SourceToGulf',
         'desc': 'An independent comparison of buying on Alibaba vs using a China sourcing agent for the Gulf: how each earns, a $3,000 worked cost example, SABER and customs handling, and red flags to avoid.',
         'canonical': BASE + '/alibaba-vs-sourcing-agent.html',
         'body': alibaba_body(),
@@ -495,8 +495,8 @@ COMPARE = {
     },
     'composite': {
         'file': 'composite-partner-vs-single-vendors.html',
-        'title': 'One Composite Sourcing Partner vs Three Single-Point Vendors',
-        'desc': 'An independent comparison for Gulf buyers: one composite partner (sourcing + custom packaging + samples + low MOQ + door delivery) vs juggling a packaging shop, a sourcing agent and a freight forwarder, with a $4,000 worked cost example.',
+        'title': 'Composite Sourcing Partner vs Single Vendors | SourceToGulf',
+        'desc': 'An independent comparison for Gulf buyers: one composite partner (sourcing + branding + samples + low MOQ) vs juggling a packaging shop, a sourcing agent and a freight forwarder, with a $4,000 worked cost example.',
         'canonical': BASE + '/composite-partner-vs-single-vendors.html',
         'body': composite_body(),
         'faq': COMPOSITE_FAQ,

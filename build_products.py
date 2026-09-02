@@ -158,8 +158,8 @@ def main():
 </div></section>'''
     )
     html = page_shell(
-        "This Month's Hot Picks — Landed Prices to the Gulf | SourceToGulf",
-        "A curated list of best-selling products for Gulf sellers, sourced from Yiwu & Guangzhou with landed prices to the UAE already included. Browse by category, request a quote on WhatsApp.",
+        "China Products for Gulf Sellers: MOQ & FOB Price | SourceToGulf",
+        "China products for Gulf sellers with real MOQ, factory (FOB) and all-in prices. Start from 10 pcs — custom branding, physical samples and QC before you commit.",
         BASE + '/products.html',
         body,
         json_ld=json_ld(),

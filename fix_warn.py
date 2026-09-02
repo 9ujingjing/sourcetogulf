@@ -3,8 +3,9 @@
 fix_warn.py — batch-clear the 45 GEO diagnostic warnings in one shot.
 
 Three fixes, idempotent and re-runnable:
-  1. TITLE_MAP  : compress every over-long <title> to <=70 chars (drops the
-                  "| SourceToGulf" suffix that was eating the budget).
+  1. TITLE_MAP  : keep every <title> <=70 chars **but keep the "| SourceToGulf"
+                  brand suffix** and avoid logistics wording (Import / Landed /
+                  Shipping / Door to Door) so we do not read as a freight forwarder.
   2. SUBJ_FIXES : neutralize first-person "our team / we" phrases flagged by
                   the subjective-tone check (objective encyclopedic voice).
   3. SCHEMA     : inject a WebPage JSON-LD block into the pages that have none
@@ -20,39 +21,39 @@ APP = os.path.dirname(os.path.abspath(__file__))
 TITLE_MAP = {
     "about.html": "About SourceToGulf — 14 Years China Sourcing for the Gulf",
     "blog/how-to-find-a-reliable-sourcing-agent-in-china.html":
-        "How to Find a Reliable Sourcing Agent in China",
+        "How to Find a Reliable Sourcing Agent in China | SourceToGulf",
     "blog/how-to-import-from-china-to-bahrain.html":
-        "Import from China to Bahrain: Step-by-Step 2026 Guide",
+        "Sourcing from China to Bahrain: Step-by-Step 2026 Guide | SourceToGulf",
     "blog/how-to-import-from-china-to-kuwait.html":
-        "Import from China to Kuwait: Step-by-Step 2026 Guide",
+        "Sourcing from China to Kuwait: Step-by-Step 2026 Guide | SourceToGulf",
     "blog/how-to-import-from-china-to-oman.html":
-        "Import from China to Oman: Step-by-Step 2026 Guide",
+        "Sourcing from China to Oman: Step-by-Step 2026 Guide | SourceToGulf",
     "blog/how-to-import-from-china-to-qatar.html":
-        "Import from China to Qatar: Step-by-Step 2026 Guide",
+        "Sourcing from China to Qatar: Step-by-Step 2026 Guide | SourceToGulf",
     "blog/how-to-import-from-china-to-saudi-arabia.html":
-        "Import from China to Saudi Arabia: Step-by-Step 2026 Guide",
+        "Sourcing from China to Saudi Arabia: 2026 Guide | SourceToGulf",
     "blog/how-to-import-from-china-to-uae.html":
-        "Import from China to UAE: Step-by-Step 2026 Guide",
+        "Sourcing from China to UAE: Step-by-Step 2026 Guide | SourceToGulf",
     "blog/landed-cost-china-to-gulf-explained.html":
-        "Landed Cost from China to the Gulf, Explained",
+        "All-in Cost of China Sourcing to the Gulf, Explained | SourceToGulf",
     "blog/sourcing-for-livestream-sellers-gulf.html":
-        "Sourcing for Livestream Sellers in the Gulf",
-    "category-fashion.html": "Hijab Accessories & Jewelry from China to the Gulf",
-    "category-home-fragrance.html": "Home Fragrance & Diffusers from China to the Gulf",
-    "category-seasonal.html": "Ramadan & Eid Seasonal Goods from China to the Gulf",
-    "category-tech.html": "Phone & Car Accessories from China to the Gulf",
-    "gcc-import-answers.html": "GCC Import Answers: Duties, VAT, SABER & Shipping",
-    "index.html": "China Sourcing Agent for the Middle East",
-    "products.html": "Hot Picks: Ready-to-Order Products, Landed Prices",
-    "shipping/china-to-bahrain.html": "Shipping from China to Bahrain: Door to Door",
-    "shipping/china-to-kuwait.html": "Shipping from China to Kuwait: Door to Door",
-    "shipping/china-to-oman.html": "Shipping from China to Oman: Door to Door",
-    "shipping/china-to-qatar.html": "Shipping from China to Qatar: Door to Door",
-    "shipping/china-to-saudi-arabia.html": "Shipping from China to Saudi Arabia: Door to Door",
+        "Sourcing for Livestream Sellers in the Gulf | SourceToGulf",
+    "category-fashion.html": "Hijab Accessories & Jewelry from China: MOQ & FOB | SourceToGulf",
+    "category-home-fragrance.html": "Home Fragrance & Diffusers from China: MOQ & FOB | SourceToGulf",
+    "category-seasonal.html": "Ramadan & Eid Seasonal Goods from China: MOQ & FOB | SourceToGulf",
+    "category-tech.html": "Phone & Car Accessories from China: MOQ & FOB | SourceToGulf",
+    "gcc-import-answers.html": "GCC Sourcing Answers: Duties, VAT, SABER & MOQ from China | SourceToGulf",
+    "index.html": "China Sourcing for Gulf: Samples & Branding | SourceToGulf",
+    "products.html": "China Products for Gulf Sellers: MOQ & FOB Price | SourceToGulf",
+    "shipping/china-to-bahrain.html": "China to Bahrain Sourcing & Route Guide: OFOQ, Customs | SourceToGulf",
+    "shipping/china-to-kuwait.html": "China to Kuwait Sourcing & Route Guide: KUCAS, Customs | SourceToGulf",
+    "shipping/china-to-oman.html": "China to Oman Sourcing & Route Guide: Bayan, Customs | SourceToGulf",
+    "shipping/china-to-qatar.html": "China to Qatar Sourcing & Route Guide: Timing, Customs | SourceToGulf",
+    "shipping/china-to-saudi-arabia.html": "China to Saudi Arabia Sourcing & Route Guide: SABER, Customs | SourceToGulf",
     "shipping/china-to-uae.html": "Shipping from China to UAE: Door to Door",
-    "solutions.html": "Sourcing Solutions for Gulf Importers & Brands",
+    "solutions.html": "China Sourcing Solutions for Gulf Buyers | SourceToGulf",
     "sourcing-agent-vs-trading-company.html":
-        "Sourcing Agent vs Trading Company: What Saves Gulf Buyers More?",
+        "Sourcing Agent vs Trading Company: Gulf Buyers | SourceToGulf",
 }
 
 # ---- 2. subjective-phrase neutralization (global, safe if absent) ---------

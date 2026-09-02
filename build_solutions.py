@@ -119,8 +119,8 @@ def main():
         '  </div>\n'
         '</div></section>')
     url = BASE + '/solutions.html'
-    title = 'Sourcing Solutions for Influencers, Wholesalers, Retailers & Brands | SourceToGulf'
-    desc = 'SourceToGulf adapts sourcing, QC and shipping to your business model — influencers, wholesalers, retailers and private-label brands across the Gulf.'
+    title = 'China Sourcing Solutions for Gulf Buyers | SourceToGulf'
+    desc = 'Sourcing, QC, custom branding and samples adapted to your model — influencers, wholesalers, retailers and private-label brands across the Gulf.'
     html = page_shell(title, desc, url, body,
                       json_ld=json.dumps({
                         '@context': 'https://schema.org',

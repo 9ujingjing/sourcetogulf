@@ -12,7 +12,7 @@ BASE = 'https://sourcetogulf.com'
 ADS = [
   {
     'file': 'hijab-jewelry.html',
-    'title': 'Hijab & Jewelry Wholesale to UAE | SourceToGulf Landed Prices',
+    'title': 'Hijab & Jewelry from China: MOQ & FOB for Gulf Sellers | SourceToGulf',
     'desc': 'Wholesale hijab accessories and fashion jewelry from China to the UAE with landed prices, small MOQ and QC before shipping. Get a free quote on WhatsApp.',
     'h1': 'Hijab & Jewelry Wholesale — Landed Price to the UAE',
     'sub': 'Modest-fashion pins, gold-plated rings, earrings and accessories sourced from Guangzhou & Yiwu. Factory price + freight calculated to Dubai, no quoting ping-pong.',

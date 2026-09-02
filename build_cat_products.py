@@ -22,19 +22,19 @@ WA_TEXT = 'Hi SourceToGulf! I want a quote for your {cat} collection (landed pri
 # 每个品类的落地页文案
 CAT_COPY = {
   'home-fragrance': {
-    'sub': 'Flameless diffusers, reed sets, incense and car fragrances — the home-fragrance lines Gulf retailers and gift shops re-order every month. Landed prices to the UAE shown on every item.',
+    'sub': 'Flameless diffusers, reed sets, incense and car fragrances — the home-fragrance lines Gulf retailers and gift shops re-order every month. Real MOQ and FOB prices on every item.',
     'intro': 'Home fragrance is a staple in Gulf gifting and home decor — from oud-style reed diffusers to bakhoor-adjacent incense and car fresheners. Every item below is sourced from Guangzhou & Yiwu markets with factory price + freight already calculated to the UAE.'
   },
   'seasonal': {
-    'sub': 'Ramadan & Eid lanterns, lights, tableware and gift packaging — the seasonal range Gulf buyers stock ahead of the busy holiday quarter. Landed prices included.',
+    'sub': 'Ramadan & Eid lanterns, lights, tableware and gift packaging — the seasonal range Gulf buyers stock ahead of the busy holiday quarter. Real MOQ and FOB prices included.',
     'intro': 'Ramadan and Eid drive the biggest gifting spike of the Gulf calendar. Stock lanterns, festive tableware, LED decorations and gift-ready packaging early — we consolidate and ship so your shelves are full before the season.'
   },
   'fashion': {
-    'sub': 'Hijab accessories, fashion jewelry, rings and earrings for modest-fashion and accessory sellers across the Gulf. Landed prices to the UAE on every piece.',
+    'sub': 'Hijab accessories, fashion jewelry, rings and earrings for modest-fashion and accessory sellers across the Gulf. Real MOQ and FOB prices on every piece.',
     'intro': 'Hijab pins, statement jewelry, gold-plated rings and earrings — the accessory lines that sell year-round to Gulf modest-fashion and livestream sellers. Small MOQs make it easy to test new styles.'
   },
   'tech': {
-    'sub': 'Phone accessories, car chargers, holders and gadgets — high-turnover tech SKUs for Gulf e-commerce and retail. Landed prices to the UAE shown.',
+    'sub': 'Phone accessories, car chargers, holders and gadgets — high-turnover tech SKUs for Gulf e-commerce and retail. Real MOQ and FOB prices shown.',
     'intro': 'Phone cases, car chargers, mounts and small gadgets are the highest-velocity tech accessories in Gulf markets. Light, cheap to ship, and easy to bundle — ideal for marketplace and TikTok sellers.'
   },
   'home': {
@@ -46,15 +46,15 @@ CAT_COPY = {
     'intro': 'Beauty tools and accessories are a fast-growing category for Gulf e-commerce and salon buyers. Small, light and giftable — perfect for bundling and impulse purchases.'
   },
   'modest-fashion': {
-    'sub': 'Plus-size and modest fashion — embroidered abayas, open-front robes, two-piece sets and chiffon hijabs for Gulf women. Landed prices to the UAE on every piece.',
+    'sub': 'Plus-size and modest fashion — embroidered abayas, open-front robes, two-piece sets and chiffon hijabs for Gulf women. Real MOQ and FOB prices on every piece.',
     'intro': 'Inclusive modest fashion is one of the fastest-growing segments in Gulf e-commerce: abayas, layering robes, two-piece sets and hijabs in extended sizes. We source from Guangzhou modest-wear factories with Arabic-label and SABER support for Saudi-bound shipments.'
   },
   'women-shoes': {
-    'sub': 'Plus-size women\'s shoes — wide-fit flat slides, rhinestone slides and block-heel sandals for sizes 42–45. Landed prices to the UAE.',
+    'sub': 'Plus-size women\'s shoes — wide-fit flat slides, rhinestone slides and block-heel sandals for sizes 42–45. Real MOQ and FOB prices.',
     'intro': 'Extended-size women\'s footwear is an underserved niche in the Gulf. We source wide-fit flat slides, soft-gold H-strap sandals, rhinestone slides and modest block heels from Guangzhou and Yiwu with landed pricing to the UAE.'
   },
   'lingerie': {
-    'sub': 'Plus-size comfort essentials — full-coverage seamless bra & brief sets and breathable smoothing shapewear. Landed prices to the UAE.',
+    'sub': 'Plus-size comfort essentials — full-coverage seamless bra & brief sets and breathable smoothing shapewear. Real MOQ and FOB prices.',
     'intro': 'Everyday full-coverage essentials for plus-size women: seamless bra & brief sets and smoothing shapewear made from breathable, skin-friendly fabrics. Marketed as modest comfort wear and shipped with consolidated Gulf logistics.'
   },
 }
@@ -211,7 +211,7 @@ def build_category_page(cat, items, other_cats):
         '    <a class="wa-btn" href="' + wa_link(WA_TEXT.format(cat=cat['en'])) + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>\n'
         '  </div>\n'
         '</div></section>')
-    title = cat['en'] + ' from China to the Gulf | SourceToGulf Landed Prices'
+    title = cat['en'] + ' from China: MOQ & FOB for Gulf Sellers | SourceToGulf'
     desc = copy['sub']
     return page_shell(title, desc, url, body, json_ld=json_ld_for(cat, items))
 
@@ -229,7 +229,7 @@ def build_index_page():
                   '</a>' % (c['key'], c['en'], c['ar'], n, c['en']))
     body = ('<section class="page-hero"><div class="wrap">\n'
         '<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <span>Categories</span></div>\n'
-        '<h1>Shop by Category — Landed Prices to the Gulf</h1>\n'
+        '<h1>Shop by Category — China Sourcing for the Gulf</h1>\n'
         '<p class="sub">Every product below is sourced from Guangzhou &amp; Yiwu markets with factory price + freight already calculated to the UAE. Pick a category to see landed prices, MOQ and lead time.</p>\n'
         '</div></section>\n'
         '<section style="padding-top:0"><div class="wrap">\n'
@@ -242,7 +242,7 @@ def build_index_page():
         '    <a class="wa-btn" href="' + wa_link('Hi SourceToGulf! I am looking for a product not listed. Can you source it?') + '" target="_blank" rel="noopener">💬 WhatsApp: +971 58 514 6139</a>\n'
         '  </div>\n'
         '</div></section>')
-    return page_shell('Shop by Category | SourceToGulf Landed Prices to the Gulf',
+    return page_shell('Shop by Category: China Sourcing for Gulf Sellers | SourceToGulf',
                       'Browse SourceToGulf product categories with landed prices to the Gulf: home fragrance, Ramadan & Eid, hijab & jewelry, phone & car accessories, home & kitchen, beauty tools.',
                       url, body)
 

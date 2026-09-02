@@ -190,8 +190,8 @@ def json_ld():
 
 def main():
     html = page_shell(
-        title='Partner With Us — Your Execution Team in China | SourceToGulf',
-        description='SourceToGulf works with Gulf traders, consultants, agencies and local service providers as their execution team in China: sourcing, private-label packaging, sampling, compliance and shipping — under your brand if you prefer.',
+        title='Partner With Us: China Sourcing & Branding | SourceToGulf',
+        description='Gulf traders, agencies and consultants: add China sourcing without a China team. We find factories, apply your branding and send samples — under your name.',
         canonical=CANONICAL,
         body_inner=body() + final_cta(),
         json_ld=json_ld(),

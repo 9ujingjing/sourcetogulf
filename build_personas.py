@@ -126,7 +126,8 @@ def final_cta():
 PERSONAS = [
 {
  "slug": "for-influencers.html",
- "title": "China Sourcing for Influencers & KOLs in the Gulf | SourceToGulf",
+ "desc": "Gulf creators: turn your audience into your own product line. We source from China, apply your branding and send samples — MOQ from 10 pcs.",
+ "title": "Gulf Creators: China Sourcing & Branding | SourceToGulf",
  "h1": "Turn your audience into your own product line",
  "sub": "TikTok KSA, Instagram UAE and livestream creators: launch branded merch from "
         "China with small minimums, samples for content, and fast restocks.",
@@ -166,7 +167,8 @@ PERSONAS = [
 },
 {
  "slug": "for-small-businesses.html",
- "title": "China Sourcing Partner for Small Businesses | SourceToGulf",
+ "desc": "Gulf small businesses: a verified supply base, QC, custom branding and samples — without hiring a procurement team. One clear price per piece.",
+ "title": "Small Gulf Business: China Sourcing & Low MOQ | SourceToGulf",
  "h1": "Your China sourcing department — without the overhead",
  "sub": "Small business owners across the Gulf: get a verified supply base, QC, branding "
         "and door-to-door shipping without hiring a procurement team.",
@@ -203,7 +205,8 @@ PERSONAS = [
 },
 {
  "slug": "for-moms.html",
- "title": "Start a Home Import Side-Hustle from China | SourceToGulf",
+ "desc": "Side-hustle moms in the Gulf: launch your own product line with tiny minimums, samples you approve first, and your branding on the packaging.",
+ "title": "Home Business: Low-MOQ China Sourcing & Samples | SourceToGulf",
  "h1": "Start a small import business from home",
  "sub": "For side-hustle moms in the Gulf: launch your own product line with tiny minimums, "
         "samples you can see first, and shipping handled to your door.",
@@ -240,7 +243,8 @@ PERSONAS = [
 },
 {
  "slug": "for-resellers.html",
- "title": "Low-MOQ Product Sourcing for Resellers | SourceToGulf",
+ "desc": "Gulf resellers: low minimums, factory prices and custom branding so your store stands out. Samples before you commit — we are not a freight forwarder.",
+ "title": "Gulf Resellers: Low-MOQ Sourcing & Branding | SourceToGulf",
  "h1": "Source trending products to resell — one piece at a time",
  "sub": "Resellers and small sellers in the Gulf: get variety, low minimums, samples and "
         "custom packaging so your store stands out.",
@@ -345,7 +349,7 @@ def render(p):
     json_ld = json.dumps(ld, ensure_ascii=False) + "\n" + faq_jsonld(p['faq'])
     return page_shell(
         title=p['title'],
-        description=p['sub'],
+        description=p.get('desc', p['sub']),
         canonical="https://sourcetogulf.com/" + p['slug'],
         body_inner=body,
         json_ld=json_ld,
