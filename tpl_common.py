@@ -19,7 +19,7 @@ GEO 内容生成铁律（2026 实战手册，所有 build_*.py 必须遵守）
 6. 老三样是入场券：title / viewport / canonical 必须存在且为 https。
 ========================================================================
 """
-import re, os
+import re, os, json
 
 # 内容质量自检清单（供 build 脚本与 geo_diag.py 引用）
 SUBJECTIVE_BANNED = ["we believe", "i think", "we think", "our team", "we feel",
@@ -42,9 +42,41 @@ HEADER = re.search(r'<header>([\s\S]*?)</header>', _PRODUCTS_HTML).group(1)
 # 抽取 <footer> ... </footer>
 FOOTER = re.search(r'<footer>([\s\S]*?)</footer>', _PRODUCTS_HTML).group(1)
 
-CNY_TO_USD = 7.15
+# ---- 到岸价常量：唯一真相源是 pricing.json（改汇率只改那个文件）----------
+# 以前这些数字硬编码在此处，index.html 的内联 JS 里还有一份副本，
+# 汇率一改就会出现「页面价格 vs JSON-LD 价格」互相矛盾的情况。
+_PRICING_DEFAULTS = {
+    'cny_to_usd': 7.15,
+    'cainiao_base_cny': 68.0,
+    'cainiao_per_kg_cny': 45.6,
+    'cainiao_free_kg': 0.5,
+}
+
+
+def _load_pricing():
+    d = dict(_PRICING_DEFAULTS)
+    path = os.path.join(APP, 'pricing.json')
+    if os.path.exists(path):
+        try:
+            with open(path, encoding='utf-8') as f:
+                raw = json.load(f)
+            for k in d:
+                if isinstance(raw.get(k), (int, float)):
+                    d[k] = raw[k]
+        except Exception as e:
+            print('  ! pricing.json 读取失败，使用内置默认值:', e)
+    return d
+
+
+_P = _load_pricing()
+CNY_TO_USD = float(_P['cny_to_usd'])
+_BASE_CNY = float(_P['cainiao_base_cny'])
+_PER_KG_CNY = float(_P['cainiao_per_kg_cny'])
+_FREE_KG = float(_P['cainiao_free_kg'])
+
+
 def cainiao_ship_usd(kg):
-    cny = 68.0 if kg <= 0.5 else 68.0 + (kg - 0.5) * 45.6
+    cny = _BASE_CNY if kg <= _FREE_KG else _BASE_CNY + (kg - _FREE_KG) * _PER_KG_CNY
     return cny / CNY_TO_USD
 def price_of(p):
     fob = p['fob_cny'] / CNY_TO_USD

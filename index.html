@@ -308,6 +308,9 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
+
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
 <symbol id="f-cn" viewBox="0 0 24 16"><title>China</title><rect width="24" height="16" fill="#DE2910"/><path d="M5 3l.9 2.1 2.3.2-1.8 1.5.6 2.2L5 7.7 3 9l.6-2.2L1.8 5.3l2.3-.2z" fill="#FFDE00"/></symbol>
 <symbol id="f-ae" viewBox="0 0 24 16"><title>United Arab Emirates</title><rect width="24" height="16" fill="#fff"/><rect width="6" height="16" fill="#CE1126"/><rect x="6" width="18" height="5.34" fill="#009739"/><rect x="6" y="10.66" width="18" height="5.34" fill="#000"/></symbol>
@@ -449,6 +452,9 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
+
 
 
 
@@ -777,6 +783,9 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -849,9 +858,13 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
+
 </footer>
 <a class="float-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 <button id="toTop" aria-label="Back to top">↑</button>
+<script src="/pricing.js"></script>
 <script>let lang = localStorage.getItem('stg-lang') || (navigator.language||'').startsWith('ar') ? (localStorage.getItem('stg-lang')||'ar') : 'en';
 lang = localStorage.getItem('stg-lang') || lang;
 function applyLang(){
@@ -869,10 +882,11 @@ function toggleMenu(){ document.getElementById('mpanel').classList.toggle('open'
 document.addEventListener('DOMContentLoaded', applyLang);
 
 
-const CC = {AE:{duty:0.05,vat:0.05,cur:'AED',rate:3.6725},SA:{duty:0.05,vat:0.15,cur:'SAR',rate:3.75},KW:{duty:0.05,vat:0.00,cur:'KWD',rate:0.307},QA:{duty:0.05,vat:0.00,cur:'QAR',rate:3.64},BH:{duty:0.05,vat:0.10,cur:'BHD',rate:0.376},OM:{duty:0.05,vat:0.05,cur:'OMR',rate:0.385}};
+var P = window.STG_PRICING || {};
+var CC = P.local_currency || {AE:{duty:0.05,vat:0.05,cur:'AED',rate:3.6725},SA:{duty:0.05,vat:0.15,cur:'SAR',rate:3.75},KW:{duty:0.05,vat:0.00,cur:'KWD',rate:0.307},QA:{duty:0.05,vat:0.00,cur:'QAR',rate:3.64},BH:{duty:0.05,vat:0.10,cur:'BHD',rate:0.376},OM:{duty:0.05,vat:0.05,cur:'OMR',rate:0.385}};
 function fmt(x,cur,rate){return cur+' '+(x*rate).toLocaleString(undefined,{maximumFractionDigits:0})+' · $'+x.toLocaleString(undefined,{maximumFractionDigits:0});}
-const CNY_TO_USD=7.15;
-function cainiaoShipUSD(kg){const cny=(kg<=0.5)?68:68+(kg-0.5)*45.6;return cny/CNY_TO_USD;}
+var CNY_TO_USD = P.cny_to_usd || 7.15;
+var cainiaoShipUSD = window.cainiaoShipUSD || function(kg){var b=P.cainiao_base_cny||68,k=P.cainiao_per_kg_cny||45.6,f=P.cainiao_free_kg||0.5;var cny=(kg<=f)?b:b+(kg-f)*k;return cny/CNY_TO_USD;};
 function calc(){
   const price=parseFloat(document.getElementById('cPrice').value)||0, qty=parseFloat(document.getElementById('cQty').value)||0,
         wt=parseFloat(document.getElementById('cWeight').value)||0, c=CC[document.getElementById('cCountry').value];
