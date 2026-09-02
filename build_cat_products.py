@@ -38,11 +38,11 @@ CAT_COPY = {
     'intro': 'Phone cases, car chargers, mounts and small gadgets are the highest-velocity tech accessories in Gulf markets. Light, cheap to ship, and easy to bundle — ideal for marketplace and TikTok sellers.'
   },
   'home': {
-    'sub': 'Home & kitchenware — cookware, storage, tableware and decor sourced from Guangzhou & Yiwu for Gulf homes. Landed prices to the UAE on every item.',
+    'sub': 'Home & kitchenware — cookware, storage, tableware and decor sourced from Guangzhou & Yiwu for Gulf homes. MOQ and FOB price on every item.',
     'intro': 'From kitchen tools to home organization and tableware, these are the everyday products Gulf households buy in volume. Factory-direct pricing with consolidated door-to-door shipping.'
   },
   'beauty-toys': {
-    'sub': 'Beauty tools and accessories — mirrors, brushes, organizers and more for Gulf beauty sellers and salons. Landed prices to the UAE included.',
+    'sub': 'Beauty tools and accessories — mirrors, brushes, organizers and more for Gulf beauty sellers and salons. MOQ and FOB price on every item.',
     'intro': 'Beauty tools and accessories are a fast-growing category for Gulf e-commerce and salon buyers. Small, light and giftable — perfect for bundling and impulse purchases.'
   },
   'modest-fashion': {

@@ -13,7 +13,7 @@ ADS = [
   {
     'file': 'hijab-jewelry.html',
     'title': 'Hijab & Jewelry from China: MOQ & FOB for Gulf Sellers | SourceToGulf',
-    'desc': 'Wholesale hijab accessories and fashion jewelry from China to the UAE with landed prices, small MOQ and QC before shipping. Get a free quote on WhatsApp.',
+    'desc': 'Wholesale hijab accessories and fashion jewelry from China to the UAE with all-in prices, small MOQ and QC before dispatch. Get a free quote on WhatsApp.',
     'h1': 'Hijab & Jewelry Wholesale — Landed Price to the UAE',
     'sub': 'Modest-fashion pins, gold-plated rings, earrings and accessories sourced from Guangzhou & Yiwu. Factory price + freight calculated to Dubai, no quoting ping-pong.',
     'bullets': [
@@ -24,12 +24,12 @@ ADS = [
     ],
     'cat_link': '/category-fashion.html',
     'cat_name': 'Hijab accessories & jewelry',
-    'wa': 'Hi SourceToGulf! I saw your hijab & jewelry wholesale ad. Please send landed prices to UAE.',
+    'wa': 'Hi SourceToGulf! I saw your hijab & jewelry wholesale ad. Please send your all-in prices to UAE.',
   },
   {
     'file': 'ramadan.html',
     'title': 'Ramadan & Eid Wholesale to GCC | SourceToGulf',
-    'desc': 'Wholesale Ramadan lanterns, festive tableware and gift packaging from China to the Gulf. Stock early with landed prices and consolidated shipping.',
+    'desc': 'Wholesale Ramadan lanterns, festive tableware and gift packaging from China to the Gulf. Stock early with all-in prices and combined orders from multiple suppliers.',
     'h1': 'Ramadan & Eid Wholesale — Stock Early, Ship to the Gulf',
     'sub': 'Lanterns, LED decorations, festive tableware and gift-ready packaging sourced from Yiwu & Guangzhou. Landed prices and consolidated door-to-door shipping to all six GCC countries.',
     'bullets': [
@@ -40,12 +40,12 @@ ADS = [
     ],
     'cat_link': '/category-seasonal.html',
     'cat_name': 'Ramadan & Eid seasonal',
-    'wa': 'Hi SourceToGulf! I saw your Ramadan wholesale ad. Please send the seasonal catalog and landed prices.',
+    'wa': 'Hi SourceToGulf! I saw your Ramadan wholesale ad. Please send the seasonal catalog and all-in prices.',
   },
   {
     'file': 'phone-accessories.html',
     'title': 'Phone & Car Accessories Wholesale to Gulf | SourceToGulf',
-    'desc': 'Wholesale phone cases, chargers, car mounts and gadgets from China to the Gulf with landed prices and fast shipping. Free quote on WhatsApp.',
+    'desc': 'Wholesale phone cases, chargers, car mounts and gadgets from China to the Gulf with all-in prices and low MOQ. Free quote on WhatsApp.',
     'h1': 'Phone & Car Accessories Wholesale — Landed Price to the Gulf',
     'sub': 'High-velocity tech accessories sourced from Guangzhou & Yiwu. Light, cheap to ship, easy to bundle — ideal for marketplace and TikTok sellers across the Gulf.',
     'bullets': [
@@ -56,7 +56,7 @@ ADS = [
     ],
     'cat_link': '/category-tech.html',
     'cat_name': 'Phone & car accessories',
-    'wa': 'Hi SourceToGulf! I saw your phone accessories ad. Please send landed prices to the Gulf.',
+    'wa': 'Hi SourceToGulf! I saw your phone accessories ad. Please send your all-in prices to the Gulf.',
   },
 ]
 

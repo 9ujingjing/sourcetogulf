@@ -782,7 +782,7 @@ BLOG = {
     'gcc-fta-2026': {
         'file': 'blog/china-gcc-fta-lower-import-duty.html',
         'title': 'China\u2013GCC FTA: Cut Your Gulf Duty on China Sourcing (2026) | SourceToGulf',
-        'desc': 'How small Gulf importers actually claim the China\u2013GCC FTA tariff cut: 1,420 HS codes reduced by ~7.4 points, the Certificate of Origin requirement, and a step-by-step checklist from a China sourcing team.',
+        'desc': 'How small Gulf buyers actually claim the China\u2013GCC FTA tariff cut: 1,420 HS codes reduced by ~7.4 points, the Certificate of Origin requirement, and a step-by-step checklist from a China sourcing team.',
         'date': '2026-08-24',
         'canonical': BASE + '/blog/china-gcc-fta-lower-import-duty.html',
         'body': fta_body(),
@@ -791,7 +791,7 @@ BLOG = {
     'tiktok-saudi-2026': {
         'file': 'blog/source-products-tiktok-shop-saudi-no-container.html',
         'title': 'How to Source Products for TikTok Shop Saudi Without a Container (2026 Guide for Influencers and Small Sellers) | SourceToGulf',
-        'desc': 'How Gulf influencers and small sellers source TikTok Shop products from China without a container: low MOQ, samples to your door, private-label packaging, SABER compliance, and air shipping, from a China sourcing team.',
+        'desc': 'How Gulf influencers and small sellers source TikTok Shop products from China without a container: low MOQ, samples to you, private-label packaging, SABER compliance, and air options, from a China sourcing team.',
         'date': '2026-08-24',
         'canonical': BASE + '/blog/source-products-tiktok-shop-saudi-no-container.html',
         'body': tiktok_body(),
@@ -800,7 +800,7 @@ BLOG = {
     'white-friday-2026': {
         'file': 'blog/white-friday-2026-china-gulf-small-business.html',
         'title': 'How to Stock for White Friday 2026 from China (Gulf Small Business Guide) | SourceToGulf',
-        'desc': 'A practical guide for Gulf small sellers sourcing White Friday 2026 stock from China: timeline, best products, samples, private-label packaging, landed cost example, and compliance — from a China sourcing team.',
+        'desc': 'A practical guide for Gulf small sellers sourcing White Friday 2026 stock from China: timeline, best products, samples, private-label packaging, all-in cost example, and compliance — from a China sourcing team.',
         'date': '2026-08-26',
         'canonical': BASE + '/blog/white-friday-2026-china-gulf-small-business.html',
         'body': white_friday_body(),
@@ -809,7 +809,7 @@ BLOG = {
     'skincare-private-label-2026': {
         'file': 'blog/skincare-private-label-china-to-saudi-uae.html',
         'title': 'How to Private-Label Skincare from China to Saudi and UAE (2026 Step-by-Step for Small Brands) | SourceToGulf',
-        'desc': 'How small Gulf brands private-label skincare from China to Saudi and UAE: GMPC/ISO 22716 OEMs, low-MOQ samples, Arabic labels, SFDA/SABER and MOHAP/ECAS compliance, and a landed-cost example — from a China sourcing team.',
+        'desc': 'How small Gulf brands private-label skincare from China to Saudi and UAE: GMPC/ISO 22716 OEMs, low-MOQ samples, Arabic labels, SFDA/SABER and MOHAP/ECAS compliance, and an all-in cost example — from a China sourcing team.',
         'date': '2026-08-27',
         'canonical': BASE + '/blog/skincare-private-label-china-to-saudi-uae.html',
         'body': skincare_body(),
@@ -818,7 +818,7 @@ BLOG = {
     'gulf-trends-2026': {
         'file': 'blog/gulf-trends-2026-china-sourcing.html',
         'title': 'What Gulf Buyers Are Sourcing From China in 2026: Sand-Gold Jewelry, Moissanite, Beauty Devices & Modest Fashion | SourceToGulf',
-        'desc': 'Data-backed 2026 Gulf sourcing trends mapped to real products: 18K PVD sand-gold jewelry, moissanite, LED beauty devices and modest fashion — MOQs, FOB prices and compliant shipping from a China sourcing team.',
+        'desc': 'Data-backed 2026 Gulf sourcing trends mapped to real products: 18K PVD sand-gold jewelry, moissanite, LED beauty devices and modest fashion — MOQs, FOB prices and compliance from a China sourcing team.',
         'date': '2026-08-27',
         'canonical': BASE + '/blog/gulf-trends-2026-china-sourcing.html',
         'body': trend_body(),
@@ -827,7 +827,7 @@ BLOG = {
     'delivery-journey': {
         'file': 'blog/sample-to-container-delivery-journey.html',
         'title': 'From Sample to Container: China Sourcing Process (2026) | SourceToGulf',
-        'desc': 'The exact delivery path we run for every Gulf order - real sample, private-label packaging, sample shipping, factory stock-up and compliant container loading - mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs.',
+        'desc': 'The exact path we run for every Gulf order - real sample, private-label packaging, samples to you, factory stock-up and compliant container loading - mapped to sand-gold, moissanite, beauty devices and modest fashion, with real MOQs.',
         'date': '2026-08-27',
         'canonical': BASE + '/blog/sample-to-container-delivery-journey.html',
         'body': delivery_body(),

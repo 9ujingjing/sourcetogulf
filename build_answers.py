@@ -84,7 +84,7 @@ def main():
     body = ('<section class="page-hero"><div class="wrap">\n'
         '<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <span>GCC Import Answers</span></div>\n'
         '<h1>GCC Import Answers — clarified for buyers</h1>\n'
-        '<p class="sub">The questions Gulf importers actually ask before they order from China: duties, VAT, SABER, MOQ, shipping time, documents and quality. Clear, sourced answers — not sales talk.</p>\n'
+        '<p class="sub">The questions Gulf buyers actually ask before they order from China: duties, VAT, SABER, MOQ, lead time, documents and quality. Clear, sourced answers — not sales talk.</p>\n'
         '</div></section>\n'
         '<section style="padding-top:0"><div class="wrap narrow">\n'
         + qa_html +
@@ -103,7 +103,7 @@ def main():
 
     url = BASE + '/gcc-import-answers.html'
     title = 'GCC Sourcing Answers: Duties, VAT, SABER & MOQ from China | SourceToGulf'
-    desc = 'Clear answers to the questions Gulf buyers ask before importing from China: import duties, VAT by country, SABER, MOQ, shipping time, documents and quality control.'
+    desc = 'Clear answers to the questions Gulf buyers ask before sourcing from China: duties, VAT by country, SABER, MOQ, lead time, documents and quality control.'
     ld = json.dumps({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
