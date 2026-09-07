@@ -108,6 +108,17 @@ def page(title, desc, canonical_ar, canonical_en, body, faq, extra_ld=None):
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>%s</title>
 <meta name="description" content="%s" />
+<meta property="og:title" content="%s" />
+<meta property="og:description" content="%s" />
+<meta property="og:url" content="%s" />
+<meta property="og:image" content="https://sourcetogulf.com/images/og-default.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SourceToGulf" />
+<meta property="og:locale" content="ar_AE" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="%s" />
+<meta name="twitter:description" content="%s" />
+<meta name="twitter:image" content="https://sourcetogulf.com/images/og-default.jpg" />
 <link rel="canonical" href="%s" />
 <link rel="alternate" hreflang="ar" href="%s" />
 <link rel="alternate" hreflang="en" href="%s" />
@@ -132,6 +143,7 @@ def page(title, desc, canonical_ar, canonical_en, body, faq, extra_ld=None):
 </body>
 </html>
 ''' % (title, desc, canonical_ar, canonical_ar, canonical_en, canonical_en,
+       title, desc, canonical_ar, title, desc,  # og:title, og:desc, og:url, tw:title, tw:desc
        GA4, STYLE, HEADER_AR, body, faq_html, FOOTER_AR, MINI_JS,
        json.dumps(ld_list, ensure_ascii=False, indent=2))
 
