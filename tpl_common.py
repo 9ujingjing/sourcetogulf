@@ -137,6 +137,27 @@ GA4_SNIPPET = (
     '  function gtag(){dataLayer.push(arguments);}\n'
     '  gtag(\'js\', new Date());\n'
     '  gtag(\'config\', \'' + GA4_ID + '\');\n'
+    # WhatsApp 点击追踪：站点上唯一真正的转化动作（询盘入口）。
+    # 用事件委托挂在 document 上，一处代码覆盖全站 740 个 wa.me 链接，
+    # 之后新加的按钮也自动生效。link_location 用于区分点击位置，
+    # 以便判断「AI 引擎带来的人会不会点 WhatsApp」。
+    '  (function(){\n'
+    '    function where(a){\n'
+    '      if(a.classList.contains(\'float-wa\')) return \'float_button\';\n'
+    '      if(a.classList.contains(\'wa-mini\')) return \'product_card\';\n'
+    '      if(a.classList.contains(\'wa-btn\')||a.classList.contains(\'quote-btn\')||a.classList.contains(\'btn-wa\')) return \'cta_button\';\n'
+    '      if(a.closest(\'footer\')) return \'footer\';\n'
+    '      if(a.closest(\'header\')) return \'header\';\n'
+    '      return \'inline\';\n'
+    '    }\n'
+    '    document.addEventListener(\'click\', function(e){\n'
+    '      var t = e.target;\n'
+    '      if(!t || !t.closest) return;\n'
+    '      var a = t.closest(\'a[href*=\"wa.me\"]\');\n'
+    '      if(!a) return;\n'
+    '      try { gtag(\'event\',\'whatsapp_click\',{link_location:where(a),page_path:location.pathname}); } catch(err){}\n'
+    '    }, true);\n'
+    '  })();\n'
     '</script>\n'
 )
 

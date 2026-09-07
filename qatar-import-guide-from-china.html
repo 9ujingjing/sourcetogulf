@@ -280,11 +280,30 @@ tr:nth-child(even) td{background:var(--soft)}
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-76L0Y9SC5D');
+  (function(){
+    function where(a){
+      if(a.classList.contains('float-wa')) return 'float_button';
+      if(a.classList.contains('wa-mini')) return 'product_card';
+      if(a.classList.contains('wa-btn')||a.classList.contains('quote-btn')||a.classList.contains('btn-wa')) return 'cta_button';
+      if(a.closest('footer')) return 'footer';
+      if(a.closest('header')) return 'header';
+      return 'inline';
+    }
+    document.addEventListener('click', function(e){
+      var t = e.target;
+      if(!t || !t.closest) return;
+      var a = t.closest('a[href*="wa.me"]');
+      if(!a) return;
+      try { gtag('event','whatsapp_click',{link_location:where(a),page_path:location.pathname}); } catch(err){}
+    }, true);
+  })();
 </script>
 <link rel="alternate" type="application/rss+xml" title="SourceToGulf" href="https://sourcetogulf.com/rss.xml" />
 </head>
 <body>
 <header>
+
+
 
 
 
@@ -447,6 +466,8 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
 
 
 
@@ -672,6 +693,8 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -711,6 +734,8 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 585 4194 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time</div>
   </div>
+
+
 
 
 
