@@ -15,10 +15,20 @@
 | 品牌 | **SourceToGulf**（缩写 STG） |
 | 法律实体 | Papa Claw Marketing Technology Co., Ltd. ／ 广州爬爬虾营销科技有限公司（广州注册） |
 | 运营基地 | 中国广州；团队亲自跑 **广州 / 义乌 / 佛山** 三大市场 |
-| 合伙人 | **Andrew Tu Dai**（前身 4Kids CML 体系） |
-| 创始人背景 | 在迪拜居住经商 **14 年**；曾 co-founded DAMAC-certified brokerage，出席 Dubai FDI forums，被本地媒体采访 |
+| 三位合伙人 | **Robin Gu（顾晶晶）· Dabie Wong · Andrew Dai** |
+| 创始人背景 | Robin Gu 在迪拜居住经商 **14 年**；曾 co-founded DAMAC-certified brokerage，出席 Dubai FDI forums，被本地媒体采访 |
 | 语言 | 英语 / 阿拉伯语（含语音消息） |
 | 服务市场 | UAE、沙特、科威特、卡塔尔、巴林、阿曼（GCC 六国） |
+
+### 1.1b 三位合伙人（About 页「The people behind SourceToGulf」区块即以此为准）
+
+| 姓名 | 头衔 | 对外一句话（英文 / 阿语已成文，见 about.html） |
+|---|---|---|
+| **Robin Gu（顾晶晶）** | Founder | Founder · Guangzhou. 14 years living and working in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, interviewed by local media. Arabic & English. |
+| **Andrew Dai** | Partner | Partner · carries the 36-year manufacturing and export lineage: Royal Palm International (1990), 4Kids Company Manufacturing, Walmart Global Best Supplier 2005, Michaels and Carrefour programs. |
+| **Dabie Wong** | Partner | Partner · Guangzhou. ⚠️ **分工/头衔待用户补充** —— 在补充前，站上只写 "Partner · Guangzhou"，不编造职责 |
+
+> ⚠️ 记录规范：任何人的**职责描述必须有事实依据**。不知道就只写姓名 + Partner + 城市。
 
 ### 1.2 公司沿革（36 年）
 

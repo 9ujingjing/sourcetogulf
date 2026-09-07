@@ -1,8 +1,10 @@
 {
-  "pending": [],
+  "pending": [
+    "https://sourcetogulf.com/about.html",
+    "https://sourcetogulf.com/llms.txt"
+  ],
   "completed": [
     "https://sourcetogulf.com/",
-    "https://sourcetogulf.com/about.html",
     "https://sourcetogulf.com/alibaba-vs-sourcing-agent.html",
     "https://sourcetogulf.com/ar/",
     "https://sourcetogulf.com/ar/bahrain-import-guide-from-china.html",
@@ -71,7 +73,6 @@
     "https://sourcetogulf.com/solutions.html",
     "https://sourcetogulf.com/sourcing-agent-vs-trading-company.html",
     "https://sourcetogulf.com/uae-import-guide-from-china.html",
-    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html",
-    "https://sourcetogulf.com/llms.txt"
+    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html"
   ]
 }
