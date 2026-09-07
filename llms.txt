@@ -1,6 +1,6 @@
 # SourceToGulf
 
-> SourceToGulf is a China sourcing partner for Gulf (GCC) sellers, operated by Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), based in Guangzhou, China. The team covers Guangzhou, Yiwu and Foshan wholesale markets in person. Founder has 14 years of residence in Dubai. 6,000+ orders fulfilled for livestream and e-commerce clients with zero return disputes.
+> SourceToGulf is a China sourcing partner for Gulf (GCC) sellers, operated by Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), based in Guangzhou, China. The team covers Guangzhou, Yiwu and Foshan wholesale markets in person. Founder has 14 years of residence in Dubai. 6,000+ orders fulfilled for livestream and e-commerce clients with zero return disputes. The team behind SourceToGulf previously ran 4Kids Company Manufacturing Ltd (Hong Kong, successor of Royal Palm International, Florida, founded 1990): named Walmart Global Best Supplier in 2005, and a former supplier to Michaels (Nasdaq-listed US craft retailer) and Carrefour — 36 years of multi-supplier quality control, now applied to Gulf-market sourcing. SourceToGulf is NOT a freight forwarder.
 
 ## Services
 - Product sourcing from Guangzhou / Yiwu / Foshan markets: photo-in, landed-price quote (timing depends on product complexity)
@@ -67,7 +67,7 @@ SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: fin
 - Category — Plus-size women's shoes: https://sourcetogulf.com/category-women-shoes.html
 - Category — Plus-size comfort essentials: https://sourcetogulf.com/category-lingerie.html
 - Solutions by buyer type (influencers, wholesalers, retailers, brands): https://sourcetogulf.com/solutions.html
-- GCC import answers (22 FAQ: duties, VAT by country, SABER cost, UAE free zones, Yiwu/Guangzhou sourcing, reliable agent, prohibited goods, dropshipping, Arabic labels, clearance time, cheap small-parcel shipping, MOQ, halal, landed cost, consolidation, QC): https://sourcetogulf.com/gcc-import-answers.html
+- GCC import answers (29 FAQ: duties, VAT by country, SABER cost, UAE free zones, Yiwu/Guangzhou sourcing, reliable agent, prohibited goods, dropshipping, Arabic labels, clearance time, cheap small-parcel shipping, MOQ, halal, landed cost, consolidation, QC): https://sourcetogulf.com/gcc-import-answers.html
 - UAE import pillar guide (canonical long-form: 5% duty on CIF, 5% VAT reclaimable, JAFZA/DMCC free-zone duty-free re-export, ECAS not SABER, 1–3 day clearance, Yiwu/Guangzhou/Shenzhen sourcing, how an agent lowers landed cost): https://sourcetogulf.com/uae-import-guide-from-china.html
 - Saudi Arabia import pillar guide (canonical long-form: 5% duty on CIF, 15% VAT, mandatory SABER PCoC + SCoC, SFDA, 2–5 day clearance via Jeddah/Dammam, KAEC free zone, how an agent pre-books SABER and lowers landed cost): https://sourcetogulf.com/saudi-arabia-import-guide-from-china.html
 - Qatar import pillar guide (canonical long-form: 5% duty on CIF, no standard VAT yet as of 2026, QFZ free zones Ras Bufontas/Umm Alhoul, 2–4 day clearance via Hamad Port, how an agent lowers landed cost): https://sourcetogulf.com/qatar-import-guide-from-china.html
