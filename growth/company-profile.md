@@ -26,7 +26,7 @@
 |---|---|---|
 | **Robin Gu（顾晶晶）** | Founder | Founder · Guangzhou. 14 years living and working in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, interviewed by local media. Arabic & English. |
 | **Andrew Dai** | Partner | Partner · carries the 36-year manufacturing and export lineage: Royal Palm International (1990), 4Kids Company Manufacturing, Walmart Global Best Supplier 2005, Michaels and Carrefour programs. |
-| **Dabie Wong** | Partner | Partner · Guangzhou. ⚠️ **分工/头衔待用户补充** —— 在补充前，站上只写 "Partner · Guangzhou"，不编造职责 |
+| **Dabie Wong** | Partner | Partner · runs our **Hong Kong supply line**. Hong Kong creators and influencers buy through her — we ship **3,000+ orders a month** to Hong Kong. |
 
 > ⚠️ 记录规范：任何人的**职责描述必须有事实依据**。不知道就只写姓名 + Partner + 城市。
 
@@ -67,7 +67,8 @@
 
 ### 1.5 可引用数据
 
-- **6,000+ 单** 直播与电商客户订单，**零退货争议**
+- **香港线：每月 3,000+ 单**（Dabie Wong 负责；香港网红/influencer 客户采购）—— 2026-09-07 新确认，**当前最有说服力的规模数据**
+- **6,000+ 单** 直播与电商客户订单，**零退货争议** —— ⚠️ **口径待核对**：若香港线已是 3,000+/月，则"累计 6,000+"明显偏小或口径不同（累计 vs 月度？含哪些客户？）。**在用户确认前不要改这个数字，也不要与香港数据并排放**（避免自相矛盾被 AI/客户抓住）
 - **139 个真实 SKU**（100% 带阿语名），含真实 MOQ / FOB / all-in 价
 - 售后：确认缺陷 **7 天内免费补发或退款**
 - 站点：76 个页面、**14 个 SSR 阿语页**、**367 条 FAQ**、sitemap 77 条 URL
