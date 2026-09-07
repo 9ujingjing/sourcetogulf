@@ -164,6 +164,9 @@ GA4_SNIPPET = (
 # RSS 订阅链接（全站统一注入，作为内容新鲜度信号；P3 修复 rss.xml 缺失）
 RSS_LINK = '<link rel="alternate" type="application/rss+xml" title="SourceToGulf" href="https://sourcetogulf.com/rss.xml" />\n'
 
+# 默认社交分享图（og:image / twitter:image）。1200x630，品牌色。无 per-page 图时用此。
+OG_IMAGE = 'https://sourcetogulf.com/images/og-default.jpg'
+
 def wa_link(text):
     """生成 WhatsApp 深链（已 encode）"""
     from urllib.parse import quote
@@ -206,6 +209,17 @@ def page_shell(title, description, canonical, body_inner, json_ld=None, extra_he
         '<meta name="viewport" content="width=device-width, initial-scale=1.0" />\n'
         '<title>' + title + '</title>\n'
         '<meta name="description" content="' + description + '" />\n'
+        '<meta property="og:title" content="' + title + '" />\n'
+        '<meta property="og:description" content="' + description + '" />\n'
+        '<meta property="og:url" content="' + canonical + '" />\n'
+        '<meta property="og:image" content="' + OG_IMAGE + '" />\n'
+        '<meta property="og:type" content="website" />\n'
+        '<meta property="og:site_name" content="SourceToGulf" />\n'
+        '<meta property="og:locale" content="en_US" />\n'
+        '<meta name="twitter:card" content="summary_large_image" />\n'
+        '<meta name="twitter:title" content="' + title + '" />\n'
+        '<meta name="twitter:description" content="' + description + '" />\n'
+        '<meta name="twitter:image" content="' + OG_IMAGE + '" />\n'
         '<link rel="canonical" href="' + canonical + '" />\n'
         '<link rel="alternate" hreflang="en" href="' + canonical + '" />\n'
         '<link rel="alternate" hreflang="x-default" href="' + canonical + '" />\n'
