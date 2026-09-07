@@ -300,6 +300,22 @@ tr:nth-child(even) td{background:var(--soft)}
 @media(max-width:860px){.team-grid{grid-template-columns:1fr;gap:24px}.team-photo img{border-radius:14px}}
 /* ===== inline SVG flags (replace flag emoji — Windows cannot render them) ===== */
 .flag{width:1.2em;height:.8em;display:inline-block;vertical-align:-.12em;border-radius:2px;flex-shrink:0;box-shadow:0 0 0 .5px rgba(0,0,0,.14)}
+
+/* ===== heritage timeline (about page) ===== */
+.tl{margin:22px 0 34px}
+.tl-item{display:flex;gap:18px;padding:12px 0;border-bottom:1px solid rgba(11,43,77,.08)}
+.tl-y{min-width:86px;font-weight:700;color:var(--gold,#C9A24B);font-size:1.05rem}
+.tl-t{flex:1}
+.hl{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 34px}
+.hl-item{flex:1 1 200px;border:1px solid rgba(11,43,77,.12);border-radius:12px;padding:14px 18px;background:#fff}
+.hl-item strong{display:block;font-size:1.05rem;color:var(--navy,#0B2B4D)}
+.hl-item span{font-size:.85rem;color:#5F6661}
+.doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 12px}
+.doc-grid figure{margin:0;border:1px solid rgba(11,43,77,.12);border-radius:12px;overflow:hidden;background:#fff}
+.doc-grid img{width:100%;height:auto;display:block}
+.doc-grid figcaption{padding:10px 14px;font-size:.85rem;color:#444}
+@media(max-width:720px){.doc-grid{grid-template-columns:1fr}}
+.note{font-size:.82rem;color:#7A827D}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SourceToGulf", "legalName": "Papa Claw Marketing Technology Co., Ltd.", "alternateName": "广州爬爬虾营销科技有限公司", "url": "https://sourcetogulf.com", "email": "info@sourcetogulf.com", "telephone": "+971585854194", "description": "China sourcing agent for the Middle East: product sourcing, quality inspection, custom branding, consolidation and door-to-door shipping from Guangzhou & Yiwu to the GCC.", "address": {"@type": "PostalAddress", "addressLocality": "Guangzhou", "addressCountry": "CN"}, "areaServed": ["AE", "SA", "KW", "QA", "BH", "OM"], "knowsLanguage": ["en", "ar", "zh"], "sameAs": ["https://www.facebook.com/profile.php?id=61591873976787", "https://www.tiktok.com/@papaclawsourcetogulf"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does your pricing work?", "acceptedAnswer": {"@type": "Answer", "text": "One landed price per piece — product, inspection, packing, shipping, customs and VAT included. No separate commission, no hidden fees. You know your exact margin before you pay."}}, {"@type": "Question", "name": "What is the minimum order?", "acceptedAnswer": {"@type": "Answer", "text": "Trial orders start from around $500 — or even just samples first. Test the product and test us before you scale."}}, {"@type": "Question", "name": "How long does shipping to the Gulf take?", "acceptedAnswer": {"@type": "Answer", "text": "Door to door: air freight 7–10 days, sea freight 25–35 days. Customs, duty and VAT are handled and included in your quote."}}, {"@type": "Question", "name": "Do you ship to Saudi Arabia? What about SABER?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — all six GCC countries door to door. For Saudi Arabia we handle SABER registration for regulated product categories as part of the quote."}}, {"@type": "Question", "name": "What if goods arrive damaged or wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Send photos within 7 days: confirmed defects are replaced free with shipping on us, or refunded — your choice. Wrong items or short counts are reshipped at our cost."}}, {"@type": "Question", "name": "How do I know you're not a scam?", "acceptedAnswer": {"@type": "Answer", "text": "Video call our office before paying anything. Every order gets a stamped invoice from our registered Guangzhou company, and photos/videos of your actual goods before shipping. Scammers hide — we don't."}},{"@type": "Question", "name": "Do you accept COD?", "acceptedAnswer": {"@type": "Answer", "text": "No. Orders start with a deposit, we source and confirm your stock, then you pay the balance before we ship. Payment by bank transfer, Payoneer, USDT or Alipay."}},{"@type": "Question", "name": "Can I return goods for non-quality reasons?", "acceptedAnswer": {"@type": "Answer", "text": "No. We don't accept change-of-mind returns. Quality issues are fixed at our cost. If a return is agreed for any reason, all return shipping costs are paid by the buyer."}}]}</script>
@@ -307,6 +323,8 @@ tr:nth-child(even) td{background:var(--soft)}
 </head>
 <body>
 <header>
+
+
 
 
 
@@ -476,6 +494,8 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
 
 
 
@@ -718,7 +738,8 @@ tr:nth-child(even) td{background:var(--soft)}
         <li data-en="14 years living and working in Dubai, so we understand how Gulf buyers actually buy." data-ar="١٤ سنة من العيش والعمل في دبي، فنحن نفهم كيف يشتري المشتري الخليجي فعلياً.">14 years living and working in Dubai, so we understand how Gulf buyers actually buy.</li>
         <li data-en="We communicate in Arabic and English, including voice notes." data-ar="نتواصل بالعربية والإنجليزية، بما في ذلك الرسائل الصوتية.">We communicate in Arabic and English, including voice notes.</li>
         <li data-en="You approve your actual goods on camera before anything ships." data-ar="تعتمد بضاعتك الفعلية بالكاميرا قبل أي شحن.">You approve your actual goods on camera before anything ships.</li>
-      </ul>
+            <li data-en="Former Walmart Global Best Supplier (2005): our team ran 4Kids Manufacturing, also a former supplier to Michaels and Carrefour — 36 years in China trade." data-ar="أفضل مورّد عالمي سابق لولمارك (٢٠٠٥): أدر فريقنا شركة 4Kids للتصنيع، كما كنا مورّداً سابقاً لمايكلز وكارفور — ٣٦ عاماً في التجارة مع الصين.">Former Walmart Global Best Supplier (2005): our team ran 4Kids Manufacturing, also a former supplier to Michaels and Carrefour — 36 years in China trade.</li>
+          </ul>
     </div>
   </div>
 </div></section>
@@ -824,6 +845,8 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -863,6 +886,8 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 585 4194 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time</div>
   </div>
+
+
 
 
 

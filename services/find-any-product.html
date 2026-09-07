@@ -298,6 +298,22 @@ tr:nth-child(even) td{background:var(--soft)}
 @media(max-width:860px){.team-grid{grid-template-columns:1fr;gap:24px}.team-photo img{border-radius:14px}}
 /* ===== inline SVG flags (replace flag emoji — Windows cannot render them) ===== */
 .flag{width:1.2em;height:.8em;display:inline-block;vertical-align:-.12em;border-radius:2px;flex-shrink:0;box-shadow:0 0 0 .5px rgba(0,0,0,.14)}
+
+/* ===== heritage timeline (about page) ===== */
+.tl{margin:22px 0 34px}
+.tl-item{display:flex;gap:18px;padding:12px 0;border-bottom:1px solid rgba(11,43,77,.08)}
+.tl-y{min-width:86px;font-weight:700;color:var(--gold,#C9A24B);font-size:1.05rem}
+.tl-t{flex:1}
+.hl{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 34px}
+.hl-item{flex:1 1 200px;border:1px solid rgba(11,43,77,.12);border-radius:12px;padding:14px 18px;background:#fff}
+.hl-item strong{display:block;font-size:1.05rem;color:var(--navy,#0B2B4D)}
+.hl-item span{font-size:.85rem;color:#5F6661}
+.doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 12px}
+.doc-grid figure{margin:0;border:1px solid rgba(11,43,77,.12);border-radius:12px;overflow:hidden;background:#fff}
+.doc-grid img{width:100%;height:auto;display:block}
+.doc-grid figcaption{padding:10px 14px;font-size:.85rem;color:#444}
+@media(max-width:720px){.doc-grid{grid-template-columns:1fr}}
+.note{font-size:.82rem;color:#7A827D}
 </style>
 <script type="application/ld+json">
 {
@@ -342,6 +358,8 @@ tr:nth-child(even) td{background:var(--soft)}
 </head>
 <body>
 <header>
+
+
 
 
 
@@ -511,6 +529,8 @@ tr:nth-child(even) td{background:var(--soft)}
     <a href="mailto:info@sourcetogulf.com?subject=Wholesale%20Order" data-en="For Wholesale & Bulk Orders" data-ar="لطلبات الجملة">For Wholesale &amp; Bulk Orders</a>
     <a href="mailto:info@sourcetogulf.com?subject=Quote%20Request" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
   </div>
+
+
 
 
 

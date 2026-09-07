@@ -1,10 +1,14 @@
 {
-  "pending": [],
-  "completed": [
+  "pending": [
+    "https://sourcetogulf.com/about.html",
     "https://sourcetogulf.com/",
+    "https://sourcetogulf.com/llms.txt"
+  ],
+  "completed": [
     "https://sourcetogulf.com/alibaba-vs-sourcing-agent.html",
     "https://sourcetogulf.com/ar/",
     "https://sourcetogulf.com/ar/bahrain-import-guide-from-china.html",
+    "https://sourcetogulf.com/ar/for-first-time-buyers.html",
     "https://sourcetogulf.com/ar/for-influencers.html",
     "https://sourcetogulf.com/ar/for-moms.html",
     "https://sourcetogulf.com/ar/for-resellers.html",
@@ -43,6 +47,7 @@
     "https://sourcetogulf.com/category-tech.html",
     "https://sourcetogulf.com/category-women-shoes.html",
     "https://sourcetogulf.com/composite-partner-vs-single-vendors.html",
+    "https://sourcetogulf.com/for-first-time-buyers.html",
     "https://sourcetogulf.com/for-influencers.html",
     "https://sourcetogulf.com/for-moms.html",
     "https://sourcetogulf.com/for-resellers.html",
@@ -52,7 +57,6 @@
     "https://sourcetogulf.com/google-ads/phone-accessories.html",
     "https://sourcetogulf.com/google-ads/ramadan.html",
     "https://sourcetogulf.com/kuwait-import-guide-from-china.html",
-    "https://sourcetogulf.com/llms.txt",
     "https://sourcetogulf.com/oman-import-guide-from-china.html",
     "https://sourcetogulf.com/partners.html",
     "https://sourcetogulf.com/pricing.js",
@@ -61,6 +65,7 @@
     "https://sourcetogulf.com/rss.xml",
     "https://sourcetogulf.com/saudi-arabia-import-guide-from-china.html",
     "https://sourcetogulf.com/services/consolidation-shipping-china-gulf.html",
+    "https://sourcetogulf.com/services/find-any-product.html",
     "https://sourcetogulf.com/services/product-sourcing-china.html",
     "https://sourcetogulf.com/shipping/china-to-saudi-arabia.html",
     "https://sourcetogulf.com/shipping/china-to-uae.html",
@@ -68,9 +73,6 @@
     "https://sourcetogulf.com/solutions.html",
     "https://sourcetogulf.com/sourcing-agent-vs-trading-company.html",
     "https://sourcetogulf.com/uae-import-guide-from-china.html",
-    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html",
-    "https://sourcetogulf.com/for-first-time-buyers.html",
-    "https://sourcetogulf.com/ar/for-first-time-buyers.html",
-    "https://sourcetogulf.com/services/find-any-product.html"
+    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html"
   ]
 }
