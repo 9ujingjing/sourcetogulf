@@ -47,11 +47,12 @@ def to_arabic(html):
 HEADER_AR = to_arabic(re.search(r'<header>[\s\S]*?</header>', _HTML).group(0))
 FOOTER_AR = to_arabic(re.search(r'<footer>[\s\S]*?</footer>', _HTML).group(0))
 
-GA4 = ('<!-- Google tag (gtag.js) GA4 -->\n'
-       '<script async src="https://www.googletagmanager.com/gtag/js?id=G-76L0Y9SC5D"></script>\n'
-       '<script>\n  window.dataLayer = window.dataLayer || [];\n'
-       '  function gtag(){dataLayer.push(arguments);}\n'
-       "  gtag('js', new Date());\n  gtag('config', 'G-76L0Y9SC5D');\n</script>\n")
+# 复用 tpl_common 的唯一定义。此前这里存了一份硬编码副本，导致主源头更新后
+# 阿语页不同步（WhatsApp 点击追踪就漏在了 13 个阿语页上）。单一真相源，勿再复制。
+# 注意：文件下方的 from tpl_common import 在本行之后才执行，故此处需单独导入。
+from tpl_common import GA4_SNIPPET
+
+GA4 = GA4_SNIPPET
 
 FLOAT_BTN = ('<a class="float-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener" aria-label="واتساب">💬</a>\n'
              '<button id="toTop" aria-label="العودة للأعلى">↑</button>')
