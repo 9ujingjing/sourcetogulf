@@ -97,7 +97,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(251,249,245,.95);backdr
 .img-slot.tall{aspect-ratio:3/3.4}
 /* stats */
 .stats-band{background:var(--teal-dark);color:#EDE7D8;padding:36px 0}
-.stats-band .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+.stats-band .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;text-align:center}
 .stats-band .num{font-size:clamp(22px,3.2vw,32px);font-weight:800;color:#fff}
 .stats-band .lbl{font-size:13px;opacity:.85;margin-top:3px}
 /* sections */
@@ -356,6 +356,8 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
 <symbol id="f-cn" viewBox="0 0 24 16"><title>China</title><rect width="24" height="16" fill="#DE2910"/><path d="M5 3l.9 2.1 2.3.2-1.8 1.5.6 2.2L5 7.7 3 9l.6-2.2L1.8 5.3l2.3-.2z" fill="#FFDE00"/></symbol>
 <symbol id="f-ae" viewBox="0 0 24 16"><title>United Arab Emirates</title><rect width="24" height="16" fill="#fff"/><rect width="6" height="16" fill="#CE1126"/><rect x="6" width="18" height="5.34" fill="#009739"/><rect x="6" y="10.66" width="18" height="5.34" fill="#000"/></symbol>
@@ -545,6 +547,8 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
 </header>
 
 
@@ -559,20 +563,21 @@ tr:nth-child(even) td{background:var(--soft)}
     <div class="voice" data-en="🎙️ Voice notes welcome — we reply within 2 hours (Gulf time), Sunday to Thursday" data-ar="🎙️ رسائلك الصوتية مرحّب بها — نرد خلال ساعتين بتوقيت الخليج، أحد إلى خميس">🎙️ Voice notes welcome — we reply within 2 hours (Gulf time), Sunday to Thursday</div>
     <div class="hero-cta">
       <a class="wa-btn" href="https://wa.me/971585854194" target="_blank" rel="noopener" data-en="💬 WhatsApp: +971 58 585 4194" data-ar="💬 واتساب: +971 58 585 4194">💬 WhatsApp: +971 58 585 4194</a>
-      <a class="btn-ghost" href="#calculator" data-en="Try the landed cost calculator ↓" data-ar="جرّب حاسبة التكلفة الشاملة ↓">Try the landed cost calculator ↓</a>
+      <a class="btn-ghost" href="#calculator" data-en="Try the all-in cost calculator ↓" data-ar="جرّب حاسبة التكلفة الشاملة ↓">Try the all-in cost calculator ↓</a>
     </div>
   </div>
   <div class="img-slot tall">
-  <div class="hint">📷<b data-en="Our founder at Yiwu Global Digital Trade Center — we source where suppliers actually are" data-ar="مؤسستنا في مركز ييوو العالمي للتجارة الرقمية — نورّد من حيث يتواجد الموردون فعلاً">Photo coming: the founder inspecting goods at our Guangzhou warehouse</b><span dir="ltr">images/hero.jpg</span></div>
+  <div class="hint">📷<b data-en="Our founder at Yiwu Global Digital Trade Center — we source where suppliers actually are" data-ar="مؤسستنا في مركز ييوو العالمي للتجارة الرقمية — نورّد من حيث يتواجد الموردون فعلاً">Our founder at Yiwu Global Digital Trade Center — we source where suppliers actually are</b></div>
   <img src="/images/hero.jpg" alt="SourceToGulf founder at Yiwu Global Digital Trade Center, China sourcing market" loading="lazy" onerror="this.remove()">
 </div>
 </div></div>
 
 <div class="stats-band"><div class="wrap grid">
+  <div><div class="num">36</div><div class="lbl" data-en="Years in China trade (since 1990)" data-ar="سنة في التجارة مع الصين (منذ ١٩٩٠)">Years in China trade (since 1990)</div></div>
   <div><div class="num">14</div><div class="lbl" data-en="Years living in Dubai" data-ar="سنة في دبي">Years living in Dubai</div></div>
-  <div><div class="num">6,000+</div><div class="lbl" data-en="Orders served for overseas clients" data-ar="طلب لعملاء في الخارج">Orders served for overseas clients</div></div>
+  <div><div class="num">3,000+</div><div class="lbl" data-en="Orders shipped every month" data-ar="طلب يُشحن كل شهر">Orders shipped every month</div></div>
   <div><div class="num">3</div><div class="lbl" data-en="Sourcing markets: Guangzhou · Yiwu · Foshan" data-ar="أسواق توريد: قوانغتشو · ييوو · فوشان">Sourcing markets: Guangzhou · Yiwu · Foshan</div></div>
-  <div><div class="num" data-en="1 price" data-ar="سعر واحد">1 price</div><div class="lbl" data-en="Landed, no hidden fees" data-ar="شامل، بلا رسوم خفية">Landed, no hidden fees</div></div>
+  <div><div class="num" data-en="1 price" data-ar="سعر واحد">1 price</div><div class="lbl" data-en="All-in, no hidden fees" data-ar="شامل، بلا رسوم خفية">All-in, no hidden fees</div></div>
 </div></div>
 
 <section id="services"><div class="wrap">
@@ -671,7 +676,7 @@ tr:nth-child(even) td{background:var(--soft)}
   <div class="sec-head center">
     <span class="kicker" data-en="Written policy" data-ar="سياسة مكتوبة">Written policy</span>
     <h2 data-en="“What if something arrives wrong?”" data-ar="“لو وصلك شي غلط؟”">“What if something arrives wrong?”</h2>
-    <p data-en="With most suppliers: nothing happens. With us — the standard behind 6,000+ orders with zero return disputes:" data-ar="مع أغلب المورّدين: لا شي يصير. معنا — المعيار اللي وراه أكثر من ٦٠٠٠ طلب بدون ولا نزاع:">With most suppliers: nothing happens. With us — the standard behind 6,000+ orders with zero return disputes:</p>
+    <p data-en="With most suppliers: nothing happens. With us — the standard behind 3,000+ orders a month and zero return disputes:" data-ar="مع أغلب المورّدين: لا شي يصير. معنا — المعيار اللي وراه أكثر من ٣٠٠٠ طلب شهرياً وصفر نزاعات إرجاع:">With most suppliers: nothing happens. With us — the standard behind 3,000+ orders a month and zero return disputes:</p>
   </div>
   <div class="grid3">
     <div class="card"><span class="em">🔄</span><h3 data-en="Defective or damaged?" data-ar="عيب مصنع أو تلف؟">Defective or damaged?</h3><p data-en="Photos within 7 days of delivery → free replacement, shipping on us — or a refund for that portion. Your choice." data-ar="صور خلال ٧ أيام من الاستلام ← تعويض مجاني والشحن علينا — أو نرجع قيمتها. الخيار لك.">Photos within 7 days of delivery → free replacement, shipping on us — or a refund for that portion. Your choice.</p></div>
@@ -691,7 +696,7 @@ tr:nth-child(even) td{background:var(--soft)}
     <div class="card"><span class="em">💎</span><h3 data-en="Jewelry" data-ar="مجوهرات">Jewelry</h3><p style="color:var(--teal);font-weight:800">1,000+ orders</p><p data-en="Sourced from Panyu, shipped overseas." data-ar="من بانيو، شُحنت للخارج.">Sourced from Panyu, shipped overseas.</p></div>
     <div class="card"><span class="em">👙</span><h3 data-en="Lingerie" data-ar="ملابس داخلية">Lingerie</h3><p style="color:var(--teal);font-weight:800">3,000+ orders</p><p data-en="Consolidated from multiple suppliers, zero returns abroad." data-ar="مجمّعة من عدة مورّدين، صفر إرجاع في الخارج.">Consolidated from multiple suppliers, zero returns abroad.</p></div>
   </div>
-  <p style="text-align:center;margin-top:20px;color:var(--muted);font-size:14.5px" data-en="Our clients sell on Instagram, TikTok, Salla and Zid — we stay invisible behind their brands." data-ar="عملاؤنا يبيعون على إنستغرام وتيك توك وسلة وزد — ونبقى خلف الكواليس.">Our clients sell on Instagram, TikTok, Salla and Zid — we stay invisible behind their brands.</p>
+  <p style="text-align:center;margin-top:20px;color:var(--muted);font-size:14.5px" data-en="Our clients sell on Instagram, TikTok, Salla and Zid — we stay invisible behind their brands." data-ar="عملاؤنا يبيعون على إنستغرام وتيك توك وسلة وزد — ونشحن أكثر من ٣٠٠٠ طلب شهرياً لصنّاع المحتوى في هونغ كونغ. ونبقى خلف الكواليس.">Our clients sell on Instagram, TikTok, Salla and Zid — and we ship 3,000+ orders a month to Hong Kong creators. We stay invisible behind their brands.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -856,6 +861,8 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 
+
+
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -895,6 +902,8 @@ tr:nth-child(even) td{background:var(--soft)}
     </div>
     <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 585 4194 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time</div>
   </div>
+
+
 
 
 

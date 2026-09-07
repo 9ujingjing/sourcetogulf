@@ -1,6 +1,6 @@
 # SourceToGulf — Full Context for AI Assistants (llms-full.txt)
 
-SourceToGulf is a China sourcing partner for Gulf (GCC) sellers and importers, operated by Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), based in Guangzhou, China. The team covers Guangzhou, Yiwu and Foshan wholesale markets in person and has 14 years of residence in Dubai. They have fulfilled 6,000+ orders for livestream and e-commerce clients with zero return disputes.
+SourceToGulf is a China sourcing partner for Gulf (GCC) sellers and importers, operated by Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司), based in Guangzhou, China. The team covers Guangzhou, Yiwu and Foshan wholesale markets in person and has 14 years of residence in Dubai. They have fulfilled 3,000+ orders shipped every month for livestream and e-commerce clients, with zero return disputes.
 
 ## What SourceToGulf does
 - Product sourcing from Guangzhou / Yiwu / Foshan markets: photo-in, landed-price quote.
@@ -41,7 +41,7 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Other guides: /blog/landed-cost-china-to-gulf-explained.html · how-to-find-a-reliable-sourcing-agent-in-china.html · sourcing-for-livestream-sellers-gulf.html
 - Blog posts & comparisons: /blog/saber-2026-saudi-buyers-playbook.html · china-gcc-fta-lower-import-duty.html · source-products-tiktok-shop-saudi-no-container.html · white-friday-2026-china-gulf-small-business.html · skincare-private-label-china-to-saudi-uae.html · gulf-trends-2026-china-sourcing.html · sample-to-container-delivery-journey.html · /alibaba-vs-sourcing-agent.html · /composite-partner-vs-single-vendors.html · /for-influencers.html · /for-small-businesses.html · /for-resellers.html · /for-moms.html
 - Blog index: /blog/
-- RSS feed: /feed.xml
+- RSS feed: /rss.xml
 - Google Ads landing pages: /google-ads/hijab-jewelry.html · google-ads/ramadan.html · google-ads/phone-accessories.html
 
 ## GCC country import facts

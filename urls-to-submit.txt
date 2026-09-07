@@ -30,7 +30,7 @@ https://sourcetogulf.com/category-home.html
 https://sourcetogulf.com/category-beauty-toys.html
 https://sourcetogulf.com/solutions.html
 https://sourcetogulf.com/gcc-import-answers.html
-https://sourcetogulf.com/feed.xml
+https://sourcetogulf.com/rss.xml
 https://sourcetogulf.com/google-ads/hijab-jewelry.html
 https://sourcetogulf.com/google-ads/ramadan.html
 https://sourcetogulf.com/google-ads/phone-accessories.html
