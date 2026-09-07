@@ -1,7 +1,13 @@
 {
-  "pending": [],
+  "pending": [
+    "https://sourcetogulf.com/for-first-time-buyers.html",
+    "https://sourcetogulf.com/ar/for-first-time-buyers.html",
+    "https://sourcetogulf.com/services/find-any-product.html"
+  ],
   "completed": [
+    "https://sourcetogulf.com/",
     "https://sourcetogulf.com/alibaba-vs-sourcing-agent.html",
+    "https://sourcetogulf.com/ar/",
     "https://sourcetogulf.com/ar/bahrain-import-guide-from-china.html",
     "https://sourcetogulf.com/ar/for-influencers.html",
     "https://sourcetogulf.com/ar/for-moms.html",
@@ -45,6 +51,7 @@
     "https://sourcetogulf.com/for-moms.html",
     "https://sourcetogulf.com/for-resellers.html",
     "https://sourcetogulf.com/for-small-businesses.html",
+    "https://sourcetogulf.com/gcc-import-answers.html",
     "https://sourcetogulf.com/google-ads/hijab-jewelry.html",
     "https://sourcetogulf.com/google-ads/phone-accessories.html",
     "https://sourcetogulf.com/google-ads/ramadan.html",
@@ -65,9 +72,6 @@
     "https://sourcetogulf.com/solutions.html",
     "https://sourcetogulf.com/sourcing-agent-vs-trading-company.html",
     "https://sourcetogulf.com/uae-import-guide-from-china.html",
-    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html",
-    "https://sourcetogulf.com/gcc-import-answers.html",
-    "https://sourcetogulf.com/ar/",
-    "https://sourcetogulf.com/"
+    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html"
   ]
 }

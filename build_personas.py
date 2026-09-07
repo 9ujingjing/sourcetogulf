@@ -38,6 +38,7 @@ PERSONA_LINKS = [
     ("for-small-businesses.html", "🏢 Small Business Owners"),
     ("for-moms.html", "👩 Side-Hustle Moms"),
     ("for-resellers.html", "🛒 Resellers & Small Sellers"),
+    ("for-first-time-buyers.html", "🌱 First-Time Buyers"),
 ]
 
 def persona_strip(active):
@@ -277,6 +278,30 @@ PERSONAS = [
    ("Is this drop-shipping?",
     "We're a sourcing partner, not a drop-shipper. You order low-MOQ batches (with samples "
     "first), and we ship them to you or consolidate for Gulf delivery."),
+ ],
+},
+{
+ "slug": 'for-first-time-buyers.html',
+ "desc": 'First time sourcing from China? Start with one or two products at low MOQ, approve physical samples first, and scale only what sells — no container needed.',
+ "title": 'First-Time Buyers: Start Small from China | SourceToGulf',
+ "h1": "Start small — you don't need a container",
+ "sub": 'New to sourcing from China? Test one or two products with small minimums, see and approve real samples first, and only scale the ones that actually sell.',
+ "cap": 'First-Time Buyer',
+ "pain": [
+   ("I don't have much money to start", "You don't need thousands. Curated hot picks start at 10–50 pieces from about US$2 per piece at factory price, so a first test order often comes to a few hundred dollars of goods. Freight, duty and VAT are quoted up front, so there is no surprise at the end."),
+   ("I don't know what to sell", 'Tell us your country and who you sell to — shop, Instagram, TikTok Shop or marketplace — and we shortlist two or three products with MOQ, factory price and the retail range similar sellers charge. We also flag anything needing SABER, SFDA or ECAS before you commit.'),
+   ("I'm worried about being stuck with stock", 'Order samples first, approve them on video, then place the small batch. If it sells, reorder. Nothing pushes you into a container before you have proven demand.'),
+   ('Suppliers ignore small orders', 'Most factories will not reply below container quantities. We already buy from them, so your small order gets produced and inspected the same way a large one would.'),
+ ],
+ "cats": ['home-fragrance', 'fashion', 'beauty-toys'],
+ "photo": ('/images/cardboard-sorting.jpg', 'Consolidated cartons being sorted and checked at the SourceToGulf warehouse in Guangzhou', 'Small orders from different suppliers, sorted and checked in our Guangzhou warehouse before they ship as one.'),
+ "faq": [
+   ('What is the smallest order I can place?', 'It depends on the product. Curated hot picks start at 10–50 pieces; fully custom or private-label production is usually higher. The MOQ is shown on every product so you can plan your cash flow before committing.'),
+   ('Can I test a few different products in one shipment?', 'Yes. You can order samples or small batches from several Guangzhou, Yiwu and Foshan suppliers and we consolidate them into one shipment — one freight charge, one customs entry and one box to compare side by side.'),
+   ("What if the products don't sell?", 'That is exactly why we start small. Test 20–50 units, learn what your market actually buys, then put your money behind the winners instead of gambling on a full container.'),
+   ('Do I need a trade license or a registered company to start?', "To clear customs in your own name you generally need a trade license in the destination country. If you don't have one yet, tell us — many first-time buyers start through a licensed forwarder or a partner entity, and we will suggest the simplest route for you."),
+   ('How do I know I am not being overcharged?', 'We show you the factory (FOB) price on every product and quote one all-in price that bundles inspection, packing, consolidation and freight. No separate commission and no hidden margin on top of the factory price.'),
+   ('Will you tell me if a product is a bad idea?', 'Yes. If an item has thin margins, heavy compliance, fragile shipping or sits in a restricted category for your country, we say so before you pay. A failed first order costs us a long-term client, so being straight with you is in our own interest.'),
  ],
 },
 ]

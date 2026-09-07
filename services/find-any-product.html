@@ -1,13 +1,40 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
+<!-- Google tag (gtag.js) GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-76L0Y9SC5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-76L0Y9SC5D');
+  (function(){
+    function where(a){
+      if(a.classList.contains('float-wa')) return 'float_button';
+      if(a.classList.contains('wa-mini')) return 'product_card';
+      if(a.classList.contains('wa-btn')||a.classList.contains('quote-btn')||a.classList.contains('btn-wa')) return 'cta_button';
+      if(a.closest('footer')) return 'footer';
+      if(a.closest('header')) return 'header';
+      return 'inline';
+    }
+    document.addEventListener('click', function(e){
+      var t = e.target;
+      if(!t || !t.closest) return;
+      var a = t.closest('a[href*="wa.me"]');
+      if(!a) return;
+      try { gtag('event','whatsapp_click',{link_location:where(a),page_path:location.pathname}); } catch(err){}
+    }, true);
+  })();
+</script>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yiwu vs Guangzhou vs Shenzhen: Gulf Sourcing | SourceToGulf</title>
-<meta name="description" content="An independent comparison of China sourcing cities: what Yiwu, Guangzhou and Shenzhen each do best, MOQ differences, a multi-city worked example, and consolidation explained." />
-<link rel="canonical" href="https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html" />
-<link rel="alternate" hreflang="en" href="https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html" />
-<link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html" />
+<title>Send a Link, Get the Same Product | SourceToGulf</title>
+<meta name="description" content="See something on Temu, 1688, Instagram or in a shop? Send the link or photo — we find the same item in Guangzhou and Yiwu, quote factory price and MOQ, and can put your brand on it." />
+<meta name="keywords" content="Product Sourcing in China: Yiwu + Guangzhou, Matched in 48 Hours, توريد المنتجات من الصين: ييوو + قوانغتشو، خلال 48 ساعة" />
+<link rel="canonical" href="https://sourcetogulf.com/services/find-any-product.html" />
+<link rel="alternate" hreflang="en" href="https://sourcetogulf.com/services/find-any-product.html" />
+<link rel="alternate" hreflang="x-default" href="https://sourcetogulf.com/services/find-any-product.html" />
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/images/logo/logo-icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -272,32 +299,17 @@ tr:nth-child(even) td{background:var(--soft)}
 /* ===== inline SVG flags (replace flag emoji — Windows cannot render them) ===== */
 .flag{width:1.2em;height:.8em;display:inline-block;vertical-align:-.12em;border-radius:2px;flex-shrink:0;box-shadow:0 0 0 .5px rgba(0,0,0,.14)}
 </style>
-<!-- Google tag (gtag.js) GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-76L0Y9SC5D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-76L0Y9SC5D');
-  (function(){
-    function where(a){
-      if(a.classList.contains('float-wa')) return 'float_button';
-      if(a.classList.contains('wa-mini')) return 'product_card';
-      if(a.classList.contains('wa-btn')||a.classList.contains('quote-btn')||a.classList.contains('btn-wa')) return 'cta_button';
-      if(a.closest('footer')) return 'footer';
-      if(a.closest('header')) return 'header';
-      return 'inline';
-    }
-    document.addEventListener('click', function(e){
-      var t = e.target;
-      if(!t || !t.closest) return;
-      var a = t.closest('a[href*="wa.me"]');
-      if(!a) return;
-      try { gtag('event','whatsapp_click',{link_location:where(a),page_path:location.pathname}); } catch(err){}
-    }, true);
-  })();
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {"@type": "Question", "name": "What is your MOQ?", "acceptedAnswer": {"@type": "Answer", "text": "Depends on the product — many Yiwu items start at 50–100 pieces. For trial orders we find suppliers who accept smaller quantities."}},
+  {"@type": "Question", "name": "Do you charge commission on top of the quote?", "acceptedAnswer": {"@type": "Answer", "text": "No. The landed price we quote is final — our margin is already inside. No hidden fees, no commission added later."}},
+  {"@type": "Question", "name": "Can you get products not found on Alibaba?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — that's the point. We search offline wholesale markets where prices are often 10–30% lower than online listings."}}
+ ]
+}
 </script>
-<link rel="alternate" type="application/rss+xml" title="SourceToGulf" href="https://sourcetogulf.com/rss.xml" />
 </head>
 <body>
 <header>
@@ -514,375 +526,81 @@ tr:nth-child(even) td{background:var(--soft)}
 
 
 </header>
-
-<section class="sec hero-sec">
-  <div class="wrap">
-    <span class="kicker">Sourcing Comparison</span>
-    <h1>Yiwu vs Guangzhou vs Shenzhen: Where Should Gulf Buyers Source From?</h1>
-    <p class="lead">China is not one market — it is a network of specialised cities. The right answer depends on your <b>product type and MOQ</b>, not on a single "best" city. Most Gulf buyers actually use all three and consolidate.</p>
-    <div class="cta-row">
-      <a class="btn-wa" href="https://wa.me/971585854194?text=Hi%20SourceToGulf%21%20I%20want%20to%20source%20across%20Yiwu%2C%20Guangzhou%20and%20Shenzhen%20and%20consolidate%20to%20the%20Gulf.%20Please%20advise." target="_blank" rel="noopener">💬 Plan a multi-city consolidation</a>
-      <a class="btn-ghost" href="/category-tech.html">See tech &amp; electronics →</a>
-    </div>
-  </div>
-</section>
-
-<section class="sec"><div class="wrap">
-  <div class="sec-head"><h2>Three cities, three strengths</h2></div>
-  <table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
-    <thead><tr style="background:#0b1f3a;color:#fff">
-      <th style="padding:10px 12px;text-align:left">City</th>
-      <th style="padding:10px 12px;text-align:left">Best for</th>
-      <th style="padding:10px 12px;text-align:left">Typical MOQ</th>
-      <th style="padding:10px 12px;text-align:left">Note for Gulf buyers</th>
-    </tr></thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories, home bits</td><td style="padding:10px 12px">50–500 units/style; 100–500 SKUs/container</td><td style="padding:10px 12px">75,000+ shops; ex-works ¥0.5–¥30/unit ($0.07–$4)</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel, bags, beauty, watches</td><td style="padding:10px 12px">100–1,000 units/style</td><td style="padding:10px 12px">Wholesale markets + Canton Fair; apparel ¥15–¥200/pc ($2–$28)</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics, gadgets, hardware, prototyping</td><td style="padding:10px 12px">100–500 units/style; singles at Huaqiangbei</td><td style="padding:10px 12px">Huaqiangbei; electronics ¥10–¥500+/unit, accessories ¥1–¥50</td></tr>
-    </tbody>
-  </table>
+<section class="page-hero"><div class="wrap">
+<div class="crumb"><a href="/" data-en="Home" data-ar="الرئيسية">Home</a> ← <a href="/#services" data-en="Services" data-ar="خدماتنا">Services</a></div>
+<h1 data-en="Send a link or a photo — we'll find it in China" data-ar="أرسل رابطاً أو صورة — ونحن نلقاه في الصين">Send a link or a photo — we'll find it in China</h1>
+<p class="sub" data-en="See something on Temu, 1688, Instagram or in a competitor's shop? Send us the link or photo. We find the same item or the closest match, quote factory price and MOQ, and can put your brand on it." data-ar="رأيت منتجاً على تمو أو 1688 أو إنستغرام أو في متجر منافس؟ أرسل لنا الرابط أو الصورة. نجد نفس المنتج أو أقرب بديل له، ونعرض لك سعر المصنع والحد الأدنى للطلب، ويمكننا طباعة علامتك عليه.">See something on Temu, 1688, Instagram or in a competitor's shop? Send us the link or photo. We find the same item or the closest match, quote factory price and MOQ, and can put your brand on it.</p>
 </div></section>
-
-<section class="sec alt"><div class="wrap">
-  <div class="sec-head"><h2>What each city is genuinely good at</h2></div>
-  <p><b>Yiwu</b> is the world's largest small-commodity market. Its power is assortment and low MOQ: a Gulf retailer can fill one container with 100–500 gift and accessory SKUs that no single factory would produce. It is weak for custom apparel and serious electronics.</p>
-  <p><b>Guangzhou</b> is the apparel and accessories capital — finished garments, fabrics, bags and beauty supplies, with the Canton Fair as the headline event. Choose it for fashion and larger runs (typical apparel MOQ 100–1,000 pieces per style).</p>
-  <p><b>Shenzhen</b> owns electronics and hardware: components, consumer gadgets, tech accessories and rapid prototyping (custom PCBA runs usually start at 500–1,000 pieces). Choose it when customization or speed-to-market matters.</p>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <div class="sec-head"><h2>Typical unit prices (ex-works, before freight)</h2></div>
-  <p>These are market ranges seen by Gulf buyers, not fixed quotes — final price depends on material, order size and customization. They show why matching category to city matters.</p>
-  <table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
-    <thead><tr style="background:#0b1f3a;color:#fff">
-      <th style="padding:10px 12px;text-align:left">City</th>
-      <th style="padding:10px 12px;text-align:left">Category</th>
-      <th style="padding:10px 12px;text-align:left">Typical unit price</th>
-    </tr></thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Yiwu</b></td><td style="padding:10px 12px">Small commodities, gifts, accessories</td><td style="padding:10px 12px">¥0.5–¥30 (about $0.07–$4)</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px"><b>Guangzhou</b></td><td style="padding:10px 12px">Apparel / bags</td><td style="padding:10px 12px">¥15–¥200 / ¥30–¥300 (about $2–$28 / $4–$42)</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px"><b>Shenzhen</b></td><td style="padding:10px 12px">Electronics / accessories</td><td style="padding:10px 12px">¥10–¥500+ / ¥1–¥50 (about $1.4–$70 / $0.14–$7)</td></tr>
-    </tbody>
-  </table>
-</div></section>
-
-<section class="sec alt"><div class="wrap">
-  <div class="sec-head"><h2>Distances between the three cities</h2></div>
-  <p>The cities sit far apart, which is exactly why consolidation through one agent beats shipping city by city. Guangzhou and Shenzhen are close; Yiwu is the outlier, roughly 1,200 km north.</p>
-  <table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
-    <thead><tr style="background:#0b1f3a;color:#fff">
-      <th style="padding:10px 12px;text-align:left">Route</th>
-      <th style="padding:10px 12px;text-align:left">Distance</th>
-      <th style="padding:10px 12px;text-align:left">High-speed rail</th>
-    </tr></thead>
-    <tbody>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Yiwu – Guangzhou</td><td style="padding:10px 12px">~1,200 km</td><td style="padding:10px 12px">~6.5 h</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Yiwu – Shenzhen</td><td style="padding:10px 12px">~1,300 km</td><td style="padding:10px 12px">~7 h</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Guangzhou – Shenzhen</td><td style="padding:10px 12px">~130 km</td><td style="padding:10px 12px">~30 min</td></tr>
-      <tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Yiwu – Hangzhou</td><td style="padding:10px 12px">~130 km</td><td style="padding:10px 12px">~1 h</td></tr>
-    </tbody>
-  </table>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <div class="sec-head"><h2>Worked example: one Gulf store, three cities</h2></div>
-  <p>A Dubai retailer wants phone accessories (Shenzhen), hijab pins and gift items (Yiwu), and a line of dresses (Guangzhou). Sourcing each in its best city and consolidating through one agent typically:</p>
-  <ul class="bullets">
-    <li>Lowers per-unit cost versus buying everything from one trader</li>
-    <li>Turns three separate shipments into one sea container (lower freight, one customs entry)</li>
-    <li>Lets a small brand test many SKUs at low MOQ before committing to volume</li>
-  </ul>
-  <p>On a typical mixed Gulf order, consolidating the three city purchases into one 40ft container cuts customs entries from three to one and usually lowers per-unit logistics cost by 20–35%. The saving is not in any single city being "cheapest" — it is in <b>matching each category to its best source and consolidating</b>.</p>
-</div></section>
-
-<section class="sec alt"><div class="wrap">
-  <div class="sec-head"><h2>When to use which — and when to combine</h2></div>
-  <p>Use <b>Yiwu</b> for low-MOQ gifts and accessories, <b>Guangzhou</b> for apparel and bags, <b>Shenzhen</b> for electronics. For most Gulf buyers the optimal path is all three at once, with an agent handling visits, inspection and consolidation. Trying to force one city to do everything usually costs more and limits your range.</p>
-  <div class="rel-grid">
-    <a class="rel-card" href="/alibaba-vs-sourcing-agent.html"><span>Alibaba vs sourcing agent</span><b>The other big route comparison</b></a>
-    <a class="rel-card" href="/sourcing-agent-vs-trading-company.html"><span>Agent vs trading company</span><b>How each model earns</b></a>
-    <a class="rel-card" href="/category-fashion.html"><span>Fashion &amp; apparel</span><b>Guangzhou-sourced, UAE-landed</b></a>
-    <a class="rel-card" href="/category-tech.html"><span>Tech &amp; electronics</span><b>Shenzhen-sourced, ECAS-ready</b></a>
-    <a class="rel-card" href="/category-home.html"><span>Home &amp; gifts</span><b>Yiwu-sourced, low MOQ</b></a>
-    <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span><b>Influencer · Wholesaler · Retailer · Small brand</b></a>
-    <a class="rel-card" href="/composite-partner-vs-single-vendors.html"><span>One partner vs three vendors</span><b>Why composite beats piecemeal</b></a>
-  </div>
-</div></section>
-
-<section class="sec"><div class="wrap" style="text-align:center">
-  <div class="sec-head center"><h2>Planning a multi-city order?</h2></div>
-  <p class="sub">Tell us your product mix — we map each category to its best city and consolidate to one Gulf shipment.</p>
-  <a class="btn-wa" href="https://wa.me/971585854194?text=Hi%20SourceToGulf%21%20I%20want%20to%20source%20across%20Yiwu%2C%20Guangzhou%20and%20Shenzhen%20and%20consolidate%20to%20the%20Gulf.%20Please%20advise." target="_blank" rel="noopener">💬 Start my consolidation plan</a>
-</div></section>
-
-<section class="sec"><div class="wrap">
-<div class="sec-head center"><span class="kicker">FAQ</span><h2>Common Questions</h2>
-<p class="sub">Straight, source-neutral answers buyers ask before choosing a route.</p></div>
-<div class="qa-list">
-<div class="qa"><h3>Which Chinese city is cheapest for sourcing?</h3><p>There is no single cheapest city — each is cheapest for its own category, and the gap shows in the unit price. In Yiwu, small commodities and gifts typically run ¥0.5–¥30 (about $0.07–$4) per unit. In Guangzhou, apparel runs roughly ¥15–¥200 per piece (about $2–$28) and bags ¥30–¥300 (about $4–$42). In Shenzhen, electronics span ¥10–¥500+ per unit with accessories as low as ¥1–¥50 (about $0.14–$7). The real saving for Gulf buyers comes from sourcing each category in its best city and consolidating, not from picking one city for everything.</p></div>
-<div class="qa"><h3>Yiwu or Guangzhou for clothing?</h3><p>Guangzhou is the stronger choice for clothing — its wholesale markets (notably the 13th Garment Street area and the Canton Fair) cover finished apparel, fabrics and custom production. Yiwu carries clothing accessories and cheap ready-made basics but is weak on tailored or fashion-grade garments. Typical Guangzhou apparel MOQ is 100–1,000 pieces per style, while Yiwu basics often start at 50–500 pieces per style.</p></div>
-<div class="qa"><h3>Is Shenzhen only for electronics?</h3><p>Electronics is its strength (Huaqiangbei is the largest electronics market in the world), but Shenzhen also leads in hardware, tech accessories, gadgets and rapid prototyping thanks to nearby manufacturing. For non-electronic consumer goods, Yiwu or Guangzhou are usually better. Spot electronics at Huaqiangbei can be bought by the single unit; custom PCBA usually starts at 500–1,000 pieces.</p></div>
-<div class="qa"><h3>Can I visit all three cities in one trip?</h3><p>Yes, and the distances are manageable by high-speed rail: Yiwu to Hangzhou ~130 km (~1h), Hangzhou to Shenzhen ~1,300 km (~6–7h), Guangzhou to Shenzhen ~130 km (~30 min). A buyer can cover all three in roughly a week. Most Gulf buyers instead use an agent to visit on their behalf and consolidate findings into one shipment.</p></div>
-<div class="qa"><h3>Which city has the lowest MOQ?</h3><p>Yiwu, by a wide margin. Its market model lets you mix 100–500 SKUs in a single container at per-item minimums as low as 50–500 units per style, which is why it dominates small-commodity and gift sourcing for buyers testing the Gulf market. Guangzhou apparel typically needs 100–1,000 units per style; Shenzhen electronics 100–500 units per style (single units only for spot stock at Huaqiangbei).</p></div>
-<div class="qa"><h3>How far apart are Yiwu, Guangzhou and Shenzhen?</h3><p>Roughly 1,200 km separates Yiwu from Guangzhou and about 1,300 km from Shenzhen; Guangzhou and Shenzhen are only ~130 km apart (a 30-minute high-speed ride). A full Yiwu–Guangzhou–Shenzhen loop is about 2,600 km of travel, which is exactly why most buyers consolidate through one agent rather than ferry goods city by city.</p></div>
-<div class="qa"><h3>What are typical price ranges in each city?</h3><p>Ex-works, per unit: Yiwu small commodities ¥0.5–¥30 ($0.07–$4), Guangzhou apparel ¥15–¥200 ($2–$28) with bags ¥30–¥300 ($4–$42), Shenzhen electronics ¥10–¥500+ with accessories ¥1–¥50 ($0.14–$7). These are market ranges, not quotes — final price depends on material, order size and customization, and consolidation usually lowers effective per-unit freight.</p></div>
-<div class="qa"><h3>How does consolidation across cities work?</h3><p>A sourcing agent collects goods from Yiwu, Guangzhou and Shenzhen, inspects and repackages them, then ships everything as one sea or air container to the Gulf. This cuts per-unit freight sharply and avoids three separate customs entries — the main logistics advantage of using multiple cities. With the cities ~1,200 km apart, doing it yourself roughly triples handling versus one agent shipment.</p></div>
+<section><div class="wrap">
+<h2 data-en="How it works" data-ar="كيف نعمل">How it works</h2>
+<div class="grid2">
+<div class="card"><div class="em">1</div><h3 data-en="Send the link or photo" data-ar="أرسل الرابط أو الصورة">Send the link or photo</h3><p data-en="A Temu screenshot, a 1688 link, an Instagram post, or a photo you took in a shop. A screenshot is enough — we work from that." data-ar="لقطة شاشة من تمو، أو رابط من 1688، أو منشور إنستغرام، أو صورة التقطتها في متجر. لقطة الشاشة تكفي — نبدأ منها.">A Temu screenshot, a 1688 link, an Instagram post, or a photo you took in a shop. A screenshot is enough — we work from that.</p></div>
+<div class="card"><div class="em">2</div><h3 data-en="We find it" data-ar="نحن نبحث عنه">We find it</h3><p data-en="We search Guangzhou, Yiwu and Foshan markets, compare 3–5 suppliers, and tell you honestly whether it is the same item or the closest match." data-ar="نبحث في أسواق قوانغتشو وييوو وفوشان، ونقارن ٣-٥ مورّدين، ونقول لك بصراحة: هل هو نفس المنتج أم أقرب بديل.">We search Guangzhou, Yiwu and Foshan markets, compare 3–5 suppliers, and tell you honestly whether it is the same item or the closest match.</p></div>
+<div class="card"><div class="em">3</div><h3 data-en="You get a real quote" data-ar="تحصل على عرض حقيقي">You get a real quote</h3><p data-en="Factory price, MOQ, what your branding costs, and the all-in price to your country. Free, no commitment." data-ar="سعر المصنع، والحد الأدنى للطلب، وتكلفة علامتك، والسعر الشامل حتى بلدك. مجاناً وبلا التزام.">Factory price, MOQ, what your branding costs, and the all-in price to your country. Free, no commitment.</p></div>
+<div class="card"><div class="em">4</div><h3 data-en="Only then do you decide" data-ar="وبعدها فقط تقرر">Only then do you decide</h3><p data-en="Approve samples on video first. We release payment to the factory only after you say the goods are right." data-ar="اعتمد العيّنات بالفيديو أولاً. ولا نُصدر الدفع للمصنع إلا بعد أن تقول إن البضاعة مطابقة.">Approve samples on video first. We release payment to the factory only after you say the goods are right.</p></div>
 </div></div></section>
-<footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <img src="/images/logo/logo-footer.png" alt="SourceToGulf" height="52" style="display:block;margin-bottom:16px">
-        <p style="font-size:13px;line-height:1.7" data-en="Your product team in China for the Gulf. Sourcing, inspection, branding and door-to-door shipping — one landed price." data-ar="فريق منتجاتك في الصين للخليج. توريد وفحص وتغليف بهويتك وشحن لبابك — بسعر شامل واحد.">Your product team in China for the Gulf. Sourcing, inspection, branding and door-to-door shipping — one landed price.</p>
-        <div class="social-links">
-          <a href="https://www.tiktok.com/@papaclawsourcetogulf" target="_blank" rel="noopener" aria-label="TikTok"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.05z"/></svg><span data-en="TikTok" data-ar="TikTok">TikTok</span></a>
-          <a href="https://www.facebook.com/profile.php?id=61591873976787" target="_blank" rel="noopener" aria-label="Facebook"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span data-en="Facebook" data-ar="Facebook">Facebook</span></a>
-          <a href="https://www.linkedin.com/in/sourcetogulf-jingjing/?locale=zh" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span data-en="LinkedIn" data-ar="LinkedIn">LinkedIn</span></a>
-          <a href="https://wa.me/971585854194" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.056-1.413.298-.694.298-1.289.22-1.414-.074-.135-.272-.21-.57-.345m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 19.884 2.403"/></svg><span data-en="WhatsApp" data-ar="WhatsApp">WhatsApp</span></a>
-        </div>
-      </div>
-      <div>
-        <h4 data-en="Services" data-ar="خدماتنا">Services</h4>
-        <a href="/services/product-sourcing-china.html" data-en="Product Sourcing" data-ar="البحث عن المنتجات">Product Sourcing</a>
-        <a href="/services/quality-inspection-china.html" data-en="Quality Inspection" data-ar="فحص الجودة">Quality Inspection</a>
-        <a href="/services/custom-branding-packaging.html" data-en="Custom Branding" data-ar="التخصيص بهويتك">Custom Branding</a>
-        <a href="/services/consolidation-shipping-china-gulf.html" data-en="Consolidation & Shipping" data-ar="التجميع والشحن">Consolidation & Shipping</a>
-        <a href="/partners.html" data-en="Partner with us" data-ar="الشراكات">Partner with us</a>
-      </div>
-      <div>
-        <h4 data-en="Shipping to" data-ar="الشحن إلى">Shipping to</h4>
-        <a href="/shipping/china-to-uae.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-ae"/></svg> UAE</a>
-        <a href="/shipping/china-to-saudi-arabia.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-sa"/></svg> Saudi Arabia</a>
-        <a href="/shipping/china-to-kuwait.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-kw"/></svg> Kuwait</a>
-        <a href="/shipping/china-to-qatar.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-qa"/></svg> Qatar</a>
-        <a href="/shipping/china-to-bahrain.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-bh"/></svg> Bahrain</a>
-        <a href="/shipping/china-to-oman.html"><svg class="flag" aria-hidden="true" focusable="false"><use href="#f-om"/></svg> Oman</a>
-      </div>
-      <div>
-        <h4>Blog</h4>
-        <a href="/blog/how-to-import-from-china-to-uae.html" data-en="Import to UAE guide" data-ar="دليل الاستيراد للإمارات">Import to UAE guide</a><a href="/blog/how-to-import-from-china-to-saudi-arabia.html" data-en="Import to Saudi guide" data-ar="دليل الاستيراد للسعودية">Import to Saudi guide</a><a href="/blog/how-to-import-from-china-to-kuwait.html" data-en="Import to Kuwait guide" data-ar="دليل الاستيراد للكويت">Import to Kuwait guide</a><a href="/blog/how-to-import-from-china-to-qatar.html" data-en="Import to Qatar guide" data-ar="دليل الاستيراد لقطر">Import to Qatar guide</a><a href="/blog/how-to-import-from-china-to-bahrain.html" data-en="Import to Bahrain guide" data-ar="دليل الاستيراد للبحرين">Import to Bahrain guide</a><a href="/blog/how-to-import-from-china-to-oman.html" data-en="Import to Oman guide" data-ar="دليل الاستيراد لعُمان">Import to Oman guide</a>
-        <a href="/blog/how-to-find-a-reliable-sourcing-agent-in-china.html" data-en="Find a reliable agent" data-ar="كيف تلقى وكيل موثوق">Find a reliable agent</a>
-        <a href="/blog/landed-cost-china-to-gulf-explained.html" data-en="Landed cost explained" data-ar="شرح التكلفة الشاملة">Landed cost explained</a>
-        <a href="/blog/sourcing-for-livestream-sellers-gulf.html" data-en="Livestream sourcing" data-ar="توريد البث المباشر">Livestream sourcing</a>
-      </div>
-    </div>
-    <div class="foot-bottom" data-en="Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time" data-ar="شركة بابا كلو للتسويق والتقنية المحدودة (广州爬爬虾营销科技有限公司) · قوانغتشو، الصين · info@sourcetogulf.com · واتساب +971 58 585 4194 · الأحد–الخميس بتوقيت الخليج">Papa Claw Marketing Technology Co., Ltd. (广州爬爬虾营销科技有限公司) · Guangzhou, China · info@sourcetogulf.com · WhatsApp +971 58 585 4194 · Sun–Thu, Gulf time</div>
+<section><div class="wrap narrow">
+<h2 data-en="Why the factory price is usually lower" data-ar="لماذا يكون سعر المصنع عادةً أقل">Why the factory price is usually lower</h2>
+<article><p data-en="A marketplace listing carries the platform's margin, the seller's margin and local delivery on top of the product. Buying direct removes those layers — so the factory price is often below what you saw online, and you also get to put your own brand on it." data-ar="سعر المنصة يتضمن هامش المنصة وهامش البائع والتوصيل المحلي فوق سعر المنتج. الشراء المباشر يزيل هذه الطبقات — لذلك يكون سعر المصنع غالباً أقل مما رأيته عبر الإنترنت، وتستطيع أيضاً وضع علامتك الخاصة عليه.">A marketplace listing carries the platform's margin, the seller's margin and local delivery on top of the product. Buying direct removes those layers — so the factory price is often below what you saw online, and you also get to put your own brand on it.</p>
+<p data-en="We show you the factory (FOB) price on every quote. No separate commission, no hidden margin stacked on top of it." data-ar="نعرض لك سعر المصنع (FOB) في كل عرض سعر. لا عمولة منفصلة، ولا هامش مخفي فوقه.">We show you the factory (FOB) price on every quote. No separate commission, no hidden margin stacked on top of it.</p></article>
+</div></section>
+<section><div class="wrap">
+<h2 data-en="What we can source — and what needs care" data-ar="ما يمكننا توريده — وما يحتاج حذراً">What we can source — and what needs care</h2>
+<div class="grid2">
+<div class="card"><div class="em">✓</div><h3 data-en="Usually straightforward" data-ar="عادةً بلا تعقيد">Usually straightforward</h3><p data-en="Home & kitchen, home fragrance, fashion accessories, beauty tools, phone & car accessories, modest fashion, seasonal and Ramadan goods." data-ar="المستلزمات المنزلية والمطبخ، وعطور المنزل، وإكسسوارات الموضة، وأدوات التجميل، وملحقات الهاتف والسيارة، والأزياء المحتشمة، ومستلزمات المواسم ورمضان.">Home & kitchen, home fragrance, fashion accessories, beauty tools, phone & car accessories, modest fashion, seasonal and Ramadan goods.</p></div>
+<div class="card"><div class="em">!</div><h3 data-en="Needs certification first" data-ar="يحتاج اعتماداً أولاً">Needs certification first</h3><p data-en="Food, cosmetics, supplements, medical devices and anything with a plug (SABER / SFDA / ECAS / G-Mark). We flag this before you pay, not after." data-ar="الأغذية، ومستحضرات التجميل، والمكمّلات، والأجهزة الطبية، وأي منتج بفيش كهربائي (سابر / هيئة الغذاء والدواء / ECAS / جي-مارك). ننبّهك قبل الدفع، لا بعده.">Food, cosmetics, supplements, medical devices and anything with a plug (SABER / SFDA / ECAS / G-Mark). We flag this before you pay, not after.</p></div>
+</div>
+<p data-en="<strong>We will not source:</strong> replica branded goods, or items restricted in your country — realistic toy guns, for example, are controlled in several Gulf markets. If a product is a bad idea, we tell you up front. A failed first order costs us a long-term client." data-ar="<strong>لن نورّد:</strong> السلع المقلّدة لعلامات تجارية، أو المنتجات الممنوعة في بلدك — فالبنادق اللعبة المحاكية للواقع، على سبيل المثال، تخضع لقيود في عدة أسواق خليجية. وإن كان المنتج فكرة سيئة، نقول لك ذلك مقدماً. فشل أول طلب يكلّفنا عميلاً طويل الأمد."><strong>We will not source:</strong> replica branded goods, or items restricted in your country — realistic toy guns, for example, are controlled in several Gulf markets. If a product is a bad idea, we tell you up front. A failed first order costs us a long-term client.</p>
+</div></section>
+<section><div class="wrap narrow">
+<h2 data-en="Questions" data-ar="أسئلة">Questions</h2>
+<div class="card"><h3 data-en="What exactly should I send?" data-ar="ماذا أرسل بالتحديد؟">What exactly should I send?</h3><p data-en="Any link or photo. A screenshot from Temu, a 1688 link, an Instagram post, or a photo you took in a shop. If you only have a description, that works too." data-ar="أي رابط أو صورة. لقطة شاشة من تمو، أو رابط 1688، أو منشور إنستغرام، أو صورة التقطتها في متجر. وإن كان لديك وصف فقط، فهذا يكفي أيضاً.">Any link or photo. A screenshot from Temu, a 1688 link, an Instagram post, or a photo you took in a shop. If you only have a description, that works too.</p></div>
+<div class="card"><h3 data-en="How much cheaper will it be?" data-ar="كم سيكون أوفر؟">How much cheaper will it be?</h3><p data-en="It depends on the item. You remove the platform and seller margin, so factory price is usually below the retail listing — we quote the exact number rather than a percentage we cannot guarantee." data-ar="يعتمد ذلك على المنتج. أنت تزيل هامش المنصة وهامش البائع، لذلك يكون سعر المصنع عادةً أقل من سعر التجزئة — ونعطيك الرقم الدقيق بدلاً من نسبة لا نستطيع ضمانها.">It depends on the item. You remove the platform and seller margin, so factory price is usually below the retail listing — we quote the exact number rather than a percentage we cannot guarantee.</p></div>
+<div class="card"><h3 data-en="What if you cannot find the exact item?" data-ar="ماذا لو لم تجدوا نفس المنتج؟">What if you cannot find the exact item?</h3><p data-en="We find the closest match and send you photos of the actual alternative before you decide. You never pay for a guess." data-ar="نجد أقرب بديل ونرسل لك صور البديل الفعلي قبل أن تقرر. لن تدفع مقابل تخمين أبداً.">We find the closest match and send you photos of the actual alternative before you decide. You never pay for a guess.</p></div>
+<div class="card"><h3 data-en="Can you put my brand on it?" data-ar="هل يمكنكم وضع علامتي عليه؟">Can you put my brand on it?</h3><p data-en="Yes. Logo on the product and on the packaging, from low minimums, with Arabic-English artwork if you need it." data-ar="نعم. الشعار على المنتج وعلى التغليف، بحدود دنيا منخفضة، وتصميم عربي-إنجليزي إن احتجته.">Yes. Logo on the product and on the packaging, from low minimums, with Arabic-English artwork if you need it.</p></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+  <div class="final">
+    <h2 data-en="Send us a link or a photo. We'll tell you what it really costs — free." data-ar="أرسل لنا رابطاً أو صورة. سنقول لك التكلفة الحقيقية — مجاناً.">Send us a link or a photo. We'll tell you what it really costs — free.</h2>
+    <p data-en="Temu, 1688, Instagram or a photo from a shop — any of them is enough to start." data-ar="تمو، 1688، إنستغرام، أو صورة من متجر — أي منها يكفي للبداية.">Temu, 1688, Instagram or a photo from a shop — any of them is enough to start.</p>
+    <p style="margin-top:14px"><a class="wa-btn" href="https://wa.me/971585854194" target="_blank" rel="noopener">💬 WhatsApp: +971 58 585 4194</a></p>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div></section>
 </footer>
 <a class="float-wa" href="https://wa.me/971585854194" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
-<button id="toTop" aria-label="Back to top">↑</button>
-<script>
-var lang = localStorage.getItem('stg-lang') || ((navigator.language||'').indexOf('ar')===0 ? 'ar':'en');
+<script>let lang = localStorage.getItem('stg-lang') || (navigator.language||'').startsWith('ar') ? (localStorage.getItem('stg-lang')||'ar') : 'en';
+lang = localStorage.getItem('stg-lang') || lang;
 function applyLang(){
   document.documentElement.lang = lang;
-  document.documentElement.dir = (lang==='ar') ? 'rtl' : 'ltr';
-  document.querySelectorAll('.lang-btn').forEach(function(b){ b.textContent = (lang==='ar') ? 'English' : 'العربية'; });
-  document.querySelectorAll('[data-en]').forEach(function(el){
-    var v = el.getAttribute('data-'+lang);
-    if(v!==null) el.innerHTML = v;
+  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  document.querySelectorAll('.lang-btn').forEach(b => b.textContent = (lang === 'ar') ? 'English' : 'العربية');
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const v = el.getAttribute('data-' + lang);
+    if(v !== null) el.innerHTML = v;
   });
+  if(typeof calc === 'function') calc();
 }
-function toggleLang(){ lang = (lang==='en')?'ar':'en'; localStorage.setItem('stg-lang',lang); applyLang(); }
-function toggleMenu(){ var m=document.getElementById('mpanel'); if(m) m.classList.toggle('open'); }
-function revealCards(){
-  var els = document.querySelectorAll('.pcard:not(.in)');
-  if(!els.length) return;
-  if(!('IntersectionObserver' in window)){
-    els.forEach(function(el){ el.classList.add('in'); });
-    return;
-  }
-  var io = new IntersectionObserver(function(entries, obs){
-    entries.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }
-    });
-  }, {threshold: 0.05, rootMargin: '0px 0px -20px 0px'});
-  els.forEach(function(el){ io.observe(el); });
+function toggleLang(){ lang = (lang === 'en') ? 'ar' : 'en'; localStorage.setItem('stg-lang', lang); applyLang(); }
+function toggleMenu(){ document.getElementById('mpanel').classList.toggle('open'); }
+document.addEventListener('DOMContentLoaded', applyLang);
+
+
+const CC = {AE:{duty:0.05,vat:0.05,cur:'AED',rate:3.6725},SA:{duty:0.05,vat:0.15,cur:'SAR',rate:3.75},KW:{duty:0.05,vat:0.00,cur:'KWD',rate:0.307},QA:{duty:0.05,vat:0.00,cur:'QAR',rate:3.64},BH:{duty:0.05,vat:0.10,cur:'BHD',rate:0.376},OM:{duty:0.05,vat:0.05,cur:'OMR',rate:0.385}};
+function fmt(x,cur,rate){return cur+' '+(x*rate).toLocaleString(undefined,{maximumFractionDigits:0})+' · $'+x.toLocaleString(undefined,{maximumFractionDigits:0});}
+function calc(){
+  const price=parseFloat(document.getElementById('cPrice').value)||0, qty=parseFloat(document.getElementById('cQty').value)||0,
+        ship=parseFloat(document.getElementById('cShip').value)||0, c=CC[document.getElementById('cCountry').value];
+  const goods=price*qty, duty=goods*c.duty, vat=(goods+ship+duty)*c.vat, total=goods+ship+duty+vat, per=qty>0?total/qty:0;
+  document.getElementById('rGoods').textContent=fmt(goods,c.cur,c.rate);
+  document.getElementById('rShip').textContent=fmt(ship,c.cur,c.rate);
+  document.getElementById('rDuty').textContent=fmt(duty,c.cur,c.rate);
+  document.getElementById('rVat').textContent=fmt(vat,c.cur,c.rate);
+  document.getElementById('rTotal').textContent=fmt(total,c.cur,c.rate);
+  document.getElementById('rDutyLbl').textContent=(lang==='ar'?'الرسوم الجمركية ':'Customs duty ')+'('+(c.duty*100)+'%)';
+  document.getElementById('rVatLbl').textContent=(lang==='ar'?'ضريبة القيمة المضافة ':'VAT ')+'('+(c.vat*100)+'%)';
+  document.getElementById('rPer').textContent=(lang==='ar'?'≈ التكلفة للقطعة: ':'≈ Landed cost per piece: ')+(qty>0?(c.cur+' '+(per*c.rate).toLocaleString(undefined,{maximumFractionDigits:2})+' / $'+per.toFixed(2)):'—');
 }
-document.addEventListener('DOMContentLoaded', function(){
-  applyLang();
-  revealCards();
-  var toTop = document.getElementById('toTop');
-  if(toTop){
-    window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 700); }, {passive:true});
-    toTop.onclick = function(){ window.scrollTo({top:0, behavior:'smooth'}); };
-  }
-});
-</script>
-<script src="/fx.js" defer></script>
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Yiwu vs Guangzhou vs Shenzhen: Gulf Sourcing | SourceToGulf",
-    "url": "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html",
-    "description": "An independent comparison of China sourcing cities: what Yiwu, Guangzhou and Shenzhen each do best, MOQ differences, a multi-city worked example, and consolidation explained.",
-    "inLanguage": "en",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SourceToGulf",
-      "url": "https://sourcetogulf.com"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Which Chinese city is cheapest for sourcing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "There is no single cheapest city — each is cheapest for its own category, and the gap shows in the unit price. In Yiwu, small commodities and gifts typically run ¥0.5–¥30 (about $0.07–$4) per unit. In Guangzhou, apparel runs roughly ¥15–¥200 per piece (about $2–$28) and bags ¥30–¥300 (about $4–$42). In Shenzhen, electronics span ¥10–¥500+ per unit with accessories as low as ¥1–¥50 (about $0.14–$7). The real saving for Gulf buyers comes from sourcing each category in its best city and consolidating, not from picking one city for everything."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Yiwu or Guangzhou for clothing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Guangzhou is the stronger choice for clothing — its wholesale markets (notably the 13th Garment Street area and the Canton Fair) cover finished apparel, fabrics and custom production. Yiwu carries clothing accessories and cheap ready-made basics but is weak on tailored or fashion-grade garments. Typical Guangzhou apparel MOQ is 100–1,000 pieces per style, while Yiwu basics often start at 50–500 pieces per style."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Shenzhen only for electronics?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Electronics is its strength (Huaqiangbei is the largest electronics market in the world), but Shenzhen also leads in hardware, tech accessories, gadgets and rapid prototyping thanks to nearby manufacturing. For non-electronic consumer goods, Yiwu or Guangzhou are usually better. Spot electronics at Huaqiangbei can be bought by the single unit; custom PCBA usually starts at 500–1,000 pieces."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I visit all three cities in one trip?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, and the distances are manageable by high-speed rail: Yiwu to Hangzhou ~130 km (~1h), Hangzhou to Shenzhen ~1,300 km (~6–7h), Guangzhou to Shenzhen ~130 km (~30 min). A buyer can cover all three in roughly a week. Most Gulf buyers instead use an agent to visit on their behalf and consolidate findings into one shipment."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which city has the lowest MOQ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yiwu, by a wide margin. Its market model lets you mix 100–500 SKUs in a single container at per-item minimums as low as 50–500 units per style, which is why it dominates small-commodity and gift sourcing for buyers testing the Gulf market. Guangzhou apparel typically needs 100–1,000 units per style; Shenzhen electronics 100–500 units per style (single units only for spot stock at Huaqiangbei)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How far apart are Yiwu, Guangzhou and Shenzhen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Roughly 1,200 km separates Yiwu from Guangzhou and about 1,300 km from Shenzhen; Guangzhou and Shenzhen are only ~130 km apart (a 30-minute high-speed ride). A full Yiwu–Guangzhou–Shenzhen loop is about 2,600 km of travel, which is exactly why most buyers consolidate through one agent rather than ferry goods city by city."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are typical price ranges in each city?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ex-works, per unit: Yiwu small commodities ¥0.5–¥30 ($0.07–$4), Guangzhou apparel ¥15–¥200 ($2–$28) with bags ¥30–¥300 ($4–$42), Shenzhen electronics ¥10–¥500+ with accessories ¥1–¥50 ($0.14–$7). These are market ranges, not quotes — final price depends on material, order size and customization, and consolidation usually lowers effective per-unit freight."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does consolidation across cities work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A sourcing agent collects goods from Yiwu, Guangzhou and Shenzhen, inspects and repackages them, then ships everything as one sea or air container to the Gulf. This cuts per-unit freight sharply and avoids three separate customs entries — the main logistics advantage of using multiple cities. With the cities ~1,200 km apart, doing it yourself roughly triples handling versus one agent shipment."
-        }
-      }
-    ]
-  }
-]
+
 </script>
 </body>
 </html>
