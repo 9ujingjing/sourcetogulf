@@ -275,6 +275,14 @@ def home_body():
   </div>
 </div></section>
 
+<div class="stats-band"><div class="wrap grid">
+  <div><div class="num">36</div><div class="lbl">سنة في التجارة مع الصين (منذ ١٩٩٠)</div></div>
+  <div><div class="num">14</div><div class="lbl">سنة في دبي</div></div>
+  <div><div class="num">3,000+</div><div class="lbl">طلب يُشحن كل شهر</div></div>
+  <div><div class="num">3</div><div class="lbl">أسواق توريد: قوانغتشو · ييوو · فوشان</div></div>
+  <div><div class="num">سعر واحد</div><div class="lbl">شامل، بلا رسوم خفية</div></div>
+</div></div>
+
 <section class="sec alt"><div class="wrap">
   <div class="sec-head center">
     <span class="kicker">شريك واحد، أربع قدرات</span>
