@@ -199,7 +199,7 @@ def main():
     left = sum(html.count(e) for e in EMOJI_MAP)
     print('  剩余国旗 emoji: %d' % left)
 
-    # 处理 header/footer 同步不到��残留（手工页 body 内的 emoji）
+    # 处理 header/footer 同步不到的残留（手工页 body 内的 emoji）
     sweep_all()
 
 

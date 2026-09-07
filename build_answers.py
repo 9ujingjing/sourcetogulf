@@ -56,6 +56,23 @@ QA = [
    'With complete documents, UAE clearance is often 1–3 working days; Saudi clearance (including SABER/SCoC verification) is typically 2–5 working days, longer if certificates are missing. SourceToGulf prepares invoices, packing lists, certificates of origin and conformity docs before departure, which is the main factor in fast release.'),
   ('What is the cheapest way to ship small parcels from China to the Gulf?',
    'For small parcels (under about 2 kg), consolidated courier or postal e-commerce lines are usually cheapest and take 7–12 days. For bigger volumes, LCL sea consolidation beats air. SourceToGulf uses courier consolidation for samples and small orders, and sea consolidation for bulk — we quote both so you pick by cost vs speed.'),
+
+
+  # ---- 真实咨询驱动（2026-09-07）：覆盖 AI 来源买家最常问的 7 个问题 ----
+  ('What is the minimum budget to start sourcing from China to the Gulf?',
+   "You don't need a container or thousands of dollars. On SourceToGulf's curated hot picks, MOQs start at 10–50 pieces and factory prices start around US$2 per piece, so a first test order of 30–50 units usually costs a few hundred US dollars for the goods. Freight, duty and VAT are quoted separately on top. Start with one product, sell through, then reorder — that is the lowest-risk way to test a market."),
+  ('Can I order samples of several products and ship them together?',
+   'Yes. You can pick samples from different Guangzhou, Yiwu or Foshan suppliers and we consolidate them into one parcel before it leaves China. You pay one air freight charge instead of several, and receive everything in a single box to compare side by side. Sample cost is the factory price plus a small handling fee; air freight for a 1–5 kg parcel is quoted up front so you know the total before you commit.'),
+  ('I am a first-time importer — can you recommend what to sell?',
+   'We will not guess your market, but we can shortlist for it. Tell us your country and who you sell to — shop, Instagram, TikTok Shop or marketplace — and we send 2–3 product options with MOQ, factory price and the retail range similar sellers charge. Good first orders share three traits: low unit cost, low return risk and no complex compliance. We flag anything needing SABER, SFDA or ECAS before you commit.'),
+  ('Can you source the same product I saw on Temu, 1688 or AliExpress?',
+   'Yes — send the photo or the link. We identify the item, find the factory or the closest match in the Guangzhou, Yiwu and Foshan markets, and quote factory price, MOQ and what your branding costs on the packaging. In most cases the factory price sits below the marketplace listing because you buy direct. This is the fastest way to turn something you saw online into your own branded product.'),
+  ('Can you verify a supplier or shop before I pay them?',
+   'Yes. Before any deposit leaves your account we check the business licence, confirm whether they are a factory or a trading company, and verify they can actually make your product — by site visit or live video where possible. You receive the verification result first. We release payment only after you approve, and hold the final balance until you have seen pre-shipment photos and video of the actual goods.'),
+  ('Do you charge a sourcing fee or commission?',
+   'No separate commission. We quote one landed price per piece that already covers product, quality inspection, packing, shipping and customs clearance — one number instead of a stack of separate invoices. Duty and VAT are shown separately because they depend on your country and declared value. Your first sourcing request is free; you only pay when you place an order.'),
+  ('Can I buy directly from the factory, or do you add a markup?',
+   'We buy from the factory directly and show you the factory (FOB) price on every product — no hidden margin on top of it. What you pay SourceToGulf is one landed price that bundles that factory price with inspection, packing, consolidation and freight. If you prefer, we also work white-label: we quote and ship under your company name, and your client never knows we exist.'),
 ]
 
 def main():

@@ -129,7 +129,7 @@ def composite_faq(country):
 
 
 def inject_composite(body, country):
-    """把复合能力段落插��到首个 </section>（hero）之后，保证声明前置。"""
+    """把复合能力段落插入到首个 </section>（hero）之后，保证声明前置。"""
     marker = '</section>'
     idx = body.find(marker)
     if idx == -1:
