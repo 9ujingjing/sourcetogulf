@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SourceToGulf — Quotation for Joelle</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --navy:#1E3A5F; --gold:#C9A24A; --cream:#F5ECDA;
+    --ink:#1A1A1A; --gray:#5A5A5A; --line:#E5DCC7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    background:#fff;color:var(--ink);line-height:1.5;
+  }
+  .page{max-width:1240px;margin:0 auto;}
+
+  /* ---------- Header ---------- */
+  header{
+    background:var(--navy);color:#fff;padding:22px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .brand{display:flex;align-items:center;gap:14px;}
+  .mark{
+    width:44px;height:44px;background:var(--gold);border-radius:6px;flex-shrink:0;
+    position:relative;
+  }
+  .mark::before{content:"";position:absolute;inset:7px;border:2px solid var(--navy);border-right:none;border-bottom:none;}
+  .mark::after{content:"";position:absolute;width:15px;height:9px;background:var(--navy);top:11px;right:9px;transform:rotate(-16deg);}
+  .brand-txt h1{font-size:22px;font-weight:700;letter-spacing:.3px;}
+  .brand-txt p{font-size:11px;color:var(--gold);letter-spacing:1.4px;text-transform:uppercase;margin-top:2px;}
+  .head-meta{text-align:right;font-size:12px;}
+  .head-meta .qt{font-size:17px;font-weight:700;color:var(--gold);letter-spacing:1px;}
+  .head-meta .sub{color:#cfd8e3;margin-top:3px;}
+
+  /* ---------- Cover ---------- */
+  .cover{
+    background:var(--cream);border-bottom:2px solid var(--gold);
+    padding:20px 28px;display:flex;justify-content:space-between;
+    align-items:flex-start;flex-wrap:wrap;gap:20px;
+  }
+  .cover-l .lbl{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1.6px;}
+  .cover-l .who{font-size:28px;font-weight:700;color:var(--navy);margin:4px 0 2px;}
+  .cover-l .note{font-size:12px;color:var(--gray);}
+  .cover-r{display:flex;gap:36px;flex-wrap:wrap;}
+  .meta-i .k{font-size:9.5px;color:var(--gold);font-weight:700;letter-spacing:1.3px;}
+  .meta-i .v{font-size:14px;font-weight:600;color:var(--navy);margin-top:3px;}
+
+  /* ---------- Toolbar ---------- */
+  .bar{
+    padding:16px 28px;display:flex;justify-content:space-between;
+    align-items:center;flex-wrap:wrap;gap:12px;border-bottom:1px solid var(--line);
+  }
+  .bar h2{font-size:14px;font-weight:700;color:var(--navy);letter-spacing:1.4px;text-transform:uppercase;}
+  .bar .cnt{font-size:12px;color:var(--gray);}
+  .tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .tools input{
+    border:1px solid var(--line);border-radius:5px;padding:7px 11px;
+    font-size:12.5px;width:190px;outline:none;font-family:inherit;
+  }
+  .tools input:focus{border-color:var(--gold);}
+  .btn{
+    border:1px solid var(--line);background:#fff;border-radius:5px;
+    padding:7px 13px;font-size:12px;cursor:pointer;font-family:inherit;color:var(--navy);font-weight:600;
+  }
+  .btn:hover{border-color:var(--gold);background:var(--cream);}
+
+  /* ---------- Grid ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;padding:20px 28px 28px;}
+  .card{
+    border:1px solid var(--line);border-radius:9px;overflow:hidden;
+    background:#fff;display:flex;flex-direction:column;
+    transition:box-shadow .18s,transform .18s;
+  }
+  .card:hover{box-shadow:0 5px 18px rgba(30,58,95,.14);transform:translateY(-2px);}
+
+  /* main photo */
+  .ph{
+    position:relative;background:var(--cream);aspect-ratio:1/1;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in;
+  }
+  .ph img.main{width:100%;height:100%;object-fit:contain;padding:10px;}
+  .no{position:absolute;top:9px;left:9px;background:var(--navy);color:var(--gold);
+      font-size:11px;font-weight:700;padding:3px 9px;border-radius:4px;letter-spacing:.5px;z-index:2;}
+  .ch{position:absolute;top:9px;right:9px;background:rgba(255,255,255,.94);color:var(--gray);
+      font-size:10px;padding:3px 8px;border-radius:4px;font-weight:600;z-index:2;}
+  .nstyles{
+    position:absolute;bottom:9px;right:9px;background:rgba(30,58,95,.9);color:var(--gold);
+    font-size:9.5px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.4px;z-index:2;
+  }
+  .zoomhint{
+    position:absolute;bottom:9px;left:9px;background:rgba(255,255,255,.9);
+    font-size:9px;color:var(--gray);padding:3px 7px;border-radius:3px;z-index:2;
+  }
+
+  /* style thumbs */
+  .thumbs{
+    display:flex;gap:6px;padding:9px 10px;background:#faf7f0;
+    border-top:1px solid var(--line);overflow-x:auto;scrollbar-width:thin;
+  }
+  .thumbs::-webkit-scrollbar{height:6px;}
+  .thumbs::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px;}
+  .th{
+    width:52px;height:52px;flex-shrink:0;border:2px solid transparent;border-radius:5px;
+    overflow:hidden;cursor:pointer;background:#fff;transition:border-color .15s;
+  }
+  .th:hover{border-color:var(--gold);}
+  .th.on{border-color:var(--navy);}
+  .th img{width:100%;height:100%;object-fit:contain;padding:2px;}
+
+  .body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1;}
+  .nm{font-size:13.5px;font-weight:700;color:var(--navy);line-height:1.35;}
+  .zh{font-size:11px;color:var(--gray);margin-top:4px;}
+  .spec{font-size:11.5px;color:var(--ink);margin-top:8px;line-height:1.5;flex:1;}
+  .badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:9.5px;
+    font-weight:700;padding:3px 8px;border-radius:3px;margin-top:8px;
+    letter-spacing:.5px;text-transform:uppercase;align-self:flex-start;}
+  .pr{margin-top:12px;padding-top:11px;border-top:1px solid var(--line);
+      display:flex;justify-content:space-between;align-items:baseline;}
+  .pr .aed{font-size:22px;font-weight:700;color:var(--navy);letter-spacing:-.3px;}
+  .pr .cur{font-size:11px;color:var(--gold);font-weight:700;margin-right:2px;}
+  .pr .cny{font-size:11px;color:var(--gray);text-align:right;line-height:1.3;}
+  .pr .cny b{display:block;font-size:12px;color:var(--ink);}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);color:#fff;padding:20px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  .f-l{font-size:13px;font-weight:600;}
+  .f-l span{color:var(--gold);}
+  .f-r{font-size:12px;color:#cfd8e3;text-align:right;line-height:1.7;}
+  .f-r a{color:var(--gold);text-decoration:none;}
+
+  /* ---------- Lightbox ---------- */
+  .lb{position:fixed;inset:0;background:rgba(8,14,24,.95);z-index:99;
+      display:none;flex-direction:column;align-items:center;justify-content:center;padding:24px;}
+  .lb.on{display:flex;}
+  .lb .stage{position:relative;flex:1;display:flex;align-items:center;justify-content:center;width:100%;min-height:0;}
+  .lb img{max-width:96%;max-height:84vh;object-fit:contain;border-radius:4px;}
+  .lb .cap{color:#fff;font-size:13px;margin-top:14px;text-align:center;}
+  .lb .cap b{color:var(--gold);}
+  .lb .cap .idx{color:#8fa3ba;font-size:11.5px;display:block;margin-top:4px;}
+  .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.13);
+    border:none;color:#fff;font-size:26px;width:46px;height:46px;border-radius:50%;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .nav:hover{background:rgba(255,255,255,.26);}
+  .nav.prev{left:8px;} .nav.next{right:8px;}
+  .lb .close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;
+    font-size:30px;cursor:pointer;line-height:1;}
+  .lb .thumbs-lb{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap;justify-content:center;max-width:96%;}
+  .lb .thumbs-lb img{width:46px;height:46px;object-fit:contain;background:#fff;
+    border-radius:4px;cursor:pointer;border:2px solid transparent;padding:2px;}
+  .lb .thumbs-lb img.on{border-color:var(--gold);}
+
+  .hint{text-align:center;font-size:11.5px;color:var(--gray);padding:0 28px 22px;}
+
+  /* ---------- Print: show ALL styles as a grid ---------- */
+  .print-all{display:none;}
+
+  @media print{
+    @page{size:A4;margin:9mm;}
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .hint,.lb,.tools,.thumbs,.zoomhint{display:none !important;}
+    header,.cover,footer{break-inside:avoid;}
+    .bar{padding:12px 0 8px;border-bottom:1px solid var(--line);}
+    .bar h2{font-size:12px;}
+    .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:12px 0 0;}
+    .card{break-inside:avoid;box-shadow:none !important;transform:none !important;page-break-inside:avoid;}
+    .ph{aspect-ratio:auto;height:auto;background:#fff;padding:0;cursor:default;}
+    .ph img.main{display:none;}      /* hide the single main img */
+    .no,.ch{position:static;display:inline-block;margin:6px 0 0 8px;}
+    .no{font-size:9px;padding:2px 7px;}
+    .ch{font-size:8.5px;padding:2px 6px;margin-left:4px;}
+    .nstyles{position:static;display:inline-block;background:none;color:var(--gray);
+      font-size:9px;padding:0;margin:0 0 0 4px;}
+    .print-all{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;padding:8px;}
+    .print-all img{width:100%;aspect-ratio:1/1;object-fit:contain;
+      background:var(--cream);border:1px solid var(--line);border-radius:3px;}
+    .nm{font-size:10.5px;}
+    .zh,.spec{font-size:9px;}
+    .pr .aed{font-size:16px;}
+    .cover{padding:14px 0;}
+    header{padding:14px 0;}
+    footer{padding:12px 0;}
+  }
+
+  @media (max-width:640px){
+    .cover,.bar,.grid,header,footer{padding-left:16px;padding-right:16px;}
+    .grid{grid-template-columns:1fr;gap:14px;}
+    .cover-l .who{font-size:23px;}
+    .head-meta{text-align:left;}
+    .cover-r{gap:22px;}
+    .tools input{width:100%;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="brand">
+      <div class="mark"></div>
+      <div class="brand-txt">
+        <h1>SourceToGulf</h1>
+        <p>China &rarr; Gulf Sourcing Partner</p>
+      </div>
+    </div>
+    <div class="head-meta">
+      <div class="qt">QUOTATION &middot; AED</div>
+      <div class="sub">Ref &middot; STG-2026-0909-JL</div>
+      <div class="sub">Issued &middot; 09 September 2026</div>
+    </div>
+  </header>
+
+  <div class="cover">
+    <div class="cover-l">
+      <div class="lbl">PREPARED FOR</div>
+      <div class="who">Joelle</div>
+      <div class="note">Direct client &middot; Gulf region</div>
+    </div>
+    <div class="cover-r">
+      <div class="meta-i"><div class="k">VALIDITY</div><div class="v">14 days</div></div>
+      <div class="meta-i"><div class="k">CURRENCY</div><div class="v">AED</div></div>
+      <div class="meta-i"><div class="k">FX RATE</div><div class="v">1 CNY &asymp; 0.51 AED</div></div>
+    </div>
+  </div>
+
+  <div class="bar">
+    <div>
+      <h2>Selected Products</h2>
+      <div class="cnt" id="cnt"></div>
+    </div>
+    <div class="tools">
+      <input type="text" id="q" placeholder="Search products...">
+      <button class="btn" onclick="expandAll()">Show all styles</button>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <p class="hint">Click any image to enlarge &middot; Use <b>&larr; &rarr;</b> to browse styles &middot; Press <b>Cmd/Ctrl + P</b> to save as PDF</p>
+
+  <footer>
+    <div class="f-l">SourceToGulf <span>&middot;</span> China &rarr; Gulf Sourcing Partner</div>
+    <div class="f-r">
+      WhatsApp &middot; <a href="https://wa.me/971585854194">+971 58 585 4194</a><br>
+      <a href="mailto:info@sourcetogulf.com">info@sourcetogulf.com</a> &middot;
+      <a href="https://sourcetogulf.com">sourcetogulf.com</a>
+    </div>
+  </footer>
+
+</div>
+
+<div class="lb" id="lb">
+  <button class="close" onclick="closeLb()">&times;</button>
+  <div class="stage">
+    <button class="nav prev" onclick="step(-1)">&#10094;</button>
+    <img id="lbImg" src="" alt="">
+    <button class="nav next" onclick="step(1)">&#10095;</button>
+  </div>
+  <div class="cap" id="lbCap"></div>
+  <div class="thumbs-lb" id="lbThumbs"></div>
+</div>
+
+<script>
+const FX = 0.51;
+const DATA = [
+ {
+  "no": "1",
+  "en": "Stainless Pocket Compact Mirror",
+  "zh": "不锈钢便携小圆镜",
+  "spec": "Custom shapes available (mirror-finish).",
+  "note": "",
+  "cny": 6.2,
+  "channel": "1688",
+  "imgs": [
+   "1_0.jpg",
+   "1_1.jpg",
+   "1_2.jpg",
+   "1_3.jpg",
+   "1_4.jpg"
+  ]
+ },
+ {
+  "no": "1.1",
+  "en": "Pocket Compact Mirror — Bee Pattern",
+  "zh": "蜜蜂图案便携小圆镜",
+  "spec": "Black with bee motif; gold trim.",
+  "note": "",
+  "cny": 10.8,
+  "channel": "1688",
+  "imgs": [
+   "1.1_0.jpg",
+   "1.1_1.jpg",
+   "1.1_2.jpg",
+   "1.1_3.jpg"
+  ]
+ },
+ {
+  "no": "2",
+  "en": "A5 Spiral Notebook — Self-Esteem Identity & Confidence Bundle",
+  "zh": "A5 线圈自尊笔记本 'All About Me'",
+  "spec": "10 cover designs available.",
+  "note": "",
+  "cny": 10.9,
+  "channel": "拼多多",
+  "imgs": [
+   "2_0.jpg",
+   "2_1.jpg",
+   "2_2.jpg"
+  ]
+ },
+ {
+  "no": "3",
+  "en": "Zigzag Wave Hair Band",
+  "zh": "波浪纹理发带/发箍",
+  "spec": "Purple / Gray; textured elastic.",
+  "note": "",
+  "cny": 20.0,
+  "channel": "1688",
+  "imgs": [
+   "3_0.jpg",
+   "3_1.jpg",
+   "3_2.jpg",
+   "3_3.jpg"
+  ]
+ },
+ {
+  "no": "4",
+  "en": "Facial Cleansing Puff",
+  "zh": "粉色绒面卸妆扑 9.6cm",
+  "spec": "'CLEANS SPONGE' label; multiple colors & sizes.",
+  "note": "",
+  "cny": 5.5,
+  "channel": "拼多多",
+  "imgs": [
+   "4_0.jpg",
+   "4_1.jpg",
+   "4_2.jpg",
+   "4_3.jpg",
+   "4_4.jpg"
+  ]
+ },
+ {
+  "no": "5",
+  "en": "Color-Changing Capsule Container (12 pcs)",
+  "zh": "12 入变色小笼包收纳盒",
+  "spec": "Silicone capsule boxes; assorted colors.",
+  "note": "",
+  "cny": 4.0,
+  "channel": "拼多多",
+  "imgs": [
+   "5_0.jpg",
+   "5_1.jpg",
+   "5_2.jpg"
+  ]
+ },
+ {
+  "no": "6",
+  "en": "DIY Ceramic Mug — Heart-Shape Handle, Pink",
+  "zh": "心形把马克杯·粉色",
+  "spec": "Body image customizable from 1 piece; ¥7.85 + ¥4 custom = ¥11.85.",
+  "note": "Custom print",
+  "cny": 11.85,
+  "channel": "拼多多",
+  "imgs": [
+   "6_0.jpg"
+  ]
+ },
+ {
+  "no": "7",
+  "en": "DIY Ceramic Mug — Heart-Shape Handle, Red",
+  "zh": "心形把马克杯·彩虹红",
+  "spec": "Body image customizable from 1 piece.",
+  "note": "Custom print",
+  "cny": 11.85,
+  "channel": "拼多多",
+  "imgs": [
+   "7_0.jpg"
+  ]
+ },
+ {
+  "no": "8",
+  "en": "DIY Ceramic Mug — Heart-Shape Handle, Green",
+  "zh": "心形把马克杯·彩绿",
+  "spec": "Body image customizable from 1 piece.",
+  "note": "Custom print",
+  "cny": 11.85,
+  "channel": "拼多多",
+  "imgs": [
+   "8_0.jpg"
+  ]
+ },
+ {
+  "no": "9",
+  "en": "DIY Ceramic Mug — Heart-Shape Handle, Blue",
+  "zh": "心形把马克杯·彩蓝",
+  "spec": "Body image customizable from 1 piece.",
+  "note": "Custom print",
+  "cny": 11.85,
+  "channel": "拼多多",
+  "imgs": [
+   "9_0.jpg"
+  ]
+ },
+ {
+  "no": "10",
+  "en": "Self-Discovery Tabletop Card Game",
+  "zh": "找寻自我桌游卡牌",
+  "spec": "Box 66×22×93mm.",
+  "note": "",
+  "cny": 15.0,
+  "channel": "拼多多",
+  "imgs": [
+   "10_0.jpg",
+   "10_1.jpg",
+   "10_2.jpg",
+   "10_3.jpg",
+   "10_4.jpg"
+  ]
+ },
+ {
+  "no": "11",
+  "en": "White/Gold Custom Ceramic Tray",
+  "zh": "白色金色定制陶瓷首饰盘",
+  "spec": "10.5×10.5×3cm; UV-print custom from 100 pcs; ¥8.20 + ¥1 print = ¥9.20.",
+  "note": "100 pcs MOQ for print",
+  "cny": 9.2,
+  "channel": "1688",
+  "imgs": [
+   "11_0.jpg",
+   "11_1.jpg",
+   "11_2.jpg",
+   "11_3.jpg",
+   "11_4.jpg",
+   "11_5.jpg",
+   "11_6.jpg",
+   "11_7.jpg",
+   "11_8.jpg"
+  ]
+ },
+ {
+  "no": "12",
+  "en": "Ceramic Mug — Pink/Yellow Stripe Pattern",
+  "zh": "粉黄条纹马克杯",
+  "spec": "4 variants: pink stripe / pink polka / brown-purple stripe / mixed-3.",
+  "note": "",
+  "cny": 28.0,
+  "channel": "拼多多",
+  "imgs": [
+   "12_0.jpg",
+   "12_1.jpg",
+   "12_2.jpg",
+   "12_3.jpg"
+  ]
+ },
+ {
+  "no": "13",
+  "en": "Pink Portable Poop-Bag Dispenser",
+  "zh": "粉色便携垃圾袋分装卷",
+  "spec": "8 rolls × 15 bags; bag 23×33cm; pink / purple strawberry scent.",
+  "note": "",
+  "cny": 13.58,
+  "channel": "拼多多",
+  "imgs": [
+   "13_0.jpg",
+   "13_1.jpg",
+   "13_2.jpg",
+   "13_3.jpg",
+   "13_4.jpg"
+  ]
+ },
+ {
+  "no": "14",
+  "en": "Talking Hearts — 200 Card Conversation Game",
+  "zh": "Talking Hearts 200张卡牌问答游戏",
+  "spec": "200-question card game.",
+  "note": "",
+  "cny": 8.42,
+  "channel": "拼多多",
+  "imgs": [
+   "14_0.jpg",
+   "14_1.jpg",
+   "14_2.jpg",
+   "14_3.jpg"
+  ]
+ },
+ {
+  "no": "15",
+  "en": "Folding Square Pocket Mirror — Double-Sided Custom Print",
+  "zh": "折叠小方镜·双面定制",
+  "spec": "Double-sided 2-image custom; no extra fee, just provide artwork.",
+  "note": "Free custom print",
+  "cny": 4.75,
+  "channel": "拼多多",
+  "imgs": [
+   "15_0.jpg",
+   "15_1.jpg",
+   "15_2.jpg"
+  ]
+ },
+ {
+  "no": "16",
+  "en": "Daily Planner Notebook — B",
+  "zh": "Daily Planner B 日程本",
+  "spec": "50 sheets; 10 cover options.",
+  "note": "",
+  "cny": 9.9,
+  "channel": "拼多多",
+  "imgs": [
+   "16_0.jpg",
+   "16_1.jpg",
+   "16_2.jpg",
+   "16_3.jpg",
+   "16_4.jpg",
+   "16_5.jpg",
+   "16_6.jpg",
+   "16_7.jpg",
+   "16_8.jpg"
+  ]
+ },
+ {
+  "no": "17",
+  "en": "Rebuilding Self-Worth Workbook",
+  "zh": "跨境自我价值放松笔记本",
+  "spec": "Spiral workbook; mental health.",
+  "note": "",
+  "cny": 10.0,
+  "channel": "拼多多",
+  "imgs": [
+   "17_0.jpg",
+   "17_1.jpg",
+   "17_2.jpg",
+   "17_3.jpg",
+   "17_4.jpg"
+  ]
+ },
+ {
+  "no": "18",
+  "en": "Self-Compassion Journal",
+  "zh": "自我关怀成长日记本",
+  "spec": "Spiral notebook; guided journaling.",
+  "note": "",
+  "cny": 10.3,
+  "channel": "拼多多",
+  "imgs": [
+   "18_0.jpg",
+   "18_1.jpg",
+   "18_2.jpg",
+   "18_3.jpg",
+   "18_4.jpg"
+  ]
+ },
+ {
+  "no": "19",
+  "en": "Self-Worth & Relationships Bundle",
+  "zh": "自我价值关系笔记本线圈",
+  "spec": "Spiral notebook; 14.5×5.7 inch.",
+  "note": "",
+  "cny": 12.2,
+  "channel": "拼多多",
+  "imgs": [
+   "19_0.jpg",
+   "19_1.jpg",
+   "19_2.jpg",
+   "19_3.jpg",
+   "19_4.jpg"
+  ]
+ },
+ {
+  "no": "20",
+  "en": "Self-Worth Self-Esteem Healing Workbook",
+  "zh": "自尊提升治愈线圈笔记本",
+  "spec": "Spiral workbook.",
+  "note": "",
+  "cny": 12.5,
+  "channel": "拼多多",
+  "imgs": [
+   "20_0.jpg",
+   "20_1.jpg",
+   "20_2.jpg",
+   "20_3.jpg",
+   "20_4.jpg"
+  ]
+ },
+ {
+  "no": "21",
+  "en": "Anxiety Relief Mental Health Journal — A5",
+  "zh": "A5 焦虑新品心理健康日记本",
+  "spec": "Calma Tu Mente; mental-health planning guide.",
+  "note": "",
+  "cny": 13.3,
+  "channel": "拼多多",
+  "imgs": [
+   "21_0.jpg",
+   "21_1.jpg",
+   "21_2.jpg",
+   "21_3.jpg"
+  ]
+ },
+ {
+  "no": "22",
+  "en": "Personal Boundaries Workbook",
+  "zh": "个人边界线圈笔记本",
+  "spec": "Spiral workbook.",
+  "note": "",
+  "cny": 11.0,
+  "channel": "拼多多",
+  "imgs": [
+   "22_0.jpg",
+   "22_1.jpg",
+   "22_2.jpg",
+   "22_3.jpg",
+   "22_4.jpg"
+  ]
+ },
+ {
+  "no": "23",
+  "en": "Managing BPD Workbook",
+  "zh": "Managing BPD 边缘型人格障碍心理工具书",
+  "spec": "20 pages; spiral workbook.",
+  "note": "",
+  "cny": 18.0,
+  "channel": "拼多多",
+  "imgs": [
+   "23_0.jpg",
+   "23_1.jpg",
+   "23_2.jpg",
+   "23_3.jpg"
+  ]
+ },
+ {
+  "no": "24",
+  "en": "Inner Strength Workbook",
+  "zh": "内在力量练习本",
+  "spec": "Spiral-bound; creative trending.",
+  "note": "",
+  "cny": 19.0,
+  "channel": "拼多多",
+  "imgs": [
+   "24_0.jpg",
+   "24_1.jpg",
+   "24_2.jpg",
+   "24_3.jpg",
+   "24_4.jpg"
+  ]
+ },
+ {
+  "no": "25",
+  "en": "A5 EQ Emotional Intelligence Skills Workbook",
+  "zh": "A5 线圈情商技能笔记本",
+  "spec": "Customizable cover.",
+  "note": "",
+  "cny": 15.8,
+  "channel": "拼多多",
+  "imgs": [
+   "25_0.jpg",
+   "25_1.jpg",
+   "25_2.jpg",
+   "25_3.jpg",
+   "25_4.jpg"
+  ]
+ },
+ {
+  "no": "26",
+  "en": "Time Management Planner — Executive Functioning Skills",
+  "zh": "时间管理计划本·执行力训练",
+  "spec": "Spiral planner; focus & productivity.",
+  "note": "",
+  "cny": 15.0,
+  "channel": "拼多多",
+  "imgs": [
+   "26_0.jpg",
+   "26_1.jpg",
+   "26_2.jpg",
+   "26_3.jpg",
+   "26_4.jpg"
+  ]
+ },
+ {
+  "no": "27",
+  "en": "Coconut Shell Bowl — Mandala Pattern",
+  "zh": "椰子贝壳碗·光芒/曼陀罗",
+  "spec": "7 patterns; natural coconut shell.",
+  "note": "",
+  "cny": 10.5,
+  "channel": "拼多多",
+  "imgs": [
+   "27_0.jpg"
+  ]
+ },
+ {
+  "no": "28",
+  "en": "Square Wooden Sample Tray",
+  "zh": "方形榉木盘 12.8×12.8cm",
+  "spec": "Beech wood; 15mm thick; round / square / long also available.",
+  "note": "",
+  "cny": 7.92,
+  "channel": "拼多多",
+  "imgs": [
+   "28_0.jpg"
+  ]
+ },
+ {
+  "no": "29",
+  "en": "Floral-Pattern Soap Box",
+  "zh": "花朵款皂盒（树脂）",
+  "spec": "Resin soap dish; 9 patterns.",
+  "note": "",
+  "cny": 8.63,
+  "channel": "拼多多",
+  "imgs": [
+   "29_0.jpg",
+   "29_1.jpg",
+   "29_2.jpg",
+   "29_3.jpg"
+  ]
+ },
+ {
+  "no": "30",
+  "en": "Vacuum-Insulated Water Bottle 500ml",
+  "zh": "保温杯 500ml 橡胶漆米白",
+  "spec": "32 colors; same-cup option ¥24.3; printed ¥26 from 30 pcs.",
+  "note": "",
+  "cny": 24.3,
+  "channel": "拼多多",
+  "imgs": [
+   "30_0.jpg",
+   "30_1.jpg",
+   "30_2.jpg",
+   "30_3.jpg",
+   "30_4.jpg"
+  ]
+ }
+];
+const BASE = 'images/';
+
+const grid = document.getElementById('grid');
+let showAll = false;
+
+function render(list){
+  grid.innerHTML = list.map(it => {
+    const aed = (it.cny * FX).toFixed(2);
+    const n = it.imgs.length;
+    const thumbs = n > 1 ? `
+      <div class="thumbs">
+        ${it.imgs.map((f,i)=>`<div class="th ${i===0?'on':''}" data-no="${it.no}" data-i="${i}">
+            <img src="${BASE}${f}" alt="style ${i+1}" loading="lazy">
+          </div>`).join('')}
+      </div>` : '';
+    const allImgs = n > 1 ? `
+      <div class="print-all">
+        ${it.imgs.map(f=>`<img src="${BASE}${f}" alt="">`).join('')}
+      </div>` : '';
+    return `
+    <div class="card" data-name="${(it.en+' '+it.zh).toLowerCase()}">
+      <div class="ph" data-no="${it.no}" data-i="0">
+        <img class="main" id="m_${it.no.replace('.','_')}" src="${BASE}${it.imgs[0]}" alt="${it.en}" loading="lazy">
+        <div class="no">#${it.no}</div>
+        <div class="ch">${it.channel}</div>
+        ${n>1?`<div class="nstyles">${n} STYLES</div>`:''}
+        <div class="zoomhint">click to zoom</div>
+      </div>
+      ${thumbs}
+      ${allImgs}
+      <div class="body">
+        <div class="nm">${it.en}</div>
+        <div class="zh">${it.zh}</div>
+        <div class="spec">${it.spec}</div>
+        ${it.note?`<div class="badge">${it.note}</div>`:''}
+        <div class="pr">
+          <div class="aed"><span class="cur">AED</span>${aed}</div>
+          <div class="cny"><b>CNY ${it.cny.toFixed(2)}</b>ref. price</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // thumb click -> switch main
+  grid.querySelectorAll('.th').forEach(t => {
+    t.onclick = e => {
+      e.stopPropagation();
+      const no = t.dataset.no, i = +t.dataset.i;
+      const it = DATA.find(x => x.no === no);
+      document.getElementById('m_' + no.replace('.','_')).src = BASE + it.imgs[i];
+      t.parentElement.querySelectorAll('.th').forEach(x => x.classList.remove('on'));
+      t.classList.add('on');
+      // update the .ph data-i so zoom opens correct index
+      const ph = t.parentElement.previousElementSibling;
+      if(ph && ph.classList.contains('ph')) ph.dataset.i = i;
+    };
+  });
+
+  // main photo click -> lightbox
+  grid.querySelectorAll('.ph').forEach(p => {
+    p.onclick = () => openLb(p.dataset.no, +p.dataset.i);
+  });
+}
+
+function filter(){
+  const q = document.getElementById('q').value.toLowerCase().trim();
+  const list = q ? DATA.filter(it => (it.en+' '+it.zh).toLowerCase().includes(q)) : DATA;
+  render(list);
+  document.getElementById('cnt').textContent =
+    list.length + ' items' + (q ? ' (filtered)' : '');
+}
+document.getElementById('q').oninput = filter;
+
+function expandAll(){
+  showAll = !showAll;
+  document.querySelectorAll('.thumbs').forEach(t => {
+    t.style.flexWrap = showAll ? 'wrap' : 'nowrap';
+  });
+  document.querySelectorAll('.th').forEach(t => {
+    t.style.width = showAll ? '76px' : '52px';
+    t.style.height = showAll ? '76px' : '52px';
+  });
+  event.target.textContent = showAll ? 'Compact styles' : 'Show all styles';
+}
+
+/* ---------- Lightbox ---------- */
+let lbNo = '', lbIdx = 0;
+function openLb(no, i){
+  lbNo = no; lbIdx = i;
+  document.getElementById('lb').classList.add('on');
+  paintLb();
+}
+function paintLb(){
+  const it = DATA.find(x => x.no === lbNo);
+  const f = it.imgs[lbIdx];
+  document.getElementById('lbImg').src = BASE + f;
+  document.getElementById('lbCap').innerHTML =
+    `<b>#${it.no}</b> &nbsp; ${it.en} <span class="idx">Style ${lbIdx+1} of ${it.imgs.length} &middot; AED ${(it.cny*FX).toFixed(2)}</span>`;
+  document.getElementById('lbThumbs').innerHTML = it.imgs.map((x,i)=>
+    `<img src="${BASE}${x}" class="${i===lbIdx?'on':''}" onclick="goTo(${i})">`).join('');
+  const multi = it.imgs.length > 1;
+  document.querySelectorAll('.nav').forEach(b => b.style.display = multi ? 'flex' : 'none');
+}
+function step(d){
+  const it = DATA.find(x => x.no === lbNo);
+  lbIdx = (lbIdx + d + it.imgs.length) % it.imgs.length;
+  paintLb();
+}
+function goTo(i){ lbIdx = i; paintLb(); }
+function closeLb(){ document.getElementById('lb').classList.remove('on'); }
+
+document.getElementById('lb').onclick = e => { if(e.target.id === 'lb') closeLb(); };
+document.addEventListener('keydown', e => {
+  if(!document.getElementById('lb').classList.contains('on')) return;
+  if(e.key === 'Escape') closeLb();
+  if(e.key === 'ArrowLeft') step(-1);
+  if(e.key === 'ArrowRight') step(1);
+});
+
+filter();
+</script>
+</body>
+</html>
