@@ -266,3 +266,75 @@ Custom packaging China · China product inspection service · Yiwu market sourci
 Sourcing from China to UAE · Sourcing from China to Saudi Arabia · SABER certificate help
 توريد من الصين
 ```
+
+---
+
+## 七、Clutch 评价请求话术（英文，WhatsApp / Email 直接用）
+
+> 核心卖点顺序：**客户能得到什么** → 成本多低 → 可匿名 → 提醒查收邮件。
+> 只请求，不代写内容；不付钱、不给折扣换评价。
+
+### A. 主版本（已出货/已见结果的客户，WhatsApp 首选）
+
+```
+Hi [name]! Hope the [products] are doing well.
+
+Quick ask — we're building our reviews on Clutch, a B2B review platform
+that ranks high on Google.
+
+Why it helps you too: when you leave a review, Clutch shows your company
+name and website on their page — free publicity for [company], on a site
+Google already trusts.
+
+It's about 10 minutes: Clutch emails you a few simple questions and you
+answer in your own words. And if you'd rather not show your company name,
+you can post it anonymously.
+
+Heads up if you say yes: you'll get an email from Clutch — do check your
+inbox (and spam) so it doesn't get missed.
+
+Want me to send you the link?
+```
+
+### B. 短版本（两三段，回复率更高）
+
+```
+Hi [name] — quick one. We're collecting reviews on Clutch (a B2B site that
+ranks high on Google). If you leave one, Clutch shows your company name and
+website on their page, so it's free exposure for you too. Takes about
+10 minutes online, and you can stay anonymous if you prefer. Can I send you
+the link?
+```
+
+### C. 客户答应后（提交表单前，问邮箱）
+
+```
+Perfect, thank you! Which email should I use?
+
+I'll add you, and Clutch will send you a short questionnaire. It comes from
+@clutch.co — please keep an eye on your inbox and spam folder over the next
+few days.
+```
+
+### D. 提交表单后（提醒查收）
+
+```
+Done — watch for an email from Clutch in the next few days. It's a short
+online questionnaire, no phone call needed unless you want one. Just answer
+in your own words, honestly — that's more useful to us than a glowing
+review. Thanks again!
+```
+
+### E. 没回复时的温和提醒（3–4 天后）
+
+```
+Hi [name], no worries if you're busy — just checking whether the Clutch
+email reached you? Happy to have them resend it if it got lost.
+```
+
+### 使用要点
+- 变量：`[name]`、`[products]`、`[company]` 三处替换
+- 只发给**已经拿到结果**的客户（有成交、样品满意、有复购）；没合作过的不要发
+- **先发消息再提交表单**——否则 Clutch 的邮件会被当垃圾邮件忽略
+- 表单里能填的（姓名/公司/职位/地区）自己先填，客户只补邮箱
+- 职位别拼错：Sourcing manager（不是 Souring）
