@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SourceToGulf — Quotation</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --navy:#1E3A5F; --gold:#C9A24A; --cream:#F5ECDA;
+    --ink:#1A1A1A; --gray:#5A5A5A; --line:#E5DCC7; --red:#B4443C; --green:#3E7C4F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    background:#fff;color:var(--ink);line-height:1.5;}
+  .page{max-width:1240px;margin:0 auto;}
+
+  header{background:var(--navy);color:#fff;padding:22px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+  .brand{display:flex;align-items:center;gap:14px;}
+  .mark{width:44px;height:44px;background:var(--gold);border-radius:6px;position:relative;}
+  .mark::before{content:"";position:absolute;inset:7px;border:2px solid var(--navy);border-right:none;border-bottom:none;}
+  .mark::after{content:"";position:absolute;width:15px;height:9px;background:var(--navy);top:11px;right:9px;transform:rotate(-16deg);}
+  .brand-txt h1{font-size:22px;font-weight:700;}
+  .brand-txt p{font-size:11px;color:var(--gold);letter-spacing:1.4px;text-transform:uppercase;margin-top:2px;}
+  .head-meta{text-align:right;font-size:12px;}
+  .head-meta .qt{font-size:17px;font-weight:700;color:var(--gold);letter-spacing:1px;}
+  .head-meta .sub{color:#cfd8e3;margin-top:3px;}
+
+  .cover{background:var(--cream);border-bottom:2px solid var(--gold);
+    padding:20px 28px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .cover-l .lbl{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1.6px;}
+  .cover-l .who{font-size:28px;font-weight:700;color:var(--navy);margin:4px 0 2px;}
+  .cover-l .note{font-size:12px;color:var(--gray);}
+  .cover-r{display:flex;gap:36px;flex-wrap:wrap;}
+  .meta-i .k{font-size:9.5px;color:var(--gold);font-weight:700;letter-spacing:1.3px;}
+  .meta-i .v{font-size:14px;font-weight:600;color:var(--navy);margin-top:3px;}
+
+  .bar{padding:18px 28px 10px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;}
+  .bar h2{font-size:14px;font-weight:700;color:var(--navy);letter-spacing:1.4px;text-transform:uppercase;}
+  .bar .cnt{font-size:12px;color:var(--gray);}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;padding:8px 28px 20px;}
+  .card{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;
+    display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s;}
+  .card:hover{box-shadow:0 5px 18px rgba(30,58,95,.14);transform:translateY(-2px);}
+  .ph{position:relative;background:var(--cream);aspect-ratio:1/1;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in;}
+  .ph img{width:100%;height:100%;object-fit:contain;padding:8px;}
+  .no{position:absolute;top:9px;left:9px;background:var(--navy);color:var(--gold);
+    font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:4px;z-index:2;}
+  .tags{position:absolute;top:9px;right:9px;display:flex;flex-direction:column;gap:4px;align-items:flex-end;z-index:2;}
+  .tag{font-size:8.5px;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:.5px;text-transform:uppercase;}
+  .tag.custom{background:var(--red);color:#fff;}
+  .tag.selected{background:var(--navy);color:var(--gold);}
+  .tag.new{background:var(--green);color:#fff;}
+  .tag.finished{background:var(--gold);color:var(--navy);}
+  .body{padding:11px 13px 13px;display:flex;flex-direction:column;flex:1;}
+  .nm{font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.35;}
+  .spec{font-size:10.5px;color:var(--gray);margin-top:6px;line-height:1.5;flex:1;}
+  .badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:9px;font-weight:700;
+    padding:2px 7px;border-radius:3px;margin-top:7px;letter-spacing:.4px;text-transform:uppercase;align-self:flex-start;}
+  .pr{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:baseline;}
+  .pr .aed{font-size:19px;font-weight:700;color:var(--navy);}
+  .pr .cur{font-size:10px;color:var(--gold);font-weight:700;margin-right:2px;}
+  .pr .qty{font-size:10px;color:var(--gray);}
+  .pr .ref{font-size:9.5px;color:var(--gray);text-align:right;}
+
+  .subtotal{margin:0 28px 8px;padding:10px 14px;background:var(--cream);
+    border-left:3px solid var(--gold);font-size:12.5px;color:var(--navy);font-weight:600;
+    display:flex;justify-content:space-between;border-radius:0 6px 6px 0;}
+
+  /* summary */
+  .summary{margin:24px 28px 30px;border:2px solid var(--navy);border-radius:10px;overflow:hidden;}
+  .summary .sh{background:var(--navy);color:var(--gold);padding:12px 18px;
+    font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;}
+  .summary table{width:100%;border-collapse:collapse;font-size:13px;}
+  .summary td{padding:11px 18px;border-bottom:1px solid var(--line);}
+  .summary td:last-child{text-align:right;font-weight:700;color:var(--navy);white-space:nowrap;}
+  .summary tr.muted td{color:var(--gray);font-size:12px;}
+  .summary tr.muted td:last-child{color:var(--gray);}
+  .summary tr.total td{background:var(--cream);font-size:16px;font-weight:700;color:var(--navy);padding:15px 18px;}
+  .summary .fn{padding:10px 18px;font-size:10.5px;color:var(--gray);background:#faf7f0;line-height:1.7;}
+
+  footer{background:var(--navy);color:#fff;padding:20px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  .f-l{font-size:13px;font-weight:600;}
+  .f-l span{color:var(--gold);}
+  .f-r{font-size:12px;color:#cfd8e3;text-align:right;line-height:1.7;}
+  .f-r a{color:var(--gold);text-decoration:none;}
+
+  .lb{position:fixed;inset:0;background:rgba(8,14,24,.95);z-index:99;display:none;
+    align-items:center;justify-content:center;padding:28px;}
+  .lb.on{display:flex;}
+  .lb img{max-width:96%;max-height:90%;object-fit:contain;border-radius:4px;}
+  .lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-size:13px;}
+  .lb .cap b{color:var(--gold);}
+  .lb .close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:30px;cursor:pointer;}
+
+  .hint{text-align:center;font-size:11.5px;color:var(--gray);padding:0 28px 22px;}
+
+  @media print{
+    @page{size:A4;margin:9mm;}
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .hint,.lb{display:none !important;}
+    header,.cover,footer,.summary,.subtotal{break-inside:avoid;}
+    .grid{grid-template-columns:repeat(4,1fr);gap:9px;padding:8px 0 0;}
+    .card{break-inside:avoid;box-shadow:none !important;transform:none !important;}
+    .ph{aspect-ratio:1/1;}
+    .nm{font-size:10px;} .spec{font-size:8.5px;}
+    .pr .aed{font-size:14px;}
+    .bar{padding:12px 0 6px;}
+    .cover,header{padding:14px 0;}
+    .subtotal{margin:0 0 8px;}
+    .summary{margin:16px 0;}
+    footer{padding:12px 0;}
+  }
+  @media (max-width:640px){
+    .cover,.bar,.grid,header,footer{padding-left:16px;padding-right:16px;}
+    .grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .subtotal{margin-left:16px;margin-right:16px;}
+    .summary{margin-left:16px;margin-right:16px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="brand">
+      <div class="mark"></div>
+      <div class="brand-txt">
+        <h1>SourceToGulf</h1>
+        <p>China &rarr; Gulf Sourcing Partner</p>
+      </div>
+    </div>
+    <div class="head-meta">
+      <div class="qt">SAMPLE ORDER &middot; AED</div>
+      <div class="sub">Ref &middot; STG-20260911-WA-01</div>
+      <div class="sub">Issued &middot; 11 September 2026</div>
+    </div>
+  </header>
+
+  <div class="cover">
+    <div class="cover-l">
+      <div class="lbl">PREPARED FOR</div>
+      <div class="who">+971 56 449 9568</div>
+      <div class="note">Sample order &middot; 1 piece per item &middot; Dubai, UAE</div>
+    </div>
+    <div class="cover-r">
+      <div class="meta-i"><div class="k">ITEMS</div><div class="v" id="mItems">—</div></div>
+      <div class="meta-i"><div class="k">VALIDITY</div><div class="v">14 days</div></div>
+      <div class="meta-i"><div class="k">FX RATE</div><div class="v">1 CNY &asymp; 0.51 AED</div></div>
+    </div>
+  </div>
+
+  <div class="bar"><h2>Selected Items</h2><div class="cnt" id="cB"></div></div>
+  <div class="grid" id="gridB"></div>
+  <div class="subtotal" id="subB"></div>
+
+  <p class="hint">Click any image to enlarge &middot; Press <b>Cmd/Ctrl + P</b> to save as PDF</p>
+
+  <div class="summary">
+    <div class="sh">Cost Summary — Sample Order</div>
+    <table id="feeTable"></table>
+    <div class="fn">
+      Air freight charged at <b>AED 20 per kg</b> (Guangzhou &rarr; Dubai, 5–8 days), estimated on
+      ~10 kg consolidated; final shipping is charged by actual weight.
+      Custom-print items are produced as finished goods with your requested text/design included.
+      Validity 14 days.
+    </div>
+  </div>
+
+  <footer>
+    <div class="f-l">SourceToGulf <span>&middot;</span> China &rarr; Gulf Sourcing Partner</div>
+    <div class="f-r">
+      WhatsApp &middot; <a href="https://wa.me/971585854194">+971 58 585 4194</a><br>
+      <a href="mailto:info@sourcetogulf.com">info@sourcetogulf.com</a> &middot;
+      <a href="https://sourcetogulf.com">sourcetogulf.com</a>
+    </div>
+  </footer>
+
+</div>
+
+<div class="lb" id="lb">
+  <button class="close" onclick="document.getElementById('lb').classList.remove('on')">&times;</button>
+  <img id="lbImg" src="" alt="">
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+const DATA = {
+ "items": [
+  {
+   "no": "1",
+   "en": "Anime Weapon Model Set — Blue (Spear + 3 Blades)",
+   "spec": "Metal-style display weapon set.",
+   "note": "",
+   "tags": [],
+   "aed": 15.17,
+   "ref": "CNY 29.75",
+   "img": "images/01.jpg"
+  },
+  {
+   "no": "2",
+   "en": "Narwhal Ceramic Mug — 400 ml",
+   "spec": "Blue ceramic mug with 3D narwhal inside; “Narwhal always love you” print.",
+   "note": "",
+   "tags": [],
+   "aed": 7.09,
+   "ref": "CNY 13.90",
+   "img": "images/02.jpg"
+  },
+  {
+   "no": "3",
+   "en": "Orange Fruit Mug with Lid & Spoon",
+   "spec": "Ceramic mug, orange print, fruit-knob lid with spiral spoon.",
+   "note": "",
+   "tags": [],
+   "aed": 11.33,
+   "ref": "CNY 22.22",
+   "img": "images/03.jpg"
+  },
+  {
+   "no": "4",
+   "en": "Hand-painted Sunflower Cup — approx. 250 ml",
+   "spec": "Handmade ceramic cup with sunflower handle.",
+   "note": "Price varies by design",
+   "tags": [
+    "SELECTED"
+   ],
+   "aed": 119.85,
+   "ref": "CNY 235.00",
+   "img": "images/04.jpg"
+  },
+  {
+   "no": "5",
+   "en": "Tartaglia Badge Set — 25 mm (6 designs)",
+   "spec": "Official-artist badge boards + bonus hidden mixed board.",
+   "note": "+1 bonus board",
+   "tags": [
+    "SELECTED"
+   ],
+   "aed": 29.71,
+   "ref": "CNY 58.26",
+   "img": "images/05.jpg"
+  },
+  {
+   "no": "6",
+   "en": "Tartaglia Card Badge — 25 mm",
+   "spec": "“Winter Snow” limited card badge.",
+   "note": "",
+   "tags": [],
+   "aed": 4.69,
+   "ref": "CNY 9.20",
+   "img": "images/06.jpg"
+  },
+  {
+   "no": "7",
+   "en": "Genshin Impact Dish Cloth — Maid Tartaglia",
+   "spec": "Round cleaning cloth, “Coconut Tree by the Sea” design.",
+   "note": "",
+   "tags": [],
+   "aed": 3.06,
+   "ref": "CNY 6.00",
+   "img": "images/07.jpg"
+  },
+  {
+   "no": "8",
+   "en": "Genshin Fes Standee & Postcard Set — Tartaglia",
+   "spec": "Acrylic standee + 3 postcards.",
+   "note": "",
+   "tags": [],
+   "aed": 9.18,
+   "ref": "CNY 18.00",
+   "img": "images/08.jpg"
+  },
+  {
+   "no": "9",
+   "en": "Tartaglia Scrunchie Hair Tie",
+   "spec": "Grey/orange satin scrunchie, character print.",
+   "note": "",
+   "tags": [],
+   "aed": 5.2,
+   "ref": "CNY 10.19",
+   "img": "images/09.jpg"
+  },
+  {
+   "no": "10",
+   "en": "Tartaglia Adjustable Open Ring",
+   "spec": "Silver-tone open ring, adjustable size.",
+   "note": "",
+   "tags": [],
+   "aed": 7.96,
+   "ref": "CNY 15.60",
+   "img": "images/10.jpg"
+  },
+  {
+   "no": "11",
+   "en": "Gemstone Vision Pendant — Custom Character",
+   "spec": "Carved crystal vision pendant (Neuvillette shown).",
+   "note": "Custom character",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 33.1,
+   "ref": "CNY 64.90",
+   "img": "images/11.jpg"
+  },
+  {
+   "no": "12",
+   "en": "Genshin Guka Sticker Sheet",
+   "spec": "Character sticker sheet for guka crafting.",
+   "note": "",
+   "tags": [],
+   "aed": 5.05,
+   "ref": "CNY 9.90",
+   "img": "images/12.jpg"
+  },
+  {
+   "no": "13",
+   "en": "Genshin Music CD (Pre-owned)",
+   "spec": "Second-hand original CD, shipping included.",
+   "note": "Pre-owned",
+   "tags": [],
+   "aed": 12.85,
+   "ref": "CNY 25.20",
+   "img": "images/13.jpg"
+  }
+ ],
+ "fees": [
+  [
+   "Products — 13 items (1 pc each)",
+   "AED 264.24"
+  ],
+  [
+   "Domestic freight (sellers → Guangzhou warehouse)",
+   "AED 41.00"
+  ],
+  [
+   "Air freight GZ → Dubai @ AED 25/kg (est. 2.5 kg)",
+   "AED 62.50"
+  ],
+  [
+   "Sourcing, inspection, consolidation & packing",
+   "AED 200.00"
+  ],
+  [
+   "TOTAL",
+   "AED 567.74  ·  ≈ USD 155"
+  ]
+ ]
+};
+
+function card(it){
+  const tags = (it.tags||[]).map(t=>`<span class="tag ${t.toLowerCase()}">${t}</span>`).join('');
+  return `
+  <div class="card">
+    <div class="ph" onclick="zoom('${it.no}','${it.img}','${it.en.replace(/'/g,'')}')">
+      <img src="${it.img}" alt="${it.en}" loading="lazy">
+      <div class="no">${it.no}</div>
+      <div class="tags">${tags}</div>
+    </div>
+    <div class="body">
+      <div class="nm">${it.en}</div>
+      <div class="spec">${it.spec}</div>
+      ${it.note?`<div class="badge">${it.note}</div>`:''}
+      <div class="pr">
+        <div class="aed"><span class="cur">AED</span>${it.aed.toFixed(2)}</div>
+        <div class="ref">${it.ref}<br><span class="qty">qty 1 pc</span></div>
+      </div>
+    </div>
+  </div>`;
+}
+
+const B = DATA.items;
+document.getElementById('gridB').innerHTML = B.map(card).join('');
+const subB = B.reduce((s,x)=>s+x.aed,0);
+document.getElementById('cB').textContent = B.length + ' items';
+document.getElementById('mItems').textContent = B.length + ' items';
+document.getElementById('subB').innerHTML =
+  `<span>Items subtotal &middot; ${B.length} pcs (1 each)</span><span>AED ${subB.toFixed(2)}</span>`;
+
+document.getElementById('feeTable').innerHTML = DATA.fees.map((r,i)=>{
+  const isTotal = r[0] === 'TOTAL';
+  const isProd = i === 0;
+  return `<tr class="${isTotal?'total':(isProd?'':'muted')}"><td>${r[0]}</td><td>${r[1]}</td></tr>`;
+}).join('');
+
+function zoom(no,img,en){
+  document.getElementById('lbImg').src = img;
+  document.getElementById('lbCap').innerHTML = `<b>${no}</b> &nbsp; ${en}`;
+  document.getElementById('lb').classList.add('on');
+}
+document.getElementById('lb').onclick = e => {
+  if(e.target.id === 'lb') document.getElementById('lb').classList.remove('on');
+};
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') document.getElementById('lb').classList.remove('on');
+});
+</script>
+</body>
+</html>
