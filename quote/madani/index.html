@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SourceToGulf — Quotation for Madani</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --navy:#1E3A5F; --gold:#C9A24A; --cream:#F5ECDA;
+    --ink:#1A1A1A; --gray:#5A5A5A; --line:#E5DCC7; --green:#3E7C4F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    background:#fff;color:var(--ink);line-height:1.5;}
+  .page{max-width:1180px;margin:0 auto;}
+
+  header{background:var(--navy);color:#fff;padding:22px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+  .brand{display:flex;align-items:center;gap:14px;}
+  .mark{width:44px;height:44px;background:var(--gold);border-radius:6px;position:relative;}
+  .mark::before{content:"";position:absolute;inset:7px;border:2px solid var(--navy);border-right:none;border-bottom:none;}
+  .mark::after{content:"";position:absolute;width:15px;height:9px;background:var(--navy);top:11px;right:9px;transform:rotate(-16deg);}
+  .brand-txt h1{font-size:22px;font-weight:700;}
+  .brand-txt p{font-size:11px;color:var(--gold);letter-spacing:1.4px;text-transform:uppercase;margin-top:2px;}
+  .head-meta{text-align:right;font-size:12px;}
+  .head-meta .qt{font-size:17px;font-weight:700;color:var(--gold);letter-spacing:1px;}
+  .head-meta .sub{color:#cfd8e3;margin-top:3px;}
+
+  .cover{background:var(--cream);border-bottom:2px solid var(--gold);
+    padding:20px 28px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .cover-l .lbl{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1.6px;}
+  .cover-l .who{font-size:28px;font-weight:700;color:var(--navy);margin:4px 0 2px;}
+  .cover-l .note{font-size:12px;color:var(--gray);}
+  .cover-r{display:flex;gap:32px;flex-wrap:wrap;}
+  .meta-i .k{font-size:9.5px;color:var(--gold);font-weight:700;letter-spacing:1.3px;}
+  .meta-i .v{font-size:13.5px;font-weight:600;color:var(--navy);margin-top:3px;}
+
+  .bar{padding:20px 28px 10px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;}
+  .bar h2{font-size:14px;font-weight:700;color:var(--navy);letter-spacing:1.4px;text-transform:uppercase;}
+  .bar .cnt{font-size:12px;color:var(--gray);}
+
+  /* product rows (wide, 2 SKUs only) */
+  .rows{padding:8px 28px 4px;}
+  .item{display:flex;gap:18px;border:1px solid var(--line);border-radius:10px;overflow:hidden;
+    margin-bottom:14px;background:#fff;}
+  .item .ph{width:190px;flex-shrink:0;background:var(--cream);
+    display:flex;align-items:center;justify-content:center;cursor:zoom-in;position:relative;}
+  .item .ph img{width:100%;height:190px;object-fit:contain;padding:10px;}
+  .item .no{position:absolute;top:8px;left:8px;background:var(--navy);color:var(--gold);
+    font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:4px;}
+  .item .info{flex:1;padding:14px 16px;display:flex;flex-direction:column;}
+  .item .nm{font-size:16px;font-weight:700;color:var(--navy);}
+  .item .link{font-size:11px;color:var(--gold);margin-top:3px;word-break:break-all;}
+  .item .spec{font-size:12px;color:var(--gray);margin-top:8px;line-height:1.6;}
+  .item .tagline{margin-top:8px;}
+  .tagl{display:inline-block;background:var(--green);color:#fff;font-size:9px;font-weight:700;
+    padding:3px 8px;border-radius:3px;letter-spacing:.5px;text-transform:uppercase;}
+  .item .calc{margin-top:auto;padding-top:12px;display:flex;gap:28px;flex-wrap:wrap;align-items:baseline;}
+  .calc .u{font-size:12px;color:var(--gray);}
+  .calc .u b{display:block;font-size:14px;color:var(--ink);}
+  .calc .q{font-size:12px;color:var(--gray);}
+  .calc .q b{display:block;font-size:14px;color:var(--ink);}
+  .item .sub{margin-left:auto;text-align:right;}
+  .item .sub .lab{font-size:10px;color:var(--gray);}
+  .item .sub .amt{font-size:22px;font-weight:700;color:var(--navy);}
+  .item .sub .amt span{font-size:11px;color:var(--gold);font-weight:700;margin-right:2px;}
+
+  /* summary */
+  .summary{margin:22px 28px 8px;border:2px solid var(--navy);border-radius:10px;overflow:hidden;}
+  .summary .sh{background:var(--navy);color:var(--gold);padding:12px 18px;
+    font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;}
+  .summary table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  .summary td{padding:12px 18px;border-bottom:1px solid var(--line);}
+  .summary td:last-child{text-align:right;font-weight:700;color:var(--navy);white-space:nowrap;}
+  .summary tr.small td{font-size:12px;color:var(--gray);}
+  .summary tr.small td:last-child{color:var(--gray);}
+  .summary tr.total td{background:var(--cream);font-size:17px;font-weight:700;color:var(--navy);padding:16px 18px;}
+
+  /* terms */
+  .terms{margin:16px 28px 26px;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .terms .th{background:var(--cream);padding:11px 18px;font-size:12px;font-weight:700;
+    color:var(--navy);letter-spacing:1.3px;text-transform:uppercase;border-bottom:1px solid var(--line);}
+  .terms ul{padding:14px 18px 16px 36px;font-size:12.5px;color:var(--ink);line-height:1.85;}
+  .terms li{margin-bottom:3px;}
+  .terms b{color:var(--navy);}
+
+  footer{background:var(--navy);color:#fff;padding:20px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  .f-l{font-size:13px;font-weight:600;}
+  .f-l span{color:var(--gold);}
+  .f-r{font-size:12px;color:#cfd8e3;text-align:right;line-height:1.7;}
+  .f-r a{color:var(--gold);text-decoration:none;}
+
+  .lb{position:fixed;inset:0;background:rgba(8,14,24,.95);z-index:99;display:none;
+    align-items:center;justify-content:center;padding:28px;}
+  .lb.on{display:flex;}
+  .lb img{max-width:96%;max-height:90%;object-fit:contain;border-radius:4px;}
+  .lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-size:13px;}
+  .lb .cap b{color:var(--gold);}
+  .lb .close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:30px;cursor:pointer;}
+
+  .hint{text-align:center;font-size:11.5px;color:var(--gray);padding:0 28px 20px;}
+
+  @media print{
+    @page{size:A4;margin:9mm;}
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .hint,.lb{display:none !important;}
+    header,.cover,.summary,.terms,.item{break-inside:avoid;}
+    .item .ph{width:140px;}
+    .item .ph img{height:140px;}
+    .item .nm{font-size:13px;}
+    .item .spec{font-size:10px;}
+    .cover,header{padding:14px 0;}
+    .rows{padding:8px 0 0;}
+    .summary{margin:16px 0;}
+    .terms{margin:12px 0;}
+    footer{padding:12px 0;}
+  }
+  @media (max-width:720px){
+    .cover,.bar,.rows,header,footer{padding-left:16px;padding-right:16px;}
+    .summary,.terms{margin-left:16px;margin-right:16px;}
+    .item{flex-direction:column;}
+    .item .ph{width:100%;}
+    .item .ph img{height:220px;}
+    .item .sub{margin-left:0;text-align:left;}
+    .head-meta{text-align:left;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="brand">
+      <div class="mark"></div>
+      <div class="brand-txt">
+        <h1>SourceToGulf</h1>
+        <p>China &rarr; Gulf Sourcing Partner</p>
+      </div>
+    </div>
+    <div class="head-meta">
+      <div class="qt">QUOTATION &middot; QAR</div>
+      <div class="sub">Ref &middot; STG-20260911-MD-01</div>
+      <div class="sub">Issued &middot; 11 September 2026</div>
+    </div>
+  </header>
+
+  <div class="cover">
+    <div class="cover-l">
+      <div class="lbl">PREPARED FOR</div>
+      <div class="who">Madani</div>
+      <div class="note">MOZA Racing sim equipment &middot; Doha, Qatar</div>
+    </div>
+    <div class="cover-r">
+      <div class="meta-i"><div class="k">TOTAL QTY</div><div class="v">7 pcs</div></div>
+      <div class="meta-i"><div class="k">SHIPPING</div><div class="v">Air · DDP door-to-door</div></div>
+      <div class="meta-i"><div class="k">TRANSIT</div><div class="v">5–10 days</div></div>
+      <div class="meta-i"><div class="k">VALIDITY</div><div class="v">14 days</div></div>
+      <div class="meta-i"><div class="k">FX RATE</div><div class="v">1 CNY &asymp; 0.513 QAR</div></div>
+    </div>
+  </div>
+
+  <div class="bar"><h2>Products</h2><div class="cnt">2 SKUs &middot; 7 pieces</div></div>
+  <div class="rows">
+
+    <div class="item">
+      <div class="ph" onclick="zoom('images/S1.jpg','MOZA CM2 HD Racing Dashboard')">
+        <img src="images/S1.jpg" alt="MOZA CM2 HD Racing Dashboard">
+        <div class="no">01</div>
+      </div>
+      <div class="info">
+        <div class="nm">MOZA CM2 HD Racing Dashboard</div>
+        <div class="link">mozaracing.cn/cm2-racing-dash</div>
+        <div class="spec">
+          High-definition sim racing dashboard display.<br>
+          218 × 142 × 84 mm &middot; 2,600 cm³ &middot; 0.8 kg / pc
+        </div>
+        <div class="tagline"><span class="tagl">Genuine MOZA</span></div>
+        <div class="calc">
+          <div class="u">Unit price<b>QAR 583</b></div>
+          <div class="q">Quantity<b>5 pcs</b></div>
+          <div class="sub">
+            <div class="lab">Subtotal</div>
+            <div class="amt"><span>QAR</span>2,913.84</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="ph" onclick="zoom('images/S2.jpg','MOZA HBP Sim Racing Handbrake')">
+        <img src="images/S2.jpg" alt="MOZA HBP Sim Racing Handbrake">
+        <div class="no">02</div>
+      </div>
+      <div class="info">
+        <div class="nm">MOZA HBP Sim Racing Handbrake</div>
+        <div class="link">mozaracing.cn/hbp-handbrake</div>
+        <div class="spec">
+          Load-cell handbrake for sim racing rigs.<br>
+          280 × 225 × 117 mm &middot; 7,371 cm³ &middot; 1.6 kg / pc
+        </div>
+        <div class="tagline"><span class="tagl">Genuine MOZA</span></div>
+        <div class="calc">
+          <div class="u">Unit price<b>QAR 234</b></div>
+          <div class="q">Quantity<b>2 pcs</b></div>
+          <div class="sub">
+            <div class="lab">Subtotal</div>
+            <div class="amt"><span>QAR</span>467.86</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="summary">
+    <div class="sh">Cost Summary</div>
+    <table>
+      <tr class="small"><td>MOZA CM2 HD Dashboard × 5</td><td>QAR 2,913.84</td></tr>
+      <tr class="small"><td>MOZA HBP Handbrake × 2</td><td>QAR 467.86</td></tr>
+      <tr><td>Products subtotal</td><td>QAR 3,381.70</td></tr>
+      <tr><td>Air freight &mdash; DDP door-to-door, customs clearance &amp; duties included</td><td>QAR 700.00</td></tr>
+      <tr class="total"><td>TOTAL</td><td>QAR 4,081.70 &nbsp;·&nbsp; ≈ USD 1,121</td></tr>
+    </table>
+  </div>
+
+  <div class="terms">
+    <div class="th">Shipping &amp; Payment Terms</div>
+    <ul>
+      <li><b>Service:</b> air freight, <b>DDP door-to-door</b> — customs clearance, duties and taxes included. Delivered to your address in Doha.</li>
+      <li><b>Transit time:</b> 5–10 days from dispatch to signed delivery.</li>
+      <li><b>Payment:</b> 70% when cargo reaches our China warehouse · 30% on delivery to you.</li>
+      <li><b>Freight adjustment:</b> if actual freight differs from the estimate, the difference is refunded or charged accordingly.</li>
+      <li><b>Validity:</b> 14 days from issue date. Rate locked on payment date.</li>
+    </ul>
+  </div>
+
+  <p class="hint">Click any image to enlarge &middot; Press <b>Cmd/Ctrl + P</b> to save as PDF</p>
+
+  <footer>
+    <div class="f-l">SourceToGulf <span>&middot;</span> China &rarr; Gulf Sourcing Partner</div>
+    <div class="f-r">
+      WhatsApp &middot; <a href="https://wa.me/971585854194">+971 58 585 4194</a><br>
+      <a href="mailto:info@sourcetogulf.com">info@sourcetogulf.com</a> &middot;
+      <a href="https://sourcetogulf.com">sourcetogulf.com</a>
+    </div>
+  </footer>
+
+</div>
+
+<div class="lb" id="lb">
+  <button class="close" onclick="document.getElementById('lb').classList.remove('on')">&times;</button>
+  <img id="lbImg" src="" alt="">
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+function zoom(img,en){
+  document.getElementById('lbImg').src = img;
+  document.getElementById('lbCap').innerHTML = '<b>'+en+'</b>';
+  document.getElementById('lb').classList.add('on');
+}
+document.getElementById('lb').onclick = e => {
+  if(e.target.id === 'lb') document.getElementById('lb').classList.remove('on');
+};
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') document.getElementById('lb').classList.remove('on');
+});
+</script>
+</body>
+</html>
