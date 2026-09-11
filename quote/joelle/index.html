@@ -3,44 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SourceToGulf — Quotation for Joelle</title>
+<title>SourceToGulf — Sample Order for Joelle</title>
 <meta name="robots" content="noindex">
 <style>
   :root{
     --navy:#1E3A5F; --gold:#C9A24A; --cream:#F5ECDA;
-    --ink:#1A1A1A; --gray:#5A5A5A; --line:#E5DCC7;
+    --ink:#1A1A1A; --gray:#5A5A5A; --line:#E5DCC7; --red:#B4443C; --green:#3E7C4F;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-    background:#fff;color:var(--ink);line-height:1.5;
-  }
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    background:#fff;color:var(--ink);line-height:1.5;}
   .page{max-width:1240px;margin:0 auto;}
 
-  /* ---------- Header ---------- */
-  header{
-    background:var(--navy);color:#fff;padding:22px 28px;
-    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
-  }
+  header{background:var(--navy);color:#fff;padding:22px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
   .brand{display:flex;align-items:center;gap:14px;}
-  .mark{
-    width:44px;height:44px;background:var(--gold);border-radius:6px;flex-shrink:0;
-    position:relative;
-  }
+  .mark{width:44px;height:44px;background:var(--gold);border-radius:6px;position:relative;}
   .mark::before{content:"";position:absolute;inset:7px;border:2px solid var(--navy);border-right:none;border-bottom:none;}
   .mark::after{content:"";position:absolute;width:15px;height:9px;background:var(--navy);top:11px;right:9px;transform:rotate(-16deg);}
-  .brand-txt h1{font-size:22px;font-weight:700;letter-spacing:.3px;}
+  .brand-txt h1{font-size:22px;font-weight:700;}
   .brand-txt p{font-size:11px;color:var(--gold);letter-spacing:1.4px;text-transform:uppercase;margin-top:2px;}
   .head-meta{text-align:right;font-size:12px;}
   .head-meta .qt{font-size:17px;font-weight:700;color:var(--gold);letter-spacing:1px;}
   .head-meta .sub{color:#cfd8e3;margin-top:3px;}
 
-  /* ---------- Cover ---------- */
-  .cover{
-    background:var(--cream);border-bottom:2px solid var(--gold);
-    padding:20px 28px;display:flex;justify-content:space-between;
-    align-items:flex-start;flex-wrap:wrap;gap:20px;
-  }
+  .cover{background:var(--cream);border-bottom:2px solid var(--gold);
+    padding:20px 28px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
   .cover-l .lbl{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1.6px;}
   .cover-l .who{font-size:28px;font-weight:700;color:var(--navy);margin:4px 0 2px;}
   .cover-l .note{font-size:12px;color:var(--gray);}
@@ -48,83 +36,53 @@
   .meta-i .k{font-size:9.5px;color:var(--gold);font-weight:700;letter-spacing:1.3px;}
   .meta-i .v{font-size:14px;font-weight:600;color:var(--navy);margin-top:3px;}
 
-  /* ---------- Toolbar ---------- */
-  .bar{
-    padding:16px 28px;display:flex;justify-content:space-between;
-    align-items:center;flex-wrap:wrap;gap:12px;border-bottom:1px solid var(--line);
-  }
+  .bar{padding:18px 28px 10px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;}
   .bar h2{font-size:14px;font-weight:700;color:var(--navy);letter-spacing:1.4px;text-transform:uppercase;}
   .bar .cnt{font-size:12px;color:var(--gray);}
-  .tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
-  .tools input{
-    border:1px solid var(--line);border-radius:5px;padding:7px 11px;
-    font-size:12.5px;width:190px;outline:none;font-family:inherit;
-  }
-  .tools input:focus{border-color:var(--gold);}
-  .btn{
-    border:1px solid var(--line);background:#fff;border-radius:5px;
-    padding:7px 13px;font-size:12px;cursor:pointer;font-family:inherit;color:var(--navy);font-weight:600;
-  }
-  .btn:hover{border-color:var(--gold);background:var(--cream);}
 
-  /* ---------- Grid ---------- */
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;padding:20px 28px 28px;}
-  .card{
-    border:1px solid var(--line);border-radius:9px;overflow:hidden;
-    background:#fff;display:flex;flex-direction:column;
-    transition:box-shadow .18s,transform .18s;
-  }
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;padding:8px 28px 20px;}
+  .card{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;
+    display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s;}
   .card:hover{box-shadow:0 5px 18px rgba(30,58,95,.14);transform:translateY(-2px);}
-
-  /* main photo */
-  .ph{
-    position:relative;background:var(--cream);aspect-ratio:1/1;
-    display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in;
-  }
-  .ph img.main{width:100%;height:100%;object-fit:contain;padding:10px;}
+  .ph{position:relative;background:var(--cream);aspect-ratio:1/1;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in;}
+  .ph img{width:100%;height:100%;object-fit:contain;padding:8px;}
   .no{position:absolute;top:9px;left:9px;background:var(--navy);color:var(--gold);
-      font-size:11px;font-weight:700;padding:3px 9px;border-radius:4px;letter-spacing:.5px;z-index:2;}
-  .ch{position:absolute;top:9px;right:9px;background:rgba(255,255,255,.94);color:var(--gray);
-      font-size:10px;padding:3px 8px;border-radius:4px;font-weight:600;z-index:2;}
-  .nstyles{
-    position:absolute;bottom:9px;right:9px;background:rgba(30,58,95,.9);color:var(--gold);
-    font-size:9.5px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.4px;z-index:2;
-  }
-  .zoomhint{
-    position:absolute;bottom:9px;left:9px;background:rgba(255,255,255,.9);
-    font-size:9px;color:var(--gray);padding:3px 7px;border-radius:3px;z-index:2;
-  }
+    font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:4px;z-index:2;}
+  .tags{position:absolute;top:9px;right:9px;display:flex;flex-direction:column;gap:4px;align-items:flex-end;z-index:2;}
+  .tag{font-size:8.5px;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:.5px;text-transform:uppercase;}
+  .tag.custom{background:var(--red);color:#fff;}
+  .tag.selected{background:var(--navy);color:var(--gold);}
+  .tag.new{background:var(--green);color:#fff;}
+  .tag.finished{background:var(--gold);color:var(--navy);}
+  .body{padding:11px 13px 13px;display:flex;flex-direction:column;flex:1;}
+  .nm{font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.35;}
+  .spec{font-size:10.5px;color:var(--gray);margin-top:6px;line-height:1.5;flex:1;}
+  .badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:9px;font-weight:700;
+    padding:2px 7px;border-radius:3px;margin-top:7px;letter-spacing:.4px;text-transform:uppercase;align-self:flex-start;}
+  .pr{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:baseline;}
+  .pr .aed{font-size:19px;font-weight:700;color:var(--navy);}
+  .pr .cur{font-size:10px;color:var(--gold);font-weight:700;margin-right:2px;}
+  .pr .qty{font-size:10px;color:var(--gray);}
+  .pr .ref{font-size:9.5px;color:var(--gray);text-align:right;}
 
-  /* style thumbs */
-  .thumbs{
-    display:flex;gap:6px;padding:9px 10px;background:#faf7f0;
-    border-top:1px solid var(--line);overflow-x:auto;scrollbar-width:thin;
-  }
-  .thumbs::-webkit-scrollbar{height:6px;}
-  .thumbs::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px;}
-  .th{
-    width:52px;height:52px;flex-shrink:0;border:2px solid transparent;border-radius:5px;
-    overflow:hidden;cursor:pointer;background:#fff;transition:border-color .15s;
-  }
-  .th:hover{border-color:var(--gold);}
-  .th.on{border-color:var(--navy);}
-  .th img{width:100%;height:100%;object-fit:contain;padding:2px;}
+  .subtotal{margin:0 28px 8px;padding:10px 14px;background:var(--cream);
+    border-left:3px solid var(--gold);font-size:12.5px;color:var(--navy);font-weight:600;
+    display:flex;justify-content:space-between;border-radius:0 6px 6px 0;}
 
-  .body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1;}
-  .nm{font-size:13.5px;font-weight:700;color:var(--navy);line-height:1.35;}
-  .zh{font-size:11px;color:var(--gray);margin-top:4px;}
-  .spec{font-size:11.5px;color:var(--ink);margin-top:8px;line-height:1.5;flex:1;}
-  .badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:9.5px;
-    font-weight:700;padding:3px 8px;border-radius:3px;margin-top:8px;
-    letter-spacing:.5px;text-transform:uppercase;align-self:flex-start;}
-  .pr{margin-top:12px;padding-top:11px;border-top:1px solid var(--line);
-      display:flex;justify-content:space-between;align-items:baseline;}
-  .pr .aed{font-size:22px;font-weight:700;color:var(--navy);letter-spacing:-.3px;}
-  .pr .cur{font-size:11px;color:var(--gold);font-weight:700;margin-right:2px;}
-  .pr .cny{font-size:11px;color:var(--gray);text-align:right;line-height:1.3;}
-  .pr .cny b{display:block;font-size:12px;color:var(--ink);}
+  /* summary */
+  .summary{margin:24px 28px 30px;border:2px solid var(--navy);border-radius:10px;overflow:hidden;}
+  .summary .sh{background:var(--navy);color:var(--gold);padding:12px 18px;
+    font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;}
+  .summary table{width:100%;border-collapse:collapse;font-size:13px;}
+  .summary td{padding:11px 18px;border-bottom:1px solid var(--line);}
+  .summary td:last-child{text-align:right;font-weight:700;color:var(--navy);white-space:nowrap;}
+  .summary tr.muted td{color:var(--gray);font-size:12px;}
+  .summary tr.muted td:last-child{color:var(--gray);}
+  .summary tr.total td{background:var(--cream);font-size:16px;font-weight:700;color:var(--navy);padding:15px 18px;}
+  .summary .fn{padding:10px 18px;font-size:10.5px;color:var(--gray);background:#faf7f0;line-height:1.7;}
 
-  /* ---------- Footer ---------- */
   footer{background:var(--navy);color:#fff;padding:20px 28px;
     display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
   .f-l{font-size:13px;font-weight:600;}
@@ -132,66 +90,37 @@
   .f-r{font-size:12px;color:#cfd8e3;text-align:right;line-height:1.7;}
   .f-r a{color:var(--gold);text-decoration:none;}
 
-  /* ---------- Lightbox ---------- */
-  .lb{position:fixed;inset:0;background:rgba(8,14,24,.95);z-index:99;
-      display:none;flex-direction:column;align-items:center;justify-content:center;padding:24px;}
+  .lb{position:fixed;inset:0;background:rgba(8,14,24,.95);z-index:99;display:none;
+    align-items:center;justify-content:center;padding:28px;}
   .lb.on{display:flex;}
-  .lb .stage{position:relative;flex:1;display:flex;align-items:center;justify-content:center;width:100%;min-height:0;}
-  .lb img{max-width:96%;max-height:84vh;object-fit:contain;border-radius:4px;}
-  .lb .cap{color:#fff;font-size:13px;margin-top:14px;text-align:center;}
+  .lb img{max-width:96%;max-height:90%;object-fit:contain;border-radius:4px;}
+  .lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-size:13px;}
   .lb .cap b{color:var(--gold);}
-  .lb .cap .idx{color:#8fa3ba;font-size:11.5px;display:block;margin-top:4px;}
-  .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.13);
-    border:none;color:#fff;font-size:26px;width:46px;height:46px;border-radius:50%;
-    cursor:pointer;display:flex;align-items:center;justify-content:center;}
-  .nav:hover{background:rgba(255,255,255,.26);}
-  .nav.prev{left:8px;} .nav.next{right:8px;}
-  .lb .close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;
-    font-size:30px;cursor:pointer;line-height:1;}
-  .lb .thumbs-lb{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap;justify-content:center;max-width:96%;}
-  .lb .thumbs-lb img{width:46px;height:46px;object-fit:contain;background:#fff;
-    border-radius:4px;cursor:pointer;border:2px solid transparent;padding:2px;}
-  .lb .thumbs-lb img.on{border-color:var(--gold);}
+  .lb .close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:30px;cursor:pointer;}
 
   .hint{text-align:center;font-size:11.5px;color:var(--gray);padding:0 28px 22px;}
-
-  /* ---------- Print: show ALL styles as a grid ---------- */
-  .print-all{display:none;}
 
   @media print{
     @page{size:A4;margin:9mm;}
     body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-    .hint,.lb,.tools,.thumbs,.zoomhint{display:none !important;}
-    header,.cover,footer{break-inside:avoid;}
-    .bar{padding:12px 0 8px;border-bottom:1px solid var(--line);}
-    .bar h2{font-size:12px;}
-    .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:12px 0 0;}
-    .card{break-inside:avoid;box-shadow:none !important;transform:none !important;page-break-inside:avoid;}
-    .ph{aspect-ratio:auto;height:auto;background:#fff;padding:0;cursor:default;}
-    .ph img.main{display:none;}      /* hide the single main img */
-    .no,.ch{position:static;display:inline-block;margin:6px 0 0 8px;}
-    .no{font-size:9px;padding:2px 7px;}
-    .ch{font-size:8.5px;padding:2px 6px;margin-left:4px;}
-    .nstyles{position:static;display:inline-block;background:none;color:var(--gray);
-      font-size:9px;padding:0;margin:0 0 0 4px;}
-    .print-all{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;padding:8px;}
-    .print-all img{width:100%;aspect-ratio:1/1;object-fit:contain;
-      background:var(--cream);border:1px solid var(--line);border-radius:3px;}
-    .nm{font-size:10.5px;}
-    .zh,.spec{font-size:9px;}
-    .pr .aed{font-size:16px;}
-    .cover{padding:14px 0;}
-    header{padding:14px 0;}
+    .hint,.lb{display:none !important;}
+    header,.cover,footer,.summary,.subtotal{break-inside:avoid;}
+    .grid{grid-template-columns:repeat(4,1fr);gap:9px;padding:8px 0 0;}
+    .card{break-inside:avoid;box-shadow:none !important;transform:none !important;}
+    .ph{aspect-ratio:1/1;}
+    .nm{font-size:10px;} .spec{font-size:8.5px;}
+    .pr .aed{font-size:14px;}
+    .bar{padding:12px 0 6px;}
+    .cover,header{padding:14px 0;}
+    .subtotal{margin:0 0 8px;}
+    .summary{margin:16px 0;}
     footer{padding:12px 0;}
   }
-
   @media (max-width:640px){
     .cover,.bar,.grid,header,footer{padding-left:16px;padding-right:16px;}
-    .grid{grid-template-columns:1fr;gap:14px;}
-    .cover-l .who{font-size:23px;}
-    .head-meta{text-align:left;}
-    .cover-r{gap:22px;}
-    .tools input{width:100%;}
+    .grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .subtotal{margin-left:16px;margin-right:16px;}
+    .summary{margin-left:16px;margin-right:16px;}
   }
 </style>
 </head>
@@ -207,9 +136,9 @@
       </div>
     </div>
     <div class="head-meta">
-      <div class="qt">QUOTATION &middot; AED</div>
-      <div class="sub">Ref &middot; STG-2026-0909-JL</div>
-      <div class="sub">Issued &middot; 09 September 2026</div>
+      <div class="qt">SAMPLE ORDER &middot; AED</div>
+      <div class="sub">Ref &middot; STG-20260911-JL-S1</div>
+      <div class="sub">Issued &middot; 11 September 2026</div>
     </div>
   </header>
 
@@ -217,29 +146,34 @@
     <div class="cover-l">
       <div class="lbl">PREPARED FOR</div>
       <div class="who">Joelle</div>
-      <div class="note">Direct client &middot; Gulf region</div>
+      <div class="note">Sample order &middot; 1 piece per item &middot; Saudi Arabia</div>
     </div>
     <div class="cover-r">
+      <div class="meta-i"><div class="k">ITEMS</div><div class="v" id="mItems">—</div></div>
       <div class="meta-i"><div class="k">VALIDITY</div><div class="v">14 days</div></div>
-      <div class="meta-i"><div class="k">CURRENCY</div><div class="v">AED</div></div>
       <div class="meta-i"><div class="k">FX RATE</div><div class="v">1 CNY &asymp; 0.51 AED</div></div>
     </div>
   </div>
 
-  <div class="bar">
-    <div>
-      <h2>Selected Products</h2>
-      <div class="cnt" id="cnt"></div>
-    </div>
-    <div class="tools">
-      <input type="text" id="q" placeholder="Search products...">
-      <button class="btn" onclick="expandAll()">Show all styles</button>
+  <div class="bar"><h2>List B &middot; From Product Selection</h2><div class="cnt" id="cB"></div></div>
+  <div class="grid" id="gridB"></div>
+  <div class="subtotal" id="subB"></div>
+
+  <div class="bar"><h2>List A &middot; From Yiwu Selection</h2><div class="cnt" id="cA"></div></div>
+  <div class="grid" id="gridA"></div>
+  <div class="subtotal" id="subA"></div>
+
+  <p class="hint">Click any image to enlarge &middot; Press <b>Cmd/Ctrl + P</b> to save as PDF</p>
+
+  <div class="summary">
+    <div class="sh">Cost Summary — Sample Order</div>
+    <table id="feeTable"></table>
+    <div class="fn">
+      Shipping estimate based on ~10 kg consolidated express (Guangzhou &rarr; Saudi Arabia, 5–8 days).
+      Final shipping charged per actual weight. Custom-print items are produced as finished goods with your
+      requested text/design included. Validity 14 days.
     </div>
   </div>
-
-  <div class="grid" id="grid"></div>
-
-  <p class="hint">Click any image to enlarge &middot; Use <b>&larr; &rarr;</b> to browse styles &middot; Press <b>Cmd/Ctrl + P</b> to save as PDF</p>
 
   <footer>
     <div class="f-l">SourceToGulf <span>&middot;</span> China &rarr; Gulf Sourcing Partner</div>
@@ -253,607 +187,714 @@
 </div>
 
 <div class="lb" id="lb">
-  <button class="close" onclick="closeLb()">&times;</button>
-  <div class="stage">
-    <button class="nav prev" onclick="step(-1)">&#10094;</button>
-    <img id="lbImg" src="" alt="">
-    <button class="nav next" onclick="step(1)">&#10095;</button>
-  </div>
+  <button class="close" onclick="document.getElementById('lb').classList.remove('on')">&times;</button>
+  <img id="lbImg" src="" alt="">
   <div class="cap" id="lbCap"></div>
-  <div class="thumbs-lb" id="lbThumbs"></div>
 </div>
 
 <script>
-const FX = 0.51;
-const DATA = [
- {
-  "no": "1",
-  "en": "Stainless Pocket Compact Mirror",
-  "zh": "不锈钢便携小圆镜",
-  "spec": "Custom shapes available (mirror-finish).",
-  "note": "",
-  "cny": 6.2,
-  "channel": "1688",
-  "imgs": [
-   "1_0.jpg",
-   "1_1.jpg",
-   "1_2.jpg",
-   "1_3.jpg",
-   "1_4.jpg"
+const DATA = {
+ "listA": [
+  {
+   "no": "A1",
+   "en": "Pastel Ring Binder Notebooks A5",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.02,
+   "ref": "FOB 100 pcs: AED 0.51",
+   "img": "images/A1.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A2",
+   "en": "Gingham Scrunchies Set",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 9.44,
+   "ref": "FOB 100 pcs: AED 4.72",
+   "img": "images/A2.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A3",
+   "en": "Daisy Clear PVC Pouches",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 4.72,
+   "ref": "FOB 100 pcs: AED 2.36",
+   "img": "images/A3.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A4",
+   "en": "Makeup Brush Set (7 pcs)",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 0.36,
+   "ref": "FOB 100 pcs: AED 0.18",
+   "img": "images/A4.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A5",
+   "en": "Custom Text Ceramic Tray 10.5 cm",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs · Same style as List B #11 — one sample purchased only.",
+   "note": "",
+   "tags": [],
+   "aed": 2.28,
+   "ref": "FOB 100 pcs: AED 1.14",
+   "img": "images/A5.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A6",
+   "en": "Knit House Slippers",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 5.64,
+   "ref": "FOB 100 pcs: AED 2.82",
+   "img": "images/A6.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A7",
+   "en": "Ultra Thick Notebook — Purple",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 7.08,
+   "ref": "FOB 100 pcs: AED 3.54",
+   "img": "images/A7.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A9",
+   "en": "Weekly Scheduler — Floral",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 0.1,
+   "ref": "FOB 100 pcs: AED 0.05",
+   "img": "images/A9.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A10",
+   "en": "Fuzzy Bedroom Slippers",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 10.16,
+   "ref": "FOB 100 pcs: AED 5.08",
+   "img": "images/A10.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A11",
+   "en": "Collapsible Silicone Cups",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 3.58,
+   "ref": "FOB 100 pcs: AED 1.79",
+   "img": "images/A11.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A12",
+   "en": "Jumbo Plaid Scrunchies",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 0.76,
+   "ref": "FOB 100 pcs: AED 0.38",
+   "img": "images/A12.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A14",
+   "en": "Cloud Mirror with Jewelry Tray",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 2.06,
+   "ref": "FOB 100 pcs: AED 1.03",
+   "img": "images/A14.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A15",
+   "en": "Knotted Headbands Set",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.68,
+   "ref": "FOB 100 pcs: AED 0.84",
+   "img": "images/A16.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A16",
+   "en": "Girly Decorative Sticker Pack",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.94,
+   "ref": "FOB 100 pcs: AED 0.97",
+   "img": "images/A15.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A17",
+   "en": "Sport Headband & Phone Armband",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 3.18,
+   "ref": "FOB 100 pcs: AED 1.59",
+   "img": "images/A17.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A18",
+   "en": "Fuzzy Heart Socks",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.0,
+   "ref": "FOB 100 pcs: AED 0.50",
+   "img": "images/A18.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A19",
+   "en": "Heart Earphone Cases",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 2.56,
+   "ref": "FOB 100 pcs: AED 1.28",
+   "img": "images/A19.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A20",
+   "en": "Period Tracker Notebook",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs · Each piece unique; customization available.",
+   "note": "",
+   "tags": [],
+   "aed": 6.14,
+   "ref": "FOB 100 pcs: AED 3.07",
+   "img": "images/A20.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A21",
+   "en": "Sticky Notes Set — Colorful",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 2.56,
+   "ref": "FOB 100 pcs: AED 1.28",
+   "img": "images/A22.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A22",
+   "en": "Facial Cleansing Brushes (3 pcs)",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 3.18,
+   "ref": "FOB 100 pcs: AED 1.59",
+   "img": "images/A21.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A23",
+   "en": "Macaron Notebooks Set",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs · Add logo: +AED 0.05 per pc.",
+   "note": "",
+   "tags": [],
+   "aed": 2.34,
+   "ref": "FOB 100 pcs: AED 1.17",
+   "img": "images/A23.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A24",
+   "en": "Poop Bag Rolls with Dispenser",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs · 10+ rolls come with dispenser, boxed.",
+   "note": "",
+   "tags": [],
+   "aed": 0.98,
+   "ref": "FOB 100 pcs: AED 0.49",
+   "img": "images/A24.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A25",
+   "en": "Hooded Towel Cap",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 3.68,
+   "ref": "FOB 100 pcs: AED 1.84",
+   "img": "images/A26.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A26",
+   "en": "Shower Caps Set — Polka Dot",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 0.46,
+   "ref": "FOB 100 pcs: AED 0.23",
+   "img": "images/A25.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A27",
+   "en": "Todo List Notepad",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 2.26,
+   "ref": "FOB 100 pcs: AED 1.13",
+   "img": "images/A28.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A29",
+   "en": "Coffee-Tone Scrunchies Set",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.24,
+   "ref": "FOB 100 pcs: AED 0.62",
+   "img": "images/A30.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A30",
+   "en": "Rechargeable Travel Makeup Mirror with Lights",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 22.56,
+   "ref": "FOB 100 pcs: AED 11.28",
+   "img": "images/A29.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A31",
+   "en": "Gel Eye Patches — Colorful",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.24,
+   "ref": "FOB 100 pcs: AED 0.62",
+   "img": "images/A32.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A33",
+   "en": "Woven Bracelet Stack",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 0.62,
+   "ref": "FOB 100 pcs: AED 0.31",
+   "img": "images/A33.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A34",
+   "en": "Boho Friendship Bracelets",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.04,
+   "ref": "FOB 100 pcs: AED 0.52",
+   "img": "images/A34.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A35",
+   "en": "Striped Tube Socks",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.22,
+   "ref": "FOB 100 pcs: AED 0.61",
+   "img": "images/A36.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A36",
+   "en": "Letter Socks 4 Pairs",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 1.34,
+   "ref": "FOB 100 pcs: AED 0.67",
+   "img": "images/A35.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A37",
+   "en": "Powder Puffs 3 Pack — Random Colors",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 0.86,
+   "ref": "FOB 100 pcs: AED 0.43",
+   "img": "images/A38.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A38",
+   "en": "Scented Candle & Wooden Tray Set",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 16.2,
+   "ref": "FOB 100 pcs: AED 8.10",
+   "img": "images/A31.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A39",
+   "en": "Gingham Scrunchies — Brown Tone",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 3.9,
+   "ref": "FOB 100 pcs: AED 1.95",
+   "img": "images/A40.jpg",
+   "group": "A"
+  },
+  {
+   "no": "A40",
+   "en": "Clip Reading Light — 3 Colors",
+   "spec": "Sample 1 pc · bulk MOQ 100 pcs",
+   "note": "",
+   "tags": [],
+   "aed": 7.58,
+   "ref": "FOB 100 pcs: AED 3.79",
+   "img": "images/A39.jpg",
+   "group": "A"
+  }
+ ],
+ "listB": [
+  {
+   "no": "B1",
+   "en": "Stainless Pocket Compact Mirror",
+   "spec": "Custom shapes available (mirror finish).",
+   "note": "",
+   "tags": [],
+   "aed": 3.16,
+   "ref": "CNY 6.20",
+   "img": "images/1_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B2",
+   "en": "A5 Spiral Notebook — Self-Esteem Bundle",
+   "spec": "“All About Me” identity & confidence series.",
+   "note": "",
+   "tags": [],
+   "aed": 5.56,
+   "ref": "CNY 10.90",
+   "img": "images/2_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B3",
+   "en": "Zigzag Wave Hair Band",
+   "spec": "Purple / Gray; textured elastic.",
+   "note": "",
+   "tags": [],
+   "aed": 10.2,
+   "ref": "CNY 20.00",
+   "img": "images/3_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B4",
+   "en": "Facial Cleansing Puff 9.6 cm",
+   "spec": "Velour surface; multiple colors.",
+   "note": "",
+   "tags": [],
+   "aed": 2.81,
+   "ref": "CNY 5.50",
+   "img": "images/4_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B5",
+   "en": "Color-Changing Capsule Container (12 pcs)",
+   "spec": "Silicone capsule boxes; assorted colors.",
+   "note": "",
+   "tags": [],
+   "aed": 2.04,
+   "ref": "CNY 4.00",
+   "img": "images/5_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B6",
+   "en": "Finished Ceramic Mug — Heart Handle, Pink",
+   "spec": "FINISHED mug with printed design — print included, delivered ready to use.",
+   "note": "Finished",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 6.04,
+   "ref": "CNY 11.85",
+   "img": "images/6_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B7",
+   "en": "Finished Ceramic Mug — Heart Handle, Red",
+   "spec": "FINISHED mug with printed design — print included.",
+   "note": "Finished",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 6.04,
+   "ref": "CNY 11.85",
+   "img": "images/7_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B8",
+   "en": "Finished Ceramic Mug — Heart Handle, Green",
+   "spec": "FINISHED mug with printed design — print included.",
+   "note": "Finished",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 6.04,
+   "ref": "CNY 11.85",
+   "img": "images/8_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B9",
+   "en": "Finished Ceramic Mug — Heart Handle, Blue",
+   "spec": "FINISHED mug with printed design — print included.",
+   "note": "Finished",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 6.04,
+   "ref": "CNY 11.85",
+   "img": "images/9_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B10",
+   "en": "Self-Discovery Tabletop Card Game",
+   "spec": "Box 66×22×93 mm.",
+   "note": "",
+   "tags": [],
+   "aed": 7.65,
+   "ref": "CNY 15.00",
+   "img": "images/10_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B11",
+   "en": "White/Gold Custom Ceramic Tray",
+   "spec": "10.5×10.5×3 cm · YOUR TEXT: “Never forget the difference that you make”.",
+   "note": "Custom text",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 4.69,
+   "ref": "CNY 9.20",
+   "img": "images/11_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B12",
+   "en": "Ceramic Mug — Pink/Yellow Stripe",
+   "spec": "Client-selected style: pink/yellow stripe.",
+   "note": "Selected",
+   "tags": [
+    "SELECTED"
+   ],
+   "aed": 14.28,
+   "ref": "CNY 28.00",
+   "img": "images/12_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B14",
+   "en": "Talking Hearts Conversation Game",
+   "spec": "200 question cards.",
+   "note": "",
+   "tags": [],
+   "aed": 4.29,
+   "ref": "CNY 8.42",
+   "img": "images/14_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B15",
+   "en": "Folding Square Pocket Mirror",
+   "spec": "Double-sided custom print · YOUR TEXT: “Good things take time” (spelling corrected).",
+   "note": "Custom text",
+   "tags": [
+    "CUSTOM"
+   ],
+   "aed": 2.42,
+   "ref": "CNY 4.75",
+   "img": "images/15_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B27",
+   "en": "Coconut Shell Bowl — Mandala",
+   "spec": "Natural coconut shell; 7 patterns.",
+   "note": "",
+   "tags": [],
+   "aed": 5.36,
+   "ref": "CNY 10.50",
+   "img": "images/27_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B28",
+   "en": "Square Wooden Sample Tray 12.8 cm",
+   "spec": "Beech wood; 15 mm thick.",
+   "note": "",
+   "tags": [],
+   "aed": 4.04,
+   "ref": "CNY 7.92",
+   "img": "images/28_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B29",
+   "en": "Floral Soap Box (Resin)",
+   "spec": "Resin soap dish; 9 patterns.",
+   "note": "",
+   "tags": [],
+   "aed": 4.4,
+   "ref": "CNY 8.63",
+   "img": "images/29_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "B30",
+   "en": "Vacuum-Insulated Bottle 500 ml — Dots",
+   "spec": "Client-selected style: dots design.",
+   "note": "Selected",
+   "tags": [
+    "SELECTED"
+   ],
+   "aed": 13.26,
+   "ref": "CNY 26.00",
+   "img": "images/30_0.jpg",
+   "group": "B"
+  },
+  {
+   "no": "N1",
+   "en": "Wavy Ceramic Jewelry Tray",
+   "spec": "Irregular wavy edge · 3 colors (sage / cream / speckled) · price to be confirmed at purchase.",
+   "note": "NEW",
+   "tags": [
+    "NEW"
+   ],
+   "aed": 2.81,
+   "ref": "CNY 5.50",
+   "img": "images/new_wavy.jpg",
+   "group": "B"
+  }
+ ],
+ "fees": [
+  [
+   "Products — 55 samples (1 pc each)",
+   "AED 248.09"
+  ],
+  [
+   "Domestic freight (suppliers → Guangzhou warehouse)",
+   "AED 41.00"
+  ],
+  [
+   "International express GZ → KSA (est. 10 kg)",
+   "AED 373.00"
+  ],
+  [
+   "Sourcing, inspection, consolidation & packing",
+   "AED 200.00"
+  ],
+  [
+   "TOTAL",
+   "AED 862.09  ·  ≈ USD 235"
   ]
- },
- {
-  "no": "1.1",
-  "en": "Pocket Compact Mirror — Bee Pattern",
-  "zh": "蜜蜂图案便携小圆镜",
-  "spec": "Black with bee motif; gold trim.",
-  "note": "",
-  "cny": 10.8,
-  "channel": "1688",
-  "imgs": [
-   "1.1_0.jpg",
-   "1.1_1.jpg",
-   "1.1_2.jpg",
-   "1.1_3.jpg"
-  ]
- },
- {
-  "no": "2",
-  "en": "A5 Spiral Notebook — Self-Esteem Identity & Confidence Bundle",
-  "zh": "A5 线圈自尊笔记本 'All About Me'",
-  "spec": "10 cover designs available.",
-  "note": "",
-  "cny": 10.9,
-  "channel": "拼多多",
-  "imgs": [
-   "2_0.jpg",
-   "2_1.jpg",
-   "2_2.jpg"
-  ]
- },
- {
-  "no": "3",
-  "en": "Zigzag Wave Hair Band",
-  "zh": "波浪纹理发带/发箍",
-  "spec": "Purple / Gray; textured elastic.",
-  "note": "",
-  "cny": 20.0,
-  "channel": "1688",
-  "imgs": [
-   "3_0.jpg",
-   "3_1.jpg",
-   "3_2.jpg",
-   "3_3.jpg"
-  ]
- },
- {
-  "no": "4",
-  "en": "Facial Cleansing Puff",
-  "zh": "粉色绒面卸妆扑 9.6cm",
-  "spec": "'CLEANS SPONGE' label; multiple colors & sizes.",
-  "note": "",
-  "cny": 5.5,
-  "channel": "拼多多",
-  "imgs": [
-   "4_0.jpg",
-   "4_1.jpg",
-   "4_2.jpg",
-   "4_3.jpg",
-   "4_4.jpg"
-  ]
- },
- {
-  "no": "5",
-  "en": "Color-Changing Capsule Container (12 pcs)",
-  "zh": "12 入变色小笼包收纳盒",
-  "spec": "Silicone capsule boxes; assorted colors.",
-  "note": "",
-  "cny": 4.0,
-  "channel": "拼多多",
-  "imgs": [
-   "5_0.jpg",
-   "5_1.jpg",
-   "5_2.jpg"
-  ]
- },
- {
-  "no": "6",
-  "en": "DIY Ceramic Mug — Heart-Shape Handle, Pink",
-  "zh": "心形把马克杯·粉色",
-  "spec": "Body image customizable from 1 piece; ¥7.85 + ¥4 custom = ¥11.85.",
-  "note": "Custom print",
-  "cny": 11.85,
-  "channel": "拼多多",
-  "imgs": [
-   "6_0.jpg"
-  ]
- },
- {
-  "no": "7",
-  "en": "DIY Ceramic Mug — Heart-Shape Handle, Red",
-  "zh": "心形把马克杯·彩虹红",
-  "spec": "Body image customizable from 1 piece.",
-  "note": "Custom print",
-  "cny": 11.85,
-  "channel": "拼多多",
-  "imgs": [
-   "7_0.jpg"
-  ]
- },
- {
-  "no": "8",
-  "en": "DIY Ceramic Mug — Heart-Shape Handle, Green",
-  "zh": "心形把马克杯·彩绿",
-  "spec": "Body image customizable from 1 piece.",
-  "note": "Custom print",
-  "cny": 11.85,
-  "channel": "拼多多",
-  "imgs": [
-   "8_0.jpg"
-  ]
- },
- {
-  "no": "9",
-  "en": "DIY Ceramic Mug — Heart-Shape Handle, Blue",
-  "zh": "心形把马克杯·彩蓝",
-  "spec": "Body image customizable from 1 piece.",
-  "note": "Custom print",
-  "cny": 11.85,
-  "channel": "拼多多",
-  "imgs": [
-   "9_0.jpg"
-  ]
- },
- {
-  "no": "10",
-  "en": "Self-Discovery Tabletop Card Game",
-  "zh": "找寻自我桌游卡牌",
-  "spec": "Box 66×22×93mm.",
-  "note": "",
-  "cny": 15.0,
-  "channel": "拼多多",
-  "imgs": [
-   "10_0.jpg",
-   "10_1.jpg",
-   "10_2.jpg",
-   "10_3.jpg",
-   "10_4.jpg"
-  ]
- },
- {
-  "no": "11",
-  "en": "White/Gold Custom Ceramic Tray",
-  "zh": "白色金色定制陶瓷首饰盘",
-  "spec": "10.5×10.5×3cm; UV-print custom from 100 pcs; ¥8.20 + ¥1 print = ¥9.20.",
-  "note": "100 pcs MOQ for print",
-  "cny": 9.2,
-  "channel": "1688",
-  "imgs": [
-   "11_0.jpg",
-   "11_1.jpg",
-   "11_2.jpg",
-   "11_3.jpg",
-   "11_4.jpg",
-   "11_5.jpg",
-   "11_6.jpg",
-   "11_7.jpg",
-   "11_8.jpg"
-  ]
- },
- {
-  "no": "12",
-  "en": "Ceramic Mug — Pink/Yellow Stripe Pattern",
-  "zh": "粉黄条纹马克杯",
-  "spec": "4 variants: pink stripe / pink polka / brown-purple stripe / mixed-3.",
-  "note": "",
-  "cny": 28.0,
-  "channel": "拼多多",
-  "imgs": [
-   "12_0.jpg",
-   "12_1.jpg",
-   "12_2.jpg",
-   "12_3.jpg"
-  ]
- },
- {
-  "no": "13",
-  "en": "Pink Portable Poop-Bag Dispenser",
-  "zh": "粉色便携垃圾袋分装卷",
-  "spec": "8 rolls × 15 bags; bag 23×33cm; pink / purple strawberry scent.",
-  "note": "",
-  "cny": 13.58,
-  "channel": "拼多多",
-  "imgs": [
-   "13_0.jpg",
-   "13_1.jpg",
-   "13_2.jpg",
-   "13_3.jpg",
-   "13_4.jpg"
-  ]
- },
- {
-  "no": "14",
-  "en": "Talking Hearts — 200 Card Conversation Game",
-  "zh": "Talking Hearts 200张卡牌问答游戏",
-  "spec": "200-question card game.",
-  "note": "",
-  "cny": 8.42,
-  "channel": "拼多多",
-  "imgs": [
-   "14_0.jpg",
-   "14_1.jpg",
-   "14_2.jpg",
-   "14_3.jpg"
-  ]
- },
- {
-  "no": "15",
-  "en": "Folding Square Pocket Mirror — Double-Sided Custom Print",
-  "zh": "折叠小方镜·双面定制",
-  "spec": "Double-sided 2-image custom; no extra fee, just provide artwork.",
-  "note": "Free custom print",
-  "cny": 4.75,
-  "channel": "拼多多",
-  "imgs": [
-   "15_0.jpg",
-   "15_1.jpg",
-   "15_2.jpg"
-  ]
- },
- {
-  "no": "16",
-  "en": "Daily Planner Notebook — B",
-  "zh": "Daily Planner B 日程本",
-  "spec": "50 sheets; 10 cover options.",
-  "note": "",
-  "cny": 9.9,
-  "channel": "拼多多",
-  "imgs": [
-   "16_0.jpg",
-   "16_1.jpg",
-   "16_2.jpg",
-   "16_3.jpg",
-   "16_4.jpg",
-   "16_5.jpg",
-   "16_6.jpg",
-   "16_7.jpg",
-   "16_8.jpg"
-  ]
- },
- {
-  "no": "17",
-  "en": "Rebuilding Self-Worth Workbook",
-  "zh": "跨境自我价值放松笔记本",
-  "spec": "Spiral workbook; mental health.",
-  "note": "",
-  "cny": 10.0,
-  "channel": "拼多多",
-  "imgs": [
-   "17_0.jpg",
-   "17_1.jpg",
-   "17_2.jpg",
-   "17_3.jpg",
-   "17_4.jpg"
-  ]
- },
- {
-  "no": "18",
-  "en": "Self-Compassion Journal",
-  "zh": "自我关怀成长日记本",
-  "spec": "Spiral notebook; guided journaling.",
-  "note": "",
-  "cny": 10.3,
-  "channel": "拼多多",
-  "imgs": [
-   "18_0.jpg",
-   "18_1.jpg",
-   "18_2.jpg",
-   "18_3.jpg",
-   "18_4.jpg"
-  ]
- },
- {
-  "no": "19",
-  "en": "Self-Worth & Relationships Bundle",
-  "zh": "自我价值关系笔记本线圈",
-  "spec": "Spiral notebook; 14.5×5.7 inch.",
-  "note": "",
-  "cny": 12.2,
-  "channel": "拼多多",
-  "imgs": [
-   "19_0.jpg",
-   "19_1.jpg",
-   "19_2.jpg",
-   "19_3.jpg",
-   "19_4.jpg"
-  ]
- },
- {
-  "no": "20",
-  "en": "Self-Worth Self-Esteem Healing Workbook",
-  "zh": "自尊提升治愈线圈笔记本",
-  "spec": "Spiral workbook.",
-  "note": "",
-  "cny": 12.5,
-  "channel": "拼多多",
-  "imgs": [
-   "20_0.jpg",
-   "20_1.jpg",
-   "20_2.jpg",
-   "20_3.jpg",
-   "20_4.jpg"
-  ]
- },
- {
-  "no": "21",
-  "en": "Anxiety Relief Mental Health Journal — A5",
-  "zh": "A5 焦虑新品心理健康日记本",
-  "spec": "Calma Tu Mente; mental-health planning guide.",
-  "note": "",
-  "cny": 13.3,
-  "channel": "拼多多",
-  "imgs": [
-   "21_0.jpg",
-   "21_1.jpg",
-   "21_2.jpg",
-   "21_3.jpg"
-  ]
- },
- {
-  "no": "22",
-  "en": "Personal Boundaries Workbook",
-  "zh": "个人边界线圈笔记本",
-  "spec": "Spiral workbook.",
-  "note": "",
-  "cny": 11.0,
-  "channel": "拼多多",
-  "imgs": [
-   "22_0.jpg",
-   "22_1.jpg",
-   "22_2.jpg",
-   "22_3.jpg",
-   "22_4.jpg"
-  ]
- },
- {
-  "no": "23",
-  "en": "Managing BPD Workbook",
-  "zh": "Managing BPD 边缘型人格障碍心理工具书",
-  "spec": "20 pages; spiral workbook.",
-  "note": "",
-  "cny": 18.0,
-  "channel": "拼多多",
-  "imgs": [
-   "23_0.jpg",
-   "23_1.jpg",
-   "23_2.jpg",
-   "23_3.jpg"
-  ]
- },
- {
-  "no": "24",
-  "en": "Inner Strength Workbook",
-  "zh": "内在力量练习本",
-  "spec": "Spiral-bound; creative trending.",
-  "note": "",
-  "cny": 19.0,
-  "channel": "拼多多",
-  "imgs": [
-   "24_0.jpg",
-   "24_1.jpg",
-   "24_2.jpg",
-   "24_3.jpg",
-   "24_4.jpg"
-  ]
- },
- {
-  "no": "25",
-  "en": "A5 EQ Emotional Intelligence Skills Workbook",
-  "zh": "A5 线圈情商技能笔记本",
-  "spec": "Customizable cover.",
-  "note": "",
-  "cny": 15.8,
-  "channel": "拼多多",
-  "imgs": [
-   "25_0.jpg",
-   "25_1.jpg",
-   "25_2.jpg",
-   "25_3.jpg",
-   "25_4.jpg"
-  ]
- },
- {
-  "no": "26",
-  "en": "Time Management Planner — Executive Functioning Skills",
-  "zh": "时间管理计划本·执行力训练",
-  "spec": "Spiral planner; focus & productivity.",
-  "note": "",
-  "cny": 15.0,
-  "channel": "拼多多",
-  "imgs": [
-   "26_0.jpg",
-   "26_1.jpg",
-   "26_2.jpg",
-   "26_3.jpg",
-   "26_4.jpg"
-  ]
- },
- {
-  "no": "27",
-  "en": "Coconut Shell Bowl — Mandala Pattern",
-  "zh": "椰子贝壳碗·光芒/曼陀罗",
-  "spec": "7 patterns; natural coconut shell.",
-  "note": "",
-  "cny": 10.5,
-  "channel": "拼多多",
-  "imgs": [
-   "27_0.jpg"
-  ]
- },
- {
-  "no": "28",
-  "en": "Square Wooden Sample Tray",
-  "zh": "方形榉木盘 12.8×12.8cm",
-  "spec": "Beech wood; 15mm thick; round / square / long also available.",
-  "note": "",
-  "cny": 7.92,
-  "channel": "拼多多",
-  "imgs": [
-   "28_0.jpg"
-  ]
- },
- {
-  "no": "29",
-  "en": "Floral-Pattern Soap Box",
-  "zh": "花朵款皂盒（树脂）",
-  "spec": "Resin soap dish; 9 patterns.",
-  "note": "",
-  "cny": 8.63,
-  "channel": "拼多多",
-  "imgs": [
-   "29_0.jpg",
-   "29_1.jpg",
-   "29_2.jpg",
-   "29_3.jpg"
-  ]
- },
- {
-  "no": "30",
-  "en": "Vacuum-Insulated Water Bottle 500ml",
-  "zh": "保温杯 500ml 橡胶漆米白",
-  "spec": "32 colors; same-cup option ¥24.3; printed ¥26 from 30 pcs.",
-  "note": "",
-  "cny": 24.3,
-  "channel": "拼多多",
-  "imgs": [
-   "30_0.jpg",
-   "30_1.jpg",
-   "30_2.jpg",
-   "30_3.jpg",
-   "30_4.jpg"
-  ]
- }
-];
-const BASE = 'images/';
+ ]
+};
 
-const grid = document.getElementById('grid');
-let showAll = false;
-
-function render(list){
-  grid.innerHTML = list.map(it => {
-    const aed = (it.cny * FX).toFixed(2);
-    const n = it.imgs.length;
-    const thumbs = n > 1 ? `
-      <div class="thumbs">
-        ${it.imgs.map((f,i)=>`<div class="th ${i===0?'on':''}" data-no="${it.no}" data-i="${i}">
-            <img src="${BASE}${f}" alt="style ${i+1}" loading="lazy">
-          </div>`).join('')}
-      </div>` : '';
-    const allImgs = n > 1 ? `
-      <div class="print-all">
-        ${it.imgs.map(f=>`<img src="${BASE}${f}" alt="">`).join('')}
-      </div>` : '';
-    return `
-    <div class="card" data-name="${(it.en+' '+it.zh).toLowerCase()}">
-      <div class="ph" data-no="${it.no}" data-i="0">
-        <img class="main" id="m_${it.no.replace('.','_')}" src="${BASE}${it.imgs[0]}" alt="${it.en}" loading="lazy">
-        <div class="no">#${it.no}</div>
-        <div class="ch">${it.channel}</div>
-        ${n>1?`<div class="nstyles">${n} STYLES</div>`:''}
-        <div class="zoomhint">click to zoom</div>
+function card(it){
+  const tags = (it.tags||[]).map(t=>`<span class="tag ${t.toLowerCase()}">${t}</span>`).join('');
+  return `
+  <div class="card">
+    <div class="ph" onclick="zoom('${it.no}','${it.img}','${it.en.replace(/'/g,'')}')">
+      <img src="${it.img}" alt="${it.en}" loading="lazy">
+      <div class="no">${it.no}</div>
+      <div class="tags">${tags}</div>
+    </div>
+    <div class="body">
+      <div class="nm">${it.en}</div>
+      <div class="spec">${it.spec}</div>
+      ${it.note?`<div class="badge">${it.note}</div>`:''}
+      <div class="pr">
+        <div class="aed"><span class="cur">AED</span>${it.aed.toFixed(2)}</div>
+        <div class="ref">${it.ref}<br><span class="qty">qty 1 pc</span></div>
       </div>
-      ${thumbs}
-      ${allImgs}
-      <div class="body">
-        <div class="nm">${it.en}</div>
-        <div class="zh">${it.zh}</div>
-        <div class="spec">${it.spec}</div>
-        ${it.note?`<div class="badge">${it.note}</div>`:''}
-        <div class="pr">
-          <div class="aed"><span class="cur">AED</span>${aed}</div>
-          <div class="cny"><b>CNY ${it.cny.toFixed(2)}</b>ref. price</div>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-
-  // thumb click -> switch main
-  grid.querySelectorAll('.th').forEach(t => {
-    t.onclick = e => {
-      e.stopPropagation();
-      const no = t.dataset.no, i = +t.dataset.i;
-      const it = DATA.find(x => x.no === no);
-      document.getElementById('m_' + no.replace('.','_')).src = BASE + it.imgs[i];
-      t.parentElement.querySelectorAll('.th').forEach(x => x.classList.remove('on'));
-      t.classList.add('on');
-      // update the .ph data-i so zoom opens correct index
-      const ph = t.parentElement.previousElementSibling;
-      if(ph && ph.classList.contains('ph')) ph.dataset.i = i;
-    };
-  });
-
-  // main photo click -> lightbox
-  grid.querySelectorAll('.ph').forEach(p => {
-    p.onclick = () => openLb(p.dataset.no, +p.dataset.i);
-  });
+    </div>
+  </div>`;
 }
 
-function filter(){
-  const q = document.getElementById('q').value.toLowerCase().trim();
-  const list = q ? DATA.filter(it => (it.en+' '+it.zh).toLowerCase().includes(q)) : DATA;
-  render(list);
-  document.getElementById('cnt').textContent =
-    list.length + ' items' + (q ? ' (filtered)' : '');
-}
-document.getElementById('q').oninput = filter;
+const B = DATA.listB, A = DATA.listA;
+document.getElementById('gridB').innerHTML = B.map(card).join('');
+document.getElementById('gridA').innerHTML = A.map(card).join('');
+const subB = B.reduce((s,x)=>s+x.aed,0), subA = A.reduce((s,x)=>s+x.aed,0);
+document.getElementById('cB').textContent = B.length + ' items';
+document.getElementById('cA').textContent = A.length + ' items';
+document.getElementById('mItems').textContent = (A.length + B.length) + ' items';
+document.getElementById('subB').innerHTML =
+  `<span>List B subtotal &middot; ${B.length} samples</span><span>AED ${subB.toFixed(2)}</span>`;
+document.getElementById('subA').innerHTML =
+  `<span>List A subtotal &middot; ${A.length} samples</span><span>AED ${subA.toFixed(2)}</span>`;
 
-function expandAll(){
-  showAll = !showAll;
-  document.querySelectorAll('.thumbs').forEach(t => {
-    t.style.flexWrap = showAll ? 'wrap' : 'nowrap';
-  });
-  document.querySelectorAll('.th').forEach(t => {
-    t.style.width = showAll ? '76px' : '52px';
-    t.style.height = showAll ? '76px' : '52px';
-  });
-  event.target.textContent = showAll ? 'Compact styles' : 'Show all styles';
-}
+document.getElementById('feeTable').innerHTML = DATA.fees.map((r,i)=>{
+  const isTotal = r[0] === 'TOTAL';
+  const isProd = i === 0;
+  return `<tr class="${isTotal?'total':(isProd?'':'muted')}"><td>${r[0]}</td><td>${r[1]}</td></tr>`;
+}).join('');
 
-/* ---------- Lightbox ---------- */
-let lbNo = '', lbIdx = 0;
-function openLb(no, i){
-  lbNo = no; lbIdx = i;
+function zoom(no,img,en){
+  document.getElementById('lbImg').src = img;
+  document.getElementById('lbCap').innerHTML = `<b>${no}</b> &nbsp; ${en}`;
   document.getElementById('lb').classList.add('on');
-  paintLb();
 }
-function paintLb(){
-  const it = DATA.find(x => x.no === lbNo);
-  const f = it.imgs[lbIdx];
-  document.getElementById('lbImg').src = BASE + f;
-  document.getElementById('lbCap').innerHTML =
-    `<b>#${it.no}</b> &nbsp; ${it.en} <span class="idx">Style ${lbIdx+1} of ${it.imgs.length} &middot; AED ${(it.cny*FX).toFixed(2)}</span>`;
-  document.getElementById('lbThumbs').innerHTML = it.imgs.map((x,i)=>
-    `<img src="${BASE}${x}" class="${i===lbIdx?'on':''}" onclick="goTo(${i})">`).join('');
-  const multi = it.imgs.length > 1;
-  document.querySelectorAll('.nav').forEach(b => b.style.display = multi ? 'flex' : 'none');
-}
-function step(d){
-  const it = DATA.find(x => x.no === lbNo);
-  lbIdx = (lbIdx + d + it.imgs.length) % it.imgs.length;
-  paintLb();
-}
-function goTo(i){ lbIdx = i; paintLb(); }
-function closeLb(){ document.getElementById('lb').classList.remove('on'); }
-
-document.getElementById('lb').onclick = e => { if(e.target.id === 'lb') closeLb(); };
+document.getElementById('lb').onclick = e => {
+  if(e.target.id === 'lb') document.getElementById('lb').classList.remove('on');
+};
 document.addEventListener('keydown', e => {
-  if(!document.getElementById('lb').classList.contains('on')) return;
-  if(e.key === 'Escape') closeLb();
-  if(e.key === 'ArrowLeft') step(-1);
-  if(e.key === 'ArrowRight') step(1);
+  if(e.key === 'Escape') document.getElementById('lb').classList.remove('on');
 });
-
-filter();
 </script>
 </body>
 </html>
