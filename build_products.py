@@ -157,9 +157,19 @@ def build_capacity():
 
 
 # ---------------------------------------------------------------- 长尾：能找的货 / 已对接工厂
-LONGTAIL = [('LED pet leads', 'Light-up dog leads and collars, factory direct'),
-            ('Compressed sofas', 'Vacuum-packed sofas — shipped flat to save container space'),
-            ('Plated phone cases', 'Electroplated iPhone cases, custom finish and logo')]
+LONGTAIL = [('iPhone DUO cases',
+             'Foldable-phone cases in leather and woven fabric — embroidered motifs, '
+             'Arabic edition naming and metal print, designed for Gulf buyers'),
+            ('LED pet leads', 'Light-up dog leads and collars, factory direct'),
+            ('Compressed sofas', 'Vacuum-packed sofas — shipped flat to save container space')]
+
+# 手机壳款式实拍（自有设计，已剔除含国徽/领导人肖像的款式）
+PHONE_CASES = [('/images/phone-cases/duocase-palm-horse.jpg',
+                'Palm & horse motif — woven fabric over cream leather'),
+               ('/images/phone-cases/duocase-heritage-pattern.jpg',
+                'Heritage geometric pattern — embossed leather with gold stars'),
+               ('/images/phone-cases/duocase-desert-rider.jpg',
+                'Desert rider — illustrated heritage artwork, printed on leather')]
 
 
 def build_longtail():
@@ -168,16 +178,35 @@ def build_longtail():
         'padding:14px 16px"><b style="font-size:13.5px">%s</b>'
         '<span style="display:block;font-size:12.5px;color:var(--muted);margin-top:3px">%s</span>'
         '</div>' % (a, b) for a, b in LONGTAIL)
+    cases = ''.join(
+        '<figure style="margin:0;">'
+        '<img src="%s" alt="%s" loading="lazy" style="width:100%%;border-radius:14px;'
+        'border:1px solid #E7E1D4;object-fit:cover;aspect-ratio:1/1;">'
+        '<figcaption style="font-size:12.5px;color:var(--muted);margin-top:7px;'
+        'text-align:center;">%s</figcaption></figure>' % (u, a, a)
+        for u, a in PHONE_CASES)
     return (
         '<section style="padding-top:0"><div class="wrap">\n'
         '<h2 style="margin-bottom:4px">Other factories we work with directly</h2>\n'
         '<p class="sub" style="margin-bottom:14px">These are not our core lines, but we already '
         'have the factory relationship — so if you need one, we can quote it this week.</p>\n'
         '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));'
+        'gap:12px;margin-bottom:18px">%s</div>\n'
+        '<div style="background:#fff;border:1px solid var(--line);border-radius:16px;'
+        'padding:20px 22px">\n'
+        '  <div style="font-size:12px;font-weight:600;letter-spacing:.08em;'
+        'text-transform:uppercase;color:var(--gold);margin-bottom:6px">Example work</div>\n'
+        '  <h3 style="margin:0 0 4px;font-size:16px">Foldable-phone cases we designed for Gulf '
+        'buyers</h3>\n'
+        '  <p style="margin:0 0 14px;font-size:13.5px;color:var(--muted)">Developed in leather '
+        'and woven fabric with embroidered motifs and Arabic edition naming. Tell us a direction '
+        'and we will come back with a sample.</p>\n'
+        '  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));'
         'gap:12px">%s</div>\n'
+        '</div>\n'
         '<p style="font-size:13px;color:var(--muted);margin-top:12px">Not listed? Send us a photo '
         '— sourcing a new factory is the part we do best.</p>\n'
-        '</div></section>\n' % cells)
+        '</div></section>\n' % (cells, cases))
 
 
 def build_chips():
