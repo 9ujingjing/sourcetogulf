@@ -105,7 +105,9 @@ for i in $(seq 1 12); do
     echo "✅ 部署完成! 现在访问: $URL"
     # 构建完成后, 把新页面提交给 Bing / Copilot / ChatGPT 加速收录
     if [ -f submit_indexnow.py ]; then
-      echo "📡 提交 IndexNow 队列..."
+      echo "📡 检测内容变化的页面并入队..."
+      python3 submit_indexnow.py --changed || true
+      echo "📡 提交 IndexNow (推 Bing / Copilot / ChatGPT)..."
       python3 submit_indexnow.py || true
     fi
     exit 0
