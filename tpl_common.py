@@ -36,11 +36,19 @@ def _read(p):
 _PRODUCTS_HTML = _read('products.html')
 
 # 抽取 <style> 块（products.html 只有一个）
-STYLE = re.search(r'<style>([\s\S]*?)</style>', _PRODUCTS_HTML).group(1)
+#
+# ⚠️ 2026-09-16 修：这三处必须 .strip('\n')。
+# 原写法抽取的是 <header>(...)</header> 之间的全部内容，**含首尾换行**；
+# page_shell 重新嵌入时又写成 '<header>\n' + HEADER + '\n</header>'，
+# 于是每跑一次构建就净增 4 个空行（header/footer 各 2），products.html 无限膨胀，
+# 并经 sync_header_footer.py 扩散到全站 —— 76 个页面每次构建 md5 全变，
+# submit_indexnow.py --changed 因此形同失效（每次都全量重推）。
+# strip 后形成真正的幂等闭环：<header>\nX\n</header> → 抽到 '\nX\n' → strip 回 'X'。
+STYLE = re.search(r'<style>([\s\S]*?)</style>', _PRODUCTS_HTML).group(1).strip('\n')
 # 抽取 <header> ... </header>
-HEADER = re.search(r'<header>([\s\S]*?)</header>', _PRODUCTS_HTML).group(1)
+HEADER = re.search(r'<header>([\s\S]*?)</header>', _PRODUCTS_HTML).group(1).strip('\n')
 # 抽取 <footer> ... </footer>
-FOOTER = re.search(r'<footer>([\s\S]*?)</footer>', _PRODUCTS_HTML).group(1)
+FOOTER = re.search(r'<footer>([\s\S]*?)</footer>', _PRODUCTS_HTML).group(1).strip('\n')
 
 # ---- 到岸价常量：唯一真相源是 pricing.json（改汇率只改那个文件）----------
 # 以前这些数字硬编码在此处，index.html 的内联 JS 里还有一份副本，

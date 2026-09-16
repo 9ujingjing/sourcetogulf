@@ -1007,7 +1007,10 @@ PAGES['partners'] = {
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     for key, p in PAGES.items():
-        canonical_ar = BASE + '/ar/' + p['file']
+        # 阿语首页的规范地址用干净的 /ar/，与英文首页（canonical = https://sourcetogulf.com/）对齐。
+        # 原写法产出 /ar/index.html：sitemap 与 hreflang 都跟着指向带文件名的形式，
+        # 而 /ar/ 同样返回 200 —— 两个地址都在线，收录信号被摊薄（用户在 Bing 提交的正是 /ar/）。
+        canonical_ar = BASE + '/ar/' + ('' if p['file'] == 'index.html' else p['file'])
         html = page(p['title'], p['desc'], canonical_ar, p['en'], p['body'], p['faq'])
         out = os.path.join(OUT_DIR, p['file'])
         with open(out, 'w', encoding='utf-8') as f:
