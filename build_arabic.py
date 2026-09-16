@@ -142,8 +142,10 @@ def page(title, desc, canonical_ar, canonical_en, body, faq, extra_ld=None):
 </script>
 </body>
 </html>
-''' % (title, desc, canonical_ar, canonical_ar, canonical_en, canonical_en,
-       title, desc, canonical_ar, title, desc,  # og:title, og:desc, og:url, tw:title, tw:desc
+''' % (title, desc,                                # <title> / meta description
+       title, desc, canonical_ar,                  # og:title / og:description / og:url
+       title, desc,                                # twitter:title / twitter:description
+       canonical_ar, canonical_ar, canonical_en, canonical_en,  # canonical / hreflang ar / en / x-default
        GA4, STYLE, HEADER_AR, body, faq_html, FOOTER_AR, MINI_JS,
        json.dumps(ld_list, ensure_ascii=False, indent=2))
 
