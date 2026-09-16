@@ -220,7 +220,19 @@ def build_chips():
 
 
 def build_grid():
-    return '<div class="pgrid" id="pgrid">\n' + ''.join(card(p) for p in prods) + '\n</div>'
+    """产品页只展示三大主打的 SKU（服装 + 珠宝）。
+    其余 127 个杂货是真实可卖的货，但会稀释主线 —— 全部收进分类页（categories.html），
+    主页只留一个入口。数据仍来自 products.clean.json，不要删 json。"""
+    CORE_JEWELRY_IMGS = ('gold-rings-bowl', 'jewelry-showroom-table', 'moissanite-ring',
+                         'earrings-display', 'jewelry-market-yiwu')
+    core = [p for p in prods
+            if p['cat'] in ('modest-fashion', 'lingerie')
+            or (p['cat'] == 'fashion' and any(k in p['img'] for k in CORE_JEWELRY_IMGS))]
+    return ('<div class="pgrid" id="pgrid">\n'
+            + ''.join(card(p) for p in core) + '\n</div>\n'
+            + '<p style="text-align:center;margin:22px 0 0;font-size:14px">'
+            + '<a href="/categories.html" style="font-weight:600">Browse all %d ready-to-order '
+              'items →</a></p>\n' % len(prods))
 
 
 def build_rel():
@@ -321,31 +333,19 @@ def dedupe_ga4(html):
 def main():
     body = (
         '''<section class="page-hero"><div class="wrap">
-<div class="crumb"><a href="/">Home</a> ← <span>Hot Picks</span></div>
-<h1>This Month's Hot Picks — Landed Prices Included</h1>
-<p class="sub">A short, curated list of what Gulf sellers are actually re-ordering. Every price already includes freight to the UAE — no quoting ping-pong, just order.</p>
+<div class="crumb"><a href="/">Home</a> ← <span>Products</span></div>
+<h1>Three Lines, One Sourcing Partner</h1>
+<p class="sub">Custom apparel, fashion jewelry and custom packaging — designed, sampled and made in China, shipped to the Gulf with landed prices you can plan around.</p>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
-<div class="img-row" style="grid-template-columns:repeat(2,1fr);margin-bottom:24px;">
-<figure style="margin:0;">
-<img src="/images/earrings-display.jpg" alt="Fashion earrings sample from Yiwu market" loading="lazy" style="width:100%;border-radius:14px;border:1px solid #E7E1D4;object-fit:cover;aspect-ratio:4/3;">
-<figcaption style="font-size:13px;color:var(--muted);margin-top:8px;text-align:center;">Fashion jewelry samples from Yiwu market</figcaption>
-</figure>
-<figure style="margin:0;">
-<img src="/images/gold-rings-bowl.jpg" alt="Gold-plated rings sample from Guangzhou market" loading="lazy" style="width:100%;border-radius:14px;border:1px solid #E7E1D4;object-fit:cover;aspect-ratio:4/3;">
-<figcaption style="font-size:13px;color:var(--muted);margin-top:8px;text-align:center;">Gold-plated rings sample from Guangzhou market</figcaption>
-</figure>
-</div>
 '''
         + build_lines() + '\n'
         + build_capacity() + '\n'
         + build_longtail() + '\n'
         + '''<section style="padding-top:0"><div class="wrap">
 <h2 style="margin-bottom:4px">Ready-to-order picks</h2>
-<p class="sub" style="margin-bottom:16px">Already-developed items with real MOQ and landed price — order as-is, or use them as a starting point for your own version.</p>
+<p class="sub" style="margin-bottom:16px">Sampling stock for the apparel and jewelry lines — order as-is, or use them as a starting point for your own version.</p>
 '''
-        + build_chips() + '\n'
         + build_grid() + '\n'
         + '''<p class="updated-note" id="updated-note"><span>Updated ''' + UPDATED + ''' · new picks every month</span></p>
 <div class="strip" style="margin-top:34px">
@@ -355,7 +355,6 @@ def main():
 </div>
 '''
         + build_rel() + '\n'
-        + FILTER_JS + '\n'
         + '''</div></section>
 
 <section style="padding-top:0"><div class="wrap">
