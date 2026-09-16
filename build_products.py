@@ -34,6 +34,152 @@ def card(p):
                                    '<div class="pcard" data-cat="%s">' % p['cat'], 1)
 
 
+# ---------------------------------------------------------------- 三大主线
+# 用户 2026-09-16 明确：主推 ①服装定制+小单快返 ②时尚珠宝设计定制 ③包装设计定制。
+# 其余（LED 狗链、压缩沙发、电镀手机壳等）归为「能找的货 / 已对接工厂」，单独成块。
+LINES = [
+    {
+        'kicker': 'Line 01',
+        'title': 'Custom apparel — small batch, fast reorder',
+        'promise': 'Abayas, kaftans and modest wear made to your design. Sampling in days, '
+                   'and reorders that do not sit behind someone else\'s container.',
+        'imgs': [('/images/apparel/fabric-wall-1.jpg',
+                  'Hundreds of fabric colour cards on the wall — you choose, we make'),
+                 ('/images/apparel/apparel-rack-showroom.jpg',
+                  'Sample room rail — styles already developed and ready to adapt')],
+        'bullets': ['Fabric library on the wall — pick the hand feel and colour, not a catalogue photo',
+                    'In-house sampling room: pattern, cut, stitch, press',
+                    'Your own woven label, care label, size tag and hangtag'],
+    },
+    {
+        'kicker': 'Line 02',
+        'title': 'Fashion jewelry — design to sample',
+        'promise': '316L stainless steel, PVD gold plating and moissanite. Send a sketch or a '
+                   'photo and we turn it into a physical sample you can hold before you commit.',
+        'imgs': [('/images/gold-rings-bowl.jpg',
+                  '18K PVD gold-plated 316L stainless steel rings'),
+                 ('/images/jewelry-showroom-table.jpg',
+                  'Jewelry showroom table — designs available to customise')],
+        'bullets': ['316L stainless steel base — tarnish-resistant, no green finger',
+                    'PVD gold plating and GRA-certified moissanite',
+                    'Your logo on the pouch, the box and the jewellery tag'],
+    },
+    {
+        'kicker': 'Line 03',
+        'title': 'Custom packaging — designed, printed and made in-house',
+        'promise': 'Folding cartons, mailer boxes, rigid gift boxes, drawer boxes and paper bags. '
+                   'Printing, die-cutting, gluing and pulp inserts all happen in the same factory.',
+        'imgs': [('/images/packaging/package-gluing-machine.jpg',
+                  'Folder-gluer running a folding carton — made in-house'),
+                 ('/images/packaging/package-printing-press.jpg',
+                  'Printing press on site — not brokered out')],
+        'bullets': ['Printing, die-cutting, gluing and pulp inserts on site',
+                    'Structure design from a flat dieline — not just printing your logo',
+                    'Hot foil, emboss, spot UV, lamination — we will tell you which are worth it'],
+    },
+]
+
+WA_GENERIC = 'https://wa.me/971585854194'
+
+
+def build_lines():
+    out = ('<section style="padding-top:0"><div class="wrap">\n'
+           '<h2 style="margin-bottom:6px">Three lines we actually run</h2>\n'
+           '<p class="sub" style="margin-bottom:22px">Not a marketplace of 30 million things. '
+           'Three lines where we can put your brand on it, sample it, and reorder it fast.</p>\n')
+    for i, L in enumerate(LINES):
+        imgs = ''.join(
+            '<figure style="margin:0;">'
+            '<img src="%s" alt="%s" loading="lazy" style="width:100%%;border-radius:14px;'
+            'border:1px solid #E7E1D4;object-fit:cover;aspect-ratio:4/3;">'
+            '<figcaption style="font-size:12.5px;color:var(--muted);margin-top:7px;'
+            'text-align:center;">%s</figcaption></figure>' % (u, a, a)
+            for u, a in L['imgs'])
+        bullets = ''.join('<li style="margin:4px 0">%s</li>' % b for b in L['bullets'])
+        out += (
+            '<div style="display:grid;grid-template-columns:1fr;gap:16px;margin:0 0 26px;'
+            'background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px">\n'
+            '  <div style="font-size:12px;font-weight:600;letter-spacing:.08em;'
+            'text-transform:uppercase;color:var(--gold)">%s</div>\n'
+            '  <h3 style="margin:0 0 4px;font-size:17px">%s</h3>\n'
+            '  <p style="margin:0 0 14px;color:var(--muted)">%s</p>\n'
+            '  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;'
+            'margin-bottom:14px">%s</div>\n'
+            '  <ul style="margin:0 0 14px;padding-left:20px;font-size:13.5px;'
+            'color:var(--muted)">%s</ul>\n'
+            '</div>\n' % (L['kicker'], L['title'], L['promise'], imgs, bullets))
+    out += ('<div style="text-align:center;margin:-8px 0 0">'
+            '<a class="wa-btn" href="' + WA_GENERIC + '" target="_blank" rel="noopener">'
+            '💬 Ask about these three lines</a></div>\n')
+    out += '</div></section>\n'
+    return out
+
+
+# ---------------------------------------------------------------- 产能背书
+# 合作工厂 JOC（江苏海外集团旗下）：只给数字，不给名字 —— 避免客户绕过我们直接找工厂。
+CAPACITY_STATS = [('4,800', 'workers · five plants'),
+                  ('68', 'production lines'),
+                  ('750,000', 'garments per month'),
+                  ('BSCI / WRAP', 'audited')]
+CAPACITY_PLANTS = [
+    ('Jiangsu, China', '200 people · 4 lines · 40,000 a month',
+     'Small batches, sampling and reorders. BSCI + WRAP audited.'),
+    ('Mandalay, Myanmar', '3,200 people · 41 lines · 350,000 a month',
+     'Woven outerwear, wool jackets, trousers, skirts. BSCI audited.'),
+    ('Vietnam, two plants', '1,400 people · 23 lines · 360,000 a month',
+     'Woven outerwear, trousers, dresses.'),
+]
+
+
+def build_capacity():
+    stats = ''.join('<div><b style="font-size:19px;display:block;color:var(--ink)">%s</b>'
+                    '<span style="font-weight:400;font-size:12.5px">%s</span></div>'
+                    % (v, l) for v, l in CAPACITY_STATS)
+    rows = ''.join(
+        '<div style="display:flex;flex-wrap:wrap;gap:4px 16px;padding:12px 0;'
+        'border-top:1px solid var(--line)">'
+        '<div style="flex:1 1 200px"><b style="font-size:13.5px">%s</b>'
+        '<span style="display:block;font-size:12.5px;color:var(--muted)">%s</span></div>'
+        '<div style="flex:2 1 280px;font-size:12.5px;color:var(--muted)">%s</div></div>'
+        % (a, b, c) for a, b, c in CAPACITY_PLANTS)
+    return (
+        '<section style="padding-top:0"><div class="wrap">\n'
+        '<h2 style="margin-bottom:4px">The capacity behind us</h2>\n'
+        '<p class="sub" style="margin-bottom:16px">We work from a partner group owned by one of '
+        'Jiangsu province\'s pillar enterprises. Numbers, not adjectives.</p>\n'
+        '<div class="strip" style="margin-bottom:16px">%s</div>\n'
+        '<div style="background:#fff;border:1px solid var(--line);border-radius:16px;'
+        'padding:6px 22px 12px">%s</div>\n'
+        '<p style="font-size:13px;color:var(--muted);margin-top:12px">Half the group\'s output is '
+        'womenswear, and most of it ships to European and US buyers — which is why finishing, '
+        'labelling and packing are already at export grade before anything reaches the Gulf.</p>\n'
+        '</div></section>\n' % (stats, rows))
+
+
+# ---------------------------------------------------------------- 长尾：能找的货 / 已对接工厂
+LONGTAIL = [('LED pet leads', 'Light-up dog leads and collars, factory direct'),
+            ('Compressed sofas', 'Vacuum-packed sofas — shipped flat to save container space'),
+            ('Plated phone cases', 'Electroplated iPhone cases, custom finish and logo')]
+
+
+def build_longtail():
+    cells = ''.join(
+        '<div style="background:#fff;border:1px solid var(--line);border-radius:12px;'
+        'padding:14px 16px"><b style="font-size:13.5px">%s</b>'
+        '<span style="display:block;font-size:12.5px;color:var(--muted);margin-top:3px">%s</span>'
+        '</div>' % (a, b) for a, b in LONGTAIL)
+    return (
+        '<section style="padding-top:0"><div class="wrap">\n'
+        '<h2 style="margin-bottom:4px">Other factories we work with directly</h2>\n'
+        '<p class="sub" style="margin-bottom:14px">These are not our core lines, but we already '
+        'have the factory relationship — so if you need one, we can quote it this week.</p>\n'
+        '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));'
+        'gap:12px">%s</div>\n'
+        '<p style="font-size:13px;color:var(--muted);margin-top:12px">Not listed? Send us a photo '
+        '— sourcing a new factory is the part we do best.</p>\n'
+        '</div></section>\n' % cells)
+
+
 def build_chips():
     counts = {c['key']: sum(1 for p in prods if p['cat'] == c['key']) for c in cats}
     h = '<div id="chips">\n'
@@ -162,6 +308,13 @@ def main():
 <figcaption style="font-size:13px;color:var(--muted);margin-top:8px;text-align:center;">Gold-plated rings sample from Guangzhou market</figcaption>
 </figure>
 </div>
+'''
+        + build_lines() + '\n'
+        + build_capacity() + '\n'
+        + build_longtail() + '\n'
+        + '''<section style="padding-top:0"><div class="wrap">
+<h2 style="margin-bottom:4px">Ready-to-order picks</h2>
+<p class="sub" style="margin-bottom:16px">Already-developed items with real MOQ and landed price — order as-is, or use them as a starting point for your own version.</p>
 '''
         + build_chips() + '\n'
         + build_grid() + '\n'
