@@ -24,8 +24,10 @@ BASE = 'https://sourcetogulf.com'
 CANONICAL = BASE + '/nda.html'
 
 # 表单提交端点。默认 FormSubmit（无需注册，endpoint 即目标邮箱）。
+# ⚠️ AJAX 提交必须用 /ajax/ 路径 —— 不带的话 FormSubmit 返回 HTML"感谢页"
+#    而不是 JSON，页面会把成功误判为失败。
 # 换成 Formspree 只需把这里改成 https://formspree.io/f/xxxxxxxx
-FORM_ENDPOINT = 'https://formsubmit.co/info@sourcetogulf.com'
+FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@sourcetogulf.com'
 
 # 条款数据：(en_title, en_body, ar_title, ar_body)
 CLAUSES = [
