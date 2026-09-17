@@ -302,13 +302,23 @@ def body_inner():
     submit.disabled=true; msg.textContent='Submitting…';
     var fd=new FormData(form);
     fetch(form.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-      .then(function(r){ if(!r.ok) throw new Error('bad'); 
+      .then(function(r){
+        var ct=r.headers.get('content-type')||'';
+        // 必须校验 content-type：表单服务被拒/待激活时常返回 HTML 错误页，
+        // 但状态码仍是 200。只看 r.ok 会把失败误判成成功 ——
+        // 客户以为签好了，我们其实收不到。
+        if(!r.ok || ct.indexOf('application/json')<0){
+          throw new Error('not-json status='+r.status);
+        }
+        return r.json();
+      })
+      .then(function(){
         document.getElementById('ndaDone').hidden=false;
         form.style.display='none';
       })
-      .catch(function(){ 
-        msg.className='nda-msg err'; 
-        msg.textContent='Submission failed. Please try again, or message us on WhatsApp.'; 
+      .catch(function(err){
+        msg.className='nda-msg err';
+        msg.textContent='Submission did not go through. Please try again, or message us on WhatsApp: +971 58 585 4194';
         submit.disabled=false;
       });
   });
