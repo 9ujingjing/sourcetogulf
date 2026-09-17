@@ -542,6 +542,19 @@ tr:nth-child(even) td{background:var(--soft)}
       <span>I have read and agree to the terms of this Mutual Non-Disclosure Agreement.</span>
     </label>
 
+    <div class="nda-countersign">
+      <div class="cs-lbl">Already signed for SourceToGulf</div>
+      <div class="cs-row">
+        <img id="stgSig" src="/images/robin-signature.png" alt="SourceToGulf signature" />
+        <div class="cs-meta">
+          <div class="cs-nm">Robin</div>
+          <div class="cs-co">Papa Claw Marketing Technology Co., Ltd. (广州爬爬营销科技有限公司)</div>
+          <div class="cs-ct">SourceToGulf · Guangzhou, Guangdong, P.R. China</div>
+        </div>
+      </div>
+      <div class="cs-note">Once you sign, a completed PDF with both signatures is generated for you automatically.</div>
+    </div>
+
     <button type="submit" id="ndaSubmit" class="nda-btn" disabled>Sign and submit</button>
     <p id="ndaMsg" class="nda-msg" role="status"></p>
   </form>
@@ -578,6 +591,16 @@ tr:nth-child(even) td{background:var(--soft)}
 .sig-actions{display:flex;align-items:center;gap:14px;margin:10px 0 18px}
 .nda-btnghost{font:inherit;font-size:13px;padding:6px 14px;border:0.5px solid #D9D2C5;background:#fff;border-radius:8px;cursor:pointer;color:#0B2B4D}
 .nda-check{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.55;color:#333;margin-bottom:18px}
+.nda-countersign{background:#F3EFE7;border-left:3px solid #C9A24B;border-radius:0 8px 8px 0;padding:12px 14px;margin-bottom:18px}
+.cs-lbl{font-size:10.5px;letter-spacing:.5pt;text-transform:uppercase;color:#6B6B6B;margin-bottom:9px}
+.cs-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+#stgSig{height:44px;display:block}
+.cs-nm{font-size:14px;font-weight:500;color:#0B2B4D}
+.cs-co{font-size:11px;color:#6B6B6B;margin-top:1px}
+.cs-ct{font-size:11px;color:#6B6B6B}
+.cs-note{font-size:11px;color:#6B6B6B;margin-top:10px;border-top:0.5px solid #E0D9CC;padding-top:8px}
+.nda-dl{display:inline-block;font-size:15px;font-weight:500;padding:11px 26px;background:#C9A24B;color:#fff;border-radius:10px;text-decoration:none;margin-top:6px}
+.nda-dl:hover{background:#b8913d}
 .nda-check input{margin-top:3px}
 .nda-btn{display:inline-block;font:inherit;font-size:15px;font-weight:500;padding:11px 26px;background:#0B2B4D;color:#fff;border:none;border-radius:10px;cursor:pointer;text-decoration:none}
 .nda-btn:disabled{opacity:.45;cursor:not-allowed}
@@ -589,6 +612,7 @@ tr:nth-child(even) td{background:var(--soft)}
 @media(max-width:640px){.nda-wrap{padding:16px 14px 48px}.nda-body{padding:16px;max-height:440px}}
 </style>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
 (function(){
   var body=document.getElementById('ndaBody');
@@ -654,6 +678,71 @@ tr:nth-child(even) td{background:var(--soft)}
   };
   sync();
 
+  // 把透明 PNG 垫白底 —— jsPDF 处理 alpha 通道时会把透明区渲染成黑块
+  function flattenOnWhite(src){
+    try{
+      var c=document.createElement('canvas');
+      var w = src.naturalWidth || src.width;
+      var h = src.naturalHeight || src.height;
+      if(!w || !h) return '';
+      c.width=w; c.height=h;
+      var x=c.getContext('2d');
+      x.fillStyle='#ffffff'; x.fillRect(0,0,w,h);
+      x.drawImage(src,0,0);
+      return c.toDataURL('image/png');
+    }catch(e){ return ''; }
+  }
+
+  function makePdf(name, comp, lic, mail, sigUrl){
+    var ctor = window.jspdf && window.jspdf.jsPDF;
+    if(!ctor) return null;
+    var doc = new ctor({unit:'pt', format:'a4'});
+    var W=doc.internal.pageSize.getWidth(), H=doc.internal.pageSize.getHeight();
+    var M=46, y=58, today=new Date().toISOString().slice(0,10);
+    function newPage(){ doc.addPage(); y=58; }
+
+    doc.setFont('helvetica','bold'); doc.setFontSize(15);
+    doc.text('Mutual Non-Disclosure Agreement', M, y); y+=15;
+    doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor(120);
+    doc.text('SourceToGulf - apparel, garments, textiles and related products', M, y); y+=20;
+    doc.setTextColor(0); doc.setFontSize(8.8);
+    doc.text('Party A - SourceToGulf: Papa Claw Marketing Technology Co., Ltd.,', M, y); y+=11;
+    doc.text('Guangzhou, Guangdong, P.R. China', M, y); y+=13;
+    doc.text('Party B - Client: '+comp+(name?' - '+name:'')+(lic?' - Trade licence: '+lic:'')+(mail?' - '+mail:''), M, y); y+=20;
+
+    // 条款取英文版：第 15 条约定英文优先
+    var nodes=body.querySelectorAll('.nda-cl[data-lang="en"]');
+    for(var i=0;i<nodes.length;i++){
+      var t=nodes[i].querySelector('h3').textContent;
+      var b=nodes[i].querySelector('p').textContent;
+      var lt=doc.splitTextToSize(t, W-2*M), lb=doc.splitTextToSize(b, W-2*M);
+      if(y + lt.length*11 + lb.length*10.5 + 10 > H-70) newPage();
+      doc.setFont('helvetica','bold'); doc.text(lt, M, y); y+=lt.length*11;
+      doc.setFont('helvetica','normal'); doc.text(lb, M, y); y+=lb.length*10.5+8;
+    }
+
+    if(y+150 > H-70) newPage();
+    y+=8;
+    doc.setDrawColor(205); doc.line(M, y, W-M, y); y+=16;
+    doc.setFont('helvetica','bold'); doc.setFontSize(9.5);
+    doc.text('Signatures', M, y); y+=14;
+    var col=(W-2*M)/2;
+    doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor(120);
+    doc.text('Client', M, y); doc.text('SourceToGulf', M+col, y); y+=12;
+    if(sigUrl){ try{ doc.addImage(sigUrl,'PNG', M, y, 110, 44); }catch(e){} }
+    var stg=document.getElementById('stgSig');
+    var su = stg ? flattenOnWhite(stg) : '';
+    if(su){ try{ doc.addImage(su,'PNG', M+col, y, 110, 44); }catch(e){} }
+    y+=50; doc.setTextColor(0);
+    doc.text(name||'', M, y); doc.text('Robin', M+col, y); y+=11;
+    doc.setTextColor(120);
+    doc.text(comp||'', M, y); doc.text('Papa Claw Marketing Technology Co., Ltd.', M+col, y); y+=11;
+    doc.text('Date: '+today, M, y); doc.text('Date: '+today, M+col, y); y+=18;
+    doc.setFontSize(7.5);
+    doc.text('Executed in English and Arabic. In the event of conflict, the English version prevails (Clause 15).', M, y);
+    return doc.output('bloburl');
+  }
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
     if(!hasInk){ msg.className='nda-msg err'; msg.textContent='Please sign in the box first.'; return; }
@@ -675,8 +764,24 @@ tr:nth-child(even) td{background:var(--soft)}
         try{ j=JSON.parse(txt); }catch(e){}
         var ok = !!(j && (j.success==='true' || j.success===true));
         if(!ok) throw new Error('server rejected: '+txt.slice(0,80));
-        document.getElementById('ndaDone').hidden=false;
+        // 双方签名齐全 -> 当场生成 PDF 给客户下载，我们不用再手工副签
+        var cName=(form.querySelector('[name=full_name]')||{}).value||'';
+        var cComp=(form.querySelector('[name=company]')||{}).value||'';
+        var cLic =(form.querySelector('[name=trade_licence]')||{}).value||'';
+        var cMail=(form.querySelector('[name=email]')||{}).value||'';
+        var url=null;
+        try{ url = makePdf(cName, cComp, cLic, cMail, flattenOnWhite(cv)); }catch(e){ url=null; }
+        var done=document.getElementById('ndaDone');
+        done.hidden=false;
         form.style.display='none';
+        if(url){
+          var a=document.createElement('a');
+          a.className='nda-dl'; a.href=url;
+          a.download='NDA-SourceToGulf-'+(cComp||'client').replace(/[^a-z0-9]+/gi,'-')+'.pdf';
+          a.textContent='Download your signed NDA (PDF)';
+          done.insertBefore(a, done.querySelector('p:last-of-type')||null);
+          try{ a.click(); }catch(e){}
+        }
       })
       .catch(function(err){
         msg.className='nda-msg err';
