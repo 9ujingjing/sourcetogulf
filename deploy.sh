@@ -27,7 +27,7 @@ URL="https://sourcetogulf.com"
 BUILDERS="build_fx.py build_products.py build_cat_products.py build_guides.py \
 build_personas.py build_solutions.py build_compare.py build_blog.py \
 build_answers.py build_partners.py build_ads.py build_rss.py build_arabic.py \
-build_flags.py"
+build_nda.py build_flags.py"
 
 build_all() {
   local fail=0
