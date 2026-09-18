@@ -1,7 +1,7 @@
 # SourceToGulf 账号包装填写表（注册时照填）
 
 > 铁律：全平台 **Handle = `@sourcetogulf`**、**Display = `SourceToGulf`**、**品牌词只出现 SourceToGulf**。
-> Papa Claw 仅用于合同/发票，绝不当公开品牌名。
+> 广州东达东供应链管理有限公司 仅用于合同/发票，绝不当公开品牌名。
 > 每账号用独立节点 IP + 独立浏览器指纹（见 setup-plan §1）。
 
 ---

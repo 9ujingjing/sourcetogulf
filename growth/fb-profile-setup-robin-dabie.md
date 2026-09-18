@@ -69,4 +69,4 @@ WhatsApp: +971 58 585 4194
 
 ## 品牌归一
 
-两号 Work 都写 `SourceToGulf`、网址都指向 sourcetogulf.com（各自 UTM）。**绝不用 Papa Claw 当公开名**。
+两号 Work 都写 `SourceToGulf`、网址都指向 sourcetogulf.com（各自 UTM）。**绝不用 广州东达东供应链管理有限公司 当公开名**。

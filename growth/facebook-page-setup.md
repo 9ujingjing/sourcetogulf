@@ -168,7 +168,7 @@ Our founder spent 14 years in Dubai before this. We know the Gulf buyer because 
 ## 9. 合规红线
 
 - ❌ 不用绝对词（最便宜 / 第一 / 最可靠）—— FB 反垃圾 + GEO 策略一致
-- ❌ 品牌名只写 `SourceToGulf`，**Papa Claw 仅作法律主体**，不当公开品牌名
+- ❌ 品牌名只写 `SourceToGulf`，**广州东达东供应链管理有限公司 仅作法律主体**，不当公开品牌名
 - ❌ 主页发帖**少放外链**（FB 对带外链的帖子降权），用 WhatsApp CTA 代替
 - ❌ 禁售品不出现：无人机（迪拜禁飞）/ 摄像眼镜（TDRA+隐私）/ 真金（hallmarking）/ 护肤膏体（MOHAP）
 

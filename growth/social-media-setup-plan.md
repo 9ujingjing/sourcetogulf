@@ -2,7 +2,7 @@
 
 > 适用前提：你目前**没有社媒账号、没有网络节点、没有发布工具**。本计划从物理基建开始，到起号、包装、发布、度量闭环。
 > 配套文档（已就绪）：`social-media-seo-geo-playbook.md`（策略与帖子模板）、`social-posts-2026-08-24.md`（本周帖文）、`trend-radar.md`（热点选题）、`backlinks-plan.md`（反链）。
-> 已有资产：站点 `sourcetogulf.com`、GA4（G-76L0Y9SC5D）、WhatsApp **+971 58 585 4194**、品牌规则（对外只叫 **SourceToGulf**，Papa Claw 仅法律实体）。
+> 已有资产：站点 `sourcetogulf.com`、GA4（G-76L0Y9SC5D）、WhatsApp **+971 58 585 4194**、品牌规则（对外只叫 **SourceToGulf**，广州东达东供应链管理有限公司 仅法律实体）。
 
 ---
 
@@ -68,7 +68,7 @@
 - **Handle 全平台统一 `@sourcetogulf`**（小写无空格）。
 - 现有 TikTok `@papaclawsourcetogulf` 是混合名 → **改名或重建为 `@sourcetogulf`**，并同步更新 `index.html` 的 `Organization.sameAs`。
 - Display name：`SourceToGulf`（首字母大写）。
-- **绝不在任何公开位置用 `Papa Claw` 当品牌名**（仅合同/发票等法律场景）。
+- **绝不在任何公开位置用 `广州东达东供应链管理有限公司` 当品牌名**（仅合同/发票等法律场景）。
 
 ### 3.2 Bio 模板（各平台同框架、换链接 UTM）
 ```

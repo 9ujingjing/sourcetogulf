@@ -116,7 +116,7 @@ We quote one all-in price per piece covering product, inspection, packing, shipp
 The team behind SourceToGulf ran 4Kids Company Manufacturing Ltd, named **Walmart Global Best Supplier in 2005** and a former supplier to **Michaels** and **Carrefour** — 36 years of multi-supplier quality control, now pointed at the Gulf.
 
 **AR**：
-SourceToGulf هي شريك توريد من الصين للبائعين في الخليج، تديرها شركة Papa Claw للتقنية التسويقية ومقرها قوانغتشو. يعمل فريقنا ميدانياً في أسواق قوانغتشو وييوو وفوشان: نجد المصنع، ونطبّق علامتك وتغليفك، ونرسل لك عيّنات فعلية قبل أن تلتزم — بدءاً من ١٠ إلى ٥٠ قطعة.
+SourceToGulf هي شريك توريد من الصين للبائعين في الخليج، تديرها شركة سورس تو جلف لسلسلة التوريد المحدودة ومقرها قوانغتشو. يعمل فريقنا ميدانياً في أسواق قوانغتشو وييوو وفوشان: نجد المصنع، ونطبّق علامتك وتغليفك، ونرسل لك عيّنات فعلية قبل أن تلتزم — بدءاً من ١٠ إلى ٥٠ قطعة.
 
 نعرض سعراً واحداً شاملاً للقطعة يغطي المنتج والفحص والتغليف والشحن والتخليص. لا توجد عمولة منفصلة. أكثر من ٦٠٠٠ طلب نُفذت بصفر نزاعات إرجاع.
 
