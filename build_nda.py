@@ -132,7 +132,7 @@ def body_inner():
     <h1>Mutual Non-Disclosure Agreement</h1>
     <p class="nda-sub">اتفاقية السرية المتبادلة</p>
     <p class="nda-intro">
-      SourceToGulf (Papa Claw Marketing Technology Co., Ltd., Guangzhou, China) and the Client
+      SourceToGulf (SourceToGulf Supply Chain Co., Ltd., Guangzhou, China) and the Client
       below. Please read the agreement, fill in your details, sign in the box, and submit.
       You will receive a confirmation on screen, and we will countersign and return a copy to you.
     </p>
@@ -189,7 +189,7 @@ def body_inner():
         <img id="stgSig" src="/images/robin-signature.png" alt="SourceToGulf signature" />
         <div class="cs-meta">
           <div class="cs-nm">Robin</div>
-          <div class="cs-co">Papa Claw Marketing Technology Co., Ltd. (广州爬爬营销科技有限公司)</div>
+          <div class="cs-co">SourceToGulf Supply Chain Co., Ltd. (广州东达东供应链管理有限公司)</div>
           <div class="cs-ct">SourceToGulf · Guangzhou, Guangdong, P.R. China</div>
         </div>
       </div>
@@ -347,7 +347,7 @@ def body_inner():
     doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor(120);
     doc.text('SourceToGulf - apparel, garments, textiles and related products', M, y); y+=20;
     doc.setTextColor(0); doc.setFontSize(8.8);
-    doc.text('Party A - SourceToGulf: Papa Claw Marketing Technology Co., Ltd.,', M, y); y+=11;
+    doc.text('Party A - SourceToGulf: SourceToGulf Supply Chain Co., Ltd.,', M, y); y+=11;
     doc.text('Guangzhou, Guangdong, P.R. China', M, y); y+=13;
     doc.text('Party B - Client: '+comp+(name?' - '+name:'')+(lic?' - Trade licence: '+lic:'')+(mail?' - '+mail:''), M, y); y+=20;
 
@@ -377,7 +377,7 @@ def body_inner():
     y+=50; doc.setTextColor(0);
     doc.text(name||'', M, y); doc.text('Robin', M+col, y); y+=11;
     doc.setTextColor(120);
-    doc.text(comp||'', M, y); doc.text('Papa Claw Marketing Technology Co., Ltd.', M+col, y); y+=11;
+    doc.text(comp||'', M, y); doc.text('SourceToGulf Supply Chain Co., Ltd.', M+col, y); y+=11;
     doc.text('Date: '+today, M, y); doc.text('Date: '+today, M+col, y); y+=18;
     doc.setFontSize(7.5);
     doc.text('Executed in English and Arabic. In the event of conflict, the English version prevails (Clause 15).', M, y);

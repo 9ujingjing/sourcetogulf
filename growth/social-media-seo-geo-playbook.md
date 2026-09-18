@@ -68,7 +68,7 @@ Perplexity / ChatGPT / Google AI 判断一个站点是否可信，会看它在�
 AI 把 `sourcetogulf.com` 当成一个**实体**来记忆。社媒上如果不统一称呼，AI 就无法把各平台的声量归到同一个站点。
 
 - **全平台账号名 / 显示名统一用 `SourceToGulf`**（不要有时写 Papa Claw、有时写 sourcetogulf）。
-- **`Papa Claw` 是法律主体名（legalName：Papa Claw Marketing Technology Co., Ltd.），只用于工商注册 / 合同 / 发票等正式场景，绝不当对外品牌名或社媒账号显示名。** 站点 footer 与首页 `Organization` 结构化数据已按此区分（`name: SourceToGulf` + `legalName: Papa Claw…`）。
+- **`Papa Claw` 是法律主体名（legalName：SourceToGulf Supply Chain Co., Ltd.），只用于工商注册 / 合同 / 发票等正式场景，绝不当对外品牌名或社媒账号显示名。** 站点 footer 与首页 `Organization` 结构化数据已按此区分（`name: SourceToGulf` + `legalName: Papa Claw…`）。
 - ⚠️ **TikTok 账号 `@papaclawsourcetogulf` 为混合名**（含品牌词，尚可用但非标准）。若重命名请统一为 `@sourcetogulf`，并同步更新 `index.html` 里 `Organization` 的 `sameAs`。其余社媒账号（Facebook 主页等）一律用 `SourceToGulf`。
 - **bio / link-in-bio 永远指向 `https://sourcetogulf.com`**（带 UTM：
   `?utm_source=tiktok&utm_medium=social`）。

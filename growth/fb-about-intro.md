@@ -3,7 +3,7 @@
 > 用途：填进 FB 个人号「About → Details → Bio」或直接当置顶帖正文。
 > 来源：全部基于 sourcetogulf.com 真实信息（关于页、首页定位、服务、信任背书）。
 > 规则红线：不用「最便宜 / 第一 / 最可靠 / trusted #1」等超级lative（FB 反垃圾 + GEO 策略双重要求）；
-> 品牌名统一用 **SourceToGulf**，法律主体 **Papa Claw Marketing Technology Co., Ltd.** 只留在关于页，不当事牌名；
+> 品牌名统一用 **SourceToGulf**，法律主体 **SourceToGulf Supply Chain Co., Ltd.** 只留在关于页，不当事牌名；
 > **两个号不能填一模一样的长文**（FB 判重复 = 协同垃圾，会双降权，见底部「分人设」）。
 
 ---
@@ -79,7 +79,7 @@ AR: التركيز: العبايات، الملابس المحتشمة، وال�
 3. **两号不复制同一篇长文**：用 C 节的分人设版本，FB 会判"协同行为/重复"双降权。
 4. **WhatsApp 号码固定** `+971 58 585 4194`，和网站一致（别写别的号，割裂信任）。
 5. **链接**：About 里放 `https://sourcetogulf.com/?utm_source=facebook&utm_medium=profile&utm_campaign=robin`（dabie 号把 campaign 换成 dabie），方便 GA4 归因；FB 有时折叠长链，正常现象。
-6. **法律主体**：关于页可写一句 "A brand of Papa Claw Marketing Technology Co., Ltd., Guangzhou"，但**不要**把它当公开品牌名到处用。
+6. **法律主体**：关于页可写一句 "A brand of SourceToGulf Supply Chain Co., Ltd., Guangzhou"，但**不要**把它当公开品牌名到处用。
 
 ---
 

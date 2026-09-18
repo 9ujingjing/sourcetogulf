@@ -13,7 +13,7 @@
 | 项 | 内容 |
 |---|---|
 | 品牌 | **SourceToGulf**（缩写 STG） |
-| 法律实体 | Papa Claw Marketing Technology Co., Ltd. ／ 广州爬爬虾营销科技有限公司（广州注册） |
+| 法律实体 | SourceToGulf Supply Chain Co., Ltd. ／ 广州东达东供应链管理有限公司（广州注册） |
 | 运营基地 | 中国广州；团队亲自跑 **广州 / 义乌 / 佛山** 三大市场 |
 | 三位合伙人 | **Robin Gu（顾晶晶）· Dabie Wong · Andrew Dai** |
 | 创始人背景 | Robin Gu 在迪拜居住经商 **14 年**；曾 co-founded DAMAC-certified brokerage，出席 Dubai FDI forums，被本地媒体采访 |
@@ -109,7 +109,7 @@
 ### C. Medium（约 110 词｜About 页顶部、Crunchbase/Clutch 档案、提案首段）
 
 **EN**：
-SourceToGulf is a China sourcing partner for Gulf (GCC) sellers, operated by Papa Claw Marketing Technology Co., Ltd. and based in Guangzhou. Our team works the Guangzhou, Yiwu and Foshan markets in person: we find the factory, apply your branding and packaging, and send you physical samples before you commit — starting from 10–50 pcs.
+SourceToGulf is a China sourcing partner for Gulf (GCC) sellers, operated by SourceToGulf Supply Chain Co., Ltd. and based in Guangzhou. Our team works the Guangzhou, Yiwu and Foshan markets in person: we find the factory, apply your branding and packaging, and send you physical samples before you commit — starting from 10–50 pcs.
 
 We quote one all-in price per piece covering product, inspection, packing, shipping and customs. No separate commission. 6,000+ orders fulfilled with zero return disputes.
 

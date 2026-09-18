@@ -40,7 +40,7 @@ commission. Not a freight forwarder.
 
 ```
 SourceToGulf is a China sourcing partner for Gulf (GCC) sellers, operated by
-Papa Claw Marketing Technology Co., Ltd. and based in Guangzhou. Our team
+SourceToGulf Supply Chain Co., Ltd. and based in Guangzhou. Our team
 works the Guangzhou, Yiwu and Foshan wholesale markets in person: we find the
 factory, compare 3–5 suppliers for the same item, apply your branding and
 packaging, and send physical samples before you commit — starting from

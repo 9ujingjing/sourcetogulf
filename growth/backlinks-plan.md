@@ -251,7 +251,7 @@ https://sourcetogulf.com/for-influencers.html
 ## 7. 常见问题
 
 **Q：要营业执照/ trade license 怎么办？**
-A：用资料卡里的法律名 **Papa Claw Marketing Technology Co., Ltd.** + 邮箱 info@sourcetogulf.com。没有实体执照的平台就先跳过，不影响其他。
+A：用资料卡里的法律名 **SourceToGulf Supply Chain Co., Ltd.** + 邮箱 info@sourcetogulf.com。没有实体执照的平台就先跳过，不影响其他。
 
 **Q：发完没回复？**
 A：正常。2 周后再跟一次；媒体外联本就是「发 10 个中 2 个」的概率游戏。
