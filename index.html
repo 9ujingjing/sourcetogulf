@@ -309,6 +309,14 @@ tr:nth-child(even) td{background:var(--soft)}
 .team-facts li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink);line-height:1.55}
 .team-facts li::before{content:"✓";color:var(--gold);font-weight:800;flex-shrink:0;line-height:1.5}
 @media(max-width:860px){.team-grid{grid-template-columns:1fr;gap:24px}.team-photo img{border-radius:14px}}
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.person-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 16px 16px;display:flex;flex-direction:column}
+.person-avatar{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:.5px}
+.person-card h3{font-size:15.5px;font-weight:800;margin:11px 0 2px;color:var(--ink)}
+.person-role{font-size:11.5px;color:var(--gold);font-weight:800;letter-spacing:.6px;text-transform:uppercase}
+.person-card p{font-size:13px;color:var(--muted);line-height:1.55;margin:8px 0 0;flex:1}
+.person-card a{font-size:12.5px;color:var(--navy);font-weight:700;text-decoration:none;margin-top:10px}
+@media(max-width:860px){.people-grid{grid-template-columns:1fr}}
 /* ===== inline SVG flags (replace flag emoji — Windows cannot render them) ===== */
 .flag{width:1.2em;height:.8em;display:inline-block;vertical-align:-.12em;border-radius:2px;flex-shrink:0;box-shadow:0 0 0 .5px rgba(0,0,0,.14)}
 
@@ -328,6 +336,13 @@ tr:nth-child(even) td{background:var(--soft)}
 @media(max-width:720px){.doc-grid{grid-template-columns:1fr}}
 .note{font-size:.82rem;color:#7A827D}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SourceToGulf", "legalName": "SourceToGulf Supply Chain Co., Ltd.", "alternateName": "广州东达东供应链管理有限公司", "url": "https://sourcetogulf.com", "email": "info@sourcetogulf.com", "telephone": "+971585854194", "description": "China sourcing agent for the Middle East: product sourcing, quality inspection, custom branding, consolidation and door-to-door shipping from Guangzhou & Yiwu to the GCC.", "address": {"@type": "PostalAddress", "addressLocality": "Guangzhou", "addressCountry": "CN"}, "areaServed": ["AE", "SA", "KW", "QA", "BH", "OM"], "knowsLanguage": ["en", "ar", "zh"], "sameAs": ["https://www.facebook.com/profile.php?id=61591873976787", "https://www.tiktok.com/@papaclawsourcetogulf"]}</script>
+<script type="application/ld+json">
+[
+{"@context": "https://schema.org", "@type": "Person", "name": "Robin Gu", "jobTitle": "Founder", "description": "Founder of SourceToGulf. 14 years living and working in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, interviewed by local media. Speaks Arabic and English.", "worksFor": {"@type": "Organization", "name": "SourceToGulf", "url": "https://sourcetogulf.com"}, "knowsAbout": ["China sourcing", "GCC import rules", "Dubai business setup", "Customs clearance", "Supplier verification"], "url": "https://sourcetogulf.com/about.html#robin-gu"},
+{"@context": "https://schema.org", "@type": "Person", "name": "Andrew Dai", "jobTitle": "Partner", "description": "Partner at SourceToGulf. Carries the 36-year manufacturing and export lineage: Royal Palm International (1990), 4Kids Company Manufacturing, Walmart Global Best Supplier 2005, Michaels and Carrefour programs.", "worksFor": {"@type": "Organization", "name": "SourceToGulf", "url": "https://sourcetogulf.com"}, "knowsAbout": ["Apparel manufacturing", "Factory audits", "Quality control", "Walmart-level compliance"], "url": "https://sourcetogulf.com/about.html#andrew-dai"},
+{"@context": "https://schema.org", "@type": "Person", "name": "Dabie Wong", "jobTitle": "Partner", "description": "Partner at SourceToGulf. Runs the Hong Kong supply line — Hong Kong creators and influencers buy through her, 3,000+ orders a month to Hong Kong.", "worksFor": {"@type": "Organization", "name": "SourceToGulf", "url": "https://sourcetogulf.com"}, "knowsAbout": ["Hong Kong supply chain", "Influencer sourcing", "Small-batch orders"], "url": "https://sourcetogulf.com/about.html#dabie-wong"}
+]
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does your pricing work?", "acceptedAnswer": {"@type": "Answer", "text": "One landed price per piece — product, inspection, packing, shipping, customs and VAT included. No separate commission, no hidden fees. You know your exact margin before you pay."}}, {"@type": "Question", "name": "What is the minimum order?", "acceptedAnswer": {"@type": "Answer", "text": "Trial orders start from around $500 — or even just samples first. Test the product and test us before you scale."}}, {"@type": "Question", "name": "How long does shipping to the Gulf take?", "acceptedAnswer": {"@type": "Answer", "text": "Door to door: air freight 7–10 days, sea freight 25–35 days. Customs, duty and VAT are handled and included in your quote."}}, {"@type": "Question", "name": "Do you ship to Saudi Arabia? What about SABER?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — all six GCC countries door to door. For Saudi Arabia we handle SABER registration for regulated product categories as part of the quote."}}, {"@type": "Question", "name": "What if goods arrive damaged or wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Send photos within 7 days: confirmed defects are replaced free with shipping on us, or refunded — your choice. Wrong items or short counts are reshipped at our cost."}}, {"@type": "Question", "name": "How do I know you're not a scam?", "acceptedAnswer": {"@type": "Answer", "text": "Video call our office before paying anything. Every order gets a stamped invoice from our registered Guangzhou company, and photos/videos of your actual goods before shipping. Scammers hide — we don't."}},{"@type": "Question", "name": "Do you accept COD?", "acceptedAnswer": {"@type": "Answer", "text": "No. Orders start with a deposit, we source and confirm your stock, then you pay the balance before we ship. Payment by bank transfer, Payoneer, USDT or Alipay."}},{"@type": "Question", "name": "Can I return goods for non-quality reasons?", "acceptedAnswer": {"@type": "Answer", "text": "No. We don't accept change-of-mind returns. Quality issues are fixed at our cost. If a return is agreed for any reason, all return shipping costs are paid by the buyer."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SiteNavigationElement","name":["Services","Products","Ship To","Calculator","Learn","About"],"url":["https://sourcetogulf.com/services/product-sourcing-china.html","https://sourcetogulf.com/","https://sourcetogulf.com/shipping/china-to-uae.html","https://sourcetogulf.com/#calculator","https://sourcetogulf.com/blog/","https://sourcetogulf.com/about.html"]}</script>
 </head>
@@ -677,6 +692,29 @@ tr:nth-child(even) td{background:var(--soft)}
             <li data-en="Former Walmart Global Best Supplier (2005): our team ran 4Kids Manufacturing, also a former supplier to Michaels and Carrefour — 36 years in China trade." data-ar="أفضل مورّد عالمي سابق لولمارك (٢٠٠٥): أدر فريقنا شركة 4Kids للتصنيع، كما كنا مورّداً سابقاً لمايكلز وكارفور — ٣٦ عاماً في التجارة مع الصين.">Former Walmart Global Best Supplier (2005): our team ran 4Kids Manufacturing, also a former supplier to Michaels and Carrefour — 36 years in China trade.</li>
           </ul>
     </div>
+  </div>
+  <div class="people-grid">
+            <div class="person-card" id="robin-gu">
+              <div class="person-avatar">RG</div>
+              <h3>Robin Gu</h3>
+              <span class="person-role" data-en="Founder" data-ar="المؤسِّس">Founder</span>
+              <p data-en="14 years living and working in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums. Speaks Arabic and English." data-ar="١٤ سنة عاش وعمل في دبي — شارك في تأسيس شركة وساطة معتمدة من DAMAC، وحضر منتديات الاستثمار الأجنبي في دبي. يتحدث العربية والإنجليزية.">14 years living and working in Dubai — co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums. Speaks Arabic and English.</p>
+              <a href="/about.html#robin-gu" data-en="Full story →" data-ar="القصة الكاملة ←">Full story →</a>
+            </div>
+            <div class="person-card" id="andrew-dai">
+              <div class="person-avatar">AD</div>
+              <h3>Andrew Dai</h3>
+              <span class="person-role" data-en="Partner" data-ar="شريك">Partner</span>
+              <p data-en="Carries the 36-year manufacturing lineage: Royal Palm International (1990), 4Kids Manufacturing, Walmart Global Best Supplier 2005." data-ar="يحمل إرث ٣٦ عاماً في التصنيع: Royal Palm International (١٩٩٠)، وشركة 4Kids للتصنيع، وأفضل مورّد عالمي من ولمارك ٢٠٠٥.">Carries the 36-year manufacturing lineage: Royal Palm International (1990), 4Kids Manufacturing, Walmart Global Best Supplier 2005.</p>
+              <a href="/about.html#andrew-dai" data-en="Full story →" data-ar="القصة الكاملة ←">Full story →</a>
+            </div>
+            <div class="person-card" id="dabie-wong">
+              <div class="person-avatar">DW</div>
+              <h3>Dabie Wong</h3>
+              <span class="person-role" data-en="Partner" data-ar="شريكة">Partner</span>
+              <p data-en="Runs our Hong Kong supply line — creators and influencers buy through her, 3,000+ orders a month." data-ar="تدير خط التوريد إلى هونغ كونغ — صنّاع المحتوى والمؤثّرون يشترون عبرها، أكثر من ٣٠٠٠ طلب شهرياً.">Runs our Hong Kong supply line — creators and influencers buy through her, 3,000+ orders a month.</p>
+              <a href="/about.html#dabie-wong" data-en="Full story →" data-ar="القصة الكاملة ←">Full story →</a>
+            </div>
   </div>
 </div></section>
 

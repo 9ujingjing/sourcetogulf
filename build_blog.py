@@ -12,7 +12,7 @@ build_blog.py — 生成博客"How to"原创深度文（落地用户 GEO 内容�
 新增文章: 在 BLOG 字典加一条（file/title/desc/date/cat/read/body/faq）即可。
 """
 import os, json
-from tpl_common import page_shell, wa_link
+from tpl_common import page_shell, wa_link, author_jsonld
 
 APP = os.path.dirname(os.path.abspath(__file__))
 BASE = 'https://sourcetogulf.com'
@@ -42,7 +42,7 @@ def saber_body():
 '<span class="kicker">Saudi Import · Updated Aug 2026</span>'
 '<h1>How to Import to Saudi Arabia Under the 2026 SABER Rules: A Buyer\'s Playbook</h1>'
 '<p class="lead">Saudi Arabia\'s SABER system changed in 2026: 12-digit HS codes replaced the old codes, the Product Conformity (PC) certificate now lasts 6 months for high-risk goods (down from 1 year) and 2 years for standard goods, more than 150 product categories are controlled, and certificates must be filed before the goods arrive — there is no post-arrival fix. For a small Gulf buyer the practical path is: confirm whether your product is controlled, let your Saudi importer register the PC certificate on SABER, file a Shipment Certificate (SC) before each batch ships, and make sure Arabic labels and the right HS code match. Done this way, clearance runs 2–3 days instead of weeks.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 24 Aug 2026 · 11 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 24 Aug 2026 · 11 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Check if my product is controlled</a>'
 '<a class="btn-ghost" href="/blog/how-to-import-from-china-to-saudi-arabia.html">Full Saudi import guide →</a>'
@@ -127,7 +127,7 @@ def saber_body():
 
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
 '<div class="cta-box">'
-'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<h2>Written by Robin Gu, Founder</h2>'
 '<p>We clear goods into Saudi every week and track SABER changes as they happen. Send your product list — we confirm whether it is controlled, register the certificates, and quote one landed price to Riyadh or Jeddah.</p>'
 '<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Ask about my Saudi shipment</a>'
 '</div>'
@@ -159,7 +159,7 @@ def fta_body():
 '<span class="kicker">Trade Policy · 2026</span>'
 '<h1>How to Use the New China–GCC FTA to Cut Your Gulf Import Duty (2026 Guide for Small Importers)</h1>'
 '<p class="lead">The GCC and China signed a framework Free Trade Agreement in July 2025, and provisional application is already cutting tariffs on <b>1,420 HS codes</b> — including all cosmetics (HS 33) and most consumer electronics (HS 85) — by an average of <b>7.4 percentage points</b>. But the cut does not happen automatically: you claim it by shipping with a valid Certificate of Origin that meets GCC rules of origin. For a small Gulf importer the win is real but narrow — it lowers duty on specific listed categories, not on every China shipment — and the paperwork is exactly where most buyers leave money on the table.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 24 Aug 2026 · 10 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 24 Aug 2026 · 10 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Check my HS codes for FTA cuts</a>'
 '<a class="btn-ghost" href="/blog/landed-cost-china-to-gulf-explained.html">See landed cost math →</a>'
@@ -215,7 +215,7 @@ def fta_body():
 
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
 '<div class="cta-box">'
-'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<h2>Written by Robin Gu, Founder</h2>'
 '<p>We track GCC–China trade changes as they land and prepare the Certificate of Origin so the lower rate is claimed, not left on the table. Send your HS codes — we confirm which lines qualify.</p>'
 '<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Check my codes for FTA cuts</a>'
 '</div>'
@@ -248,7 +248,7 @@ def tiktok_body():
 '<span class="kicker">TikTok Shop · 2026</span>'
 '<h1>How to Source Products for TikTok Shop Saudi Without a Container (2026 Guide for Influencers &amp; Small Sellers)</h1>'
 '<p class="lead">TikTok Shop is live in Saudi Arabia and expanding across the Gulf in 2026, and the sellers winning are not importers — they are creators and small sellers who test a product, brand it, and ship a few hundred units at a time. You do not need a container, Chinese-language skills, or a customs licence to start. The practical path is: pick a product with a strong video demo, have us send you samples, approve one, add your private-label packaging, clear it through SABER where required, and air-ship a low-MOQ batch to your door. Most launches start under $3,000 and never touch a container.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 24 Aug 2026 · 9 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 24 Aug 2026 · 9 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start my TikTok Shop product</a>'
 '<a class="btn-ghost" href="/for-influencers.html">For influencers →</a>'
@@ -320,7 +320,7 @@ def tiktok_body():
 
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
 '<div class="cta-box">'
-'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<h2>Written by Robin Gu, Founder</h2>'
 '<p>We help Gulf creators turn a trend into a branded, compliant product without a container: trend spotting, samples to your door, private-label packaging, and Saudi clearance handled. Send the product you saw on TikTok — we find the source.</p>'
 '<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Start my TikTok Shop product</a>'
 '</div>'
@@ -354,7 +354,7 @@ def white_friday_body():
 '<span class="kicker">White Friday 2026 · Gulf E-commerce</span>'
 '<h1>How to Stock for White Friday 2026 from China (Gulf Small Business Guide)</h1>'
 '<p class="lead">White Friday 2026 falls on <b>27 November</b>. In Saudi Arabia and the UAE it is the biggest online sales window after Ramadan, and a large share of annual electronics, beauty and home-goods sales is concentrated in that final week. You do not need a container or a big warehouse to take part. The small sellers who win are the ones who start early, pick demo-friendly products, brand the packaging, and air-ship a low-MOQ batch so it clears customs and reaches the warehouse by mid-November. The practical path is: confirm your shortlist by early September, approve samples and artwork by late September, ship bulk by mid-October, and land goods by mid-November. Miss the September window and every remaining step becomes a gamble.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 26 Aug 2026 · 10 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 26 Aug 2026 · 10 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Plan my White Friday stock</a>'
 '<a class="btn-ghost" href="/for-small-businesses.html">For small businesses →</a>'
@@ -444,7 +444,7 @@ def white_friday_body():
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
 '<img src="/images/blog/white-friday-delivery.jpg" alt="Small parcels air-shipped from China arriving at a Gulf small business owner desk" style="width:100%;max-width:100%;border-radius:12px;margin:18px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);" loading="lazy">'
 '<div class="cta-box">'
-'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<h2>Written by Robin Gu, Founder</h2>'
 '<p>We help Gulf sellers build a White Friday batch from China without a container: product shortlisting, samples to your door, branded packaging, compliance and air shipping — all in one workflow. Tell us your budget and target country and we will map the timeline.</p>'
 '<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Plan my White Friday 2026 stock</a>'
 '</div>'
@@ -477,7 +477,7 @@ def skincare_body():
 '<span class="kicker">Beauty Private Label · 2026</span>'
 '<h1>How to Private-Label Skincare from China to Saudi and UAE (2026 Step-by-Step for Small Brands)</h1>'
 '<p class="lead">The Gulf beauty and personal-care market is worth an estimated <b>$13 billion+</b> across the GCC, with Saudi Arabia alone around <b>$7 billion</b> and growing faster than most categories. You do not need a factory in the Gulf to take a share: the practical path is to have a China OEM produce your line under <b>GMPC / ISO 22716</b> cosmetics GMP, send you filled samples to approve, apply your private-label packaging with Arabic labels, register it with <b>SFDA</b> (Saudi) or <b>MOHAP</b> (UAE), and air-ship a low-MOQ batch of a few hundred units. Most small brands launch their first line for under <b>$4,000</b> landed. The hard part is compliance and sourcing, not manufacturing — and that is exactly what a composite sourcing partner handles.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 27 Aug 2026 · 11 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 27 Aug 2026 · 11 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start my skincare line</a>'
 '<a class="btn-ghost" href="/for-small-businesses.html">For small brands →</a>'
@@ -571,7 +571,7 @@ def skincare_body():
 
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
 '<div class="cta-box">'
-'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<h2>Written by Robin Gu, Founder</h2>'
 '<p>We help Gulf creators and small brands build a private-label skincare line from China without a factory: compliant OEM shortlisting, samples to your door, Arabic labelling, SFDA/SABER or MOHAP/ECAS, and air shipping — one workflow. Send the product you saw on TikTok; we find the source.</p>'
 '<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Start my skincare line</a>'
 '</div>'
@@ -603,7 +603,7 @@ def trend_body():
 '<span class="kicker">Gulf Sourcing Trends · 2026</span>'
 '<h1>What Gulf Buyers Are Sourcing From China in 2026 — and the Products Behind the Demand</h1>'
 '<p class="lead">Gulf consumers spend more on fashion, jewelry and personal care than almost any other region. The numbers are specific: the UAE jewelry market is <b>USD 5.3 billion in 2026</b> (gold alone is <b>59%</b> of it, diamond <b>21%</b>), the Middle East &amp; Africa beauty-and-personal-care market is <b>USD 26.3 billion in 2025</b>, and UAE at-home beauty devices are growing about <b>8% a year</b>. We see the same shift in what Gulf buyers actually order from us — gold-tone "sand gold" jewelry, moissanite, LED beauty masks, modest abayas. This guide maps each rising trend to the products you can source from China at low MOQ, with samples and compliant shipping.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 27 Aug 2026 · 10 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 27 Aug 2026 · 10 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Source the 2026 trends</a>'
 '<a class="btn-ghost" href="/category-fashion.html">See jewelry →</a>'
@@ -677,7 +677,7 @@ def trend_body():
 
 '<section class="sec alt"><div class="wrap" style="text-align:center">'
 '<div class="cta-box">'
-'<h2>Written by the SourceToGulf sourcing team</h2>'
+'<h2>Written by Robin Gu, Founder</h2>'
 '<p>We source the products Gulf buyers are actually ordering in 2026 — sand-gold jewelry, moissanite, beauty devices, modest fashion — at low MOQ, with samples to your door and compliant shipping to the UAE and Saudi. Send the trend you want to ride; we find the source.</p>'
 '<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">💬 Source the 2026 trends</a>'
 '</div>'
@@ -704,7 +704,7 @@ def delivery_body():
 '<span class="kicker">Our Delivery Process · Updated Aug 2026</span>'
 '<h1>From Sample to Container: How We Deliver China Sourcing to the Gulf</h1>'
 '<p class="lead">Gulf buyers do not choose a supplier from a product photo. They choose on proof you can deliver: a real sample in hand, clean private-label packaging, a shipment that clears customs, and a container that actually loads. This is the exact path we run for every order - sand-gold jewelry, moissanite, beauty devices and modest fashion - from the first sample to the loaded container. No stock photos, just the steps a buyer sees.</p>'
-'<p class="sub">By the SourceToGulf sourcing team · Updated 27 Aug 2026 · 8 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 27 Aug 2026 · 8 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start with a sample</a>'
 '<a class="btn-ghost" href="/products.html">See real products →</a>'
@@ -846,12 +846,16 @@ def faq_block(faq):
     return '\n'.join(out)
 
 def jsonld_for(g):
+    # author 具体到人（Robin，Founder，14 年迪拜），强化 E-E-A-T；
+    # 之前是 Organization——机器读不到「人」就等于没有作者。
+    a = author_jsonld()
+    a.pop('knowsAbout', None)  # Article.author 节点保持精简，完整 Person 在首页
     article = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": g['title'],
         "description": g['desc'],
-        "author": {"@type": "Organization", "name": "SourceToGulf", "url": BASE},
+        "author": a,
         "publisher": {"@type": "Organization", "name": "SourceToGulf", "url": BASE},
         "datePublished": g['date'],
         "dateModified": g['date'],

@@ -77,6 +77,65 @@ def _load_pricing():
 
 
 _P = _load_pricing()
+
+# ---- 合伙人实体（Person schema 的单一真相源）----------------------------
+# 首页三人块与 blog author schema 都从这里取，改履历只改这里。
+# Robin 是所有文章的默认作者（Founder，14 年迪拜经历，阿英双语，公信力最强）。
+PEOPLE = [
+    {
+        'id': 'robin-gu',
+        'name': 'Robin Gu',
+        'jobTitle': 'Founder',
+        'desc': ('Founder of SourceToGulf. 14 years living and working in Dubai — '
+                 'co-founded a DAMAC-certified brokerage, sat in Dubai FDI forums, '
+                 'interviewed by local media. Speaks Arabic and English.'),
+        'knows': ['China sourcing', 'GCC import rules', 'Dubai business setup',
+                  'Customs clearance', 'Supplier verification'],
+    },
+    {
+        'id': 'andrew-dai',
+        'name': 'Andrew Dai',
+        'jobTitle': 'Partner',
+        'desc': ('Partner. Carries the 36-year manufacturing and export lineage: '
+                 'Royal Palm International (1990), 4Kids Company Manufacturing, '
+                 'Walmart Global Best Supplier 2005, Michaels and Carrefour programs.'),
+        'knows': ['Apparel manufacturing', 'Factory audits', 'Quality control',
+                  'Walmart-level compliance'],
+    },
+    {
+        'id': 'dabie-wong',
+        'name': 'Dabie Wong',
+        'jobTitle': 'Partner',
+        'desc': ('Partner. Runs the Hong Kong supply line — Hong Kong creators and '
+                 'influencers buy through her, 3,000+ orders a month to Hong Kong.'),
+        'knows': ['Hong Kong supply chain', 'Influencer sourcing', 'Small-batch orders'],
+    },
+]
+BASE = 'https://sourcetogulf.com'
+
+
+def person_jsonld(slug):
+    """返回某个合伙人的 Person JSON-LD 字典。"""
+    p = next(x for x in PEOPLE if x['id'] == slug)
+    return {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": p['name'],
+        "jobTitle": p['jobTitle'],
+        "description": p['desc'],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "SourceToGulf",
+            "url": BASE,
+        },
+        "knowsAbout": p['knows'],
+        "url": BASE + '/about.html#' + p['id'],
+    }
+
+
+def author_jsonld():
+    """blog 文章的 author 节点：具体到人（Robin），而不是 Organization。"""
+    return person_jsonld('robin-gu')
 CNY_TO_USD = float(_P['cny_to_usd'])
 _BASE_CNY = float(_P['cainiao_base_cny'])
 _PER_KG_CNY = float(_P['cainiao_per_kg_cny'])
