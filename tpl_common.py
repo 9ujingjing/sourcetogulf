@@ -91,6 +91,7 @@ PEOPLE = [
                  'interviewed by local media. Speaks Arabic and English.'),
         'knows': ['China sourcing', 'GCC import rules', 'Dubai business setup',
                   'Customs clearance', 'Supplier verification'],
+        'sameAs': ['https://app.qwoted.com/sources/robin-gu'],
     },
     {
         'id': 'andrew-dai',
@@ -117,7 +118,7 @@ BASE = 'https://sourcetogulf.com'
 def person_jsonld(slug):
     """返回某个合伙人的 Person JSON-LD 字典。"""
     p = next(x for x in PEOPLE if x['id'] == slug)
-    return {
+    d = {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": p['name'],
@@ -131,6 +132,9 @@ def person_jsonld(slug):
         "knowsAbout": p['knows'],
         "url": BASE + '/about.html#' + p['id'],
     }
+    if p.get('sameAs'):
+        d["sameAs"] = p['sameAs']
+    return d
 
 
 def author_jsonld():
