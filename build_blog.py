@@ -769,6 +769,209 @@ def delivery_body():
 '</div></section>'
     )
 
+# ===========================================================================
+# 文章 8: 小批量服装定制中国采购——海湾买家实操指南（2026）
+# 热词来源: Robin 3个真实客户（沙特纯棉睡衣品牌Somayah、沙特原创皮草品牌Nuo、迪拜代购）
+# 问了一堆问题却不知道背后是一个完整流程 → 科普+引导正确沟通方式
+# 角度: 大站写 "What is MOQ"；我们写 "How to as a Gulf buyer actually get small-batch done"
+# ===========================================================================
+CLOTHING_CUSTOM_FAQ = [
+    ('What is the minimum order quantity for custom clothing from China?',
+     'It depends on the product type. Basic T-shirts and simple women\'s tops can go as low as 100\u2013300 pieces per style. Pyjamas and loungewear are typically 200\u2013500 pieces. Denim ranges from 300\u2013800 pieces. Fur, leather or complex fashion pieces may treat 50\u2013100 pieces as a small order. But the real MOQ driver is not just quantity \u2014 it is the number of styles, colours, sizes and processes. A "100-piece" order split across 5 styles, 3 colours and 4 sizes is a very complex production structure that pushes unit cost up.'),
+    ('I want 100% cotton. Is that enough information for a factory to quote?',
+     'No. "100% cotton" tells the factory the fibre content, but not how the fabric should perform. You also need to specify: GSM (grams per square metre \u2014 180\u2013240 GSM is typical for cotton pyjamas), yarn count, knit type (single jersey, double jersey, interlock, poplin), hand feel (soft/brushed vs. crisp/structured), and whether the fabric needs pre-shrinking or is suitable for printing/embroidery. Two garments both labelled 100% cotton but made from 180 GSM single jersey vs. 240 GSM interlock will feel, drape and cost completely differently.'),
+    ('Why can\'t you give me a final DDP price on the first call?',
+     'Because the final cost changes with each variable that gets locked during the process. Fabric prices fluctuate, exchange rates move, production quantity affects per-unit fixed costs (pattern-making, screen printing set-up, embroidery digitising), packaging size changes the shipping volume, and the shipping mode (air vs. sea) and customs clearance method both shift the landed number. A responsible approach is to give a budget range upfront, then confirm the exact figure after the sample, packaging, quantity and shipping method are locked. Any fixed DDP price given before those are confirmed is an estimate, not a commitment.'),
+    ('How much do samples cost for custom clothing?',
+     'Sample cost is not just "one piece of clothing." For a custom design it typically includes: pattern-making (200\u2013500 CNY per style), fabric procurement (sometimes a whole roll if the mill does not stock the exact GSM), printing or embroidery set-up (screen charge or digitising fee), and courier to the Gulf (first-kg air rate). For a basic cotton T-shirt with an existing pattern, one sample runs roughly 300\u2013800 CNY total; for a fully custom design with new pattern and print, expect 800\u20131,500 CNY. Samples are risk control \u2014 they prevent a far larger loss on a bulk order that does not match expectations.'),
+    ('Can you handle everything from factory sourcing to DDP delivery to the Gulf?',
+     'Yes, but the services fall into three separate scopes with different cost structures. (1) Production: factory sourcing, fabric sourcing, sampling, production, quality control. (2) Branding: main label, care label, hangtag, custom packaging, barcode. (3) Logistics: consolidation, pre-shipment inspection, customs filing, sea/air freight, destination clearance, duty/VAT, last-mile delivery. Each scope has its own cost and liability boundary. A composite sourcing partner coordinates all three, but you need to confirm which ones you need so the quote is accurate.'),
+    ('What information should I prepare before asking for a quote?',
+     'A clear product spec sheet with these 12 points: (1) product category (pyjamas, T-shirt, denim, fur, etc.), (2) fabric (100% cotton, denim, velvet, fur, leather), (3) GSM or weight (e.g. 200 GSM, 12 oz denim), (4) number of styles, (5) colours per style, (6) size range (S\u2013XXL, Gulf sizing, EU sizing), (7) estimated quantity per style, (8) processes (print, embroidery, wash, pleat, splice), (9) packaging (generic or branded), (10) target market (Saudi, UAE, Qatar, etc.), (11) delivery term (FOB, CIF, DDP), (12) private-label needs (main label, care label, hangtag, polybag). The more complete this sheet is, the faster and more accurate the quote.'),
+]
+
+def clothing_custom_body():
+    wa = wa_link('Hi SourceToGulf! I am starting a fashion brand and need small-batch custom clothing from China. Can you help with factory sourcing, sampling, and shipping to the Gulf?')
+    return (
+'<section class="sec hero-sec"><div class="wrap">'
+'<span class="kicker">Clothing Sourcing · Updated Sep 2026</span>'
+'<h1>Small-Batch Clothing Customization From China: What Gulf Buyers Must Know (2026)</h1>'
+'<p class="lead">Small-batch custom clothing from China is entirely possible \u2014 but "small" must be defined precisely, and "100% cotton" is not enough for a factory to quote. MOQ varies by product type: basic T-shirts 100\u2013300 pieces, pyjamas 200\u2013500, denim 300\u2013800, fur/leather 50\u2013100. A 100-piece order split across 5 styles \u00d7 3 colours \u00d7 4 sizes is structurally more complex than 100 pieces of one SKU. Fabric specification requires GSM, knit type and hand feel beyond fibre content. Samples are not free because they carry pattern-making, set-up and courier costs. And a final DDP price cannot be accurate until sample, packaging, quantity and shipping mode are locked. This guide maps the full process \u2014 from product spec sheet to landed delivery \u2014 based on real orders shipped to Saudi Arabia, the UAE and Bahrain.</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder \u00b7 SourceToGulf \u00b7 Updated 21 Sep 2026 \u00b7 12 min read</p>'
+'<div class="cta-row">'
+'<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">\U0001f4ac Help me plan my first clothing batch</a>'
+'<a class="btn-ghost" href="/category-fashion.html">Fashion product lines \u2192</a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>"I want a small-batch trial order" \u2014 what that actually means</h2></div>'
+'<p>Many new Gulf fashion brands lead with: <em>"I want to start small, test the market, then reorder if it sells."</em> That is a reasonable strategy. But in garment manufacturing, "small" must be defined precisely, because the definition changes by product category.</p>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Product type</th><th style="padding:10px 12px;text-align:left">Typical small-batch range</th><th style="padding:10px 12px;text-align:left">Key MOQ driver</th></tr></thead>'
+'<tbody>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Basic T-shirts / simple tops</td><td style="padding:10px 12px">100\u2013300 pcs / style</td><td style="padding:10px 12px">Colour count + print set-up</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Pyjamas / loungewear</td><td style="padding:10px 12px">200\u2013500 pcs / style</td><td style="padding:10px 12px">Fabric MOQ + trims</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Denim / jeans</td><td style="padding:10px 12px">300\u2013800 pcs / style</td><td style="padding:10px 12px">Wash process + fabric minimum</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Fur / leather / complex fashion</td><td style="padding:10px 12px">50\u2013100 pcs / style</td><td style="padding:10px 12px">Material sourcing + craftsmanship</td></tr>'
+'</tbody></table>'
+'<p>But quantity alone does not determine cost. <b>Style count, colour count, size count, and process count</b> all affect MOQ and unit price. A client saying "I only need 100 pieces" sounds small \u2014 but if those 100 pieces span 5 styles \u00d7 3 colours \u00d7 4 sizes, the factory faces a very fragmented production structure. The effective SKU count is 60, not 1, and the unit price will reflect that complexity.</p>'
+'<p>The right question is not "Can you do small?" but <b>"Given my style/colour/size structure, what is the practical minimum?"</b></p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>"I need 100% cotton" \u2014 fibre content is not enough</h2></div>'
+'<p>Many Gulf buyers specify <em>"100% cotton, no blend, no modal"</em> \u2014 which shows they understand fibre content and care about quality. But for a sourcing team or factory, that specification alone is incomplete. Fabric performance and cost depend on at least seven variables beyond fibre content:</p>'
+'<ul class="bullets">'
+'<li><b>GSM (grams per square metre)</b> \u2014 180 GSM feels light and summery; 240 GSM feels substantial. The same "100% cotton" label covers both.</li>'
+'<li><b>Yarn count</b> \u2014 finer yarn (higher count) is smoother and more expensive.</li>'
+'<li><b>Knit / weave type</b> \u2014 single jersey, double jersey (interlock), piqu\u00e9, poplin, waffle \u2014 each drapes and stretches differently.</li>'
+'<li><b>Hand feel</b> \u2014 soft/brushed (common for pyjamas) vs. crisp/structured (better for tailored pieces).</li>'
+'<li><b>Shrinkage rate</b> \u2014 unpre-shrunk cotton can shrink 5\u20138% after wash; pre-shrunk fabric costs more but avoids returns.</li>'
+'<li><b>Colour fastness</b> \u2014 dark dyes on cotton may bleed; reactive-dyed fabric holds colour better.</li>'
+'<li><b>Print / embroidery compatibility</b> \u2014 not every cotton knit takes screen print or DTG well.</li>'
+'</ul>'
+'<p>For a women\'s cotton pyjama brand, the next question after "100% cotton" is: <b>"180 GSM, 200 GSM, 220 GSM or 240 GSM? Combed or carded? Single jersey or interlock? Soft-hand or structured?"</b> Two fabrics both labelled 100% cotton but built on 180 GSM single jersey vs. 240 GSM interlock will look, feel and cost completely differently. A factory cannot quote accurately until these are confirmed.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Why a product spec sheet should come before a price request</h2></div>'
+'<p>Many buyers send a long list of questions in the first message \u2014 product photos, specifications, fabric composition, GSM, MOQ, sample price, production cost, packaging, shipping, landed price. These are all valid questions, but they cannot all be answered accurately at once. Custom clothing is not a catalogue lookup; most numbers depend on choices that have not been made yet.</p>'
+'<p>The most efficient first step is not "Give me a price" but <b>"Here is my product spec sheet."</b> A clear spec sheet for a clothing order should include:</p>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">#</th><th style="padding:10px 12px;text-align:left">Item</th><th style="padding:10px 12px;text-align:left">Example</th></tr></thead>'
+'<tbody>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">1</td><td style="padding:10px 12px"><b>Category</b></td><td style="padding:10px 12px">Pyjamas, T-shirt, denim, fur</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">2</td><td style="padding:10px 12px"><b>Fabric</b></td><td style="padding:10px 12px">100% cotton / denim / velvet / leather</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">3</td><td style="padding:10px 12px"><b>GSM / weight</b></td><td style="padding:10px 12px">200 GSM; 12 oz denim</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">4</td><td style="padding:10px 12px"><b>Style count</b></td><td style="padding:10px 12px">3 styles per category</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">5</td><td style="padding:10px 12px"><b>Colours per style</b></td><td style="padding:10px 12px">2\u20133 colours</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">6</td><td style="padding:10px 12px"><b>Size range</b></td><td style="padding:10px 12px">S\u2013XXL (Gulf sizing)</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">7</td><td style="padding:10px 12px"><b>Estimated qty / style</b></td><td style="padding:10px 12px">200 pieces first order</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">8</td><td style="padding:10px 12px"><b>Processes</b></td><td style="padding:10px 12px">Print / embroidery / wash / pleat</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">9</td><td style="padding:10px 12px"><b>Packaging</b></td><td style="padding:10px 12px">Generic or branded box/bag</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">10</td><td style="padding:10px 12px"><b>Target market</b></td><td style="padding:10px 12px">Saudi Arabia / UAE / Qatar</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">11</td><td style="padding:10px 12px"><b>Delivery term</b></td><td style="padding:10px 12px">FOB / CIF / DDP</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">12</td><td style="padding:10px 12px"><b>Private-label</b></td><td style="padding:10px 12px">Main label + care label + hangtag</td></tr>'
+'</tbody></table>'
+'<p>Once these 12 points are clear, every downstream question \u2014 MOQ, sample cost, unit price, shipping, landed cost \u2014 can be answered quickly and accurately. Without them, any number given is a guess.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Sample costs: not an expense, but risk control</h2></div>'
+'<p>Many first-time buyers say <em>"I want to see a sample first"</em> \u2014 which is exactly the right approach. A professional buyer always samples before committing to bulk. But samples in custom clothing are not free, because they carry real production costs:</p>'
+'<ul class="bullets">'
+'<li><b>Pattern-making</b> \u2014 200\u2013500 CNY per style; a factory cannot cut fabric without a pattern.</li>'
+'<li><b>Fabric procurement</b> \u2014 if the exact GSM/colour is not in stock, the mill may require a minimum roll (often 50\u2013100 kg).</li>'
+'<li><b>Print / embroidery set-up</b> \u2014 screen-making for print, or digitising for embroidery, each costs 200\u2013600 CNY regardless of quantity.</li>'
+'<li><b>Courier to the Gulf</b> \u2014 air shipping a 0.5\u20131 kg sample pack to Riyadh or Dubai runs 120\u2013180 CNY at current rates.</li>'
+'</ul>'
+'<p>For a basic T-shirt using an existing factory pattern, a sample totals roughly 300\u2013800 CNY. For a fully custom design with new pattern and print, expect 800\u20131,500 CNY. Compared to the cost of a 200-piece bulk order that arrives wrong, the sample is cheap insurance. <b>Sample cost is risk control, not overhead.</b></p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Why MOQ is driven by process, not just willingness</h2></div>'
+'<p>"Why is the MOQ so high? I just want to test the market with 50 or 100 pieces."</p>'
+'<p>The reason is fixed cost. Every custom order carries production set-up costs that do not scale with quantity:</p>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Fixed cost item</th><th style="padding:10px 12px;text-align:left">Typical range (CNY)</th><th style="padding:10px 12px;text-align:left">Notes</th></tr></thead>'
+'<tbody>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Fabric minimum</td><td style="padding:10px 12px">500\u20132,000</td><td style="padding:10px 12px">Mill will not dye/print 5 kg</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Pattern + grading</td><td style="padding:10px 12px">200\u2013500 / style</td><td style="padding:10px 12px">Same whether you make 50 or 500</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Screen print set-up</td><td style="padding:10px 12px">300\u2013600 / colour</td><td style="padding:10px 12px">Per screen, not per shirt</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Embroidery digitising</td><td style="padding:10px 12px">200\u2013500 / design</td><td style="padding:10px 12px">One-time file creation</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef"><td style="padding:10px 12px">Wash process</td><td style="padding:10px 12px">1,000\u20133,000 / batch</td><td style="padding:10px 12px">Denim wash has minimum tank load</td></tr>'
+'<tr style="border-bottom:1px solid #e6e9ef;background:#f7f9fc"><td style="padding:10px 12px">Packaging customisation</td><td style="padding:10px 12px">1,000+ for MOQ 1,000 boxes</td><td style="padding:10px 12px">Print set-up on rigid boxes</td></tr>'
+'</tbody></table>'
+'<p>At 200 pieces, these fixed costs spread across a manageable denominator. At 50 pieces, they dominate \u2014 the per-unit cost can double or triple. For a new brand the practical strategy is: start with fewer styles and colours (reduce complexity, not quantity), accept a higher first-order unit cost as market validation, and scale the order once the product sells. <b>Small batch is doable; small batch at low cost is not.</b></p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Three service scopes buyers often mix together</h2></div>'
+'<p>A common first message combines everything: <em>"Can you make the product, do my labels, pack it, inspect it, clear customs and DDP to my door?"</em></p>'
+'<p>The answer is yes \u2014 but these are three distinct service scopes, each with different costs and liability boundaries:</p>'
+'<div class="grid3">'
+'<div class="card">'
+'<div class="em">\u270f\ufe0f</div>'
+'<h3>1. Production</h3>'
+'<p>Factory sourcing, fabric sourcing, pattern-making, sampling, production, in-line QC, final inspection.</p>'
+'</div>'
+'<div class="card">'
+'<div class="em">\U0001f3e0</div>'
+'<h3>2. Branding</h3>'
+'<p>Main label, care label, hangtag, branded polybag, custom retail packaging, barcode, size sticker.</p>'
+'</div>'
+'<div class="card">'
+'<div class="em">\U0001f6d2</div>'
+'<h3>3. Logistics</h3>'
+'<p>Consolidation, pre-shipment inspection, customs filing, sea/air freight, destination clearance, duty + VAT, last-mile delivery.</p>'
+'</div>'
+'</div>'
+'<p style="margin-top:18px">A composite sourcing partner coordinates all three, but the quote must break them out so you know what you are paying for and where the risk sits. Packaging MOQ (1,000+ boxes) is a separate constraint from production MOQ. Shipping mode (air vs. sea) is a separate decision from product cost. Each scope adds cost; the buyer needs to confirm which ones are needed upfront.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Why a "final landed price" is always an estimate until the process finishes</h2></div>'
+'<p>Buyers often ask: <em>"Just tell me the total cost to my door per piece."</em> This is understandable \u2014 but it must be stated clearly: <b>before the sample, packaging, quantity and shipping mode are confirmed, every landed price is an estimate.</b></p>'
+'<p>The variables that shift the final number:</p>'
+'<ul class="bullets">'
+'<li><b>Fabric price</b> \u2014 cotton prices move weekly on commodity markets.</li>'
+'<li><b>Exchange rate</b> \u2014 CNY/AED fluctuates; a 2% shift changes the landed number noticeably.</li>'
+'<li><b>Production quantity</b> \u2014 200 pieces vs. 500 pieces changes the per-unit share of fixed costs.</li>'
+'<li><b>Packing dimensions</b> \u2014 a branded rigid box is larger than a polybag, which increases CBM and freight.</li>'
+'<li><b>Shipping mode</b> \u2014 air freight costs 4\u20136x sea freight per kg; transit time differs by 3\u20134 weeks.</li>'
+'<li><b>Duty and VAT</b> \u2014 Saudi 15% VAT vs. UAE 5% VAT; ECAS vs. SABER fees; inspection holds.</li>'
+'</ul>'
+'<p>The responsible approach is: give a <b>budget range</b> upfront based on comparable orders, then confirm the final figure after every variable is locked. A sourcing partner who gives a fixed DDP price before sampling is either guessing or padding \u2014 neither protects the buyer.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>The correct sequence: from spec sheet to delivered order</h2></div>'
+'<p>For a new Gulf fashion brand, the practical process looks like this:</p>'
+'<div class="steps">'
+'<div class="step"><div class="n">1</div><h3>Spec sheet</h3><p>Define category, fabric, GSM, styles, colours, sizes, qty, processes, packaging, target market.</p></div>'
+'<div class="step"><div class="n">2</div><h3>Factory match</h3><p>Sourcing partner shortlists 2\u20133 factories experienced in your product type and sends fabric/option photos.</p></div>'
+'<div class="step"><div class="n">3</div><h3>Sample</h3><p>Factory makes sample; shipped to your door for approval. You confirm fit, fabric, colour, print.</p></div>'
+'<div class="step"><div class="n">4</div><h3>Quote lock</h3><p>With sample approved + packaging confirmed + quantity fixed, the sourcing partner gives a final landed quote.</p></div>'
+'</div>'
+'<div class="steps" style="margin-top:16px">'
+'<div class="step"><div class="n">5</div><h3>Production</h3><p>Factory runs bulk; in-line QC and pre-shipment inspection (photos/video) before goods leave.</p></div>'
+'<div class="step"><div class="n">6</div><h3>Branding</h3><p>Labels, hangtags, branded packaging applied; Arabic labelling for Saudi/UAE compliance.</p></div>'
+'<div class="step"><div class="n">7</div><h3>Ship + clear</h3><p>Consolidate, file SABER/ECAS, ship air or sea, clear customs, pay duty/VAT, deliver to your door.</p></div>'
+'<div class="step"><div class="n">8</div><h3>Reorder</h3><p>Sample approved \u2192 reorder is fast: same factory, same spec, same price \u2014 no sampling cost next time.</p></div>'
+'</div>'
+'<p style="margin-top:18px">Skipping steps (e.g. going straight to price without a spec sheet, or ordering bulk without sampling) is the most common cause of cost overruns, quality disputes and missed deadlines.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Common mistakes new Gulf fashion brands make</h2></div>'
+'<ul class="bullets">'
+'<li><b>Asking "what is your lowest price?" before defining the product.</b> Without a spec sheet, any price is a guess \u2014 and the factory will guess high to protect itself.</li>'
+'<li><b>Confusing "100% cotton" with a complete fabric spec.</b> The factory needs GSM, knit type and hand feel to quote accurately.</li>'
+'<li><b>Ordering bulk without sampling.</b> A sample that costs 1,000 CNY prevents a 30,000 CNY mistake on a bad bulk order.</li>'
+'<li><b>Splitting 100 pieces across 5 styles and 4 sizes.</b> Fragmented production structure drives unit cost above what the market will bear.</li>'
+'<li><b>Expecting branded packaging at the same MOQ as the garment.</b> Custom printed boxes usually require 1,000+ pieces; polybags and labels are more flexible.</li>'
+'<li><b>Asking for a fixed DDP price before quantity and shipping mode are confirmed.</b> The number will change; a budget range is honest, a fixed quote is not.</li>'
+'</ul>'
+'<div class="rel-grid">'
+'<a class="rel-card" href="/category-fashion.html"><span>Fashion products</span><b>Clothing, pyjamas, modest wear</b></a>'
+'<a class="rel-card" href="/blog/sample-to-container-delivery-journey.html"><span>Sample to container</span><b>The full sourcing process</b></a>'
+'<a class="rel-card" href="/services/custom-branding-packaging.html"><span>Custom branding</span><b>Labels, packaging, Arabic</b></a>'
+'<a class="rel-card" href="/blog/how-to-import-from-china-to-saudi-arabia.html"><span>Saudi import guide</span><b>Duty, SABER, VAT, timelines</b></a>'
+'<a class="rel-card" href="/for-small-businesses.html"><span>For small businesses</span><b>Low-MOQ sourcing playbook</b></a>'
+'<a class="rel-card" href="/blog/landed-cost-china-to-gulf-explained.html"><span>Landed cost explained</span><b>Every fee to your door</b></a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap" style="text-align:center">'
+'<div class="cta-box">'
+'<h2>Written by Robin Gu, Founder</h2>'
+'<p>We help Gulf fashion brands launch from China with small-batch custom clothing: factory sourcing, fabric specification, sampling to your door, private-label branding, and compliant delivery to Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and Oman. Send us your product spec sheet and we will map the timeline and budget.</p>'
+'<a class="wa-btn" href="' + wa + '" target="_blank" rel="noopener">\U0001f4ac Send my product spec sheet</a>'
+'</div>'
+'</div></section>'
+    )
+
 BLOG = {
     'saber-2026': {
         'file': 'blog/saber-2026-saudi-buyers-playbook.html',
@@ -832,6 +1035,15 @@ BLOG = {
         'canonical': BASE + '/blog/sample-to-container-delivery-journey.html',
         'body': delivery_body(),
         'faq': DELIVERY_FAQ,
+    },
+    'small-batch-clothing-custom': {
+        'file': 'blog/small-batch-clothing-custom-china-gulf-2026.html',
+        'title': 'Small-Batch Clothing Customization From China: What Gulf Buyers Must Know (2026) | SourceToGulf',
+        'desc': 'A complete guide for Gulf fashion brands sourcing small-batch custom clothing from China: MOQ by product type, 100% cotton GSM and fabric specs, sample costs, private-label packaging, the product spec sheet you need before quoting, and why a landed price cannot be given upfront — from a China sourcing team.',
+        'date': '2026-09-21',
+        'canonical': BASE + '/blog/small-batch-clothing-custom-china-gulf-2026.html',
+        'body': clothing_custom_body(),
+        'faq': CLOTHING_CUSTOM_FAQ,
     },
 }
 
