@@ -160,8 +160,9 @@ def build_capacity():
 LONGTAIL = [('iPhone DUO cases',
              'Foldable-phone cases in leather and woven fabric — embroidered motifs, '
              'Arabic edition naming and metal print, designed for Gulf buyers'),
-            ('LED pet leads', 'Light-up dog leads and collars, factory direct'),
-            ('Compressed sofas', 'Vacuum-packed sofas — shipped flat to save container space')]
+            ('LED pet collars & leads', 'Rechargeable LED collars and flashing safety leads — '
+             'factory direct from Ninghai'),
+            ('Compressed sofas', 'Vacuum-packed modular sofas — shipped flat to save container space')]
 
 # 手机壳款式实拍（自有设计，已剔除含国徽/领导人肖像的款式）
 PHONE_CASES = [('/images/phone-cases/duocase-palm-horse.jpg',
