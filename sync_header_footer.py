@@ -23,7 +23,7 @@ favicon_block = '  <link rel="icon" href="/favicon.ico" sizes="any">\n  <link re
 
 files = []
 for root, dirs, fnames in os.walk(APP):
-    dirs[:] = [d for d in dirs if d not in {".git", "node_modules"}]
+    dirs[:] = [d for d in dirs if d not in {".git", "node_modules", "outreach"}]
     for f in fnames:
         if f.endswith(".html"):
             files.append(os.path.join(root, f))
