@@ -6,7 +6,6 @@
     "https://sourcetogulf.com/pricing.js",
     "https://sourcetogulf.com/rss.xml",
     "https://sourcetogulf.com/sitemap.xml",
-    "https://sourcetogulf.com/about.html",
     "https://sourcetogulf.com/alibaba-vs-sourcing-agent.html",
     "https://sourcetogulf.com/ar/",
     "https://sourcetogulf.com/ar/bahrain-import-guide-from-china.html",
@@ -84,7 +83,9 @@
     "https://sourcetogulf.com/category-seasonal.html",
     "https://sourcetogulf.com/category-tech.html",
     "https://sourcetogulf.com/category-women-shoes.html",
-    "https://sourcetogulf.com/products.html"
+    "https://sourcetogulf.com/products.html",
+    "https://sourcetogulf.com/about.html",
+    "https://sourcetogulf.com/gulf-import-cost-index.html"
   ],
   "hashes": {
     "https://sourcetogulf.com/for-moms.html": "ba7dbae4b512e13aba843cc0b2944409",
@@ -94,7 +95,7 @@
     "https://sourcetogulf.com/for-influencers.html": "192f3feb1084553937d613f7d2e87792",
     "https://sourcetogulf.com/": "400e54b6a271ffbeeb7829a0913d7a66",
     "https://sourcetogulf.com/category-home-fragrance.html": "74aeef0030c5cae9422a426da5f666d6",
-    "https://sourcetogulf.com/about.html": "99658474595207926f2d508668ed2a45",
+    "https://sourcetogulf.com/about.html": "03a6ba37e1be852246b9869e8016deff",
     "https://sourcetogulf.com/composite-partner-vs-single-vendors.html": "a7de9e7eb780dc53d2030e0eb498f4e7",
     "https://sourcetogulf.com/category-modest-fashion.html": "38822f9bc0bae5b09c32e115ba1e8f7d",
     "https://sourcetogulf.com/uae-import-guide-from-china.html": "fa4ffc65e9368c19ecb7c272208ddbac",
@@ -165,6 +166,7 @@
     "https://sourcetogulf.com/services/custom-branding-packaging.html": "a2a47f8f6c362b48ccee74d70a476c7c",
     "https://sourcetogulf.com/nda.html": "c280110c5eee9e432c9f6e38e2be8568",
     "https://sourcetogulf.com/blog/small-batch-clothing-custom-china-gulf-2026.html": "0890563f8eed18c28fa773c4e4ea35f4",
-    "https://sourcetogulf.com/ar/blog/small-batch-clothing-custom-china-gulf-2026.html": "3d0cd44dca7124a781e97b9e4caf6d29"
+    "https://sourcetogulf.com/ar/blog/small-batch-clothing-custom-china-gulf-2026.html": "3d0cd44dca7124a781e97b9e4caf6d29",
+    "https://sourcetogulf.com/gulf-import-cost-index.html": "1d78e1dc5fcfe4e7bb551685ffdc791d"
   }
 }
