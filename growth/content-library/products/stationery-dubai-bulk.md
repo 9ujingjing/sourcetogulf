@@ -5,7 +5,7 @@ anon_name: "Dubai bulk stationery order"
 market: [UAE]
 product: ["notebooks", "pens", "office stationery", "bulk school/office supplies"]
 source: "/quote/stationery-dubai/ (noindex internal asset)"
-date: 2026-09
+date: 2026-09-01
 status: quoted
 moq: "per-item MOQ varies"
 fob_cny: "mixed"

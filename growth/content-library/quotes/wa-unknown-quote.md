@@ -5,7 +5,7 @@ anon_name: "WhatsApp inquiry — mixed quote"
 market: [UAE]
 product: ["mixed goods", "quote range AED 25 – 420"]
 source: "/quote/wa971564499568/ (noindex internal asset) — buyer ID anonymized"
-date: 2026-09
+date: 2026-09-01
 status: quoted
 moq: "varies per line"
 fob_cny: "mixed"

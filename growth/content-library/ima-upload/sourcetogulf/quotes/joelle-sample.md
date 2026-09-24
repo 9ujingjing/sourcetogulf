@@ -5,7 +5,7 @@ anon_name: "GCC buyer — multi-SKU sample order"
 market: [UAE, Saudi, Kuwait, Qatar, Bahrain, Oman]
 product: ["assorted small goods", "sample batch ~30+ SKUs"]
 source: "/quote/joelle/ (noindex internal asset) — client name anonymized"
-date: 2026-09
+date: 2026-09-01
 status: sample
 moq: "sample batch, per-SKU MOQ applies"
 fob_cny: "mixed"

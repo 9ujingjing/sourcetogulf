@@ -5,7 +5,7 @@ anon_name: "Qatar sim-racing equipment buyer"
 market: [Qatar]
 product: ["MOZA sim racing handbrake", "MOZA HBP load-cell handbrake", "racing sim gear"]
 source: "/quote/madani/ (noindex internal asset) — client name anonymized"
-date: 2026-09
+date: 2026-09-01
 status: quoted
 moq: "7 pcs total (small specialist order)"
 fob_cny: "mixed"
