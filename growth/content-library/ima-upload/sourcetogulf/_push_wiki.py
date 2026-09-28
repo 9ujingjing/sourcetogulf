@@ -32,9 +32,13 @@ STRUCTURE = {
         ("insights/2026-09-24-content-ideas.md", "内容机会扫描 2026-09-24"),
         ("insights/2026-09-24-sourcing-agent-benchmark.md", "对标研究：各平台涨粉最快的 sourcing agent（v2）"),
         ("insights/2026-09-24-copy-hashtag-playbook.md", "文案句式 + Hashtag 打法（含海湾版 tag 组合）"),
+        ("insights/linkedin-connection-scripts.md", "LinkedIn 加人备注话术（4 模板 + 发送节奏红线）"),
     ],
     "素材资产库": [
         ("assets/sourcetogulf-content-assets-10.md", "内容资产库 · 10 个真实素材（docx 沉淀）"),
+    ],
+    "合作供应商": [
+        ("suppliers/guangzhou-huayi-womenswear.md", "合作供应商 · 广州华亿服装（跨境女装18年）"),
     ],
 }
 
