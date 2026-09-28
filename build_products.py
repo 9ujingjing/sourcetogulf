@@ -49,7 +49,9 @@ LINES = [
                   'Sample room rail — styles already developed and ready to adapt')],
         'bullets': ['Fabric library on the wall — pick the hand feel and colour, not a catalogue photo',
                     'In-house sampling room: pattern, cut, stitch, press',
-                    'Your own woven label, care label, size tag and hangtag'],
+                    'Your own woven label, care label, size tag and hangtag',
+                    'Backed by a Guangzhou women\'s-wear partner — 18 years in cross-border '
+                    'apparel, supplying top-tier global fast-fashion platforms'],
     },
     {
         'kicker': 'Line 02',
@@ -153,6 +155,13 @@ def build_capacity():
         '<p style="font-size:13px;color:var(--muted);margin-top:12px">Half the group\'s output is '
         'womenswear, and most of it ships to European and US buyers — which is why finishing, '
         'labelling and packing are already at export grade before anything reaches the Gulf.</p>\n'
+        '<p style="font-size:13px;color:var(--muted);margin-top:12px">Beyond the group, we work '
+        'with partners we have visited ourselves — including a Guangzhou women\'s-wear factory '
+        'with 18 years in cross-border apparel that supplies top-tier global fast-fashion '
+        'platforms. A factory qualified by those platforms has already passed the hardest test in '
+        'sourcing: small-batch flexibility, seven-day reorders, tight tolerances, on-time '
+        'delivery. That is the standard behind every SourceToGulf shipment — vetted, sampled, '
+        'no commission.</p>\n'
         '</div></section>\n' % (stats, rows))
 
 

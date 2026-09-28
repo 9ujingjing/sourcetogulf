@@ -116,6 +116,8 @@ CAT_FAQ = {
      'Yes. We arrange Arabic care labels and handle SABER registration for apparel categories that require it, so shipments clear Jeddah or Dammam without delay.'),
     ('How long do reorders of modest fashion take?',
      'Reorders from Guangzhou modest-wear factories usually take 14 to 20 days including pre-shipment QC, because the supplier and spec are already confirmed.'),
+    ('Why can you accept small orders when most factories cannot?',
+     'Because our Guangzhou women\'s-wear partner has spent 18 years supplying top-tier global fast-fashion platforms. Factories qualified by those platforms are already tested for small-batch flexibility, seven-day reorders and tight tolerances — you get that production discipline at modest MOQs, without the container-load minimums.'),
   ],
   'women-shoes': [
     ('What sizes are available for plus-size women\'s shoes?',
