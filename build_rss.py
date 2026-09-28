@@ -34,6 +34,8 @@ INCLUDE = [
     "blog/skincare-private-label-china-to-saudi-uae.html",
     "blog/gulf-trends-2026-china-sourcing.html",
     "blog/sample-to-container-delivery-journey.html",
+    "blog/small-batch-clothing-custom-china-gulf-2026.html",
+    "blog/what-fast-fashion-grade-factory-means-small-gulf-orders.html",
     # GCC 指南（根目录）
     "uae-import-guide-from-china.html",
     "saudi-arabia-import-guide-from-china.html",
