@@ -294,10 +294,8 @@ tr:nth-child(even) td{background:var(--soft)}
 .qh .brand{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;opacity:.85;font-weight:700}
 .qh h1{font-size:clamp(20px,4vw,26px);margin:6px 0 4px;font-weight:800}
 .qh .sub{opacity:.9;font-size:13.5px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.gal{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;display:block}
-.gal img:first-child{grid-column:1 / -1;aspect-ratio:1}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;align-items:start}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
 .pbox{background:#fff;border:1px solid #E7E1D4;border-radius:14px;padding:20px}
 .price{font-size:44px;font-weight:800;color:#47712F;line-height:1}
 .price small{font-size:16px;color:#5F6661;font-weight:600}
@@ -313,7 +311,7 @@ tr:nth-child(even) td{background:var(--soft)}
 .terms h3{color:#47712F;margin-bottom:8px;font-size:15px}
 .terms .row{margin:3px 0;color:#5F6661}
 .terms .row b{color:#17201D}
-@media(max-width:767px){.qwrap{padding:10px}.qh{padding:18px 16px}.grid{grid-template-columns:1fr}.price{font-size:38px}}
+@media(max-width:767px){.qwrap{padding:10px}.qh{padding:18px 16px}.grid{grid-template-columns:1fr;gap:12px}.price{font-size:36px}}
 </style>
 </head>
 <body>
@@ -468,7 +466,7 @@ tr:nth-child(even) td{background:var(--soft)}
 </section>
 
 <div class="grid">
-<div class="gal"><img loading="lazy" src="images/1.jpg" alt="Style photo 1"><img loading="lazy" src="images/2.jpg" alt="Style photo 2"><img loading="lazy" src="images/3.jpg" alt="Style photo 3"><img loading="lazy" src="images/4.jpg" alt="Style photo 4"><img loading="lazy" src="images/5.jpg" alt="Style photo 5"><img loading="lazy" src="images/6.jpg" alt="Style photo 6"></div>
+<div class="gal"><img src="images/1.jpg" alt="Style photo"></div>
 <div class="pbox">
 <div class="price">89 <small>RMB / set · FOB</small></div>
 <div class="price-note">Sample-order friendly: price valid from 1 pc — no MOQ tiers for this style.</div>
