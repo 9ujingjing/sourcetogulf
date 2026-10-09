@@ -17,3 +17,12 @@
 - **素材依据**：content-library/customers/zyvo-gaming-store.md 真实匿名案例（Muscat gaming shop，1-pc MOQ 测款，鼠标垫缺口）
 - **合规**：客户匿名、无品牌词、无 superlative、工厂匿名；CTA=WhatsApp +971 58 585 4194
 - **回传缺口**：自 09-28 起无新回传数据，基线维持 FB440/IG344/ LinkedIn15，LinkedIn 仍卡连接数
+
+## 2026-10-10 (Sat, Gulf weekend = light day)
+- **产出**：social-calendar/2026-10-10.md
+- **判断**：周六=海湾周末，按规则「不推重发布」，唯一必做=FB 群组互动；LinkedIn 加人+评论照常；IG 仅可选轻量 Reels
+- **垂直轮换**：女装 / womenswear（避开 09-24 香氛、09-28 文具、10-09 电竞）
+- **钩子**：产业带地图（"Guangzhou is where the women's wear supply chain lives"）—— 避开已用 MOQ破除、价格反差、反问挑战
+- **素材依据**：content-library/suppliers/guangzhou-huayi-womenswear.md 公开安全版（匿名 "a Guangzhou-based women's wear partner... supplying top-tier global fast-fashion platforms"，未曝厂名/招牌/1688/点名 SHEIN）
+- **合规**：客户匿名、无品牌词、无 superlative、工厂全程匿名、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
+- **回传缺口**：连续多日无回传，基线仍 FB440/IG344/LinkedIn15

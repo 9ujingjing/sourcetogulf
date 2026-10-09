@@ -67,6 +67,7 @@ SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: fin
 - Category — Plus-size women's shoes: https://sourcetogulf.com/category-women-shoes.html
 - Category — Plus-size comfort essentials: https://sourcetogulf.com/category-lingerie.html
 - Solutions by buyer type (influencers, wholesalers, retailers, brands): https://sourcetogulf.com/solutions.html
+- Solutions by buyer type (Arabic SSR version — who it is for, how sourcing works, what we can/cannot source, $125 intent deposit, case studies): https://sourcetogulf.com/ar/solutions.html
 - GCC import answers (29 FAQ: duties, VAT by country, SABER cost, UAE free zones, Yiwu/Guangzhou sourcing, reliable agent, prohibited goods, dropshipping, Arabic labels, clearance time, cheap small-parcel shipping, MOQ, halal, landed cost, consolidation, QC): https://sourcetogulf.com/gcc-import-answers.html
 - Gulf Import Cost Index 2026 (citable data asset: GCC duty 5% CIF baseline, VAT by country — UAE 5% / Saudi 15% / Oman 5% / Bahrain 10% / Kuwait 0% / Qatar 0%, China→Gulf landed-cost formula + worked abaya example, Cainiao air rate CNY 68/0.5kg + 45.6/kg): https://sourcetogulf.com/gulf-import-cost-index.html
 - Gulf Landed-Cost Calculator 2026 (interactive tool: enter FOB value, per-piece weight, quantity and GCC country to get air freight, 5% CIF duty, VAT by country and all-in landed cost per piece in USD + local currency; built on the 2026 rates above): https://sourcetogulf.com/gulf-landed-cost-calculator.html

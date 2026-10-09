@@ -30,6 +30,7 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Category: Plus-size women's shoes: /category-women-shoes.html
 - Category: Plus-size comfort essentials: /category-lingerie.html
 - Solutions by buyer type: /solutions.html (influencers/livestream, wholesalers, retailers, small brands)
+- Solutions by buyer type (Arabic SSR): /ar/solutions.html
 - GCC import answers (FAQ): /gcc-import-answers.html
 - Gulf Landed-Cost Calculator 2026 (interactive tool): /gulf-landed-cost-calculator.html
 - China→Gulf Sourcing Benchmark 2026 (original dataset, 150 SKUs, CSV download): /gulf-sourcing-benchmark-2026.html
