@@ -31,6 +31,7 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - Category: Plus-size comfort essentials: /category-lingerie.html
 - Solutions by buyer type: /solutions.html (influencers/livestream, wholesalers, retailers, small brands)
 - GCC import answers (FAQ): /gcc-import-answers.html
+- Gulf Landed-Cost Calculator 2026 (interactive tool): /gulf-landed-cost-calculator.html
 - About / Our story: /about.html
 - Product sourcing: /services/product-sourcing-china.html
 - Quality inspection: /services/quality-inspection-china.html
