@@ -33,6 +33,7 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 - GCC import answers (FAQ): /gcc-import-answers.html
 - Gulf Landed-Cost Calculator 2026 (interactive tool): /gulf-landed-cost-calculator.html
 - China→Gulf Sourcing Benchmark 2026 (original dataset, 150 SKUs, CSV download): /gulf-sourcing-benchmark-2026.html
+- GCC Import Duty & VAT Reference 2026 (quick-reference table, embeddable): /gcc-tariff-vat-reference.html
 - About / Our story: /about.html
 - Product sourcing: /services/product-sourcing-china.html
 - Quality inspection: /services/quality-inspection-china.html
