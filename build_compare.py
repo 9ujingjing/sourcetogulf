@@ -488,7 +488,7 @@ COMPARE = {
     'alibaba': {
         'file': 'alibaba-vs-sourcing-agent.html',
         'title': 'Alibaba vs Sourcing Agent: Gulf Small Orders | SourceToGulf',
-        'desc': 'An independent comparison of buying on Alibaba vs using a China sourcing agent for the Gulf: how each earns, a $3,000 worked cost example, SABER and customs handling, and red flags to avoid.',
+        'desc': 'An independent comparison of buying on Alibaba vs using a China sourcing agent for the Gulf: how each earns, how to verify suppliers, a $3,000 worked cost example, SABER and customs handling, and red flags to avoid.',
         'canonical': BASE + '/alibaba-vs-sourcing-agent.html',
         'body': alibaba_body(),
         'faq': ALIBABA_FAQ,

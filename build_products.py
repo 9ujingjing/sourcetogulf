@@ -215,7 +215,7 @@ def build_longtail():
         'gap:12px">%s</div>\n'
         '</div>\n'
         '<p style="font-size:13px;color:var(--muted);margin-top:12px">Not listed? Send us a photo '
-        '— sourcing a new factory is the part we do best.</p>\n'
+        '— sourcing a new factory is the part we handle most.</p>\n'
         '</div></section>\n' % (cells, cases))
 
 
@@ -376,7 +376,7 @@ def main():
 </div></section>'''
     )
     html = page_shell(
-        "China Products for Gulf Sellers: MOQ & FOB Price | SourceToGulf",
+        "China Sourcing Products for Gulf Sellers: MOQ & FOB Price | SourceToGulf",
         "China products for Gulf sellers with real MOQ, factory (FOB) and all-in prices. Start from 10 pcs — custom branding, physical samples and QC before you commit.",
         BASE + '/products.html',
         body,
