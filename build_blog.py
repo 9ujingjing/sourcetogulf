@@ -1249,7 +1249,7 @@ def cost_body():
 '<section class="sec hero-sec"><div class="wrap">'
 '<span class="kicker">Transparent fees · Oct 2026</span>'
 '<h1>How Much Does a China Sourcing Agent Cost for Gulf Sellers?</h1>'
-'<p class="lead">A straight answer, because this page is the one buyers read before trusting us with money: <b>consultation is free. Work starts with a $125 USD intent deposit — credited against your first order.</b> Design and sample fees are credited to your first bulk order. Production runs 30% deposit, 70% before shipment. Quotations are valid for one week. There is no success commission stacked on top. This article breaks down every stage, what each fee actually buys, and the cost-hiding patterns common in this industry.</p>'
+'<p class="lead">A straight answer, because this page is the one buyers read before trusting us with money: <b>consultation is free. Work starts with a $125 USD intent deposit — credited against your first order.</b> Design and sample fees are credited to your first bulk order. Production runs 70% deposit, 30% before shipment. Quotations are valid for one week. There is no success commission stacked on top. This article breaks down every stage, what each fee actually buys, and the cost-hiding patterns common in this industry.</p>'
 '<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 20 Oct 2026 · 8 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start with the $125 deposit</a>'
@@ -1285,8 +1285,8 @@ def cost_body():
 '<tr><td style="padding:10px 12px">Consultation</td><td style="padding:10px 12px"><b>$0</b></td><td style="padding:10px 12px">Feasibility check, category risk scan, route advice</td></tr>'
 '<tr><td style="padding:10px 12px">Starting the engagement</td><td style="padding:10px 12px"><b>$125 intent deposit</b></td><td style="padding:10px 12px">Supplier search, sampling coordination, quotes with landed GCC pricing — <b>credited against your order value</b> once you proceed, or billed as a sourcing service fee if no order materializes</td></tr>'
 '<tr><td style="padding:10px 12px">Design &amp; samples</td><td style="padding:10px 12px">Sample cost + shipping</td><td style="padding:10px 12px">Physical samples to your door — fees fully credited to your first bulk order</td></tr>'
-'<tr><td style="padding:10px 12px">Production</td><td style="padding:10px 12px"><b>30% deposit</b></td><td style="padding:10px 12px">Factory production slot, materials locked at quoted price</td></tr>'
-'<tr><td style="padding:10px 12px">Before shipment</td><td style="padding:10px 12px"><b>70% balance</b></td><td style="padding:10px 12px">QC (photo &amp; video proof), compliant packing, consolidation and shipping arrangement</td></tr>'
+'<tr><td style="padding:10px 12px">Production</td><td style="padding:10px 12px"><b>70% deposit</b></td><td style="padding:10px 12px">Factory production slot, materials locked at quoted price</td></tr>'
+'<tr><td style="padding:10px 12px">Before shipment</td><td style="padding:10px 12px"><b>30% balance</b></td><td style="padding:10px 12px">QC (photo &amp; video proof), compliant packing, consolidation and shipping arrangement</td></tr>'
 '</tbody></table>'
 '<p>Quotations are valid for <b>one week</b> — factory prices, exchange rates and freight all move, so older quotes are re-confirmed before any payment.</p>'
 '</div></section>'
@@ -1331,7 +1331,7 @@ COST_FAQ = [
     ('What is an intent deposit and why do you charge it?',
      'It is a $125 deposit that starts the sourcing work: supplier search, sampling coordination and quotations with landed GCC pricing. It filters for serious buyers and protects both sides\' time — and it is applied against your order when you proceed.'),
     ('Do you charge a percentage commission on orders?',
-     'No. The model is a flat engagement deposit plus transparent landed-price quotations — 30% production deposit, 70% before shipment. There is no percentage success fee stacked on top of quotes.'),
+     'No. The model is a flat engagement deposit plus transparent landed-price quotations — 70% production deposit, 30% before shipment. There is no percentage success fee stacked on top of quotes.'),
     ('Are sample fees refundable?',
      'Sample and design fees are credited in full against your first bulk order, so they come back to you as order value. They are not a profit line.'),
     ('How long is a quotation valid?',

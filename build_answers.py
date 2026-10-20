@@ -37,7 +37,7 @@ QA = [
 
   # ---- 高意图长尾搜索词（GEO 扩充，2026-08-21）----
   ('How do I pay Chinese suppliers safely?',
-   'Use secure methods: Telegraphic Transfer (T/T) with a 30% deposit and 70% after inspection, Alibaba Trade Assurance for marketplace orders, or escrow through a licensed agent. Avoid full upfront payment to unknown factories. SourceToGulf releases the final balance to the supplier only after you approve pre-shipment photos and video, so your money is tied to verified goods.'),
+   'Use secure methods: Telegraphic Transfer (T/T) — production deposits of 30–70% before production are common, with the balance tied to inspection — Alibaba Trade Assurance for marketplace orders, or escrow through a licensed agent. Avoid full upfront payment to unknown factories. SourceToGulf holds your production deposit and releases the final balance to the supplier only after you approve pre-shipment photos and video, so your money is tied to verified goods.'),
   ('How much does a SABER certificate cost and how long does it take?',
    'SABER cost depends on product risk: a Product Certificate (PCoC) typically runs roughly USD 200–500 per product family with annual validity, plus a Shipment Certificate (SCoC) of about USD 50–150 per shipment. Processing usually takes 3–10 working days once documents are complete. SourceToGulf coordinates SABER and SFDA paperwork so Saudi-bound goods clear without last-minute holds.'),
   ('Do UAE free zones avoid VAT and import duty?',

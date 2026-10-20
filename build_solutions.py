@@ -123,7 +123,7 @@ PREREQS = [
   ('🎨', 'Brand assets',
    'Logo files if you want private label or custom packaging. No logo yet? We quote plain stock first.'),
   ('💳', 'Payment terms',
-   '30% deposit to start production, 70% balance before shipment. Quotes come with landed GCC pricing in AED.'),
+   '70% deposit to start production, 30% balance before shipment. Quotes come with landed GCC pricing in AED.'),
   ('🤝', 'Intent deposit & NDA',
    'A $125 USD intent deposit begins the engagement — applied against your first order, or billed as a '
    'sourcing service fee if no order materializes. Mutual NDAs available on request.'),
@@ -197,7 +197,7 @@ FAQ = [
    'One week. Factory prices, exchange rates and freight all move, so quotes older than seven days are '
    're-confirmed before any payment.'),
   ('What are your payment terms?',
-   '30% deposit to start production, 70% balance before shipment. Quotations are issued as landed GCC '
+   '70% deposit to start production, 30% balance before shipment. Quotations are issued as landed GCC '
    'prices in AED unless agreed otherwise.'),
   ('Do you provide private labeling and custom packaging?',
    'Yes — logo printing, custom boxes, bags, cards and inserts on MOQ-based production runs. We do not '
