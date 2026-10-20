@@ -1242,6 +1242,102 @@ RAMADAN_FAQ = [
      'Consolidated air freight from Guangzhou runs roughly 5–8 days to the Gulf, which keeps proven sellers available through the season. Plan the first air window for the second week of Ramadan, based on your first-week sell-through.'),
 ]
 
+def cost_body():
+    wa = wa_link('Hi SourceToGulf! I want to understand your sourcing fees and start with the $125 intent deposit.')
+    img = '/images/blog/why-we-dont-quote-in-5-minutes.jpg'
+    return (
+'<section class="sec hero-sec"><div class="wrap">'
+'<span class="kicker">Transparent fees · Oct 2026</span>'
+'<h1>How Much Does a China Sourcing Agent Cost for Gulf Sellers?</h1>'
+'<p class="lead">A straight answer, because this page is the one buyers read before trusting us with money: <b>consultation is free. Work starts with a $125 USD intent deposit — credited against your first order.</b> Design and sample fees are credited to your first bulk order. Production runs 30% deposit, 70% before shipment. Quotations are valid for one week. There is no success commission stacked on top. This article breaks down every stage, what each fee actually buys, and the cost-hiding patterns common in this industry.</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 20 Oct 2026 · 8 min read</p>'
+'<div class="cta-row">'
+'<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start with the $125 deposit</a>'
+'<a class="btn-ghost" href="/solutions.html">See what the fee covers →</a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Why we don\'t quote in 5 minutes</h2></div>'
+'<p>Buyers often ask for an instant price from a photo or an AI-generated render. Here is the honest problem: <b>AI draws a pretty picture — but it carries no dimensions, no material specs and no production method.</b> A factory cannot build from a picture. It builds from a technical drawing with tolerances, materials and construction details.</p>'
+'<figure style="margin:24px 0;text-align:center">'
+'<img src="' + img + '" alt="Illustration of the SourceToGulf four-step process: share your idea, design and mockup, three real samples, approve then final quote" loading="lazy" style="max-width:100%;border-radius:12px;border:1px solid var(--line)">'
+'<figcaption style="font-size:13px;color:var(--muted);margin-top:10px">Illustration: the four-step path from idea to final quote — design and sample fees are fully credited to your first bulk order.</figcaption>'
+'</figure>'
+'<p>That is why our quoting process runs through four gates before a production price is issued. It is slower than a screenshot quote — and it is the reason our quotes hold when the container arrives.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>The four steps from idea to final quote</h2></div>'
+'<ul class="bullets">'
+'<li><b>1. Share your idea — free consultation.</b> Send a photo, a link or a description and your target market. We confirm feasibility, category risks (certification, hazmat) and the realistic route — at no cost.</li>'
+'<li><b>2. Design &amp; mockup.</b> For custom products, a production-ready drawing is prepared — dimensions, materials, construction. This is the document the factory actually works from, not the mood board.</li>'
+'<li><b>3. Three real samples — shipped to your door.</b> You check quality with your own hands, not through filtered photos.</li>'
+'<li><b>4. Approve, then final quote.</b> Only after you approve the sample do we price production. The approved sample becomes the quality benchmark for the bulk run.</li>'
+'</ul>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>What you pay at each stage</h2></div>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Stage</th><th style="padding:10px 12px;text-align:left">You pay</th><th style="padding:10px 12px;text-align:left">What it buys</th></tr></thead>'
+'<tbody>'
+'<tr><td style="padding:10px 12px">Consultation</td><td style="padding:10px 12px"><b>$0</b></td><td style="padding:10px 12px">Feasibility check, category risk scan, route advice</td></tr>'
+'<tr><td style="padding:10px 12px">Starting the engagement</td><td style="padding:10px 12px"><b>$125 intent deposit</b></td><td style="padding:10px 12px">Supplier search, sampling coordination, quotes with landed GCC pricing — <b>credited against your order value</b> once you proceed, or billed as a sourcing service fee if no order materializes</td></tr>'
+'<tr><td style="padding:10px 12px">Design &amp; samples</td><td style="padding:10px 12px">Sample cost + shipping</td><td style="padding:10px 12px">Physical samples to your door — fees fully credited to your first bulk order</td></tr>'
+'<tr><td style="padding:10px 12px">Production</td><td style="padding:10px 12px"><b>30% deposit</b></td><td style="padding:10px 12px">Factory production slot, materials locked at quoted price</td></tr>'
+'<tr><td style="padding:10px 12px">Before shipment</td><td style="padding:10px 12px"><b>70% balance</b></td><td style="padding:10px 12px">QC (photo &amp; video proof), compliant packing, consolidation and shipping arrangement</td></tr>'
+'</tbody></table>'
+'<p>Quotations are valid for <b>one week</b> — factory prices, exchange rates and freight all move, so older quotes are re-confirmed before any payment.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>What the sourcing fee actually covers</h2></div>'
+'<p>The $125 engagement is not a "lookup fee". Between deposit and shipment it funds the whole operational chain:</p>'
+'<ul class="bullets">'
+'<li><b>Supplier search and vetting</b> — including the category track record check described in our <a href="/blog/what-fast-fashion-grade-factory-means-small-gulf-orders.html">factory qualification guide</a>.</li>'
+'<li><b>Sampling coordination</b> — chasing factories, comparing sample rounds, keeping specs consistent.</li>'
+'<li><b>Quotations with landed GCC pricing</b> — product cost, duty (5% on CIF), VAT by destination and freight, in AED, not vague "FOB plus extras".</li>'
+'<li><b>QC with photo and video proof</b> — you see the goods before they ship.</li>'
+'<li><b>Consolidation, compliance documents and freight arrangement</b> — SABER/ECAS files where the category requires them.</li>'
+'</ul>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Where agents hide costs — the patterns to know</h2></div>'
+'<p>This industry has pricing models that look free and are not. Three patterns account for most of them:</p>'
+'<ul class="bullets">'
+'<li><b>Low quote, then add-ons.</b> An attractive first quote that excludes tooling, packaging, inner boxes and "documentation fees" — each invoiced after you have committed.</li>'
+'<li><b>Freight spread.</b> The agent quotes you one freight price and pays the forwarder a lower one, keeping the spread. This is why "free agent" services exist — the freight line is the profit.</li>'
+'<li><b>Sample-fee black holes.</b> Sample charges that never appear as credits on any later invoice — paid twice, effectively.</li>'
+'</ul>'
+'<p>The defense is the same in every case: ask what each fee is credited against, and get the full chain — product, packaging, duty, VAT, freight, documents — in one landed number per unit.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Three questions to ask any agent before paying</h2></div>'
+'<ul class="bullets">'
+'<li><b>"Is my deposit credited against the order, or is it a pure fee?"</b> — and under what conditions does it change from one to the other.</li>'
+'<li><b>"Does your quote include freight and duty to my port, or is it factory-price only?"</b> — a landed number in AED removes the ambiguity.</li>'
+'<li><b>"Do sample and design fees appear as credits on my first bulk invoice?"</b> — ask for it in writing, as we do.</li>'
+'</ul>'
+'<p>If the answers are vague, the fee structure downstream usually is too.</p>'
+'</div></section>'
+)
+
+COST_FAQ = [
+    ('How much does a sourcing agent cost in the Gulf?',
+     'At SourceToGulf, consultation is free and the engagement starts with a $125 USD intent deposit — credited against your order value once you proceed, or billed as a sourcing service fee if no order materializes. Sample and design fees are credited to your first bulk order. There is no success commission on top.'),
+    ('What is an intent deposit and why do you charge it?',
+     'It is a $125 deposit that starts the sourcing work: supplier search, sampling coordination and quotations with landed GCC pricing. It filters for serious buyers and protects both sides\' time — and it is applied against your order when you proceed.'),
+    ('Do you charge a percentage commission on orders?',
+     'No. The model is a flat engagement deposit plus transparent landed-price quotations — 30% production deposit, 70% before shipment. There is no percentage success fee stacked on top of quotes.'),
+    ('Are sample fees refundable?',
+     'Sample and design fees are credited in full against your first bulk order, so they come back to you as order value. They are not a profit line.'),
+    ('How long is a quotation valid?',
+     'One week. Factory prices, exchange rates and freight move constantly, so quotes older than seven days are re-confirmed before any payment is made.'),
+]
+
 BLOG = {
     'saber-2026': {
         'file': 'blog/saber-2026-saudi-buyers-playbook.html',
@@ -1344,6 +1440,16 @@ BLOG = {
         'alt_ar': BASE + '/ar/blog/ramadan-2027-china-sourcing-calendar.html',
         'body': ramadan_body(),
         'faq': RAMADAN_FAQ,
+    },
+    'sourcing-cost-2026': {
+        'file': 'blog/sourcing-agent-cost-gulf-2026.html',
+        'title': 'How Much Does a China Sourcing Agent Cost for Gulf Sellers? (2026 Fee Breakdown) | SourceToGulf',
+        'desc': 'Transparent sourcing agent fees for Gulf sellers: free consultation, $125 intent deposit credited against your order, sample and design fees credited to your first bulk order, 30/70 payment, one-week quote validity — plus the cost-hiding patterns to avoid.',
+        'date': '2026-10-20',
+        'canonical': BASE + '/blog/sourcing-agent-cost-gulf-2026.html',
+        'alt_ar': BASE + '/ar/blog/sourcing-agent-cost-gulf-2026.html',
+        'body': cost_body(),
+        'faq': COST_FAQ,
     },
 }
 

@@ -38,6 +38,7 @@ INCLUDE = [
     "blog/what-fast-fashion-grade-factory-means-small-gulf-orders.html",
     "blog/why-china-dropshipping-gcc-doesnt-work.html",
     "blog/ramadan-2027-china-sourcing-calendar.html",
+    "blog/sourcing-agent-cost-gulf-2026.html",
     # GCC 指南（根目录）
     "uae-import-guide-from-china.html",
     "saudi-arabia-import-guide-from-china.html",
