@@ -1339,7 +1339,125 @@ COST_FAQ = [
      'One week. Factory prices, exchange rates and freight move constantly, so quotes older than seven days are re-confirmed before any payment is made.'),
 ]
 
+def sleepwear_body():
+    wa = wa_link('Hi SourceToGulf! I want to start a sleepwear brand for the Gulf market. Can you send me fabric options, samples and a small-batch plan?')
+    return (
+'<section class="sec hero-sec"><div class="wrap">'
+'<span class="kicker">Category playbook · Oct 2026</span>'
+'<h1>How to Start a Sleepwear Brand in the Gulf with China Sourcing</h1>'
+'<p class="lead">Sleepwear is one of the friendliest categories for a small Gulf brand to start with: <b>simple sizing, high repeat purchase, weak seasonality, and a fabric story customers can feel instantly</b>. The practical path from China runs: pick your fabric family first, confirm physical samples, add private-label packaging, run a small production batch, then reorder the winners. Our partner catalog covers 2,000+ sleepwear styles across eight fabric families, and this guide maps how a first-time brand converts that depth into a launch without container volume.</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 27 Oct 2026 · 8 min read</p>'
+'<div class="cta-row">'
+'<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Start with fabric samples</a>'
+'<a class="btn-ghost" href="/category-lingerie.html">See sleepwear picks →</a>'
+'</div>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>Why sleepwear fits small Gulf brands</h2></div>'
+'<p>Four structural reasons keep this category friendly to first-time founders:</p>'
+'<ul class="bullets">'
+'<li><b>Sizing is forgiving.</b> Sleepwear tolerates grading far better than fitted daywear — fewer returns, fewer size-curve headaches on your first batch.</li>'
+'<li><b>Repeat purchase is high.</b> Pajamas are replaced on wear, not on trend — a customer who likes her first set comes back 2–3 times a year.</li>'
+'<li><b>Seasonality is manageable.</b> The Gulf never has a hard winter, so lightweight families sell year-round; fleece and flannel simply overlay Nov–Feb.</li>'
+'<li><b>It extends naturally into modest fashion.</b> Long-sleeve, loose-cut sleep sets overlap with home-loungewear that Gulf customers already buy for everyday wear.</li>'
+'</ul>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Choose your fabric family first</h2></div>'
+'<p>Buyers who start by picking styles usually end up with an incoherent line. Start one level higher — the fabric family — because it decides your price point, your season and your customer:</p>'
+'<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
+'<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Fabric family</th><th style="padding:10px 12px;text-align:left">Sells as</th><th style="padding:10px 12px;text-align:left">Best window</th></tr></thead>'
+'<tbody>'
+'<tr><td style="padding:10px 12px"><b>Pure cotton (combed)</b></td><td style="padding:10px 12px">Everyday value sets, family bundle</td><td style="padding:10px 12px">Year-round</td></tr>'
+'<tr><td style="padding:10px 12px"><b>Ice silk / satin-touch</b></td><td style="padding:10px 12px">Premium summer feel, gifting</td><td style="padding:10px 12px">Apr–Oct</td></tr>'
+'<tr><td style="padding:10px 12px"><b>Modal / viscose blend</b></td><td style="padding:10px 12px">Breathable mid-premium</td><td style="padding:10px 12px">Year-round</td></tr>'
+'<tr><td style="padding:10px 12px"><b>Fleece / flannel</b></td><td style="padding:10px 12px">Winter comfort, gift boxes</td><td style="padding:10px 12px">Nov–Feb</td></tr>'
+'</tbody></table>'
+'<p>A launch collection of 4–6 styles within <b>one</b> fabric family reads as a brand; a mixed basket reads as a flea market. Our <a href="/blog/small-batch-clothing-custom-china-gulf-2026.html">small-batch clothing guide</a> breaks down fabric specs and GSM the same way.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>From sample to your first batch</h2></div>'
+'<p>The same four gates we run for every custom order apply cleanly to sleepwear:</p>'
+'<ul class="bullets">'
+'<li><b>1. Shortlist by fabric, not by photo.</b> Two or three candidate styles per family; photos hide what fabric reveals.</li>'
+'<li><b>2. Physical samples, shipped to your door.</b> Wear them, wash them once, then decide — a hangtag photo on a marketplace cannot tell you how cotton breathes after a wash cycle.</li>'
+'<li><b>3. Private-label artwork before production.</b> Woven labels, care cards, hangtags in English + Arabic — prepared while the sample round runs, not after.</li>'
+'<li><b>4. Small batch first, reorder winners.</b> Produce the batch at factory MOQ, sell through, and reorder only the two styles that moved. Our <a href="/solutions.html">solutions page</a> explains the deposit-and-credit structure ($125 intent deposit credited against your order).</li>'
+'</ul>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>Private label: where sleepwear brands actually win</h2></div>'
+'<p>Factories produce the same garments for dozens of buyers — the difference is made at the packaging desk:</p>'
+'<ul class="bullets">'
+'<li><b>Woven neck label</b> with your brand — the single strongest "this is a brand" signal at zero tech cost.</li>'
+'<li><b>Arabic + English care cards.</b> Arabic-first presentation immediately separates you from marketplace imports in a Gulf buyer\'s hands.</li>'
+'<li><b>Gift-ready boxes.</b> Sleepwear is one of the most gifted apparel categories in the region — a boxed set doubles its price justification. See our <a href="/services/custom-branding-packaging.html">custom branding service</a>.</li>'
+'</ul>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>What it costs to start (structure, honestly)</h2></div>'
+'<p>Three cost layers, all transparent before you commit:</p>'
+'<ul class="bullets">'
+'<li><b>Sampling layer:</b> sample cost + shipping — fully <b>credited against your first bulk order</b>, per our <a href="/blog/sourcing-agent-cost-gulf-2026.html">fee breakdown</a>.</li>'
+'<li><b>Production layer:</b> a small batch at factory MOQ, quoted with landed GCC pricing in AED (duty 5% on CIF plus your destination VAT already inside the number).</li>'
+'<li><b>Branding layer:</b> label and packaging tooling — small one-off fees that amortize to nearly nothing across reorders.</li>'
+'</ul>'
+'<p>Quotes are valid for one week; reorder quotes refresh the same way, so your second batch prices against reality, not against a stale sheet.</p>'
+'</div></section>'
+
+'<section class="sec alt"><div class="wrap">'
+'<div class="sec-head"><h2>GCC compliance: labels, not just looks</h2></div>'
+'<p>Sleepwear is a regulated textile category in the Gulf. Before goods ship:</p>'
+'<ul class="bullets">'
+'<li><b>Saudi Arabia:</b> textiles fall under SASO/SABER conformity — fiber composition, care symbols and country of origin on the label, with an Arabic-language label required for retail sale.</li>'
+'<li><b>UAE:</b> ECAS covers children\'s sleepwear specifically (fire-safety relevant) — confirm the category with us before ordering kids\' styles.</li>'
+'<li><b>All six states:</b> bilingual EN/AR labeling is the practical retail standard even where not strictly mandated.</li>'
+'</ul>'
+'<p>We prepare conformity files during production, not after — the same sequencing our <a href="/blog/ramadan-2027-china-sourcing-calendar.html">seasonal calendar</a> recommends for every regulated category.</p>'
+'</div></section>'
+
+'<section class="sec"><div class="wrap">'
+'<div class="sec-head"><h2>When to launch: the Gulf sleepwear calendar</h2></div>'
+'<ul class="bullets">'
+'<li><b>November:</b> White Friday gift boxes (fleece + satin sets) — order in October; see the <a href="/blog/white-friday-2026-china-gulf-small-business.html">White Friday stocking guide</a>.</li>'
+'<li><b>December–January:</b> peak fleece/flannel season.</li>'
+'<li><b>February–March:</b> Ramadan majlis-and-gifting season — boxed sets for Eid; production should start by December (see the <a href="/blog/ramadan-2027-china-sourcing-calendar.html">Ramadan sourcing calendar</a>).</li>'
+'<li><b>April onward:</b> ice-silk and cotton stretch the rest of the year.</li>'
+'</ul>'
+'<p>For a first-time brand, the White Friday window is the fastest proof: one boxed line, one season, real sell-through data within four weeks.</p>'
+'</div></section>'
+)
+
+SLEEPWEAR_FAQ = [
+    ('What MOQ do I need to start a sleepwear brand?',
+     'A test batch at the factory\'s per-style MOQ is enough to launch — typically a handful of styles in one fabric family rather than a full size-curve collection. Sample and design fees are credited against your first bulk order, so the trial cost converts to inventory value.'),
+    ('Do sleepwear labels need Arabic in Saudi Arabia?',
+     'Yes for retail sale — SASO textile rules require fiber composition, care and origin labeling, with Arabic labeling as the practical retail standard across the GCC. Bilingual EN/AR labels are the default we prepare for Gulf-bound production.'),
+    ('Can I put my own brand on sleepwear made in China?',
+     'Yes — woven neck labels, hangtags, care cards and gift boxes on MOQ-based production runs. Private label is where a sleepwear line stops looking like a marketplace import, and it is standard on our small-batch runs.'),
+    ('Which sleepwear fabrics sell in the Gulf?',
+     'Ice silk and satin-touch sets for the long warm season and gifting, combed cotton for everyday value, modal blends as a breathable mid-premium, and fleece or flannel for the November–February comfort window.'),
+    ('How much should I budget to test a sleepwear line?',
+     'Structure it in three layers: sampling (credited to your first order), a small production batch quoted with landed GCC pricing in AED, and small one-off label/packaging tooling that amortizes across reorders. The $125 intent deposit starts the engagement and is credited against your order value.'),
+]
+
 BLOG = {
+    'sleepwear-brand-2026': {
+        'file': 'blog/how-to-start-sleepwear-brand-gulf-china-2026.html',
+        'title': 'How to Start a Sleepwear Brand in the Gulf with China Sourcing (2026) | SourceToGulf',
+        'desc': 'A launch playbook for Gulf sleepwear brands: fabric families that sell (ice silk, combed cotton, modal, fleece), sample-to-batch process, private-label packaging, SASO/SABER textile labels, seasonal calendar and an honest three-layer cost structure — from a China sourcing team.',
+        'date': '2026-10-27',
+        'canonical': BASE + '/blog/how-to-start-sleepwear-brand-gulf-china-2026.html',
+        'alt_ar': BASE + '/ar/blog/how-to-start-sleepwear-brand-gulf-china-2026.html',
+        'body': sleepwear_body(),
+        'faq': SLEEPWEAR_FAQ,
+    },
+
     'saber-2026': {
         'file': 'blog/saber-2026-saudi-buyers-playbook.html',
         'title': 'Sourcing for Saudi Arabia: 2026 SABER Rules for Gulf Buyers | SourceToGulf',
