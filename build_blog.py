@@ -1026,6 +1026,7 @@ def fastfashion_body():
 '<section class="sec"><div class="wrap">'
 '<div class="sec-head"><h2>What those tests transfer to a 20-piece Gulf order</h2></div>'
 '<p>This is the part small sellers miss: the qualification that a platform forced on the factory becomes the default behaviour for every order that factory takes — including yours.</p>'
+'<figure style="margin:22px 0;text-align:center"><img src="/images/apparel/apparel-workshop-masked.jpg" alt="Apparel production floor at our Guangzhou partner group" loading="lazy" style="max-width:100%;border-radius:12px;border:1px solid var(--line)"><figcaption style="font-size:13px;color:var(--muted);margin-top:8px">A production line inside our Guangzhou apparel partner group — the discipline platforms force on factories transfers to every order, including 20-piece runs.</figcaption></figure>'
 '<table class="tbl" style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">'
 '<thead><tr style="background:#0b1f3a;color:#fff"><th style="padding:10px 12px;text-align:left">Platform test</th><th style="padding:10px 12px;text-align:left">What you get on a small order</th></tr></thead>'
 '<tbody>'
@@ -1203,6 +1204,7 @@ def ramadan_body():
 '<li><b>Decorative lighting and Ramadan-themed decor</b> — lanterns, string lights and crescent-moon pieces move strongly every season.</li>'
 '</ul>'
 '<p>Private-label packaging converts all of these into a brand moment: a gold-stamped box with your logo turns a commodity into a gift. Plan the artwork in November, not January.</p>'
+'<figure style="margin:22px 0;text-align:center"><img src="/images/bakhoor-burners.jpg" alt="Bakhoor burners and home fragrance items staged for Gulf retail" loading="lazy" style="max-width:100%;border-radius:12px;border:1px solid var(--line)"><figcaption style="font-size:13px;color:var(--muted);margin-top:8px">Home fragrance — bakhoor burners and diffusers — peaks with evening majlis gatherings throughout Ramadan.</figcaption></figure>'
 '</div></section>'
 
 '<section class="sec"><div class="wrap">'
@@ -1375,6 +1377,7 @@ def sleepwear_body():
 '<tr><td style="padding:10px 12px"><b>Modal / viscose blend</b></td><td style="padding:10px 12px">Breathable mid-premium</td><td style="padding:10px 12px">Year-round</td></tr>'
 '<tr><td style="padding:10px 12px"><b>Fleece / flannel</b></td><td style="padding:10px 12px">Winter comfort, gift boxes</td><td style="padding:10px 12px">Nov–Feb</td></tr>'
 '</tbody></table>'
+'<figure style="margin:22px 0;text-align:center"><img src="/images/apparel/fabric-wall-1.jpg" alt="Fabric wall at our Guangzhou apparel partner — fabric families are chosen before styles" loading="lazy" style="max-width:100%;border-radius:12px;border:1px solid var(--line)"><figcaption style="font-size:13px;color:var(--muted);margin-top:8px">Real fabric cards at our Guangzhou apparel partner — sleepwear lines start one level above styles: the fabric family.</figcaption></figure>'
 '<p>A launch collection of 4–6 styles within <b>one</b> fabric family reads as a brand; a mixed basket reads as a flea market. Our <a href="/blog/small-batch-clothing-custom-china-gulf-2026.html">small-batch clothing guide</a> breaks down fabric specs and GSM the same way.</p>'
 '</div></section>'
 
@@ -1397,6 +1400,7 @@ def sleepwear_body():
 '<li><b>Arabic + English care cards.</b> Arabic-first presentation immediately separates you from marketplace imports in a Gulf buyer\'s hands.</li>'
 '<li><b>Gift-ready boxes.</b> Sleepwear is one of the most gifted apparel categories in the region — a boxed set doubles its price justification. See our <a href="/services/custom-branding-packaging.html">custom branding service</a>.</li>'
 '</ul>'
+'<figure style="margin:22px 0;text-align:center"><img src="/images/apparel/label-carelabel.jpg" alt="Woven care label with branding details on a finished garment" loading="lazy" style="max-width:100%;border-radius:12px;border:1px solid var(--line)"><figcaption style="font-size:13px;color:var(--muted);margin-top:8px">A woven care label on a finished garment — the smallest private-label detail that reads as a brand.</figcaption></figure>'
 '</div></section>'
 
 '<section class="sec"><div class="wrap">'
