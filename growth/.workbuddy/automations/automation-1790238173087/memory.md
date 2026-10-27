@@ -26,3 +26,19 @@
 - **素材依据**：content-library/suppliers/guangzhou-huayi-womenswear.md 公开安全版（匿名 "a Guangzhou-based women's wear partner... supplying top-tier global fast-fashion platforms"，未曝厂名/招牌/1688/点名 SHEIN）
 - **合规**：客户匿名、无品牌词、无 superlative、工厂全程匿名、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
 - **回传缺口**：连续多日无回传，基线仍 FB440/IG344/LinkedIn15
+
+## 2026-10-26 (Mon, Gulf working day)
+- **产出**：social-calendar/2026-10-26.md（三平台全发 + 拍摄清单 + 达标线）
+- **判断**：周一=海湾工作日，按规则 FB/IG 必发、LinkedIn 隔天照发；非轻量日
+- **垂直轮换**：运动服 / activewear（依据 products/activewear-pallet-26oct.md 26 OCT 批次纯产品资产，无命名客户）—— 避开最近 3 个日历的 文具/电竞/女装
+- **钩子**：MOQ 破除（"You don't need 500 pcs to start. You need 5." 5-pc trial 档位）—— 避开最近 3 个的 价格反差/反问挑战/产业带地图
+- **合规**：客户匿名、无品牌词、无 superlative、工厂全程匿名（产品资产无厂名/招牌/1688，天然合规）、不点名 SHEIN/运动品牌、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
+- **回传缺口**：自 09-28 起无新回传，基线维持 FB440/IG344/LinkedIn15，LinkedIn 仍卡连接数
+
+## 2026-10-27 (Tue, Gulf working day)
+- **产出**：social-calendar/2026-10-27.md（三平台全发 + 拍摄清单 + 达标线）
+- **判断**：周二=海湾工作日，按规则 FB/IG 必发、LinkedIn 隔天照发；非轻量日
+- **垂直轮换**：定制包装 / branded gift-box system（依据 customers/soga-perfume-box.md 真实匿名案例 a Dubai boutique perfume brand → 礼盒系统）—— 避开最近 3 个的 运动服/女装/电竞
+- **钩子**：信息差钩子（包装交期 / Ramadan 礼赠时间线，"real risk is the clock not the box"）—— 避开已用 MOQ破除/产业带地图/反问挑战/价格反差
+- **素材依据**：content-library/customers/soga-perfume-box.md（anon_ok=true，MOQ 200–500、FOB ¥8–70、landed AED 18–60、7天样品）；全程匿名、无品牌词、无 superlative、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
+- **回传缺口**：连续多日无回传，基线仍 FB440/IG344/LinkedIn15

@@ -155,3 +155,101 @@ SEMRush / Ahrefs 只在某个词被搜了**几周之后**才抓到它。对突�
 **本周踩词建议（挑 1–2 写）**：
 1. **White Friday 2026 小批量备货指南**（档期最临近、10 月中是最后窗口、完美契合「低MOQ+寄样+定制包装+自有品牌」且直击网红/宝妈人设）→ 时间优先级最高。
 2. **SABER 10/1 标签新规**（10/1 刚生效、竞品尚未更新到 CR 号强制、巩固已发权威度、契合定制包装能力）→ 时效次优先；运费风暴选题可作为高差异化backup（竞品几乎不写"如何读 freight quote"）。
+
+---
+
+## 7. 本周条目（2026-10-25 自动化 WebSearch 生成）
+
+> 信号来源：WebSearch 实时抓取（2026-10-25），覆盖 SABER 在效 + ICT 11/1 转标 / TikTok Shop 跨境图片 IP 新政(10/16) / 太仓→吉达直达快航(10/8) / 中东社媒电商履约痛点(COD退货+地址失败率+VAT代扣) / modest fashion 旺季 / White Friday 末班车(已过FBA入仓窗)。
+> 热度判定：多源报道 = 越热；标注 `fresh` 的为近 4–6 周内新变动（9/10 月）。
+
+| 关键词 | 热度信号 | 来源 | 建议平台 | 对应站内深链 | 状态 |
+|---|---|---|---|---|---|
+| `TikTok Shop 跨境图片 IP 新政（10/16：AI改图也算侵权，素材须自有）` | ↑↑ fresh（10/16 更新） | toutiao(10/16) / tt123 / 多跨境媒体 | TikTok + IG + X | `/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` | 待写 |
+| `太仓港→吉达港 直达快航（10/8 首航，25天省2–3周，月2–3班）` | ↑↑ fresh（10/8 首航） | 太仓发布 / seetao / toutiao | LinkedIn + X + FB | `/shipping/china-to-saudi-arabia.html` · `/blog/landed-cost-china-to-gulf-explained.html` | 待写 |
+| `中东社媒电商履约痛点（COD退货率高 + 沙特地址失败率约40% + VAT平台代扣）` | ↑ fresh（10月多篇实操文） | sohu(10/x) / SellerVine / dariba | TikTok + IG + LinkedIn | `/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` | 待写 |
+| `Modest fashion / 现代 abaya 旺季（Ramadan 2027 备货 + 冬季ber月上新）` | ↑ 季节性（10–11月选品窗口） | Gulf News(10/x) / soigneme / menglar | TikTok + IG + Pinterest | `/blog/small-batch-clothing-custom-china-gulf-2026.html` · `/category-fashion.html` | 待写 |
+| `White Friday 末班车（已过11/1 FBA/FBN入仓窗，仅剩空运+低MOQ救场）` | ↑ 季节性（仅剩空运窗口） | eservicesgroup(10/x) / creative4all / watily | X + FB + WhatsApp | `/blog/white-friday-2026-china-gulf-small-business.html` · `/for-small-businesses.html` | 待补 |
+| `Saudi Deemed Supplier VAT（2026起平台代扣15%，无VRN即扣）` | ↑ 持续（已落地） | sohu(10/x) / dariba / blooprint | LinkedIn + X | `/shipping/china-to-saudi-arabia.html` · `/solutions.html` | 待写 |
+| `Gulf 热卖：oud/musk 男士香氛 + 清真美妆（ber月暖调上新）` | 中高（长青+季节） | cosmopolitanme / soigneme | TikTok + IG | `/blog/skincare-private-label-china-to-saudi-uae.html` · `/category-beauty-toys.html` | 待写 |
+
+### 候选 How-to 选题（本次产出，交付内容生成）
+
+1. **How to get original, compliant product photos from your China factory for TikTok Shop (after the 16 Oct 2026 image-IP rule)**
+   - 为什么现在热：TikTok Shop 10/16 更新知识产权政策，明确「用 AI 修改他人图片仍视为侵权」，商品图/视频/直播素材/店铺名全部被扫，无授权品牌图直接下架限流——中小卖家惯用的「搬运+AI换背景」被一刀切堵死。
+   - 一手角度：用站点「定制包装+寄样实拍+自有品牌设计」能力，给网红/小卖家一份「发货前素材自查清单」：让工厂拍白底图/场景图并授权、用自有品牌视觉而非搬运、把定制包装当差异化资产；顺带把 why-china-dropshipping 的「无图可发」痛点接上。
+   - 内链：`/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` · `/services/custom-branding-packaging.html` · `/blog/sourcing-for-livestream-sellers-gulf.html` · `/solutions.html`
+
+2. **How to use the new direct Taicang–Jeddah shipping lane for low-MOQ samples and small batches (no container needed)**
+   - 为什么现在热：太仓港 10/8 开通直达吉达快航，25 天到港、比中转省 2–3 周，月 2–3 班且船东在吉达有本土仓+陆配；对「先寄样后大货、低MOQ 试单」型小卖家是确定性更高的新通道。
+   - 一手角度：用站点「寄样品+低MOQ+落地成本测算」能力，教小卖家如何把这条直航当「样品/试单快线」用——先 1 箱样品走直航核对品质与清关，再放量；对比传统中转与拼箱的时效/成本；提醒仍须 SABER + 红海风险附加费。
+   - 内链：`/shipping/china-to-saudi-arabia.html` · `/blog/landed-cost-china-to-gulf-explained.html` · `/for-small-businesses.html` · `/blog/how-to-import-from-china-to-saudi-arabia.html` · `/solutions.html`
+
+3. **How to private-label modern abaya / modest fashion from China at low MOQ for Gulf buyers (SHEIN-grade factories, Ramadan 2027 prep)**
+   - 为什么现在热：Gulf News(10月)报道 Emirati 女性正把 mkhawer/abaya 现代化（粉彩、轻薄面料、低调光泽），冬季 ber 月+Ramadan 2027(约2月)是选品与打样窗口；小卖家要的是「快时尚量级工厂+小批量+合规阿拉伯语标签」。
+   - 一手角度：用站点「广州华艺级快时尚供应链+小批量定制+阿拉伯语包装+寄样核对」能力，给宝妈/小卖家一条「选版→打样→小批量(48件级)→定制包装→空/海发运」链路，强调避开宗教符号红线、做现代 modest 而非传统重工。
+   - 内链：`/blog/small-batch-clothing-custom-china-gulf-2026.html` · `/category-fashion.html` · `/blog/what-fast-fashion-grade-factory-means-small-gulf-orders.html` · `/for-small-businesses.html` · `/services/custom-branding-packaging.html`
+
+4. **How to still land White Friday 2026 stock via air freight + low-MOQ when you missed the FBA/FBN cut-off**
+   - 为什么现在热：白五2026 亚马逊 11/20–12/4（峰值11/27），但 FBA/FBN 入仓窗约 11/1 已过的现在(10/25)只能走空运+低MOQ救场；4–8× 周销量窗口仍值得小卖家用「小批量空运试单」抢末班车。
+   - 一手角度：用站点「低MOQ+寄样+定制包装+空运时效」能力，教网红/小卖家用 2–3 个 SKU 小批量空运（而非整柜）在 2 周内到仓、挑白五友好品类（清真美妆/modest fashion/家居小家电/母婴/宠物）、用定制包装提客单，避免压死库存。
+   - 内链：`/blog/white-friday-2026-china-gulf-small-business.html` · `/for-small-businesses.html` · `/for-influencers.html` · `/category-home-fragrance.html` · `/category-fashion.html` · `/solutions.html`
+
+5. **How to handle COD returns, Saudi address failures and platform-withheld VAT as a TikTok/IG seller shipping to KSA**
+   - 为什么现在热：中东社媒订单爆发但履约坑多——COD 退货率显著高于预付、沙特地址系统缺失致末端失败率约 40%、2026 起平台对未提供 VRN 的沙特卖家直接代扣 15% VAT；小卖家净回款率被悄悄吃掉。
+   - 一手角度：用站点「沙特本地仓/3PL 履约+寄样核对+落地成本测算+合规咨询」能力，给内容卖家一份「净回款自查清单」：预收部分定金降 COD 风险、用清晰地址模板+电话核对降失败率、分清「平台代扣 VAT」与「进口 VAT」避免垫错钱、何时需本地 VAT 注册。
+   - 内链：`/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` · `/shipping/china-to-saudi-arabia.html` · `/blog/landed-cost-china-to-gulf-explained.html` · `/solutions.html`
+
+**本周踩词建议（挑 1–2 写）**：
+1. **TikTok 跨境图片 IP 新政 → 从中国工厂拿到「干净可商用」素材**（10/16 最新鲜、竞品几乎只写「政策是什么」、完美契合定制包装+寄样+自有品牌能力、直击网红人设）→ 时效+差异化双高，优先写。
+2. **太仓→吉达直达快航 → 低MOQ 样品/小批量快线**（10/8 首航、竞品未覆盖、契合寄样+低MOQ 能力）→ 时效次优先；modest fashion 与白五空运救场可作高差异化 backup（竞品极少写「小批量空运抢末班车」「现代 abaya 低MOQ 贴牌」）。
+
+---
+
+## 8. 本周条目（2026-10-26 自动化 WebSearch 生成）
+
+> 信号来源：WebSearch 实时抓取（2026-10-26），覆盖 TikTok Shop MENA 实况纠正 / SASO 3114:2026 ICT 强制(11/1) / 中国→海湾运费 10 月回落 / Ramadan 2027×春节备货窗 / UAE 电子发票 / TT123 沙特资质管控 / 现代 modest fashion 2027。
+> 热度判定：多源报道 = 越热；标注 `fresh` 的为近 4–6 周内新变动（9/10 月）。
+> ⚠️ **重大纠偏**：本周多家来源（z.media、blooprint，均为 2026/10）核实 **TikTok Shop 在 KSA/UAE 均无 in-app 结账、Seller Center 无中东注册入口**——与 §5/§6/§7 中"TikTok Shop 沙特站 2026 已开/全托管 ¥1000"的报道相矛盾。建议本雷达与站内相关旧文按"无店铺也能卖海湾流量"重新校准，避免误导小卖家。
+
+| 关键词 | 热度信号 | 来源 | 建议平台 | 对应站内深链 | 状态 |
+|---|---|---|---|---|---|
+| `TikTok Shop MENA 未上线（KSA/UAE 均无 checkout，10/26 核实）` | ↑↑ fresh（纠偏） | z.media / blooprint / tt123（均 10/26） | TikTok + IG + X | `/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` | 待更新(纠偏) |
+| `SASO 3114:2026 ICT 设备 11/1 强制（手机/平板/路由器/CPE/ONT/Wi-Fi7/AML/CBS）` | ↑↑ fresh（11/1 节点） | SASO / toutiao(10/x) / 顺企网 | LinkedIn + X + FB | `/blog/saber-2026-saudi-buyers-playbook.html` · `/category-tech.html` | 待写 |
+| `China→Gulf 运费 10 月回落约 19%（Jeddah 20GP $8,550–10,450；红海恢复+空运相对变贵）` | ↑ fresh（反转 Q3 风暴） | Dantful / sino-shipping / gcc-freight | LinkedIn + X | `/blog/landed-cost-china-to-gulf-explained.html` · `/shipping/china-to-saudi-arabia.html` | 待写 |
+| `Ramadan 2027 备货窗（开斋≈2/8 + 春节 2/6 工厂停工重叠 → 11 月前下单）` | ↑ fresh（季节性关键） | husbar / thedubaiabaya / petelulu / esg | TikTok + IG + Pinterest + X | `/blog/small-batch-clothing-custom-china-gulf-2026.html` · `/category-fashion.html` · `/for-small-businesses.html` | 待写 |
+| `UAE 电子发票 2026/7 试点→2027/1 强制（≥AED50M；10/30 前指定 ASP）` | ↑ fresh | FTA / finanshels / fuwuhangye | LinkedIn + X | `/shipping/china-to-uae.html` · `/solutions.html` | 待写 |
+| `TT123 商品资质管控扩至沙特（电子/儿童/化妆品/服饰）` | ↑ fresh | tt123(10/x) | TikTok + IG | `/blog/skincare-private-label-china-to-saudi-uae.html` · `/category-beauty-toys.html` | 待写 |
+| `现代 modest fashion 2027（极简奢华 abaya/钟袖，市场 $1.57B CAGR 12%）` | 中高（长青+季节） | Accio / Gulf News | TikTok + IG | `/category-fashion.html` · `/blog/small-batch-clothing-custom-china-gulf-2026.html` | 待写 |
+| `White Friday 2026 仅剩≈4 周（11/20–30，11/27 核心），空运末班车` | ↑ 季节性（极紧） | esg / husbar / uglycreatives | X + FB + WhatsApp | `/blog/white-friday-2026-china-gulf-small-business.html` | 待补 |
+
+### 候选 How-to 选题（本次产出，交付内容生成）
+
+1. **How to sell to Gulf TikTok & Instagram audiences WITHOUT TikTok Shop (drive traffic to Amazon.ae / noon / your site + WhatsApp)**
+   - 为什么现在热：2026/10 多家来源核实 TikTok Shop 在 KSA/UAE 均无 in-app 结账（与"沙特站已开"传言相反）；傻等平台开店会错失全年社媒流量红利。
+   - 一手角度：用站点「定制阿拉伯语包装 + 寄样实拍 + 内容合规」能力，教网红/小卖家把 TikTok/IG 爆款流量导到 Amazon.ae/noon/自建站 + WhatsApp 成交，附「无店铺也能卖」落地清单（样品图→落地页→COD/预付→清关 SABER）。
+   - 内链：`/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+2. **How to order your Ramadan 2027 stock from China before the Chinese New Year factory shutdown (low-MOQ + samples + custom packaging)**
+   - 为什么现在热：Ramadan 2027 约 2/8 开始，而中国春节 2/6 工厂停工 2–3 周——两窗口几乎重叠，11 月前不下单就赶不上开斋节（占品牌年收入 30%–45%）。
+   - 一手角度：用站点「寄样 + 小批量 + 定制包装 + 斋月选品」能力，给宝妈/小卖家一条倒排清单：11 月锁样→打样→小批量（家庭睡衣/现代 abaya/清真礼盒）→空/海发运→避开宗教符号红线，趁春节前出货。
+   - 内链：`/blog/small-batch-clothing-custom-china-gulf-2026.html` · `/category-fashion.html` · `/for-small-businesses.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+3. **How to source Wi-Fi 7 / router / CPE compliant with SASO 3114:2026 for Saudi (before the 1 November cutoff)**
+   - 为什么现在热：SASO 3114:2026 自 11/1 强制，手机/平板/路由器/CPE/ONT 须支持 Wi-Fi 7、AML 紧急定位、CBS 小区广播；旧证 2027/3/31 失效，无 CB→IECEE→CST 前置直接卡关。
+   - 一手角度：用站点「找货源 + 认证辅导 + SABER 代办 + 定制阿拉伯语标签」能力，给电子小卖家发货前自查清单（CB 3 年有效+沙特差异 220V/60Hz、IEC 62368-1:2018、CST E-Label、阿英双语标 + MADE IN CHINA）。
+   - 内链：`/blog/saber-2026-saudi-buyers-playbook.html` · `/category-tech.html` · `/blog/how-to-import-from-china-to-saudi-arabia.html` · `/solutions.html`
+
+4. **How to time and lock your China→Gulf freight now that Q4 rates are finally falling (read the quote, pair Jeddah vs Jebel Ali)**
+   - 为什么现在热：10 月中国→沙特海运费较 9 月回落约 19%（Jeddah 20GP $8,550–10,450），红海恢复+苏伊士通行回升使亚欧线掉价；但 Hormuz 附加费(WRS)仍挂账，报价每周变。
+   - 一手角度：用站点「落地成本测算 + 先寄样后大货 + 低MOQ」能力，教小卖家读懂「基础价+逐项附加费」报价、2–3 周锁价、按目的地选红海 Jeddah（免海峡 premium）或稳定 Jebel Ali、善用太仓→吉达直航省 2–3 周。
+   - 内链：`/blog/landed-cost-china-to-gulf-explained.html` · `/shipping/china-to-saudi-arabia.html` · `/blog/china-gcc-fta-lower-import-duty.html` · `/solutions.html`
+
+5. **How to get UAE e-invoicing ready before the 2027 deadline (and what it means for China-import sellers)**
+   - 为什么现在热：UAE 电子发票 2026/7 试点、≥AED50M 企业须 10/30 前指定 ASP、2027/1/1 强制；中小卖家虽晚一档，但结构化发票 + TRN 税号要求直接影响清关单证与平台结算。
+   - 一手角度：用站点「UAE 自贸区中转 + 落地成本测算 + 合规咨询」能力，教小卖家现在做什么：确认营收阈值、选认可服务商、把进口 VAT/关税写进电子发票字段、避免平台代扣与清关重复计。
+   - 内链：`/shipping/china-to-uae.html` · `/blog/landed-cost-china-to-gulf-explained.html` · `/solutions.html`
+
+**本周踩词建议（挑 1–2 写）**：
+1. **TikTok Shop MENA 纠偏 →「无店铺也能卖海湾流量」**（10/26 最新鲜 + 纠正站内旧认知 + 契合定制包装/寄样/内容合规 + 网红人设）→ 优先级最高，且应回头修订站内旧文（§5/§6/§7 相关段落）避免误导。
+2. **Ramadan 2027 × 春节重叠备货**（11 月是最后窗口、占年收入 30–45%、完美契合寄样+小批量+定制包装+斋月选品）→ 时效次优先、体量最大；SASO 3114 与运费回落可作高差异化 backup（竞品极少写「11/1 ICT 合规发货清单」「运费回落期如何锁价」）。

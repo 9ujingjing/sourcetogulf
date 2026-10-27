@@ -353,8 +353,9 @@ def white_friday_body():
 '<section class="sec hero-sec"><div class="wrap">'
 '<span class="kicker">White Friday 2026 · Gulf E-commerce</span>'
 '<h1>How to Stock for White Friday 2026 from China (Gulf Small Business Guide)</h1>'
+'<p style="display:inline-block;background:#FDF3D8;border:1px solid #E7C86B;border-radius:10px;padding:10px 16px;font-size:14.5px;font-weight:600;margin:0 0 14px">⏳ <b>Still in time — checked 27 Oct 2026:</b> the sea-freight window for White Friday stock is closing; <b>air-freight batches remain workable into mid-November</b>. WhatsApp your shortlist this week and we map the fastest route.</p>'
 '<p class="lead">White Friday 2026 falls on <b>27 November</b>. In Saudi Arabia and the UAE it is the biggest online sales window after Ramadan, and a large share of annual electronics, beauty and home-goods sales is concentrated in that final week. You do not need a container or a big warehouse to take part. The small sellers who win are the ones who start early, pick demo-friendly products, brand the packaging, and air-ship a low-MOQ batch so it clears customs and reaches the warehouse by mid-November. The practical path is: confirm your shortlist by early September, approve samples and artwork by late September, ship bulk by mid-October, and land goods by mid-November. Miss the September window and every remaining step becomes a gamble.</p>'
-'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 26 Aug 2026 · 10 min read</p>'
+'<p class="sub">By <b>Robin Gu</b>, Founder · SourceToGulf · Updated 27 Oct 2026 · 10 min read</p>'
 '<div class="cta-row">'
 '<a class="btn-wa" href="' + wa + '" target="_blank" rel="noopener">💬 Plan my White Friday stock</a>'
 '<a class="btn-ghost" href="/for-small-businesses.html">For small businesses →</a>'
@@ -1370,7 +1371,7 @@ BLOG = {
         'file': 'blog/white-friday-2026-china-gulf-small-business.html',
         'title': 'How to Stock for White Friday 2026 from China (Gulf Small Business Guide) | SourceToGulf',
         'desc': 'A practical guide for Gulf small sellers sourcing White Friday 2026 stock from China: timeline, best products, samples, private-label packaging, all-in cost example, and compliance — from a China sourcing team.',
-        'date': '2026-08-26',
+        'date': '2026-10-27',
         'canonical': BASE + '/blog/white-friday-2026-china-gulf-small-business.html',
         'body': white_friday_body(),
         'faq': WHITE_FRIDAY_FAQ,
