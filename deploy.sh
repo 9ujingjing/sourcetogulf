@@ -24,7 +24,7 @@ URL="https://sourcetogulf.com"
 #                                 同步到手工页(index/about/shipping/services 等)
 #   任一步失败就中止部署,绝不带半成品上线。
 # ---------------------------------------------------------------------------
-BUILDERS="build_fx.py build_products.py build_belts.py build_cat_products.py build_guides.py \
+BUILDERS="build_fx.py build_products.py build_belts.py build_ar_pages.py build_cat_products.py build_guides.py \
 build_personas.py build_solutions.py build_compare.py build_blog.py \
 build_answers.py build_partners.py build_ads.py build_rss.py build_arabic.py \
 build_nda.py build_flags.py"

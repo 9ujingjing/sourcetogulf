@@ -689,9 +689,9 @@ def ar_hub_html():
              'وخمسة أخطاء تُكلّف موسماً كاملاً.</p><div class="belt-cards">')
     for i, (city, cat, slug) in enumerate(AR_BELTS):
         b = next(x for x in BELTS if x['slug'] == slug)
-        p.append('<div class="belt-card"><a class="img" href="/belts/%s.html">'
+        p.append('<div class="belt-card"><a class="img" href="/ar/belts/%s.html">'
                  '<img src="/%s" alt="%s" loading="lazy"></a><div class="bd">'
-                 '<div class="city">%02d · %s</div><h3><a href="/belts/%s.html">%s</a></h3>'
+                 '<div class="city">%02d · %s</div><h3><a href="/ar/belts/%s.html">%s</a></h3>'
                  '<p class="meta">%s</p></div></div>'
                  % (slug, b['photos'][0][0], e(b['photos'][0][1]), i + 1, e(city), slug, e(cat),
                     e(b['facts'][0][1])))
@@ -778,11 +778,13 @@ def main():
         alt_ar=AR_HUB_URL)
     write(os.path.join(APP, 'sourcing-belts.html'), html)
 
-    # 8 个分页
+    # 8 个分页（hreflang 双向指向各自的阿语 SSR 分页，语言按钮也跳对应阿语页）
     for b in BELTS:
         url = BASE + '/belts/' + b['slug'] + '.html'
+        ar_url = BASE + '/ar/belts/' + b['slug'] + '.html'
         html = page_shell(b['title'], b['desc'], url, belt_body(b), json_ld=belt_ld(b),
-                          extra_head=PAGE_CSS + LANG_SCRIPT.replace('__AR__', AR_HUB_URL))
+                          extra_head=PAGE_CSS + LANG_SCRIPT.replace('__AR__', ar_url),
+                          alt_ar=ar_url)
         write(os.path.join(BELT_DIR, b['slug'] + '.html'), html)
 
     # 阿语 hub（SSR）
