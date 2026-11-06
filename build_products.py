@@ -350,6 +350,17 @@ def main():
 <p class="sub">Custom apparel, fashion jewelry and custom packaging — designed, sampled and made in China, shipped to the Gulf with landed prices you can plan around.</p>
 </div></section>
 
+<section style="padding-top:22px"><div class="wrap">
+  <a href="/sourcing-belts.html" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#0B2B4D;color:#FBF9F5;border-radius:16px;padding:20px 24px;text-decoration:none">
+    <span style="flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#C9A24B;border:1px solid rgba(201,162,75,.55);border-radius:99px;padding:5px 11px">New · Reference guide</span>
+    <span style="flex:1 1 340px">
+      <b style="display:block;font-size:17px;line-height:1.35;margin-bottom:4px">Where things are actually made in China — mapped for Gulf buyers</b>
+      <span style="display:block;font-size:13px;line-height:1.6;opacity:.85">Eight industrial clusters, six Gulf buyer types, and the labelling and certification questions behind each one. No product list, no price list.</span>
+    </span>
+    <span style="flex:0 0 auto;font-size:13px;font-weight:700;color:#C9A24B">Explore the sourcing belts →</span>
+  </a>
+</div></section>
+
 '''
         + build_lines() + '\n'
         + build_capacity() + '\n'

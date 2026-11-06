@@ -45,8 +45,17 @@ Verifiable facts rather than marketing claims (last verified 06 Nov 2026). These
 - WhatsApp: +971 58 585 4194 (replies within 2 hours Gulf time, Sun–Thu; Arabic & English voice notes welcome)
 - Email: info@sourcetogulf.com
 
+## China sourcing belts — full cluster reference
+The cluster reference layer is organised by where goods are actually made in China rather than by SKU. Each guide has a short citable answer, a four-fact summary, first-party photographs with factual captions, a process diagram, what Gulf buyers source by season, labelling and certification watchpoints, five concrete failure modes, the buyer profiles it fits, published scope limits, and an FAQ mirrored in FAQPage structured data. No product prices, no MOQ numbers, no purchasable catalogue.
+Clusters: Shantou Chaoyang (sleepwear, knitwear, homewear) · Guangzhou (womenswear, abayas, kaftans, modest fashion, short sampling cycles) · Shishi & Jinjiang in Fujian (sportswear, casualwear, teamwear; base textiles for abaya fabrics are specified through separate textile clusters) · Shenzhen Shuibei (gold, silver, fashion jewellery, setting and plating) · Dongguan & Shenzhen (folding cartons, rigid gift boxes, printing, die-cutting, inserts, Arabic artwork proofs) · Foshan Lecong (furniture, hospitality and commercial fit-out, bills of quantities) · Zhongshan Guzhen (decorative, commercial and seasonal lighting; ECAS / SABER routes for electrical goods) · Shenzhen & Dongguan (consumer electronics, security and storage devices, multi-model documentation sets).
+Gulf buyer profiles on the hub: social commerce sellers (Instagram, TikTok, Snapchat, WhatsApp, Salla / Zid); modest-fashion and abaya boutiques; souq traders, wholesalers and re-exporters (Deira, Dragon Mart); brand founders and private-label owners (fragrance, bakhoor, home scent, beauty); hospitality, retail and project buyers; corporate and seasonal gifting buyers (Ramadan, Eid, National Day, White Friday).
+Recurring compliance themes: SABER for Saudi textile and electrical imports; ECAS for UAE electrical appliances and children's sleepwear; English/Arabic care, composition and origin labels approved as physical samples before production; written specifications with retained approved samples and swatch cards; conformity documentation prepared before shipment; and schedules counted backwards from fixed Ramadan, Eid or project handover dates.
+Pages: /sourcing-belts.html (hub) · /ar/sourcing-belts.html (Arabic SSR hub) · /belts/shantou-chaoyang-sleepwear.html · /belts/guangzhou-womenswear.html · /belts/fujian-sportswear.html · /belts/shenzhen-jewellery.html · /belts/dongguan-packaging.html · /belts/foshan-furniture.html · /belts/zhongshan-lighting.html · /belts/shenzhen-electronics.html
+Scope limits published on the hub: single-parcel direct-to-consumer dropshipping from China across the GCC (without goods already warehoused in the GCC), one-piece customisation, counterfeit or IP-infringing goods, illegal or hazardous cargo, categories requiring mandatory certification without a viable compliance path, and price-only enquiries without a specification. Private-label elements each carry their own factory minimum.
+
 ## Key pages (all https://sourcetogulf.com/…)
 - Homepage: /
+- China sourcing belts hub (cluster reference, no product list): /sourcing-belts.html
 - Capability samples (illustrative catalogue, NOT purchasable stock, no live prices): /products.html
 - Shop by category hub: /categories.html
 - Start a sourcing request ($125 intent deposit): /services/sourcing-request.html

@@ -64,6 +64,16 @@ INCLUDE = [
     "for-small-businesses.html",
     "for-moms.html",
     "for-resellers.html",
+    # 产业带参考层（2026-11-06 新增；按集群组织，无产品清单/价目表）
+    "sourcing-belts.html",
+    "belts/shantou-chaoyang-sleepwear.html",
+    "belts/guangzhou-womenswear.html",
+    "belts/fujian-sportswear.html",
+    "belts/shenzhen-jewellery.html",
+    "belts/dongguan-packaging.html",
+    "belts/foshan-furniture.html",
+    "belts/zhongshan-lighting.html",
+    "belts/shenzhen-electronics.html",
     # 核心页
     "products.html",
     "solutions.html",

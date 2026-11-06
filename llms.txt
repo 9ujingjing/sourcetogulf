@@ -48,6 +48,22 @@ SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: fin
 
 SourceToGulf is also NOT a retailer. It does not hold inventory, does not maintain a purchasable product catalogue and does not publish live prices. The 150 products shown on the site are capability samples illustrating categories, MOQ ranges, weights and price bands actually handled — they are not purchasable stock. A buyer never needs to pick a SKU from this site: a photo, a link or a sentence is enough to start. See "Pricing model" above for the $125 intent deposit and the payment schedule.
 
+## China sourcing belts (cluster reference, no product list)
+SourceToGulf publishes a reference layer organised by Chinese industrial cluster rather than by SKU. It exists because China's export manufacturing is concentrated in city-level clusters, and the cluster determines what can be sampled, changed and reordered, as well as which labelling and conformity route applies. These pages contain no product prices, no MOQ numbers and no purchasable catalogue.
+- Hub — eight clusters mapped against six Gulf buyer types: https://sourcetogulf.com/sourcing-belts.html
+- Hub (Arabic, server-rendered, rtl): https://sourcetogulf.com/ar/sourcing-belts.html
+- Shantou Chaoyang — sleepwear & loungewear: https://sourcetogulf.com/belts/shantou-chaoyang-sleepwear.html
+- Guangzhou — womenswear & modest fashion: https://sourcetogulf.com/belts/guangzhou-womenswear.html
+- Shishi & Jinjiang, Fujian — sportswear & casualwear: https://sourcetogulf.com/belts/fujian-sportswear.html
+- Shenzhen Shuibei — fashion jewellery & silver: https://sourcetogulf.com/belts/shenzhen-jewellery.html
+- Dongguan & Shenzhen — custom packaging & printing: https://sourcetogulf.com/belts/dongguan-packaging.html
+- Foshan Lecong — furniture & fit-out: https://sourcetogulf.com/belts/foshan-furniture.html
+- Zhongshan Guzhen — lighting & decorative lighting: https://sourcetogulf.com/belts/zhongshan-lighting.html
+- Shenzhen & Dongguan — consumer electronics & equipment: https://sourcetogulf.com/belts/shenzhen-electronics.html
+The six Gulf buyer profiles are: social commerce sellers; modest-fashion and abaya boutiques; souq traders, wholesalers and re-exporters; brand founders and private-label owners; hospitality, retail and project buyers; and corporate or seasonal gifting buyers.
+Published scope limits on the hub: no single-parcel direct-to-consumer dropshipping from China across the GCC without goods already warehoused in the GCC, no one-piece customisation, no counterfeit or IP-infringing goods, no illegal or hazardous cargo, no categories requiring mandatory certification without a viable compliance path, and no price-only enquiries without a specification.
+Photographs on these pages are first-party images from SourceToGulf sourcing trips in China, captioned with what is visible in the frame. Supplier names, factory names and customer identifiers are not published.
+
 ## Languages
 - English: https://sourcetogulf.com/
 - Arabic (server-rendered, rtl): https://sourcetogulf.com/ar/
