@@ -35,6 +35,15 @@
 - **合规**：客户匿名、无品牌词、无 superlative、工厂全程匿名（产品资产无厂名/招牌/1688，天然合规）、不点名 SHEIN/运动品牌、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
 - **回传缺口**：自 09-28 起无新回传，基线维持 FB440/IG344/LinkedIn15，LinkedIn 仍卡连接数
 
+## 2026-11-06 (Fri, Gulf weekend = light day)
+- **产出**：social-calendar/2026-11-06.md（轻量日：FB 群组互动为唯一必做，LinkedIn 加人+评论照常，IG 可选轻量 Reels）
+- **判断**：周五=海湾周末，按规则「不推重发布」
+- **垂直轮换**：珠宝 / jewelry（全库首用，避开 10-27 包装/10-26 运动服/10-10 女装/10-09 电竞/09-28 文具/09-24 香氛）
+- **钩子**：价格反差（"That finished pendant started as three separate workshops"）—— 仅 09-28 用过，非连续重复
+- **素材依据**：真实「sample-first」教训 quotes/joelle-sample.md 为锚点；珠宝具体情节无库料，标 [示例] 创作，无真实客户/厂名/链接
+- **合规**：客户匿名、无品牌词、无 superlative、工厂全程匿名、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
+- **回传缺口**：自 09-28 起无新回传，基线仍 FB440/IG344/LinkedIn15
+
 ## 2026-10-27 (Tue, Gulf working day)
 - **产出**：social-calendar/2026-10-27.md（三平台全发 + 拍摄清单 + 达标线）
 - **判断**：周二=海湾工作日，按规则 FB/IG 必发、LinkedIn 隔天照发；非轻量日
