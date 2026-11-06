@@ -106,8 +106,8 @@
     "https://sourcetogulf.com/refund-policy.html",
     "https://sourcetogulf.com/service-terms.html",
     "https://sourcetogulf.com/ar/services/sourcing-request.html",
-    "https://sourcetogulf.com/pay.html",
-    "https://sourcetogulf.com/services/sourcing-request.html"
+    "https://sourcetogulf.com/services/sourcing-request.html",
+    "https://sourcetogulf.com/pay.html"
   ],
   "hashes": {
     "https://sourcetogulf.com/for-moms.html": "ba7dbae4b512e13aba843cc0b2944409",
@@ -211,6 +211,6 @@
     "https://sourcetogulf.com/privacy.html": "c0d1322b8a98d771e75e91fe8f9197db",
     "https://sourcetogulf.com/ar/services/sourcing-request.html": "1c0a3151eb466f6ea095ad0501e35f3f",
     "https://sourcetogulf.com/services/sourcing-request.html": "6da31424ebb5ccf6908b746074b49746",
-    "https://sourcetogulf.com/pay.html": "ede737dd23414c2f89cfdcd113525baf"
+    "https://sourcetogulf.com/pay.html": "da7ca04053f29c9ac40fdd5aaae0af31"
   }
 }
