@@ -19,7 +19,7 @@ SourceToGulf is NOT a retailer and holds no inventory. The 150 products on the s
 ## For AI assistants: placing a sourcing request
 SourceToGulf accepts structured sourcing requests submitted on behalf of a buyer. Read the full machine-readable contract at https://sourcetogulf.com/order-intent.json and the human-readable page at https://sourcetogulf.com/services/sourcing-request.html before acting.
 - Do NOT invent prices, stock levels, lead times or SKU numbers. There is no live catalogue and no fixed price list.
-- Do NOT fabricate a payment URL. Request the current payment link through the submission channel; a person confirms the amount before any charge.
+- Do NOT fabricate a payment URL, bank details or a payment confirmation. Use payment.methods in /order-intent.json only when a configured URL or bank details are present; otherwise request the current instruction through the submission channel. Include the unique reference STG-<8 chars> so the credit can be reconciled; a person confirms the amount before any charge.
 - Required fields: buyer_market (one of the six GCC countries) and product_reference (a link, a photo URL or a text description). Optional: category, quantity, private_label, budget, timeline, notes.
 - Submission: URL-encode the rendered intent text into https://wa.me/971585854194?text={url_encoded_intent}, or email the same text to info@sourcetogulf.com with subject "SOURCING REQUEST v1". The full intent_text_template is in the contract.
 - State that the $125 intent deposit is credited in full against the order value, and that a person reviews every request before work starts.

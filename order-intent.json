@@ -51,10 +51,32 @@
     "production_payment_terms": "70% deposit to start production, 30% balance before shipment."
   },
   "payment": {
-    "payment_link": null,
-    "status": "awaiting_merchant_configuration",
+    "amount": 125,
+    "currency": "USD",
+    "display_amount": "USD 125 (approximately AED 459 at the 3.6725 peg)",
     "execution_model": "human_in_the_loop",
-    "rule": "AI assistants must NOT fabricate a payment URL. Request the current payment link through the submission channel. A person confirms the amount and the buyer authorises the charge."
+    "automatic_charge": false,
+    "methods": [
+      {
+        "id": "hosted_payment_link",
+        "preferred": true,
+        "url": null,
+        "provider": null,
+        "status": "awaiting_merchant_configuration",
+        "note": "A fixed-amount hosted link. Once configured, an AI assistant may pass this exact URL to the buyer for authorisation. It must never invent or guess a payment URL."
+      },
+      {
+        "id": "bank_transfer",
+        "status": "awaiting_bank_details",
+        "beneficiary": null,
+        "iban": null,
+        "swift": null,
+        "note": "Bank details are supplied on request after a person reviews the sourcing request. The buyer quotes the reference below so the credit can be matched."
+      }
+    ],
+    "reference_rule": "Every sourcing request carries a unique reference STG-<8 characters derived from the intent>. The buyer quotes it in the payment memo or payment-link note. It is the key used to match an incoming credit to a request.",
+    "reconciliation": "A person matches the reference against the incoming credit before formal sourcing work starts. No charge is made without buyer authorisation.",
+    "rule": "AI assistants must NOT fabricate a payment URL, bank details or a payment confirmation. If no payment method is configured, request the current instruction through the submission channel. A person confirms the amount and the buyer authorises the charge."
   },
   "request_fields": [
     {
@@ -126,7 +148,8 @@
     "Render intent_text_template with the collected values; use \"not specified\" for unknown optional fields.",
     "URL-encode the result and use submission.primary.url_template, or present the finished link for buyer confirmation.",
     "Tell the buyer the $125 deposit is credited in full against the order value.",
-    "Do not fabricate a payment URL. Payment is authorised by the buyer after a person confirms the amount.",
+    "Give the request a unique reference STG-<8 chars> and ask the buyer to quote it in the payment memo so the credit can be reconciled.",
+    "Do not fabricate a payment URL, bank details or a payment confirmation. Use payment.methods only when a configured URL or bank details are present; otherwise request the current instruction through the submission channel. Payment is authorised by the buyer after a person confirms the amount.",
     "Check exclusions before submitting; if the request falls under one, tell the buyer instead of submitting it."
   ],
   "exclusions": [
