@@ -70,11 +70,12 @@ def file_md5(path):
 
 def local_pages():
     """扫描本地 HTML，映射成线上 URL → 内容 md5。
-    quote/<客户>/ 是 noindex 的客户专属报价页，不参与推送。"""
+    quote/<客户>/ 是 noindex 的客户专属报价页；pay.html 是 noindex 的收银入口
+    桥接页（每笔私发、URL 带参数）。两者都不参与推送。"""
     out = {}
     for p in glob.glob(os.path.join(APP, '**', '*.html'), recursive=True):
         rel = os.path.relpath(p, APP).replace(os.sep, '/')
-        if rel.startswith('quote/'):
+        if rel.startswith('quote/') or rel == 'pay.html' or rel == 'nda.html':
             continue
         if rel == 'index.html':
             url = 'https://%s/' % HOST
