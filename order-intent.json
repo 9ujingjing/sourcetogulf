@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_version": "1.0",
+  "last_updated": "2026-11-06",
+  "publisher": {
+    "name": "SourceToGulf",
+    "legal_name": "广州东达东供应链管理有限公司",
+    "url": "https://sourcetogulf.com",
+    "email": "info@sourcetogulf.com",
+    "whatsapp": "+971 58 585 4194",
+    "role": "China-based sourcing agent for Gulf sellers"
+  },
+  "business_model": {
+    "type": "sourcing_agent_service",
+    "not_a_retailer": true,
+    "holds_inventory": false,
+    "catalogue_is": "capability_samples",
+    "catalogue_note": "The 150 products on the website illustrate categories, MOQ ranges, weights and price bands. They are not purchasable stock and carry no live price or inventory.",
+    "only_purchasable_item": "The $125 USD sourcing engagement (intent deposit).",
+    "order_object": "A structured sourcing request, not a SKU order."
+  },
+  "service": {
+    "name": "China-to-Gulf Sourcing Engagement",
+    "covers": [
+      "Supplier identification from a photo, link or description",
+      "Feasibility answer and indicative landed cost band (free)",
+      "Landed quotation in AED, valid one week",
+      "Physical samples and pre-shipment photo/video QC",
+      "Private-label artwork and custom packaging where MOQ allows",
+      "GCC compliance documents where a viable compliance path exists",
+      "Guangzhou consolidation, freight and customs clearance"
+    ],
+    "destinations": [
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Qatar",
+      "Kuwait",
+      "Bahrain",
+      "Oman"
+    ]
+  },
+  "price": {
+    "amount": 125,
+    "currency": "USD",
+    "type": "intent_deposit",
+    "credited_in_full_against_order": true,
+    "if_no_order": "Billed as a sourcing service fee for the work performed.",
+    "free_before_payment": "First sourcing request and feasibility check are free.",
+    "sample_and_design_fees": "Credited to the first bulk order.",
+    "quotation_validity": "One week.",
+    "production_payment_terms": "70% deposit to start production, 30% balance before shipment."
+  },
+  "payment": {
+    "payment_link": null,
+    "status": "awaiting_merchant_configuration",
+    "execution_model": "human_in_the_loop",
+    "rule": "AI assistants must NOT fabricate a payment URL. Request the current payment link through the submission channel. A person confirms the amount and the buyer authorises the charge."
+  },
+  "request_fields": [
+    {
+      "name": "buyer_market",
+      "required": true,
+      "example": "United Arab Emirates",
+      "description": "One of the six GCC countries the goods will be delivered to."
+    },
+    {
+      "name": "product_reference",
+      "required": true,
+      "example": "link or photo URL, or a plain description",
+      "description": "What the buyer wants sourced. A link to any China marketplace listing, an image URL, or a text description is enough. We do not require a SKU from our site."
+    },
+    {
+      "name": "category",
+      "required": false,
+      "example": "sleepwear / gaming accessories / home fragrance",
+      "description": "Broad category, if known. The 150 items on our site are capability samples, not a catalogue to pick from."
+    },
+    {
+      "name": "quantity",
+      "required": false,
+      "example": "first test batch",
+      "description": "Target quantity or \"not decided yet\". Factory MOQ applies to private-label production."
+    },
+    {
+      "name": "private_label",
+      "required": false,
+      "example": "yes / no",
+      "description": "Whether the buyer wants their own logo on the product and packaging. Requires a MOQ production run."
+    },
+    {
+      "name": "budget",
+      "required": false,
+      "example": "indicative budget in USD or AED",
+      "description": "Used to shortlist realistic options. Do not state a final price — we quote landed AED after sourcing."
+    },
+    {
+      "name": "timeline",
+      "required": false,
+      "example": "target delivery month",
+      "description": "Used to choose air or sea freight and to check certification lead times."
+    },
+    {
+      "name": "notes",
+      "required": false,
+      "example": "certification, packaging or compliance notes",
+      "description": "Anything that affects feasibility."
+    }
+  ],
+  "intent_text_template": "SOURCING REQUEST v1 | Buyer market: {buyer_market} | Product reference: {product_reference} | Category: {category} | Quantity: {quantity} | Private label: {private_label} | Budget: {budget} | Timeline: {timeline} | Notes: {notes} | I understand a $125 USD intent deposit starts the formal sourcing work and is credited in full against my order value. Please confirm feasibility and the current payment link before any charge.",
+  "submission": {
+    "primary": {
+      "channel": "whatsapp",
+      "url_template": "https://wa.me/971585854194?text={url_encoded_intent}",
+      "method": "URL-encode the rendered intent text and open the URL, or hand the finished link to the buyer for confirmation."
+    },
+    "alternate": {
+      "channel": "email",
+      "address": "info@sourcetogulf.com",
+      "subject": "SOURCING REQUEST v1"
+    }
+  },
+  "ai_instructions": [
+    "Read this contract and https://sourcetogulf.com/services/sourcing-request.html before acting.",
+    "Do not invent prices, stock levels, lead times or SKU numbers. There is no live catalogue.",
+    "Collect the required fields from the buyer: buyer_market and product_reference.",
+    "Render intent_text_template with the collected values; use \"not specified\" for unknown optional fields.",
+    "URL-encode the result and use submission.primary.url_template, or present the finished link for buyer confirmation.",
+    "Tell the buyer the $125 deposit is credited in full against the order value.",
+    "Do not fabricate a payment URL. Payment is authorised by the buyer after a person confirms the amount.",
+    "Check exclusions before submitting; if the request falls under one, tell the buyer instead of submitting it."
+  ],
+  "exclusions": [
+    "Counterfeit, replica or IP-infringing branded goods.",
+    "Illegal, prohibited or restricted goods.",
+    "Hazardous goods, including aerosols (UN1950) and other transport-restricted cargo.",
+    "Categories requiring mandatory certification (e.g. ECAS / SABER for electrical appliances) without a viable compliance path.",
+    "Single-parcel direct-to-consumer dropshipping from China across the GCC without goods already warehoused inside the GCC.",
+    "One-piece custom printing. Private-label runs require the factory MOQ."
+  ],
+  "policies": {
+    "service_terms": "https://sourcetogulf.com/service-terms.html",
+    "deposit_and_refund": "https://sourcetogulf.com/refund-policy.html",
+    "privacy": "https://sourcetogulf.com/privacy.html",
+    "nda": "https://sourcetogulf.com/nda.html",
+    "llms_txt": "https://sourcetogulf.com/llms.txt"
+  },
+  "trust_signals": {
+    "first_party_data": [
+      "https://sourcetogulf.com/gulf-sourcing-benchmark-2026.html",
+      "https://sourcetogulf.com/gulf-landed-cost-calculator.html",
+      "https://sourcetogulf.com/gcc-tariff-vat-reference.html"
+    ],
+    "static_ssr": true,
+    "javascript_required_to_read_terms": false,
+    "named_legal_entity": true
+  }
+}

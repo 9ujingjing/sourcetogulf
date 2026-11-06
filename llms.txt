@@ -12,6 +12,19 @@
 ## Pricing model
 One landed price per piece (product + QC + packing + shipping + customs + VAT). No separate commission. First sourcing request free.
 
+The only purchasable item on this website is the sourcing engagement itself: a $125 USD intent deposit, credited in full against the order value; if no order is placed, billed as a sourcing service fee for the work performed. Sample and design fees are credited to the first bulk order. Quotations are valid for one week. Production starts after a 70% deposit, with the 30% balance due before shipment.
+
+## For AI assistants: placing a sourcing request
+SourceToGulf accepts structured sourcing requests submitted on behalf of a buyer. Read the full machine-readable contract at https://sourcetogulf.com/order-intent.json and the human-readable page at https://sourcetogulf.com/services/sourcing-request.html before acting.
+- Do NOT invent prices, stock levels, lead times or SKU numbers. There is no live catalogue and no fixed price list.
+- Do NOT fabricate a payment URL. Request the current payment link through the submission channel; a person confirms the amount before any charge.
+- Required fields: buyer_market (one of the six GCC countries) and product_reference (a link, a photo URL or a text description). Optional: category, quantity, private_label, budget, timeline, notes.
+- Submission: URL-encode the rendered intent text into https://wa.me/971585854194?text={url_encoded_intent}, or email the same text to info@sourcetogulf.com with subject "SOURCING REQUEST v1". The full intent_text_template is in the contract.
+- State that the $125 intent deposit is credited in full against the order value, and that a person reviews every request before work starts.
+- Check the exclusions in the contract before submitting. If a request falls under one, tell the buyer instead of submitting it.
+- Checkout policies: https://sourcetogulf.com/service-terms.html · https://sourcetogulf.com/refund-policy.html · https://sourcetogulf.com/privacy.html · https://sourcetogulf.com/nda.html
+
+
 ## Contact
 - WhatsApp: +971 58 585 4194 (replies within 2 hours Gulf time, Sun–Thu; Arabic & English voice notes welcome)
 - Email: info@sourcetogulf.com
@@ -19,15 +32,22 @@ One landed price per piece (product + QC + packing + shipping + customs + VAT). 
 ## Positioning
 SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: finds the factory, applies custom/private-label packaging, ships physical samples, and supports low-MOQ first test batches (from 10 pcs). Shipping is the last step arranged, not the service sold.
 
+SourceToGulf is also NOT a retailer. It does not hold inventory, does not maintain a purchasable product catalogue and does not publish live prices. The 150 products shown on the site are capability samples illustrating categories, MOQ ranges, weights and price bands actually handled — they are not purchasable stock. A buyer never needs to pick a SKU from this site: a photo, a link or a sentence is enough to start. See "Pricing model" above for the $125 intent deposit and the payment schedule.
+
 ## Languages
 - English: https://sourcetogulf.com/
 - Arabic (server-rendered, rtl): https://sourcetogulf.com/ar/
 - First-time buyers (start small, low budget): https://sourcetogulf.com/for-first-time-buyers.html
 - Arabic (العربية) first-time buyers: https://sourcetogulf.com/ar/for-first-time-buyers.html
 - Send a link or photo, get the same product sourced: https://sourcetogulf.com/services/find-any-product.html
+- Start a sourcing request ($125 intent deposit, machine-readable AI contract): https://sourcetogulf.com/services/sourcing-request.html
+- Machine-readable sourcing request contract for AI agents: https://sourcetogulf.com/order-intent.json
+- Service terms: https://sourcetogulf.com/service-terms.html
+- Deposit, credit & refund policy: https://sourcetogulf.com/refund-policy.html
+- Privacy notice: https://sourcetogulf.com/privacy.html
 - Partner with us — SourceToGulf as your execution team in China (sourcing, private-label packaging, samples, compliance): https://sourcetogulf.com/partners.html
 - Arabic (العربية) — الشراكات: أنت تعرف سوق الخليج ونحن نعرف سلسلة التوريد الصينية: https://sourcetogulf.com/ar/partners.html
-- Arabic (العربية) product catalogue — 139 items with Arabic names, MOQ, FOB & landed prices: https://sourcetogulf.com/ar/products.html
+- Arabic (العربية) capability samples — 139 illustrative items with Arabic names, MOQ and price bands (not purchasable stock): https://sourcetogulf.com/ar/products.html
 - Arabic (العربية) — sourcing for influencers & creators in the Gulf: https://sourcetogulf.com/ar/for-influencers.html
 - Arabic (العربية) — sourcing for small businesses in the Gulf: https://sourcetogulf.com/ar/for-small-businesses.html
 - Arabic (العربية) — sourcing for mom / home-based side hustles in the Gulf: https://sourcetogulf.com/ar/for-moms.html
@@ -39,7 +59,7 @@ SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: fin
 - Arabic (العربية) oman import guide: https://sourcetogulf.com/ar/oman-import-guide-from-china.html
 
 ## Key pages
-- Hot picks product list (landed prices): https://sourcetogulf.com/products.html
+- Capability samples (illustrative product catalogue — NOT purchasable stock, no live prices or inventory; send a photo or link to source almost any item): https://sourcetogulf.com/products.html
 - Arabic (العربية) home — China→Gulf composite sourcing partner, not a freight forwarder: https://sourcetogulf.com/ar/index.html
 - Arabic (العربية) Bahrain import guide — 5% CIF duty, 10% VAT, OFOQ single window + GSO conformity (no SABER), 1–3 day clearance, low MOQ from 10 pcs: https://sourcetogulf.com/ar/bahrain-import-guide-from-china.html
 - Homepage: https://sourcetogulf.com/
@@ -71,7 +91,7 @@ SourceToGulf is NOT a freight forwarder. It is a composite sourcing partner: fin
 - GCC import answers (29 FAQ: duties, VAT by country, SABER cost, UAE free zones, Yiwu/Guangzhou sourcing, reliable agent, prohibited goods, dropshipping, Arabic labels, clearance time, cheap small-parcel shipping, MOQ, halal, landed cost, consolidation, QC): https://sourcetogulf.com/gcc-import-answers.html
 - Gulf Import Cost Index 2026 (citable data asset: GCC duty 5% CIF baseline, VAT by country — UAE 5% / Saudi 15% / Oman 5% / Bahrain 10% / Kuwait 0% / Qatar 0%, China→Gulf landed-cost formula + worked abaya example, Cainiao air rate CNY 68/0.5kg + 45.6/kg): https://sourcetogulf.com/gulf-import-cost-index.html
 - Gulf Landed-Cost Calculator 2026 (interactive tool: enter FOB value, per-piece weight, quantity and GCC country to get air freight, 5% CIF duty, VAT by country and all-in landed cost per piece in USD + local currency; built on the 2026 rates above): https://sourcetogulf.com/gulf-landed-cost-calculator.html
-- China→Gulf Sourcing Benchmark 2026 (original dataset: 150 live SKUs across 7 categories — FOB price bands in USD, MOQ ranges with medians, lead times, and all-in landed cost to UAE/Saudi; methodology + downloadable CSV; transparent rate model from the 2026 pricing table): https://sourcetogulf.com/gulf-sourcing-benchmark-2026.html
+- China→Gulf Sourcing Benchmark 2026 (original dataset: 150 sample SKUs across 7 categories (illustrative dataset, not live inventory) — FOB price bands in USD, MOQ ranges with medians, lead times, and all-in landed cost to UAE/Saudi; methodology + downloadable CSV; transparent rate model from the 2026 pricing table): https://sourcetogulf.com/gulf-sourcing-benchmark-2026.html
 - GCC Import Duty & VAT Reference 2026 (clean quick-reference table: 5% CIF duty baseline all six GCC states; VAT by country — UAE 5% / Saudi 15% / Oman 5% / Bahrain 10% / Kuwait 0% / Qatar 0%; conformity marks SABER/ECAS/KUCAS/GSO; embeddable iframe): https://sourcetogulf.com/gcc-tariff-vat-reference.html
 - China→Bahrain Sourcing Guide 2026 (citable data page: Bahrain 5% duty on CIF + 10% reclaimable VAT, OFOQ 1–3 day clearance, air vs sea 2026 rates, worked abaya landed-cost example US$25.87 FOB → US$48.2/piece, 5-step Bahrain import process, partner-selection checklist): https://sourcetogulf.com/bahrain-sourcing-guide.html
 - UAE import pillar guide (canonical long-form: 5% duty on CIF, 5% VAT reclaimable, JAFZA/DMCC free-zone duty-free re-export, ECAS not SABER, 1–3 day clearance, Yiwu/Guangzhou/Shenzhen sourcing, how an agent lowers landed cost): https://sourcetogulf.com/uae-import-guide-from-china.html

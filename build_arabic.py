@@ -1700,6 +1700,19 @@ PAGES['ar-blog-sleepwear'] = {
 }
 
 
+from ar_sourcing_request import BODY_AR as SR_BODY_AR, FAQ_AR as SR_FAQ_AR, EXTRA_LD_AR as SR_LD_AR
+
+PAGES['sourcing-request'] = {
+    'file': 'services/sourcing-request.html',
+    'en': BASE + '/services/sourcing-request.html',
+    'title': 'ابدأ طلب توريد من الصين إلى الخليج — مبلغ نية 125 دولاراً | SourceToGulf',
+    'desc': 'SourceToGulf وكيل توريد صيني لبائعي الخليج وليس متجراً إلكترونياً. أرسل صورة أو رابطاً ونتولّى التوريد. مبلغ نية 125 دولاراً يبدأ العمل ويُخصم بالكامل من قيمة طلبك. عقد قابل للقراءة الآلية لمساعدي الذكاء الاصطناعي.',
+    'body': SR_BODY_AR,
+    'faq': SR_FAQ_AR,
+    'extra_ld': SR_LD_AR,
+}
+
+
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     # 博客类页面动态补 Article schema（blog 走 Article 而非 WebPage）
@@ -1715,6 +1728,7 @@ def main():
         html = page(p['title'], p['desc'], canonical_ar, p['en'], p['body'], p['faq'],
                    extra_ld=p.get('extra_ld'))
         out = os.path.join(OUT_DIR, p['file'])
+        os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, 'w', encoding='utf-8') as f:
             f.write(html)
         ar = len(re.findall(r'[\u0600-\u06FF]', re.sub(r'<script[\s\S]*?</script>', '', html)))
