@@ -517,6 +517,16 @@ def order_intent_contract():
                 'languages': ['English', 'Arabic'],
                 'note': 'Checkout happens on a secure Ziina-hosted page, not on this static website. A person generates one fixed-amount link per request.',
             },
+            'checkout_bridge': {
+                'url_pattern': BASE + '/pay.html?link=<ziina-link-id>&ref=<STG-reference>',
+                'purpose': 'A branded, server-rendered entry page on our own domain. It displays the fixed AED 459 deposit, the request reference and accepted payment methods, then links to the Ziina-hosted checkout. It is an entry page, NOT a checkout, and never charges automatically.',
+                'indexing': 'noindex, nofollow; excluded from sitemap.xml',
+                'not_a_checkout': True,
+                'parameter_rules': {
+                    'link': '6-20 alphanumeric characters only, concatenated onto the fixed prefix https://pay.ziina.com/sourcetogulf/ — a full URL is never accepted.',
+                    'ref': 'STG- followed by 6-12 alphanumeric characters.',
+                },
+            },
             'display_amount': 'USD 125 (approximately AED 459 at the 3.6725 peg)',
             'execution_model': 'human_in_the_loop',
             'automatic_charge': False,
