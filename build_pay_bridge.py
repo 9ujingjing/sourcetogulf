@@ -135,6 +135,7 @@ STYLE2 = '''<style>
 .pb-footbar{border-top:0.5px solid #e3e6ea;margin-top:26px;padding:14px 18px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 18px;font-size:11px;line-height:1.6;color:#6b7570;text-align:center}
 .pb-footbar a{color:#6b7570;text-decoration:none}
 .pb-footbar a:hover{color:__PURPLE__}
+[hidden]{display:none!important}
 [dir="rtl"] .pb-amount-row,[dir="rtl"] .pb-ref{flex-direction:row-reverse}
 [dir="rtl"] .pb-top{flex-direction:row-reverse}
 @media(max-width:560px){.pb-wrap{padding:22px 12px 20px}.pb-in{padding:22px 20px}.pb-amount-num{font-size:24px}.pb-badge{width:56px}}
