@@ -255,10 +255,10 @@ def product_card(p):
         + '<div class="pbody">'
         + '<h3>' + p['name_en'] + '</h3>'
         + '<div class="price-row">'
-        + '<div class="planded"><small>Landed to UAE</small><b>$' + ('%.2f' % pr['landed']) + '</b> <i>/pc at MOQ</i></div>'
+        + '<div class="planded"><small>Product + freight est.</small><b>$' + ('%.2f' % pr['landed']) + '</b> <i>/pc at MOQ</i></div>'
         + '<div class="pfob"><small>Factory price</small><span>$' + ('%.2f' % pr['fob']) + '</span></div>'
         + '</div>'
-        + '<div class="pmeta">MOQ ' + str(p['moq']) + ' pcs &middot; ships in ' + str(p['lead_days']) + ' days</div>'
+        + '<div class="pmeta">MOQ ' + str(p['moq']) + ' pcs &middot; factory lead time ' + str(p['lead_days']) + ' days (excl. transit)</div>'
         + '<a class="wa-mini" href="' + wa_link(wa_text) + '" target="_blank" rel="noopener">💬 Ask about this</a>'
         + '</div></div>')
 

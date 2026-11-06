@@ -63,7 +63,7 @@ CAT_COPY = {
 CAT_FAQ = {
   'home-fragrance': [
     ('What is the typical MOQ for home fragrance items?',
-     'On SourceToGulf\'s curated picks, home-fragrance MOQs run about 30 to 200 pieces per item. Fully custom scents or private-label production start higher, often 500+ pieces, because the fragrance base and packaging are made to order.'),
+     'On SourceToGulf\'s curated picks, home-fragrance MOQs run from 12 to 300 pieces per item on our listed samples. Fully custom scents or private-label production start higher, often 500+ pieces, because the fragrance base and packaging are made to order.'),
     ('Can you handle Arabic labels and Gulf compliance for home fragrance?',
      'Yes. Many Gulf buyers need bilingual or Arabic labeling, so we arrange Arabic printing before shipment. Fragrance and incense items are also screened against destination rules - for Saudi Arabia that means SFDA coordination where applicable.'),
     ('How long does home-fragrance shipping to the Gulf take?',

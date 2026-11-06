@@ -17,7 +17,7 @@ QA = [
   ('What is SABER and do I need it for Saudi Arabia?',
    'SABER is Saudi Arabia\'s product conformity and shipment registration system. Most consumer goods need a Product Certificate (PCoC) and a Shipment Certificate (SCoC) before customs release. Food, cosmetics and health products also need SFDA approval. SourceToGulf handles SABER registration and SFDA coordination for Saudi-bound goods so your shipment clears Jeddah or Dammam without delays.'),
   ('What is the minimum order quantity (MOQ) when sourcing from China?',
-   'MOQ depends on the product and factory. On SourceToGulf\'s curated hot picks, MOQs range from 12 to 200 pieces per item — small enough for market testing. For fully custom or private-label production, MOQs are higher (often 300–1,000+). We always show the MOQ on every product so you can plan your cash flow before you commit.'),
+   'MOQ depends on the product and factory. On SourceToGulf\'s curated hot picks, MOQs for most of our listed samples sit between 12 and 300 pieces per item — small enough for market testing. For fully custom or private-label production, MOQs are higher (often 300–1,000+). We always show the MOQ on every product so you can plan your cash flow before you commit.'),
   ('How long does shipping from China to the Gulf take?',
    'Air freight is typically 7–10 days door to door; sea freight (FCL/LCL consolidated) is 25–35 days. Express courier works for small parcels. SourceToGulf consolidates goods from multiple suppliers in Guangzhou and ships as one shipment, which shortens overall lead time compared to managing several suppliers separately.'),
   ('Do I need a trade license to import?',

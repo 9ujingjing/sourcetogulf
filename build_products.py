@@ -242,17 +242,19 @@ def build_grid():
             + ''.join(card(p) for p in core) + '\n</div>\n'
             + '<p style="text-align:center;margin:22px 0 0;font-size:14px">'
             + '<a href="/categories.html" style="font-weight:600">Browse all %d ready-to-order '
-              'items →</a></p>\n' % len(prods))
+              'capability samples →</a></p>\n' % len(prods))
 
 
 def build_rel():
     h = '<div class="rel-grid" style="margin-top:28px">\n'
     for c in cats:
         n = sum(1 for p in prods if p['cat'] == c['key'])
+        if n == 0:
+            continue
         h += ('  <a class="rel-card" href="/category-%s.html"><span>%s</span>'
-              '<span>%d items · landed prices</span></a>\n' % (c['key'], c['en'], n))
+              '<span>%d capability samples</span></a>\n' % (c['key'], c['en'], n))
     h += ('  <a class="rel-card" href="/categories.html"><span>Browse all categories →</span>'
-          '<span>%d ready-to-order items</span></a>\n' % len(prods))
+          '<span>%d capability samples</span></a>\n' % len(prods))
     h += ('  <a class="rel-card" href="/solutions.html"><span>Solutions by buyer type</span>'
           '<span>Influencer · Wholesale · Retail · Brand</span></a>\n')
     h += '</div>'
