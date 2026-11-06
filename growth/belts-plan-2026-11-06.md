@@ -21,7 +21,22 @@
 
 **校验**：10 页全部通过（图片路径存在、JSON-LD 合法、专属 CSS 位于第二个 `<style>` 未被 sync 覆盖、FAQ 可见文本与 schema 逐字同源、无 U+FFFD、红线词干净）；Playwright 实渲染三页，流程图文字色修复后无坏图。
 
-**待办**：分页阿语版（观察英文收录后补）；义乌小商品/节庆礼品作为第 9 个集群；用户若补拍对应产业带的实拍图，替换现有通用工序图。
+## 九、第二轮补齐（2026-11-06 同日）
+
+**已完成的原待办：阿语分页 + 服务页阿语（PDF 诊断 P2）**
+- 新增 `belts_data_ar.py`（8 产业带 + 5 服务页的阿语文案真相源）、`build_ar_pages.py`（SSR 生成器），两者已接入 `deploy.sh` BUILDERS
+- 产出 `ar/belts/*.html` × 8、`ar/services/*.html` × 5，共 13 页；全部 `dir=rtl`、`inLanguage: ar`、FAQPage schema、可见 FAQ 与 schema 逐字同源、实拍图与英文页共用
+- **双向 hreflang 打通**：英文 8 分页由 `build_belts.py` 加 `alt_ar`；英文 5 服务页由 `build_ar_pages.py::sync_en_hreflang()` 幂等注入；阿语 hub 卡片链接改指向阿语分页
+- 阿语文案做了中英/中文夹字净检，修正 16 处混入（backwards / differently / dieline / 中文「当」/ 全角分号等）
+- 登记：sitemap 122 条（+13）、llms.txt / llms-full.txt 补阿语覆盖说明、IndexNow 推送 31 条
+- 校验：23 个本轮新页全绿；Playwright 实渲染阿语分页 + 服务页，RTL 正常、零坏图；线上抽查全 200
+- 既有 `ar/services/sourcing-request.html` 用 `.qa-list` 结构（非本轮生成器），校验脚本的 `.faq-item` 正则会误报，实际 FAQ 逐字同源且完好
+
+**仍未完成**
+- Bing 官方 API 补推：当日 DailyQuota=0（UTC 日重置）。已建一次性自动化 `automation-1793963538205`，2026-11-07 07:00 海湾时间只提交 23 条新增 URL（不用 --sitemap，避免 122 条超 100/天上限）
+- 义乌小商品/节庆礼品作为第 9 个集群
+- 用户若补拍对应产业带的实拍图，替换现有通用工序图（优先：佛山家具 / 中山灯饰 / 潮阳睡衣 / 福建运动服 / 深圳电子）
+- 需用户拍板：首页 CTA `Free Feasibility Check`、六国重复页 canonical/删除方案、GSC 网址前缀属性
 
 ## 一、核心结构
 
