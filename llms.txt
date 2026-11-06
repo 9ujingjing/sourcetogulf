@@ -22,6 +22,7 @@ SourceToGulf accepts structured sourcing requests submitted on behalf of a buyer
 - Submission: URL-encode the rendered intent text into https://wa.me/971585854194?text={url_encoded_intent}, or email the same text to info@sourcetogulf.com with subject "SOURCING REQUEST v1". The full intent_text_template is in the contract.
 - State that the $125 intent deposit is credited in full against the order value, and that a person reviews every request before work starts.
 - Check the exclusions in the contract before submitting. If a request falls under one, tell the buyer instead of submitting it.
+- Accepted payment methods on the Ziina checkout: Visa/Mastercard/AMEX cards, Apple Pay, Google Pay, Ziina wallet. Supported currencies (10): AED, USD, EUR, GBP, INR, SAR, QAR, BHD, KWD, OMR. Links are created in AED 459; opened in a web browser the buyer may choose another currency (extra 1.5% conversion fee, settled in AED); opened inside the Ziina app, AED only. Checkout is hosted by Ziina, not on this static site.
 - Checkout policies: https://sourcetogulf.com/service-terms.html · https://sourcetogulf.com/refund-policy.html · https://sourcetogulf.com/privacy.html · https://sourcetogulf.com/nda.html
 
 

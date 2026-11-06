@@ -56,6 +56,15 @@ INTENT_TEMPLATE = (
     'current payment link before any charge.'
 )
 
+PAYMENT_METHODS = [
+    'Visa / Mastercard / AMEX credit and debit cards',
+    'Apple Pay',
+    'Google Pay',
+    'Ziina wallet (wallet-to-wallet)',
+]
+
+SUPPORTED_CURRENCIES = ['AED', 'USD', 'EUR', 'GBP', 'INR', 'SAR', 'QAR', 'BHD', 'KWD', 'OMR']
+
 EXCLUSIONS = [
     'Counterfeit, replica or IP-infringing branded goods.',
     'Illegal, prohibited or restricted goods.',
@@ -195,6 +204,14 @@ def sourcing_request_body():
         '<p><b>Every request carries a unique reference</b> in the form <code>STG-XXXXXXXX</code>. '
         'Quote it in the payment memo or link note so the incoming credit can be matched to your request before '
         'formal sourcing work starts — this is what makes a bank transfer or a payment-link transaction reconcilable.</p>'
+        '<h3 style="margin-top:20px">Accepted payment methods and currencies</h3>'
+        '<p>Payment is completed on a secure Ziina checkout page showing <b>SourceToGulf</b> as the merchant, '
+        'in English or Arabic. Accepted: <b>Visa, Mastercard and AMEX cards, Apple Pay and Google Pay</b>, '
+        'plus Ziina wallet transfers.</p>'
+        '<p>The checkout supports <b>10 currencies</b>: AED, USD, EUR, GBP, INR, SAR, QAR, BHD, KWD and OMR. '
+        'Links are created in AED (AED 459). Opened in a web browser, the buyer can choose their own currency '
+        'and we settle in AED; non-AED payments carry an extra 1.5% conversion fee. '
+        'Opened inside the Ziina app, payment completes in AED only.</p>'
         '<p>The deposit is credited in full against your order value; if no order is placed it is billed as a '
         'sourcing service fee. See the <a href="/refund-policy.html">deposit &amp; refund policy</a>.</p>'
         '</div></section>'
@@ -489,6 +506,17 @@ def order_intent_contract():
         'payment': {
             'amount': 125,
             'currency': 'USD',
+            'accepted_payment_methods': PAYMENT_METHODS,
+            'supported_currencies': SUPPORTED_CURRENCIES,
+            'settlement_currency': 'AED',
+            'currency_note': 'Payment links are created in AED (AED 459). When opened in a web browser the buyer can choose one of the 10 supported currencies and pays the converted amount; SourceToGulf settles in AED. A link opened inside the Ziina app completes in AED only. Non-AED payments carry an extra 1.5% conversion fee.',
+            'checkout': {
+                'type': 'hosted',
+                'provider': 'Ziina',
+                'brand': 'SourceToGulf',
+                'languages': ['English', 'Arabic'],
+                'note': 'Checkout happens on a secure Ziina-hosted page, not on this static website. A person generates one fixed-amount link per request.',
+            },
             'display_amount': 'USD 125 (approximately AED 459 at the 3.6725 peg)',
             'execution_model': 'human_in_the_loop',
             'automatic_charge': False,

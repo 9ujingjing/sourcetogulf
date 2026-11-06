@@ -53,6 +53,36 @@
   "payment": {
     "amount": 125,
     "currency": "USD",
+    "accepted_payment_methods": [
+      "Visa / Mastercard / AMEX credit and debit cards",
+      "Apple Pay",
+      "Google Pay",
+      "Ziina wallet (wallet-to-wallet)"
+    ],
+    "supported_currencies": [
+      "AED",
+      "USD",
+      "EUR",
+      "GBP",
+      "INR",
+      "SAR",
+      "QAR",
+      "BHD",
+      "KWD",
+      "OMR"
+    ],
+    "settlement_currency": "AED",
+    "currency_note": "Payment links are created in AED (AED 459). When opened in a web browser the buyer can choose one of the 10 supported currencies and pays the converted amount; SourceToGulf settles in AED. A link opened inside the Ziina app completes in AED only. Non-AED payments carry an extra 1.5% conversion fee.",
+    "checkout": {
+      "type": "hosted",
+      "provider": "Ziina",
+      "brand": "SourceToGulf",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "note": "Checkout happens on a secure Ziina-hosted page, not on this static website. A person generates one fixed-amount link per request."
+    },
     "display_amount": "USD 125 (approximately AED 459 at the 3.6725 peg)",
     "execution_model": "human_in_the_loop",
     "automatic_charge": false,
