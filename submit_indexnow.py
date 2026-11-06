@@ -69,8 +69,10 @@ def file_md5(path):
 
 
 def local_pages():
-    """扫描本地 HTML，映射成线上 URL → 内容 md5。
-    quote/<客户>/ 是 noindex 的客户专属报价页；nda.html 是刻意 noindex 的页。二者不参与推送；pay.html 是公开收银页，需推送。"""
+    """扫描本地 HTML + AI 关键非 HTML 文件，映射成线上 URL → 内容 md5。
+    quote/<客户>/ 是 noindex 的客户专属报价页；nda.html 是刻意 noindex 的页。二者不参与推送；pay.html 是公开收银页，需推送。
+    非 HTML 的 llms.txt / llms-full.txt / order-intent.json / robots.txt / sitemap.xml / rss.xml 也纳入，
+    因为它们正是 AI 引擎读取的权威文件，内容更新必须触发重新推送。"""
     out = {}
     for p in glob.glob(os.path.join(APP, '**', '*.html'), recursive=True):
         rel = os.path.relpath(p, APP).replace(os.sep, '/')
@@ -83,6 +85,13 @@ def local_pages():
         else:
             url = 'https://%s/%s' % (HOST, rel)
         out[url] = file_md5(p)
+    # 🔴 AI 关键文件（非 HTML）同样纳入内容变化感知：
+    #    否则改了 llms.txt / order-intent.json 永远不会被 --changed 发现，
+    #    Bing/Copilot/ChatGPT 就抓不到 GEO 内容更新（2026-11-06 漏推事故的根因）。
+    for rel in ('llms.txt', 'llms-full.txt', 'order-intent.json', 'robots.txt', 'sitemap.xml', 'rss.xml'):
+        p = os.path.join(APP, rel)
+        if os.path.exists(p):
+            out['https://%s/%s' % (HOST, rel)] = file_md5(p)
     return out
 
 

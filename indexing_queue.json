@@ -2,10 +2,8 @@
   "pending": [],
   "completed": [
     "https://sourcetogulf.com/ar/index.html",
-    "https://sourcetogulf.com/llms.txt",
     "https://sourcetogulf.com/pricing.js",
     "https://sourcetogulf.com/rss.xml",
-    "https://sourcetogulf.com/sitemap.xml",
     "https://sourcetogulf.com/nda.html",
     "https://sourcetogulf.com/outreach/bahrain-sourcing-guide.html",
     "https://sourcetogulf.com/",
@@ -107,7 +105,12 @@
     "https://sourcetogulf.com/uae-import-guide-from-china.html",
     "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html",
     "https://sourcetogulf.com/ar/services/sourcing-request.html",
-    "https://sourcetogulf.com/services/sourcing-request.html"
+    "https://sourcetogulf.com/services/sourcing-request.html",
+    "https://sourcetogulf.com/llms.txt",
+    "https://sourcetogulf.com/llms-full.txt",
+    "https://sourcetogulf.com/order-intent.json",
+    "https://sourcetogulf.com/robots.txt",
+    "https://sourcetogulf.com/sitemap.xml"
   ],
   "hashes": {
     "https://sourcetogulf.com/for-moms.html": "6f96f3a5d5714ad55b99e93896383fc8",
@@ -211,6 +214,12 @@
     "https://sourcetogulf.com/privacy.html": "137e7c76a2dd007c8d93efecd25d7ab3",
     "https://sourcetogulf.com/ar/services/sourcing-request.html": "f617c4aefe4419d98ca02388b095bb48",
     "https://sourcetogulf.com/services/sourcing-request.html": "ea26b29c68285481f11f37691d33b329",
-    "https://sourcetogulf.com/pay.html": "476bb09110f5e427ad5a2963dc576698"
+    "https://sourcetogulf.com/pay.html": "476bb09110f5e427ad5a2963dc576698",
+    "https://sourcetogulf.com/llms.txt": "1ad7d262beafc8a9f7b6180032a1f234",
+    "https://sourcetogulf.com/llms-full.txt": "3238d6e34122097a1d353c219e277b2d",
+    "https://sourcetogulf.com/order-intent.json": "9407d4a9acbbc2fa14850e94f2311995",
+    "https://sourcetogulf.com/robots.txt": "c17947b937b34ba9f57ce5ede6980733",
+    "https://sourcetogulf.com/sitemap.xml": "0de5361e53eb2e932b75d59e922a9f27",
+    "https://sourcetogulf.com/rss.xml": "78e34161f7af27359a67b96a3dcb19bb"
   }
 }
