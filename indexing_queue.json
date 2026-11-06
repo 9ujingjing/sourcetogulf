@@ -29,7 +29,6 @@
     "https://sourcetogulf.com/ar/products.html",
     "https://sourcetogulf.com/ar/qatar-import-guide-from-china.html",
     "https://sourcetogulf.com/ar/saudi-arabia-import-guide-from-china.html",
-    "https://sourcetogulf.com/ar/services/sourcing-request.html",
     "https://sourcetogulf.com/ar/solutions.html",
     "https://sourcetogulf.com/ar/uae-import-guide-from-china.html",
     "https://sourcetogulf.com/bahrain-import-guide-from-china.html",
@@ -97,7 +96,6 @@
     "https://sourcetogulf.com/services/find-any-product.html",
     "https://sourcetogulf.com/services/product-sourcing-china.html",
     "https://sourcetogulf.com/services/quality-inspection-china.html",
-    "https://sourcetogulf.com/services/sourcing-request.html",
     "https://sourcetogulf.com/shipping/china-to-bahrain.html",
     "https://sourcetogulf.com/shipping/china-to-kuwait.html",
     "https://sourcetogulf.com/shipping/china-to-oman.html",
@@ -107,7 +105,9 @@
     "https://sourcetogulf.com/solutions.html",
     "https://sourcetogulf.com/sourcing-agent-vs-trading-company.html",
     "https://sourcetogulf.com/uae-import-guide-from-china.html",
-    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html"
+    "https://sourcetogulf.com/yiwu-vs-guangzhou-vs-shenzhen.html",
+    "https://sourcetogulf.com/ar/services/sourcing-request.html",
+    "https://sourcetogulf.com/services/sourcing-request.html"
   ],
   "hashes": {
     "https://sourcetogulf.com/for-moms.html": "6f96f3a5d5714ad55b99e93896383fc8",
@@ -209,8 +209,8 @@
     "https://sourcetogulf.com/refund-policy.html": "40789f727b8387b52f6e459ae1cac812",
     "https://sourcetogulf.com/service-terms.html": "e3852207adb56c8c8e339f5307c0fd06",
     "https://sourcetogulf.com/privacy.html": "137e7c76a2dd007c8d93efecd25d7ab3",
-    "https://sourcetogulf.com/ar/services/sourcing-request.html": "1dc230df77e52e16afc482b89651ab03",
-    "https://sourcetogulf.com/services/sourcing-request.html": "8c5df1551bda92ca571f2e9ca9b38bf4",
+    "https://sourcetogulf.com/ar/services/sourcing-request.html": "f617c4aefe4419d98ca02388b095bb48",
+    "https://sourcetogulf.com/services/sourcing-request.html": "ea26b29c68285481f11f37691d33b329",
     "https://sourcetogulf.com/pay.html": "476bb09110f5e427ad5a2963dc576698"
   }
 }
