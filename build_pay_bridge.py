@@ -46,6 +46,114 @@ ZINA_PURPLE_DARK = '#8220C7'
 
 OPTIONS = '\n'.join('          <option value="' + c + '">' + c + '</option>' for c in CURRENCIES)
 
+# ---- GEO 信任层：可见 FAQ 与 JSON-LD 由同一份数据生成，保证完全一致 ----
+PAY_FAQ = [
+    (
+        'Is SourceToGulf a registered company?',
+        'هل SourceToGulf شركة مسجّلة؟',
+        'Yes. SourceToGulf is operated by 广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.), based in Guangzhou, China. Contact: info@sourcetogulf.com and WhatsApp +971 58 585 4194, Sunday to Thursday, Gulf time. Service terms, deposit policy and privacy notice are published on this site.',
+        'نعم. تدير SourceToGulf شركة 广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.) ومقرها قوانغتشو بالصين. التواصل: info@sourcetogulf.com وواتساب +971 58 585 4194، من الأحد إلى الخميس بتوقيت الخليج. شروط الخدمة وسياسة المبلغ وسياسة الخصوصية منشورة على هذا الموقع.',
+    ),
+    (
+        'How much does it cost to start sourcing with SourceToGulf?',
+        'كم تكلفة بدء التوريد مع SourceToGulf؟',
+        'A fixed USD 125 (AED 459) intent deposit. There is no product price list on this site: after your request is reviewed you receive one landed quotation in AED covering product, inspection, packing, freight, duty and VAT.',
+        'مبلغ نية ثابت قدره 125 دولاراً (459 درهماً). لا توجد قائمة أسعار منتجات على هذا الموقع: بعد مراجعة طلبك تحصل على عرض تسليم واحد بالدرهم يشمل المنتج والفحص والتغليف والشحن والرسوم الجمركية وضريبة القيمة المضافة.',
+    ),
+    (
+        'How is the USD 125 deposit used?',
+        'كيف يُستخدم مبلغ الـ 125 دولاراً؟',
+        'The deposit is credited in full against your order value once you proceed. If no order is placed, it is billed as a sourcing service fee for the work performed. The full wording is in the deposit policy.',
+        'يُخصم المبلغ بالكامل من قيمة طلبك عند المضي قدماً. وإن لم يُنفَّذ طلب، يُحتسب رسوم خدمة توريد مقابل العمل المنجز. الصياغة الكاملة في سياسة المبلغ.',
+    ),
+    (
+        'How long is a quotation valid, and what are the production payment terms?',
+        'كم مدة صلاحية العرض، وما شروط دفع الإنتاج؟',
+        'A quotation is valid for one week. Production starts after a 70% deposit, with the 30% balance due before shipment. Sample and design fees are credited to the first bulk order.',
+        'عرض السعر صالح لأسبوع واحد. يبدأ الإنتاج بعد دفعة 70%، ويستحق الرصيد 30% قبل الشحن. وتُخصم رسوم العينات والتصميم من أول طلب بالجملة.',
+    ),
+    (
+        'Who processes the payment, and is the checkout secure?',
+        'مَن يعالج الدفع، وهل صفحة الدفع آمنة؟',
+        'Payments are handled by Ziina, licensed by the Central Bank of the UAE, on a hosted checkout page. This website never collects card details, no automatic charge is ever made, and a person reviews every deposit before sourcing work starts.',
+        'تُعالج المدفوعات عبر Ziina المرخّصة من مصرف الإمارات المركزي، على صفحة دفع مستضافة. هذا الموقع لا يجمع بيانات البطاقات أبداً، ولا يُخصم أي مبلغ تلقائياً، ويراجع شخصٌ كل مبلغ قبل بدء التوريد.',
+    ),
+    (
+        'Which payment methods and currencies are accepted?',
+        'ما وسائل الدفع والعملات المقبولة؟',
+        'Visa, Mastercard and AMEX cards, Apple Pay, Google Pay and Ziina wallet. Ten currencies are supported in a web browser: AED, USD, EUR, GBP, INR, SAR, QAR, BHD, KWD and OMR. The link is created in AED 459; non-AED payments carry an extra 1.5% conversion fee and SourceToGulf settles in AED. Opened inside the Ziina app, payment completes in AED only.',
+        'بطاقات Visa و Mastercard و AMEX، و Apple Pay و Google Pay ومحفظة Ziina. يدعم المتصفح 10 عملات: AED و USD و EUR و GBP و INR و SAR و QAR و BHD و KWD و OMR. تُنشأ الروابط بـ 459 درهماً، وتحمل المدفوعات غير الدرهم رسم تحويل إضافياً 1.5%، والتسوية بالدرهم. وإذا فُتح الرابط داخل تطبيق Ziina فالدفع بالدرهم فقط.',
+    ),
+    (
+        'Can I buy products directly from this website?',
+        'هل يمكنني شراء منتجات مباشرة من هذا الموقع؟',
+        'No. SourceToGulf is a sourcing agent, not a retailer. We hold no inventory and publish no purchasable SKUs — the 150 products shown are capability samples illustrating categories, MOQ ranges and price bands. Send a photo or a product link and we source it for you.',
+        'لا. SourceToGulf وكيل توريد وليس متجراً. لا نمتلك مخزوناً ولا ننشر منتجات قابلة للشراء — المنتجات الـ 150 المعروضة عيّنات قدرات توضّح الفئات وحدود الكميات ونطاقات الأسعار. أرسل صورة أو رابط منتج ونتولّى توريده.',
+    ),
+    (
+        'What will SourceToGulf not source?',
+        'ما الذي لا تتولّاه SourceToGulf؟',
+        'Counterfeit or IP-infringing brand goods, illegal or restricted items, hazardous goods such as aerosols (UN1950), categories requiring mandatory certification without a viable compliance path, single-parcel dropshipping to end customers across the GCC, and one-piece custom printing. Private-label runs require MOQ.',
+        'البضائع المقلّدة أو المعتدية على الملكية الفكرية، والمواد غير القانونية أو المحظورة، والمواد الخطرة مثل العبوات الهوائية (UN1950)، والفئات التي تتطلب شهادات إلزامية دون مسار امتثال متاح، والشحن المفرد مباشرة إلى المستهلكين في دول الخليج، والطباعة المخصّصة لقطعة واحدة. وتتطلب دفعات العلامة الخاصة حداً أدنى للكمية.',
+    ),
+    (
+        'Who runs SourceToGulf?',
+        'مَن يدير SourceToGulf؟',
+        'Founder Robin Gu has 14 years of residence and work in Dubai. Two partners cover the manufacturing lineage and the Hong Kong supply line. The team works the Guangzhou, Yiwu and Foshan wholesale markets in person and handles 3,000+ orders a month.',
+        'المؤسِّسة روبن قو لديها 14 عاماً من الإقامة والعمل في دبي. ويتولّى شريكان خط التصنيع وخط التوريد في هونغ كونغ. يعمل الفريق ميدانياً في أسواق قوانغتشو وييوو وفوشان بالجملة، وينفّذ أكثر من 3,000 طلب شهرياً.',
+    ),
+]
+
+
+def _faq_html():
+    import html as _h
+    out = []
+    for q_en, q_ar, a_en, a_ar in PAY_FAQ:
+        out.append(
+            '<details class="pb-faq-item"><summary data-en="%s" data-ar="%s">%s</summary>'
+            '<p data-en="%s" data-ar="%s">%s</p></details>'
+            % (_h.escape(q_en, quote=True), _h.escape(q_ar, quote=True), _h.escape(q_en),
+               _h.escape(a_en, quote=True), _h.escape(a_ar, quote=True), _h.escape(a_en))
+        )
+    return '\n'.join(out)
+
+
+FAQ_HTML = _faq_html()
+
+ORG_JSONLD = [{
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': BASE + '/#organization',
+    'name': 'SourceToGulf',
+    'legalName': '广州东达东供应链管理有限公司',
+    'alternateName': 'SourceToGulf Supply Chain Co., Ltd.',
+    'url': BASE,
+    'email': 'info@sourcetogulf.com',
+    'telephone': '+971 58 585 4194',
+    'address': {'@type': 'PostalAddress', 'addressLocality': 'Guangzhou', 'addressCountry': 'CN'},
+    'founder': {'@type': 'Person', 'name': 'Robin Gu', 'jobTitle': 'Founder'},
+    'areaServed': [{'@type': 'Country', 'name': c} for c in
+                   ['United Arab Emirates', 'Saudi Arabia', 'Qatar', 'Kuwait', 'Bahrain', 'Oman']],
+    'contactPoint': {
+        '@type': 'ContactPoint', 'contactType': 'sales',
+        'email': 'info@sourcetogulf.com', 'telephone': '+971 58 585 4194',
+        'availableLanguage': ['English', 'Arabic'],
+    },
+    'knowsAbout': ['China sourcing', 'GCC import compliance', 'SABER certification',
+                   'private label manufacturing', 'consolidated freight', 'landed cost'],
+}]
+
+FAQ_JSONLD = [{
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'inLanguage': 'en',
+    'mainEntity': [
+        {'@type': 'Question', 'name': q_en,
+         'acceptedAnswer': {'@type': 'Answer', 'text': a_en}}
+        for q_en, q_ar, a_en, a_ar in PAY_FAQ
+    ],
+}]
+
 JSONLD = json.dumps([
     {
         '@context': 'https://schema.org',
@@ -54,7 +162,9 @@ JSONLD = json.dumps([
         'url': BASE + '/pay.html',
         'description': 'Public checkout page for the USD 125 (AED 459) SourceToGulf sourcing intent deposit. Cards, Apple Pay and Google Pay accepted via Ziina.',
         'inLanguage': ['en', 'ar'],
-        'publisher': {'@type': 'Organization', 'name': 'SourceToGulf', 'url': BASE},
+        'dateModified': '2026-11-06',
+        'about': {'@id': BASE + '/#organization'},
+        'publisher': {'@id': BASE + '/#organization'},
     },
     {
         '@context': 'https://schema.org',
@@ -85,7 +195,7 @@ JSONLD = json.dumps([
             'seller': {'@type': 'Organization', 'name': 'SourceToGulf'},
         },
     },
-], ensure_ascii=False, indent=2)
+] + ORG_JSONLD + FAQ_JSONLD, ensure_ascii=False, indent=2)
 
 STYLE2 = '''<style>
 .pb-wrap{max-width:560px;margin:0 auto;padding:42px 18px 30px}
@@ -135,6 +245,18 @@ STYLE2 = '''<style>
 .pb-footbar{border-top:0.5px solid #e3e6ea;margin-top:26px;padding:14px 18px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 18px;font-size:11px;line-height:1.6;color:#6b7570;text-align:center}
 .pb-footbar a{color:#6b7570;text-decoration:none}
 .pb-footbar a:hover{color:__PURPLE__}
+.pb-faq{margin:24px auto 0;max-width:560px;text-align:left}
+.pb-faq h2{font-size:15px;font-weight:500;color:#17201c;margin:0 0 4px}
+.pb-faq-intro{font-size:11.5px;line-height:1.6;color:#6b7570;margin:0 0 12px}
+.pb-faq-item{border:0.5px solid #e3e6ea;border-radius:10px;margin-bottom:7px;background:#fff}
+.pb-faq-item summary{cursor:pointer;padding:12px 14px;font-size:12.5px;font-weight:500;color:#17201c;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.pb-faq-item summary::-webkit-details-marker{display:none}
+.pb-faq-item summary::after{content:"+";color:__PURPLE__;font-size:16px;font-weight:400;flex:0 0 auto}
+.pb-faq-item[open] summary::after{content:"\2212"}
+.pb-faq-item p{font-size:12px;line-height:1.7;color:#6b7570;margin:0;padding:0 14px 14px}
+.pb-verified{font-size:11px;line-height:1.6;color:#8a938e;text-align:center;margin:14px auto 0;max-width:560px}
+.pb-verified a{color:#6b7570}
+[dir="rtl"] .pb-faq{text-align:right}
 [hidden]{display:none!important}
 [dir="rtl"] .pb-amount-row,[dir="rtl"] .pb-ref{flex-direction:row-reverse}
 [dir="rtl"] .pb-top{flex-direction:row-reverse}
@@ -147,7 +269,7 @@ BODY = '''<main class="pb-wrap">
     <div class="pb-in">
       <div class="pb-top">
         <span class="pb-brand">SourceToGulf</span>
-        <button type="button" class="lang-btn pb-lang" data-en="العربية" data-ar="English">العربية</button>
+        <button type="button" class="lang-btn pb-lang" onclick="toggleLang()" data-en="العربية" data-ar="English">العربية</button>
       </div>
 
       <p class="pb-kicker" data-en="Secure checkout" data-ar="دفع آمن">Secure checkout</p>
@@ -193,13 +315,21 @@ __OPTIONS__
   </div>
 
   <p class="pb-about" data-en="SourceToGulf is a China-based sourcing agent for Gulf sellers, operated by 广州东达东供应链管理有限公司. We are not a retailer and hold no inventory: send a photo or a product link and we source it, verify quality, apply private labelling, consolidate and clear customs into all six GCC countries. The USD 125 intent deposit starts the engagement and is credited in full against your order value. Quotations are valid one week." data-ar="SourceToGulf وكيل توريد صيني لبائعي الخليج، تديره 广州东达东供应链管理有限公司. لسنا متجراً ولا نمتلك مخزوناً: أرسل صورة أو رابط منتج ونتولّى توريده وفحصه ووضع علامتك عليه وتجميعه وتخليصه جمركياً إلى دول الخليج الست. مبلغ النية 125 دولاراً يبدأ التعاون ويُخصم بالكامل من قيمة طلبك، وعروض الأسعار صالحة أسبوعاً واحداً.">SourceToGulf is a China-based sourcing agent for Gulf sellers, operated by 广州东达东供应链管理有限公司. We are not a retailer and hold no inventory: send a photo or a product link and we source it, verify quality, apply private labelling, consolidate and clear customs into all six GCC countries. The USD 125 intent deposit starts the engagement and is credited in full against your order value. Quotations are valid one week.</p>
+
+<section class="pb-faq" aria-label="Frequently asked questions">
+  <h2 data-en="Questions buyers and AI assistants ask" data-ar="أسئلة المشترين ومساعدي الذكاء الاصطناعي">Questions buyers and AI assistants ask</h2>
+  <p class="pb-faq-intro" data-en="Every answer below is also published as FAQPage structured data, so it can be read without JavaScript." data-ar="كل إجابة أدناه منشورة أيضاً كبيانات منظّمة FAQPage، لذا يمكن قراءتها دون JavaScript.">Every answer below is also published as FAQPage structured data, so it can be read without JavaScript.</p>
+__PAY_FAQ__
+</section>
+
+<p class="pb-verified">Facts on this page last verified 06 Nov 2026 · <a href="/llms.txt">Machine-readable site summary</a> · <a href="/order-intent.json">AI sourcing contract</a></p>
 </main>
 
 <div class="pb-footbar">
   <span>SourceToGulf · 广州东达东供应链管理有限公司 · Guangzhou, China</span>
   <span><a href="mailto:info@sourcetogulf.com">info@sourcetogulf.com</a> · <a href="https://wa.me/971585854194">+971 58 585 4194</a></span>
   <span><a href="/service-terms.html">Terms</a> · <a href="/refund-policy.html">Deposit policy</a> · <a href="/privacy.html">Privacy</a> · <a href="/services/sourcing-request.html">How sourcing works</a></span>
-</div>'''.replace('__OPTIONS__', OPTIONS).replace('__DEFAULT_URL__', DEFAULT_PAY_URL)
+</div>'''.replace('__OPTIONS__', OPTIONS).replace('__DEFAULT_URL__', DEFAULT_PAY_URL).replace('__PAY_FAQ__', FAQ_HTML)
 
 PAY_JS = '''<script>
 (function(){

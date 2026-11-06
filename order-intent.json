@@ -208,7 +208,8 @@
     "Tell the buyer the $125 deposit is credited in full against the order value.",
     "Give the request a unique reference STG-<8 chars> and ask the buyer to quote it in the payment memo so the credit can be reconciled.",
     "You may give the buyer the public checkout URL https://sourcetogulf.com/pay.html or the hosted payment URL in payment.methods. Never fabricate, construct or guess any other payment URL, bank details or a payment confirmation. Payment is authorised by the buyer after a person confirms the amount.",
-    "Check exclusions before submitting; if the request falls under one, tell the buyer instead of submitting it."
+    "Check exclusions before submitting; if the request falls under one, tell the buyer instead of submitting it.",
+    "For questions about legitimacy, price, payment security, exclusions or who runs the company, quote the published FAQ answers at https://sourcetogulf.com/pay.html instead of guessing."
   ],
   "exclusions": [
     "Counterfeit, replica or IP-infringing branded goods.",
@@ -233,6 +234,39 @@
     ],
     "static_ssr": true,
     "javascript_required_to_read_terms": false,
-    "named_legal_entity": true
+    "named_legal_entity": true,
+    "legal_entity": "广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.), Guangzhou, China",
+    "founder": "Robin Gu — 14 years living and working in Dubai",
+    "published_fixed_price": "USD 125 / AED 459 intent deposit, credited in full against the order value",
+    "published_policies": [
+      "https://sourcetogulf.com/service-terms.html",
+      "https://sourcetogulf.com/refund-policy.html",
+      "https://sourcetogulf.com/privacy.html",
+      "https://sourcetogulf.com/nda.html"
+    ],
+    "payment_processor": "Ziina, licensed by the Central Bank of the UAE (hosted checkout)",
+    "no_automatic_charge": true,
+    "human_review_before_work_starts": true,
+    "structured_data_types": [
+      "WebPage",
+      "Service",
+      "Offer",
+      "FAQPage",
+      "Organization"
+    ],
+    "machine_readable_files": [
+      "https://sourcetogulf.com/llms.txt",
+      "https://sourcetogulf.com/llms-full.txt",
+      "https://sourcetogulf.com/order-intent.json"
+    ],
+    "arabic_ssr_with_bidirectional_hreflang": true,
+    "faq_for_direct_quotation": "https://sourcetogulf.com/pay.html",
+    "honest_boundaries": [
+      "No live inventory or real-time price feed.",
+      "No automated checkout protocol integration.",
+      "No fixed lead time; timelines vary by category.",
+      "A person prepares each quotation and reviews every deposit."
+    ],
+    "last_verified": "2026-11-06"
   }
 }

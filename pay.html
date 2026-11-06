@@ -303,6 +303,7 @@ tr:nth-child(even) td{background:var(--soft)}
 .pay-nav-btn{display:inline-flex;align-items:center;background:#9B28EB;color:#fff!important;font-weight:700;border-radius:99px;padding:8px 14px;text-decoration:none;font-size:13px;transition:.2s;white-space:nowrap}
 .pay-nav-btn:hover{background:#8220C7;transform:translateY(-1px)}
 .mp-pay{color:#9B28EB!important;font-weight:700}
+.foot-pay{color:#9B28EB!important;font-weight:600}
 @media(max-width:520px){.pay-nav-btn{padding:7px 10px;font-size:12px}}</style>
 <style>
 .pb-wrap{max-width:560px;margin:0 auto;padding:42px 18px 30px}
@@ -352,6 +353,18 @@ tr:nth-child(even) td{background:var(--soft)}
 .pb-footbar{border-top:0.5px solid #e3e6ea;margin-top:26px;padding:14px 18px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 18px;font-size:11px;line-height:1.6;color:#6b7570;text-align:center}
 .pb-footbar a{color:#6b7570;text-decoration:none}
 .pb-footbar a:hover{color:#9B28EB}
+.pb-faq{margin:24px auto 0;max-width:560px;text-align:left}
+.pb-faq h2{font-size:15px;font-weight:500;color:#17201c;margin:0 0 4px}
+.pb-faq-intro{font-size:11.5px;line-height:1.6;color:#6b7570;margin:0 0 12px}
+.pb-faq-item{border:0.5px solid #e3e6ea;border-radius:10px;margin-bottom:7px;background:#fff}
+.pb-faq-item summary{cursor:pointer;padding:12px 14px;font-size:12.5px;font-weight:500;color:#17201c;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.pb-faq-item summary::-webkit-details-marker{display:none}
+.pb-faq-item summary::after{content:"+";color:#9B28EB;font-size:16px;font-weight:400;flex:0 0 auto}
+.pb-faq-item[open] summary::after{content:"2"}
+.pb-faq-item p{font-size:12px;line-height:1.7;color:#6b7570;margin:0;padding:0 14px 14px}
+.pb-verified{font-size:11px;line-height:1.6;color:#8a938e;text-align:center;margin:14px auto 0;max-width:560px}
+.pb-verified a{color:#6b7570}
+[dir="rtl"] .pb-faq{text-align:right}
 [hidden]{display:none!important}
 [dir="rtl"] .pb-amount-row,[dir="rtl"] .pb-ref{flex-direction:row-reverse}
 [dir="rtl"] .pb-top{flex-direction:row-reverse}
@@ -395,10 +408,12 @@ tr:nth-child(even) td{background:var(--soft)}
       "en",
       "ar"
     ],
+    "dateModified": "2026-11-06",
+    "about": {
+      "@id": "https://sourcetogulf.com/#organization"
+    },
     "publisher": {
-      "@type": "Organization",
-      "name": "SourceToGulf",
-      "url": "https://sourcetogulf.com"
+      "@id": "https://sourcetogulf.com/#organization"
     }
   },
   {
@@ -454,6 +469,150 @@ tr:nth-child(even) td{background:var(--soft)}
         "name": "SourceToGulf"
       }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://sourcetogulf.com/#organization",
+    "name": "SourceToGulf",
+    "legalName": "广州东达东供应链管理有限公司",
+    "alternateName": "SourceToGulf Supply Chain Co., Ltd.",
+    "url": "https://sourcetogulf.com",
+    "email": "info@sourcetogulf.com",
+    "telephone": "+971 58 585 4194",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guangzhou",
+      "addressCountry": "CN"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Robin Gu",
+      "jobTitle": "Founder"
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      {
+        "@type": "Country",
+        "name": "Qatar"
+      },
+      {
+        "@type": "Country",
+        "name": "Kuwait"
+      },
+      {
+        "@type": "Country",
+        "name": "Bahrain"
+      },
+      {
+        "@type": "Country",
+        "name": "Oman"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "info@sourcetogulf.com",
+      "telephone": "+971 58 585 4194",
+      "availableLanguage": [
+        "English",
+        "Arabic"
+      ]
+    },
+    "knowsAbout": [
+      "China sourcing",
+      "GCC import compliance",
+      "SABER certification",
+      "private label manufacturing",
+      "consolidated freight",
+      "landed cost"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "en",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is SourceToGulf a registered company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. SourceToGulf is operated by 广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.), based in Guangzhou, China. Contact: info@sourcetogulf.com and WhatsApp +971 58 585 4194, Sunday to Thursday, Gulf time. Service terms, deposit policy and privacy notice are published on this site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to start sourcing with SourceToGulf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A fixed USD 125 (AED 459) intent deposit. There is no product price list on this site: after your request is reviewed you receive one landed quotation in AED covering product, inspection, packing, freight, duty and VAT."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is the USD 125 deposit used?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The deposit is credited in full against your order value once you proceed. If no order is placed, it is billed as a sourcing service fee for the work performed. The full wording is in the deposit policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is a quotation valid, and what are the production payment terms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A quotation is valid for one week. Production starts after a 70% deposit, with the 30% balance due before shipment. Sample and design fees are credited to the first bulk order."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who processes the payment, and is the checkout secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Payments are handled by Ziina, licensed by the Central Bank of the UAE, on a hosted checkout page. This website never collects card details, no automatic charge is ever made, and a person reviews every deposit before sourcing work starts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which payment methods and currencies are accepted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visa, Mastercard and AMEX cards, Apple Pay, Google Pay and Ziina wallet. Ten currencies are supported in a web browser: AED, USD, EUR, GBP, INR, SAR, QAR, BHD, KWD and OMR. The link is created in AED 459; non-AED payments carry an extra 1.5% conversion fee and SourceToGulf settles in AED. Opened inside the Ziina app, payment completes in AED only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I buy products directly from this website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. SourceToGulf is a sourcing agent, not a retailer. We hold no inventory and publish no purchasable SKUs — the 150 products shown are capability samples illustrating categories, MOQ ranges and price bands. Send a photo or a product link and we source it for you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What will SourceToGulf not source?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Counterfeit or IP-infringing brand goods, illegal or restricted items, hazardous goods such as aerosols (UN1950), categories requiring mandatory certification without a viable compliance path, single-parcel dropshipping to end customers across the GCC, and one-piece custom printing. Private-label runs require MOQ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who runs SourceToGulf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Founder Robin Gu has 14 years of residence and work in Dubai. Two partners cover the manufacturing lineage and the Hong Kong supply line. The team works the Guangzhou, Yiwu and Foshan wholesale markets in person and handles 3,000+ orders a month."
+        }
+      }
+    ]
   }
 ]
 </script>
@@ -610,7 +769,7 @@ tr:nth-child(even) td{background:var(--soft)}
     <div class="pb-in">
       <div class="pb-top">
         <span class="pb-brand">SourceToGulf</span>
-        <button type="button" class="lang-btn pb-lang" data-en="العربية" data-ar="English">العربية</button>
+        <button type="button" class="lang-btn pb-lang" onclick="toggleLang()" data-en="العربية" data-ar="English">العربية</button>
       </div>
 
       <p class="pb-kicker" data-en="Secure checkout" data-ar="دفع آمن">Secure checkout</p>
@@ -665,6 +824,22 @@ tr:nth-child(even) td{background:var(--soft)}
   </div>
 
   <p class="pb-about" data-en="SourceToGulf is a China-based sourcing agent for Gulf sellers, operated by 广州东达东供应链管理有限公司. We are not a retailer and hold no inventory: send a photo or a product link and we source it, verify quality, apply private labelling, consolidate and clear customs into all six GCC countries. The USD 125 intent deposit starts the engagement and is credited in full against your order value. Quotations are valid one week." data-ar="SourceToGulf وكيل توريد صيني لبائعي الخليج، تديره 广州东达东供应链管理有限公司. لسنا متجراً ولا نمتلك مخزوناً: أرسل صورة أو رابط منتج ونتولّى توريده وفحصه ووضع علامتك عليه وتجميعه وتخليصه جمركياً إلى دول الخليج الست. مبلغ النية 125 دولاراً يبدأ التعاون ويُخصم بالكامل من قيمة طلبك، وعروض الأسعار صالحة أسبوعاً واحداً.">SourceToGulf is a China-based sourcing agent for Gulf sellers, operated by 广州东达东供应链管理有限公司. We are not a retailer and hold no inventory: send a photo or a product link and we source it, verify quality, apply private labelling, consolidate and clear customs into all six GCC countries. The USD 125 intent deposit starts the engagement and is credited in full against your order value. Quotations are valid one week.</p>
+
+<section class="pb-faq" aria-label="Frequently asked questions">
+  <h2 data-en="Questions buyers and AI assistants ask" data-ar="أسئلة المشترين ومساعدي الذكاء الاصطناعي">Questions buyers and AI assistants ask</h2>
+  <p class="pb-faq-intro" data-en="Every answer below is also published as FAQPage structured data, so it can be read without JavaScript." data-ar="كل إجابة أدناه منشورة أيضاً كبيانات منظّمة FAQPage، لذا يمكن قراءتها دون JavaScript.">Every answer below is also published as FAQPage structured data, so it can be read without JavaScript.</p>
+<details class="pb-faq-item"><summary data-en="Is SourceToGulf a registered company?" data-ar="هل SourceToGulf شركة مسجّلة؟">Is SourceToGulf a registered company?</summary><p data-en="Yes. SourceToGulf is operated by 广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.), based in Guangzhou, China. Contact: info@sourcetogulf.com and WhatsApp +971 58 585 4194, Sunday to Thursday, Gulf time. Service terms, deposit policy and privacy notice are published on this site." data-ar="نعم. تدير SourceToGulf شركة 广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.) ومقرها قوانغتشو بالصين. التواصل: info@sourcetogulf.com وواتساب +971 58 585 4194، من الأحد إلى الخميس بتوقيت الخليج. شروط الخدمة وسياسة المبلغ وسياسة الخصوصية منشورة على هذا الموقع.">Yes. SourceToGulf is operated by 广州东达东供应链管理有限公司 (SourceToGulf Supply Chain Co., Ltd.), based in Guangzhou, China. Contact: info@sourcetogulf.com and WhatsApp +971 58 585 4194, Sunday to Thursday, Gulf time. Service terms, deposit policy and privacy notice are published on this site.</p></details>
+<details class="pb-faq-item"><summary data-en="How much does it cost to start sourcing with SourceToGulf?" data-ar="كم تكلفة بدء التوريد مع SourceToGulf؟">How much does it cost to start sourcing with SourceToGulf?</summary><p data-en="A fixed USD 125 (AED 459) intent deposit. There is no product price list on this site: after your request is reviewed you receive one landed quotation in AED covering product, inspection, packing, freight, duty and VAT." data-ar="مبلغ نية ثابت قدره 125 دولاراً (459 درهماً). لا توجد قائمة أسعار منتجات على هذا الموقع: بعد مراجعة طلبك تحصل على عرض تسليم واحد بالدرهم يشمل المنتج والفحص والتغليف والشحن والرسوم الجمركية وضريبة القيمة المضافة.">A fixed USD 125 (AED 459) intent deposit. There is no product price list on this site: after your request is reviewed you receive one landed quotation in AED covering product, inspection, packing, freight, duty and VAT.</p></details>
+<details class="pb-faq-item"><summary data-en="How is the USD 125 deposit used?" data-ar="كيف يُستخدم مبلغ الـ 125 دولاراً؟">How is the USD 125 deposit used?</summary><p data-en="The deposit is credited in full against your order value once you proceed. If no order is placed, it is billed as a sourcing service fee for the work performed. The full wording is in the deposit policy." data-ar="يُخصم المبلغ بالكامل من قيمة طلبك عند المضي قدماً. وإن لم يُنفَّذ طلب، يُحتسب رسوم خدمة توريد مقابل العمل المنجز. الصياغة الكاملة في سياسة المبلغ.">The deposit is credited in full against your order value once you proceed. If no order is placed, it is billed as a sourcing service fee for the work performed. The full wording is in the deposit policy.</p></details>
+<details class="pb-faq-item"><summary data-en="How long is a quotation valid, and what are the production payment terms?" data-ar="كم مدة صلاحية العرض، وما شروط دفع الإنتاج؟">How long is a quotation valid, and what are the production payment terms?</summary><p data-en="A quotation is valid for one week. Production starts after a 70% deposit, with the 30% balance due before shipment. Sample and design fees are credited to the first bulk order." data-ar="عرض السعر صالح لأسبوع واحد. يبدأ الإنتاج بعد دفعة 70%، ويستحق الرصيد 30% قبل الشحن. وتُخصم رسوم العينات والتصميم من أول طلب بالجملة.">A quotation is valid for one week. Production starts after a 70% deposit, with the 30% balance due before shipment. Sample and design fees are credited to the first bulk order.</p></details>
+<details class="pb-faq-item"><summary data-en="Who processes the payment, and is the checkout secure?" data-ar="مَن يعالج الدفع، وهل صفحة الدفع آمنة؟">Who processes the payment, and is the checkout secure?</summary><p data-en="Payments are handled by Ziina, licensed by the Central Bank of the UAE, on a hosted checkout page. This website never collects card details, no automatic charge is ever made, and a person reviews every deposit before sourcing work starts." data-ar="تُعالج المدفوعات عبر Ziina المرخّصة من مصرف الإمارات المركزي، على صفحة دفع مستضافة. هذا الموقع لا يجمع بيانات البطاقات أبداً، ولا يُخصم أي مبلغ تلقائياً، ويراجع شخصٌ كل مبلغ قبل بدء التوريد.">Payments are handled by Ziina, licensed by the Central Bank of the UAE, on a hosted checkout page. This website never collects card details, no automatic charge is ever made, and a person reviews every deposit before sourcing work starts.</p></details>
+<details class="pb-faq-item"><summary data-en="Which payment methods and currencies are accepted?" data-ar="ما وسائل الدفع والعملات المقبولة؟">Which payment methods and currencies are accepted?</summary><p data-en="Visa, Mastercard and AMEX cards, Apple Pay, Google Pay and Ziina wallet. Ten currencies are supported in a web browser: AED, USD, EUR, GBP, INR, SAR, QAR, BHD, KWD and OMR. The link is created in AED 459; non-AED payments carry an extra 1.5% conversion fee and SourceToGulf settles in AED. Opened inside the Ziina app, payment completes in AED only." data-ar="بطاقات Visa و Mastercard و AMEX، و Apple Pay و Google Pay ومحفظة Ziina. يدعم المتصفح 10 عملات: AED و USD و EUR و GBP و INR و SAR و QAR و BHD و KWD و OMR. تُنشأ الروابط بـ 459 درهماً، وتحمل المدفوعات غير الدرهم رسم تحويل إضافياً 1.5%، والتسوية بالدرهم. وإذا فُتح الرابط داخل تطبيق Ziina فالدفع بالدرهم فقط.">Visa, Mastercard and AMEX cards, Apple Pay, Google Pay and Ziina wallet. Ten currencies are supported in a web browser: AED, USD, EUR, GBP, INR, SAR, QAR, BHD, KWD and OMR. The link is created in AED 459; non-AED payments carry an extra 1.5% conversion fee and SourceToGulf settles in AED. Opened inside the Ziina app, payment completes in AED only.</p></details>
+<details class="pb-faq-item"><summary data-en="Can I buy products directly from this website?" data-ar="هل يمكنني شراء منتجات مباشرة من هذا الموقع؟">Can I buy products directly from this website?</summary><p data-en="No. SourceToGulf is a sourcing agent, not a retailer. We hold no inventory and publish no purchasable SKUs — the 150 products shown are capability samples illustrating categories, MOQ ranges and price bands. Send a photo or a product link and we source it for you." data-ar="لا. SourceToGulf وكيل توريد وليس متجراً. لا نمتلك مخزوناً ولا ننشر منتجات قابلة للشراء — المنتجات الـ 150 المعروضة عيّنات قدرات توضّح الفئات وحدود الكميات ونطاقات الأسعار. أرسل صورة أو رابط منتج ونتولّى توريده.">No. SourceToGulf is a sourcing agent, not a retailer. We hold no inventory and publish no purchasable SKUs — the 150 products shown are capability samples illustrating categories, MOQ ranges and price bands. Send a photo or a product link and we source it for you.</p></details>
+<details class="pb-faq-item"><summary data-en="What will SourceToGulf not source?" data-ar="ما الذي لا تتولّاه SourceToGulf؟">What will SourceToGulf not source?</summary><p data-en="Counterfeit or IP-infringing brand goods, illegal or restricted items, hazardous goods such as aerosols (UN1950), categories requiring mandatory certification without a viable compliance path, single-parcel dropshipping to end customers across the GCC, and one-piece custom printing. Private-label runs require MOQ." data-ar="البضائع المقلّدة أو المعتدية على الملكية الفكرية، والمواد غير القانونية أو المحظورة، والمواد الخطرة مثل العبوات الهوائية (UN1950)، والفئات التي تتطلب شهادات إلزامية دون مسار امتثال متاح، والشحن المفرد مباشرة إلى المستهلكين في دول الخليج، والطباعة المخصّصة لقطعة واحدة. وتتطلب دفعات العلامة الخاصة حداً أدنى للكمية.">Counterfeit or IP-infringing brand goods, illegal or restricted items, hazardous goods such as aerosols (UN1950), categories requiring mandatory certification without a viable compliance path, single-parcel dropshipping to end customers across the GCC, and one-piece custom printing. Private-label runs require MOQ.</p></details>
+<details class="pb-faq-item"><summary data-en="Who runs SourceToGulf?" data-ar="مَن يدير SourceToGulf؟">Who runs SourceToGulf?</summary><p data-en="Founder Robin Gu has 14 years of residence and work in Dubai. Two partners cover the manufacturing lineage and the Hong Kong supply line. The team works the Guangzhou, Yiwu and Foshan wholesale markets in person and handles 3,000+ orders a month." data-ar="المؤسِّسة روبن قو لديها 14 عاماً من الإقامة والعمل في دبي. ويتولّى شريكان خط التصنيع وخط التوريد في هونغ كونغ. يعمل الفريق ميدانياً في أسواق قوانغتشو وييوو وفوشان بالجملة، وينفّذ أكثر من 3,000 طلب شهرياً.">Founder Robin Gu has 14 years of residence and work in Dubai. Two partners cover the manufacturing lineage and the Hong Kong supply line. The team works the Guangzhou, Yiwu and Foshan wholesale markets in person and handles 3,000+ orders a month.</p></details>
+</section>
+
+<p class="pb-verified">Facts on this page last verified 06 Nov 2026 · <a href="/llms.txt">Machine-readable site summary</a> · <a href="/order-intent.json">AI sourcing contract</a></p>
 </main>
 
 <div class="pb-footbar">
