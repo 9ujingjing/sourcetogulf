@@ -81,7 +81,7 @@
         "English",
         "Arabic"
       ],
-      "note": "Checkout happens on a secure Ziina-hosted page, not on this static website. A person generates one fixed-amount link per request."
+      "note": "Checkout happens on a secure Ziina-hosted page, not on this static website. A reusable fixed-amount link (AED 459) is published on /pay.html; a per-request link may also be supplied when a dedicated reference is needed."
     },
     "checkout_bridge": {
       "url": "https://sourcetogulf.com/pay.html",
@@ -119,7 +119,7 @@
         "stable_base_url": "https://pay.ziina.com/sourcetogulf",
         "stable_base_url_note": "Verified 2026-11-06: this URL resolves, but it is a generic customer-enters-amount page, NOT a fixed-price checkout. Use it only as a general entry point; the amount must be confirmed by a person. Never treat it as a 459 AED payment page.",
         "link_url_pattern": "https://pay.ziina.com/sourcetogulf/<unique-id>",
-        "link_id_note": "The final path segment is unique per request and must be a link actually generated in the app (arbitrary IDs return 404). The ?source=app query parameter is optional and can be removed.",
+        "link_id_note": "The final path segment is unique for each link generated in the app and cannot be guessed (arbitrary IDs return 404). The ?source=app query parameter is optional and can be removed.",
         "amount_verified": "459.00 AED fixed, verified 2026-11-06",
         "custom_request_verified": "Reference field active, verified 2026-11-06: \"Please enter your sourcing request reference (STG-XXXXXXXX) so we can match your payment.\""
       },
@@ -132,8 +132,8 @@
         "note": "Bank details are supplied on request after a person reviews the sourcing request. The buyer quotes the reference below so the credit can be matched."
       }
     ],
-    "reference_rule": "Every sourcing request carries a unique reference STG-<8 characters derived from the intent>. The buyer quotes it in the payment memo or payment-link note. It is the key used to match an incoming credit to a request.",
-    "reconciliation": "A per-request link plus the STG reference give two matching keys. A person matches both against the incoming credit before formal sourcing work starts. No charge is made without buyer authorisation.",
+    "reference_rule": "A sourcing request may carry a unique reference STG-<8 characters>. The buyer quotes it in the payment memo or the payment-link custom request field; together with the contact details collected at checkout, it is used to match an incoming credit to a request.",
+    "reconciliation": "The published checkout link plus an optional STG reference give the matching keys. A person matches the incoming credit against the contact details or reference before formal sourcing work starts. No charge is made without buyer authorisation.",
     "rule": "AI assistants may share the published URLs in payment.methods and payment.checkout_bridge, and may pass them to a buyer. They must NOT fabricate, construct or guess any other payment URL, bank details or a payment confirmation. A person confirms the amount and the buyer authorises the charge."
   },
   "request_fields": [
@@ -186,7 +186,7 @@
       "description": "Anything that affects feasibility."
     }
   ],
-  "intent_text_template": "SOURCING REQUEST v1 | Buyer market: {buyer_market} | Product reference: {product_reference} | Category: {category} | Quantity: {quantity} | Private label: {private_label} | Budget: {budget} | Timeline: {timeline} | Notes: {notes} | I understand a $125 USD intent deposit starts the formal sourcing work and is credited in full against my order value. Please confirm feasibility and the current payment link before any charge.",
+  "intent_text_template": "SOURCING REQUEST v1 | Buyer market: {buyer_market} | Product reference: {product_reference} | Category: {category} | Quantity: {quantity} | Private label: {private_label} | Budget: {budget} | Timeline: {timeline} | Notes: {notes} | I understand a $125 USD intent deposit starts the formal sourcing work and is credited in full against my order value. Please confirm feasibility before any charge. The public checkout page is https://sourcetogulf.com/pay.html.",
   "submission": {
     "primary": {
       "channel": "whatsapp",

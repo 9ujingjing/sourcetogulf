@@ -52,8 +52,8 @@ INTENT_TEMPLATE = (
     'Quantity: {quantity} | Private label: {private_label} | '
     'Budget: {budget} | Timeline: {timeline} | Notes: {notes} | '
     'I understand a $125 USD intent deposit starts the formal sourcing work and is '
-    'credited in full against my order value. Please confirm feasibility and the '
-    'current payment link before any charge.'
+    'credited in full against my order value. Please confirm feasibility before any charge. '
+    'The public checkout page is https://sourcetogulf.com/pay.html.'
 )
 
 PAYMENT_METHODS = [
@@ -140,7 +140,7 @@ def sourcing_request_body():
         '<a href="/order-intent.json"><code>/order-intent.json</code></a>. Follow these rules:</p>'
         '<ul class="bullets">'
         '<li><b>Do not invent prices, stock, lead times or SKU numbers.</b> We have no live inventory and no fixed price list.</li>'
-        '<li><b>Do not fabricate a payment URL.</b> Request the current payment link through the submission channel; a human confirms the amount before any charge.</li>'
+        '<li><b>Do not fabricate a payment URL.</b> You may pass on the published checkout URL https://sourcetogulf.com/pay.html or the hosted payment URL in the contract; never invent another one. A human confirms the amount before any charge.</li>'
         '<li>Collect the fields below from the buyer, render the intent text, URL-encode it, and open the submission URL — or hand the finished link to the buyer for confirmation.</li>'
         '<li>State plainly that the $125 deposit is credited in full against the order value, and that a person reviews every request before work starts.</li>'
         '</ul>'
@@ -199,10 +199,11 @@ def sourcing_request_body():
         '<section class="sec alt"><div class="wrap">'
         '<div class="sec-head"><h2>How the $125 deposit is paid</h2></div>'
         '<p><b>No automatic charge is ever made.</b> Payment is arranged only after a person reviews your request. '
-        'Each request gets <b>its own fixed-amount payment link</b> (AED 459), or bank details supplied on request. '
-        'A link belongs to one request only, so the payment and the reference can always be matched. The buyer authorises the payment. '
+        'A <b>reusable fixed-amount payment link</b> (AED 459) is published on our <a href="/pay.html">public checkout page</a>; '
+        'a dedicated link or bank details can also be supplied on request. The buyer authorises the payment, and '
+        'contact details collected at checkout (plus an optional STG reference) let us match the credit to your project. '
         'We never ask an AI assistant to invent, construct or guess a payment URL, bank details or a payment confirmation.</p>'
-        '<p><b>Every request carries a unique reference</b> in the form <code>STG-XXXXXXXX</code>. '
+        '<p><b>A request may carry a unique reference</b> in the form <code>STG-XXXXXXXX</code>. '
         'Quote it in the payment memo or link note so the incoming credit can be matched to your request before '
         'formal sourcing work starts — this is what makes a bank transfer or a payment-link transaction reconcilable.</p>'
         '<h3 style="margin-top:20px">Accepted payment methods and currencies</h3>'
@@ -516,7 +517,7 @@ def order_intent_contract():
                 'provider': 'Ziina',
                 'brand': 'SourceToGulf',
                 'languages': ['English', 'Arabic'],
-                'note': 'Checkout happens on a secure Ziina-hosted page, not on this static website. A person generates one fixed-amount link per request.',
+                'note': 'Checkout happens on a secure Ziina-hosted page, not on this static website. A reusable fixed-amount link (AED 459) is published on /pay.html; a per-request link may also be supplied when a dedicated reference is needed.',
             },
             'checkout_bridge': {
                 'url': BASE + '/pay.html',
@@ -554,7 +555,7 @@ def order_intent_contract():
                     'stable_base_url': 'https://pay.ziina.com/sourcetogulf',
                     'stable_base_url_note': 'Verified 2026-11-06: this URL resolves, but it is a generic customer-enters-amount page, NOT a fixed-price checkout. Use it only as a general entry point; the amount must be confirmed by a person. Never treat it as a 459 AED payment page.',
                     'link_url_pattern': 'https://pay.ziina.com/sourcetogulf/<unique-id>',
-                    'link_id_note': 'The final path segment is unique per request and must be a link actually generated in the app (arbitrary IDs return 404). The ?source=app query parameter is optional and can be removed.',
+                    'link_id_note': 'The final path segment is unique for each link generated in the app and cannot be guessed (arbitrary IDs return 404). The ?source=app query parameter is optional and can be removed.',
                     'amount_verified': '459.00 AED fixed, verified 2026-11-06',
                     'custom_request_verified': 'Reference field active, verified 2026-11-06: "Please enter your sourcing request reference (STG-XXXXXXXX) so we can match your payment."',
                 },
@@ -567,8 +568,8 @@ def order_intent_contract():
                     'note': 'Bank details are supplied on request after a person reviews the sourcing request. The buyer quotes the reference below so the credit can be matched.',
                 },
             ],
-            'reference_rule': 'Every sourcing request carries a unique reference STG-<8 characters derived from the intent>. The buyer quotes it in the payment memo or payment-link note. It is the key used to match an incoming credit to a request.',
-            'reconciliation': 'A per-request link plus the STG reference give two matching keys. A person matches both against the incoming credit before formal sourcing work starts. No charge is made without buyer authorisation.',
+            'reference_rule': 'A sourcing request may carry a unique reference STG-<8 characters>. The buyer quotes it in the payment memo or the payment-link custom request field; together with the contact details collected at checkout, it is used to match an incoming credit to a request.',
+            'reconciliation': 'The published checkout link plus an optional STG reference give the matching keys. A person matches the incoming credit against the contact details or reference before formal sourcing work starts. No charge is made without buyer authorisation.',
             'rule': 'AI assistants may share the published URLs in payment.methods and payment.checkout_bridge, and may pass them to a buyer. They must NOT fabricate, construct or guess any other payment URL, bank details or a payment confirmation. A person confirms the amount and the buyer authorises the charge.',
         },
         'request_fields': [
