@@ -13,6 +13,13 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# 用户或 AI 代理实时打开页面（下单前核对价格/规格）
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
