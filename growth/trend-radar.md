@@ -253,3 +253,102 @@ SEMRush / Ahrefs 只在某个词被搜了**几周之后**才抓到它。对突�
 **本周踩词建议（挑 1–2 写）**：
 1. **TikTok Shop MENA 纠偏 →「无店铺也能卖海湾流量」**（10/26 最新鲜 + 纠正站内旧认知 + 契合定制包装/寄样/内容合规 + 网红人设）→ 优先级最高，且应回头修订站内旧文（§5/§6/§7 相关段落）避免误导。
 2. **Ramadan 2027 × 春节重叠备货**（11 月是最后窗口、占年收入 30–45%、完美契合寄样+小批量+定制包装+斋月选品）→ 时效次优先、体量最大；SASO 3114 与运费回落可作高差异化 backup（竞品极少写「11/1 ICT 合规发货清单」「运费回落期如何锁价」）。
+
+---
+
+## §9 · 2026-11-09（周一，自动化 WebSearch 生成）
+
+> 本轮实抓 6 组信号源：SABER/SASO 新规（山东商务厅、cert-group、icertifi）、UAE 12位HS+GCC-China FTA（landedfees、sourcesquid、vantageforwarding、samvertex）、TikTok Shop MENA 现状（dpl.company、samvertex、hairongalloy 纠偏）、热卖品类（10100、外贸日报、fob6、3835）、Ramadan 2027（salla、ecomdymedia、soulaimene、datalatte）、中国→海湾运费（维运网、搜运费、dtfulogistics、mid-trans）。
+
+### 一、本周热度信号（按新鲜度+多源验证排序）
+
+1. **【最新鲜·11/6 报道】SASO 2892:2025 冰箱/冷柜能效新标准上线** — SASO 于 2026/11/5 启用新版能效认证系统并开放标签升级门户；2027/8/21 起停发旧版（2018）能效证与 SABER 证，2027/11/19 旧证一律注销，2027/11/21 海关+本地工厂执法，不合规无法清关。适用范围扩至 10–1500L，新增 16℃/32℃ 双温测试取均值、A–G 七级标签、新能效指数限值。**多源（山东商务厅）**，且是具体可执行的品类合规变更 → 强 How-to 信号。
+2. **【已生效·11/1】SASO 3114:2026 ICT 设备强制** — 11/1 起 SABER 只接受新标，旧 GEN-002 证书 2027/3/31 全面失效（手机/平板/路由器/CPE/ONT/蜂窝IoT）。与 §8 同源但节点已越过，进入「换证窗口期」叙事。
+3. **【纠偏·11/5】TikTok Shop 在 UAE/KSA 仍不可本地开店** — DPL（11/5 核验）与 SamVertex（11/5 修正旧文）双双确认 Seller Center 无 GCC 区域、无官宣上线日；品牌靠 creator→自建站/WhatsApp 成交。hairongalloy 的「5/23 美妆 OEM 招募」实为跨境 Global Selling 口径，非本地 checkout。持续纠偏信号（呼应 §8）。
+4. **【时效窗口·现在】Ramadan 2027 ≈ 2/8–3/8，与中国春节 ~2/6 几乎重叠** — Salla/Ecomdy/Soulaimene 一致给出 2/8 起、Eid ~3/9；CNY 工厂停工 2–3 周，意味着 **11 月–12 月是唯一安全下单窗口**。占品牌年收入 30%–45%，是 Q4 最大选题。
+5. **【运营合规·持续】UAE 12 位 HS 编码 Phase 3（2026/8 起）对全球进口强制** — 8 位码仍只限 GCC 内部流转；中国→UAE  mainland 进口须 12 位，否则退单/仓储费。与 GCC-China FTA 10/25 多哈会谈（仍「准备签署」、未落地，5% 关税不变）形成「短期照旧、长期可期」叙事。
+6. **【品类热度】美妆个护为海湾第一电商品类** — 2026 沙特美妆市场 ~$75 亿、清真+SPF50 防晒需求上行；家电（制冷/凉感）、母婴、宠物（+22%）、现代 modest fashion（斋月 Hijab +120%）持续热。TikTok/Noon 推「认证美妆」，GMPC/ISO 22716 + 阿语标签成门槛。
+
+### 二、候选 How-to 选题（5 个）
+
+1. **How to Re-Certify Your Refrigerators & Freezers for Saudi Before the 2027 SABER Energy-Label Cutoff**
+   - 为什么现在热：SASO 11/5 已上线新版能效系统，旧 2018 版标签/证书 2027/11 前将批量作废，制冷家电又是海湾刚需爆品。
+   - 一手角度：用站点「找货源 + SABER 代办 + 定制阿语标签 + 寄样实拍」能力，给小卖家一张发货前自查清单（确认型号是否 10–1500L 范围、旧证到期日、是否需按 16℃/32℃ 重测、A–G 新标 + MADE IN CHINA + 阿英双语），附「现在下单 vs 2027 卡关」时间线。
+   - 内链：`/category-tech.html` · `/blog/saber-2026-saudi-buyers-playbook.html` · `/shipping/china-to-saudi-arabia.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+2. **How to Lock Your Ramadan 2027 Gulf Supply Chain Before Chinese New Year Shuts China (low-MOQ + samples + custom packaging)**
+   - 为什么现在热：Ramadan 2027 约 2/8 启动而中国春节 ~2/6 工厂停工，两窗口重叠→11 月前不下单就错过占年收入 30–45% 的开斋节旺季。
+   - 一手角度：用站点「寄样 + 小批量(~48 units) + 定制包装 + 斋月选品」能力，给宝妈/小卖家一条倒排清单：11 月锁样→打样→小批量（家庭睡衣/现代 abaya/清真礼盒）→空/海发运→避开宗教符号红线，趁春节前出货。
+   - 内链：`/blog/small-batch-clothing-custom-china-gulf-2026.html` · `/category-fashion.html` · `/for-small-businesses.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+3. **How to Sell to Gulf TikTok Audiences Without a TikTok Shop (creator → WhatsApp funnel)**
+   - 为什么现在热：DPL/SamVertex 11/5 双双确认 UAE/KSA 本地 Seller Center 仍没开、App 内无 checkout，但 TikTok 是海湾最强种草场（Ramadan 内容 43% 用户首触、60% 看过即买）。
+   - 一手角度：用站点「定制阿语包装 + 寄样实拍 + 内容合规 + WhatsApp 成交」能力，教网红/小卖家把爆款流量导到 Amazon.ae/noon/自建站 + WhatsApp 闭环，附「无店铺也能卖」落地清单（样品图→落地页→COD/预付→清关 SABER）。
+   - 内链：`/blog/source-products-tiktok-shop-saudi-no-container.html` · `/for-influencers.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+4. **How to Switch Your China→UAE Shipments to 12-Digit HS Codes (before customs rejects your 8-digit invoice)**
+   - 为什么现在热：UAE Phase 3（2026/8）已对全球进口强制 12 位 HS 编码，8 位仅限 GCC 内部；大量中小卖家仍在用旧码，面临退单与仓储费。
+   - 一手角度：用站点「落地成本测算 + 先寄样后大货 + 低MOQ」能力，教小卖家把 12 位码写进发票模板（首 6 位 WCO + 7–8 GCC + 9–10 UAE + 11–12 细分），并用 ICP 中央关税门户/Al Munasiq 核验税率，避免清关延误。
+   - 内链：`/shipping/china-to-uae.html` · `/blog/landed-cost-china-to-gulf-explained.html` · `/solutions.html`
+
+5. **How to Build a Halal Private-Label Skincare Line for the Gulf From a China OEM (GMPC + SFDA/MOHAP + Arabic label)**
+   - 为什么现在热：美妆是个护第一海湾电商品类（2026 沙特 ~$75 亿），清真+SPF50 防晒需求上行，TikTok/Noon 推「认证美妆」但中国 OEM 卡在 GMPC/ISO 22716 与阿语标签。
+   - 一手角度：用站点「找 OEM + 定制包装 + 寄样合规 + 低MOQ」能力，给网红/小品牌一份从 0 到上架清单：选持 GMPC 厂→阿语+清真宣称标签→SFDA/MOHAP 通报→小批量试单→社媒内容合规（忌酒精/猪源）。
+   - 内链：`/category-beauty-toys.html` · `/blog/skincare-private-label-china-to-saudi-uae.html` · `/for-small-businesses.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+### 三、本周踩词建议（挑 1–2 写）
+
+1. **Ramadan 2027 × 春节重叠备货**（时间窗最紧、体量最大、完美契合寄样+小批量+定制包装+斋月选品）→ **优先级最高**，且应回望修订站内旧文避免「斋月海外仓」误导。
+2. **SASO 2892:2025 冰箱冷柜能效重认证**（11/6 最新鲜、多源、竞品极少写「2027 SABER 能效 cutoff 实操清单」）→ 次优先、差异化强。
+3. **TikTok Shop 纠偏→无店铺卖海湾流量**（11/5 持续纠偏 + 契合网红/WhatsApp 人设）→ 高优先 backup，且与 §8 形成系列。
+4. UAE 12 位 HS 与 清真私标美妆 作长尾高差异化 backup。
+
+---
+
+## §10 · 2026-11-16（周一，自动化 WebSearch 生成）
+
+> 本轮实抓 8 组信号源：SASO/SABER 11/8 管控清单扩容（jz-cert 捡证网）、SASO 3114:2026 ICT 11/1 换证（sabersaudi / hscodematch / 华宇检测）、UAE 清关新政 Notice 16/2026 AED 1,000 免税+60天退货（jeebly）+ Mirsal 2/12位HS（lxgjwl / globaltradeplaza / sourcesquid）、GCC-China FTA 10/25 多哈会谈（GCC 秘书处 / ksa.com / sourcesquid）、TikTok Shop MENA 现状与 Q1/2027 传沙特上线（middleeastecom / alxo / bxtdata）、白五 11/27+11/19 提报死线（husbar / 10100 / visitsaudia）、海湾热卖品类宠物降温与被低估品类（ggccbpc / accio-GoDaddy）、中国→海湾 11月现货运价+斋月海运死线（buzyb / souyunfei / cargixhub / 维运网）。
+
+### 一、本周热度信号（按新鲜度+多源验证排序）
+
+1. **【最新鲜·11/8 通知】SASO 更新 SABER 管控清单：低压电器 + 门窗配件 12 月上旬纳入新技术法规** — 11/8 发布、30 天内生效。部分低压电器从通用电气安全改按《GCC 低压电器技术法规》（IEC 60335/60947/60898 + 本地化电压/插头/阿语标识/高温降额），部分门窗及配件新纳入《门窗及配件技术法规》（型材壁厚/五金耐久/气密水密抗风压/玻璃隔热）。PCoC 路径变了，旧路径不可沿用，已签未发批次同样受影响。单源（捡证网）但可直接查 SASO 官方通知 → **本轮差异化最强的合规 How-to 信号**（§5–§9 写过冰箱能效 2892、ICT 3114，从未覆盖低压电器/门窗）。
+2. **【新规·11月】迪拜 Notice 16/2026：CIF ≤ AED 1,000 包裹关税归零、退货窗口延至 60 天** — VAT 5% 不变、12 位 HS 强制不变（8 月起），到港前申报 + 72h 改单免 500 迪拉姆罚款。仅迪拜口岸、其他酋长国未跟进；不可拆单规避。多源交叉（Jeebly 详述 + lxgjwl/globaltradeplaza 印证 12 位 HS 与 CIF 口径）→ 小包裹/低 MOQ 卖家的**落地成本重构**信号。
+3. **【持续纠偏·10/26 核验】TikTok Shop 在 KSA/UAE 仍无本地 checkout；Q1 2027 传沙特上线（Ebrun，未官宣）** — Seller Center 无 GCC 市场；黑五 TikTok Shop 大促仅美国。海湾品牌可用的只有 TopView/Pulse/Symphony 广告 + Spark Ads 导流自建站/WhatsApp。多源（middleeastecom / alxo / bxtdata）→ 与 §7–§9 同源，但本轮新增「抢在上线 week one 前把认证库存备进沙特」的窗口叙事。
+4. **【时间窗·进行中】白五 11/27 核心日，Amazon.sa 提报 11/19 截止，noon 5–13 已开跑，紧接着 12/2 UAE国庆** — 11.11 已过；促销窗口被拉长（noon 15 分钟达、Amazon Now 分级折扣）；11/19 提报死线 + 白五→国庆背靠背连促是本轮**最紧的作战窗口**。多源（husbar / bxtdata / 10100 / visitsaudia / alxo）。
+5. **【品类·新细分】宠物降温用品（除毛工具/凉感背心）与高温季家居小件被低估** — 海湾夏季长达半年、45℃ 高温，宠物护理毛利可达 70%+、复购 40%+；便携风扇/车载遮阳/冰垫/大容量水杯常年刚需。多源（ggccbpc / accio 引 GoDaddy 2026 趋势）。可避开已写烂的美妆/modest fashion。
+6. **【物流·现货】中国→吉达 40HQ ~$8,000–8,400、义乌→迪拜拼箱 $46/CBM；红海绕行门到门 45–50 天；斋月海运死线 12/6–12/11** — 11 月运价较 Q3 风暴回落但含战争附加费；要在斋月（~2/8）前两周上架，海运须 12 月上旬离厂。多源（buzyb / souyunfei / 维运网 / cargixhub）。Ramadan×春节选题 §9 已写，本期只作时点提醒。
+7. **【运营·全新】AI 购物入口要求结构化商品主数据（售价/促销有效期/可售状态/送达范围/退换边界）** — 11 月多平台开放商品资料提交口，"写发货很快"不被采信，要写可配送地区/处理时长/送达区间。单源（tkzengzhanghui）但契合本站点 GEO+结构化事实优势，差异化高、热度体量待观察。
+
+### 二、候选 How-to 选题（5 个）
+
+1. **How to Re-Certify Low-Voltage Appliances, Doors & Windows Before SABER's December 2026 Scope Expansion Rejects Your SC**
+   - 为什么现在热：SASO 11/8 通知、30 天内（12 月上旬）低压电器与门窗配件改走新 GC 技术法规，旧 PCoC 路径失效、已签未发批次同样卡关。
+   - 一手角度：用站点「找源头厂 + 验厂核对标准 + 定制阿语/英文标识 + 寄样实测」能力，给小家电/家居卖家一张发货前自查清单（是否命中 IEC 60335/60947/60898 范围、插头与电压本地化、阿语标识、高温降额、门窗性能分级），附「旧证 vs 新规」对照与 12 月时间表。
+   - 内链：`/category-home.html` · `/category-tech.html` · `/blog/saber-2026-saudi-buyers-playbook.html` · `/services/quality-inspection-china.html` · `/shipping/china-to-saudi-arabia.html`
+
+2. **How to Keep Small UAE Parcels Duty-Free Under the New AED 1,000 Rule (and Use the 60-Day Returns Window)**
+   - 为什么现在热：迪拜 Notice 16/2026 把 CIF ≤ AED 1,000 电商包裹关税降到 0、退货窗口延到 60 天，但 VAT 5% 与 12 位 HS 强制不变，多数卖家还在用旧落地价表。
+   - 一手角度：用站点「落地成本测算 + 先寄样后大货 + 低 MOQ (~48) + 定制包装」能力，教小卖家重算报价模型（按 CIF 而非货值、AED 1,000 临界点、拆单风险）、改发票与结账页关税话术、把退货期对齐 60 天；点明仅限迪拜口岸。
+   - 内链：`/shipping/china-to-uae.html` · `/gulf-landed-cost-calculator.html` · `/blog/landed-cost-china-to-gulf-explained.html` · `/gcc-tariff-vat-reference.html` · `/for-small-businesses.html`
+
+3. **How to Source & Private-Label Pet Cooling Gear for the Gulf's 45℃ Summer (low-MOQ test run)**
+   - 为什么现在热：海湾半年高温，宠物降温（凉感背心/除毛工具/冰垫）毛利 70%+、复购 40%+，是比美妆/modest fashion 更少人写的被低估品类。
+   - 一手角度：用站点「找源头厂 + 定制包装 + 寄样实测 + 低 MOQ 试单」能力，给小卖家/宝妈一条选品→打样→高温实测（面料凉感/洗后不变形）→阿英双语标签→小批量试销的清单，附避坑（尺码退货、液体/凝胶类清关）。
+   - 内链：`/category-home.html` · `/category-beauty-toys.html` · `/services/product-sourcing-china.html` · `/services/custom-branding-packaging.html` · `/for-moms.html`
+
+4. **How to Stock Back-to-Back for White Friday (Nov 27) and UAE National Day (Dec 2) Without Overbuying**
+   - 为什么现在热：白五 11/27 提报 11/19 截止、noon 已开跑，紧接 12/2 国庆，两个大促背靠背；同时斋月海运死线 12/6–12/11 逼近。
+   - 一手角度：用站点「低 MOQ + 快寄样 + 小批量补货 + 定制礼盒包装」能力，给小卖家一条「白五测款→国庆加单→斋月预留产能」三段排期（砍规格不砍时间），配一份 11/19、12/6、12/11 倒排日历与空/海运切换点。
+   - 内链：`/blog/white-friday-2026-china-gulf-small-business.html` · `/blog/ramadan-2027-china-sourcing-calendar.html` · `/services/consolidation-shipping-china-gulf.html` · `/for-resellers.html` · `/solutions.html`
+
+5. **How to Build One Product-Data Sheet That Feeds Gulf Marketplaces, AI Shopping Agents and Your Arabic Listing**
+   - 为什么现在热：11 月 AI 购物/导购入口向商家开放商品资料提交，平台只采信可核验事实（售价与促销期、可售/补货状态、送达区间、退换边界），模糊文案被降权。
+   - 一手角度：用站点「一手规格/落地价事实表 + 阿英双语标签 + 寄样实拍」能力，教小卖家建一份唯一主数据底表，一份同步给 noon/Amazon.ae、AI 入口、客服与达人；呼应站点 FAQPage/llms.txt 的 GEO 打法，抢 AI 引用。
+   - 内链：`/blog/gulf-trends-2026-china-sourcing.html` · `/blog/sourcing-for-livestream-sellers-gulf.html` · `/for-influencers.html` · `/services/custom-branding-packaging.html` · `/solutions.html`
+
+### 三、本周踩词建议（挑 1–2 写）
+
+1. **SASO 低压电器+门窗 12 月 SABER 扩容**（11/8 最新鲜、竞品几乎无人写「12 月新规发货前自查清单」、契合验厂/阿语标识/寄样）→ **优先级最高**。
+2. **UAE AED 1,000 免税 + 60 天退货新政**（11 月新规、直接改小卖家落地价模型、完美契合低 MOQ）→ **次优先**。
+3. **白五→国庆背靠背备货**（11/19 提报死线最紧、12/6 斋月海运死线接踵）→ 高优先 backup，注意与 §6/§7 白五旧文做时间线区分。
+4. 宠物降温与 AI 商品主数据表作长尾差异化 backup（热度体量待多源确认）。

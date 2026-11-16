@@ -44,6 +44,23 @@
 - **合规**：客户匿名、无品牌词、无 superlative、工厂全程匿名、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
 - **回传缺口**：自 09-28 起无新回传，基线仍 FB440/IG344/LinkedIn15
 
+## 2026-11-11 (Wed, Gulf working day)
+- **产出**：social-calendar/2026-11-11.md（三平台全发 + 拍摄清单 + 达标线）
+- **判断**：周三=海湾工作日，FB/IG 必发、LinkedIn 隔天照发；非轻量日
+- **垂直轮换**：电竞 & sim-racing 配件 / gaming accessories（依据 zyvo-gaming-store.md + madani-simracing.md 双真实匿名案例：Oman 1-pc MOQ 测款+鼠标垫缺口、Qatar 7-pc sim-racing QAR 报价）—— 避开最近 3 个的 珠宝/包装/运动服
+- **钩子**：产业带地图（"most Gulf gaming gear is born in a few southern-China clusters"）—— 避开已用 价格反差/信息差/MOQ破除
+- **合规**：客户匿名、无品牌词（已剔除 MOZA 等）、无 superlative、工厂全程匿名、仿牌红线规避；CTA=WhatsApp +971 58 585 4194
+- **回传缺口**：自 09-28 起无新回传，基线仍 FB440/IG344/LinkedIn15
+
+## 2026-11-16 (Mon, Gulf working day)
+- **产出**：social-calendar/2026-11-16.md（三平台全发 + 拍摄清单 + 达标线）
+- **判断**：周一=海湾工作日，FB/IG 必发、LinkedIn 隔天照发（上次帖 11-11，间隔 5 天）；非轻量日
+- **垂直轮换**：美妆 / private-label cosmetics（日历库首用，依据 assets/sourcetogulf-content-assets-10.md 素材05 真实匿名沙特美妆创业询盘：贴牌 vs 定制包装 vs 自研配方三种起步模式）—— 避开最近 3 个的 电竞/珠宝/包装
+- **钩子**：反问挑战（"Name one thing a Gulf beauty brand CAN'T source from China"）—— 上次用为 10-09，非连续重复；LinkedIn 叠加信息差（MOQ 真相）
+- **合规**：客户匿名（a Jeddah beauty startup）、无品牌名、无 superlative、工厂匿名、仿牌话题转合规三模式、报价只用区间（hundreds/SKU、2–4 months）；CTA=WhatsApp +971 58 585 4194
+- **自检**：LinkedIn 176 词（120–180 内）；品牌词/superlative 仅出现在红线提示行，正文无；WA 号出现 5 处一致
+- **回传缺口**：自 09-28 起无新回传，基线仍 FB440/IG344/LinkedIn15
+
 ## 2026-10-27 (Tue, Gulf working day)
 - **产出**：social-calendar/2026-10-27.md（三平台全发 + 拍摄清单 + 达标线）
 - **判断**：周二=海湾工作日，按规则 FB/IG 必发、LinkedIn 隔天照发；非轻量日

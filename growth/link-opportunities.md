@@ -118,3 +118,34 @@
 - 竞品供应商博客（承接 2026-08-31 清单并新增）：Epic Sourcing、LooperBuy、Gerudo Logistics、UPPERSETUP、Estrel、Tendify、TradeHao、Haqipah —— 供应商/代理自运营内容站，非独立媒体。排除。
 - 网红档案 / 消费类美容博客（WhoTag、Refinery29 存档、Huda Beauty 等）—— 非 B2B 外链目标。排除。
 - Mondaq —— 合法专业/法律内容网络，但偏律所供稿；列为「监控」而非主外联目标，不计入客座文机会。
+
+---
+
+## 2026-11-16 — Weekly discovery (automation run)
+
+搜索词：5 个指定词（Gulf beauty private label guest post contributor / Saudi sourcing agent expert quote journalist / UAE ecommerce China sourcing write for us / Middle East cosmetics blog contribute expert / GCC SME import from China guest article）+ 3 个验证词（The Beauty Insider contribute editor、BeautyMatter contribute pitch editor、Middle East business podcast guest China sourcing SME）。
+
+> 本次新增 **2 个真实编辑型媒体**（均不在 08-31 / 10-12 清单内）。质量铁律照旧：付费写手农场、竞品供应商博客一律不收（见下方排除清单）。
+
+### 1. BeautyMatter
+- **Domain:** beautymatter.com
+- **Type:** 全球头部 B2B 美妆商业媒体（2016 年创立，NY），设公开 Contributor / Pitching 通道
+- **Why relevant:** About/Contributors 页明文写 "always looking to complement our editorial effort with contributors around the globe"，接受 story pitch / 新闻线索，明确投稿邮箱。已发布《Middle East Beauty Market Report》（与 Messe Frankfurt 合作），覆盖 fragrance、法规、C-Beauty、私标、零售买家——与 SourceToGulf 的 home-fragrance / 私标 / 中国→海湾 sourcing 高度契合。高权威、高契合。
+- **Pitch angle:** 署名分析/POV —《How Gulf beauty brands are building private-label fragrance lines from Chinese factories: MOQ, halal/SABER & Gulf-climate packaging》或 C-Beauty → GCC 渠道稿。以专家供稿而非广告。
+- **Contact clue:** pitch@beautymatter.com / editorial@beautymatter.com；editorial open house 每年办（编辑团队 LinkedIn 活跃）；署名编辑如 Kacey Culliney（Fragrance/Regulation 线，LinkedIn 可搜），创始人/CEO Lisa Guerrera。
+- **Next action:** 向 editorial@beautymatter.com 发 1 段式 pitch（附 2–3 句 Gulf 私标香水数据角度）；LinkedIn 连接 fragrance 编辑 Kacey Culliney。
+
+### 2. The Beauty Insider
+- **Domain:** thebeautyinsider.eu
+- **Type:** 专注欧洲 + 中东的 B2B 美妆采编媒体（自有域名 2026-07 上线，media partner of Beautyworld Middle East）
+- **Why relevant:** 读者明确为 EU/GCC 的 brand founders、buyers、distributors、investors、regulatory leads；五个编辑栏目含 Trend Watch（展会/市场）、The Fine Print（法规）、Money Moves（交易）；封面专访过 Gulf 奢侈香水 Ajmal Perfumes，并常驻 Beautyworld Dubai 采访席。典型的「编辑约访专家/创始人」型机会，非反链站。
+- **Pitch angle:** 争取 "In the Spotlight" 创始人/ sourcing 专家访谈，或一篇 Trend Watch —《What Beautyworld Dubai 2026 revealed about Gulf private-label fragrance sourcing from Asia》。
+- **Contact clue:** 主编/创办人 Anna Grinsvall（LinkedIn: linkedin.com/in/annagrinsvall，站点与 Linguabeauty.com 关联）；站点 media-kit 页可查联系表单。
+- **Next action:** LinkedIn 联系 Anna Grinsvall，自荐为 Gulf 私标 sourcing 的 on-record 受访者/供稿人，附 2 句角度摘要。
+
+### 备注 — 本次刻意排除（质量铁律）
+- 付费写手/反链农场：khaleejweekly.com（"pricing and payment details come in our email reply" = 买卖链接）、thearabianpost.com（明写 "SEO Backlinks: Get a do-follow backlink"）、alakhbarpublication.qa（卖 guest article 的商业平台）。排除。
+- 竞品供应商/代理博客：LooperBuy、Epic Sourcing、Sourcing Ally、FBM Sourcing、Yeatru、ForeignGo、Cambridge China Bridge、ZM Beauty、thebeautyinsiders.com（美国达人评测网，与中东无关）。排除。
+- 消费类美容大刊/网红榜（Huda Beauty、Mediasource 的 Top 10 blog 榜）：非 B2B 外链目标；维护「监控 + 创始人 earned PR」待办，不计入。
+- 中文出海媒体/播客（掘金中东、全球增长局、投资中东、EqualOcean 等）：主题相关但语言/受众为中文出海卖家，非 sourcetogulf 英文/阿语 GEO 目标受众，暂不计入外联清单（可留作未来中文渠道备选）。
+- 通用海湾资讯站 gulfemirates.ae：无明确投稿/专家通道，暂不收。

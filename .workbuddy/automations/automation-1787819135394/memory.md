@@ -23,3 +23,11 @@
   5. The Procurement Ledger (theprocurementledger.com) — niche procurement leadership interviews; sourcing Q&A.
 - Excluded: beauty "write for us" backlink farms (Platinum Deluxe, Happygloss, Beauty Fashion Club), PR-wire portals (Dubai Beauty Spot), competitor vendor blogs (Epic Sourcing, LooperBuy, Gerudo, UPPERSETUP, Estrel, Tendify, TradeHao, Haqipah), influencer/consumer blogs, and Mondaq (monitor-only).
 - Quality rule upheld. Next: draft op-ed pitches for Forbes ME + Entrepreneur ME (highest authority, SME-fit).
+
+## 2026-11-16 (third run)
+- Ran 8 WebSearch queries (5 specified + 3 verification/extension).
+- Appended a dated 2026-11-16 section to growth/link-opportunities.md with 2 NEW genuine editorial opportunities (no overlap with prior 11):
+  1. BeautyMatter (beautymatter.com) — public contributor/pitch channel, pitch@ & editorial@beautymatter.com; strong GCC beauty/private-label fit; fragrance editor Kacey Culliney contact clue.
+  2. The Beauty Insider (thebeautyinsider.eu) — EU+Gulf B2B beauty title, Beautyworld ME media partner; pitch founder/source interview; editor Anna Grinsvall (LinkedIn).
+- Excluded: paid guest/backlink mills (khaleejweekly, thearabianpost, alakhbarpublication.qa), competitor sourcing-agent blogs (LooperBuy, Epic Sourcing, ForeignGo, Yeatru, FBM, ZM Beauty, etc.), consumer beauty/influencer blogs, Chinese-language outbound media & podcasts (wrong audience), generic UAE info site.
+- Quality rule upheld. Next: draft pitches for BeautyMatter (explicit pitch inbox = fastest win) and The Beauty Insider (LinkedIn intro to editor).
