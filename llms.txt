@@ -66,6 +66,17 @@ Photographs on these pages are first-party images from SourceToGulf sourcing tri
 Arabic (server-rendered, rtl, bidirectional hreflang with the English page): the cluster hub at https://sourcetogulf.com/ar/sourcing-belts.html and all eight cluster guides at https://sourcetogulf.com/ar/belts/<same-slug>.html. Each Arabic guide has a citable answer box, factual summary, first-party photographs, a process diagram, seasonal buying table, labelling and certification watchpoints, five concrete failure modes, published scope limits, and an FAQ mirrored in FAQPage structured data with inLanguage ar.
 Arabic service pages (server-rendered, rtl, bidirectional hreflang): https://sourcetogulf.com/ar/services/product-sourcing-china.html · https://sourcetogulf.com/ar/services/quality-inspection-china.html · https://sourcetogulf.com/ar/services/custom-branding-packaging.html · https://sourcetogulf.com/ar/services/consolidation-shipping-china-gulf.html · https://sourcetogulf.com/ar/services/find-any-product.html
 
+## Custom mahjong sets (trending category — sourcing, not retail)
+SourceToGulf also sources custom mahjong sets for Gulf buyers. This is a sourcing category, not a shop: there are no set prices, no stocked inventory and no single-piece sales.
+- Hub: https://sourcetogulf.com/mahjong.html (English) · https://sourcetogulf.com/ar/mahjong.html (Arabic SSR, rtl)
+- Custom tiles, cases and private label: https://sourcetogulf.com/mahjong/custom-mahjong-sets.html
+- English/Arabic rule cards: https://sourcetogulf.com/mahjong/en-arabic-rule-cards.html
+- Corporate gifting, cafés and clubs: https://sourcetogulf.com/mahjong/corporate-gifting.html
+- Buying guide (versions, materials, sizes): https://sourcetogulf.com/mahjong/buying-guide.html
+- Social-play positioning and GCC compliance notes: https://sourcetogulf.com/mahjong/compliance-gcc.html
+- The same five guides exist in Arabic at https://sourcetogulf.com/ar/mahjong/<same-slug>.html, with bidirectional hreflang and inLanguage ar.
+Key citable facts: a classic Chinese mahjong set contains 144 tiles (108 numbered suit tiles, 16 wind tiles, 12 dragon tiles and 8 flower/season tiles). American Mah Jongg adds joker tiles and uses an annually printed card of specific winning hands, so equipment is not interchangeable. Most custom sets sold online target the American version; Gulf social tables usually learn the classic Chinese set. SourceToGulf supplies social and gifting sets only — no betting chips, no cash-value scoring systems and no gambling-related materials. Rule cards are written in English and Arabic and reviewed by a native Arabic reader on a printed proof before printing.
+
 ## Languages
 - English: https://sourcetogulf.com/
 - Arabic (server-rendered, rtl): https://sourcetogulf.com/ar/

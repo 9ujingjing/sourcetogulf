@@ -74,6 +74,13 @@ INCLUDE = [
     "belts/foshan-furniture.html",
     "belts/zhongshan-lighting.html",
     "belts/shenzhen-electronics.html",
+    # 麻将定制内容簇（2026-11-16；sourcing 语义，不报价）
+    "mahjong.html",
+    "mahjong/custom-mahjong-sets.html",
+    "mahjong/en-arabic-rule-cards.html",
+    "mahjong/corporate-gifting.html",
+    "mahjong/buying-guide.html",
+    "mahjong/compliance-gcc.html",
     # 核心页
     "products.html",
     "solutions.html",

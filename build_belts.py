@@ -286,6 +286,19 @@ def hub_body():
              'SourceToGulf is a sourcing partner; it does not hold stock or publish a price list.</div></div></section>'
              % hub_overview_svg())
 
+    # 趋势品类入口：麻将定制（同一套 sourcing 语义，不列价格、不做零售）
+    p.append('<section class="belt-sec" id="trending"><span class="belt-kicker">Trending category</span>'
+             '<h2>Custom mahjong sets for the Gulf</h2>'
+             '<p class="sec-sub">Regional media report mahjong moving into Gulf cafés, clubs and gifting '
+             'programmes. Most custom sets online are built for American Mah Jongg; Gulf tables usually '
+             'learn the classic 144-tile Chinese game. We commission that set — custom tiles, hard cases '
+             'and rule cards written in English and Arabic.</p>'
+             '<div class="bridge"><div class="tx"><h3>Tiles, cases and bilingual rule cards — made to order</h3>'
+             '<p>A sourcing project, not a stocked product. Custom tile faces and backs, oversized tiles, '
+             'engraved racks, fitted cases and EN/AR teaching cards, sampled before production. '
+             'Social and gifting sets only; no gambling-related materials.</p></div>'
+             '<a class="btn" href="/mahjong.html">Explore the mahjong guides →</a></div></section>')
+
     # 6 类客户
     p.append('<section class="belt-sec" id="buyers"><span class="belt-kicker">Start with your buyer type</span>'
              '<h2>Six kinds of Gulf buyer — and what each one actually brings</h2>'
