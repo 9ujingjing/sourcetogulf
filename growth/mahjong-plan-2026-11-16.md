@@ -89,3 +89,26 @@ majlis games · game night Dubai · screen free activities Dubai · family games
 - 用自绘 SVG 信息图：144 张牌结构、术语对照、定制流程、供应链步骤
 - 复用站内真实实拍：包装印刷机、糊盒、纸浆托、白盒库存（caption 写明是包装工序，不冒充麻将现场）
 - 待 Robin 补拍：牌面特写、牌尺、皮箱、双语规则卡、桌面全景。补图后替换并同步 `ImageObject` schema
+
+---
+
+## 六、本轮落地记录（2026-11-16）
+
+**已上站 12 页**（英文 6 + 阿语 6）：
+- `/mahjong.html` hub：答案箱、4 家权威媒体证据卡（带原文链接）、144 张结构堆叠条、中式 vs 美式 6 行对照表、可定制部位表、包装印刷实拍、5 个子页入口、5 条排除项、8 条 FAQ、ItemList + FAQPage + ImageObject schema
+- `/mahjong/custom-mahjong-sets.html`：可定制部位 4 区块、5 个坑、5 条 FAQ
+- `/mahjong/en-arabic-rule-cards.html`：双语教具、RTL 图表需镜像、术语一致性、不教金钱计分
+- `/mahjong/corporate-gifting.html`：咖啡馆/俱乐部/酒店/企业礼赠、交期倒排、备件
+- `/mahjong/buying-guide.html`：版本→材质→尺寸→标准 vs 定制 四步选购法
+- `/mahjong/compliance-gcc.html`：去赌博化定位、不供赌资筹码、广告禁词、阿语标签
+- 阿语全套 `/ar/mahjong.html` + `/ar/mahjong/<slug>.html`，`dir=rtl`、`inLanguage: ar`、hreflang 双向、FAQ 同源
+
+**入口**：导航 Products 下拉首项「Custom Mahjong Sets」（带阿语）、产业带 hub 新增 `#trending` 区、首页 slim banner（措辞 "sourced to order, not stocked retail"）。
+
+**收录**：sitemap 134 条（+12）、llms.txt / llms-full.txt 新增麻将章节、RSS +6、deploy.sh BUILDERS 接入 build_mahjong.py。
+
+**新增文件**：`mahjong_data.py`（英文真相源）、`mahjong_data_ar.py`（阿语真相源）、`build_mahjong.py`（生成器，复用 build_belts / build_ar_pages 骨架）。
+
+**校验**：12 页全绿（图片存在 / JSON-LD 合法 / 专属 CSS 第二个 style / FAQ 逐字同源 / 无 U+FFFD / hreflang 双向 / 阿语 8792 字符）；红线净检零价格（仅 footer 既定 $125）、零最高级、赌博词全为否定或合规语境、未核实数字（60,000 AED / 1295% / Wio）零泄漏；Playwright 实渲染英文+阿语，144 结构图与图例正常。
+
+**待办**：Robin 补麻将实拍（牌面/牌尺/皮箱/双语规则卡/桌面全景）→ 替换为真实产品图并补 `ImageObject` schema；Bing 官方 API 补推（配额限制，走自动化）。
