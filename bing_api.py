@@ -169,7 +169,7 @@ def cmd_submit(urls):
         call('SubmitUrlBatch', body={'siteUrl': SITE, 'urlList': chunk})
         ok += len(chunk)
         print('  已提交 %d/%d' % (ok, len(urls)))
-    print('✅ 共提交 %d 条（每日上限 10,000）' % ok)
+    print('✅ 共提交 %d 条；实际剩余配额请运行 quota 查询' % ok)
 
 
 def cmd_report():
