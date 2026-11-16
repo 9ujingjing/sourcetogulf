@@ -75,6 +75,7 @@ SourceToGulf also sources custom mahjong sets for Gulf buyers. This is a sourcin
 - Buying guide (versions, materials, sizes): https://sourcetogulf.com/mahjong/buying-guide.html
 - Social-play positioning and GCC compliance notes: https://sourcetogulf.com/mahjong/compliance-gcc.html
 - The same five guides exist in Arabic at https://sourcetogulf.com/ar/mahjong/<same-slug>.html, with bidirectional hreflang and inLanguage ar.
+- Seven custom sample reference photographs are distributed across the 12 pages with factual English/Arabic captions and ImageObject structured data. They illustrate visible tile faces, backs, layered colours and game versions; they are specification references, not stock listings or customer cases. No unverified photographer, factory, location or customer attribution is claimed.
 Key citable facts: a classic Chinese mahjong set contains 144 tiles (108 numbered suit tiles, 16 wind tiles, 12 dragon tiles and 8 flower/season tiles). American Mah Jongg adds joker tiles and uses an annually printed card of specific winning hands, so equipment is not interchangeable. Most custom sets sold online target the American version; Gulf social tables usually learn the classic Chinese set. SourceToGulf supplies social and gifting sets only — no betting chips, no cash-value scoring systems and no gambling-related materials. Rule cards are written in English and Arabic and reviewed by a native Arabic reader on a printed proof before printing.
 
 ## Languages

@@ -49,6 +49,47 @@ HUB_FACTS = [
     ('Positioning', 'Social strategy game and gift item — no gambling-related materials'),
 ]
 
+# 用户提供的定制样品参考图。只描述画面可见内容，不声称拍摄地点、工厂或客户归属。
+SAMPLE_PHOTOS = {
+    'leopard_backs': (
+        'images/mahjong/custom-leopard-backs.jpg',
+        'Custom mahjong tiles with leopard-print backs and layered gold, black and white edges',
+        'A custom sample showing printed backs, face artwork and layered edges. Back artwork, '
+        'face graphics and colour layers are separate specification choices.'),
+    'leopard_faces': (
+        'images/mahjong/custom-leopard-faces.jpg',
+        'Custom mahjong tile faces with leopard artwork, wind characters and layered edges',
+        'Face artwork and edge layers visible together. A physical sample is used to confirm '
+        'artwork alignment, colour density and finish before accessories are sized.'),
+    'american_layout': (
+        'images/mahjong/american-custom-tile-layout.jpg',
+        'American mahjong tile layout with jokers, custom suit artwork and CRAK and BAM labels',
+        'An American-style sample with jokers and custom suit graphics. Jokers and the annual-card '
+        'format are not interchangeable with a classic Chinese 144-tile specification.'),
+    'green_layers': (
+        'images/mahjong/custom-layered-green-backs.jpg',
+        'Custom mahjong tiles with green backs and multicolour layered edges',
+        'Layered edges and a coloured back change the set\'s appearance without changing the '
+        'underlying game. Confirm the version and tile count separately from the colour scheme.'),
+    'pink_marble': (
+        'images/mahjong/custom-pink-marble-set.jpg',
+        'Pink marble-effect mahjong set with floral faces and joker tiles',
+        'A gift-oriented custom sample with marble-effect backs and floral face artwork. Case, '
+        'insert and rule card are specified separately from the tiles.'),
+    'chinese_suits': (
+        'images/mahjong/chinese-suits-and-honours.jpg',
+        'Chinese mahjong tiles showing character, bamboo and circle suits with honour tiles',
+        'Character, bamboo and circle suits are visible alongside honour tiles. This shows the '
+        'tile families used in a classic Chinese specification; it is not a complete tile-count checklist.'),
+    'blush_pearl': (
+        'images/mahjong/custom-blush-pearl-set.jpg',
+        'Blush pink mahjong tiles with pearlescent backs and custom floral faces',
+        'A blush-coloured custom sample with pearlescent backs and coordinated face artwork. '
+        'Colour and finish are approved on a physical sample rather than from a screen image.'),
+}
+
+HUB_SHOTS = [SAMPLE_PHOTOS[k] for k in ('leopard_backs', 'american_layout', 'chinese_suits')]
+
 HUB_FAQ = [
     ('Why is everyone in Dubai talking about mahjong?',
      'Regional coverage from Architectural Digest Middle East and Harper\'s Bazaar Arabia documents the game '
@@ -406,3 +447,20 @@ PAGES = [
         'related': ['en-arabic-rule-cards', 'corporate-gifting', 'buying-guide'],
     },
 ]
+
+PAGE_SHOTS = {
+    'custom-mahjong-sets': [SAMPLE_PHOTOS[k] for k in
+                            ('leopard_backs', 'leopard_faces', 'green_layers', 'pink_marble')],
+    'en-arabic-rule-cards': [SAMPLE_PHOTOS[k] for k in ('chinese_suits', 'american_layout')],
+    'corporate-gifting': [SAMPLE_PHOTOS[k] for k in ('blush_pearl', 'pink_marble', 'leopard_backs')],
+    'buying-guide': [SAMPLE_PHOTOS[k] for k in ('american_layout', 'chinese_suits', 'green_layers')],
+    'compliance-gcc': [SAMPLE_PHOTOS[k] for k in ('chinese_suits', 'green_layers')],
+}
+
+PHOTO_SECTIONS = {
+    'custom-mahjong-sets': ('Custom tile samples', 'Face artwork, back prints and colour layers'),
+    'en-arabic-rule-cards': ('What the teaching card must explain', 'Chinese-style suits and honours versus American-style jokers'),
+    'corporate-gifting': ('Gift presentation references', 'Coordinated artwork, pearlescent finishes and custom backs'),
+    'buying-guide': ('Compare the version before the finish', 'American-style jokers, Chinese-style suits and decorative layers are different decisions'),
+    'compliance-gcc': ('Product imagery without wagering cues', 'Tiles, colour and artwork — no cash, betting chips or money-value counters'),
+}

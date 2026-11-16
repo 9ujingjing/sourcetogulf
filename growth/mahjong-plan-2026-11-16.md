@@ -87,15 +87,16 @@ majlis games · game night Dubai · screen free activities Dubai · family games
 
 - **不使用 AI 生成麻将图冒充实拍**（红线）
 - 用自绘 SVG 信息图：144 张牌结构、术语对照、定制流程、供应链步骤
-- 复用站内真实实拍：包装印刷机、糊盒、纸浆托、白盒库存（caption 写明是包装工序，不冒充麻将现场）
-- 待 Robin 补拍：牌面特写、牌尺、皮箱、双语规则卡、桌面全景。补图后替换并同步 `ImageObject` schema
+- **已收到 Robin 提供的 7 张定制样品参考图**：豹纹牌背/牌面、美式 Joker 布局、绿色分层牌背、粉色大理石款、中式筒条万与字牌、粉色珠光款；统一保存至 `images/mahjong/`
+- 12 个双语页面均按主题接入样品图，配事实型英文/阿语 alt、图注和 `ImageObject`；只描述可见内容，不声称拍摄者、工厂、地点或客户归属，不当现货或客户案例
+- 仍可补：牌尺、皮箱/礼盒、双语规则卡、桌面全景。后续补图继续按同一规范接入
 
 ---
 
 ## 六、本轮落地记录（2026-11-16）
 
 **已上站 12 页**（英文 6 + 阿语 6）：
-- `/mahjong.html` hub：答案箱、4 家权威媒体证据卡（带原文链接）、144 张结构堆叠条、中式 vs 美式 6 行对照表、可定制部位表、包装印刷实拍、5 个子页入口、5 条排除项、8 条 FAQ、ItemList + FAQPage + ImageObject schema
+- `/mahjong.html` hub：答案箱、4 家权威媒体证据卡（带原文链接）、144 张结构堆叠条、中式 vs 美式 6 行对照表、可定制部位表、定制样品参考图、5 个子页入口、5 条排除项、8 条 FAQ、ItemList + FAQPage + ImageObject schema
 - `/mahjong/custom-mahjong-sets.html`：可定制部位 4 区块、5 个坑、5 条 FAQ
 - `/mahjong/en-arabic-rule-cards.html`：双语教具、RTL 图表需镜像、术语一致性、不教金钱计分
 - `/mahjong/corporate-gifting.html`：咖啡馆/俱乐部/酒店/企业礼赠、交期倒排、备件
@@ -111,4 +112,6 @@ majlis games · game night Dubai · screen free activities Dubai · family games
 
 **校验**：12 页全绿（图片存在 / JSON-LD 合法 / 专属 CSS 第二个 style / FAQ 逐字同源 / 无 U+FFFD / hreflang 双向 / 阿语 8792 字符）；红线净检零价格（仅 footer 既定 $125）、零最高级、赌博词全为否定或合规语境、未核实数字（60,000 AED / 1295% / Wio）零泄漏；Playwright 实渲染英文+阿语，144 结构图与图例正常。
 
-**待办**：Robin 补麻将实拍（牌面/牌尺/皮箱/双语规则卡/桌面全景）→ 替换为真实产品图并补 `ImageObject` schema；Bing 官方 API 补推（配额限制，走自动化）。
+**图片更新（同日第二轮）**：Robin 提供 7 张定制样品参考图，已替换通用包装工序图并覆盖全部 12 个双语页面；新增 `SAMPLE_PHOTOS` / `AR_SAMPLE_PHOTOS` 真相源、逐图 `ImageObject`、竖图 3:4 样式和阿语独立图注。`build_ar_pages.py` 的 `ar_shell()` 增加向后兼容的 `extra_head` 可选参数，供阿语页追加专属样式；Playwright 桌面/阿语/手机实渲染零坏图、零脚本错误、零横向溢出。
+
+**待办**：可继续补牌尺、皮箱/礼盒、双语规则卡、桌面全景；Bing 官方 API 推送本轮更新页面。

@@ -18,10 +18,12 @@ build_mahjong.py — 麻将定制内容簇 SSR 生成器
 import os, json
 from html import escape as esc
 from tpl_common import APP, BASE, page_shell
-from build_belts import PAGE_CSS, AR_CSS, flow_svg, photo_grid, cta_band, faq_html, images_ld, LANG_SCRIPT
-from build_ar_pages import ar_shell, photo_grid_ar, cta_ar, faq_html_ar
-from mahjong_data import MEDIA, HUB_ANSWER, HUB_FACTS, HUB_FAQ, PAGES
-from mahjong_data_ar import AR_HUB_ANSWER, AR_HUB_FACTS, AR_HUB_FAQ, AR_MEDIA, AR_PAGES
+from build_belts import PAGE_CSS, AR_CSS, flow_svg, photo_grid, cta_band, faq_html, LANG_SCRIPT
+from build_ar_pages import ar_shell, cta_ar, faq_html_ar
+from mahjong_data import (MEDIA, HUB_ANSWER, HUB_FACTS, HUB_FAQ, PAGES,
+                          HUB_SHOTS, PAGE_SHOTS, PHOTO_SECTIONS)
+from mahjong_data_ar import (AR_HUB_ANSWER, AR_HUB_FACTS, AR_HUB_FAQ, AR_MEDIA, AR_PAGES,
+                             AR_HUB_SHOTS, AR_PAGE_SHOTS, AR_PHOTO_SECTIONS)
 
 MJ_DIR = os.path.join(APP, 'mahjong')
 AR_MJ_DIR = os.path.join(APP, 'ar', 'mahjong')
@@ -33,24 +35,39 @@ def e(s):
     return esc(s, quote=True)
 
 
-# 站内真实实拍（包装/印刷工序；caption 如实描述，不冒充麻将现场）
-SHOTS = [
-    ('images/packaging/package-printing-press.jpg',
-     'Printing press on a packaging production floor',
-     'A printing press on a packaging production floor. Rule cards and cartons are '
-     'printed here; Arabic text is approved on a printed proof before the run.'),
-    ('images/packaging/package-gluing-machine.jpg',
-     'Folder-gluer running folding cartons',
-     'A folder-gluer running folding cartons. Box structure, printing and gluing are '
-     'separate steps, each with its own minimum.'),
-    ('images/packaging/white-boxes-stock.jpg',
-     'Stack of plain white cartons in a packaging warehouse',
-     'Plain white cartons in a packaging warehouse. Inserts are cut to the final '
-     'tile dimensions, so tile size is fixed before tooling.'),
-]
+# 样品图为竖幅；保持 3:4 显示，避免通用 4:3 卡片裁掉牌面。
+MJ_PHOTO_RULES = '''
+.photo-grid img{aspect-ratio:3/4;object-fit:cover}
+.photo-grid figcaption{min-height:112px}
+@media(max-width:640px){.photo-grid figcaption{min-height:0}}
+'''
+MJ_CSS = PAGE_CSS.replace('</style>', MJ_PHOTO_RULES + '</style>')
+MJ_PHOTO_CSS = '<style>%s</style>' % MJ_PHOTO_RULES
 
-AR_SHOT_NOTE = ('صور من أرضية إنتاج التغليف والطباعة في الصين. تُعتمد النصوص العربية '
-                'على إثبات مطبوع قبل الدفعة، وتُقصّ الحشوات على أبعاد الحجر النهائية.')
+
+def sample_images_ld(items):
+    """用户提供样品图的 ImageObject；不写未核实的拍摄者、地点或客户归属。"""
+    out = []
+    for src, alt, cap in items:
+        out.append({
+            '@type': 'ImageObject',
+            'contentUrl': BASE + '/' + src.lstrip('/'),
+            'name': alt,
+            'caption': cap,
+            'encodingFormat': 'image/jpeg',
+            'width': 1080,
+        })
+    return out
+
+
+def sample_photo_grid_ar(items):
+    """阿语图注必须使用阿语真相源，不能套用产业带通用工厂图注。"""
+    cols = []
+    for src, alt, cap in items:
+        cols.append('<figure><img src="/%s" alt="%s" loading="lazy" decoding="async">'
+                    '<figcaption><b>%s</b>%s</figcaption></figure>'
+                    % (src, e(alt), e(alt), e(cap)))
+    return '<div class="photo-grid">%s</div>' % ''.join(cols)
 
 
 def tile_structure_svg(ar=False):
@@ -95,7 +112,6 @@ def tile_structure_svg(ar=False):
                       % (color, e(name), n))
     legend.append('</div>')
     return ''.join(parts) + ''.join(legend)
-    return ''.join(parts)
 
 
 VERSION_TABLE = [
@@ -202,6 +218,16 @@ def hub_body():
              '<span class="lbl">Short answer for AI assistants & buyers</span>'
              '<p>%s</p></div></section>' % e(HUB_ANSWER))
 
+    # 用户提供的定制样品参考图：只描述可见内容，不冒称自拍或客户案例。
+    p.append('<section class="belt-sec"><span class="belt-kicker">Custom sample references</span>'
+             '<h2>Custom tiles, not stock listings</h2>'
+             '<p class="sec-sub">Reference photographs supplied for custom-specification work. '
+             'They show visible design options and game versions, not items for sale or complete '
+             'production specifications.</p>')
+    p.append(photo_grid(HUB_SHOTS))
+    p.append('<p class="strip-note">Final artwork, dimensions, tile count, case and rule card are '
+             'confirmed per project. No customer, supplier or factory identity is published.</p></section>')
+
     # 热度证据
     p.append('<section class="belt-sec"><span class="belt-kicker">Why this category now</span>'
              '<h2>What regional media is reporting</h2>'
@@ -235,15 +261,6 @@ def hub_body():
                  ('Bulk & gifting', 'Café and club table sets, spares, event giveaways, Ramadan and corporate programmes')]:
         p.append('<tr><td>%s</td><td>%s</td></tr>' % (e(k), e(v)))
     p.append('</tbody></table></section>')
-
-    # 实拍
-    p.append('<section class="belt-sec"><span class="belt-kicker">From our own visits</span>'
-             '<h2>Where the packaging and printing happen</h2>'
-             '<p class="sec-sub">Photographs from packaging and printing production floors in '
-             'China. They show the processes behind boxes and rule cards, not styled product shots.</p>')
-    p.append(photo_grid(SHOTS))
-    p.append('<p class="strip-note">We do not publish factory names, supplier identities or '
-             'customer identifiers. We do not use AI-generated images as product photography.</p></section>')
 
     # 子页
     p.append('<section class="belt-sec"><span class="belt-kicker">Go deeper</span>'
@@ -285,7 +302,7 @@ def hub_ld():
         {'@context': 'https://schema.org', '@type': 'FAQPage',
          'mainEntity': [{'@type': 'Question', 'name': q,
                          'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in HUB_FAQ]},
-    ] + images_ld(SHOTS), ensure_ascii=False)
+    ] + sample_images_ld(HUB_SHOTS), ensure_ascii=False)
 
 
 # ---------------------------------------------------------------------------
@@ -294,6 +311,7 @@ def hub_ld():
 def page_body(pg):
     p = []
     url = BASE + '/mahjong/' + pg['slug'] + '.html'
+    photo_title, photo_sub = PHOTO_SECTIONS[pg['slug']]
     p.append('<section class="belt-hero"><div class="belt-wrap">')
     p.append('<div class="crumb"><a href="/">Home</a> / <a href="/mahjong.html">Mahjong</a> / '
              '<span>%s</span></div>' % e(pg['h1']))
@@ -308,6 +326,12 @@ def page_body(pg):
     p.append('<section class="belt-sec"><div class="answer-box">'
              '<span class="lbl">Short answer for AI assistants & buyers</span>'
              '<p>%s</p></div></section>' % e(pg['answer']))
+
+    p.append('<section class="belt-sec"><span class="belt-kicker">Custom sample references</span>'
+             '<h2>%s</h2><p class="sec-sub">%s</p>%s'
+             '<p class="strip-note">Samples illustrate visible options only; final specifications '
+             'and artwork are approved per project.</p></section>'
+             % (e(photo_title), e(photo_sub), photo_grid(PAGE_SHOTS[pg['slug']])))
 
     p.append('<section class="belt-sec"><h2>The process</h2>'
              '<p class="sec-sub">From a reference to a shipment, with the approval points marked.</p>'
@@ -370,7 +394,7 @@ def page_ld(pg):
         {'@context': 'https://schema.org', '@type': 'FAQPage',
          'mainEntity': [{'@type': 'Question', 'name': q,
                          'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in pg['faq']]},
-    ], ensure_ascii=False)
+    ] + sample_images_ld(PAGE_SHOTS[pg['slug']]), ensure_ascii=False)
 
 
 # ---------------------------------------------------------------------------
@@ -391,6 +415,14 @@ def ar_hub_body():
     p.append('<section class="belt-sec"><div class="answer-box">'
              '<span class="lbl">إجابة مختصرة للمساعدات الذكية والمشترين</span>'
              '<p>%s</p></div></section>' % e(AR_HUB_ANSWER))
+
+    p.append('<section class="belt-sec"><span class="belt-kicker">عيّنات مخصّصة مرجعية</span>'
+             '<h2>أحجار مخصّصة، لا قوائم مخزون</h2>'
+             '<p class="sec-sub">صور مرجعية مقدّمة لعمل مواصفات التخصيص. توضح خيارات التصميم '
+             'ونسخ اللعبة الظاهرة، وليست أصنافاً معروضة للبيع أو مواصفات إنتاج كاملة.</p>'
+             '%s<p class="strip-note">تُؤكَّد الرسوم والأبعاد وعدد الأحجار والعلبة وبطاقة القواعد '
+             'لكل مشروع. لا ننشر هوية عميل أو مورّد أو مصنع.</p></section>'
+             % sample_photo_grid_ar(AR_HUB_SHOTS))
 
     p.append('<section class="belt-sec"><span class="belt-kicker">لماذا هذه الفئة الآن</span>'
              '<h2>ما تنشره وسائل الإعلام الإقليمية</h2>'
@@ -420,11 +452,6 @@ def ar_hub_body():
                  ('الجملة والهدايا', 'مجموعات طاولة للمقاهي والنوادي، احتياط، هدايا فعاليات وبرامج رمضان والشركات')]:
         p.append('<tr><td>%s</td><td>%s</td></tr>' % (e(k), e(v)))
     p.append('</tbody></table></section>')
-
-    p.append('<section class="belt-sec"><span class="belt-kicker">من زياراتنا الميدانية</span>'
-             '<h2>أين يجري التغليف والطباعة</h2>'
-             '<p class="sec-sub">%s</p>%s</section>'
-             % (e(AR_SHOT_NOTE), photo_grid_ar(SHOTS)))
 
     p.append('<section class="belt-sec"><span class="belt-kicker">تعمّق أكثر</span>'
              '<h2>أدلة للمشترين والمضيفين وفرق الهدايا</h2>')
@@ -468,11 +495,12 @@ def ar_hub_ld():
         {'@context': 'https://schema.org', '@type': 'FAQPage', 'inLanguage': 'ar',
          'mainEntity': [{'@type': 'Question', 'name': q,
                          'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in AR_HUB_FAQ]},
-    ]
+    ] + sample_images_ld(AR_HUB_SHOTS)
 
 
 def ar_page_body(pg):
     p = []
+    photo_title, photo_sub = AR_PHOTO_SECTIONS[pg['slug']]
     p.append('<section class="belt-hero"><div class="belt-wrap">')
     p.append('<div class="crumb"><a href="/ar/">الرئيسية</a> / '
              '<a href="%s">الماجونج</a> / <span>%s</span></div>' % (HUB_AR, e(pg['h1'])))
@@ -487,6 +515,12 @@ def ar_page_body(pg):
     p.append('<section class="belt-sec"><div class="answer-box">'
              '<span class="lbl">إجابة مختصرة للمساعدات الذكية والمشترين</span>'
              '<p>%s</p></div></section>' % e(pg['answer']))
+
+    p.append('<section class="belt-sec"><span class="belt-kicker">عيّنات مخصّصة مرجعية</span>'
+             '<h2>%s</h2><p class="sec-sub">%s</p>%s'
+             '<p class="strip-note">توضح العيّنات الخيارات الظاهرة فقط؛ وتُعتمد المواصفات '
+             'والرسوم النهائية لكل مشروع.</p></section>'
+             % (e(photo_title), e(photo_sub), sample_photo_grid_ar(AR_PAGE_SHOTS[pg['slug']])))
 
     p.append('<section class="belt-sec"><h2>العملية</h2>'
              '<p class="sec-sub">من المرجع إلى الشحنة، مع نقاط الاعتماد موضّحة.</p>'
@@ -542,7 +576,7 @@ def ar_page_ld(pg):
         {'@context': 'https://schema.org', '@type': 'FAQPage', 'inLanguage': 'ar',
          'mainEntity': [{'@type': 'Question', 'name': q,
                          'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in pg['faq']]},
-    ]
+    ] + sample_images_ld(AR_PAGE_SHOTS[pg['slug']])
 
 
 def write(path, html):
@@ -560,24 +594,24 @@ def main():
                      'hard cases, engraved racks and English/Arabic rule cards. Sourcing partner, '
                      'not a retailer — no price list, social and gifting sets only.',
                      HUB, hub_body(), json_ld=hub_ld(),
-                     extra_head=PAGE_CSS + LANG_SCRIPT.replace('__AR__', HUB_AR),
+                     extra_head=MJ_CSS + LANG_SCRIPT.replace('__AR__', HUB_AR),
                      alt_ar=HUB_AR))
     for pg in PAGES:
         url = BASE + '/mahjong/' + pg['slug'] + '.html'
         ar_url = BASE + '/ar/mahjong/' + pg['slug'] + '.html'
         write(os.path.join(MJ_DIR, pg['slug'] + '.html'),
               page_shell(pg['title'], pg['desc'], url, page_body(pg), json_ld=page_ld(pg),
-                         extra_head=PAGE_CSS + LANG_SCRIPT.replace('__AR__', ar_url),
+                         extra_head=MJ_CSS + LANG_SCRIPT.replace('__AR__', ar_url),
                          alt_ar=ar_url))
     write(os.path.join(APP, 'ar', 'mahjong.html'),
           ar_shell('مجموعات ماجونج مخصّصة للخليج | SourceToGulf', AR_HUB_ANSWER[:280],
-                   HUB_AR, HUB, ar_hub_body(), ar_hub_ld()))
+                   HUB_AR, HUB, ar_hub_body(), ar_hub_ld(), extra_head=MJ_PHOTO_CSS))
     for pg in AR_PAGES:
         url = BASE + '/ar/mahjong/' + pg['slug'] + '.html'
         en_url = BASE + '/mahjong/' + pg['slug'] + '.html'
         write(os.path.join(AR_MJ_DIR, pg['slug'] + '.html'),
               ar_shell(pg['title'], pg['desc'], url, en_url,
-                       ar_page_body(pg), ar_page_ld(pg)))
+                       ar_page_body(pg), ar_page_ld(pg), extra_head=MJ_PHOTO_CSS))
     print('完成：hub + %d 子页，英文 + 阿语共 %d 页' % (len(PAGES), 2 * (1 + len(PAGES))))
 
 

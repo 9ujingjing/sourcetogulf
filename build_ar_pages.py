@@ -30,7 +30,7 @@ HUB_EN = BASE + '/sourcing-belts.html'
 HUB_AR = BASE + '/ar/sourcing-belts.html'
 
 
-def ar_shell(title, desc, canonical, en_url, body, ld_list):
+def ar_shell(title, desc, canonical, en_url, body, ld_list, extra_head=''):
     """通用阿语 SSR shell。语言按钮点击跳回对应英文页（覆盖 toggleLang）。"""
     head = [
         '<!doctype html>\n<html lang="ar" dir="rtl">\n<head>\n',
@@ -55,7 +55,7 @@ def ar_shell(title, desc, canonical, en_url, body, ld_list):
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n',
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n',
         '<style>%s</style>\n' % STYLE,
-        GA4_SNIPPET + RSS_LINK + PAGE_CSS + AR_CSS,
+        GA4_SNIPPET + RSS_LINK + PAGE_CSS + AR_CSS + extra_head,
         '</head>\n<body>\n',
         '<header>\n' + HEADER + '\n</header>\n',
         body,

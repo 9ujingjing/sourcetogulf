@@ -45,6 +45,47 @@ AR_MEDIA = [
      'https://globalbiznewsroom.com/news/dubais-mahjong-moment-cafes-to-visit-to-play-the-game-taking-over-the-city'),
 ]
 
+# عيّنات مرجعية مقدّمة للمواصفات؛ الوصف يقتصر على ما يظهر في الصورة.
+AR_SAMPLE_PHOTOS = {
+    'leopard_backs': (
+        'images/mahjong/custom-leopard-backs.jpg',
+        'أحجار ماجونج مخصّصة بظهور بطبعة جلد الفهد وحواف طبقية بالذهبي والأسود والأبيض',
+        'عيّنة مخصّصة تُظهر طباعة الظهور ورسوم الأوجه والحواف الطبقية. رسم الظهر '
+        'ورسم الوجه والطبقات اللونية خيارات مستقلة في المواصفة.'),
+    'leopard_faces': (
+        'images/mahjong/custom-leopard-faces.jpg',
+        'أوجه أحجار ماجونج مخصّصة برسوم فهد وحروف الرياح وحواف طبقية',
+        'يظهر رسم الوجه مع طبقات الحواف. تُستخدم عيّنة فعلية لاعتماد محاذاة الرسم '
+        'وكثافة اللون والتشطيب قبل تحديد مقاسات الملحقات.'),
+    'american_layout': (
+        'images/mahjong/american-custom-tile-layout.jpg',
+        'ترتيب أحجار ماجونج أمريكية مخصّصة مع الجوكر ورسوم للأطقم',
+        'عيّنة بالنمط الأمريكي تضم الجوكر ورسوماً مخصّصة للأطقم. الجوكر وصيغة البطاقة '
+        'السنوية لا يتوافقان تلقائياً مع مواصفة المجموعة الصينية الكلاسيكية بـ144 حجراً.'),
+    'green_layers': (
+        'images/mahjong/custom-layered-green-backs.jpg',
+        'أحجار ماجونج مخصّصة بظهور خضراء وحواف طبقية متعددة الألوان',
+        'تغيّر الحواف الطبقية ولون الظهر مظهر المجموعة دون تغيير اللعبة نفسها. '
+        'تُؤكَّد النسخة وعدد الأحجار بمعزل عن نظام الألوان.'),
+    'pink_marble': (
+        'images/mahjong/custom-pink-marble-set.jpg',
+        'مجموعة ماجونج وردية بظهور رخامية وأوجه زهرية وأحجار جوكر',
+        'عيّنة مخصّصة موجّهة للهدايا بظهور رخامية ورسوم زهرية. تُحدَّد العلبة '
+        'والحشوة وبطاقة القواعد بمعزل عن الأحجار.'),
+    'chinese_suits': (
+        'images/mahjong/chinese-suits-and-honours.jpg',
+        'أحجار ماجونج صينية تظهر أطقم الحروف والخيزران والدوائر مع الأحجار الشرفية',
+        'تظهر أطقم الحروف والخيزران والدوائر إلى جانب الأحجار الشرفية. توضح الصورة '
+        'عائلات الأحجار في المواصفة الصينية الكلاسيكية، لكنها ليست قائمة كاملة لعدّ المجموعة.'),
+    'blush_pearl': (
+        'images/mahjong/custom-blush-pearl-set.jpg',
+        'أحجار ماجونج وردية بظهور لؤلؤية وأوجه مخصّصة برسوم زهرية',
+        'عيّنة مخصّصة وردية بظهور لؤلؤية ورسوم متناسقة للأوجه. يُعتمد اللون '
+        'والتشطيب على عيّنة فعلية لا على صورة الشاشة.'),
+}
+
+AR_HUB_SHOTS = [AR_SAMPLE_PHOTOS[k] for k in ('leopard_backs', 'american_layout', 'chinese_suits')]
+
 AR_HUB_FAQ = [
     ('لماذا يتحدّث الجميع في دبي عن الماجونج؟',
      'تغطية إقليمية من Architectural Digest Middle East و Harper\'s Bazaar Arabia توثّق '
@@ -435,3 +476,20 @@ AR_PAGES = [
         'related': ['en-arabic-rule-cards', 'corporate-gifting', 'buying-guide'],
     },
 ]
+
+AR_PAGE_SHOTS = {
+    'custom-mahjong-sets': [AR_SAMPLE_PHOTOS[k] for k in
+                            ('leopard_backs', 'leopard_faces', 'green_layers', 'pink_marble')],
+    'en-arabic-rule-cards': [AR_SAMPLE_PHOTOS[k] for k in ('chinese_suits', 'american_layout')],
+    'corporate-gifting': [AR_SAMPLE_PHOTOS[k] for k in ('blush_pearl', 'pink_marble', 'leopard_backs')],
+    'buying-guide': [AR_SAMPLE_PHOTOS[k] for k in ('american_layout', 'chinese_suits', 'green_layers')],
+    'compliance-gcc': [AR_SAMPLE_PHOTOS[k] for k in ('chinese_suits', 'green_layers')],
+}
+
+AR_PHOTO_SECTIONS = {
+    'custom-mahjong-sets': ('عيّنات أحجار مخصّصة', 'رسوم الأوجه وطباعة الظهور والطبقات اللونية'),
+    'en-arabic-rule-cards': ('ما يجب أن تشرحه بطاقة التعليم', 'الأطقم والأحجار الشرفية الصينية مقابل الجوكر الأمريكي'),
+    'corporate-gifting': ('مراجع لعرض الهدايا', 'رسوم متناسقة وتشطيبات لؤلؤية وظهور مخصّصة'),
+    'buying-guide': ('قارن النسخة قبل التشطيب', 'الجوكر الأمريكي والأطقم الصينية والطبقات الزخرفية قرارات مختلفة'),
+    'compliance-gcc': ('صور المنتج دون إشارات مراهنة', 'أحجار وألوان ورسوم — دون نقود أو رقائق رهان أو عدادات بقيمة مالية'),
+}
